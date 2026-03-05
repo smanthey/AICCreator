@@ -15,6 +15,30 @@ This runs in order:
 3. **Reddit search** — Runs `reddit:search`; writes `reports/reddit-search-research-latest.json` and `.md`.
 4. **Builder research agenda** — Runs `builder:research:agenda --rolling` from the rolling gap report; writes `reports/builder-research-agenda-latest.json` and `.md`.
 
+## Full AICC system (hands-off mode)
+
+Builds and operates a full campaign loop:
+
+1. `npm run aicc:campaign`
+2. `npm run aicc:autopublish:schedule -- --video /absolute/path/to/final.mp4`
+3. `npm run aicc:autopublish:run`
+4. `npm run aicc:ab:score`
+
+Orchestrated:
+
+```bash
+npm run aicc:system -- --topic "automated content creator" --niche ai-clone-news --variants 5 --video /absolute/path/to/final.mp4 --publish-due
+```
+
+What this adds:
+
+- Auto-publish adapters for YouTube/TikTok/Instagram (`scripts/aicc-autopublish.js`)
+- Template-driven niche packs (`scripts/aicc-campaign-engine.js`)
+- Scene quality engine (hook/body/CTA structure, beat timing, transitions, b-roll cues)
+- Voice + avatar provider config in generated variants
+- A/B winner selection from retention/CTR/watch-time (`scripts/aicc-ab-loop.js`)
+- Monetization packaging (title/description/hashtags/thumbnail prompt + affiliate CTA)
+
 ## Options
 
 - **With keyshots (needs disk + ffmpeg):**  

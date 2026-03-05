@@ -1,6 +1,6 @@
-# Claw Architect
+# AICCreator
 
-Claw Architect is a production automation workspace for discovery, indexing, media intelligence, benchmarks, and multi-agent operations.
+AICCreator is a production automation workspace for discovery, indexing, media intelligence, benchmarks, and multi-agent operations.
 
 Think of it as an operations cockpit: less "toy demo," more "ship it, monitor it, and fix it before coffee gets cold."
 
@@ -40,6 +40,29 @@ This mode gives a practical baseline with no OpenClaw dependency:
 - `npm run reddit:search`
 - `npm run reddit:research:auto`
 - `npm run masterpiece:auto`
+
+## Automated Content Creator (AICC)
+
+Run a full campaign system (research -> variants -> scheduling):
+
+1. `npm run content-creator:pipeline`
+2. `npm run aicc:campaign`
+3. `npm run aicc:autopublish:schedule -- --video /absolute/path/to/final.mp4`
+4. `npm run aicc:autopublish:run`
+5. `npm run aicc:ab:score`
+
+One-command orchestrator:
+
+- `npm run aicc:system -- --topic "ai clone news" --niche ai-clone-news --variants 5 --video /absolute/path/to/final.mp4 --publish-due`
+
+The AICC layer includes:
+
+- Auto-publish adapters (YouTube/TikTok/Instagram) with queue scheduling
+- Template-driven niche packs (`ai-clone-news`, `viral-faceless`, `product-ads`)
+- Scene quality engine (hook/body/CTA timing, transitions, beat timing, b-roll cues)
+- Voice/avatar provider abstraction (provider + preset in campaign variants)
+- A/B scoring loop (retention/CTR/watch-time winner promotion)
+- Monetization packaging (title/description/hashtags/thumbnail prompt + affiliate CTA blocks)
 
 ## Schema mismatch & DB audit
 

@@ -63,3 +63,4 @@ config/convergence-targets.local.json
 .venv-openclaw-tools/
 reports/
 agent-state/
+data/aicc-publish-queue.json
