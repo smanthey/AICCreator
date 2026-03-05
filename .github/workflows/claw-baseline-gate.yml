@@ -1,0 +1,16 @@
+name: claw-baseline-gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  baseline-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/claw-baseline-gate.js

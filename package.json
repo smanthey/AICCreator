@@ -471,7 +471,9 @@
     "monetization:readiness:json": "node ./scripts/monetization-readiness.js --json",
     "monetization:gap:enqueue": "node ./scripts/enqueue-monetization-gap-tasks.js",
     "monetization:gap:enqueue:dry": "node ./scripts/enqueue-monetization-gap-tasks.js --dry-run",
-    "monetization:fix": "pm2 start ecosystem.background.config.js --only claw-bot-discovery,claw-bot-outreach 2>/dev/null; npm run -s monetization:readiness && npm run -s monetization:gap:enqueue"
+    "monetization:fix": "pm2 start ecosystem.background.config.js --only claw-bot-discovery,claw-bot-outreach 2>/dev/null; npm run -s monetization:readiness && npm run -s monetization:gap:enqueue",
+    "claw:baseline:gate": "node scripts/claw-baseline-gate.js",
+    "claw:security:gate": "node scripts/claw-security-gate.js"
   },
   "keywords": [],
   "author": "",
