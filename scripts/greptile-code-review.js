@@ -98,8 +98,8 @@ async function resolveLocalPath(repoSlug) {
 
   const name = repoSlug.split("/").pop();
   const candidates = [
-    path.join("/Users/tatsheen/claw-repos", name),
-    path.join("/Users/tatsheen/agentflex", name),
+    path.join("$HOME/claw-repos", name),
+    path.join("$HOME/agentflex", name),
     path.join(ROOT, name),
   ];
   return candidates.find((p) => fs.existsSync(p)) || null;

@@ -23,7 +23,7 @@
 Run the setup script to create Stripe products and payment links:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 node scripts/stripe-setup-blackwallstreet.js
 ```
 

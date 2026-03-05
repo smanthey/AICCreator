@@ -124,7 +124,7 @@ function initAgentState(agents) {
   if (!fs.existsSync(userPath)) {
     fs.writeFileSync(
       userPath,
-      "# USER\n\n- owner: tatsheen\n- preference: concise actionable updates\n- non-negotiable: no destructive actions without explicit approval\n\n"
+      "# USER\n\n- owner: <USER>\n- preference: concise actionable updates\n- non-negotiable: no destructive actions without explicit approval\n\n"
     );
   }
 

@@ -12,7 +12,7 @@ const getArg = (flag, fallback = null) => {
 };
 const hasFlag = (flag) => args.includes(flag);
 
-const ROOT = process.env.CLAW_REPOS_ROOT || "/Users/tatsheen/claw-repos";
+const ROOT = process.env.CLAW_REPOS_ROOT || "$HOME/claw-repos";
 const rawReposArg = getArg("--repos", "");
 const EXCLUDE = new Set(
   (getArg("--exclude", "") || "")

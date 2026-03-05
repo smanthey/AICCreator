@@ -4,8 +4,8 @@ This is the fast-start pack for mining open-source Roblox code and monetization 
 
 ## What this adds
 
-- Curated repo pack cloned into `/Users/tatsheen/claw-repos/oss-index/roblox`
-- Gameplay benchmark pack cloned into `/Users/tatsheen/claw-repos/oss-index/puzzle-bench`
+- Curated repo pack cloned into `$HOME/claw-repos/oss-index/roblox`
+- Gameplay benchmark pack cloned into `$HOME/claw-repos/oss-index/puzzle-bench`
 - Repo maps per OSS repo under `reports/repomaps/roblox-*-repomap.md`
 - Keyword scan report for monetization/economy under:
   - `reports/roblox-oss-monetization-seeds-latest.md`
@@ -13,7 +13,7 @@ This is the fast-start pack for mining open-source Roblox code and monetization 
 ## Run it
 
 ```bash
-bash /Users/tatsheen/claw-architect/scripts/roblox-oss-jumpstart.sh
+bash $HOME/claw-architect/scripts/roblox-oss-jumpstart.sh
 ```
 
 ## Curated repos

@@ -32,7 +32,7 @@ ALTER TABLE telegram_users ADD COLUMN IF NOT EXISTS last_seen         TIMESTAMPT
 -- Uncomment and replace 000000000 with your real Telegram user ID:
 --
 -- INSERT INTO telegram_users (telegram_user_id, username, role, added_by)
--- VALUES ('000000000', 'tatsheen', 'owner', 'seed')
+-- VALUES ('000000000', '<USER>', 'owner', 'seed')
 -- ON CONFLICT (telegram_user_id) DO NOTHING;
 
 -- ── Back-fill chat_id from existing plan_approvals ────────────

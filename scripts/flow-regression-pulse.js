@@ -12,7 +12,7 @@ const { isKnownTaskType, resolveRouting } = require("../config/task-routing");
 const { validatePayload } = require("../schemas/payloads");
 const { buildTaskIdempotencyKey } = require("../control/idempotency");
 
-const REPO_ROOT = process.env.CLAW_REPOS_ROOT || "/Users/tatsheen/claw-repos";
+const REPO_ROOT = process.env.CLAW_REPOS_ROOT || "$HOME/claw-repos";
 const ENV_REPOS = (process.env.FLOW_REGRESSION_REPOS || "")
   .split(",")
   .map((x) => x.trim())

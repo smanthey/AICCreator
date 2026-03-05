@@ -19,12 +19,12 @@ const FAIL_ON_SKIP_ALL = String(process.env.LAUNCH_E2E_FAIL_ON_SKIP_ALL || "fals
 const FAIL_ON_ANY = String(process.env.LAUNCH_E2E_FAIL_ON_ANY || "false").toLowerCase() === "true";
 
 const DEFAULT_TARGETS = [
-  { name: "skynpatch", url: "https://skynpatch.com", repo: "/Users/tatsheen/claw-repos/v0-skyn-patch", cmd: "npm run -s test:e2e:smoke", blocking: true },
-  { name: "captureinbound", url: "", repo: "/Users/tatsheen/claw-repos/CaptureInbound", cmd: "npm run -s test:e2e:smoke", blocking: true },
-  { name: "cookiespass", url: "", repo: "/Users/tatsheen/claw-repos/CookiesPass", cmd: "npm run -s test:e2e:smoke", blocking: true },
-  { name: "tempecookiespass", url: "", repo: "/Users/tatsheen/claw-repos/TempeCookiesPass", cmd: "npm run -s test:e2e:smoke", blocking: true },
-  { name: "mytutor", url: "", repo: "/Users/tatsheen/claw-repos/mytutor", cmd: "npm run -s test:e2e:smoke", blocking: true },
-  { name: "3dgameartacademy", url: "", repo: "/Users/tatsheen/claw-repos/3DGameArtAcademy", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "skynpatch", url: "https://skynpatch.com", repo: "$HOME/claw-repos/v0-skyn-patch", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "captureinbound", url: "", repo: "$HOME/claw-repos/CaptureInbound", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "cookiespass", url: "", repo: "$HOME/claw-repos/CookiesPass", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "tempecookiespass", url: "", repo: "$HOME/claw-repos/TempeCookiesPass", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "mytutor", url: "", repo: "$HOME/claw-repos/mytutor", cmd: "npm run -s test:e2e:smoke", blocking: true },
+  { name: "3dgameartacademy", url: "", repo: "$HOME/claw-repos/3DGameArtAcademy", cmd: "npm run -s test:e2e:smoke", blocking: true },
 ];
 const ALLOW_FULL_E2E = String(process.env.LAUNCH_E2E_ALLOW_FULL || "").toLowerCase() === "true";
 

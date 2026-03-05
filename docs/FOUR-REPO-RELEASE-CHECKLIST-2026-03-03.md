@@ -137,8 +137,8 @@ Each lane is complete only when all gate checks pass.
 
 These local mirrors were used as implementation references while hardening reliability paths:
 
-- Telnyx SDK/reference flows: `/Users/tatsheen/claw-repos/_oss_refs/telnyx-node`
-- Trigger.dev task/retry/scheduling patterns: `/Users/tatsheen/claw-repos/_oss_refs/trigger.dev`
-- Queue/retry discipline patterns: `/Users/tatsheen/claw-repos/_oss_refs/pg-boss`
-- Transactional email API/client patterns: `/Users/tatsheen/claw-repos/_oss_refs/resend-node`
-- Multi-tenant notification orchestration patterns: `/Users/tatsheen/claw-repos/_oss_refs/novu`
+- Telnyx SDK/reference flows: `$HOME/claw-repos/_oss_refs/telnyx-node`
+- Trigger.dev task/retry/scheduling patterns: `$HOME/claw-repos/_oss_refs/trigger.dev`
+- Queue/retry discipline patterns: `$HOME/claw-repos/_oss_refs/pg-boss`
+- Transactional email API/client patterns: `$HOME/claw-repos/_oss_refs/resend-node`
+- Multi-tenant notification orchestration patterns: `$HOME/claw-repos/_oss_refs/novu`

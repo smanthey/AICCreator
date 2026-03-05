@@ -11,7 +11,7 @@ const { resolveRouting, isKnownTaskType } = require("../config/task-routing");
 const { validatePayload } = require("../schemas/payloads");
 const { buildTaskIdempotencyKey } = require("../control/idempotency");
 
-const REPO_ROOT = process.env.CLAW_REPOS_ROOT || "/Users/tatsheen/claw-repos";
+const REPO_ROOT = process.env.CLAW_REPOS_ROOT || "$HOME/claw-repos";
 const ACTIVE_TASK_STATUSES = ["CREATED", "DISPATCHED", "RUNNING", "RETRY", "PENDING_APPROVAL"];
 
 let _routingColsEnsured = false;

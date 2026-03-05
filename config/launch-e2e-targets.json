@@ -2,77 +2,77 @@
   {
     "name": "skynpatch",
     "url": "https://skynpatch.com",
-    "repo": "/Users/tatsheen/claw-repos/v0-skyn-patch",
+    "repo": "$HOME/claw-repos/v0-skyn-patch",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "captureinbound",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/CaptureInbound",
+    "repo": "$HOME/claw-repos/CaptureInbound",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "cookiespass",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/CookiesPass",
+    "repo": "$HOME/claw-repos/CookiesPass",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "tempecookiespass",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/TempeCookiesPass",
+    "repo": "$HOME/claw-repos/TempeCookiesPass",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "mytutor",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/mytutor",
+    "repo": "$HOME/claw-repos/mytutor",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "3dgameartacademy",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/3DGameArtAcademy",
+    "repo": "$HOME/claw-repos/3DGameArtAcademy",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": true
   },
   {
     "name": "wmactealth",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/wmactealth",
+    "repo": "$HOME/claw-repos/wmactealth",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": false
   },
   {
     "name": "wmactealth-lc",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/wmactealth-lc",
+    "repo": "$HOME/claw-repos/wmactealth-lc",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": false
   },
   {
     "name": "inbound-cookies",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/Inbound-cookies",
+    "repo": "$HOME/claw-repos/Inbound-cookies",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": false
   },
   {
     "name": "coinstbl",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/Coinstbl",
+    "repo": "$HOME/claw-repos/Coinstbl",
     "cmd": "npm run -s test:e2e:smoke",
     "blocking": false
   },
   {
     "name": "roblox-puzzle-brawl",
     "url": "",
-    "repo": "/Users/tatsheen/claw-repos/RobloxGitSync",
+    "repo": "$HOME/claw-repos/RobloxGitSync",
     "cmd": "npm run -s check",
     "blocking": false
   }

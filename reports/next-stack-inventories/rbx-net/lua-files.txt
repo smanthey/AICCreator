@@ -1,9 +1,0 @@
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/ci.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/luau/dist/init.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua

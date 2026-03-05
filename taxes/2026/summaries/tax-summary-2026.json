@@ -16,9 +16,9 @@
     "No 1099 or W-2 detected in income folder"
   ],
   "folder_structure": {
-    "root": "/Users/tatsheen/claw-architect/taxes/2026",
-    "income": "/Users/tatsheen/claw-architect/taxes/2026/income",
-    "receipts": "/Users/tatsheen/claw-architect/taxes/2026/receipts",
-    "summaries": "/Users/tatsheen/claw-architect/taxes/2026/summaries"
+    "root": "$HOME/claw-architect/taxes/2026",
+    "income": "$HOME/claw-architect/taxes/2026/income",
+    "receipts": "$HOME/claw-architect/taxes/2026/receipts",
+    "summaries": "$HOME/claw-architect/taxes/2026/summaries"
   }
 }

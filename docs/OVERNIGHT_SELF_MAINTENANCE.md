@@ -27,7 +27,7 @@ If a job fails, it sends a failure alert.
 
 ## Backup repo settings
 
-- `BACKUP_REPO_PATH=/Users/tatsheen/claw-architect-backup` (default if unset)
+- `BACKUP_REPO_PATH=$HOME/claw-architect-backup` (default if unset)
 - `BACKUP_REPO_GIT_URL=git@github.com:<you>/<private-backup-repo>.git` (required if path not cloned yet)
 - `BACKUP_REPO_BRANCH=main` (default)
 
@@ -52,7 +52,7 @@ The backup job writes `_meta/critical-files-YYYY-MM-DD.json` in backup repo, inc
 ## Enable
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run pm2:background:reload
 pm2 save
 ```

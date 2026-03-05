@@ -60,3 +60,6 @@ reports/dashboard-action-history.json
 config/repo-completion-master-list.local.json
 # Local convergence targets override
 config/convergence-targets.local.json
+.venv-openclaw-tools/
+reports/
+agent-state/

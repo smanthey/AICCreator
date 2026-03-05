@@ -30,7 +30,7 @@ This architecture defines 10 specialized agents for the git repo system, each wi
 ## Setup
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run mission:control:init
 pm2 start ecosystem.background.config.js --only claw-mission-heartbeat,claw-mission-saas_development,claw-mission-content_writing,claw-mission-research_analysis,claw-mission-data_processing,claw-mission-scheduling_calendar,claw-mission-code_review,claw-mission-debugging,claw-mission-ui_ux_design,claw-mission-marketing_social,claw-mission-system_administration
 pm2 save

@@ -62,7 +62,7 @@ Example:
 ```bash
 BACKUP_DEVICE_NAME=MacBook-Pro-2.local
 NAS_BACKUP_ROOT=/Volumes/home/Storage/_claw_backup
-BACKUP_SOURCE_ROOTS=/Users/tatsheen/Downloads|/Users/tatsheen/Dropbox|/Users/tatsheen/claw-repos
+BACKUP_SOURCE_ROOTS=$HOME/Downloads|$HOME/Dropbox|$HOME/claw-repos
 ```
 
 ## Rollout

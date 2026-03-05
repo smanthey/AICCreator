@@ -27,8 +27,8 @@ Fixes applied:
 - Added `.gitignore` entries for `build/` outputs.
 
 Verification:
-- `cd /Users/tatsheen/claw-repos/payclaw && npm run -s check` ✅
-- `cd /Users/tatsheen/claw-repos/payclaw && npm run -s mac:dmg` ✅
+- `cd $HOME/claw-repos/payclaw && npm run -s check` ✅
+- `cd $HOME/claw-repos/payclaw && npm run -s mac:dmg` ✅
 - DMG generated at `server/dist/PayClaw-1.0.0-arm64.dmg`.
 - Note: signing/notarization still not configured (expected warning).
 

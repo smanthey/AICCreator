@@ -1,20 +1,0 @@
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua	4	module_export	local MockMessagingService = {}	local MockMessagingService = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua	5	module_export	local topics = {}	local topics = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua	39	module_export	return service	return service
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua	8	module_export				return true				return true
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua	17	module_export		return mixed		return mixed
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau	3	module_export	local node = {}	local node = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau	15	module_export	return node	return node
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/luau/dist/init.lua	174	module_export	return Net	return Net
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua	7	module_export	        local str = {};	        local str = {};
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua	14	module_export	local MiddlewareGlobal = {}	local MiddlewareGlobal = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua	20	module_export	    local MiddlewareInstance = {}	    local MiddlewareInstance = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua	31	module_export	                    return false	                    return false
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua	46	module_export	        return self	        return self
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua	4	module_export	local RequestCounter = {}	local RequestCounter = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua	43	module_export			return existing			return existing
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua	47	module_export			return newCounter			return newCounter
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua	57	module_export	return Throttle	return Throttle
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau	3	module_export	local path = {}	local path = {}
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau	62	module_export		return newPath		return newPath
-/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau	67	module_export	return path	return path

@@ -1,6 +1,0 @@
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/client/KnitClientTest.client.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/publish.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/init.luau
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau

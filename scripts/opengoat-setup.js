@@ -113,7 +113,7 @@ function syncOrgFiles() {
       continue;
     }
     // Copy to opengoat org directory if it exists
-    const dest1 = path.join(process.env.HOME || "/Users/tatsheen", ".opengoat", "org", file);
+    const dest1 = path.join(process.env.HOME || "$HOME", ".opengoat", "org", file);
     const dest2 = path.join(ROOT, file); // also keep at repo root for agent access
     try {
       fs.mkdirSync(path.dirname(dest1), { recursive: true });

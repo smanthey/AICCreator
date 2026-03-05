@@ -299,7 +299,7 @@ async function loadProductCatalog() {
   }
 
   // Local WMAC repo catalog (preferred when available)
-  const wmacRepoPath = process.env.WMAC_REPO_PATH || "/Users/tatsheen/claw-repos/wmac";
+  const wmacRepoPath = process.env.WMAC_REPO_PATH || "$HOME/claw-repos/wmac";
   const wmacProducts = buildWmacRepoCatalogProducts(wmacRepoPath);
   for (const p of wmacProducts) catalog.push(p);
 

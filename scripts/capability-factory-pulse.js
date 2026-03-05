@@ -8,7 +8,7 @@ const { spawnSync } = require("child_process");
 require("dotenv").config({ path: path.join(__dirname, "../.env") });
 
 const ROOT = path.join(__dirname, "..");
-const CLAW_REPOS_ROOT = process.env.CLAW_REPOS_ROOT || "/Users/tatsheen/claw-repos";
+const CLAW_REPOS_ROOT = process.env.CLAW_REPOS_ROOT || "$HOME/claw-repos";
 const MAX_REPOS = Math.max(6, Number(process.env.CAPABILITY_FACTORY_PULSE_MAX_REPOS || "24"));
 const REPORT_DIR = path.join(ROOT, "scripts", "reports");
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/Users/tatsheen/claw-architect"
-OSS_ROOT="/Users/tatsheen/claw-repos/oss-index/roblox"
-PUZZLE_ROOT="/Users/tatsheen/claw-repos/oss-index/puzzle-bench"
+ROOT="$HOME/claw-architect"
+OSS_ROOT="$HOME/claw-repos/oss-index/roblox"
+PUZZLE_ROOT="$HOME/claw-repos/oss-index/puzzle-bench"
 REPORT_DIR="$ROOT/reports"
 REPOMAP_DIR="$REPORT_DIR/repomaps"
 STAMP="$(date -u +%Y-%m-%dT%H-%M-%SZ)"

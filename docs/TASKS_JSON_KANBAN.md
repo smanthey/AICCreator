@@ -9,19 +9,19 @@ Run folders:
 Rules:
 - Moving a task to `In Progress` creates `runs/<task_id>/`.
 - Agent updates append to `runs/<task_id>/updates.md`.
-- Only owner can move a task to `Done` (`TASKS_OWNER`, default `tatsheen`).
+- Only owner can move a task to `Done` (`TASKS_OWNER`, default `<USER>`).
 - `@mention` writes a request entry for another agent to pick up.
 
 ## Command
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run tasks:kanban -- init
 npm run tasks:kanban -- add --title "Example task" --description "..." --priority 3 --by researcher
 npm run tasks:kanban -- move --id <task_id> --to "In Progress" --by coder
 npm run tasks:kanban -- update --id <task_id> --text "Implemented parser fix" --by coder
 npm run tasks:kanban -- mention --id <task_id> --to reviewer --text "Please review stage 2 output" --by coder
-npm run tasks:kanban -- move --id <task_id> --to Done --by tatsheen
+npm run tasks:kanban -- move --id <task_id> --to Done --by <USER>
 ```
 
 ## Notes

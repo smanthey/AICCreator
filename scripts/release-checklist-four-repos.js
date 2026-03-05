@@ -5,7 +5,7 @@ const path = require("node:path");
 const repos = [
   {
     name: "CaptureInbound",
-    cwd: "/Users/tatsheen/claw-repos/CaptureInbound",
+    cwd: "$HOME/claw-repos/CaptureInbound",
     checks: [
       "npm run -s check",
       "npm run -s build",
@@ -14,7 +14,7 @@ const repos = [
   },
   {
     name: "payclaw",
-    cwd: "/Users/tatsheen/claw-repos/payclaw",
+    cwd: "$HOME/claw-repos/payclaw",
     checks: [
       "npm run -s check",
       "npm --prefix server run -s test:webhooks",
@@ -23,7 +23,7 @@ const repos = [
   },
   {
     name: "TempeCookiesPass",
-    cwd: "/Users/tatsheen/claw-repos/TempeCookiesPass",
+    cwd: "$HOME/claw-repos/TempeCookiesPass",
     checks: [
       "npm run -s check",
       "npm run -s verify:sms-schema",
@@ -33,7 +33,7 @@ const repos = [
   },
   {
     name: "quantfusion",
-    cwd: "/Users/tatsheen/claw-repos/quantfusion",
+    cwd: "$HOME/claw-repos/quantfusion",
     checks: [
       "npm run -s check",
     ],

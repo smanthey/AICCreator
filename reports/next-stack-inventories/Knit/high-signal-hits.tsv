@@ -1,8 +1,0 @@
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:264:	-- Fire a signal to the server:
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:267:	-- Listen for signals from the server:
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:23:	An array of server middleware functions.
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:93:	@server
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:94:	Knit server-side lets developers create services and expose methods and signals
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:374:					print("Player is giving following args to server:", args)
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/client/KnitClientTest.client.luau:10:		print("Got event from server:", msg)
-/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/client/KnitClientTest.client.luau:14:		print("Result from server:", result)

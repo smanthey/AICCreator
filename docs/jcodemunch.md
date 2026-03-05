@@ -89,7 +89,7 @@ Once your MCP client is connected, here’s the fastest “3-step” flow to sta
 > This builds the server-side index so future queries are fast and cheap.
 
 ```json
-index_folder: { "path": "/Users/tatsheen/claw-architect" }
+index_folder: { "path": "$HOME/claw-architect" }
 
 ### 3. Core workflows for this repo (`claw-architect`)
 
@@ -98,7 +98,7 @@ index_folder: { "path": "/Users/tatsheen/claw-architect" }
 From any MCP client, ask it to call:
 
 ```text
-index_folder: { "path": "/Users/tatsheen/claw-architect" }
+index_folder: { "path": "$HOME/claw-architect" }
 ```
 
 This will:
@@ -207,7 +207,7 @@ get_symbol: {
 - If it is `false`, re-run:
   ```text
   invalidate_cache: { "repo": "local-claw-architect" }
-  index_folder: { "path": "/Users/tatsheen/claw-architect" }
+  index_folder: { "path": "$HOME/claw-architect" }
   ```
 
 ### 4. Using jCodeMunch with cloud APIs and Ollama

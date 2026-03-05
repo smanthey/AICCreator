@@ -18,7 +18,7 @@
  *   node scripts/daily-send-scheduler.js --reset      # reset ramp day counter (⚠️  careful)
  *
  * Run daily via cron:
- *   0 9 * * * cd /Users/tatsheen/claw-architect && node scripts/daily-send-scheduler.js >> logs/email-sends.log 2>&1
+ *   0 9 * * * cd $HOME/claw-architect && node scripts/daily-send-scheduler.js >> logs/email-sends.log 2>&1
  */
 "use strict";
 

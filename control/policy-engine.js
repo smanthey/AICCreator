@@ -45,7 +45,7 @@ function disallowedPath(pathValue) {
 }
 
 function getAllowedPrefixes() {
-  const homeDir = process.env.HOME || process.env.USERPROFILE || "/Users/tatsheen";
+  const homeDir = process.env.HOME || process.env.USERPROFILE || "$HOME";
   const raw = process.env.POLICY_ALLOWED_PATH_PREFIXES
     || `${homeDir}/claw-architect,${homeDir}/claw,/tmp`;
   return raw.split(",").map(s => s.trim()).filter(Boolean);

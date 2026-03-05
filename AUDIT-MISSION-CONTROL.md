@@ -401,7 +401,7 @@ to `./reports/` at project root
 ```javascript
 const REPORTS_DIR = path.join(__dirname, "..", "reports"); // project root
 ```
-Or make it an env var: `REPORTS_DIR=/Users/tatsheen/claw-architect/reports`
+Or make it an env var: `REPORTS_DIR=$HOME/claw-architect/reports`
 
 ---
 

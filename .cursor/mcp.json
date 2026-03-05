@@ -34,7 +34,7 @@
           "streaming_enabled": true
         }
       },
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     },
     "jcodemunch": {
       "command": "bash",
@@ -70,7 +70,7 @@
       "args": [
         "./scripts/jcodemunch-mcp.sh"
       ],
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     },
     "postgres": {
       "command": "bash",
@@ -120,7 +120,7 @@
       "args": [
         "./scripts/mcp-postgres.sh"
       ],
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     },
     "filesystem": {
       "command": "bash",
@@ -170,7 +170,7 @@
       "args": [
         "./scripts/mcp-filesystem.sh"
       ],
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     },
     "github": {
       "command": "bash",
@@ -213,7 +213,7 @@
       "args": [
         "./scripts/mcp-github.sh"
       ],
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     },
     "context7": {
       "command": "bash",
@@ -249,7 +249,7 @@
       "args": [
         "./scripts/mcp-context7.sh"
       ],
-      "cwd": "/Users/tatsheen/claw-architect"
+      "cwd": "$HOME/claw-architect"
     }
   }
 }

@@ -66,7 +66,7 @@ python3 -m pip install meshtastic pypubsub
 3. Start services:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run pm2:background:reload
 pm2 restart claw-architect-api claw-offgrid-meshtastic-bridge --update-env
 pm2 save

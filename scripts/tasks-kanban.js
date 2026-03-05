@@ -10,7 +10,7 @@ const HOME = os.homedir();
 const ROOT = path.join(HOME, "notes", "tasks");
 const TASKS_JSON = path.join(ROOT, "tasks.json");
 const RUNS_DIR = path.join(ROOT, "runs");
-const OWNER = String(process.env.TASKS_OWNER || "tatsheen").trim();
+const OWNER = String(process.env.TASKS_OWNER || "<USER>").trim();
 
 function nowIso() {
   return new Date().toISOString();

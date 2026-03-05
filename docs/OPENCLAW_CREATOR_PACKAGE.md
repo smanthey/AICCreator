@@ -29,14 +29,14 @@ For each run, output folder under `artifacts/openclaw-creator-pack/<timestamp>-<
 ## Run direct
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run openclaw:creator:pack -- --name "OpenClaw Creator Pack" --client "Creator Client" --complexity standard
 ```
 
 ## Queue run (system lane)
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run openclaw:creator:pack:queue -- --name "OpenClaw Creator Pack" --client "Creator Client" --complexity premium
 ```
 

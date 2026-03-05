@@ -31,7 +31,7 @@ Files added:
 From this repo:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run gitea:nas:bootstrap
 ```
 
@@ -72,7 +72,7 @@ This prevents agent collisions and keeps history clean.
 On each device/agent runtime, create a dedicated key:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run gitea:agent:key -- m3max-ai
 npm run gitea:agent:key -- m1-laptop-ai
 npm run gitea:agent:key -- m1-desktop-ai
@@ -95,7 +95,7 @@ Inside each git repo you want agents to push:
 ```bash
 cd /path/to/repo
 GITEA_HOST=192.168.1.164 GITEA_SSH_PORT=2222 AGENT_KEY_PATH=$HOME/.ssh/id_ed25519_m3max-ai_gitea \
-  npm run --prefix /Users/tatsheen/claw-architect gitea:remote:configure -- agents claw-architect gitea
+  npm run --prefix $HOME/claw-architect gitea:remote:configure -- agents claw-architect gitea
 ```
 
 First push:
@@ -125,14 +125,14 @@ Suggested roles:
 Backup Gitea state:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run gitea:nas:backup
 ```
 
 Restore from backup tarball:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run gitea:nas:restore -- /volume1/backups/gitea/gitea-data-YYYYMMDD-HHMMSS.tar.gz
 ```
 

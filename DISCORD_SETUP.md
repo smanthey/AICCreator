@@ -60,7 +60,7 @@ DISCORD_MODEL=claude-opus-4-5-20251101      # Claude model to use
 DISCORD_BROWSER_FALLBACK=true               # use Playwright when APIs are blocked
 
 # Backup repo (required for 4:30am backup)
-BACKUP_REPO_PATH=/Users/tatsheen/claw-architect-backup
+BACKUP_REPO_PATH=$HOME/claw-architect-backup
 BACKUP_REPO_GIT_URL=git@github.com:yourname/claw-architect-backup.git
 BACKUP_REPO_BRANCH=main
 ```

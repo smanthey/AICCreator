@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 
-const REPO_ROOT = process.env.WALLET_REPO_ROOT || '/Users/tatsheen/claw-repos';
+const REPO_ROOT = process.env.WALLET_REPO_ROOT || '$HOME/claw-repos';
 const TARGET_REPOS = [
   'SomaveaChaser',
   'CookiesPass',

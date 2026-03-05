@@ -8,19 +8,19 @@ Method: jCodeMunch symbol index + route/API mapping + build/test validation
 
 ### Newly fixed flow gaps
 - Checkout completion now closes invoice loop:
-  - Added `POST /webhooks/stripe` in [server.ts](/Users/tatsheen/claw-repos/payclaw/server/src/server.ts)
+  - Added `POST /webhooks/stripe` in [server.ts]($HOME/claw-repos/payclaw/server/src/server.ts)
   - Maps Stripe sessions back to invoices via `client_reference_id` and `metadata.invoiceId`
   - Sets invoice status to `paid`
 - Failure lifecycle now wired:
   - Handles `checkout.session.expired` and `checkout.session.async_payment_failed`
   - Sets invoice `payment_failed` unless already `paid`
 - Payment intent metadata now linked for stronger event correlation:
-  - Added metadata invoice binding in [stripe.ts](/Users/tatsheen/claw-repos/payclaw/server/src/stripe/stripe.ts)
+  - Added metadata invoice binding in [stripe.ts]($HOME/claw-repos/payclaw/server/src/stripe/stripe.ts)
 - Telnyx webhook connected on main app server:
-  - Added `POST /webhooks/telnyx` in [server.ts](/Users/tatsheen/claw-repos/payclaw/server/src/server.ts)
+  - Added `POST /webhooks/telnyx` in [server.ts]($HOME/claw-repos/payclaw/server/src/server.ts)
   - Calls shared inbound handler for STOP/HELP
 - Reminder engine no longer dead-ends after first touch:
-  - Fixed status/query logic in [cli.ts](/Users/tatsheen/claw-repos/payclaw/server/src/cli.ts)
+  - Fixed status/query logic in [cli.ts]($HOME/claw-repos/payclaw/server/src/cli.ts)
   - Processor now reads `queued/pending/blocked_missing_setup`
   - Enforces deterministic 3-touch cadence (Day 0, Day 3, Day 7)
   - Marks missing setup as `blocked_missing_setup` and retries when setup is completed
@@ -42,22 +42,22 @@ Method: jCodeMunch symbol index + route/API mapping + build/test validation
 
 ### Newly fixed unconnected systems in Tempe
 - Added missing SMS UI page:
-  - [AdminSMS.tsx](/Users/tatsheen/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminSMS.tsx)
+  - [AdminSMS.tsx]($HOME/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminSMS.tsx)
 - Wired admin route and sidebar navigation:
-  - [AdminGate.tsx](/Users/tatsheen/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminGate.tsx)
-  - [AdminLayout.tsx](/Users/tatsheen/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminLayout.tsx)
+  - [AdminGate.tsx]($HOME/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminGate.tsx)
+  - [AdminLayout.tsx]($HOME/claw-repos/TempeCookiesPass/client/src/pages/admin/AdminLayout.tsx)
 - Added Telnyx backend service:
-  - [telnyx.ts](/Users/tatsheen/claw-repos/TempeCookiesPass/server/services/telnyx.ts)
+  - [telnyx.ts]($HOME/claw-repos/TempeCookiesPass/server/services/telnyx.ts)
 - Added SMS persistence tables in schema:
-  - `sms_messages`, `sms_opt_outs` in [schema.ts](/Users/tatsheen/claw-repos/TempeCookiesPass/shared/schema.ts)
+  - `sms_messages`, `sms_opt_outs` in [schema.ts]($HOME/claw-repos/TempeCookiesPass/shared/schema.ts)
 - Added missing operational endpoints in Tempe routes:
   - `/api/cron/workflows`
   - `/api/cron/dutchie`
   - `/api/webhooks/telnyx`
   - `/api/admin/sms/*`
-  - File: [routes.ts](/Users/tatsheen/claw-repos/TempeCookiesPass/server/routes.ts)
+  - File: [routes.ts]($HOME/claw-repos/TempeCookiesPass/server/routes.ts)
 - Added missing env vars documentation:
-  - Telnyx + cron vars in [.env.example](/Users/tatsheen/claw-repos/TempeCookiesPass/.env.example)
+  - Telnyx + cron vars in [.env.example]($HOME/claw-repos/TempeCookiesPass/.env.example)
 
 ### Validation
 - `npm run check` ✅
@@ -72,13 +72,13 @@ Method: jCodeMunch symbol index + route/API mapping + build/test validation
 ### Newly fixed flow gaps
 - Mock-lab API safety gate added:
   - `/api/openclaw/mock/*` now requires `ENABLE_OPENCLAW_MOCK_LAB=true`
-  - File: [routes.ts](/Users/tatsheen/claw-repos/quantfusion/server/routes.ts)
+  - File: [routes.ts]($HOME/claw-repos/quantfusion/server/routes.ts)
 - Scanner services now initialize on demand before reading signals:
   - politician/options/whale scanner `start()` orchestration added
 - Scanner response transparency improved:
   - Added `integrationStatus` payload describing placeholder provider mode
 - Frontend no longer hangs when mock lab is disabled:
-  - Added explicit error-state rendering in [mock-trading-lab-panel.tsx](/Users/tatsheen/claw-repos/quantfusion/client/src/components/mock-trading-lab-panel.tsx)
+  - Added explicit error-state rendering in [mock-trading-lab-panel.tsx]($HOME/claw-repos/quantfusion/client/src/components/mock-trading-lab-panel.tsx)
 
 ### Validation
 - `npm run check` ✅

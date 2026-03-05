@@ -6,7 +6,7 @@ const path = require("path");
 const yaml = require("js-yaml");
 
 const ARGS = process.argv.slice(2);
-const ROOT = getArg("--root", process.env.CLAW_REPOS_ROOT || "/Users/tatsheen/claw-repos");
+const ROOT = getArg("--root", process.env.CLAW_REPOS_ROOT || "$HOME/claw-repos");
 const REPOS_ARG = getArg("--repos", "");
 const OUT_DIR = getArg("--out", path.join(process.cwd(), "reports", "capability-factory"));
 const PHASE = String(getArg("--phase", "all")).toLowerCase();

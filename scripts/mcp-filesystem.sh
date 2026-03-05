@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ROOT="${HOME:-/Users/tatsheen}"
+ROOT="${HOME:-$HOME}"
 WORKSPACE="$ROOT_DIR"
 REPOS="${CLAW_REPOS:-$HOME/claw-repos}"
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"

@@ -1,7 +1,0 @@
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Server/ServerScriptService/KnitServer.server.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Server/ServerScriptService/Services/ExampleService.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Server/ServerStorage/ExampleStorage.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Shared/Utils/ExampleUtil.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Client/ReplicatedFirst/LoadingScreen.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Client/PlayerScripts/KnitClient.client.lua
-/Users/tatsheen/claw-repos/oss-index/roblox/knit-starter/Source/Client/PlayerScripts/Controllers/ExampleController.lua

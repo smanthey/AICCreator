@@ -2,7 +2,7 @@
 
 ## Start
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run email:hub:server
 ```
 

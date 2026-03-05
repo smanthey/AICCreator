@@ -13,7 +13,7 @@ const { resolveRouting, isKnownTaskType } = require("../config/task-routing");
 const { buildTaskIdempotencyKey } = require("../control/idempotency");
 const { enqueueOnce } = require("../core/queue");
 
-const PAYCLAW_ROOT = process.env.PAYCLAW_REPO_PATH || "/Users/tatsheen/claw-repos/payclaw";
+const PAYCLAW_ROOT = process.env.PAYCLAW_REPO_PATH || "$HOME/claw-repos/payclaw";
 const MAIN_DIR = path.join(PAYCLAW_ROOT, "server", "src");
 const LITE_DIR = path.join(PAYCLAW_ROOT, "PayClaw-Lite", "server", "src");
 const REPORT_PATH = path.join(__dirname, "..", "reports", "payclaw-drift-latest.json");

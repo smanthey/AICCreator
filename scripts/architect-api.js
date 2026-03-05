@@ -5897,7 +5897,7 @@ async function onRequest(req, res) {
     }
 
     if (method === "GET" && pathname === "/api/local-alternatives/veritap") {
-      const repoPath = parsed.query?.repo_path || "/Users/tatsheen/claw-repos/veritap_2026";
+      const repoPath = parsed.query?.repo_path || "$HOME/claw-repos/veritap_2026";
       return jsonResponse(res, 200, scanVeritapServices(repoPath));
     }
 

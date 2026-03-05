@@ -26,7 +26,7 @@ Includes:
 npm run dev:pipeline:queue -- \
   --task "Implement X with Y constraints" \
   --task-slug x-y \
-  --repo-path /Users/tatsheen/claw-architect
+  --repo-path $HOME/claw-architect
 ```
 
 By default this runs in safe mode (`dry_run=true`).

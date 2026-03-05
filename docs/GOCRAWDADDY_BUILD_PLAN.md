@@ -23,7 +23,7 @@ GoCrawdaddy is the first net-new SaaS build lane: OpenClaw VPS hosting + operati
 
 ## Build orchestration
 Use `npm run gocrawdaddy:launch` to:
-1. Ensure `/Users/tatsheen/claw-repos/GoCrawdaddy` scaffold exists.
+1. Ensure `$HOME/claw-repos/GoCrawdaddy` scaffold exists.
 2. Register GoCrawdaddy in `managed_repos`.
 3. Queue research + signals + affiliate research tasks.
 4. Queue OpenCode implementation tasks for MVP build and landing conversion.

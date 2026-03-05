@@ -2,7 +2,7 @@
 
 All MCP tools used by Cursor/Claude in this workspace are launched via scripts under `scripts/` and configured in `.cursor/mcp.json`. This doc describes each server and how to keep them working.
 
-**Loading in Cursor:** Each server uses `command: "bash"`, `args: ["./scripts/..."]`, and `cwd` set to the repo root so Cursor starts them with the correct working directory. If your repo is not at `/Users/tatsheen/claw-architect`, run `npm run mcp:sync` (it injects the current repo path) or edit `cwd` in `.cursor/mcp.json` for each server.
+**Loading in Cursor:** Each server uses `command: "bash"`, `args: ["./scripts/..."]`, and `cwd` set to the repo root so Cursor starts them with the correct working directory. If your repo is not at `$HOME/claw-architect`, run `npm run mcp:sync` (it injects the current repo path) or edit `cwd` in `.cursor/mcp.json` for each server.
 
 ## Servers (in `.cursor/mcp.json`)
 

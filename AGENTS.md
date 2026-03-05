@@ -7,7 +7,7 @@ When exploring source code in GitHub or local projects, **always use MCP tools**
 
 1. **Index first**
    - Use the **jCodeMunch** MCP server (`jcodemunch` in `.cursor/mcp.json`).
-   - Run `index_folder` for the workspace root and any repo you will work in (e.g. `index_folder: { "path": "/Users/tatsheen/claw-architect" }`, and for `claw-repos/InayanBuilderBot`, `claw-repos/CookiesPass`, etc.).
+   - Run `index_folder` for the workspace root and any repo you will work in (e.g. `index_folder: { "path": "$HOME/claw-architect" }`, and for `claw-repos/InayanBuilderBot`, `claw-repos/CookiesPass`, etc.).
    - For GitHub repos use `index_repo` with the repo URL or `owner/repo`.
    - See `docs/MCP-INDEX-TARGETS.md` and `scripts/mcp-index-everything.sh` for the canonical list of paths to index.
 

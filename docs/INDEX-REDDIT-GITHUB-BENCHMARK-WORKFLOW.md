@@ -9,7 +9,7 @@ This doc ties together: **symbol indexing**, **Reddit/GitHub research**, **bench
 **Goal:** So Cursor and agents can use symbol-level search and outlines instead of opening whole files.
 
 - **Paths to index:** Run `./scripts/mcp-index-everything.sh` — each line is a path.
-- **How:** In Cursor, use the **jcodemunch** MCP server and call **index_folder** for each path (e.g. `index_folder: { "path": "/Users/tatsheen/claw-architect" }`). Use `use_ai_summaries: false` for faster runs.
+- **How:** In Cursor, use the **jcodemunch** MCP server and call **index_folder** for each path (e.g. `index_folder: { "path": "$HOME/claw-architect" }`). Use `use_ai_summaries: false` for faster runs.
 - **Docs:** `docs/MCP-INDEX-TARGETS.md`, `docs/jcodemunch.md`.
 
 ---

@@ -15,7 +15,7 @@ Build and sell ClawHub skills from real market pain signals.
 Run from:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 ```
 
 ### 1) Find marketplace gaps

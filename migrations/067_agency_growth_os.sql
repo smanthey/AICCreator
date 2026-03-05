@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS agency_accounts (
   source TEXT DEFAULT 'manual',
   status TEXT NOT NULL DEFAULT 'lead'
     CHECK (status IN ('lead','qualified','proposal_sent','client_active','client_paused','client_churned')),
-  owner TEXT DEFAULT 'tatsheen',
+  owner TEXT DEFAULT '<USER>',
   website TEXT,
   contact_name TEXT,
   contact_email TEXT,

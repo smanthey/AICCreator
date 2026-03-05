@@ -6,14 +6,14 @@ Use this on secondary devices so they contribute AI capacity without running con
 
 - Homebrew installed
 - Node.js/npm installed
-- Repo cloned at `/Users/tatsheen/claw-architect`
+- Repo cloned at `$HOME/claw-architect`
 
 Install required tools:
 
 ```bash
 brew install ollama
 npm i -g pm2
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm install
 ```
 
@@ -87,7 +87,7 @@ OPENAI_API_KEY=<dummy-or-real-key-required-by-that-server>
 Use a unique satellite name per device:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 SATELLITE_NAME=m1-laptop npm run pm2:ai-satellite:start
 # or on desktop:
 # SATELLITE_NAME=m1-desktop npm run pm2:ai-satellite:start
@@ -113,7 +113,7 @@ npm run ollama:maintenance
 On primary control machine:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run verify:topology
 npm run status:redgreen
 ```

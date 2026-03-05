@@ -31,8 +31,8 @@ If you install the five external skill repos (Anthropic skills, Superpowers, pla
 
 ## Example MCP calls (conceptual)
 
-- `index_folder: { "path": "/Users/tatsheen/claw-architect" }`
-- `index_folder: { "path": "/Users/tatsheen/claw-repos/InayanBuilderBot" }`
+- `index_folder: { "path": "$HOME/claw-architect" }`
+- `index_folder: { "path": "$HOME/claw-repos/InayanBuilderBot" }`
 - … one per path from `./scripts/mcp-index-everything.sh`
 
 Use `use_ai_summaries: false` for faster indexing when you don't need AI-generated symbol summaries.
@@ -53,7 +53,7 @@ Use `use_ai_summaries: false` for faster indexing when you don't need AI-generat
 
 1. **Verify servers:** `npm run mcp:health` (trigger, postgres, filesystem, github, jcodemunch, context7).
 2. **Sync config:** `npm run mcp:sync` — writes `.cursor/mcp.json` with `command`/`args`/`cwd` so Cursor starts each server correctly.
-3. **Open workspace at repo root** so `cwd` and `./scripts` resolve. If the repo is not at `/Users/tatsheen/claw-architect`, run `npm run mcp:sync` from your repo root (it injects the current path) or edit `cwd` in `.cursor/mcp.json`.
+3. **Open workspace at repo root** so `cwd` and `./scripts` resolve. If the repo is not at `$HOME/claw-architect`, run `npm run mcp:sync` from your repo root (it injects the current path) or edit `cwd` in `.cursor/mcp.json`.
 4. **Index before deep work:** Use jCodeMunch MCP and run `index_folder` for each path from `./scripts/mcp-index-everything.sh`.
 
 See `docs/MCP-SERVERS.md` for per-server details and `docs/INDEX-REDDIT-GITHUB-BENCHMARK-WORKFLOW.md` for Reddit/GitHub search and benchmarking.

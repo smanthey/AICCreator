@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const DEFAULT_VERITAP_PATH = "/Users/tatsheen/claw-repos/veritap_2026";
+const DEFAULT_VERITAP_PATH = "$HOME/claw-repos/veritap_2026";
 const DATA_DIR = path.join(__dirname, "../data/local-alternatives");
 const EMAIL_OUTBOX = path.join(DATA_DIR, "email-outbox.jsonl");
 const SMS_OUTBOX = path.join(DATA_DIR, "sms-outbox.jsonl");

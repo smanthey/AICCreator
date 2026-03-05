@@ -87,7 +87,7 @@ async function addAccount() {
   if (!name) throw new Error("--name is required");
   const segment = arg("--segment", "small_business");
   const source = arg("--source", "manual");
-  const owner = arg("--owner", "tatsheen");
+  const owner = arg("--owner", "<USER>");
   const website = arg("--website", null);
   const contactName = arg("--contact-name", null);
   const contactEmail = arg("--contact-email", null);

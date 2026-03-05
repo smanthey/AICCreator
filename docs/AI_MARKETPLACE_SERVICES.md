@@ -12,7 +12,7 @@ Package your capabilities as productized services and run intake/triage in one s
 ## Commands
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 
 npm run market:services:catalog
 npm run market:services:listings

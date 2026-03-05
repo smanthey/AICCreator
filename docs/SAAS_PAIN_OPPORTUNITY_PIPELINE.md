@@ -24,7 +24,7 @@ Focus audience:
 ## Run manually
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run saas:pain:report
 ```
 
@@ -92,7 +92,7 @@ PM2 app:
 Reload PM2 to apply:
 
 ```bash
-cd /Users/tatsheen/claw-architect
+cd $HOME/claw-architect
 npm run pm2:background:reload
 ```
 

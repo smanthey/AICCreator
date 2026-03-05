@@ -119,7 +119,7 @@ let redditTokenCache = null;
 async function getRedditAppToken() {
   const clientId = process.env.REDDIT_CLIENT_ID;
   const clientSecret = process.env.REDDIT_CLIENT_SECRET;
-  const userAgent = process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/tatsheen)";
+  const userAgent = process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/<USER>)";
   if (!clientId || !clientSecret) return null;
 
   if (redditTokenCache && redditTokenCache.expiresAt > Date.now() + 30000) {
@@ -157,7 +157,7 @@ async function getRedditAppToken() {
 async function redditOauthSearch(sub, query, limit) {
   const token = await getRedditAppToken();
   if (!token) return { ok: false, error: "reddit_oauth_unavailable", data: null };
-  const userAgent = process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/tatsheen)";
+  const userAgent = process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/<USER>)";
   const url = `https://oauth.reddit.com/r/${encodeURIComponent(sub)}/search?q=${encodeURIComponent(query)}&restrict_sr=1&sort=top&t=week&limit=${limit}&raw_json=1`;
   return fetchJson(url, {
     timeoutMs: 9000,
@@ -275,7 +275,7 @@ async function redditSearch() {
       if (!r || !r.ok) {
         const fallbackUrl = `https://www.reddit.com/r/${encodeURIComponent(sub)}/search.json?q=${encodeURIComponent(q)}&restrict_sr=1&sort=top&t=week&limit=${REDDIT_LIMIT_PER_QUERY}&raw_json=1`;
         r = await fetchJson(fallbackUrl, {
-          headers: { "User-Agent": process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/tatsheen)" },
+          headers: { "User-Agent": process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/<USER>)" },
           timeoutMs: 8000,
         });
         method = "public_json";
@@ -284,7 +284,7 @@ async function redditSearch() {
       if (!r || !r.ok) {
         const rssUrl = `https://www.reddit.com/r/${encodeURIComponent(sub)}/search.rss?q=${encodeURIComponent(q)}&restrict_sr=1&sort=top&t=week`;
         const rss = await fetchText(rssUrl, {
-          headers: { "User-Agent": process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/tatsheen)" },
+          headers: { "User-Agent": process.env.REDDIT_USER_AGENT || "server:claw-architect:1.0 (by /u/<USER>)" },
           timeoutMs: 8000,
         });
         if (rss.ok && rss.data) {

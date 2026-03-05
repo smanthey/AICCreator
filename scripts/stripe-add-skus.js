@@ -65,7 +65,7 @@ const NEW_SKUS = [
   },
   {
     // Confirmed from barcode asset:
-    // /Users/tatsheen/Library/Mobile Documents/com~apple~CloudDocs/smat/SynologyDrive/skynpatch/barcode/case/zzzzzz case00850053954474 ITF-14 SST2.png
+    // $HOME/Library/Mobile Documents/com~apple~CloudDocs/smat/SynologyDrive/skynpatch/barcode/case/zzzzzz case00850053954474 ITF-14 SST2.png
     key:         "sku_007",
     name:        "Zzzzzz — Sleep Support (Wholesale Case)",
     description: "Melatonin, L-Theanine, Magnesium, Passionflower, 5-HTP. " +

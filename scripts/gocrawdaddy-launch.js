@@ -371,7 +371,7 @@ async function main() {
   const clientName = String(arg("--name", "GoCrawdaddy"));
   const repoUrl = String(arg("--repo-url", "https://github.com/smanthey/GoCrawdaddy"));
   const branch = String(arg("--branch", "main"));
-  const localPath = String(arg("--local-path", "/Users/tatsheen/claw-repos/GoCrawdaddy"));
+  const localPath = String(arg("--local-path", "$HOME/claw-repos/GoCrawdaddy"));
   const domain = String(arg("--domain", "gocrawdaddy.com"));
   const includeScaffold = !has("--no-scaffold");
 

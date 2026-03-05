@@ -20,7 +20,7 @@ const { Pool } = require("pg");
 const ROOT = path.join(__dirname, "..");
 const LEADS_DIR = path.join(ROOT, "agent-state", "commerce", "leads");
 const LEADS_FILE = path.join(LEADS_DIR, "bot-leads.json");
-const REPO_DISCOVERY_ROOTS = (process.env.BOT_DISCOVERY_REPO_ROOTS || "/Users/tatsheen/claw-repos")
+const REPO_DISCOVERY_ROOTS = (process.env.BOT_DISCOVERY_REPO_ROOTS || "$HOME/claw-repos")
   .split(",")
   .map((p) => p.trim())
   .filter(Boolean);

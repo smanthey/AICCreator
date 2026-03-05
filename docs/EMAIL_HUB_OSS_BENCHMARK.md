@@ -14,8 +14,8 @@ Build one email hub for all sites instead of repeated per-repo send/webhook logi
 - [Appsmith](https://github.com/appsmithorg/appsmith): internal tool/dashboard builder patterns for rapid admin UIs.
 
 ## What We Already Had in `claw-architect`
-- Email provider abstraction in [`core/email.js`](/Users/tatsheen/claw-architect/core/email.js) and [`infra/send-email.js`](/Users/tatsheen/claw-architect/infra/send-email.js).
-- Webhook intake and signature verification patterns in [`scripts/webhook-server.js`](/Users/tatsheen/claw-architect/scripts/webhook-server.js).
+- Email provider abstraction in [`core/email.js`]($HOME/claw-architect/core/email.js) and [`infra/send-email.js`]($HOME/claw-architect/infra/send-email.js).
+- Webhook intake and signature verification patterns in [`scripts/webhook-server.js`]($HOME/claw-architect/scripts/webhook-server.js).
 - Existing repo mapping/indexing infrastructure to keep architecture visibility current.
 
 ## Gaps Identified vs OSS Patterns
@@ -25,7 +25,7 @@ Build one email hub for all sites instead of repeated per-repo send/webhook logi
 4. No unified event stream for per-site analytics across repos.
 
 ## Implemented in This Pass
-- New hub service: [`scripts/email-hub-server.js`](/Users/tatsheen/claw-architect/scripts/email-hub-server.js)
+- New hub service: [`scripts/email-hub-server.js`]($HOME/claw-architect/scripts/email-hub-server.js)
   - `POST /api/email-hub/v1/send`
   - `POST /api/email-hub/v1/webhooks/maileroo`
   - `POST /api/email-hub/v1/webhooks/resend`
@@ -34,7 +34,7 @@ Build one email hub for all sites instead of repeated per-repo send/webhook logi
   - `GET /api/email-hub/v1/flows`
   - `POST /api/email-hub/v1/flows`
   - `GET /api/email-hub/health`
-- New dashboard UI: [`dashboard/email-hub/index.html`](/Users/tatsheen/claw-architect/dashboard/email-hub/index.html)
+- New dashboard UI: [`dashboard/email-hub/index.html`]($HOME/claw-architect/dashboard/email-hub/index.html)
   - live metrics cards
   - quick-send form
   - flow editor (JSON action model)

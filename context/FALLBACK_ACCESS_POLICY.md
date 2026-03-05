@@ -2,7 +2,7 @@
 
 This repo now enforces API/HTTP-first access through the shared toolkit:
 
-- `/Users/tatsheen/claw-architect/scripts/agent-toolkit.js`
+- `$HOME/claw-architect/scripts/agent-toolkit.js`
 
 ## Order of operations
 
