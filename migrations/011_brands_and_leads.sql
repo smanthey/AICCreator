@@ -134,7 +134,7 @@ VALUES
     'plushtrap',
     'Plush Trap',
     'streetwear accessories & collectibles',
-    'https://plushtrap.com',
+    'https://examplebrand.com',
     '@plushtrap',
     '@plushtrap',
     'Retro-urban streetwear & collectibles. Hand-crafted plushies, hats, masks, bags, beanies. Gaming + skate culture, 3D-designed limited-edition drops.',

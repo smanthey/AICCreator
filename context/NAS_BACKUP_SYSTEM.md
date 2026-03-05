@@ -60,7 +60,7 @@ Before any dedupe removal, ensure each device has a verified NAS copy and a cent
 Example:
 
 ```bash
-BACKUP_DEVICE_NAME=MacBook-Pro-2.local
+BACKUP_DEVICE_NAME=PRIMARY_DEV_MACHINE
 NAS_BACKUP_ROOT=/Volumes/home/Storage/_claw_backup
 BACKUP_SOURCE_ROOTS=$HOME/Downloads|$HOME/Dropbox|$HOME/claw-repos
 ```

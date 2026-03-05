@@ -267,9 +267,9 @@ function buildCatalogProduct(row, source) {
 async function loadProductCatalog() {
   const catalog = [];
 
-  // Shopify catalog for plushtrap.com (live)
+  // Shopify catalog for examplebrand.com (live)
   try {
-    const plushtrap = await fetchJson("https://plushtrap.com/products.json?limit=250");
+    const plushtrap = await fetchJson("https://examplebrand.com/products.json?limit=250");
     const products = Array.isArray(plushtrap?.products) ? plushtrap.products : [];
     for (const p of products) {
       const item = buildCatalogProduct(
@@ -278,7 +278,7 @@ async function loadProductCatalog() {
           handle: p.handle,
           tags: typeof p.tags === "string" ? p.tags.split(",").map((x) => x.trim()) : [],
         },
-        "shopify:plushtrap.com"
+        "shopify:examplebrand.com"
       );
       if (item) catalog.push(item);
     }

@@ -210,7 +210,7 @@ async function main() {
 
   const backupReport = latestReportJson("-backup-verify-nas.json");
   const expectedNasRoot = path.resolve(String(process.env.NAS_BACKUP_ROOT || "/Volumes/home/Storage/_claw_backup"));
-  const expectedDevices = String(process.env.BACKUP_REQUIRED_DEVICES || "MacBook-Pro-2.local,Tatsheens-Mini,Mac")
+  const expectedDevices = String(process.env.BACKUP_REQUIRED_DEVICES || "PRIMARY_DEV_MACHINE,SECONDARY_DEV_MACHINE,Mac")
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean);

@@ -6,7 +6,7 @@
 
 ## Identity
 - **Name:** Scott
-- **Email:** jamonwidit@plushtrap.com
+- **Email:** creator@example.com
 - **Telegram:** Primary interface for all ClawdBot interactions
 - **Timezone:** Assumed US/Eastern (infer from message timestamps if needed)
 

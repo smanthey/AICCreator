@@ -15,7 +15,7 @@ const getArg = (f, fallback = "") => {
 
 const NAS_BACKUP_ROOT = path.resolve(String(getArg("--nas-root", process.env.NAS_BACKUP_ROOT || "/Volumes/home/Storage/_claw_backup")).trim());
 const FRESH_HOURS = Math.max(1, Number(getArg("--fresh-hours", process.env.BACKUP_VERIFY_FRESH_HOURS || "24")) || 24);
-const REQUIRED_DEVICES = String(getArg("--devices", process.env.BACKUP_REQUIRED_DEVICES || "MacBook-Pro-2.local,Tatsheens-Mini,Mac"))
+const REQUIRED_DEVICES = String(getArg("--devices", process.env.BACKUP_REQUIRED_DEVICES || "PRIMARY_DEV_MACHINE,SECONDARY_DEV_MACHINE,Mac"))
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);

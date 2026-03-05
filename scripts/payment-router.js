@@ -34,7 +34,7 @@
  *
  * SECONDARY: API Credits (pre-purchased bundles, zero per-transaction friction)
  *
- * Stripe account: jamonwidit@plushtrap.com → autopayagent
+ * Stripe account: creator@example.com → autopayagent
  *
  * Required env vars (add to .env):
  *   STRIPE_SECRET_KEY          — from Stripe Dashboard → Developers → API keys

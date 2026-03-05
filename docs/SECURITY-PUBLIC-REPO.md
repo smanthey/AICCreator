@@ -1,0 +1,28 @@
+# Public Repository Security
+
+## Policy
+
+This repository must not expose personal machine details, local usernames, or private credentials.
+
+## Rules
+
+- Never commit `.env` files
+- Never commit local virtual environments
+- Never commit runtime queue/result artifacts unless explicitly intended
+- Use `$HOME` placeholders in examples instead of absolute local paths
+- Use environment variables for all publish credentials and tokens
+
+## Verification Checks
+
+Run before every push:
+
+```bash
+rg -n '(/Users/|MacBook-Pro|PRIMARY_DEV_MACHINE|creator@example.com)' --glob '!.git/**' --glob '!node_modules/**' --glob '!.venv-openclaw-tools/**'
+```
+
+The command should return no personal identifiers in tracked documentation or config.
+
+## Branch Discipline
+
+- Use `main` as the single public release line
+- Avoid long-lived parallel release branches

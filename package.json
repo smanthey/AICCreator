@@ -1,5 +1,5 @@
 {
-  "name": "claw-architect",
+  "name": "aiccreator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -212,7 +212,7 @@
     "sales:daily-report": "node ./scripts/sales-daily-conversion-report.js",
     "daily:progress": "node ./scripts/daily-progress-report.js",
     "journal:learning": "node ./scripts/learning-journal-agent.js",
-    "journal:learning:email": "node ./scripts/learning-journal-agent.js --email-to jamonwidit@plushtrap.com",
+    "journal:learning:email": "node ./scripts/learning-journal-agent.js --email-to creator@example.com",
     "daily:fix": "node ./scripts/daily-fix-pulse.js",
     "sre:hourly": "node ./scripts/sre-hourly-triage.js",
     "sre:hourly:dry": "node ./scripts/sre-hourly-triage.js --dry-run",

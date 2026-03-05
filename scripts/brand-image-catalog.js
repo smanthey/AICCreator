@@ -23,7 +23,7 @@ function usageAndExit() {
       "  node scripts/brand-image-catalog.js --targets <comma-separated urls/domains/handles>",
       "",
       "Example:",
-      "  node scripts/brand-image-catalog.js --targets plushtrap.com,skynpatch.com,libidopatch.com,smatdesigns.com,zithappens.com,@plushtrapper,@ksynpatch",
+      "  node scripts/brand-image-catalog.js --targets examplebrand.com,skynpatch.com,libidopatch.com,smatdesigns.com,zithappens.com,@examplebrand,@ksynpatch",
     ].join("\n")
   );
   process.exit(1);
@@ -174,7 +174,7 @@ function csvEscape(v) {
 async function main() {
   const targetsArg =
     getArg("--targets", "") ||
-    "plushtrap.com,skynpatch.com,libidopatch.com,smatdesigns.com,zithappens.com,@plushtrapper,@ksynpatch";
+    "examplebrand.com,skynpatch.com,libidopatch.com,smatdesigns.com,zithappens.com,@examplebrand,@ksynpatch";
   const maxPages = Math.max(1, Math.min(80, Number(getArg("--max-pages", "20")) || 20));
   const maxImagesPerPage = Math.max(1, Math.min(250, Number(getArg("--max-images-per-page", "80")) || 80));
   const waitMs = Math.max(100, Math.min(5000, Number(getArg("--wait-ms", "700")) || 700));

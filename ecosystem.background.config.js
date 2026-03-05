@@ -285,14 +285,14 @@ module.exports = {
     {
       name: "claw-learning-journal-email",
       script: "scripts/learning-journal-agent.js",
-      args: "--hours 24 --email-to jamonwidit@plushtrap.com",
+      args: "--hours 24 --email-to creator@example.com",
       cwd: REPO,
       watch: false,
       autorestart: false,
       cron_restart: "30 7 * * *",
       env: {
         NODE_ENV: "production",
-        LEARNING_JOURNAL_EMAIL_TO: "jamonwidit@plushtrap.com",
+        LEARNING_JOURNAL_EMAIL_TO: "creator@example.com",
       },
       log_date_format: "YYYY-MM-DD HH:mm:ss",
     },
@@ -633,7 +633,7 @@ module.exports = {
       cron_restart: "5 */2 * * *",
       env: {
         NODE_ENV: "production",
-        BACKUP_DEVICE_NAME: "MacBook-Pro-2.local",
+        BACKUP_DEVICE_NAME: "PRIMARY_DEV_MACHINE",
         NAS_BACKUP_ROOT: "/Volumes/home/Storage/_claw_backup",
         BACKUP_SOURCE_ROOTS: "$HOME/Downloads|$HOME/Dropbox|$HOME/claw-repos",
         BACKUP_MAX_FILES: "4000",
@@ -650,7 +650,7 @@ module.exports = {
       env: {
         NODE_ENV: "production",
         NAS_BACKUP_ROOT: "/Volumes/home/Storage/_claw_backup",
-        BACKUP_REQUIRED_DEVICES: "MacBook-Pro-2.local,Tatsheens-Mini,Mac",
+        BACKUP_REQUIRED_DEVICES: "PRIMARY_DEV_MACHINE,SECONDARY_DEV_MACHINE,Mac",
         BACKUP_VERIFY_FRESH_HOURS: "30",
       },
       log_date_format: "YYYY-MM-DD HH:mm:ss",

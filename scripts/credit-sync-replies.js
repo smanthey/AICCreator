@@ -91,7 +91,12 @@ async function main() {
       const subject = parseSubject(headers);
       const fromHeader = headers.find((x) => String(x.name || "").toLowerCase() === "from")?.value || "";
       const actionHeader = headers.find((x) => String(x.name || "").toLowerCase() === "x-claw-credit-action-id")?.value || "";
-      const fromLooksExternal = !/jamonwidit@|plusthrap\.com|pluhstrap\.com|plushtrap\.com|@skynpatch\.com/i.test(fromHeader);
+      const internalDomainRegex = new RegExp(
+        process.env.CREDIT_SYNC_INTERNAL_DOMAIN_REGEX ||
+          "creator@example\\\\.com|example\\\\.internal",
+        "i"
+      );
+      const fromLooksExternal = !internalDomainRegex.test(fromHeader);
       if (
         fromLooksExternal &&
         (

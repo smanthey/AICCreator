@@ -1,155 +1,68 @@
 # AICCreator
 
-AICCreator is a production automation workspace for discovery, indexing, media intelligence, benchmarks, and multi-agent operations.
+AICCreator is an automated content operations system that turns research into publish-ready short-form campaigns.
 
-Think of it as an operations cockpit: less "toy demo," more "ship it, monitor it, and fix it before coffee gets cold."
+It provides:
+- Research ingestion (YouTube transcript indexing + benchmark/research context)
+- Campaign generation (template niche packs, scene plans, monetization packaging)
+- Distribution operations (YouTube/TikTok/Instagram scheduling and publish adapters)
+- Optimization loop (A/B scoring and winner promotion)
 
-## What This Repository Is
+## Quick Start
 
-- A task/worker architecture with deterministic and AI lanes
-- Media indexing pipeline (detect -> enrich -> hash -> cluster -> visual catalog)
-- OSS scouting/benchmark workflows
-- Dashboard and API surfaces for runtime operations
-- Agent orchestration and continuous maintenance scripts
+1. Install dependencies:
+```bash
+npm install
+```
 
-## OpenClawless Mode (No OpenClaw Required)
+2. Build a campaign from current research inputs:
+```bash
+npm run content-creator:pipeline
+npm run aicc:campaign
+```
 
-If the user does **not** have OpenClaw installed, use the built-in automation flow:
+3. Schedule distribution jobs:
+```bash
+npm run aicc:autopublish:schedule -- --video /absolute/path/to/final.mp4
+```
 
-1. `npm run openclawless:setup`
-2. `npm run oss:dashboard:benchmark`
-3. `npm run reddit:search`
-4. `npm run youtube:index:auto`
+4. Execute due scheduled posts:
+```bash
+npm run aicc:autopublish:run
+```
 
-macOS one-click launcher:
+5. Score variants and promote the winner:
+```bash
+npm run aicc:ab:score
+```
 
-- `launch-openclawless.command`
+One-command orchestration:
+```bash
+npm run aicc:system -- --topic "automated content creator" --niche ai-clone-news --variants 5 --video /absolute/path/to/final.mp4 --publish-due
+```
 
-This mode gives a practical baseline with no OpenClaw dependency:
+## Core Commands
 
-- Curated OSS dashboard/chat benchmark report
-- YouTube transcript + visual indexing report
-- Repeatable automation outputs under `reports/`
+- `npm run content-creator:pipeline`
+- `npm run aicc:campaign`
+- `npm run aicc:autopublish:schedule`
+- `npm run aicc:autopublish:run`
+- `npm run aicc:ab:score`
+- `npm run aicc:system`
 
-## New Automation Commands
+## Canonical Documentation
 
-- `npm run openclawless:setup`
-- `npm run oss:dashboard:benchmark`
-- `npm run youtube:index`
-- `npm run youtube:index:auto`
-- `npm run reddit:search`
-- `npm run reddit:research:auto`
-- `npm run masterpiece:auto`
+- [docs/README.md](docs/README.md)
+- [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md)
+- [docs/AICC-ARCHITECTURE.md](docs/AICC-ARCHITECTURE.md)
+- [docs/AUTOPUBLISH.md](docs/AUTOPUBLISH.md)
+- [docs/AB-TESTING.md](docs/AB-TESTING.md)
+- [docs/SECURITY-PUBLIC-REPO.md](docs/SECURITY-PUBLIC-REPO.md)
 
-## Automated Content Creator (AICC)
+## Public Repo Safety
 
-Run a full campaign system (research -> variants -> scheduling):
-
-1. `npm run content-creator:pipeline`
-2. `npm run aicc:campaign`
-3. `npm run aicc:autopublish:schedule -- --video /absolute/path/to/final.mp4`
-4. `npm run aicc:autopublish:run`
-5. `npm run aicc:ab:score`
-
-One-command orchestrator:
-
-- `npm run aicc:system -- --topic "ai clone news" --niche ai-clone-news --variants 5 --video /absolute/path/to/final.mp4 --publish-due`
-
-The AICC layer includes:
-
-- Auto-publish adapters (YouTube/TikTok/Instagram) with queue scheduling
-- Template-driven niche packs (`ai-clone-news`, `viral-faceless`, `product-ads`)
-- Scene quality engine (hook/body/CTA timing, transitions, beat timing, b-roll cues)
-- Voice/avatar provider abstraction (provider + preset in campaign variants)
-- A/B scoring loop (retention/CTR/watch-time winner promotion)
-- Monetization packaging (title/description/hashtags/thumbnail prompt + affiliate CTA blocks)
-
-## Schema mismatch & DB audit
-
-Check that migrations, database, and code stay in sync. Requires Postgres (set `CLAW_DB_*` or `POSTGRES_*`).
-
-| Command | Purpose |
-|--------|--------|
-| `npm run schema:audit` | Fast check: migrations vs applied, required tables/columns, invalid constraints/indexes, status enums. |
-| `npm run schema:audit:json` | Same as above, JSON output for automation (e.g. system-4h-checkfix). |
-| `npm run schema:audit:strict` | Same as above, but exit 1 on warnings as well as failures. |
-| `npm run schema:audit:comprehensive` | Deeper audit: code references vs DB, migration coverage, missing indexes, broken FKs, column mismatches. Writes `schema-audit-report.json`. |
-
-**Details:** [docs/SCHEMA-MISMATCH-TOOLS.md](docs/SCHEMA-MISMATCH-TOOLS.md) — failure codes, env, and when to run each.
-
-## Repo completion & builder research
-
-Gap analysis and research targets for the builder (and InayanBuilderBot):
-
-| Command | Purpose |
-|--------|--------|
-| `npm run repo:completion:gap` | Run gap analysis for one or all repos (capability factory + feature benchmark). |
-| `npm run repo:benchmark:lookup` | Emit GitHub search URLs and best-case refs per incomplete section → `reports/repo-completion-benchmark-lookup-latest.md`. |
-| `npm run builder:gap:pulse` | Run gap analysis for selected repos and queue repo_autofix + opencode_controller when gaps exist (passes `gap_context` with benchmark_lookup, issues). |
-| `npm run builder:research:agenda` | Build prioritized research agenda from gap report → `reports/builder-research-agenda-latest.json` and `.md` (GitHub + Reddit search suggestions per section and issue). |
-| `npm run convergence` | Archetype-based convergence: gap → completion contract per repo/archetype → pulse unsatisfied until all pass or max iterations. See [docs/CONVERGENCE-ARCHETYPE-CONTRACT.md](docs/CONVERGENCE-ARCHETYPE-CONTRACT.md). |
-| `npm run convergence:no-index` | Same as `convergence` but skip indexing step. |
-
-**Details:** [docs/INDEX-REDDIT-GITHUB-BENCHMARK-WORKFLOW.md](docs/INDEX-REDDIT-GITHUB-BENCHMARK-WORKFLOW.md) §10 (OpenClaw + InayanBuilderBot loop). [docs/CONVERGENCE-ARCHETYPE-CONTRACT.md](docs/CONVERGENCE-ARCHETYPE-CONTRACT.md) (archetype packs + completion contract + convergence runner).
-
-## Input/Output Contracts
-
-### YouTube Index Input
-
-- File: `data/youtube-urls.txt`
-- Format: one URL per line
-
-### YouTube Index Output
-
-- `reports/youtube-transcript-visual-index-latest.json`
-
-Includes:
-
-- per-video metadata
-- transcript presence/segments
-- visual keyshot signals (when tooling is available)
-- quality benchmark score
-
-### OSS Benchmark Output
-
-- `reports/oss-dashboard-benchmark-latest.json`
-- `reports/oss-dashboard-benchmark-latest.md`
-
-Includes ranked candidates by:
-
-- UI/chat/dashboard signal fit
-- model/provider signal fit
-- popularity + recency
-- framework-only penalty gate
-
-### Reddit Research Output
-
-- `reports/reddit-search-research-latest.json`
-- `reports/reddit-search-research-latest.md`
-
-Includes:
-
-- query-ranked posts by subreddit
-- engagement/relevance scoring
-- top recommendation shortlist for follow-up research
-
-## Runtime Prerequisites
-
-- Node.js 20+
-- Optional but recommended for full media extraction:
-  - `ffmpeg`
-  - `yt-dlp`
-
-If these binaries are missing, setup explains how to install them and the indexer still supports partial or dry-run operation.
-
-## Engineering Notes
-
-- Keep generated artifacts in `reports/` machine-readable first, human-readable second.
-- Keep scripts deterministic where possible; AI is additive, not a dependency for baseline ops.
-- Prefer small, composable scripts over giant god-scripts.
-
-## Operational Tone
-
-Professional, pragmatic, and slightly caffeinated.
-
-If a script fails, it should fail loud, explain why, and leave enough breadcrumbs to recover quickly.
+This repository is configured for public-safe defaults:
+- No personal absolute paths in docs
+- No personal hostnames in docs
+- Runtime artifacts are excluded from git
+- Distribution credentials are environment-variable driven

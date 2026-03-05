@@ -297,9 +297,9 @@ const TEMPLATES = {
 <p><a href="${esc(bundle.url)}" style="display:inline-block;background:#111;color:#f0c040;padding:10px 24px;text-decoration:none;font-weight:bold;border-radius:3px;">Build your order →</a></p>
 <p>Starter Bundle (all 4 core): <strong>${esc(bundle.price)}</strong> — <a href="${esc(bundle.url)}" style="font-weight:bold;color:#f0c040;">Order bundle →</a></p>
 ${skuTable}
-<p>— ${esc(brand.from_name || "Scott")}<br>${esc(brand.brand_email || "shop@skynpatch.com")}</p>
+<p>— ${esc(brand.from_name || "Team")}<br>${esc(brand.brand_email || "shop@skynpatch.com")}</p>
 <hr>
-<p style="font-size:11px;color:#999;">Skyn Patch · Tempe, AZ · <a href="https://skynpatch.com">skynpatch.com</a><br>To unsubscribe reply UNSUBSCRIBE or email <a href="mailto:unsubscribe@skynpatch.com">unsubscribe@skynpatch.com</a>.</p>`,
+<p style="font-size:11px;color:#999;">Skyn Patch · City, ST · <a href="https://skynpatch.com">skynpatch.com</a><br>To unsubscribe reply UNSUBSCRIBE or email <a href="mailto:unsubscribe@skynpatch.com">unsubscribe@skynpatch.com</a>.</p>`,
     };
   },
 
@@ -311,7 +311,7 @@ ${skuTable}
       html: `<p>Hi ${esc(lead.business_name)},</p>
 <p><strong>~58% margin</strong> — 7 SKUs, one order form. Shipping: $5 first case + $1 per additional.</p>
 <p><a href="${esc(bundle.url)}" style="display:inline-block;background:#111;color:#f0c040;padding:10px 24px;text-decoration:none;font-weight:bold;border-radius:3px;">Build your order →</a></p>
-<p>— ${esc(brand.from_name || "Scott")}<br>${esc(brand.brand_email || "shop@skynpatch.com")}</p>
+<p>— ${esc(brand.from_name || "Team")}<br>${esc(brand.brand_email || "shop@skynpatch.com")}</p>
 <hr>
 <p style="font-size:11px;color:#999;">Skyn Patch · <a href="https://skynpatch.com">skynpatch.com</a><br>Reply UNSUBSCRIBE to opt out.</p>`,
     };
@@ -320,13 +320,13 @@ ${skuTable}
   plushtrap_collab_intro: (lead, brand) => ({
     subject: `Collab / Wholesale — Plush Trap × ${esc(lead.business_name)}`,
     html: `<p>Hey ${esc(lead.business_name)},</p>
-<p>I'm ${esc(brand.from_name || "Scott")} from <strong>Plush Trap</strong> — we make retro-urban streetwear accessories and limited-edition collectibles (plushies, hats, masks) inspired by gaming and skate culture.</p>
+<p>I'm ${esc(brand.from_name || "Team")} from <strong>Plush Trap</strong> — we make retro-urban streetwear accessories and limited-edition collectibles (plushies, hats, masks) inspired by gaming and skate culture.</p>
 <p>I wanted to reach out about a potential wholesale or collab opportunity. Our drops sell fast and our community is passionate. If you carry accessories or collectibles, we'd love to explore being on your shelves or featured in your space.</p>
-<p>Check us out: <a href="https://plushtrap.com">plushtrap.com</a></p>
-<p>&mdash;${esc(brand.from_name || "Scott")}<br>${esc(brand.brand_email || "hello@plushtrap.com")}</p>
+<p>Check us out: <a href="https://examplebrand.com">examplebrand.com</a></p>
+<p>&mdash;${esc(brand.from_name || "Team")}<br>${esc(brand.brand_email || "hello@examplebrand.com")}</p>
 <hr>
 <p style="font-size:11px;color:#999;">
-  Plush Trap &middot; Tempe, AZ &middot; <a href="https://plushtrap.com">plushtrap.com</a><br>
+  Plush Trap &middot; City, ST &middot; <a href="https://examplebrand.com">examplebrand.com</a><br>
   Reply UNSUBSCRIBE to opt out.
 </p>`,
   }),
@@ -335,7 +335,7 @@ ${skuTable}
     const products = brand.stripe_products || getStripeProducts("blackwallstreetopoly");
     const standard = products?.standard || { name: "Wholesale Case Pack (10 units)", price: "$300", url: "https://www.etsy.com/listing/4329026086/black-wall-street-history-game-tulsa" };
     const volume = products?.volume;
-    const fromName = esc(brand.from_name || "Scott");
+    const fromName = esc(brand.from_name || "Team");
     const fromEmail = esc(brand.brand_email || "hello@blackwallstreetopoly.com");
     const volumeRow = volume
       ? `<tr><td style="padding:12px 16px;border-top:1px solid #2a2a2a;"><span style="font-size:13px;font-weight:bold;color:#fff;">${esc(volume.name)}</span><br><span style="font-size:12px;color:#aaa;">${esc(volume.price)}/case · $300 shipping at checkout · Best per-unit</span></td><td style="padding:12px 16px;border-top:1px solid #2a2a2a;text-align:right;"><a href="${esc(volume.url)}" style="display:inline-block;background:#d4a843;color:#111;font-size:12px;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:2px;">Checkout →</a></td></tr>`
@@ -389,7 +389,7 @@ register("send_email", async (payload) => {
   const apiKey = process.env.MAILEROO_API_KEY;
   const sender = await resolveBrandSender(
     brand_slug,
-    fromNameOverride || process.env.MAILEROO_FROM_NAME || "Scott",
+    fromNameOverride || process.env.MAILEROO_FROM_NAME || "Team",
     process.env.MAILEROO_FROM_EMAIL
   );
   const fromEmail = sender.fromEmail;
