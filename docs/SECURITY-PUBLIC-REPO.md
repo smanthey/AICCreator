@@ -17,7 +17,7 @@ This repository must not expose personal machine details, local usernames, or pr
 Run before every push:
 
 ```bash
-rg -n '(/Users/|MacBook-Pro|PRIMARY_DEV_MACHINE|creator@example.com)' --glob '!.git/**' --glob '!node_modules/**' --glob '!.venv-openclaw-tools/**'
+rg -n '(/Users/|MacBook-Pro|tatsheen|jamonwidit@|plushtrap\\.com)' --glob '!.git/**' --glob '!node_modules/**' --glob '!.venv-openclaw-tools/**'
 ```
 
 The command should return no personal identifiers in tracked documentation or config.
@@ -26,3 +26,7 @@ The command should return no personal identifiers in tracked documentation or co
 
 - Use `main` as the single public release line
 - Avoid long-lived parallel release branches
+
+## Push Rule Reference
+
+- See [PUSH-RULES.md](PUSH-RULES.md) for mandatory pre-push checks and InayanBuilderBot coordination requirements.

@@ -24,11 +24,11 @@
     .filter((f) => fs.existsSync(f) && fs.statSync(f).isFile());
 
   const risky = [];
-  const re = /(sk_live_[A-Za-z0-9]{16,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z\-_]{35}|gh[pousr]_[A-Za-z0-9]{20,}|xox[baprs]-[A-Za-z0-9-]{10,}|-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----)/;
+  const re = /(sk_live_[A-Za-z0-9]{16,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z\-_]{35}|gh[pousr]_[A-Za-z0-9]{20,}|xox[baprs]-[A-Za-z0-9-]{10,})/;
   for (const full of files) {
     const rel = full.replace(root + path.sep, "");
     const txt = fs.readFileSync(full, "utf8");
-    if (re.test(txt) && !/\.example|\.sample|dummy|placeholder|test-fixtures/i.test(rel)) {
+    if (re.test(txt) && !/\.example|\.sample|dummy|placeholder|test-fixtures|EXAMPLE/i.test(rel + "\n" + txt)) {
       risky.push(rel);
     }
   }

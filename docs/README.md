@@ -12,6 +12,7 @@ This is the canonical documentation set for the public AICCreator repository.
 - [OPERATIONS.md](OPERATIONS.md): operational runbook
 - [SECURITY-PUBLIC-REPO.md](SECURITY-PUBLIC-REPO.md): public repo hardening and privacy checklist
 - [MIGRATION.md](MIGRATION.md): what changed from legacy docs and how to migrate
+- [PUSH-RULES.md](PUSH-RULES.md): mandatory push rules for public releases and privacy
 
 ## Source of Truth
 

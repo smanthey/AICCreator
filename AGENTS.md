@@ -1,6 +1,12 @@
 <!-- TRIGGER.DEV basic START -->
 # Trigger.dev Basic Tasks (v4)
 
+## Public Push Rule
+
+- Before any push to this public repository, run `npm run public:safety:check`.
+- Public release branch is `main` only.
+- If a change touches InayanBuilderBot integrations, include the related AICCreator docs update in the same push.
+
 ## Code Exploration Standard: Always Use MCP + Symbol Index Everything
 
 When exploring source code in GitHub or local projects, **always use MCP tools** and **symbol-index everything** before deep work.

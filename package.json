@@ -462,6 +462,7 @@
     "aicc:autopublish:publish-now": "node ./scripts/aicc-autopublish.js publish-now --campaign ./reports/aicc-campaign-latest.json",
     "aicc:ab:score": "node ./scripts/aicc-ab-loop.js --campaign ./reports/aicc-campaign-latest.json --metrics ./reports/aicc-metrics-latest.json",
     "aicc:system": "node ./scripts/aicc-system-build.js",
+    "public:safety:check": "node ./scripts/public-safety-check.js",
     "oss:dashboard:benchmark": "node ./scripts/oss-dashboard-benchmark.js",
     "exemplar:repos": "node ./scripts/exemplar-repos-from-reports.js",
     "masterpiece:auto": "npm run -s openclawless:setup && npm run -s oss:dashboard:benchmark && npm run -s dashboard:repo:scout && npm run -s exemplar:repos && npm run -s reddit:search && npm run -s exemplar:repos && npm run -s youtube:index:auto",
