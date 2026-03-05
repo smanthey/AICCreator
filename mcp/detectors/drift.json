@@ -1,0 +1,66 @@
+[
+  {
+    "id": "drift_stripe_webhook",
+    "type": "search_symbols",
+    "domain": "stripe",
+    "query": "webhook",
+    "kind": "function",
+    "allowed_path_prefixes": ["core/stripe", "src/core/stripe", "packages/core/stripe"],
+    "severity": "high",
+    "message": "Stripe webhook logic found outside core/stripe; refactor to core handler or delegate to it."
+  },
+  {
+    "id": "drift_stripe_checkout",
+    "type": "search_symbols",
+    "domain": "stripe",
+    "query": "createCheckoutSession",
+    "kind": "function",
+    "allowed_path_prefixes": ["core/stripe", "src/core/stripe", "packages/core/stripe"],
+    "severity": "high",
+    "message": "Stripe checkout/session logic found outside core/stripe; refactor to shared implementation."
+  },
+  {
+    "id": "drift_email_send",
+    "type": "search_symbols",
+    "domain": "email",
+    "query": "sendEmail",
+    "kind": "function",
+    "allowed_path_prefixes": ["core/email", "src/core/email", "packages/core/email"],
+    "severity": "medium",
+    "message": "Email sending logic found outside core/email; refactor to use core/email send APIs."
+  },
+  {
+    "id": "drift_queue_enqueue",
+    "type": "search_symbols",
+    "domain": "queue",
+    "query": "enqueue",
+    "kind": "function",
+    "allowed_path_prefixes": ["core/queue", "src/core/queue", "packages/core/queue"],
+    "severity": "medium",
+    "message": "Queue enqueue logic found outside core/queue; consolidate to shared queue helpers."
+  },
+  {
+    "id": "drift_mcp_tool_policy_descriptions",
+    "type": "json_assert",
+    "domain": "mcp",
+    "file": "config/mcp-tool-policy.json",
+    "path": "$.tools[*]",
+    "required_fields": ["id", "use_when", "do_not_use_when"],
+    "severity": "high",
+    "message": "MCP tool policy must define strict use_when/do_not_use_when descriptions for routing control."
+  },
+  {
+    "id": "drift_mcp_remote_oauth_least_privilege",
+    "type": "json_assert",
+    "domain": "mcp",
+    "file": "config/mcp-remote-oauth-policy.json",
+    "path": "$.remote_mcp",
+    "required_values": {
+      "oauth.required": true,
+      "oauth.default_scope_strategy": "least_privilege",
+      "writes.no_broad_write_by_default": true
+    },
+    "severity": "high",
+    "message": "Remote MCP policy drift: OAuth/least-privilege/no broad writes must remain enabled."
+  }
+]

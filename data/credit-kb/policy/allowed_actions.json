@@ -1,0 +1,35 @@
+{
+  "bureau_dispute": [
+    "duplicate_collection",
+    "duplicate_tradeline",
+    "balance_mismatch",
+    "date_inconsistency",
+    "mixed_file_indicator",
+    "unauthorized_inquiry",
+    "collection_status_validation",
+    "not_mine_account"
+  ],
+  "furnisher_dispute": [
+    "balance_mismatch",
+    "date_inconsistency",
+    "duplicate_tradeline",
+    "transfer_validation_needed",
+    "collection_status_validation"
+  ],
+  "debt_validation": [
+    "collection_validation_needed",
+    "duplicate_collection"
+  ],
+  "utilization_tuneup": [
+    "high_utilization"
+  ],
+  "goodwill_request": [
+    "late_payment_goodwill"
+  ],
+  "cfpb_escalation": [
+    "bureau_nonresponse",
+    "collector_nonresponse",
+    "furnisher_nonresponse",
+    "verification_without_substance"
+  ]
+}

@@ -1,0 +1,113 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:21:return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/logStrings.luau:27:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/identifierMap.luau:21:	return nameToId[name]
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/identifierMap.luau:25:	return idToName[id]
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/identifierMap.luau:28:return identifierMap
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/process.luau:19:		return logger:fatal(string.format(logStrings.errors.ACCESS_WITHOUT_INITIALIZATION, func))
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/process.luau:57:return client
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/identifiers.luau:31:return client
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/parallelBridge.luau:9:	return logger:fatal(string.format(logStrings.errors.PARALLEL_DISALLOWED, name))
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/parallelBridge.luau:23:		return logger:fatal(logStrings.errors.ACCESS_WITHOUT_INITIALIZATION)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/parallelBridge.luau:35:		return logger:fatal(logStrings.errors.ID_TIMEOUT_EXHAUSTED)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/parallelBridge.luau:40:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/parallelBridge.luau:69:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/bridge.luau:8:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/client/bridge.luau:25:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/logger.luau:8:	return `{split[#split - 1]}/{split[#split]}`
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/logger.luau:25:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/logger.luau:37:	return error(`[bn2/{self._name}] {text}`, 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/logger.luau:40:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/api.luau:3:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverSerial.luau:7:return function(): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverSerial.luau:12:		return logger:fatal("exiting bridgenet2")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:54:	return tree
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:60:		return result(false, logStrings.errors.INSTANCE_NOT_FOUND)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:64:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:69:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:74:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:79:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:84:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:89:		return result(false, logStrings.errors.INSTANCE_NOT_VALID)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:102:	return result(true, tree)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:105:return function(fresh: boolean?): result.Identity<Identity>
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:107:		return result(true, cached)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:112:			return result(true, create())
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:114:			return find()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/dataModelTree.luau:117:		return find()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverActor.luau:1:return function() end
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/clientSerial.luau:7:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/clientSerial.luau:12:		return logger:fatal("exiting bridgenet2")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/types.luau:21:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/deserializer.luau:9:	return idToSignal[id] ~= nil
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/deserializer.luau:14:	return idToSignal[id]
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/deserializer.luau:18:	return idToSignal[id]
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/deserializer.luau:67:return deserializer
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/clientActor.luau:1:return function() end
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/util/result.luau:10:return (
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/util/result.luau:14:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/util/result.luau:19:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/dev.luau:15:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:13:		return logger:fatal(string.format(logStrings.errors.ACCESS_WITHOUT_INITIALIZATION, func))
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:32:	return counter
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:35:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/makeDirectories.luau:9:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/spawnSourcemap.luau:3:return function(watch: boolean?): thread
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/spawnSourcemap.luau:13:	return spawnProcess("rojo", parameters)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:2:	return string.gsub(buffer.tostring(buff), ".", function(c)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:3:		return string.format("%03i ", string.byte(c :: any))
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:14:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:17:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:20:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:27:	return n == max
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:32:		return bufferToDecimal(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:36:		return tostring(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:39:	return string.format("%q", value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:44:		return ""
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:48:		return `[{tostring(key)}] =`
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:53:		return `{key} = `
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:56:	return `[{string.format("%q", key)}] = `
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:89:			return typeSortOrder[typeofTableA] < typeSortOrder[typeofTableB]
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:93:			return a < b
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:96:		return tostring(a) < tostring(b)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:170:	return output
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:176:	return bufferToDecimal(buff)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/utils.luau:191:return utils
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/serializer.luau:36:	return outgoingEvents
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/serializer.luau:39:return serializer
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:26:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:46:	return self._signal:connect(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:58:	return self._signal:once(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:61:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/tests.luau:18:		return require(path) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/tests.luau:46:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/tests.luau:63:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/tests.luau:68:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:38:			return utils.bufferFormatted(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:42:	return `\{\n{table.concat(lines, ",\n")}\n\}`
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:47:		return printTable(value :: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:49:		return utils.bufferFormatted(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:51:		return tostring(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:59:		return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:64:		return math.abs(a - b) < 0.0001
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:79:				return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:92:					return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:97:		return true, nil
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:102:			return false, "{1} ~= {2}"
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:108:				return false, `\{1\}[{i}] ~= \{2\}[{i}]`
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:112:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:116:		return true, nil
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:120:	return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:144:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:163:	return function(): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:168:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:174:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:179:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:183:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:186:	return function(name: string, test: (interface: Interface) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/suite.luau:189:		return cases
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/installWallyDependencies.luau:7:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/spawnDarklua.luau:3:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:93:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/installGitDependencies.luau:6:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/external/data/styles.luau:7:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/lune/core.spec.luau:15:return eof()

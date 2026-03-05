@@ -1,0 +1,40 @@
+[dotenv@17.3.1] injecting env (118) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+✅ Postgres connected
+✅ Postgres connected
+
+=== Claw System Gap Analysis ===
+
+┌─────────┬─────────────────────┬────────────────────────────────┬────────┬──────────────────────────────────────────────────────┐
+│ (index) │ phase               │ check                          │ status │ detail                                               │
+├─────────┼─────────────────────┼────────────────────────────────┼────────┼──────────────────────────────────────────────────────┤
+│ 0       │ 'Credit'            │ 'reports_loaded'               │ 'PASS' │ 'reports=6'                                          │
+│ 1       │ 'Credit'            │ 'items_parsed'                 │ 'PASS' │ 'items=106'                                          │
+│ 2       │ 'Credit'            │ 'issues_actionable'            │ 'PASS' │ 'open_issues=39 active_actions=6'                    │
+│ 3       │ 'Credit'            │ 'gmail_oauth_prod_ready'       │ 'PASS' │ 'requires GOOGLE_OAUTH_* env'                        │
+│ 4       │ 'Credit'            │ 'outcome_learning_loop'        │ 'WARN' │ 'outcomes=0 learning_events=0'                       │
+│ 5       │ 'Skynpatch'         │ 'email_sends_exist'            │ 'PASS' │ 'sends=122'                                          │
+│ 6       │ 'Skynpatch'         │ 'delivery_signal'              │ 'PASS' │ 'delivered=36'                                       │
+│ 7       │ 'Skynpatch'         │ 'engagement_signal'            │ 'PASS' │ 'opened=36 clicked=36'                               │
+│ 8       │ 'Skynpatch'         │ 'order_attribution'            │ 'PASS' │ 'orders=0 attributed=0'                              │
+│ 9       │ 'RepoNormalization' │ 'strict_scan'                  │ 'PASS' │ 'pass=39 fail=0'                                     │
+│ 10      │ 'RepoNormalization' │ 'critical_baseline_violations' │ 'PASS' │ 'critical=0'                                         │
+│ 11      │ 'GlobalE2E'         │ 'blocking_failures'            │ 'PASS' │ 'blocking_failures=0'                                │
+│ 12      │ 'GlobalE2E'         │ 'target_count'                 │ 'PASS' │ 'targets=11'                                         │
+│ 13      │ 'Background'        │ 'workers_heartbeat'            │ 'PASS' │ 'workers_ok=true'                                    │
+│ 14      │ 'Background'        │ 'github_pulse_recent'          │ 'PASS' │ 'github_recent=true'                                 │
+│ 15      │ 'Background'        │ 'security_pulse_recent'        │ 'FAIL' │ 'security_recent=false'                              │
+│ 16      │ 'Background'        │ 'status_pulse_recent'          │ 'PASS' │ 'status_recent=true'                                 │
+│ 17      │ 'Security'          │ 'sweep_pass'                   │ 'FAIL' │ 'failed_steps=1'                                     │
+│ 18      │ 'Security'          │ 'remediation_queue_active'     │ 'PASS' │ 'active_remediation_tasks=0'                         │
+│ 19      │ 'EmailPlatform'     │ 'control_plane_schema'         │ 'PASS' │ 'brands=62 provisioning_tasks=61 provision_runs=124' │
+│ 20      │ 'EmailPlatform'     │ 'flow_seeded'                  │ 'PASS' │ 'flows=3'                                            │
+└─────────┴─────────────────────┴────────────────────────────────┴────────┴──────────────────────────────────────────────────────┘
+score=86 pass=18 warn=1 fail=2
+
+Hard blockers:
+- [Background] security_pulse_recent: security_recent=false
+- [Security] sweep_pass: failed_steps=1
+
+Soft gaps:
+- [Credit] outcome_learning_loop: outcomes=0 learning_events=0

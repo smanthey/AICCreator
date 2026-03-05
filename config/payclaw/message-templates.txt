@@ -1,0 +1,26 @@
+# PayClaw locked message templates (canonical)
+# Creators implement these; do not invent new copy. Placeholders: {{business_name}}, {{customer_name}}, {{invoice_number}}, {{amount}}, {{due_date}}, {{payment_link}}, {{business_phone}}, {{description}}
+
+# --- EMAIL ---
+# Subject:
+Invoice Reminder from {{business_name}}
+
+# Body:
+Hi {{customer_name}},
+
+We hope you're well. This is a friendly reminder that invoice #{{invoice_number}} for {{description}} in the amount of ${{amount}} is due on {{due_date}}.
+
+You can pay securely at the link below:
+{{payment_link}}
+
+If you have any questions, reply to this email or call us at {{business_phone}}.
+
+Thank you for your prompt attention.
+– {{business_name}}
+
+# --- SMS ---
+# Primary template (spec canonical; include STOP + HELP for compliance):
+{{business_name}}: Invoice {{invoice_id}} for ${{amount}} is due. Pay here: {{short_link}} Reply STOP to opt out. HELP for help.
+
+# Alternate (longer, with description):
+{{business_name}} invoice reminder: Please pay ${{amount}} for {{description}}. Pay securely: {{payment_link}} Questions? Contact {{business_phone}}. Reply STOP to unsubscribe.

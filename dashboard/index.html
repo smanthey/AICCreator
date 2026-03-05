@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClawdBot Architect Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --border: #2d3a4d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79b8ff;
+      --success: #3fb950;
+      --danger: #f85149;
+      --warning: #d29922;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .layout {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    header p {
+      margin: 0.25rem 0 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .api-key-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .quick-actions {
+      display: flex;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+    .quick-actions button {
+      color: var(--accent);
+      font-size: 0.8rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.38rem 0.58rem;
+      background: var(--bg);
+      cursor: pointer;
+    }
+    .quick-actions button:hover {
+      border-color: var(--accent);
+    }
+    .api-key-row input {
+      flex: 1;
+      max-width: 280px;
+      padding: 0.4rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.85rem;
+    }
+    .chat-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .progress-wrap {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(circle at 0% 0%, rgba(88,166,255,0.08), transparent 45%), #121a24;
+    }
+    .progress-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .progress-head h2 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .progress-head .muted {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .progress-actions button {
+      padding: 0.45rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+    }
+    .tab-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .tab-btn {
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.82rem;
+    }
+    .tab-btn.active {
+      color: var(--text);
+      border-color: var(--accent);
+      background: rgba(88, 166, 255, 0.14);
+    }
+    .tab-pane[hidden] { display: none !important; }
+    .report-controls {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin: 0.4rem 0 0.75rem;
+      align-items: end;
+    }
+    .report-controls label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .report-controls select {
+      min-width: 160px;
+      padding: 0.38rem 0.5rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.82rem;
+    }
+    .freshness-chip {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.14rem 0.5rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .freshness-chip.red {
+      border-color: rgba(248, 81, 73, 0.7);
+      color: #ff8c84;
+    }
+    .freshness-chip.yellow {
+      border-color: rgba(210, 153, 34, 0.7);
+      color: #e7ba58;
+    }
+    .freshness-chip.green {
+      border-color: rgba(63, 185, 80, 0.7);
+      color: #73d07f;
+    }
+    .actions-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .actions-table th,
+    .actions-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 0.4rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .actions-table th {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .lane-chip {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.12rem 0.4rem;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .row-actions {
+      display: flex;
+      gap: 0.35rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .action-btn {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.28rem 0.55rem;
+      font-size: 0.75rem;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    .action-btn:hover { border-color: var(--accent); }
+    .action-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+    .progress-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.65rem;
+      margin-bottom: 0.75rem;
+    }
+    .metric-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem;
+      background: var(--surface);
+    }
+    .metric-card .label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .metric-card .value {
+      font-size: 1.05rem;
+      font-weight: 650;
+    }
+    .metric-card .sub {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin-top: 0.65rem;
+    }
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.7rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08)), var(--surface);
+      min-height: 140px;
+    }
+    .status-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+    }
+    .status-pill {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.45rem 0.6rem;
+      background: rgba(13, 17, 23, 0.8);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .panel h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
+    }
+    .panel ul {
+      margin: 0;
+      padding-left: 1rem;
+      font-size: 0.82rem;
+    }
+    .panel ol {
+      margin: 0;
+      padding-left: 1rem;
+      font-size: 0.82rem;
+    }
+    .panel li {
+      margin: 0.35rem 0;
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      border-bottom: 1px dashed var(--border);
+      padding: 0.35rem 0;
+      font-size: 0.8rem;
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.8rem;
+    }
+    .ok { color: var(--success); }
+    .warn { color: var(--warning); }
+    .bad { color: var(--danger); }
+    .message {
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      max-width: 95%;
+    }
+    .message.user {
+      align-self: flex-end;
+      background: var(--accent);
+      color: #0d1117;
+    }
+    .message.architect {
+      align-self: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    .message .meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .message.user .meta { color: rgba(0,0,0,0.5); }
+    .message .content { white-space: pre-wrap; word-break: break-word; }
+    .message.loading { opacity: 0.8; }
+    .message .tasks-list {
+      margin-top: 0.75rem;
+      padding-left: 1rem;
+      font-size: 0.9rem;
+    }
+    .message .tasks-list li {
+      margin: 0.25rem 0;
+    }
+    .approval-buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .approval-buttons button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .approval-buttons button.approve {
+      background: var(--success);
+      color: #0d1117;
+    }
+    .approval-buttons button.reject {
+      background: var(--danger);
+      color: white;
+    }
+    .approval-buttons button.confirm {
+      background: var(--warning);
+      color: #0d1117;
+    }
+    .approval-buttons button:hover { opacity: 0.9; }
+    .approval-buttons button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .plan-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--accent);
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .plan-link:hover { text-decoration: underline; }
+    .input-row {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .input-row input[type="text"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .input-row input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .input-row button {
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      border: none;
+      background: var(--accent);
+      color: #0d1117;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .input-row button:hover { background: var(--accent-hover); }
+    .input-row button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .input-row label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+    .input-row input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+    }
+    .plan-detail {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--bg);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    .plan-detail h4 {
+      margin: 0 0 0.75rem;
+      font-size: 0.95rem;
+    }
+    .plan-detail .task {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .plan-detail .task:last-child { border-bottom: none; }
+    .plan-detail .task .status {
+      display: inline-block;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+    .plan-detail .task .status.CREATED,
+    .plan-detail .task .status.PENDING { background: var(--text-muted); }
+    .plan-detail .task .status.RUNNING { background: var(--warning); color: #0d1117; }
+    .plan-detail .task .status.COMPLETED { background: var(--success); color: #0d1117; }
+    .plan-detail .task .status.FAILED,
+    .plan-detail .task .status.DEAD_LETTER { background: var(--danger); }
+    .plan-detail .task .status.DISPATCHED { background: var(--accent); color: #0d1117; }
+    .plan-detail .task .error {
+      font-size: 0.8rem;
+      color: var(--danger);
+      margin-top: 0.25rem;
+    }
+    .error-msg {
+      color: var(--danger);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 980px) {
+      .two-col,
+      .three-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <h1>ClawdBot Architect</h1>
+      <p>Executive Mission Control for system lanes, queue orchestration, audit findings, and one-click recovery.</p>
+      <div class="api-key-row">
+        <input type="password" id="apiKey" placeholder="API Key (optional)" autocomplete="off" />
+        <div class="quick-actions">
+          <button type="button" id="quickDiagnoseBtn">Diagnose</button>
+          <button type="button" id="quickFixBtn">Fix Top</button>
+          <button type="button" id="quickStatusBtn">Refresh Status</button>
+          <button type="button" id="quickE2eBtn">Run E2E</button>
+          <button type="button" id="quickRepoBtn">Run Repo Scan</button>
+          <button type="button" id="quickResearchBtn">Regenerate Research</button>
+          <button type="button" id="reduceLoadBtn" style="background: var(--warning); color: #fff; border-color: var(--warning);">💾 Reduce Local Load</button>
+          <button type="button" id="resumeLoadBtn" style="background: var(--success); color: #fff; border-color: var(--success); display: none;">▶️ Resume Local Work</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="progress-wrap">
+      <div id="pm2Warning" style="display: none; background: var(--warning); color: #fff; padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 0.75rem; font-size: 0.85rem;">
+        <strong>⚠️ PM2 Persistence Warning:</strong> Some processes may not be running under PM2. 
+        Close terminals to test persistence. Run <code style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.4rem; border-radius: 3px;">npm run pm2:check</code> to verify.
+      </div>
+      <div class="status-strip">
+        <div class="status-pill" id="statusStripGlobal">Global: loading...</div>
+        <div class="status-pill" id="statusStripQueue">Queue: loading...</div>
+        <div class="status-pill" id="statusStripFindings">Findings: loading...</div>
+        <div class="status-pill" id="statusStripUpdated">Updated: loading...</div>
+      </div>
+      <div class="quick-actions" style="margin-bottom:0.75rem;">
+        <button type="button" id="statusDiagnoseBtn">Diagnose & Explain</button>
+        <button type="button" id="statusFixBtn">Fix Priority Blockers</button>
+        <button type="button" id="statusFixCycleBtn">Run Fix Cycle (bounded)</button>
+      </div>
+      <div class="tab-row">
+        <button type="button" class="tab-btn active" data-tab="overview">Overview</button>
+        <button type="button" class="tab-btn" data-tab="systems">Systems</button>
+        <button type="button" class="tab-btn" data-tab="agents">Agents</button>
+        <button type="button" class="tab-btn" data-tab="jobs_queue">Jobs / Queue</button>
+        <button type="button" class="tab-btn" data-tab="leads_credit">Leads / Credit</button>
+        <button type="button" class="tab-btn" data-tab="qa_e2e">QA / E2E</button>
+        <button type="button" class="tab-btn" data-tab="research_copy">Research / Copy</button>
+        <button type="button" class="tab-btn" data-tab="reports">Reports</button>
+        <button type="button" class="tab-btn" data-tab="bot_payments">Bot Payments</button>
+        <button type="button" class="tab-btn" data-tab="history">History</button>
+        <button type="button" class="tab-btn" data-tab="chat">Chat</button>
+      </div>
+
+      <div id="tabOverview" class="tab-pane">
+        <div class="progress-head">
+          <div>
+            <h2>Overview</h2>
+            <div class="muted" id="overviewMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshOverviewBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        
+        <!-- Hero KPI Section -->
+        <div class="panel" style="margin-bottom: 0.75rem; background: linear-gradient(135deg, rgba(88,166,255,0.12), rgba(88,166,255,0.04)); border-color: var(--accent);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+            <h3 style="margin: 0; font-size: 0.95rem; font-weight: 600;">Command Center KPIs</h3>
+            <button type="button" id="heroRefreshBtn" style="padding: 0.3rem 0.6rem; font-size: 0.75rem; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); cursor: pointer;">What changed in the last 24h</button>
+          </div>
+          <div id="heroKpiSection" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem;">
+            <!-- Will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="progress-grid" id="overviewCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Live Lanes</h3>
+          <div id="dynamicLaneBoard" class="three-col"></div>
+        </div>
+        
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>One-Click Control Actions</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Lane</th>
+                <th>Status</th>
+                <th>Last Result</th>
+                <th>Controls</th>
+              </tr>
+            </thead>
+            <tbody id="actionsTableBody"></tbody>
+          </table>
+        </div>
+        
+        <div class="two-col" style="margin-bottom: 0.75rem;">
+          <div class="panel">
+            <h3>Blockers</h3>
+            <ul id="overviewIssuesList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Recommended Next Actions</h3>
+            <ul id="overviewRecommendationsList"></ul>
+          </div>
+        </div>
+        
+        <!-- History Table -->
+        <div class="panel">
+          <h3>Run History (Last 20)</h3>
+          <table class="actions-table" style="font-size: 0.8rem;">
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Status</th>
+                <th>Age</th>
+                <th>Duration</th>
+                <th>Outcome</th>
+                <th>Run</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="tabSystems" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>Systems</h2>
+            <div class="muted" id="systemsMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshSystemsBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="systemsCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>System Health Overview</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Lane</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Online</th>
+                <th>Total</th>
+                <th>Health</th>
+              </tr>
+            </thead>
+            <tbody id="systemsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Process Health by Lane</h3>
+            <ul id="systemsList"></ul>
+          </div>
+          <div class="panel">
+            <h3>System Findings + Runbooks</h3>
+            <ul id="systemsFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabAgents" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>Agents</h2>
+            <div class="muted" id="agentsMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshAgentsBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="agentsCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Agent Status Overview</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Agent Group</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Online</th>
+                <th>Total</th>
+                <th>Last Activity</th>
+              </tr>
+            </thead>
+            <tbody id="agentsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Agent Groups</h3>
+            <ul id="agentsList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Agent Findings + Actions</h3>
+            <ul id="agentsFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabJobsQueue" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>Jobs / Queue</h2>
+            <div class="muted" id="jobsMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshJobsBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="jobsCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Queue Status</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Count</th>
+                <th>Age</th>
+                <th>Tag</th>
+                <th>Priority</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="jobsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Queue Snapshot</h3>
+            <ul id="jobsQueueList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Queue Findings</h3>
+            <ul id="jobsFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabLeadsCredit" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>Leads / Credit</h2>
+            <div class="muted" id="leadsMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshLeadsBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="leadsCards"></div>
+        <div class="two-col" style="margin-bottom: 0.65rem;">
+          <div class="panel">
+            <h3>Mail stats</h3>
+            <table class="actions-table">
+              <thead>
+                <tr>
+                  <th>Brand</th>
+                  <th>Sent today</th>
+                  <th>Delivered</th>
+                  <th>Opened</th>
+                  <th>Clicked</th>
+                </tr>
+              </thead>
+              <tbody id="leadsMailStatsBody"></tbody>
+            </table>
+          </div>
+          <div class="panel">
+            <h3>Skyn Patch sales</h3>
+            <ul id="leadsSalesList"></ul>
+          </div>
+        </div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Brand Sender Status</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Status</th>
+                <th>Email</th>
+                <th>Provisioning</th>
+                <th>Last Send</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="leadsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Brand Sender Readiness</h3>
+            <ul id="leadsBrandsList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Lane Findings</h3>
+            <ul id="leadsFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabQaE2e" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>QA / E2E</h2>
+            <div class="muted" id="qaMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshQaBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="qaCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>QA Test Results</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Test Type</th>
+                <th>Status</th>
+                <th>Failures</th>
+                <th>Blocking</th>
+                <th>Last Run</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="qaTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Launch + QA Signals</h3>
+            <ul id="qaSignalsList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Findings + Runbooks</h3>
+            <ul id="qaFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabResearchCopy" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>Research / Copy</h2>
+            <div class="muted" id="researchMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshResearchBtn" type="button">Refresh</button>
+            <button id="regenerateResearchBtn" type="button">Regenerate Now</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="researchCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Research Insights</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Count</th>
+                <th>Last Updated</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="researchTableBody"></tbody>
+          </table>
+        </div>
+        <div class="three-col">
+          <div class="panel">
+            <h3>Copy Suggestions</h3>
+            <ul id="researchCopyList"></ul>
+          </div>
+          <div class="panel">
+            <h3>UX Suggestions</h3>
+            <ul id="researchUxList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Apply-Ready Snippets</h3>
+            <ul id="researchSnippetsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabBotPayments" class="tab-pane" hidden>
+        <div class="progress-wrap">
+          <div class="progress-head">
+            <div>
+              <h2>Bot Payment System</h2>
+              <p class="muted">Revenue, credits, conversions, and payment analytics</p>
+            </div>
+            <div class="progress-actions">
+              <button type="button" onclick="refreshTab('bot_payments')">🔄 Refresh</button>
+            </div>
+          </div>
+          <div class="progress-grid"></div>
+        </div>
+      </div>
+      <div id="tabReports" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div><h2>Reports</h2><div class="muted" id="reportsMeta">Loading...</div></div>
+          <div class="progress-actions"><button id="refreshReportsBtn" type="button">Refresh</button></div>
+        </div>
+        <div class="progress-grid" id="reportsCards"></div>
+        <div class="report-controls">
+          <label>Lane
+            <select id="reportsLaneFilter">
+              <option value="all">All lanes</option>
+            </select>
+          </label>
+          <label>Freshness
+            <select id="reportsSeverityFilter">
+              <option value="all">All</option>
+              <option value="red">Red</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+            </select>
+          </label>
+          <label>Sort
+            <select id="reportsSortBy">
+              <option value="recency_desc">Most stale first</option>
+              <option value="recency_asc">Newest first</option>
+              <option value="lane">Lane</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+        <div class="panel">
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Lane</th>
+                <th>Freshness</th>
+                <th>Last Run</th>
+                <th>Last Result</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <div class="panel"><h3>Report Detail</h3><ul id="reportDetailList"></ul></div>
+          <div class="panel"><h3>Run History</h3><ul id="reportHistoryList"></ul></div>
+        </div>
+        <div class="panel" id="reportContentPanel" style="display: none; margin-top: 0.75rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+            <h3 style="margin: 0;">Report Content</h3>
+            <button type="button" id="closeReportContentBtn" class="action-btn" style="font-size: 0.75rem;">Close</button>
+          </div>
+          <div id="reportContentDisplay" style="max-height: 600px; overflow-y: auto; font-family: monospace; font-size: 0.85rem; background: var(--bg); padding: 1rem; border-radius: 6px; border: 1px solid var(--border); white-space: pre-wrap; word-wrap: break-word;"></div>
+        </div>
+      </div>
+
+      <div id="tabHistory" class="tab-pane" hidden>
+        <div class="progress-head">
+          <div>
+            <h2>History</h2>
+            <div class="muted" id="historyMeta">Loading...</div>
+          </div>
+          <div class="progress-actions">
+            <button id="refreshHistoryBtn" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="progress-grid" id="historyCards"></div>
+        <div class="panel" style="margin-bottom: 0.65rem;">
+          <h3>Recent Activity Timeline</h3>
+          <table class="actions-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Age</th>
+                <th>Details</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+        <div class="three-col">
+          <div class="panel">
+            <h3>Run Timeline</h3>
+            <ul id="historyTimelineList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Recent Plans</h3>
+            <ul id="historyPlansList"></ul>
+          </div>
+          <div class="panel">
+            <h3>Cross-Lane Blockers</h3>
+            <ul id="historyFindingsList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="tabChat" class="chat-area tab-pane" hidden></div>
+    </section>
+
+    <div class="input-row">
+      <input type="text" id="goalInput" placeholder="Tell OpenClaw what to do in plain language (e.g. fix queue blockers and run QA)" autocomplete="off" />
+      <label>
+        <input type="checkbox" id="useOrchestrator" checked />
+        Execute tasks (plain language)
+      </label>
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const state = { activeTab: "overview", cache: {}, inFlightTabs: {}, reportSelectedId: null, lastQueue: null, learning: null, learningFetchedAt: 0 };
+    const tabButtons = Array.from(document.querySelectorAll(".tab-btn"));
+    const tabEls = {
+      overview: document.getElementById("tabOverview"),
+      systems: document.getElementById("tabSystems"),
+      agents: document.getElementById("tabAgents"),
+      jobs_queue: document.getElementById("tabJobsQueue"),
+      leads_credit: document.getElementById("tabLeadsCredit"),
+      qa_e2e: document.getElementById("tabQaE2e"),
+      research_copy: document.getElementById("tabResearchCopy"),
+      reports: document.getElementById("tabReports"),
+      bot_payments: document.getElementById("tabBotPayments"),
+      history: document.getElementById("tabHistory"),
+      chat: document.getElementById("tabChat"),
+    };
+    const tabEndpoint = {
+      overview: "/api/dashboard/overview",
+      systems: "/api/dashboard/systems",
+      agents: "/api/dashboard/agents",
+      jobs_queue: "/api/dashboard/jobs",
+      leads_credit: "/api/dashboard/leads-credit",
+      qa_e2e: "/api/dashboard/qa-e2e",
+      research_copy: "/api/dashboard/research-copy",
+      reports: "/api/dashboard/reports",
+      bot_payments: "/api/dashboard/bot-payments",
+      history: "/api/dashboard/history",
+    };
+
+    const apiKeyInput = document.getElementById("apiKey");
+    const goalInput = document.getElementById("goalInput");
+    const useOrchestrator = document.getElementById("useOrchestrator");
+    const sendBtn = document.getElementById("sendBtn");
+    const chatArea = document.getElementById("tabChat");
+
+    const statusStripGlobal = document.getElementById("statusStripGlobal");
+    const statusStripQueue = document.getElementById("statusStripQueue");
+    const statusStripFindings = document.getElementById("statusStripFindings");
+    const statusStripUpdated = document.getElementById("statusStripUpdated");
+    const quickFixBtn = document.getElementById("quickFixBtn");
+    const statusFixBtn = document.getElementById("statusFixBtn");
+    const statusFixCycleBtn = document.getElementById("statusFixCycleBtn");
+
+    const refs = {
+      overviewMeta: document.getElementById("overviewMeta"),
+      overviewCards: document.getElementById("overviewCards"),
+      dynamicLaneBoard: document.getElementById("dynamicLaneBoard"),
+      overviewIssuesList: document.getElementById("overviewIssuesList"),
+      overviewRecommendationsList: document.getElementById("overviewRecommendationsList"),
+      systemsMeta: document.getElementById("systemsMeta"),
+      systemsCards: document.getElementById("systemsCards"),
+      systemsList: document.getElementById("systemsList"),
+      systemsFindingsList: document.getElementById("systemsFindingsList"),
+      agentsMeta: document.getElementById("agentsMeta"),
+      agentsCards: document.getElementById("agentsCards"),
+      agentsList: document.getElementById("agentsList"),
+      agentsFindingsList: document.getElementById("agentsFindingsList"),
+      jobsMeta: document.getElementById("jobsMeta"),
+      jobsCards: document.getElementById("jobsCards"),
+      jobsQueueList: document.getElementById("jobsQueueList"),
+      jobsFindingsList: document.getElementById("jobsFindingsList"),
+      leadsMeta: document.getElementById("leadsMeta"),
+      leadsCards: document.getElementById("leadsCards"),
+      leadsBrandsList: document.getElementById("leadsBrandsList"),
+      leadsFindingsList: document.getElementById("leadsFindingsList"),
+      qaMeta: document.getElementById("qaMeta"),
+      qaCards: document.getElementById("qaCards"),
+      qaSignalsList: document.getElementById("qaSignalsList"),
+      qaFindingsList: document.getElementById("qaFindingsList"),
+      researchMeta: document.getElementById("researchMeta"),
+      researchCards: document.getElementById("researchCards"),
+      researchCopyList: document.getElementById("researchCopyList"),
+      researchUxList: document.getElementById("researchUxList"),
+      researchSnippetsList: document.getElementById("researchSnippetsList"),
+      reportsMeta: document.getElementById("reportsMeta"),
+      reportsCards: document.getElementById("reportsCards"),
+      reportsLaneFilter: document.getElementById("reportsLaneFilter"),
+      reportsSeverityFilter: document.getElementById("reportsSeverityFilter"),
+      reportsSortBy: document.getElementById("reportsSortBy"),
+      reportsTableBody: document.getElementById("reportsTableBody"),
+      reportDetailList: document.getElementById("reportDetailList"),
+      reportHistoryList: document.getElementById("reportHistoryList"),
+      historyMeta: document.getElementById("historyMeta"),
+      historyCards: document.getElementById("historyCards"),
+      historyTimelineList: document.getElementById("historyTimelineList"),
+      historyPlansList: document.getElementById("historyPlansList"),
+      historyFindingsList: document.getElementById("historyFindingsList"),
+      actionsTableBody: document.getElementById("actionsTableBody"),
+    };
+    let autoRefreshTimer = null;
+    let sse = null;
+    let sseThrottleAt = 0;
+
+    const savedApiKey = localStorage.getItem("architect_api_key");
+    if (savedApiKey && apiKeyInput) apiKeyInput.value = savedApiKey;
+    if (apiKeyInput) {
+      apiKeyInput.addEventListener("change", () => {
+        localStorage.setItem("architect_api_key", apiKeyInput.value.trim());
+        startEventStream();
+      });
+      apiKeyInput.addEventListener("blur", () => {
+        localStorage.setItem("architect_api_key", apiKeyInput.value.trim());
+        startEventStream();
+      });
+    }
+
+    function getHeaders() {
+      const h = { "Content-Type": "application/json" };
+      const key = apiKeyInput?.value?.trim();
+      if (key) h["Authorization"] = "Bearer " + key;
+      return h;
+    }
+
+    function apiFallbackBases() {
+      const out = [];
+      const current = `${location.protocol}//${location.hostname}${location.port ? `:${location.port}` : ""}`;
+      out.push(current);
+      const altHost = location.hostname === "localhost" ? "127.0.0.1" : "localhost";
+      out.push(`${location.protocol}//${altHost}:${location.port || "4051"}`);
+      out.push(`${location.protocol}//127.0.0.1:4051`);
+      out.push(`${location.protocol}//localhost:4051`);
+      return [...new Set(out)];
+    }
+
+    function buildApiUrl(base, url) {
+      if (/^https?:\/\//i.test(url)) return url;
+      return `${base}${url}`;
+    }
+
+    async function fetchApi(url, options = {}) {
+      const timeoutMs = Number(options.timeoutMs || 25000);
+      const method = String(options.method || "GET").toUpperCase();
+      const retries = Number(options.retries ?? (method === "GET" ? 1 : 0));
+      let lastErr = null;
+      const bases = apiFallbackBases();
+
+      for (const base of bases) {
+        const finalUrl = buildApiUrl(base, url);
+        for (let attempt = 0; attempt <= retries; attempt += 1) {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), timeoutMs);
+          try {
+            const res = await fetch(finalUrl, {
+              cache: "no-store",
+              ...options,
+              signal: controller.signal,
+              headers: { ...getHeaders(), ...options.headers },
+            });
+            const text = await res.text();
+            let json = null;
+            try { json = text ? JSON.parse(text) : null; } catch {}
+            if (!res.ok) {
+              const err = new Error(json?.error || res.statusText || "Request failed");
+              err.status = res.status;
+              err.json = json;
+              throw err;
+            }
+            return json;
+          } catch (err) {
+            const isAbort = err?.name === "AbortError" || /aborted/i.test(String(err?.message || ""));
+            const isFetchFail = /failed to fetch|networkerror|network request failed/i.test(String(err?.message || ""));
+            if (isAbort) {
+              lastErr = new Error(`Request timed out after ${timeoutMs}ms`);
+            } else {
+              lastErr = err;
+            }
+            if (attempt < retries && (isAbort || isFetchFail || Number(err?.status || 0) >= 500)) {
+              await new Promise((r) => setTimeout(r, 250 * (attempt + 1)));
+              continue;
+            }
+            // If current base looks wrong (common when dashboard isn't served from architect-api), try next base.
+            const status = Number(err?.status || 0);
+            const canTryAnotherBase = !/^https?:\/\//i.test(url) && (isFetchFail || status === 404 || status === 0);
+            if (!canTryAnotherBase) throw lastErr;
+            break;
+          } finally {
+            clearTimeout(timeout);
+          }
+        }
+      }
+
+      throw lastErr || new Error("Request failed");
+    }
+
+    function escapeHtml(s) {
+      const div = document.createElement("div");
+      div.textContent = s == null ? "" : String(s);
+      return div.innerHTML;
+    }
+
+    function fmtIso(iso) {
+      if (!iso) return "n/a";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return String(iso);
+      return d.toISOString();
+    }
+
+    function card(label, value, sub = "") {
+      return `<div class="metric-card"><div class="label">${escapeHtml(label)}</div><div class="value">${escapeHtml(value)}</div>${sub ? `<div class="sub">${escapeHtml(sub)}</div>` : ""}</div>`;
+    }
+
+    function renderCards(el, cards = []) {
+      el.innerHTML = cards.map((c) => card(c.label, c.value, c.sub || "")).join("");
+    }
+
+    function renderList(el, items, emptyText = "No data") {
+      if (!items || !items.length) {
+        el.innerHTML = `<li class="mono">${escapeHtml(emptyText)}</li>`;
+        return;
+      }
+      el.innerHTML = items.map((x) => `<li>${escapeHtml(typeof x === "string" ? x : JSON.stringify(x))}</li>`).join("");
+    }
+
+    function setTab(tab) {
+      if (!tabEls[tab]) tab = "overview";
+      state.activeTab = tab;
+      tabButtons.forEach((b) => b.classList.toggle("active", b.dataset.tab === tab));
+      Object.entries(tabEls).forEach(([k, el]) => {
+        if (!el) return;
+        if (k === tab) el.removeAttribute("hidden");
+        else el.setAttribute("hidden", "hidden");
+      });
+      location.hash = `tab=${tab}`;
+      setAutoRefresh();
+      loadActiveTab(false);
+    }
+
+    function renderStatusStrip(envelope) {
+      const ss = envelope?.status_summary || {};
+      statusStripGlobal.textContent = `Global: ${ss.overall || "unknown"} (${ss.green || 0}G/${ss.yellow || 0}Y/${ss.red || 0}R)`;
+      const envelopeQueue = envelope?.data?.queue;
+      if (envelopeQueue && typeof envelopeQueue === "object") {
+        state.lastQueue = envelopeQueue;
+      }
+      const queue = state.lastQueue || state.cache.jobs_queue?.data?.queue || {};
+      statusStripQueue.textContent = `Queue: created ${queue.created || 0} | pending ${queue.pending || 0} | running ${queue.running || 0}`;
+      statusStripFindings.textContent = `Findings: ${ss.total || 0}`;
+      statusStripUpdated.textContent = `Updated: ${envelope?.generated_at || new Date().toISOString()}`;
+      setFixControlsVisible(shouldShowFixControls(envelope));
+    }
+
+    function shouldShowFixControls(envelope) {
+      const activeIssues = envelope?.data?.active_issues || envelope?.active_issues || {};
+      const openIncidents = Number(activeIssues.openIncidents ?? activeIssues.open_incidents ?? 0);
+      const failingChecks = Number(activeIssues.failingChecks ?? activeIssues.failing_checks ?? 0);
+      const regressionDetected = Boolean(activeIssues.regressionDetected ?? activeIssues.regression_detected ?? false);
+      return openIncidents > 0 || failingChecks > 0 || regressionDetected;
+    }
+
+    function setFixControlsVisible(visible) {
+      [quickFixBtn, statusFixBtn, statusFixCycleBtn].forEach((el) => {
+        if (!el) return;
+        el.style.display = visible ? "" : "none";
+      });
+    }
+
+    async function loadLearningProgress(force = false) {
+      const age = Date.now() - Number(state.learningFetchedAt || 0);
+      if (!force && state.learning && age < 30000) return state.learning;
+      try {
+        const learning = await fetchApi("/api/progress/learning?window=7d");
+        state.learning = learning;
+        state.learningFetchedAt = Date.now();
+      } catch {
+        state.learning = state.learning || { newPatterns: [], newLibraries: [], meta: { generatedAt: new Date().toISOString() } };
+      }
+      return state.learning;
+    }
+
+    function renderDynamicLaneBoard(overviewData, learningData) {
+      if (!refs.dynamicLaneBoard) return;
+      const needs = overviewData?.data?.needs_attention || [];
+      const recs = overviewData?.data?.recommendations || [];
+      const activeIssues = overviewData?.data?.active_issues || overviewData?.active_issues || {};
+      const showFix = shouldShowFixControls(overviewData);
+      const patterns = (learningData?.newPatterns || []).slice(0, 4);
+      const libraries = (learningData?.newLibraries || []).slice(0, 4);
+      const findings = (overviewData?.findings || []).slice().sort((a, b) => {
+        const sev = { red: 3, yellow: 2, green: 1 };
+        const sd = (sev[String(b?.severity || "").toLowerCase()] || 0) - (sev[String(a?.severity || "").toLowerCase()] || 0);
+        if (sd !== 0) return sd;
+        return String(a?.id || "").localeCompare(String(b?.id || ""));
+      });
+
+      const nowItems = [
+        ...findings.slice(0, 4).map((f) => `[${String(f.severity || "unknown").toUpperCase()}] ${f.title}`),
+        ...needs.slice(0, 4),
+      ].slice(0, 6);
+
+      const nowLane = `<div class="panel"><h3>Now</h3><ul>${(nowItems.length ? nowItems : ["No active operational changes right now."]).map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul></div>`;
+
+      const learningVisible = patterns.length > 0 || libraries.length > 0;
+      const learningLane = learningVisible
+        ? `<div class="panel"><h3>Learning</h3><ul>${
+            patterns.map((p) => `<li>pattern: ${escapeHtml(p.title || p.id)} (${escapeHtml(String(p.score || 0))})</li>`).join("") +
+            libraries.map((l) => `<li>library: ${escapeHtml(l.name)} (${escapeHtml(String(l.checksCompleted || 0))} checks)</li>`).join("")
+          }</ul></div>`
+        : "";
+
+      const openIncidents = Number(activeIssues.openIncidents ?? activeIssues.open_incidents ?? 0);
+      const failingChecks = Number(activeIssues.failingChecks ?? activeIssues.failing_checks ?? 0);
+      const regressionDetected = Boolean(activeIssues.regressionDetected ?? activeIssues.regression_detected ?? false);
+      const fixOrQuiet = showFix
+        ? `<div class="panel"><h3>Fix</h3><ul><li>open incidents: ${escapeHtml(String(openIncidents))}</li><li>failing checks: ${escapeHtml(String(failingChecks))}</li><li>regression detected: ${escapeHtml(String(regressionDetected))}</li></ul></div>`
+        : `<div class="panel"><h3>Quiet</h3><ul><li>All systems healthy.</li>${(recs.slice(0, 3).map((r) => `<li>${escapeHtml(r)}</li>`).join("") || "<li>Surface optimization opportunities next.</li>")}</ul></div>`;
+
+      refs.dynamicLaneBoard.innerHTML = `${nowLane}${learningLane}${fixOrQuiet}`;
+    }
+
+    function shouldSseRefresh() {
+      if (document.hidden) return false;
+      const now = Date.now();
+      if (now - sseThrottleAt < 5000) return false;
+      sseThrottleAt = now;
+      return true;
+    }
+
+    async function runAction(actionId, requestedBy = "dashboard") {
+      return fetchApi(`/api/dashboard/actions/${encodeURIComponent(actionId)}/run`, {
+        method: "POST",
+        body: JSON.stringify({ requested_by: requestedBy }),
+      });
+    }
+
+    function findingActionId(f) {
+      if (!f) return null;
+      if (f.action_id) return f.action_id;
+      if (f.command) {
+        const actions = state.cache.overview?.actions || [];
+        const found = actions.find((a) => a.command === f.command);
+        return found?.id || null;
+      }
+      return null;
+    }
+
+    function renderFindingsWithAction(el, findings = [], emptyText = "No findings.") {
+      if (!findings.length) {
+        el.innerHTML = `<li class="mono">${escapeHtml(emptyText)}</li>`;
+        return;
+      }
+      el.innerHTML = findings.map((f) => {
+        const actionId = findingActionId(f);
+        const fixBtn = actionId
+          ? `<button class="action-btn" data-fix-action="${escapeHtml(actionId)}">fix</button>`
+          : "";
+        return `<li><span class="mono">[${escapeHtml(f.severity || "unknown")}]</span> ${escapeHtml(f.title || "")}${f.command ? ` <span class="mono">(${escapeHtml(f.command)})</span>` : ""} ${fixBtn}</li>`;
+      }).join("");
+      el.querySelectorAll("[data-fix-action]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const actionId = btn.getAttribute("data-fix-action");
+          btn.disabled = true;
+          try {
+            await runAction(actionId, "fix_button");
+            await loadActiveTab(true);
+          } catch (err) {
+            addMessage("architect", `Fix action failed (${actionId}): ${err.json?.error || err.message}`);
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      });
+    }
+
+    async function getOverviewSnapshot() {
+      const overview = await fetchApi("/api/dashboard/overview");
+      return {
+        overall: overview?.status_summary?.overall || "unknown",
+        red: Number(overview?.status_summary?.red || 0),
+        yellow: Number(overview?.status_summary?.yellow || 0),
+        needs: Number((overview?.data?.needs_attention || []).length),
+      };
+    }
+
+    async function runBoundedFixCycle(maxCycles = 2) {
+      let before = await getOverviewSnapshot();
+      for (let i = 0; i < maxCycles; i += 1) {
+        await runAction("global_diagnose", `fix_cycle_${i + 1}`);
+        await runAction("global_fix", `fix_cycle_${i + 1}`);
+        await new Promise((r) => setTimeout(r, 1500));
+        const after = await getOverviewSnapshot();
+        const improved = (after.red < before.red) || (after.needs < before.needs);
+        if (!improved) {
+          addMessage("architect", `Fix cycle stopped after ${i + 1} pass(es): no measurable improvement (red ${before.red}->${after.red}, needs ${before.needs}->${after.needs}).`);
+          return;
+        }
+        before = after;
+      }
+      addMessage("architect", `Fix cycle completed (${maxCycles} bounded passes).`);
+    }
+
+    async function loadActionsTable(actions = []) {
+      if (!actions.length) {
+        refs.actionsTableBody.innerHTML = `<tr><td colspan="5" class="mono">No actions configured</td></tr>`;
+        return;
+      }
+      refs.actionsTableBody.innerHTML = actions.map((a) => {
+        const latest = a.latest || {};
+        const status = a.current_status || (a.running ? "running" : "idle");
+        const when = latest.finished_at || latest.started_at || "n/a";
+        // Use current_status for display, but show actual latest result if completed/failed
+        let latestOutcome;
+        if (status === "running") {
+          latestOutcome = "running";
+        } else if (latest.status === "completed" || latest.status === "failed") {
+          // Show actual terminal status from database
+          latestOutcome = latest.status;
+        } else if (latest.status === "running" && status === "idle") {
+          // Process died but DB says running - show as failed
+          latestOutcome = "failed (process died)";
+        } else {
+          latestOutcome = latest.status || "n/a";
+        }
+        const staleNote = a.stale_result ? " (historic)" : "";
+        const actionId = a.id || "";
+        const isStatusRedgreen = actionId === "status_redgreen" || actionId.includes("status_redgreen");
+        const isE2e = actionId === "launch_e2e_fix" || actionId === "launch_e2e_matrix" || actionId.includes("e2e");
+        const isGithubScan = actionId === "repo_scan_continue" || actionId.includes("github") || actionId.includes("repo_scan");
+        
+        let quickRunBtn = "";
+        if (isStatusRedgreen) {
+          quickRunBtn = `<button class="action-btn" data-run-action="status_redgreen" ${a.running ? "disabled" : ""} style="background: var(--accent); color: #0d1117; font-weight: 600;">status:redgreen</button>`;
+        } else if (isE2e) {
+          quickRunBtn = `<button class="action-btn" data-run-action="launch_e2e_fix" ${a.running ? "disabled" : ""} style="background: var(--accent); color: #0d1117; font-weight: 600;">e2e:launch:matrix</button>`;
+        } else if (isGithubScan) {
+          quickRunBtn = `<button class="action-btn" data-run-action="repo_scan_continue" ${a.running ? "disabled" : ""} style="background: var(--accent); color: #0d1117; font-weight: 600;">github:scan</button>`;
+        }
+        
+        return `<tr>
+          <td><div>${escapeHtml(a.name || a.id)}</div><div class="mono">${escapeHtml(a.id)}</div></td>
+          <td><span class="lane-chip">${escapeHtml(a.lane || "ops")}</span></td>
+          <td class="${status === "running" ? "warn" : "ok"}">${escapeHtml(status)}</td>
+          <td><div>${escapeHtml(latest.exit_code == null ? `${latestOutcome}${staleNote}` : `${latestOutcome} (exit ${latest.exit_code})${staleNote}`)}</div><div class="mono">${escapeHtml(fmtIso(when))}</div></td>
+          <td><div class="row-actions">
+            ${quickRunBtn}
+            <button class="action-btn" data-run-action="${escapeHtml(a.id)}" ${a.running ? "disabled" : ""}>${escapeHtml(a.verb || "run")}</button>
+            <button class="action-btn" data-run-action="${escapeHtml(a.id)}" data-requested-by="continue" ${a.running ? "disabled" : ""}>continue</button>
+          </div></td>
+        </tr>`;
+      }).join("");
+      refs.actionsTableBody.querySelectorAll("[data-run-action]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          btn.disabled = true;
+          const actionId = btn.getAttribute("data-run-action");
+          const requestedBy = btn.getAttribute("data-requested-by") || "dashboard";
+          try {
+            await runAction(actionId, requestedBy);
+          } catch (err) {
+            addMessage("architect", `Action ${actionId} queue failed: ${err.json?.error || err.message}`);
+          }
+          await loadActiveTab(true);
+        });
+      });
+    }
+
+    function formatDelta(value, delta) {
+      if (delta == null || delta === 0) return "";
+      const sign = delta > 0 ? "+" : "";
+      const color = delta > 0 ? "var(--success)" : delta < 0 ? "var(--danger)" : "var(--text-muted)";
+      return `<span style="color: ${color}; font-size: 0.75rem; margin-left: 0.4rem;">${sign}${delta}</span>`;
+    }
+
+    function renderHeroKpis(data) {
+      const heroSection = document.getElementById("heroKpiSection");
+      if (!heroSection) return;
+      
+      const sends = data.metrics?.sends || {};
+      const sales = data.metrics?.skynpatch_sales || {};
+      const launch = data.history?.launch_e2e || {};
+      const repo = data.history?.repo_scan || {};
+      
+      const skSends = sends.sk_sends_today || 0;
+      const skDelta = sends.sk_sends_delta || 0;
+      const blockingE2e = launch.blocking_failures || 0;
+      const e2eDelta = launch.blocking_failures_delta || 0;
+      const reposPassing = repo.pass_count || 0;
+      const reposDelta = repo.pass_count_delta || 0;
+      const revenue7d = sales.revenue_7d_dollars ?? sales.revenue_dollars ?? "0.00";
+      const orders7d = sales.orders_7d ?? sales.orders_total ?? 0;
+      
+      heroSection.innerHTML = `
+        <div class="metric-card" style="border-color: var(--accent);">
+          <div class="label">SkynPatch Sends Today</div>
+          <div class="value">${skSends}${formatDelta(skSends, skDelta)}</div>
+        </div>
+        <div class="metric-card" style="border-color: ${orders7d > 0 ? 'var(--success)' : 'var(--border)'};">
+          <div class="label">Skyn Patch Revenue (7d)</div>
+          <div class="value">$${revenue7d}</div>
+        </div>
+        <div class="metric-card" style="border-color: ${blockingE2e > 0 ? 'var(--danger)' : 'var(--success)'};">
+          <div class="label">Blocking E2E</div>
+          <div class="value">${blockingE2e}${formatDelta(blockingE2e, e2eDelta)}</div>
+        </div>
+        <div class="metric-card" style="border-color: ${reposPassing > 0 ? 'var(--success)' : 'var(--warning)'};">
+          <div class="label">Repos Passing</div>
+          <div class="value">${reposPassing}${formatDelta(reposPassing, reposDelta)}</div>
+        </div>
+      `;
+    }
+
+    function renderHistoryTable(data) {
+      const historyBody = document.getElementById("historyTableBody");
+      if (!historyBody) return;
+      
+      const runs = data.history?.step_runs || [];
+      if (!runs.length) {
+        historyBody.innerHTML = `<tr><td colspan="6" class="mono">No run history</td></tr>`;
+        return;
+      }
+      
+      historyBody.innerHTML = runs.map((r) => {
+        const statusClass = r.status === "completed" ? "ok" : r.status === "failed" ? "warn" : "muted";
+        const duration = r.duration_ms ? `${Math.round(r.duration_ms / 1000)}s` : "n/a";
+        const age = fmtMinutes(r.age_min);
+        
+        let actionId = null;
+        let stepLabel = r.step_name;
+        if (r.step_name === "status_redgreen") {
+          actionId = "status_redgreen";
+          stepLabel = "Status Check";
+        } else if (r.step_name === "github_scan") {
+          actionId = "repo_scan_continue";
+          stepLabel = "Repo Scan";
+        } else if (r.step_name === "launch_e2e_matrix") {
+          actionId = "launch_e2e_fix";
+          stepLabel = "E2E Matrix";
+        } else {
+          // Map other step names to display labels
+          stepLabel = r.step_name.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+        }
+        
+        return `<tr>
+          <td>${escapeHtml(stepLabel)}</td>
+          <td class="${statusClass}">${escapeHtml(r.status || "unknown")}</td>
+          <td class="mono">${escapeHtml(age)}</td>
+          <td class="mono">${escapeHtml(duration)}</td>
+          <td>${escapeHtml(r.reason || "-")}</td>
+          <td>
+            ${actionId ? `<button class="action-btn" data-run-action="${escapeHtml(actionId)}" style="font-size: 0.7rem; padding: 0.2rem 0.4rem; background: var(--accent); color: #0d1117; font-weight: 600;">run</button>` : "-"}
+          </td>
+        </tr>`;
+      }).join("");
+      
+      // Add event listeners for run buttons
+      historyBody.querySelectorAll("[data-run-action]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const actionId = btn.getAttribute("data-run-action");
+          btn.disabled = true;
+          try {
+            await runAction(actionId, "dashboard");
+            await loadActiveTab(true);
+          } catch (err) {
+            addMessage("architect", `Failed to run ${actionId}: ${err.json?.error || err.message}`);
+            btn.disabled = false;
+          }
+        });
+      });
+    }
+
+    async function renderOverview(data) {
+      refs.overviewMeta.textContent = `Updated ${data.generated_at}`;
+      renderHeroKpis(data);
+      renderCards(refs.overviewCards, data.cards || []);
+      const learning = await loadLearningProgress();
+      renderDynamicLaneBoard(data, learning);
+      renderList(refs.overviewIssuesList, data.data?.needs_attention || [], "No blockers.");
+      renderList(refs.overviewRecommendationsList, data.data?.recommendations || [], "No recommended actions.");
+      loadActionsTable(data.actions || []);
+      renderHistoryTable(data);
+    }
+
+    function renderSystems(data) {
+      refs.systemsMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.systemsCards, data.cards || []);
+      const rows = data.data?.runtime_groups || [];
+      renderList(refs.systemsList, rows.map((r) => `${r.type}: ${r.online}/${r.total} online`), "No system groups.");
+      renderFindingsWithAction(refs.systemsFindingsList, data.findings || [], "No system findings.");
+    }
+
+    function renderAgents(data) {
+      refs.agentsMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.agentsCards, data.cards || []);
+      const rows = data.data?.groups || [];
+      renderList(refs.agentsList, rows.map((r) => `${r.type} -> ${r.online}/${r.total}`), "No agent groups.");
+      renderFindingsWithAction(refs.agentsFindingsList, data.findings || [], "No agent findings.");
+    }
+
+    function renderJobs(data) {
+      refs.jobsMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.jobsCards, data.cards || []);
+      const q = data.data?.queue || {};
+      renderList(refs.jobsQueueList, [
+        `created: ${q.created || 0}`,
+        `pending: ${q.pending || 0}`,
+        `dispatched: ${q.dispatched || 0}`,
+        `running: ${q.running || 0}`,
+        `failed: ${q.failed || 0}`,
+        `dead-letter: ${q.dead_letter || 0}`,
+        ...((data.data?.queue_aging || []).map((r) => `aging>60m ${r.status}: ${r.n}`)),
+        ...((data.data?.queue_by_tag || []).slice(0, 4).map((r) => `tag ${r.tag}: ${r.n}`)),
+      ], "No queue snapshot.");
+      const findings = data.findings || [];
+      renderList(refs.jobsFindingsList, findings.map((f) => `[${f.severity}] ${f.title} | ${f.command || "no runbook"}`), "No queue findings.");
+    }
+
+    function renderLeadsCredit(data) {
+      refs.leadsMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.leadsCards, data.cards || []);
+      const sends = data.data?.sends || {};
+      const sales = data.data?.skynpatch_sales || {};
+      const mailStatsBody = document.getElementById("leadsMailStatsBody");
+      if (mailStatsBody) {
+        mailStatsBody.innerHTML = [
+          ["SkynPatch", sends.sk_sends_today, sends.sk_delivered_today, sends.sk_opened_today, sends.sk_clicked_today],
+          ["BWS", sends.bws_sends_today, sends.bws_delivered_today, sends.bws_opened_today, sends.bws_clicked_today],
+        ].map((row) => `<tr><td>${escapeHtml(row[0])}</td><td>${row[1] ?? 0}</td><td>${row[2] ?? 0}</td><td>${row[3] ?? 0}</td><td>${row[4] ?? 0}</td></tr>`).join("");
+      }
+      const salesList = document.getElementById("leadsSalesList");
+      if (salesList) {
+        const items = [
+          `Orders today: ${sales.orders_today ?? 0}`,
+          `Revenue today: $${sales.revenue_today_dollars ?? "0.00"}`,
+          `Orders (7d): ${sales.orders_7d ?? 0}`,
+          `Revenue (7d): $${sales.revenue_7d_dollars ?? sales.revenue_dollars ?? "0.00"}`,
+          `Orders (all): ${sales.orders_total ?? 0}`,
+          `Revenue (all): $${sales.revenue_dollars ?? "0.00"}`,
+        ];
+        salesList.innerHTML = items.map((s) => `<li>${escapeHtml(s)}</li>`).join("") || "<li>No sales data</li>";
+      }
+      const brands = data.data?.brands || [];
+      renderList(refs.leadsBrandsList, brands.map((b) => `${b.slug}: status=${b.provisioning_status} email=${b.brand_email || b.default_from_email || "none"}`), "No brand records.");
+      renderList(refs.leadsFindingsList, (data.findings || []).map((f) => `[${f.severity}] ${f.title}`), "No lane findings.");
+    }
+
+    function renderQa(data) {
+      refs.qaMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.qaCards, data.cards || []);
+      const launch = data.data?.launch || {};
+      const qaHuman = data.data?.qa_human || {};
+      renderList(refs.qaSignalsList, [
+        `launch failures: ${launch.failures || 0}`,
+        `launch blocking: ${launch.blocking_failures || 0}`,
+        `launch skipped playwright: ${launch.skipped_playwright || 0}`,
+        `qa human failed repos: ${qaHuman.failed_repos || 0}`,
+        `qa human high findings: ${qaHuman.high_findings || 0}`,
+      ], "No QA signals.");
+      renderList(refs.qaFindingsList, (data.findings || []).map((f) => `[${f.severity}] ${f.title} -> ${f.command}`), "No QA findings.");
+    }
+
+    function renderResearch(data) {
+      refs.researchMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.researchCards, data.cards || []);
+      const suggestions = data.data?.copy_ui_suggestions || {};
+      
+      // Render research table
+      const researchTableBody = document.getElementById("researchTableBody");
+      const sends = state.cache.leads_credit?.data?.sends || data.data?.sends || {};
+      const qa = state.cache.qa_e2e?.data?.launch || {};
+      const repo = state.cache.history?.data?.repo_scan || {};
+      const pain = data.data?.saas_pain_pipeline || {};
+      const affiliate = data.data?.affiliate_research || {};
+      
+      if (researchTableBody) {
+        const researchCategories = [
+          { category: "Copy", type: "Website Copy", status: "ok", count: (suggestions.website_copy || []).length, lastUpdated: data.generated_at },
+          { category: "UX", type: "Layout Suggestions", status: "ok", count: (suggestions.ux_layout || []).length, lastUpdated: data.generated_at },
+          { category: "Research", type: "Pain Pipeline", status: "ok", count: pain.records || 0, lastUpdated: pain.last_updated || data.generated_at },
+          { category: "Research", type: "Affiliate Sites", status: "ok", count: affiliate.sites_discovered || 0, lastUpdated: affiliate.last_updated || data.generated_at },
+        ];
+        
+        if (!researchCategories.length) {
+          researchTableBody.innerHTML = `<tr><td colspan="6" class="mono">No research data</td></tr>`;
+        } else {
+          researchTableBody.innerHTML = researchCategories.map((r) => {
+            return `<tr>
+              <td>${escapeHtml(r.category)}</td>
+              <td>${escapeHtml(r.type)}</td>
+              <td class="${r.status}">${escapeHtml(r.status === "ok" ? "Active" : "Inactive")}</td>
+              <td>${escapeHtml(r.count)}</td>
+              <td><span class="mono">${escapeHtml(fmtIso(r.lastUpdated))}</span></td>
+              <td><div class="row-actions"><button class="action-btn" disabled>view</button></div></td>
+            </tr>`;
+          }).join("");
+        }
+      }
+      
+      renderList(refs.researchCopyList, suggestions.website_copy || [], "No copy suggestions.");
+      renderList(refs.researchUxList, suggestions.ux_layout || [], "No UX suggestions.");
+      
+      const snippets = [
+        `Hero KPI: ${sends.sk_sends_today || 0} SkynPatch sends today | ${qa.blocking_failures || 0} blocking E2E | ${repo.pass_count || 0} repos passing`,
+        `Research signal: ${pain.records || 0} pain records | ${affiliate.sites_discovered || 0} affiliate sites`,
+        "CTA label: What changed in the last 24h",
+      ];
+      renderList(refs.researchSnippetsList, snippets, "No snippets.");
+    }
+
+    function fmtMinutes(ageMin) {
+      const n = Number(ageMin);
+      if (!Number.isFinite(n)) return "n/a";
+      if (n < 60) return `${n}m`;
+      const h = Math.floor(n / 60);
+      const m = n % 60;
+      if (h < 24) return `${h}h ${m}m`;
+      const d = Math.floor(h / 24);
+      return `${d}d ${h % 24}h`;
+    }
+
+    function deriveReportLane(name) {
+      const n = String(name || "").toLowerCase();
+      if (n.includes("launch") || n.includes("qa")) return "qa";
+      if (n.includes("repo")) return "repos";
+      if (n.includes("lead") || n.includes("sales")) return "leadgen";
+      if (n.includes("credit")) return "credit";
+      if (n.includes("security")) return "security";
+      return "system";
+    }
+
+    function buildReportsFallbackEnvelope(progress) {
+      const freshnessRows = Array.isArray(progress?.metrics?.report_freshness) ? progress.metrics.report_freshness : [];
+      const reports = freshnessRows.map((row) => {
+        const name = String(row.name || "report");
+        const status = String(row.status || "yellow").toLowerCase();
+        return {
+          id: name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "") || "report",
+          name,
+          lane: deriveReportLane(name),
+          freshness_status: status,
+          age_min: Number(row.age_min || 0),
+          stale_after_minutes: Number(row.sla_min || 0),
+          cadence_minutes: Number(row.sla_min || 0),
+          artifact_path: "n/a",
+          refresh_command: "Use lane runbook action",
+          required_tags: [],
+          queue_route: "claw_tasks",
+          running_refresh: false,
+          last_result: { outcome: status },
+          last_generated_at: progress?.generated_at || null,
+        };
+      });
+      const summary = reports.reduce(
+        (acc, r) => {
+          acc.total_reports += 1;
+          if (r.freshness_status === "green") acc.green += 1;
+          else if (r.freshness_status === "red") acc.red += 1;
+          else acc.yellow += 1;
+          return acc;
+        },
+        { total_reports: 0, green: 0, yellow: 0, red: 0, running_refreshes: 0 }
+      );
+      return {
+        tab: "reports",
+        generated_at: progress?.generated_at || new Date().toISOString(),
+        status_summary: progress?.system?.status ? { overall: String(progress.system.status).toLowerCase() } : { overall: "unknown" },
+        cards: [
+          { label: "Total Reports", value: summary.total_reports },
+          { label: "Freshness Green", value: summary.green },
+          { label: "Freshness Yellow", value: summary.yellow },
+          { label: "Freshness Red", value: summary.red },
+          { label: "Running Refreshes", value: 0 },
+        ],
+        actions: [],
+        findings: [],
+        data: { reports, summary, fallback_mode: true },
+      };
+    }
+
+    async function loadReportHistory(reportId) {
+      const data = await fetchApi(`/api/dashboard/reports/${encodeURIComponent(reportId)}/history`);
+      const rows = data?.history || [];
+      renderList(
+        refs.reportHistoryList,
+        rows.slice(0, 12).map((r) => {
+          const at = r.completed_at || r.started_at || r.created_at || "n/a";
+          const status = r.outcome || r.status || "unknown";
+          const err = r.last_error ? ` | ${String(r.last_error).slice(0, 100)}` : "";
+          const stderr = r.stderr_tail ? ` | stderr: ${String(r.stderr_tail).replace(/\s+/g, " ").slice(0, 90)}` : "";
+          return `${status} | ${at}${err}${stderr}`;
+        }),
+        "No run history."
+      );
+    }
+
+    function renderReports(data) {
+      refs.reportsMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.reportsCards, data.cards || []);
+
+      const reports = Array.isArray(data.data?.reports) ? data.data.reports : [];
+      const lanes = ["all", ...new Set(reports.map((r) => String(r.lane || "unknown")))];
+      if (refs.reportsLaneFilter.options.length !== lanes.length) {
+        refs.reportsLaneFilter.innerHTML = lanes
+          .map((lane) => `<option value="${escapeHtml(lane)}">${escapeHtml(lane === "all" ? "All lanes" : lane)}</option>`)
+          .join("");
+      }
+
+      const laneFilter = refs.reportsLaneFilter.value || "all";
+      const sevFilter = refs.reportsSeverityFilter.value || "all";
+      const sortBy = refs.reportsSortBy.value || "recency_desc";
+      const severityRank = { red: 3, yellow: 2, green: 1 };
+
+      const filtered = reports
+        .filter((r) => laneFilter === "all" || String(r.lane) === laneFilter)
+        .filter((r) => sevFilter === "all" || String(r.freshness_status) === sevFilter)
+        .sort((a, b) => {
+          if (sortBy === "lane") return String(a.lane).localeCompare(String(b.lane));
+          if (sortBy === "name") return String(a.name).localeCompare(String(b.name));
+          if (sortBy === "recency_asc") return Number(a.age_min || 0) - Number(b.age_min || 0);
+          const sevDiff = (severityRank[String(b.freshness_status)] || 0) - (severityRank[String(a.freshness_status)] || 0);
+          if (sevDiff !== 0) return sevDiff;
+          return Number(b.age_min || 0) - Number(a.age_min || 0);
+        });
+
+      if (!filtered.length) {
+        refs.reportsTableBody.innerHTML = `<tr><td colspan="6" class="mono">No reports match filters</td></tr>`;
+      } else {
+        refs.reportsTableBody.innerHTML = filtered.map((r) => {
+          // Freshness is based on age only - show actual freshness status
+          const freshness = String(r.freshness_status || "yellow");
+          const lastResult = r.last_result?.outcome || r.last_result?.status || "none";
+          const lastAt = r.last_generated_at || r.last_result?.completed_at || r.last_result?.created_at || "n/a";
+          
+          // Show freshness chip with correct color based on age
+          // Running/failed status is shown separately in the result column
+          const freshnessClass = freshness === "green" ? "green" : freshness === "red" ? "red" : "yellow";
+          const ageDisplay = r.age_min != null && r.age_min < 1000 ? fmtMinutes(r.age_min) : "n/a";
+          
+          return `<tr>
+            <td><div>${escapeHtml(r.name || r.id)}</div><div class="mono">${escapeHtml(r.id)}</div></td>
+            <td><span class="lane-chip">${escapeHtml(r.lane || "ops")}</span></td>
+            <td><span class="freshness-chip ${freshnessClass}">${escapeHtml(freshness.toUpperCase())}</span><div class="mono">age ${escapeHtml(ageDisplay)}</div></td>
+            <td><div class="mono">${escapeHtml(lastAt)}</div></td>
+            <td>${escapeHtml(lastResult)}${r.running_refresh ? ` <span class="mono">(running)</span>` : ""}</td>
+            <td>
+              <div class="row-actions">
+                <button class="action-btn" data-report-refresh="${escapeHtml(r.id)}" ${r.running_refresh ? "disabled" : ""}>refresh</button>
+                <button class="action-btn" data-report-history="${escapeHtml(r.id)}">history</button>
+                ${r.artifact_path ? `<button class="action-btn" data-report-content="${escapeHtml(r.id)}" style="background: var(--accent); color: #0d1117; font-weight: 600;">view</button>` : ""}
+              </div>
+            </td>
+          </tr>`;
+        }).join("");
+      }
+
+      const selected = filtered.find((r) => r.id === state.reportSelectedId) || filtered[0] || reports[0] || null;
+      state.reportSelectedId = selected?.id || null;
+      if (selected) {
+        renderList(refs.reportDetailList, [
+          `name: ${selected.name}`,
+          `id: ${selected.id}`,
+          `lane: ${selected.lane}`,
+          `freshness: ${selected.freshness_status} (age ${fmtMinutes(selected.age_min)} / stale after ${selected.stale_after_minutes}m)`,
+          `cadence: ${selected.cadence_minutes}m`,
+          `queue: ${selected.queue_route}`,
+          `required_tags: ${(selected.required_tags || []).join(", ") || "none"}`,
+          `artifact: ${selected.artifact_path || "n/a"}`,
+          `runbook: ${selected.refresh_command || "n/a"}`,
+        ], "No report selected.");
+      } else {
+        renderList(refs.reportDetailList, [], "No report selected.");
+        renderList(refs.reportHistoryList, [], "No run history.");
+      }
+
+      refs.reportsTableBody.querySelectorAll("[data-report-refresh]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const reportId = btn.getAttribute("data-report-refresh");
+          btn.disabled = true;
+          try {
+            await fetchApi(`/api/dashboard/reports/${encodeURIComponent(reportId)}/refresh`, {
+              method: "POST",
+              body: JSON.stringify({ requested_by: "reports_tab", priority: 3 }),
+            });
+            state.reportSelectedId = reportId;
+            await loadTab("reports", true);
+            await loadReportHistory(reportId);
+          } catch (err) {
+            addMessage("architect", `Report refresh failed (${reportId}): ${err.json?.error || err.message}`);
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      });
+
+      refs.reportsTableBody.querySelectorAll("[data-report-history]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const reportId = btn.getAttribute("data-report-history");
+          state.reportSelectedId = reportId;
+          const row = reports.find((r) => r.id === reportId);
+          if (row) {
+            renderList(refs.reportDetailList, [
+              `name: ${row.name}`,
+              `id: ${row.id}`,
+              `lane: ${row.lane}`,
+              `freshness: ${row.freshness_status} (age ${fmtMinutes(row.age_min)})`,
+              `artifact: ${row.artifact_path || "n/a"}`,
+              `runbook: ${row.refresh_command || "n/a"}`,
+            ], "No report selected.");
+          }
+          try {
+            await loadReportHistory(reportId);
+          } catch (err) {
+            renderList(refs.reportHistoryList, [`error: ${err.json?.error || err.message}`], "No run history.");
+          }
+        });
+      });
+
+      refs.reportsTableBody.querySelectorAll("[data-report-content]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const reportId = btn.getAttribute("data-report-content");
+          btn.disabled = true;
+          const contentPanel = document.getElementById("reportContentPanel");
+          const contentDisplay = document.getElementById("reportContentDisplay");
+          
+          try {
+            contentDisplay.textContent = "Loading report content...";
+            contentPanel.style.display = "block";
+            contentPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            
+            const data = await fetchApi(`/api/dashboard/reports/${encodeURIComponent(reportId)}/content`);
+            
+            if (data.is_json) {
+              contentDisplay.textContent = JSON.stringify(data.content, null, 2);
+            } else {
+              contentDisplay.textContent = String(data.content || "No content available");
+            }
+          } catch (err) {
+            contentDisplay.textContent = `Error loading report: ${err.json?.error || err.message}`;
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      });
+    }
+
+    function renderBotPayments(data) {
+      const container = document.getElementById("tabBotPayments");
+      if (!container || !data?.payload) return;
+      
+      const { cards, data: paymentData } = data.payload;
+      
+      // Render metric cards
+      const cardsContainer = container.querySelector(".progress-grid");
+      if (cardsContainer && cards && cards.length > 0) {
+        cardsContainer.innerHTML = cards.map(card => `
+          <div class="metric-card">
+            <div class="label">${escapeHtml(card.label)}</div>
+            <div class="value">${escapeHtml(String(card.value))}</div>
+          </div>
+        `).join("");
+      }
+      
+      // Build main content
+      let html = `
+        <div class="chat-area">
+          <div class="two-col">
+            <div class="panel">
+              <h3 style="margin-top: 0; font-size: 0.9rem; margin-bottom: 0.6rem;">Revenue Projection</h3>
+      `;
+      
+      if (paymentData.revenue_projection) {
+        const proj = paymentData.revenue_projection;
+        html += `
+          <div style="font-size: 0.85rem; line-height: 1.6;">
+            <div><strong>Current Daily:</strong> $${parseFloat(proj.current?.daily || 0).toFixed(2)}</div>
+            <div><strong>Current Weekly:</strong> $${parseFloat(proj.current?.weekly || 0).toFixed(2)}</div>
+            <div><strong>Current Monthly:</strong> $${parseFloat(proj.current?.monthly || 0).toFixed(2)}</div>
+            <div><strong>Current Quarterly:</strong> $${parseFloat(proj.current?.quarterly || 0).toFixed(2)}</div>
+            <div style="margin-top: 0.5rem; color: var(--accent);"><strong>With Growth (Q):</strong> $${parseFloat(proj.with_growth?.quarterly || 0).toFixed(2)}</div>
+          </div>
+        `;
+      } else {
+        html += `<div style="color: var(--text-muted); font-size: 0.85rem;">No projection data available</div>`;
+      }
+      
+      html += `
+            </div>
+            
+            <div class="panel">
+              <h3 style="margin-top: 0; font-size: 0.9rem; margin-bottom: 0.6rem;">Funnel Metrics</h3>
+      `;
+      
+      if (paymentData.funnel_metrics) {
+        const funnel = paymentData.funnel_metrics;
+        html += `
+          <div style="font-size: 0.85rem; line-height: 1.6;">
+            <div><strong>Discovered:</strong> ${funnel.discovered || 0}</div>
+            <div><strong>Contacted:</strong> ${funnel.contacted || 0}</div>
+            <div><strong>Responded:</strong> ${funnel.responded || 0}</div>
+            <div><strong>Converted:</strong> ${funnel.converted || 0}</div>
+            <div style="margin-top: 0.5rem; color: var(--accent);"><strong>Overall Conversion:</strong> ${parseFloat(funnel.overall_conversion || 0).toFixed(1)}%</div>
+          </div>
+        `;
+      } else {
+        html += `<div style="color: var(--text-muted); font-size: 0.85rem;">No funnel data available</div>`;
+      }
+      
+      html += `
+            </div>
+          </div>
+          
+          <div class="panel" style="margin-top: 0.65rem;">
+            <h3 style="margin-top: 0; font-size: 0.9rem; margin-bottom: 0.6rem;">Payment Methods</h3>
+            <div style="font-size: 0.85rem;">
+      `;
+      
+      const methods = paymentData.payment_methods || {};
+      if (Object.keys(methods).length > 0) {
+        for (const [method, amount] of Object.entries(methods)) {
+          html += `<div style="margin-bottom: 0.3rem;"><strong>${escapeHtml(method)}:</strong> $${parseFloat(amount).toFixed(2)}</div>`;
+        }
+      } else {
+        html += `<div style="color: var(--text-muted);">No payment method data available</div>`;
+      }
+      
+      html += `
+            </div>
+          </div>
+          
+          <div class="panel" style="margin-top: 0.65rem;">
+            <h3 style="margin-top: 0; font-size: 0.9rem; margin-bottom: 0.6rem;">Recent Transactions</h3>
+            <table class="actions-table" style="width: 100%; font-size: 0.8rem;">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>User</th>
+                  <th>Amount</th>
+                  <th>Method</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+      `;
+      
+      const transactions = paymentData.recent_transactions || [];
+      if (transactions.length > 0) {
+        for (const tx of transactions.slice(0, 10)) {
+          const date = tx.timestamp ? new Date(tx.timestamp).toLocaleString() : "N/A";
+          html += `
+            <tr>
+              <td>${escapeHtml(date)}</td>
+              <td>${escapeHtml((tx.userId || tx.user_id || "N/A").substring(0, 20))}</td>
+              <td>$${parseFloat(tx.amount_usd || 0).toFixed(2)}</td>
+              <td>${escapeHtml(tx.payment_method_type || tx.currency || "N/A")}</td>
+              <td><span class="lane-chip" style="color: ${tx.status === "paid" ? "var(--success)" : "var(--text-muted)"}">${escapeHtml(tx.status || "N/A")}</span></td>
+            </tr>
+          `;
+        }
+      } else {
+        html += `<tr><td colspan="5" style="text-align: center; color: var(--text-muted);">No recent transactions</td></tr>`;
+      }
+      
+      html += `
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="panel" style="margin-top: 0.65rem;">
+            <h3 style="margin-top: 0; font-size: 0.9rem; margin-bottom: 0.6rem;">Recent Bot Conversions</h3>
+            <table class="actions-table" style="width: 100%; font-size: 0.8rem;">
+              <thead>
+                <tr>
+                  <th>Bot ID</th>
+                  <th>Platform</th>
+                  <th>Value</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+      `;
+      
+      const conversions = paymentData.bot_conversions || [];
+      if (conversions.length > 0) {
+        for (const conv of conversions.slice(0, 10)) {
+          const date = conv.converted_at ? new Date(conv.converted_at).toLocaleString() : "N/A";
+          html += `
+            <tr>
+              <td>${escapeHtml((conv.bot_id || "N/A").substring(0, 20))}</td>
+              <td>${escapeHtml(conv.platform || "N/A")}</td>
+              <td>$${parseFloat(conv.value || 0).toFixed(2)}</td>
+              <td>${escapeHtml(date)}</td>
+            </tr>
+          `;
+        }
+      } else {
+        html += `<tr><td colspan="4" style="text-align: center; color: var(--text-muted);">No conversions yet</td></tr>`;
+      }
+      
+      html += `
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+      
+      // Append to container (after progress-wrap)
+      const existingContent = container.querySelector(".chat-area");
+      if (existingContent) {
+        existingContent.outerHTML = html;
+      } else {
+        container.innerHTML += html;
+      }
+    }
+
+    function renderHistory(data) {
+      refs.historyMeta.textContent = `Updated ${data.generated_at}`;
+      renderCards(refs.historyCards, data.cards || []);
+      
+      // Render history table
+      const historyTableBody = document.getElementById("historyTableBody");
+      if (historyTableBody) {
+        const timeline = data.data?.timeline || [];
+        const plans = data.data?.recent_plans || [];
+        const freshness = data.data?.report_freshness || [];
+        
+        const historyItems = [
+          ...timeline.slice(0, 5).map((t) => ({
+            event: t.name || "Unknown",
+            type: "Timeline",
+            status: "ok",
+            age: `${t.age_min || 0}m ago`,
+            details: t.details || "",
+          })),
+          ...plans.slice(0, 5).map((p) => ({
+            event: p.goal || "Plan",
+            type: "Plan",
+            status: p.status || "unknown",
+            age: fmtIso(p.created_at),
+            details: `${p.id.slice(0, 8)} | ${p.status}`,
+          })),
+          ...freshness.slice(0, 3).map((r) => ({
+            event: r.name || "Report",
+            type: "Report",
+            status: r.status || "yellow",
+            age: `${r.age_min || 0}m`,
+            details: `SLA: ${r.sla_min || 0}m`,
+          })),
+        ];
+        
+        if (!historyItems.length) {
+          historyTableBody.innerHTML = `<tr><td colspan="6" class="mono">No history data</td></tr>`;
+        } else {
+          historyTableBody.innerHTML = historyItems.map((h) => {
+            const statusClass = h.status === "ok" || h.status === "green" || h.status === "completed" ? "ok" : 
+                              h.status === "yellow" || h.status === "running" ? "warn" : "bad";
+            return `<tr>
+              <td>${escapeHtml(h.event)}</td>
+              <td><span class="lane-chip">${escapeHtml(h.type)}</span></td>
+              <td class="${statusClass}">${escapeHtml(h.status)}</td>
+              <td><span class="mono">${escapeHtml(h.age)}</span></td>
+              <td><span class="mono">${escapeHtml(h.details)}</span></td>
+              <td><div class="row-actions"><button class="action-btn" disabled>view</button></div></td>
+            </tr>`;
+          }).join("");
+        }
+      }
+      
+      const freshness = (data.data?.report_freshness || []).map((r) => `${r.name}: ${r.status} (age ${r.age_min}m / sla ${r.sla_min}m)`);
+      renderList(refs.historyTimelineList, [
+        ...(data.data?.timeline || []).map((t) => `${t.name}: ${t.age_min}m ago`),
+        ...freshness,
+      ], "No timeline.");
+      renderList(refs.historyPlansList, (data.data?.recent_plans || []).map((p) => `${p.id.slice(0,8)} | ${p.status} | ${p.goal}`), "No recent plans.");
+      renderFindingsWithAction(refs.historyFindingsList, data.findings || [], "No cross-lane blockers.");
+    }
+
+    const renderers = {
+      overview: renderOverview,
+      systems: renderSystems,
+      agents: renderAgents,
+      jobs_queue: renderJobs,
+      leads_credit: renderLeadsCredit,
+      qa_e2e: renderQa,
+      research_copy: renderResearch,
+      reports: renderReports,
+      bot_payments: renderBotPayments,
+      history: renderHistory,
+    };
+
+    async function loadTab(tab, force = false) {
+      if (tab === "chat") return;
+      const existingInFlight = state.inFlightTabs[tab];
+      if (existingInFlight) {
+        return existingInFlight;
+      }
+      const run = (async () => {
+      // Check cache age - if data is older than 30 seconds, force refresh
+      if (!force && state.cache[tab]) {
+        const cached = state.cache[tab];
+        if (cached.generated_at) {
+          const age = Date.now() - new Date(cached.generated_at).getTime();
+          if (age < 30000) { // Less than 30 seconds old
+            await Promise.resolve(renderers[tab](cached));
+            renderStatusStrip(cached);
+            return;
+          }
+        } else {
+          // No timestamp - treat as stale
+          force = true;
+        }
+      }
+      const endpoint = tabEndpoint[tab];
+      if (!endpoint) return;
+      let data;
+      try {
+        // Add timestamp to prevent browser/proxy caching
+        const url = endpoint + (endpoint.includes("?") ? "&" : "?") + "_t=" + Date.now();
+        data = await fetchApi(url);
+        // Validate data freshness
+        if (data.generated_at) {
+          const age = Date.now() - new Date(data.generated_at).getTime();
+          if (age > 60000) { // Data older than 1 minute
+            console.warn(`[dashboard] Stale data detected for ${tab}: ${Math.round(age/1000)}s old`);
+          }
+        } else {
+          // Ensure timestamp exists
+          data.generated_at = new Date().toISOString();
+        }
+      } catch (err) {
+        if (tab === "reports" && Number(err.status) === 404) {
+          const progress = await fetchApi("/api/progress");
+          data = buildReportsFallbackEnvelope(progress);
+          addMessage("architect", "Reports endpoint not found on this backend. Loaded compatibility view from /api/progress.");
+        } else {
+          throw err;
+        }
+      }
+      state.cache[tab] = data;
+      await Promise.resolve(renderers[tab](data));
+      renderStatusStrip(data);
+      })();
+      state.inFlightTabs[tab] = run;
+      try {
+        return await run;
+      } finally {
+        if (state.inFlightTabs[tab] === run) {
+          delete state.inFlightTabs[tab];
+        }
+      }
+    }
+
+    async function loadActiveTab(force = false) {
+      const tab = state.activeTab;
+      try {
+        await loadTab(tab, force);
+      } catch (err) {
+        const activePane = tabEls[tab];
+        const message = `Dashboard load failed (${tab}): ${err.json?.error || err.message}`;
+        if (activePane) {
+          activePane.innerHTML = `<div class="panel"><div class="mono" style="color:#ff6b6b;">${escapeHtml(message)}</div></div>`;
+        } else {
+          addMessage("architect", message);
+        }
+      }
+    }
+
+    function setAutoRefresh() {
+      if (autoRefreshTimer) clearInterval(autoRefreshTimer);
+      // Reduce background pressure; rely on SSE for hot updates when available.
+      autoRefreshTimer = setInterval(() => {
+        if (document.hidden) return;
+        loadActiveTab(true);
+      }, 45000);
+    }
+
+    function startEventStream() {
+      if (sse) {
+        try { sse.close(); } catch {}
+      }
+      const key = apiKeyInput?.value?.trim();
+      const qs = key ? `?api_key=${encodeURIComponent(key)}` : "";
+      sse = new EventSource(`/api/dashboard/stream${qs}`);
+      sse.addEventListener("summary", (evt) => {
+        try {
+          const payload = JSON.parse(evt.data || "{}");
+          renderStatusStrip(payload);
+          if (shouldSseRefresh()) loadActiveTab(true);
+        } catch {}
+      });
+      sse.addEventListener("action_run", () => {
+        if (shouldSseRefresh()) loadActiveTab(true);
+      });
+      sse.onerror = () => {
+        // Fallback stays active via setInterval refresh.
+      };
+    }
+
+    function addMessage(role, content, meta = {}, extra = "") {
+      const el = document.createElement("div");
+      el.className = "message " + role;
+      const metaStr = meta.plan_id ? `Plan: ${meta.plan_id.slice(0, 8)}` : "";
+      el.innerHTML = (metaStr ? `<div class="meta">${metaStr}</div>` : "") + `<div class="content">${escapeHtml(content)}</div>` + (extra || "");
+      chatArea.appendChild(el);
+      chatArea.scrollTop = chatArea.scrollHeight;
+      return el;
+    }
+
+    function addLoadingMessage() {
+      const el = addMessage("architect", "Planning...");
+      el.classList.add("loading");
+      return el;
+    }
+    function removeLoading(el) { if (el) el.remove(); }
+
+    function renderPlanTasks(tasks) {
+      if (!tasks || !tasks.length) return "";
+      return "<ul class='tasks-list'>" + tasks.map((t) => `<li><code>${escapeHtml(t.type)}</code> - ${escapeHtml(t.title || "")}</li>`).join("") + "</ul>";
+    }
+
+    function renderWorkActions(actions = []) {
+      if (!Array.isArray(actions) || actions.length === 0) return "";
+      const rows = actions.map((a) =>
+        `<button class="pill" data-chat-action="${escapeHtml(a.id)}" title="${escapeHtml(a.command || "")}">
+          ▶ ${escapeHtml(a.name || a.id)}
+        </button>`
+      ).join(" ");
+      return `<div class="meta" style="margin-top:8px;">Suggested work actions:</div><div style="display:flex;gap:6px;flex-wrap:wrap;">${rows}</div>`;
+    }
+
+    async function sendGoal() {
+      const goal = goalInput.value.trim();
+      if (!goal) return;
+      setTab("chat");
+      addMessage("user", goal);
+      goalInput.value = "";
+      sendBtn.disabled = true;
+      const loadingEl = addLoadingMessage();
+      let settled = false;
+      const loadingGuard = setTimeout(() => {
+        if (settled) return;
+        removeLoading(loadingEl);
+        addMessage("architect", "Request exceeded 45s. Try again. Tip: prefix with chat: only when you want advisory chat instead of execution.");
+      }, 45000);
+      try {
+        if (goal.toLowerCase().startsWith("/run ")) {
+          const actionId = goal.slice(5).trim();
+          if (!actionId) throw new Error("Missing action id after /run");
+          await runAction(actionId, "chat");
+          removeLoading(loadingEl);
+          addMessage("architect", `Action queued: ${actionId}`);
+          await loadActiveTab(true);
+        } else {
+          const wantsChatOnly = goal.toLowerCase().startsWith("chat:");
+          if (wantsChatOnly && !useOrchestrator.checked) {
+            const chatGoal = goal.replace(/^chat:\s*/i, "").trim() || "status";
+            const data = await fetchApi("/api/dashboard/chat", {
+              method: "POST",
+              body: JSON.stringify({ message: chatGoal }),
+              timeoutMs: 35000,
+              retries: 0,
+            });
+            removeLoading(loadingEl);
+            const meta = data.model_key ? `model=${data.model_key}${data.provider ? ` provider=${data.provider}` : ""}` : "";
+            addMessage("architect", `${data.reply || "(no reply)"}`, {}, meta ? `<div class="meta">${escapeHtml(meta)}</div>` : "");
+          } else {
+            const plannedGoal = goal.replace(/^plan:\s*/i, "").replace(/^do:\s*/i, "").trim() || goal;
+            const data = await fetchApi("/api/orchestrate", {
+              method: "POST",
+              body: JSON.stringify({ goal: plannedGoal }),
+              timeoutMs: 45000,
+              retries: 0,
+            });
+            removeLoading(loadingEl);
+            addMessage("architect", `Orchestration: ${data.status || "dispatched"}\nSub-goals: ${data.sub_goals_total || 0}\n${(data.plan_ids || []).join(", ")}`, { plan_id: data.orchestration_id });
+          }
+        }
+      } catch (err) {
+        removeLoading(loadingEl);
+        addMessage("architect", `Error: ${err.json?.error || err.message}`);
+      } finally {
+        settled = true;
+        clearTimeout(loadingGuard);
+        sendBtn.disabled = false;
+      }
+    }
+
+    document.getElementById("quickDiagnoseBtn").addEventListener("click", async () => { await runAction("global_diagnose", "quick"); await loadActiveTab(true); });
+    document.getElementById("quickFixBtn").addEventListener("click", async () => { await runAction("global_fix", "quick"); await loadActiveTab(true); });
+    document.getElementById("quickStatusBtn").addEventListener("click", async () => { await runAction("status_redgreen", "quick"); await loadActiveTab(true); });
+    document.getElementById("quickE2eBtn").addEventListener("click", async () => { await runAction("launch_e2e_fix", "quick"); await loadActiveTab(true); });
+    document.getElementById("quickRepoBtn").addEventListener("click", async () => { await runAction("repo_scan_continue", "quick"); await loadActiveTab(true); });
+    document.getElementById("heroRefreshBtn")?.addEventListener("click", async () => { await loadActiveTab(true); });
+    document.getElementById("closeReportContentBtn")?.addEventListener("click", () => {
+      document.getElementById("reportContentPanel").style.display = "none";
+    });
+    document.getElementById("quickResearchBtn").addEventListener("click", async () => {
+      await fetchApi("/api/dashboard/research-copy/regenerate", { method: "POST", body: JSON.stringify({ requested_by: "quick" }) });
+      await loadActiveTab(true);
+    });
+    
+    // Reduce/Resume Local Load
+    document.getElementById("reduceLoadBtn").addEventListener("click", async () => {
+      const btn = document.getElementById("reduceLoadBtn");
+      const resumeBtn = document.getElementById("resumeLoadBtn");
+      btn.disabled = true;
+      btn.textContent = "Reducing load...";
+      try {
+        const result = await fetchApi("/api/system/reduce-load", { method: "POST", body: JSON.stringify({ reason: "blender_work" }) });
+        addMessage("architect", `Local load reduced: ${result.message || "Work offloaded to other devices, RAM freed"}`);
+        btn.style.display = "none";
+        resumeBtn.style.display = "inline-block";
+      } catch (err) {
+        addMessage("architect", `Reduce load failed: ${err.json?.error || err.message}`, {}, `<div style="color: var(--danger);">Error</div>`);
+        btn.disabled = false;
+        btn.textContent = "💾 Reduce Local Load";
+      }
+    });
+    
+    document.getElementById("resumeLoadBtn").addEventListener("click", async () => {
+      const btn = document.getElementById("resumeLoadBtn");
+      const reduceBtn = document.getElementById("reduceLoadBtn");
+      btn.disabled = true;
+      btn.textContent = "Resuming...";
+      try {
+        const result = await fetchApi("/api/system/resume-load", { method: "POST" });
+        addMessage("architect", `Local work resumed: ${result.message || "Workers restarted, accepting local work"}`);
+        btn.style.display = "none";
+        reduceBtn.style.display = "inline-block";
+        reduceBtn.disabled = false;
+        reduceBtn.textContent = "💾 Reduce Local Load";
+        await loadActiveTab(true);
+      } catch (err) {
+        addMessage("architect", `Resume failed: ${err.json?.error || err.message}`, {}, `<div style="color: var(--danger);">Error</div>`);
+        btn.disabled = false;
+        btn.textContent = "▶️ Resume Local Work";
+      }
+    });
+
+    async function runPm2EnsureFromBanner(btn) {
+      const button = btn || document.getElementById("pm2EnsureBtn");
+      if (button) {
+        button.disabled = true;
+        button.textContent = "Running pm2:ensure...";
+      }
+      try {
+        const result = await fetchApi("/api/system/pm2-ensure", { method: "POST" });
+        addMessage("architect", `PM2 ensure started${result.pid ? ` (pid ${result.pid})` : ""}. Refreshing status shortly.`);
+      } catch (err) {
+        addMessage("architect", `PM2 ensure failed: ${err.json?.error || err.message}`);
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = "Run pm2:ensure";
+        }
+        await loadActiveTab(true);
+      }
+    }
+
+    function normalizePm2WarningBanner() {
+      const warningEl = document.getElementById("pm2Warning");
+      if (!warningEl) return;
+      if (warningEl.querySelector("#pm2EnsureBtn")) return;
+      const text = (warningEl.textContent || "").trim();
+      if (!text.includes("Run npm run pm2:ensure") && !text.includes("Run pm2:ensure")) return;
+      const html = warningEl.innerHTML
+        .replace(/Run <code[^>]*>\s*npm run pm2:ensure\s*<\/code> to start (all processes under PM2|them)\.?/i, "")
+        .replace(/Run npm run pm2:ensure to start (all processes under PM2|them)\.?/i, "")
+        .replace(/Run pm2:ensure\.?/i, "");
+      warningEl.innerHTML = `${html} <button id="pm2EnsureBtn" type="button" style="margin-left: 0.5rem; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.35); color: #fff; border-radius: 4px; padding: 0.28rem 0.55rem; cursor: pointer;">Run pm2:ensure</button>`;
+      const pm2EnsureBtn = document.getElementById("pm2EnsureBtn");
+      if (pm2EnsureBtn) pm2EnsureBtn.addEventListener("click", () => runPm2EnsureFromBanner(pm2EnsureBtn));
+    }
+    
+    function renderPm2Warning(status) {
+      const warningEl = document.getElementById("pm2Warning");
+      if (!warningEl) return;
+      if (!status || status.persistence_warning !== true) {
+        warningEl.style.display = "none";
+        warningEl.innerHTML = "";
+        return;
+      }
+
+      warningEl.style.display = "block";
+      if (!status.pm2_running) {
+        warningEl.innerHTML = `<strong>⚠️ PM2 Not Running:</strong> Processes may die when terminals close. <button id="pm2EnsureBtn" type="button" style="margin-left: 0.5rem; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.35); color: #fff; border-radius: 4px; padding: 0.28rem 0.55rem; cursor: pointer;">Run pm2:ensure</button>`;
+      } else {
+        warningEl.innerHTML = `<strong>⚠️ Some Critical Processes Not Running:</strong> ${status.critical_processes_running}/${status.critical_processes_total} critical processes are online. <button id="pm2EnsureBtn" type="button" style="margin-left: 0.5rem; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.35); color: #fff; border-radius: 4px; padding: 0.28rem 0.55rem; cursor: pointer;">Run pm2:ensure</button>`;
+      }
+      const pm2EnsureBtn = document.getElementById("pm2EnsureBtn");
+      if (pm2EnsureBtn) pm2EnsureBtn.addEventListener("click", () => runPm2EnsureFromBanner(pm2EnsureBtn));
+      normalizePm2WarningBanner();
+    }
+
+    async function refreshSystemStatus() {
+      try {
+        const status = await fetchApi("/api/system/status", { timeoutMs: 15000, retries: 1 });
+        if (status.load_reduced) {
+          document.getElementById("reduceLoadBtn").style.display = "none";
+          document.getElementById("resumeLoadBtn").style.display = "inline-block";
+        } else {
+          document.getElementById("resumeLoadBtn").style.display = "none";
+          document.getElementById("reduceLoadBtn").style.display = "inline-block";
+        }
+        renderPm2Warning(status);
+      } catch (err) {
+        // Keep current banner state on transient fetch failures.
+      }
+    }
+
+    // Check system status on load and keep it fresh.
+    refreshSystemStatus();
+    setInterval(() => {
+      if (document.hidden) return;
+      refreshSystemStatus();
+    }, 30000);
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) {
+        loadActiveTab(false);
+        refreshSystemStatus();
+      }
+    });
+    normalizePm2WarningBanner();
+    document.getElementById("statusDiagnoseBtn").addEventListener("click", async () => { await runAction("global_diagnose", "status_strip"); await loadActiveTab(true); });
+    document.getElementById("statusFixBtn").addEventListener("click", async () => { await runAction("global_fix", "status_strip"); await loadActiveTab(true); });
+    document.getElementById("statusFixCycleBtn").addEventListener("click", async () => { await runBoundedFixCycle(2); await loadActiveTab(true); });
+
+    document.getElementById("refreshOverviewBtn").addEventListener("click", () => loadTab("overview", true));
+    document.getElementById("refreshSystemsBtn").addEventListener("click", () => loadTab("systems", true));
+    document.getElementById("refreshAgentsBtn").addEventListener("click", () => loadTab("agents", true));
+    document.getElementById("refreshJobsBtn").addEventListener("click", () => loadTab("jobs_queue", true));
+    document.getElementById("refreshLeadsBtn").addEventListener("click", () => loadTab("leads_credit", true));
+    document.getElementById("refreshQaBtn").addEventListener("click", () => loadTab("qa_e2e", true));
+    document.getElementById("refreshResearchBtn").addEventListener("click", () => loadTab("research_copy", true));
+    document.getElementById("refreshReportsBtn").addEventListener("click", () => loadTab("reports", true));
+    document.getElementById("regenerateResearchBtn").addEventListener("click", async () => {
+      await fetchApi("/api/dashboard/research-copy/regenerate", { method: "POST", body: JSON.stringify({ requested_by: "manual" }) });
+      await loadTab("research_copy", true);
+    });
+    document.getElementById("refreshHistoryBtn").addEventListener("click", () => loadTab("history", true));
+
+    refs.reportsLaneFilter.addEventListener("change", () => renderReports(state.cache.reports || { data: { reports: [] }, cards: [], generated_at: new Date().toISOString() }));
+    refs.reportsSeverityFilter.addEventListener("change", () => renderReports(state.cache.reports || { data: { reports: [] }, cards: [], generated_at: new Date().toISOString() }));
+    refs.reportsSortBy.addEventListener("change", () => renderReports(state.cache.reports || { data: { reports: [] }, cards: [], generated_at: new Date().toISOString() }));
+
+    tabButtons.forEach((btn) => btn.addEventListener("click", () => setTab(btn.dataset.tab)));
+    sendBtn.addEventListener("click", sendGoal);
+    goalInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendGoal(); }
+    });
+
+    const fromHash = (() => {
+      const m = String(location.hash || "").match(/tab=([a-z_]+)/i);
+      return m ? m[1] : "overview";
+    })();
+    setTab(fromHash);
+    setAutoRefresh();
+    startEventStream();
+    try { goalInput.focus(); } catch {}
+  </script>
+</body>
+</html>

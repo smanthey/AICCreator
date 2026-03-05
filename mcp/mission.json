@@ -1,0 +1,49 @@
+{
+  "mission_id": "mcp_convergence_v1",
+  "objective": "Continuously converge all target SaaS repos on canonical core patterns derived from MCP-indexed exemplars, prevent drift, and surface regressions early.",
+  "owner": "architect",
+  "targets": {
+    "repos": [
+      "local/claw-architect",
+      "local/PayClaw",
+      "local/CaptureInbound",
+      "local/veritap",
+      "local/v0-morningops",
+      "local/CookiesPass",
+      "local/cookies-tempe"
+    ],
+    "domains": ["stripe", "email", "queue", "auth", "pm2", "trading", "mcp", "memory"]
+  },
+  "cadence": {
+    "hourly": ["index_check", "landmines", "drift-lite", "health-report"],
+    "daily": ["index_refresh", "drift-full", "pattern-promotion-candidates", "open-findings-reconcile", "memory-consolidation"],
+    "weekly": ["exemplar-review", "core-roadmap-update", "stability-metrics", "mcp-benchmark-pack"]
+  },
+  "stop_conditions": {
+    "core_modules_adopted_percent": 95,
+    "critical_findings_open": 0,
+    "high_findings_open": 3,
+    "drift_findings_open": 5
+  },
+  "guardrails": {
+    "no_direct_edits": true,
+    "resources_first_tools_second": true,
+    "explicit_confirmation_on_write_tools": true,
+    "tool_budget": {
+      "max_calls": 30,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 80000
+    },
+    "remote_mcp": {
+      "oauth_required": true,
+      "least_privilege_scopes": true,
+      "broad_writes_disabled_by_default": true
+    },
+    "max_tasks_per_run": {
+      "hourly": 25,
+      "daily": 200
+    },
+    "require_evidence_for_tasks": true,
+    "require_symbol_id_when_possible": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Repos + archetype for convergence runner. Override with convergence-targets.local.json (gitignored) or CONVERGENCE_TARGETS_PATH.",
+  "targets": [
+    { "repo": "HowtoWatchStream-SmartKB", "archetype": "content_kb" },
+    { "repo": "mytutor", "archetype": "saas_starter" },
+    { "repo": "payclaw", "archetype": "payments" }
+  ]
+}

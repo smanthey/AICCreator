@@ -1,0 +1,334 @@
+[
+  {
+    "id": "masterpiece_builder_agent",
+    "name": "Masterpiece Builder Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Runs MCP + repo indexing first, then dispatches high-quality implementation loops so target repos ship fully functional increments quickly.",
+    "job_description": "Refresh MCP health and shared index context, pick weakest or explicit repos, queue repo_index_autopatch + opencode_controller with implementation-first objectives and evidence-ready output.",
+    "primary_command": "npm run -s masterpiece:builder",
+    "heartbeat_minutes": 30,
+    "cron": "7,37 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "saas_development",
+    "name": "SaaS Development Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Builds and hardens SaaS capabilities across managed repos with baseline implementation and rollout checks.",
+    "job_description": "Run capability factory pulses, identify implementation gaps, and queue bounded repo upgrades.",
+    "primary_command": "npm run -s capability:factory:pulse",
+    "heartbeat_minutes": 15,
+    "cron": "5,35 * * * *"
+  },
+  {
+    "id": "content_writing",
+    "name": "Content Writing Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Creates conversion-focused drafts and keeps content workflows moving.",
+    "job_description": "Queue copy-lab style draft work and maintain content pipeline quality in dry-run-safe mode.",
+    "primary_command": "npm run -s copy:lab -- --brand skynpatch --channel email --topic \"daily conversion test\" --iterations 1 --dry-run",
+    "heartbeat_minutes": 20,
+    "cron": "10,40 * * * *"
+  },
+  {
+    "id": "research_analysis",
+    "name": "Research and Analysis Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Surfaces proactive research opportunities from projects, comms, and external signals.",
+    "job_description": "Run proactive research scans and produce prioritized research triggers and briefs.",
+    "primary_command": "npm run -s research:proactive -- --dry-run",
+    "heartbeat_minutes": 20,
+    "cron": "15,45 * * * *"
+  },
+  {
+    "id": "learning_journal_agent",
+    "name": "Learning Journal Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Analyzes the last 24h of system execution, extracts issue patterns, writes shared journal context, and queues targeted swarm follow-up tasks.",
+    "job_description": "Continuously synthesize progress + issue signatures + AI/news/library research findings into a shared journal for all agents and keep triage swarm work moving.",
+    "primary_command": "npm run -s journal:learning",
+    "heartbeat_minutes": 60,
+    "cron": "12 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "data_processing",
+    "name": "Data Processing Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Maintains index/data freshness and deterministic ingestion quality.",
+    "job_description": "Run file index sync and data integrity jobs to keep downstream agents supplied with current data.",
+    "primary_command": "npm run -s sync:file-index",
+    "heartbeat_minutes": 30,
+    "cron": "20 * * * *"
+  },
+  {
+    "id": "index_sync_agent",
+    "name": "Index Sync Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Refreshes shared symbol and repo-map knowledge so all OpenClaw agents use the same indexed context.",
+    "job_description": "Run MCP health, repomap refresh, symbolic QA index sync, and readiness scoring to publish shared index knowledge for all lanes.",
+    "primary_command": "npm run -s index:sync:agent",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "scheduling_calendar",
+    "name": "Scheduling and Calendar Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Coordinates scheduled work orchestration and dependency-aware job sequencing.",
+    "job_description": "Execute backlog orchestrator in dry-run mode for safe schedule planning and readiness checks.",
+    "primary_command": "npm run -s backlog:orchestrator -- --dry-run",
+    "heartbeat_minutes": 15,
+    "cron": "*/15 * * * *"
+  },
+  {
+    "id": "code_review",
+    "name": "Code Review Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Performs human-grade QA style review and flags high-risk code or coverage gaps.",
+    "job_description": "Run blocking QA checks on top repos and emit actionable findings for fix lanes.",
+    "primary_command": "npm run -s qa:human:blocking",
+    "heartbeat_minutes": 60,
+    "cron": "25 */2 * * *"
+  },
+  {
+    "id": "debugging",
+    "name": "Debugging Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Finds regressions and routes reproducible fixes.",
+    "job_description": "Run flow regression pulse and keep debug queues populated with concrete failing scenarios.",
+    "primary_command": "npm run -s flow:regression:pulse",
+    "heartbeat_minutes": 30,
+    "cron": "30 * * * *"
+  },
+  {
+    "id": "ui_ux_design",
+    "name": "UI/UX Design Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Audits user-facing flow quality and UX consistency.",
+    "job_description": "Run workflow walkthrough audits to detect UX friction and missing user journey coverage.",
+    "primary_command": "npm run -s workflow:audit:soft",
+    "heartbeat_minutes": 30,
+    "cron": "35 * * * *"
+  },
+  {
+    "id": "marketing_social",
+    "name": "Marketing and Social Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Maintains outbound marketing/social research and campaign opportunities.",
+    "job_description": "Run affiliate and go-to-market research loops to keep campaign backlog updated.",
+    "primary_command": "npm run -s affiliate:research",
+    "heartbeat_minutes": 120,
+    "cron": "50 */2 * * *"
+  },
+  {
+    "id": "system_administration",
+    "name": "System Administration Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Keeps platform health, runtime hygiene, and operational reliability in range.",
+    "job_description": "Run runtime and cleanup checks, monitor drift, and maintain operational baselines.",
+    "primary_command": "npm run -s audit:runtime",
+    "heartbeat_minutes": 30,
+    "cron": "55 * * * *"
+  },
+  {
+    "id": "media_os_lane",
+    "name": "Media OS Lane Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Runs the media ingest/enrich/hash/visual pipeline so categorization, dedupe, and clustering stay current.",
+    "job_description": "Execute the bounded Media OS chain and keep metadata/hash/visual coverage moving forward.",
+    "primary_command": "npm run -s media:chain -- --limit 2000 --hash-limit 5000 --visual-limit 2000",
+    "heartbeat_minutes": 30,
+    "cron": "12,42 * * * *"
+  },
+  {
+    "id": "learning_flywheel_agent",
+    "name": "Learning Flywheel Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Keeps pattern learning and symbolic capability updates flowing so dashboards reflect newly learned behavior.",
+    "job_description": "Run robust pattern updates and feature rotation so new patterns/libraries surface continuously in the learning lane.",
+    "primary_command": "npm run -s pattern:robust:build && npm run -s feature:rotation:daily",
+    "heartbeat_minutes": 60,
+    "cron": "18 */2 * * *"
+  },
+  {
+    "id": "fix_lane_guardian",
+    "name": "Fix Lane Guardian Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Keeps fix lane conditional and active only for real regressions/failures by running bounded diagnose/autofix cycles.",
+    "job_description": "Run needs-attention autofix and regression pulse so fix signals appear only when there are active failures.",
+    "primary_command": "npm run -s needs:attention:autofix && npm run -s flow:regression:pulse",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *"
+  },
+  {
+    "id": "roblox_game_growth",
+    "name": "Roblox Game Growth Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Top-priority lane focused on RobloxGitSync game quality, retention, monetization, and live-ops growth.",
+    "job_description": "Continuously queue sync, audit, implementation, and growth optimization loops for RobloxGitSync as the highest game priority, while enforcing one major update commit per day.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only roblox && npm run -s roblox:game:growth:pulse",
+    "heartbeat_minutes": 10,
+    "cron": "*/10 * * * *",
+    "top_priority": false
+  },
+  {
+    "id": "quantfusion_algo_dev",
+    "name": "QuantFusion Algo Dev Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Runs overnight trading performance review, strategy improvement, and backtest cycles for QuantFusion.",
+    "job_description": "Enforce daily major-update commit lane for QuantFusion, then review trading outcomes, find loss-causing edge cases, queue improvements, run paper validation/backtests, and prepare a morning-ready changelog.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only quantfusion && npm run -s quantfusion:trading:overnight -- --mode paper",
+    "heartbeat_minutes": 60,
+    "cron": "20 3 * * *"
+  },
+  {
+    "id": "gocrawdaddy_saas_builder",
+    "name": "GoCrawdaddy SaaS Builder Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Builds the OpenClaw VPS hosting SaaS (GoCrawdaddy) with product + engineering loops.",
+    "job_description": "Scaffold or refresh the GoCrawdaddy repo, sync research signals, and queue OpenCode implementation cycles for VPS onboarding, deploy automation, and health dashboard.",
+    "primary_command": "npm run -s gocrawdaddy:launch",
+    "heartbeat_minutes": 60,
+    "cron": "10 */2 * * *"
+  },
+  {
+    "id": "cookiespass_finisher",
+    "name": "CookiesPass Finisher Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "P0 lane to finish CookiesPass using existing proven code paths and tight validation loops.",
+    "job_description": "Run daily major-update commit lane for CookiesPass and CookiesPass copy first, then run cookiespass:mission:pulse as highest priority. Reuse implementations from existing repos for speed and reliability; do not rebuild from scratch. Run filesystem MCP + rg/local symbol-map indexing first, then run repo_mapper to map entrypoints/dependencies before coding.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only cookiespass,cookiespass_copy && npm run -s cookiespass:mission:pulse",
+    "heartbeat_minutes": 20,
+    "cron": "*/20 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "payclaw_saas_builder",
+    "name": "PayClaw SaaS Builder Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Builds the PayClaw Mac DMG app (invoice payment collection via SMS/email) with compliance, seed repo, and swarm oversight.",
+    "job_description": "P1 lane (after CookiesPass): enforce daily major-update commit lane for PayClaw, run payclaw:launch to seed/sync repo https://github.com/smanthey/payclaw, copy compliance, then run payclaw:dispatch:chunks. Reuse implementations from existing repos, run filesystem MCP + rg/local symbol-map indexing first, then run repo_mapper to map entrypoints/dependencies before coding.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only payclaw && npm run -s payclaw:launch && npm run -s payclaw:dispatch:chunks",
+    "heartbeat_minutes": 60,
+    "cron": "10 */2 * * *",
+    "top_priority": true
+  },
+  {
+    "id": "captureinbound_multitenant_guardian",
+    "name": "CaptureInbound Multitenant Guardian",
+    "owner": "OpenClaw Mission Control",
+    "description": "P1 lane to complete CaptureInbound tenant/number integrity and self-heal workflow.",
+    "job_description": "Enforce daily major-update commit lane for CaptureInbound, focus on tenant-number mismatch repair, diagnostics UI, and automated reconciliation paths. Run filesystem MCP + rg/local symbol-map indexing first, then run repo_mapper before coding.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only captureinbound",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "capture_usage_report_hardener",
+    "name": "Capture Usage Report Hardener",
+    "owner": "OpenClaw Mission Control",
+    "description": "P1 lane for capture release confidence: compile health + usage-report E2E.",
+    "job_description": "Enforce daily major-update commit lane for capture, clear compile debt, verify scheduled usage-report execution, and keep release checks trustworthy.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only capture",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "infinitedata_integrity_lane",
+    "name": "InfiniteData Integrity Lane",
+    "owner": "OpenClaw Mission Control",
+    "description": "P1 lane for infinitedata completion and data-flow integrity.",
+    "job_description": "Enforce daily major-update commit lane for infinitedata, prioritize unresolved symbol-index gaps, and close unpersisted analytics outputs with targeted checks.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only infinitedata",
+    "heartbeat_minutes": 45,
+    "cron": "20 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "inbound_cookies_release_guard",
+    "name": "Inbound-cookies Release Guard",
+    "owner": "OpenClaw Mission Control",
+    "description": "P2 lane for Inbound-cookies webhook integrity and production hardening.",
+    "job_description": "Enforce daily major-update commit lane for Inbound-cookies and verify webhook signature enforcement in both TS and Python paths with release-safe checks.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only inbound-cookies",
+    "heartbeat_minutes": 60,
+    "cron": "15 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "autopay_ui_integrity_lane",
+    "name": "Autopay UI Integrity Lane",
+    "owner": "OpenClaw Mission Control",
+    "description": "P2 lane to harden autopay_ui payment and webhook flow integrity.",
+    "job_description": "Enforce daily major-update commit lane for autopay_ui and close route-flow gaps, especially payment crediting and webhook auth behavior.",
+    "primary_command": "npm run -s repo:priority:major:daily -- --only autopay_ui",
+    "heartbeat_minutes": 60,
+    "cron": "45 * * * *",
+    "top_priority": true
+  },
+  {
+    "id": "bot_collection_autonomous",
+    "name": "Autonomous Bot Collection Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Autonomous agent that researches, thinks, and acts to collect 100-300k credits in 3 months. Uses internet research, creative thinking, and continuous learning.",
+    "job_description": "Research opportunities on internet, think creatively about strategies, discover bots autonomously, execute outreach, and learn continuously. Goal: 100-300k credits in 3 months.",
+    "primary_command": "node scripts/bot-autonomous-agent.js run",
+    "heartbeat_minutes": 30,
+    "cron": "0 */4 * * *",
+    "top_priority": false
+  },
+  {
+    "id": "business_research_agent",
+    "name": "Business Intelligence Research Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Discovers new business platform integrations, researches API documentation, identifies authentication methods, and tests API endpoints.",
+    "job_description": "Research new platforms to integrate (Shopify, Etsy, Amazon, Shippo, PirateShip, social media, analytics), test APIs, and generate research reports for Builder Agent.",
+    "primary_command": "node agents/business-research-agent.js",
+    "heartbeat_minutes": 30,
+    "cron": "0 */6 * * *"
+  },
+  {
+    "id": "business_builder_agent",
+    "name": "Business Intelligence Builder Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Generates sync scripts, migrations, and API integrations from research findings. Builds data collectors automatically.",
+    "job_description": "Generate sync scripts from research findings, create database migrations, set up API authentication, implement error handling, and add integrations to sync scheduler.",
+    "primary_command": "node agents/business-builder-agent.js",
+    "heartbeat_minutes": 30,
+    "cron": "15 */6 * * *"
+  },
+  {
+    "id": "business_updater_agent",
+    "name": "Business Intelligence Updater Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Monitors API changes, updates deprecated endpoints, handles authentication renewals, and fixes broken integrations.",
+    "job_description": "Monitor all integrations for health, detect API changes or deprecations, update code, handle authentication renewals, and fix broken connections.",
+    "primary_command": "node agents/business-updater-agent.js",
+    "heartbeat_minutes": 30,
+    "cron": "30 */6 * * *"
+  },
+  {
+    "id": "business_improver_agent",
+    "name": "Business Intelligence Improver Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Analyzes sync performance, optimizes queries, adds missing features, and enhances dashboard capabilities.",
+    "job_description": "Analyze system metrics, identify optimization opportunities, generate improvements, test and deploy optimizations, and enhance dashboard features.",
+    "primary_command": "node agents/business-improver-agent.js",
+    "heartbeat_minutes": 30,
+    "cron": "45 */6 * * *"
+  },
+  {
+    "id": "business_coordinator_agent",
+    "name": "Business Intelligence Coordinator Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Orchestrates the business intelligence agent swarm, manages build pipeline, coordinates handoffs, and synthesizes results.",
+    "job_description": "Coordinate all business intelligence agents, manage build pipeline, handle agent handoffs, synthesize progress, and generate status reports.",
+    "primary_command": "node agents/business-coordinator-agent.js",
+    "heartbeat_minutes": 15,
+    "cron": "*/30 * * * *"
+  }
+]

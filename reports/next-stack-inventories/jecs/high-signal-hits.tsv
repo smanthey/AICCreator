@@ -1,0 +1,284 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:125:export type Observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:139:export type observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:190:	observable: Map<i53, Map<i53, { Observer }>>,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:227:	observable: Map<Component, Map<Component, { Observer }>>,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:628:local function find_observers(world: world, event: i53, component: i53): { observer }?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1017:		local observer_list = find_observers(world, EcsOnArchetypeCreate, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1018:		if not observer_list then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1021:		for _, observer in observer_list do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1022:			if query_match(observer.query, archetype) then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1023:				observer.callback(archetype::any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1235:		local observer_list = find_observers(world, EcsOnArchetypeDelete, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1236:		if not observer_list then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1239:		for _, observer in observer_list do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1240:			if query_match(observer.query, archetype) then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1241:				observer.callback(archetype::any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1876:	-- Only need one observer for EcsArchetypeCreate and EcsArchetypeDelete respectively
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1881:		on_create_action = {} :: Map<Component, { Observer }>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1884:	local query_cache_on_create: { Observer } = on_create_action[id0]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1892:		on_delete_action = {} :: Map<Component, { Observer }>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1895:	local query_cache_on_delete: { Observer } = on_delete_action[id0]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1920:	local observer_for_create = { query = query, callback = on_create_callback } :: Observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1921:	local observer_for_delete = { query = query, callback = on_delete_callback } :: Observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1923:	table.insert(query_cache_on_create, observer_for_create)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1924:	table.insert(query_cache_on_delete, observer_for_delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2440:		local create_pos = table.find(query_cache_on_create, observer_for_create)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2445:		local delete_pos = table.find(query_cache_on_delete, observer_for_delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:4129:	find_observers = find_observers :: (World, Component, Component) -> { Observer },
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/build_studio_docs.luau:51:	fs.writeFile(`{output}/{stem}.server.luau`, luau_source)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:26:-- no components belong to the ROOT_ARCHETYPE.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:35:	All entities with exactly the same set of components belong to the same archetype.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:63:	- [Position] has an edge for Velocity -> [Position, Velocity]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:71:	   a. Create a new component list: [Position, Velocity] (sorted)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:81:	- [Position] -> [Position, Velocity] (for adding Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/030_archetypes.luau:82:	- [Position, Velocity] -> [Position] (for removing Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:5:local Velocity = world:component()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:35:-- Create a few test entities for a Position, Velocity query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:39:world:set(e1, Velocity, Vector3.new(1, 2, 3))
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:44:world:set(e2, Velocity, Vector3.new(4, 5, 6))
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:46:-- This entity will not match as it does not have Position, Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:51:-- Create an uncached query for Position, Velocity.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:52:for entity, p, v in world:query(Position, Velocity) do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/110_hooks.luau:85:	observers or monitors that track component removals, you need to distinguish
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/110_hooks.luau:95:	that tells you exactly what went wrong. This is useful during development
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/002_entities.luau:70:	reused. By embedding this counter into the entity ID, any stale handle
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/021_query_operators.luau:17:local Velocity = world:component() :: jecs.Id<vector>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/021_query_operators.luau:20:-- Query with filter: entities that have Position and Velocity, but we don't
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/021_query_operators.luau:22:world:query(Position, Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/021_query_operators.luau:24:	:without(Velocity)     -- Can specify components to exclude
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:18:local Velocity = world:component() :: jecs.Id<vector>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:23:world:set(e1, Velocity, vector.create(1, 2, 3))    -- create archetype [Position, Velocity]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:27:world:set(e2, Velocity, vector.create(1, 2, 3))    -- archetype [Position, Velocity] already exists
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:28:world:set(e2, Mass, 100)                           -- create archetype [Position, Velocity, Mass]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:30:-- e1 is now in archetype [Position, Velocity]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:31:-- e2 is now in archetype [Position, Velocity, Mass]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:75:for entity, pos, vel in world:query(Position, Velocity) do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/022_query_caching.luau:80:local cached_query = world:query(Position, Velocity):cached()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:33:	    VelocitizeAnimationWeight = world:component(),
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:78:        world:set(trackEntity1, cts.VelocitizeAnimationWeight, 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:344:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:347:		world:added(t1, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:348:		world:added(t2, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:349:		world:added(t3, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:362:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:366:		world:changed(c1, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:367:		world:changed(c2, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:368:		world:changed(c3, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1584:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1587:		world:set(A, jecs.OnAdd, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1588:		world:added(A, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1618:		base:delete(base:entity()) -- Removing this line stops the error below from happening
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1653:		local server = jecs.world()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1656:		server:range(0, 1000)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1659:		local e1 = server:entity()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1661:		server:delete(e1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1689:		local e1v1 = server:entity()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2276:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2278:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2283:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2293:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2295:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2298:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2300:		CHECK(counter == 2)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2359:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2361:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2363:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2380:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2382:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2384:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2453:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2455:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2457:		CHECK(counter == 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2775:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2777:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:2779:		CHECK(counter == 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3402:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3404:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3406:		CHECK(counter == 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3429:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3431:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3433:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3449:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3451:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3453:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3470:		local counter = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3472:			counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3474:		CHECK(counter == 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:8:TEST("modules/ob::observer", function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:18:		ob.observer(world:query(jecs.pair(A, B)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:37:		ob.observer(world:query(A), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:46:	do CASE "Should enter observer at query:without(pair(R, t1)) when adding pair(R, t2)"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:58:		ob.observer(world:query(A):without(jecs.pair(B, C)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:71:	do CASE "Should enter observer at query:without(pair(R, t1)) when removing pair(R, t1)"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:82:		ob.observer(world:query(A):without(jecs.pair(B, D)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:106:	do CASE "Should enter observer at query:without(pair(R, *)) when adding pair(R, t1)"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:113:		ob.observer(world:query(A):without(jecs.pair(B, jecs.w)), function() c+= 1 end)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:124:	do CASE "Should enter observer at query:without(t1) when removing t1"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:129:		ob.observer(world:query(A):without(B), function() c+= 1 end)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:142:	do CASE "observers should accept pairs"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:147:		ob.observer(world:query(jecs.pair(A, B)), function() c+= 1 end)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:157:	do CASE "Ensure ordering between signals and observers"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:162:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:166:		ob.observer(world:query(A, B), counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:168:		world:added(A, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:169:		world:added(A, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:183:	do CASE "Rematch entities in observers"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:187:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:191:		ob.observer(world:query(A), counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:223:	do CASE "observer with pair should handle remove and re-add correctly"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:229:		ob.observer(world:query(jecs.pair(A, e1)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:244:	do CASE "observer with pair should handle set operations correctly"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:250:		ob.observer(world:query(jecs.pair(A, e1)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:267:	do CASE "observer with wildcard pair should handle operations correctly"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:274:		ob.observer(world:query(A, jecs.pair(B, jecs.w)), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:785:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:790:		monitor.added(counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:791:		monitor.removed(counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/010_how_components_works.luau:8:	If a game has a component Position and Velocity, there will be two entities,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:24:local Velocity = world:component() :: jecs.Id<vector>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:26:for entity, pos, vel in world:query(Position, Velocity) do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:27:	-- Process entities with both Position and Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:41:world:add(e2, Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:45:world:add(e3, Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:49:-- Only entities e2 and e3 match the query Position, Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:50:for entity, pos, vel in world:query(Position, Velocity) do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/020_queries.luau:51:	print(`Entity {entity} has Position and Velocity`)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau:115:local SLEEP_VELOCITY_SQ_LIMIT = 1e-2^2 -- square of the velocity sleep limit
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:18:export type Observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:28:local function observers_new(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:31:): Observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:138:	local observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:142:    return observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:392:	observer = observers_new,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/examples/example.luau:33:	OB.observer(world:query(ct.PivotTo, ct.Renderable), pivots_added)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau:118:local SLEEP_VELOCITY_SQ_LIMIT = 1e-2^2 -- square of the velocity sleep limit
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/init.luau:11:		remotes.new_server_registered:fire({
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/init.luau:22:		if RunService:IsServer() then "server" else "client"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/module.luau:5:local server = require(script.Parent.server)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/module.luau:6:local public = require(script.Parent.server.public)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/module.luau:7:local scheduler = require(script.Parent.server.scheduler)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/module.luau:50:	broadcast_server = server.broadcast,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:284:		collectgarbage()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:355:	(collectgarbage :: any)("collect")
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/ping.luau:16:			remotes.new_server_registered:fire({
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/ping.luau:25:			remotes.new_server_registered:fire(outgoing)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/init.luau:20:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:125:export type Observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:139:export type observer = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:190:	observable: Map<i53, Map<i53, { Observer }>>,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:227:	observable: Map<Component, Map<Component, { Observer }>>,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:624:local function find_observers(world: world, event: i53, component: i53): { observer }?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1013:		local observer_list = find_observers(world, EcsOnArchetypeCreate, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1014:		if not observer_list then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1017:		for _, observer in observer_list do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1018:			if query_match(observer.query, archetype) then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1019:				observer.callback(archetype::any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1231:		local observer_list = find_observers(world, EcsOnArchetypeDelete, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1232:		if not observer_list then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1235:		for _, observer in observer_list do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1236:			if query_match(observer.query, archetype) then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1237:				observer.callback(archetype::any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1872:	-- Only need one observer for EcsArchetypeCreate and EcsArchetypeDelete respectively
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1877:		on_create_action = {} :: Map<Component, { Observer }>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1880:	local query_cache_on_create: { Observer } = on_create_action[id0]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1888:		on_delete_action = {} :: Map<Component, { Observer }>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1891:	local query_cache_on_delete: { Observer } = on_delete_action[id0]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1916:	local observer_for_create = { query = query, callback = on_create_callback } :: Observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1917:	local observer_for_delete = { query = query, callback = on_delete_callback } :: Observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1919:	table.insert(query_cache_on_create, observer_for_create)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1920:	table.insert(query_cache_on_delete, observer_for_delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2436:		local create_pos = table.find(query_cache_on_create, observer_for_create)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2441:		local delete_pos = table.find(query_cache_on_delete, observer_for_delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:4104:	find_observers = find_observers :: (World, Component, Component) -> { Observer },
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/widget.luau:18:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/widget.luau:446:					below = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:4:	the server for me.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:17:local local_host: "server" | Player
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:21:	local_host = "server"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:28:	if not (t.host == "server" or (typeof(t.host) == "Instance" and t.host:IsA("Player"))) then return false end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:121:			--- we need to fire the server
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:122:			elseif connector.host == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:124:					host = "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:131:			elseif local_host == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:133:					host = "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:139:			--- we need to tell the server to redirect this to the client
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:167:			if target.host == "server" and (target.to_vm == vm_id or target.to_vm == nil) then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:170:			elseif target.host ~= "server" and vm_id == MANAGER_VM then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:60:	-- Max saturation will be when one of r, g or b goes below zero.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:62:	-- Select different coefficients depending on which component goes below zero first
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/init.luau:17:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:898:			if value.Envelope > 0 then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:900:				write_low_prec_float(value.Envelope)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:15:	Broadcasts to clients that a new server has been registered.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:18:	new_server_registered = net.create_event("server_registered", false, true)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:22:	Pings all servers and make them respond with new_server_registered
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:28:	Broadcasts to servers that a new client has been registered
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:31:	bind_to_server_core = net.create_event("client_registered")
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:35:	Sends a update to a client about a new server
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:37:	update_server_data =
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:38:		net.create_event("update_server_data")
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:45:	The client will use this to send the mouse pointer to the server
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:60:	Requests the server to validate a query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:77:	Requests a server to initiate replication of a query.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:146:	Requests a server to initiate replication of a scheduler
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/remotes.luau:153:	Requests the server to stop replicating a scheduler
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/systems/replicate.luau:9:	host: "server" | Player,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/loop.luau:1:local scheduler = require(script.Parent.Parent.server.scheduler)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/types.luau:2:type host = "client" | "server"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/types.luau:5:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/types.luau:11:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/systems/get_scheduler_data.luau:14:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:25:--- Runs a callback defined by the developer to determine if a player is allowed
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:27:local function communication_is_allowed(from: "server" | Player, to: "server" | Player, dont_whitelist: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:28:	if from == "server" then return true end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:44:local function check(from: "server" | Player, to: "server" | Player, dont_whitelist: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:53:local function check_no_wl(from: "server" | Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:54:	if from == "server" then return true end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:64:local function _whitelist(from: "server" | Player, to: "server" | Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/widget.luau:7:	host: "server" | Player,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau:11:	local bind_to_core = queue(remotes.bind_to_server_core)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau:41:			remotes.update_server_data:fire(outgoing, {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau:73:			remotes.update_server_data:fire(connector, {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/validate_query.luau:11:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/validate_query.luau:41:	elseif context.host == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau:26:	below: {[number]: any}?,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau:171:			props.below,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau:19:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau:11:	host: "server" | Player,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/obtain_query_data.luau:10:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/send_workspace_entity.luau:6:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/highlight_workspace_entity.luau:5:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/init.luau:16:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:18:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/systems/obtain_entity_data.luau:10:	host: Player | "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/add_component.luau:3:local query_parser = require(script.Parent.Parent.Parent.Parent.server.query_parser)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:214:        -- reset velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/init.luau:16:	local servers = vide.source {} :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/init.luau:19:		servers,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/init.luau:30:		servers = servers,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:17:	servers: () -> {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:19:			host: "server" | Player,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:42:		for _, server in props.servers() do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:43:			local host = server.host
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:45:			table.insert(hosts[host], server)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:48:		hosts["all"] = props.servers()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:56:		for host, servers in hosts() do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:16:		host = "server"
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:19:	local servers_responding = queue(remotes.new_server_registered)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:20:	local server_update = queue(remotes.update_server_data)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:24:	local servers = data :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:26:		server = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:31:		for connector in servers_responding:iter() do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:33:			remotes.bind_to_server_core:fire(outgoing)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:42:				servers()[idx] = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:44:			servers(servers())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:47:		for connector, packet in server_update:iter() do
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:54:				-- print("new server")
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:57:				servers()[idx] = {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:64:				servers(servers())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:66:				-- print(servers())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:69:			local server = servers()[idx]
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:70:			local schedulers = server.schedulers()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:71:			local worlds = server.worlds()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:88:			server.schedulers(schedulers)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/systems/get_core_data.luau:89:			server.worlds(worlds)

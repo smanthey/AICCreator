@@ -1,0 +1,47 @@
+# CI: verify scripts run, generate index manifest, avoid rebuilding already-complete work.
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check-and-manifest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Script parse check (key scripts)
+        run: |
+          node --check scripts/index-paths-from-master.js
+          node --check scripts/index-manifest.js
+          node --check scripts/builder-gap-pulse.js
+          node --check scripts/repo-completion-gap-one.js
+
+      - name: Index paths (no Python index in CI)
+        run: node ./scripts/index-paths-from-master.js | cat
+
+      - name: Generate index manifest
+        run: npm run -s index:manifest
+        continue-on-error: true
+
+      - name: Upload index manifest
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: index-manifest
+          path: reports/index-manifest.json
+          retention-days: 7

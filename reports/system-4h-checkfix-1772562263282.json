@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-03-03T18:23:49.317Z",
+  "checks": {
+    "bind_guard": {
+      "command": "npm run -s security:bind:guard",
+      "started_at": "2026-03-03T18:23:49.320Z",
+      "finished_at": "2026-03-03T18:23:49.907Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n[security-bind-guard] OK scanned=297 violations=0\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "runtime": {
+      "command": "npm run -s audit:runtime",
+      "started_at": "2026-03-03T18:23:49.907Z",
+      "finished_at": "2026-03-03T18:23:50.937Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }\n\n=== Runtime Audit ===\n\n✅ Postgres connected\n✅ Postgres connected\n# terminal_error_tasks\n[ { status: 'DEAD_LETTER', n: 2 } ]\n\n# recent_dead_letters_24h\n[ { n: 0 } ]\n\n# stale_task_runs\n[ { n: 0 } ]\n\n# stale_workers_legacy\n[ { n: 0 } ]\n\n# stale_devices\n[ { n: 0 } ]\n\nOK: runtime audit passed.\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "schema": {
+      "command": "npm run -s schema:audit:json",
+      "started_at": "2026-03-03T18:23:50.937Z",
+      "finished_at": "2026-03-03T18:23:51.857Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n{\n  \"ok\": true,\n  \"failures\": [],\n  \"warnings\": [],\n  \"stats\": {\n    \"migration_files\": 83,\n    \"migration_versions_in_files\": 83,\n    \"migration_versions_applied\": 83,\n    \"pending_versions\": 0,\n    \"applied_without_file\": 0,\n    \"invalid_constraints\": 0,\n    \"invalid_indexes\": 0\n  }\n}\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "contract": {
+      "command": "npm run -s audit:tasks",
+      "started_at": "2026-03-03T18:23:51.857Z",
+      "finished_at": "2026-03-03T18:23:54.582Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[site-audit] ✅ Handlers registered: site_audit, site_compare, site_fix_plan, site_extract_patterns\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n\n=== Task Contract Audit ===\n\nregistered handlers : 80\nrouting entries     : 80\npayload schemas     : 80\n\nOK: handlers, routing, and payload schemas are aligned.\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "progress_integrity": {
+      "command": "npm run -s audit:progress:integrity",
+      "started_at": "2026-03-03T18:23:54.582Z",
+      "finished_at": "2026-03-03T18:23:56.196Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n✅ Postgres connected\n{\n  \"ok\": false,\n  \"lanes\": [\n    {\n      \"lane\": \"cookiespass\",\n      \"completed\": 121,\n      \"failed\": 0,\n      \"queued\": 8,\n      \"running\": 0,\n      \"in_flight\": 8,\n      \"oldest_in_flight_minutes\": 11.1,\n      \"blockers\": 0,\n      \"completed_with_evidence\": 0,\n      \"integrity_blocked\": 0,\n      \"blocked_loop\": 0,\n      \"symbol_preflight_failed\": 0,\n      \"checklist\": [\n        {\n          \"id\": \"repo_autofix\",\n          \"type\": \"repo_autofix\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 23\n        },\n        {\n          \"id\": \"site_audit\",\n          \"type\": \"site_audit\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 30\n        },\n        {\n          \"id\": \"site_fix_plan\",\n          \"type\": \"site_fix_plan\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 31\n        },\n        {\n          \"id\": \"loyalty_send_outreach\",\n          \"type\": \"loyalty_send_outreach\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 26\n        },\n        {\n          \"id\": \"loyalty_process_webhooks\",\n          \"type\": \"loyalty_process_webhooks\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 11\n        }\n      ],\n      \"checklist_completed\": 5,\n      \"checklist_total\": 5,\n      \"research_relevance_score\": null,\n      \"movement_ok\": true,\n      \"escalation_required\": false,\n      \"pretend_work_signals\": [\n        \"completed_without_evidence\"\n      ]\n    },\n    {\n      \"lane\": \"gocrawdaddy\",\n      \"completed\": 4,\n      \"failed\": 0,\n      \"queued\": 0,\n      \"running\": 0,\n      \"in_flight\": 0,\n      \"oldest_in_flight_minutes\": 0,\n      \"blockers\": 0,\n      \"completed_with_evidence\": 0,\n      \"integrity_blocked\": 0,\n      \"blocked_loop\": 0,\n      \"symbol_preflight_failed\": 0,\n      \"checklist\": [\n        {\n          \"id\": \"research_sync\",\n          \"type\": \"research_sync\",\n          \"source\": \"gocrawdaddy_launch\",\n          \"done\": true,\n          \"count\": 1\n        },\n        {\n          \"id\": \"research_signals\",\n          \"type\": \"research_signals\",\n          \"source\": \"gocrawdaddy_launch\",\n          \"done\": true,\n\n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    }
+  },
+  "fixes": {
+    "task_governor": {
+      "command": "npm run -s task:governor",
+      "started_at": "2026-03-03T18:23:56.196Z",
+      "finished_at": "2026-03-03T18:24:06.621Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n✅ Postgres connected\n{\n  \"ok\": true,\n  \"risks\": 5,\n  \"decisions\": [\n    \"reconcile_deadletters\",\n    \"prune_loop_duplicates\",\n    \"forward_progress_enforcer\",\n    \"forward_progress_enforcer_integrity\"\n  ],\n  \"executions_failed\": 0,\n  \"top_completed_share_pct\": 43,\n  \"stale_created\": 152,\n  \"report\": \"/Users/tatsheen/claw-architect/reports/task-governor-latest.json\"\n}\n",
+      "stderr_tail": "",
+      "error": null
+    }
+  },
+  "verify": {
+    "health": {
+      "command": "npm run -s tasks:health",
+      "started_at": "2026-03-03T18:24:06.621Z",
+      "finished_at": "2026-03-03T18:24:19.686Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "\n[tasks:health] ▶ topology\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n\n=== Runtime Topology Verification ===\n\nstale threshold: 45s\n✅ Postgres connected\nactive workers: 10\n\nWorkers:\n- Mac-70252 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-70694 role=worker tags=[io_light,io_heavy,infra,deterministic] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-39051 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-38976 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- Mac-70126 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- Mac-68941 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-38948 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- Mac-70275 role=worker tags=[io_light] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-39079 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- Tatsheens-Mini-7245 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n\nPASS: topology checks passed.\n[tasks:health] ✓ topology\n\n[tasks:health] ▶ runtime-audit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n\n=== Runtime Audit ===\n\n✅ Postgres connected\n✅ Postgres connected\n# terminal_error_tasks\n[]\n\n# recent_dead_letters_24h\n[ { n: 0 } ]\n\n# stale_task_runs\n[ { n: 0 } ]\n\n# stale_workers_legacy\n[ { n: 0 } ]\n\n# stale_devices\n[ { n: 0 } ]\n\nOK: runtime audit passed.\n[tasks:health] ✓ runtime-audit\n\n[tasks:health] ▶ task-contract-audit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv:\n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    },
+    "redgreen": {
+      "command": "npm run -s status:redgreen",
+      "started_at": "2026-03-03T18:24:19.686Z",
+      "finished_at": "2026-03-03T18:24:23.280Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n\n=== Global Red/Green Status ===\n\n┌─────────┬──────────────────┬─────────┬─────────────────────────────────────────────────────────┐\n│ (index) │ subsystem        │ status  │ detail                                                  │\n├─────────┼──────────────────┼─────────┼─────────────────────────────────────────────────────────┤\n│ 0       │ 'pm2'            │ 'GREEN' │ 'claw-dispatcher online'                                │\n│ 1       │ 'pm2'            │ 'GREEN' │ 'claw-webhook-server online'                            │\n│ 2       │ 'pm2'            │ 'GREEN' │ 'claw-worker-ai online'                                 │\n│ 3       │ 'pm2'            │ 'GREEN' │ 'claw-worker-nas online'                                │\n│ 4       │ 'pm2'            │ 'GREEN' │ 'claw-lead-autopilot-skynpatch online'                  │\n│ 5       │ 'pm2'            │ 'GREEN' │ 'claw-lead-autopilot-bws online'                        │\n│ 6       │ 'workers'        │ 'GREEN' │ 'active=10 ai=5 nas=4'                                  │\n│ 7       │ 'schema'         │ 'GREEN' │ 'no invalid constraints/indexes'                        │\n│ 8       │ 'repo_audit'     │ 'GREEN' │ 'repos_scanned=64 pass=64 fail=0 age_h=0.0'             │\n│ 9       │ 'credit'         │ 'GREEN' │ 'reports=6 open_issues=38 active_actions=12'            │\n│ 10      │ 'credit_oauth'   │ 'GREEN' │ 'oauth token refresh valid'                             │\n│ 11      │ 'lead'           │ 'GREEN' │ 'leads=514 with_email=420 sends=122'                    │\n│ 12      │ 'webhook'        │ 'GREEN' │ 'local webhook reachable status=200'                    │\n│ 13      │ 'telegram_bot'   │ 'GREEN' │ 'external channels disabled; dashboard chat is primary' │\n│ 14      │ 'website_uptime' │ 'GREEN' │ 'https://skynpatch.com 200 798ms'                       │\n│ 15      │ 'launch_e2e'     │ 'RED'   │ 'launch e2e blocking_failures=1 total_failures=3'       │\n│ 16      │ 'scheduler'      │ 'GREEN' │ 'fresh_steps=9 max_age_floor_min=90'                    │\n└─────────┴──────────────────┴─────────┴─────────────────────────────────────────────────────────┘\n\nstatus=RED green=16 yellow=0 red=1\n\nRED failures:\n- [launch_e2e] launch e2e blocking_failures=1 total_failures=3\n",
+      "stderr_tail": "",
+      "error": null
+    }
+  },
+  "ok": false
+}

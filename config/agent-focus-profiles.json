@@ -1,0 +1,422 @@
+[
+  {
+    "id": "infra_reliability",
+    "name": "Infra Reliability",
+    "intent": "Keep runtime stable, fast, and continuously moving.",
+    "purpose": "Prevent downtime, queue stalls, and drift before they affect delivery.",
+    "drive": "No silent failures. No idle loops. Deterministic recovery first.",
+    "goals": [
+      "Maintain green core runtime lanes.",
+      "Reduce retry/dead-letter rates weekly.",
+      "Shorten mean-time-to-recovery for failed services.",
+      "Enforce queue hygiene and backpressure controls."
+    ],
+    "skills": [
+      "pm2_service_lifecycle",
+      "bullmq_queue_recovery",
+      "postgres_runtime_diagnostics",
+      "redis_health_remediation",
+      "startup_reconciliation",
+      "idempotent_retries",
+      "observability_instrumentation",
+      "safe_autonomous_restarts"
+    ],
+    "kpis": [
+      "runtime_green_rate",
+      "dispatch_latency_p95",
+      "dead_letter_rate",
+      "mttr_minutes"
+    ],
+    "required_tags": ["infra", "deterministic"],
+    "symbol_research_focus": ["dispatcher", "worker", "queue", "retry", "health", "watchdog"],
+    "task_types": [
+      "platform_health_report",
+      "research_sync",
+      "research_signals",
+      "repo_autofix",
+      "dev_pipeline_run",
+      "subscription_audit_run",
+      "tax_prep_automation_run"
+    ],
+    "agent_selectors": ["system_administration", "scheduling_calendar", "status_review_coordinator"]
+  },
+  {
+    "id": "security_compliance",
+    "name": "Security Compliance",
+    "intent": "Reduce exploit surface while preserving delivery velocity.",
+    "purpose": "Continuously enforce secure defaults, dependency hygiene, and policy controls.",
+    "drive": "Patch real risk first. Verify with evidence.",
+    "goals": [
+      "Eliminate critical security findings quickly.",
+      "Keep secrets and token exposure at zero.",
+      "Ensure policy gates block risky actions.",
+      "Preserve secure-by-default implementation patterns."
+    ],
+    "skills": [
+      "secrets_scanning",
+      "dependency_vulnerability_triage",
+      "runtime_policy_validation",
+      "least_privilege_enforcement",
+      "webhook_signature_verification",
+      "input_contract_hardening",
+      "audit_trail_integrity",
+      "security_regression_prevention"
+    ],
+    "kpis": [
+      "critical_vuln_count",
+      "secret_leak_incidents",
+      "policy_block_effectiveness",
+      "time_to_patch_critical"
+    ],
+    "required_tags": ["infra", "deterministic"],
+    "symbol_research_focus": ["auth", "token", "signature", "policy", "validation", "security"],
+    "task_types": [
+      "security_secrets_scan",
+      "security_deps_audit",
+      "security_runtime_audit",
+      "security_sweep",
+      "security_council"
+    ],
+    "agent_selectors": ["security_remediation_agent", "security_monitor", "status_review_security"]
+  },
+  {
+    "id": "qa_symbolic",
+    "name": "QA Symbolic",
+    "intent": "Catch regressions early with symbol-targeted validation.",
+    "purpose": "Tie failures directly to owning symbols and enforce focused remediation.",
+    "drive": "Fast repro, precise blame, measurable quality lift.",
+    "goals": [
+      "Increase deterministic pass rate on critical flows.",
+      "Reduce flaky checks and reruns.",
+      "Map failures to symbols for targeted fixes.",
+      "Continuously raise benchmark quality scores."
+    ],
+    "skills": [
+      "symbol_failure_mapping",
+      "contract_probe_design",
+      "minimal_repro_generation",
+      "targeted_smoke_selection",
+      "regression_baseline_management",
+      "trace_artifact_triage",
+      "assertion_hardening",
+      "risk_weighted_test_planning"
+    ],
+    "kpis": [
+      "blocking_test_pass_rate",
+      "flake_rate",
+      "failure_to_symbol_coverage",
+      "benchmark_improvement_rate"
+    ],
+    "required_tags": ["qa"],
+    "symbol_research_focus": ["qa", "assert", "retry", "trace", "symbol", "regression"],
+    "task_types": ["qa_run", "qa_spec", "qa_pack", "site_audit", "site_fix_plan", "site_extract_patterns"],
+    "agent_selectors": ["code_review", "debugging", "qa"]
+  },
+  {
+    "id": "payclaw_collections",
+    "name": "PayClaw Collections",
+    "intent": "Ship compliant invoice-collection flows that convert reliably.",
+    "purpose": "Harden Stripe + Telnyx + workflow orchestration for production collection outcomes.",
+    "drive": "Compliance-first growth with deterministic payment operations.",
+    "goals": [
+      "Improve paid-invoice conversion and reconciliation speed.",
+      "Enforce STOP/HELP and policy guardrails everywhere.",
+      "Reduce payment flow failures and webhook drift.",
+      "Ship reusable micro-SaaS patterns from PayClaw learnings."
+    ],
+    "skills": [
+      "stripe_checkout_hardening",
+      "stripe_webhook_idempotency",
+      "telnyx_sms_compliance",
+      "opt_out_registry_control",
+      "invoice_state_machine_design",
+      "scheduler_guardrail_enforcement",
+      "audit_log_completeness",
+      "delivery_failure_recovery",
+      "macos_packaging_readiness"
+    ],
+    "kpis": [
+      "invoice_paid_rate",
+      "payment_flow_success_rate",
+      "opt_out_compliance_rate",
+      "webhook_reconciliation_latency"
+    ],
+    "required_tags": ["ai"],
+    "symbol_research_focus": ["stripe", "checkout", "webhook", "telnyx", "sms", "invoice"],
+    "task_types": [
+      "payclaw_build",
+      "site_compare",
+      "generate_copy",
+      "copy_lab_run",
+      "opencode_controller"
+    ],
+    "agent_selectors": ["payclaw_saas_builder"]
+  },
+  {
+    "id": "quantfusion_trading",
+    "name": "QuantFusion Trading",
+    "intent": "Increase strategy quality under strict risk controls.",
+    "purpose": "Improve signal quality, execution reliability, and post-trade learning loops.",
+    "drive": "Safer alpha with measurable edge improvement.",
+    "goals": [
+      "Improve risk-adjusted returns in paper mode first.",
+      "Reduce execution and reconciliation errors.",
+      "Speed up strategy iteration with reproducible backtests.",
+      "Produce daily actionable change logs."
+    ],
+    "skills": [
+      "signal_quality_analysis",
+      "risk_limit_enforcement",
+      "order_execution_reliability",
+      "backtest_validation",
+      "post_trade_attribution",
+      "strategy_parameter_tuning",
+      "market_regime_detection",
+      "trading_audit_generation"
+    ],
+    "kpis": [
+      "paper_sharpe",
+      "max_drawdown",
+      "execution_error_rate",
+      "strategy_iteration_cycle_time"
+    ],
+    "required_tags": ["infra", "deterministic", "io_heavy"],
+    "symbol_research_focus": ["signal", "order", "backtest", "risk", "position", "trade"],
+    "task_types": [
+      "quant_trading_signal_scan",
+      "quant_trading_strategy_run",
+      "quant_trading_execute_orders",
+      "quant_trading_close_order",
+      "quant_trading_backtest",
+      "quant_trading_daily_summary"
+    ],
+    "agent_selectors": ["quantfusion_algo_dev"]
+  },
+  {
+    "id": "repo_engineering",
+    "name": "Repo Engineering",
+    "intent": "Deliver high-leverage code improvements across repos quickly.",
+    "purpose": "Convert research and benchmark insights into production-safe implementation upgrades.",
+    "drive": "Ship concrete improvements with test-backed confidence.",
+    "goals": [
+      "Increase successful implementation throughput.",
+      "Reduce duplicate implementations across repos.",
+      "Promote canonical reusable patterns.",
+      "Raise feature benchmark scores consistently."
+    ],
+    "skills": [
+      "symbol_aware_scoping",
+      "repo_mapper_entrypoint_analysis",
+      "cross_repo_pattern_reuse",
+      "change_impact_scoring",
+      "targeted_test_generation",
+      "schema_safe_refactoring",
+      "incremental_patch_strategy",
+      "failure_driven_fix_loop",
+      "benchmark_guided_implementation"
+    ],
+    "kpis": [
+      "feature_ships_per_day",
+      "benchmark_score_delta",
+      "fix_lead_time",
+      "duplication_reduction_rate"
+    ],
+    "required_tags": ["ai"],
+    "symbol_research_focus": ["entrypoint", "dependency", "symbol", "impact", "reuse", "patch"],
+    "task_types": [
+      "patch",
+      "triage",
+      "opencode_controller",
+      "repo_autofix",
+      "openclaw_creator_pack_generate",
+      "site_fix_plan"
+    ],
+    "agent_selectors": ["saas_development", "gocrawdaddy_saas_builder", "business_builder_agent"]
+  },
+  {
+    "id": "research_intelligence",
+    "name": "Research Intelligence",
+    "intent": "Turn external knowledge into deployable implementation advantage.",
+    "purpose": "Harvest top OSS and papers, index symbols, and convert findings into actionable build plans.",
+    "drive": "Research must end in shipped improvements.",
+    "goals": [
+      "Increase high-value indexed repos and papers.",
+      "Convert research into implementation tasks daily.",
+      "Maintain fresh architecture snapshots.",
+      "Expand reusable pattern library depth."
+    ],
+    "skills": [
+      "repo_landscape_scouting",
+      "paper_to_code_synthesis",
+      "symbol_index_harvesting",
+      "cross_repo_drift_detection",
+      "best_source_selection",
+      "pattern_robustification",
+      "knowledge_graph_linking",
+      "research_to_task_conversion"
+    ],
+    "kpis": [
+      "repos_indexed_per_day",
+      "research_to_implementation_ratio",
+      "pattern_adoption_rate",
+      "knowledge_freshness_hours"
+    ],
+    "required_tags": ["ai"],
+    "symbol_research_focus": ["research", "pattern", "benchmark", "index", "mapping", "drift"],
+    "task_types": [
+      "research_sync",
+      "research_signals",
+      "affiliate_research",
+      "copy_research_pack",
+      "site_extract_patterns",
+      "orchestrate"
+    ],
+    "agent_selectors": ["research_analysis", "business_research_agent"]
+  },
+  {
+    "id": "journal_intelligence",
+    "name": "Journal Intelligence",
+    "intent": "Continuously learn from execution history and feed improvements back into the swarm.",
+    "purpose": "Aggregate outcomes, detect repeated failure patterns, and publish a shared operating journal all agents can consume.",
+    "drive": "Every 24h should produce clearer insight, fewer repeated errors, and stronger next actions.",
+    "goals": [
+      "Capture high-signal progress and issue patterns every cycle.",
+      "Convert repeated failures into targeted swarm follow-up tasks.",
+      "Maintain a shared, fresh journal context for all agents.",
+      "Deliver daily detailed progress reports to leadership."
+    ],
+    "skills": [
+      "execution_telemetry_synthesis",
+      "failure_signature_clustering",
+      "root_cause_patterning",
+      "journal_context_publishing",
+      "swarm_followup_tasking",
+      "research_signal_integration",
+      "library_growth_tracking",
+      "daily_report_composition",
+      "email_digest_delivery"
+    ],
+    "kpis": [
+      "repeated_failure_rate_delta",
+      "journal_freshness_hours",
+      "followup_task_close_rate",
+      "daily_report_delivery_rate"
+    ],
+    "required_tags": ["infra", "deterministic"],
+    "symbol_research_focus": ["journal", "pattern", "failure", "report", "research", "signals"],
+    "task_types": [
+      "triage",
+      "report",
+      "research_signals",
+      "platform_health_report"
+    ],
+    "agent_selectors": ["learning_journal_agent"]
+  },
+  {
+    "id": "content_conversion",
+    "name": "Content Conversion",
+    "intent": "Generate and refine messaging that increases conversion.",
+    "purpose": "Run structured copy loops with critique and improvement grounded in real data.",
+    "drive": "Every draft must be measurable against conversion outcomes.",
+    "goals": [
+      "Increase conversion-oriented content output quality.",
+      "Reduce low-signal drafts and rewrites.",
+      "Tie copy generation to business KPIs.",
+      "Systematize brand-consistent messaging."
+    ],
+    "skills": [
+      "conversion_copy_generation",
+      "audience_message_framing",
+      "multi_channel_adaptation",
+      "critique_and_revision_loop",
+      "offer_positioning_refinement",
+      "compliance_copy_guardrails",
+      "campaign_hypothesis_design",
+      "performance_feedback_ingestion"
+    ],
+    "kpis": [
+      "content_conversion_rate",
+      "draft_acceptance_rate",
+      "revision_cycle_time",
+      "campaign_velocity"
+    ],
+    "required_tags": ["ai"],
+    "symbol_research_focus": ["copy", "campaign", "tone", "email", "social", "content"],
+    "task_types": [
+      "aicreator",
+      "generate_copy",
+      "copy_critique",
+      "copy_improve",
+      "copy_lab_run",
+      "website_content_generator",
+      "social_media_copywriter"
+    ],
+    "agent_selectors": ["content_writing", "marketing_social"]
+  },
+  {
+    "id": "data_pipeline",
+    "name": "Data Pipeline",
+    "intent": "Keep ingestion, indexing, and schema quality high.",
+    "purpose": "Ensure downstream agents always operate on accurate, fresh, and traceable data.",
+    "drive": "No stale context. No silent schema drift.",
+    "goals": [
+      "Increase index freshness and completeness.",
+      "Reduce schema mismatch and ingestion failures.",
+      "Improve dedupe quality and traceability.",
+      "Strengthen deterministic transforms."
+    ],
+    "skills": [
+      "index_freshness_management",
+      "schema_evolution_hardening",
+      "deterministic_ingest_validation",
+      "dedupe_cluster_quality",
+      "data_contract_enforcement",
+      "audit_ready_lineage",
+      "batch_reconciliation",
+      "missing_data_recovery"
+    ],
+    "kpis": [
+      "index_freshness_minutes",
+      "ingest_success_rate",
+      "schema_mismatch_count",
+      "dedupe_precision"
+    ],
+    "required_tags": ["infra", "deterministic", "io_heavy"],
+    "symbol_research_focus": ["index", "schema", "ingest", "dedupe", "pipeline", "lineage"],
+    "task_types": ["index", "classify", "dedupe", "migrate", "claw_search", "claw_stats", "claw_recent"],
+    "agent_selectors": ["data_processing", "business_updater_agent"]
+  },
+  {
+    "id": "media_catalog_ops",
+    "name": "Media Catalog Ops",
+    "intent": "Turn media assets into structured, reusable business knowledge.",
+    "purpose": "Automate cataloging, enrichment, clustering, and retrieval for photo/video workflows.",
+    "drive": "Asset retrieval speed and quality improve every cycle.",
+    "goals": [
+      "Increase tagged media coverage and retrieval accuracy.",
+      "Reduce manual sorting and duplicate assets.",
+      "Standardize metadata quality across sources.",
+      "Feed downstream editing and publishing automation."
+    ],
+    "skills": [
+      "media_detection",
+      "metadata_enrichment",
+      "perceptual_hashing",
+      "visual_scene_labeling",
+      "shoot_clustering",
+      "duplicate_suppression",
+      "catalog_query_design",
+      "workflow_export_automation"
+    ],
+    "kpis": [
+      "catalog_coverage_rate",
+      "duplicate_reduction_rate",
+      "retrieval_precision",
+      "manual_sort_time_saved"
+    ],
+    "required_tags": ["io_heavy"],
+    "symbol_research_focus": ["media", "metadata", "hash", "visual", "cluster", "catalog"],
+    "task_types": ["media_detect", "media_enrich", "media_hash", "media_visual_catalog", "cluster_media"],
+    "agent_selectors": ["ui_ux_design", "business_improver_agent"]
+  }
+]

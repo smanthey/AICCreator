@@ -1,0 +1,21 @@
+{
+  "workflow": "bureau_dispute",
+  "description": "Field-level dispute for objectively inaccurate reporting.",
+  "requires_evidence": true,
+  "steps": [
+    "Collect evidence linked to specific fields",
+    "Generate concise dispute packet",
+    "Send with tracking",
+    "Set 30-45 day response deadline",
+    "Escalate if no response"
+  ],
+  "allowed_issue_types": [
+    "duplicate_collection",
+    "duplicate_tradeline",
+    "balance_mismatch",
+    "date_inconsistency",
+    "mixed_file_indicator",
+    "unauthorized_inquiry",
+    "not_mine_account"
+  ]
+}

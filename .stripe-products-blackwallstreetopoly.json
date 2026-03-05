@@ -1,0 +1,19 @@
+{
+  "wholesale": {
+    "productId": "prod_U4JSbMcgzYP5mU",
+    "priceId": "price_1T6Ap6G6UWB8vnsWhYQGGaO7",
+    "paymentLinkId": "plink_1T6Ap7G6UWB8vnsWpeDJQSNG",
+    "url": "https://buy.stripe.com/cNieVd0AV8OsavMbCAdby01",
+    "name": "Black Wall Street Monopoly — Wholesale Case Pack (10 units)",
+    "amount": 30000
+  },
+  "updatedAt": "2026-03-01T14:18:22.399Z",
+  "wholesale_volume": {
+    "productId": "prod_U4JSDd16rJr0w5",
+    "priceId": "price_1T6Ap7G6UWB8vnsW7bow4ge4",
+    "paymentLinkId": "plink_1T6Ap8G6UWB8vnsWPTb28Q5n",
+    "url": "https://buy.stripe.com/dRm3cv97r5Cg7jAgWUdby02",
+    "name": "Black Wall Street Monopoly — Volume Order (100+ units)",
+    "amount": 20000
+  }
+}

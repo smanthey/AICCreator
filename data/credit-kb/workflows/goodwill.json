@@ -1,0 +1,13 @@
+{
+  "workflow": "goodwill_request",
+  "description": "Goodwill adjustment for isolated late payments on current accounts.",
+  "requires_evidence": false,
+  "steps": [
+    "Confirm account is current",
+    "Generate concise goodwill request",
+    "Escalate politely if denied"
+  ],
+  "allowed_issue_types": [
+    "late_payment_goodwill"
+  ]
+}

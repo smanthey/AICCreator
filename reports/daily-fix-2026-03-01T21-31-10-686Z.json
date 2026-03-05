@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-01T21:31:10.686Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n✅ Postgres connected\n\n☠  Dead Letters (1)\n──────────────────────────────────────────────────────────────────────\n\nID:      b2649444-5784-43e9-9ae7-b5333433e048\nType:    copy_lab_run\nTitle:   Copy Lab: skynpatch blog SaaS monetization and onboarding conversion\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-01T21:30:50.034Z\n──────────────────────────────────────────────────────────────────────\n"
+  },
+  "security_sweep_run": false,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": null,
+  "errors": [
+    "tasks:health failed",
+    "LLM analyze: BUDGET_BLOCKED: no eligible provider for triage"
+  ],
+  "completed_at": "2026-03-01T21:31:18.436Z"
+}

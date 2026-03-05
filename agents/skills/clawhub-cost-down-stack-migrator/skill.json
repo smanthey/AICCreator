@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-cost-down-stack-migrator",
+  "name": "Cost-Down Stack Migrator Skill",
+  "version": "1.0.0",
+  "description": "Teams churn from software due to cost and need lower-cost alternatives with migration plans",
+  "tasks": [
+    "CLAWHUB_COST_DOWN_STACK_MIGRATOR_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 19,
+    "model": "one_time"
+  }
+}

@@ -1,0 +1,623 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	43	module_export		return ty		return ty
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	61	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	69	module_export			return first			return first
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	72	module_export		return p		return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	411	module_export		return ecs_max_component_id		return ecs_max_component_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	416	module_export		return ecs_max_tag_id		return ecs_max_tag_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	449	module_export				return id				return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	495	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	498	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	506	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	509	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	512	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	523	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	526	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	538	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	542	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	553	module_export			return entity			return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	565	module_export		return current		return current
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	580	module_export			return id			return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	593	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	612	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	620	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	625	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	631	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	713	module_export		return length		return length
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	724	module_export		return record		return record
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	749	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	759	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	764	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	773	module_export			return va			return va
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	788	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	793	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	803	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	808	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	815	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	821	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	827	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	833	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	851	module_export			return idr			return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	854	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	926	module_export		return idr		return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	934	module_export			return idr			return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1028	module_export		return archetype		return archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1062	module_export			return archetype			return archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1074	module_export				return i				return i
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1106	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1124	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1149	module_export			return from			return from
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1161	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1274	module_export				return compatible_archetypes				return compatible_archetypes
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1308	module_export		return compatible_archetypes		return compatible_archetypes
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1316	module_export		return query		return query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1322	module_export		return query		return query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1354	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1366	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1369	module_export			return world_query_iter_next			return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1429	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1463	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1500	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1540	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1583	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1629	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1678	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1730	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1765	module_export			local output = {}			local output = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1788	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1829	module_export		return world_query_iter_next		return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1837	module_export		return query_next		return query_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1852	module_export		local archetypes_map = {}		local archetypes_map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1931	module_export				return NOOP				return NOOP
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1983	module_export			return world_query_iter_next			return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	1997	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2009	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2024	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2058	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2095	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2135	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2178	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2224	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2273	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2325	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2360	module_export			local output = {}			local output = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2383	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2428	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2433	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2464	module_export		return cached_query		return cached_query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2471	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2475	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2481	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2489	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2494	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2497	module_export	local Query = {}	local Query = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2516	module_export		return q		return q
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2548	module_export			return entity			return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2702	module_export		local eindex_dense_array = {} :: { i53 }		local eindex_dense_array = {} :: { i53 }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2703	module_export		local eindex_sparse_array = {} :: { record }		local eindex_sparse_array = {} :: { record }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2716	module_export		local archetype_index = {} :: { [string]: archetype }		local archetype_index = {} :: { [string]: archetype }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2717	module_export		local archetypes = {} :: Map<i53, archetype>		local archetypes = {} :: Map<i53, archetype>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2718	module_export		local archetype_edges = {} :: { [number]: { [i53]: archetype } }		local archetype_edges = {} :: { [number]: { [i53]: archetype } }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2720	module_export		local observable = {}		local observable = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2759	module_export				return id				return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2772	module_export			return id			return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2780	module_export			return r			return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2876	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2879	module_export			return r			return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	2895	module_export			return to			return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3103	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3108	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3117	module_export				return va				return va
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3267	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3272	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3287	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3292	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3299	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3305	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3311	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3317	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3343	module_export						return entity						return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3353	module_export						return entity						return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3356	module_export					return entity					return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3381	module_export					return entity					return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3520	module_export	            local to_remove = {}:: { [i53]: componentrecord}	            local to_remove = {}:: { [i53]: componentrecord}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3723	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3725	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3739	module_export			local new_archetypes = {}			local new_archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3740	module_export			local new_archetype_map = {}			local new_archetype_map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3764	module_export			return max_component_id			return max_component_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3925	module_export		return world		return world
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3957	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3967	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3970	module_export			return e			return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	3994	module_export			return e			return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	4000	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	4021	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau	4027	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau	50	module_export		return str		return str
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau	124	module_export		return pt		return pt
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau	176	module_export		return cframe		return cframe
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau	119	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau	123	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau	126	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau	114	module_export		return p		return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau	122	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau	126	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau	129	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/deserialize.luau	34	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector2.luau	142	module_export		return p		return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/wildcards.luau	9	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/collect.luau	2	module_export		local enqueued = {}		local enqueued = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau	39	module_export				return name				return name
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/archetypes/targets.luau	16	module_export			return name			return name
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	62	module_export			return e			return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	91	module_export		local timelines = {}		local timelines = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	107	module_export			local data = {}			local data = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	127	module_export			local entities = {}			local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	166	module_export		local relations = {}		local relations = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	216	module_export		return world		return world
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau	219	module_export	return lifetime_tracker_add	return lifetime_tracker_add
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau	57	module_export	local map = {}	local map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_recv.luau	39	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	13	module_export	    local storages = {} :: { [jecs.Entity]: {[jecs.Entity]: any }}	    local storages = {} :: { [jecs.Entity]: {[jecs.Entity]: any }}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	14	module_export	    local networked_components = {}	    local networked_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	15	module_export	    local networked_pairs = {}	    local networked_pairs = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	120	module_export						local set_values = {}						local set_values = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	163	module_export			local snapshot = {} :: ty.snapshot			local snapshot = {} :: ty.snapshot
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	165	module_export			local set_ids = {}			local set_ids = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	166	module_export			local removed_ids = {}			local removed_ids = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	169	module_export			    local set_values = {} :: { any }			    local set_values = {} :: { any }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau	226	module_export	return networking_send	return networking_send
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/remotes.luau	19	module_export		return remote		return remote
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/remotes.luau	29	module_export		return remote		return remote
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	159	module_export			return clone			return clone
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	161	module_export			return value			return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	167	module_export	local phases = {}	local phases = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	169	module_export	local Input = {}	local Input = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	197	module_export		return value		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	206	module_export		return value		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	235	module_export		local presses = {}		local presses = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	236	module_export		local releases = {}		local releases = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau	269	module_export	return Input	return Input
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau	51	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau	70	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau	99	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau	102	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau	1	module_export	local state_table = {} :: {[GuiObject]: Active_Widget }	local state_table = {} :: {[GuiObject]: Active_Widget }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau	15	module_export			return template			return template
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau	90	module_export		return a		return a
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau	108	module_export	return GetRect	return GetRect
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	20	module_export		local children = {}		local children = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	36	module_export		return node		return node
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	56	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	69	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	75	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	84	module_export				return possible_module				return possible_module
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	88	module_export		return node		return node
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	101	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	116	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	128	module_export		return closest_common_ancestor		return closest_common_ancestor
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	134	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	139	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	149	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	157	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	190	module_export		return path		return path
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	197	module_export		local alias_nodes = {}		local alias_nodes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	209	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau	249	module_export			return path			return path
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau	57	module_export		local cleanup = {}		local cleanup = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau	142	module_export	    return observer	    return observer
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau	209	module_export		local cleanup = {}		local cleanup = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau	387	module_export	    return monitor	    return monitor
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/examples/example.luau	9	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/examples/example.luau	36	module_export		return dt		return dt
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/init.luau	154	module_export	return overview_query	return overview_query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau	51	module_export			local archetypes = {}			local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau	140	module_export			local archetypes = {}			local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau	33	module_export			local archetypes = {}			local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau	111	module_export			local archetypes = {}			local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau	12	module_export					return status					return status
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau	15	module_export			return SUCCESS			return SUCCESS
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau	24	module_export					return status					return status
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau	27	module_export			return FAILURE			return FAILURE
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau	44	module_export	return bt	return bt
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/spawn_app.luau	6	module_export	local destroy_fn = {}	local destroy_fn = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/spawn_app.luau	29	module_export			return destroy			return destroy
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/init.luau	89	module_export	            return instance	            return instance
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/init.luau	121	module_export	return vide	return vide
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/widget.luau	420	module_export							local t = {}							local t = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/widget.luau	425	module_export							return t							return t
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/average.luau	11	module_export	return average	return average
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/init.luau	81	module_export	return overview_entity	return overview_entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	33	module_export	    local input_cache = {} :: Map<K, VI>	    local input_cache = {} :: Map<K, VI>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	34	module_export	    local output_cache = {} :: Map<K, VO>	    local output_cache = {} :: Map<K, VO>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	35	module_export	    local input_nodes = {} :: Map<K, SourceNode<VI>>	    local input_nodes = {} :: Map<K, SourceNode<VI>>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	36	module_export	    local remove_queue = {} :: { K }	    local remove_queue = {} :: { K }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	37	module_export	    local scopes = {} :: Map<K, Node<unknown>>	    local scopes = {} :: Map<K, Node<unknown>>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	105	module_export	        return output_array	        return output_array
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	124	module_export	    local cur_input_cache_up = {} :: Map<VI, K>	    local cur_input_cache_up = {} :: Map<VI, K>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	125	module_export	    local new_input_cache_up = {} :: Map<VI, K>	    local new_input_cache_up = {} :: Map<VI, K>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	126	module_export	    local output_cache = {} :: Map<VI, VO>	    local output_cache = {} :: Map<VI, VO>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	127	module_export	    local input_nodes = {} :: Map<VI, SourceNode<K>>	    local input_nodes = {} :: Map<VI, SourceNode<K>>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	128	module_export	    local scopes = {} :: Map<VI, Node<unknown>>	    local scopes = {} :: Map<VI, Node<unknown>>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	134	module_export	            local cache = {}	            local cache = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau	204	module_export	        return output_array	        return output_array
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/reverse_connector.luau	11	module_export	return reverse	return reverse
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	16	module_export	local components = {}	local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	22	module_export	local archetypes = {}	local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	24	module_export		local archetype = {}		local archetype = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	36	module_export		local componentsToAdd = {}		local componentsToAdd = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	48	module_export		local array = {}		local array = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	52	module_export		return array		return array
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	56	module_export	local systemComponentsToQuery = {}	local systemComponentsToQuery = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	60	module_export		local componentsToQuery = {}		local componentsToQuery = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau	70	module_export	local results = {}	local results = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/init.luau	81	module_export	return system	return system
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/throw.luau	7	module_export	return VIDE_ASSERT	return VIDE_ASSERT
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau	32	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_scheduler.luau	12	module_export		local connected = {}		local connected = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_scheduler.luau	77	module_export					local map = {}					local map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_scheduler.luau	90	module_export					local map = {}					local map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/add_component.luau	86	module_export								return false								return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau	66	module_export				return id				return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau	95	module_export	local dense = {}	local dense = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau	96	module_export	local sparse = {}	local sparse = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau	111	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/read.luau	7	module_export	return read	return read
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau	36	module_export			local t = {}			local t = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau	42	module_export			return t			return t
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau	50	module_export			return size			return size
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	19	module_export			return char			return char
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	114	module_export			return str			return str
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	206	module_export			return token			return token
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	316	module_export			return stored			return stored
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	353	module_export			local a = {}			local a = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	371	module_export			return a			return a
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	552	module_export	local tuple = {}	local tuple = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	578	module_export			return params			return params
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	585	module_export			return params			return params
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	617	module_export			local t = {}			local t = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	628	module_export			return t			return t
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	633	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	648	module_export		local cyclic_buffer = {}		local cyclic_buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	738	module_export				local input = {}				local input = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	763	module_export				local input = {}				local input = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	1007	module_export				return symbol				return symbol
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	1018	module_export				return v				return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	1022	module_export			local checked = {}			local checked = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau	1040	module_export			return nodes			return nodes
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	42	module_export		return columns		return columns
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	51	module_export		return columns		return columns
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	66	module_export			local map_components = {}			local map_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	145	module_export						return false						return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	148	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	151	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	156	module_export			local include = {}			local include = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	157	module_export			local exclude = {}			local exclude = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	158	module_export			local with = {}			local with = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	160	module_export			local map_components = {}			local map_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	253	module_export				local new_columns = {}				local new_columns = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	254	module_export				local old_columns = {}				local old_columns = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau	455	module_export								local temp_b = {}								local temp_b = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/root.luau	11	module_export	local refs = {}	local refs = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau	53	module_export			return sum			return sum
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau	16	module_export	local Queue = {}	local Queue = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau	72	module_export					return value					return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau	112	module_export		return queue		return queue
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau	115	module_export	return queue_create	return queue_create
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	670	module_export		local parents = {}		local parents = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	680	module_export		local used = {}		local used = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	699	module_export		local toDelete = {}		local toDelete = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	1280	module_export			local children = {}			local children = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	1301	module_export			local friends = {}			local friends = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	1418	module_export			local entities = {}			local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	1861	module_export			local entities = {}			local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2082	module_export			local set = {}			local set = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2393	module_export				local entities = {}				local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2462	module_export			local components = {}			local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2489	module_export			local components = {}			local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2557	module_export			local entities = {}			local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	2585	module_export			local entities = {}			local entities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	3085	module_export			local targets = {}			local targets = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	3182	module_export			local tgts = {}			local tgts = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	3199	module_export			return tgts			return tgts
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau	3368	module_export				local toRemove = {}				local toRemove = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau	35	module_export		local stored_watches = {}		local stored_watches = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau	36	module_export		local connected_watches = {}		local connected_watches = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau	48	module_export			local map_worlds_to_name = {}			local map_worlds_to_name = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau	13	module_export	local empty_table = {}	local empty_table = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau	33	module_export		local keys = {}		local keys = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau	55	module_export		local components = {}		local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau	67	module_export		return components		return components
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau	138	module_export		return str		return str
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/snapping.luau	39	module_export		local snap_areas = {}		local snap_areas = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/init.luau	68	module_export	return overview_scheduler	return overview_scheduler
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/batch.luau	26	module_export	return batch	return batch
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/types.luau	117	module_export	return nil	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau	53	module_export			local components = {}			local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau	60	module_export			return components			return components
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau	64	module_export			local tags = {}			local tags = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau	71	module_export			return tags			return tags
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	9	module_export		local connected = {}		local connected = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	22	module_export				local schedulers = {}				local schedulers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	23	module_export				local worlds = {}				local worlds = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	50	module_export			local schedulers = {}			local schedulers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	51	module_export			local worlds = {}			local worlds = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_core.luau	69	module_export			local fired_to = {}			local fired_to = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/resizeable_bar.luau	53	module_export			local new = {}			local new = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/resizeable_bar.luau	61	module_export			return new			return new
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/resizeable_bar.luau	73	module_export			return size			return size
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/stack_bar.luau	19	module_export			return total			return total
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/select.luau	166	module_export	return dropdown	return dropdown
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau	9	module_export	local ctor_cache = {} :: { [string]: () -> Instance }	local ctor_cache = {} :: { [string]: () -> Instance }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau	28	module_export	        return ctor	        return ctor
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau	9	module_export	local Store = {}	local Store = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau	26	module_export	    local sources = {}	    local sources = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau	33	module_export	    local internal_proxy = {}	    local internal_proxy = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau	44	module_export	    local external_proxy = {}	    local external_proxy = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau	71	module_export	return Store	return Store
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	16	module_export	local empty_table = {}	local empty_table = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	25	module_export		local components = {}		local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	29	module_export		return components		return components
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	78	module_export		return entity_to_set		return entity_to_set
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	92	module_export		local inspectors = {}		local inspectors = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	103	module_export				local map_components = {}				local map_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	163	module_export				local map_components = {}				local map_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau	184	module_export				local map_components = {}				local map_components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/init.luau	36	module_export	return home	return home
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/convert_units.luau	39	module_export	return convert_units	return convert_units
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau	21	module_export	    return p	    return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau	31	module_export	    return p	    return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau	78	module_export	    return p	    return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau	6	module_export		local to_unhook = {}		local to_unhook = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau	35	module_export	local hooks = {}	local hooks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau	47	module_export			local callbacks = {}			local callbacks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau	70	module_export		return unhook		return unhook
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau	55	module_export	    return scope	    return scope
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau	262	module_export	    return node	    return node
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/public.luau	16	module_export	return self	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau	63	module_export			return char			return char
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau	125	module_export			return str			return str
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau	399	module_export		return result		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau	402	module_export	return parse	return parse
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/context.luau	47	module_export	                return default_value	                return default_value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/context.luau	70	module_export	            return result	            return result
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/context.luau	77	module_export	return context	return context
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau	60	module_export			return max			return max
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau	69	module_export			return phases			return phases
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau	209	module_export			return b			return b
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau	274	module_export								local v = {}								local v = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau	293	module_export								return v								return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau	107	module_export		return stop_hook		return stop_hook
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau	118	module_export		return watch		return watch
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau	47	module_export	        return caches	        return caches
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau	67	module_export	local aggregates = {}	local aggregates = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau	174	module_export	    return instance	    return instance
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau	177	module_export	return apply	return apply
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau	40	module_export			local hosts = {}			local hosts = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau	50	module_export			return hosts			return hosts
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau	54	module_export			local options = {}			local options = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau	63	module_export			return options			return options
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau	77	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/untrack.luau	21	module_export	        return result	        return result
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/untrack.luau	27	module_export	return untrack	return untrack
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/consume.luau	9	module_export	    return v	    return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/oklch.luau	28	module_export	return oklch	return oklch
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	15	module_export	local Oklab = {}	local Oklab = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	113	module_export		return S		return S
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	221	module_export		return t		return t
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	228	module_export			return rgb			return rgb
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	251	module_export			return rgb			return rgb
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	275	module_export			return rgb			return rgb
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	304	module_export			return rgb			return rgb
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	332	module_export			return rgb			return rgb
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau	434	module_export	return Oklab	return Oklab
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/changed.luau	20	module_export	return changed	return changed
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/visual/query.bench.luau	57	module_export	local archetypes = {}	local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/delay.luau	25	module_export		return output		return output
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/source.luau	22	module_export	            return v	            return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/source.luau	27	module_export	        return v	        return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau	114	module_export				return color				return color
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau	140	module_export					return color					return color
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau	145	module_export			return furthest_away			return furthest_away
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/components/virtualscroller_horizontal.luau	65	module_export				local unused = {}				local unused = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/components/virtualscroller_horizontal.luau	88	module_export				local did_not_render = {}				local did_not_render = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/context.luau	38	module_export			return value			return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau	16	module_export		local self = {}		local self = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau	23	module_export					return sender					return sender
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau	28	module_export			return default_value			return default_value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau	58	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau	62	module_export	return cascade	return cascade
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	10	module_export	local Store = {}	local Store = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	27	module_export	    local sources = {}	    local sources = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	34	module_export	    local internal_proxy = {}	    local internal_proxy = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	45	module_export	    local external_proxy = {}	    local external_proxy = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	94	module_export	    return main	    return main
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau	101	module_export	return Store	return Store
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/portal.luau	102	module_export	return portal	return portal
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/list.luau	55	module_export	return layout	return layout
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/derive.luau	20	module_export	return derive	return derive
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	45	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	62	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	69	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	72	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	76	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	91	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau	334	module_export		return returnArray		return returnArray
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/padding.luau	41	module_export	return padding	return padding
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/rounded_frame.luau	201	module_export	return rounded_frame	return rounded_frame
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/row.luau	56	module_export	return layout	return layout
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/switch.luau	51	module_export	            return result	            return result
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/switch.luau	65	module_export	return switch	return switch
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	226	module_export		return value		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	346	module_export		return n		return n
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	489	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	494	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	500	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	504	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	509	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	515	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	518	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	525	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	528	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau	532	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/virtualscroller.luau	68	module_export					local unused = {}					local unused = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/virtualscroller.luau	91	module_export					local did_not_render = {}					local did_not_render = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau	129	module_export	        return v	        return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau	191	module_export	        return value	        return value
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau	224	module_export	        return v	        return v
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau	266	module_export	local remove_queue = {}	local remove_queue = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau	7	module_export	local signal = {}	local signal = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau	48	module_export		return connection		return connection
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau	75	module_export	return new_signal	return new_signal
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	11	module_export	local traffic_check = {}	local traffic_check = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	13	module_export	local whitelist_player_to = {}	local whitelist_player_to = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	36	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	38	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	46	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	49	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	56	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	60	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau	82	module_export	return traffic_check	return traffic_check
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/loop.luau	23	module_export	    local groups = {} :: Array<SystemGroup>	    local groups = {} :: Array<SystemGroup>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/loop.luau	107	module_export	return loop_create	return loop_create
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau	84	module_export	        return c	        return c
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau	114	module_export	        return c	        return c
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau	240	module_export	    return theme	    return theme
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau	17	module_export	local schedulers = {}	local schedulers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau	50	module_export			local cleanup = {}			local cleanup = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau	85	module_export			return id			return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau	182	module_export			return watch_data			return watch_data
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau	188	module_export		return scheduler		return scheduler
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/container.luau	25	module_export	return container	return container
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	43	module_export		return ty		return ty
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	61	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	69	module_export			return first			return first
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	72	module_export		return p		return p
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	411	module_export		return ecs_max_component_id		return ecs_max_component_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	416	module_export		return ecs_max_tag_id		return ecs_max_tag_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	449	module_export				return id				return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	495	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	498	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	506	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	509	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	512	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	523	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	526	module_export		return r		return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	538	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	549	module_export			return entity			return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	561	module_export		return current		return current
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	576	module_export			return id			return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	589	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	608	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	616	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	621	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	627	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	709	module_export		return length		return length
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	720	module_export		return record		return record
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	745	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	755	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	760	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	769	module_export			return va			return va
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	784	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	789	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	799	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	804	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	811	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	817	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	823	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	829	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	847	module_export			return idr			return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	850	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	922	module_export		return idr		return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	930	module_export			return idr			return idr
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1024	module_export		return archetype		return archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1058	module_export			return archetype			return archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1070	module_export				return i				return i
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1102	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1120	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1145	module_export			return from			return from
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1157	module_export		return to		return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1270	module_export				return compatible_archetypes				return compatible_archetypes
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1304	module_export		return compatible_archetypes		return compatible_archetypes
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1312	module_export		return query		return query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1318	module_export		return query		return query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1350	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1362	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1365	module_export			return world_query_iter_next			return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1425	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1459	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1496	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1536	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1579	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1625	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1674	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1726	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1761	module_export			local output = {}			local output = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1784	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1825	module_export		return world_query_iter_next		return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1833	module_export		return query_next		return query_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1848	module_export		local archetypes_map = {}		local archetypes_map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1927	module_export				return NOOP				return NOOP
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1979	module_export			return world_query_iter_next			return world_query_iter_next
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	1993	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2005	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2020	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2054	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2091	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2131	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2174	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2220	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2269	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2321	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2356	module_export			local output = {}			local output = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2379	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2424	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2429	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2460	module_export		return cached_query		return cached_query
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2467	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2471	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2477	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2485	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2490	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2493	module_export	local Query = {}	local Query = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2512	module_export		return q		return q
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2544	module_export			return entity			return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2698	module_export		local eindex_dense_array = {} :: { i53 }		local eindex_dense_array = {} :: { i53 }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2699	module_export		local eindex_sparse_array = {} :: { record }		local eindex_sparse_array = {} :: { record }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2712	module_export		local archetype_index = {} :: { [string]: archetype }		local archetype_index = {} :: { [string]: archetype }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2713	module_export		local archetypes = {} :: Map<i53, archetype>		local archetypes = {} :: Map<i53, archetype>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2714	module_export		local archetype_edges = {} :: { [number]: { [i53]: archetype } }		local archetype_edges = {} :: { [number]: { [i53]: archetype } }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2716	module_export		local observable = {}		local observable = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2755	module_export				return id				return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2768	module_export			return id			return id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2776	module_export			return r			return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2872	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2875	module_export			return r			return r
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	2891	module_export			return to			return to
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3099	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3104	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3113	module_export				return va				return va
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3263	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3268	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3283	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3288	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3295	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3301	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3307	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3313	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3339	module_export						return entity						return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3349	module_export						return entity						return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3352	module_export					return entity					return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3377	module_export					return entity					return entity
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3515	module_export	            local to_remove = {}:: { [i53]: componentrecord}	            local to_remove = {}:: { [i53]: componentrecord}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3714	module_export			local new_archetypes = {}			local new_archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3715	module_export			local new_archetype_map = {}			local new_archetype_map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3739	module_export			return max_component_id			return max_component_id
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3900	module_export		return world		return world
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3932	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3942	module_export				return e				return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3945	module_export			return e			return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3969	module_export			return e			return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3975	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	3996	module_export		return e		return e
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau	4002	module_export		return e		return e

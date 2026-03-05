@@ -1,0 +1,134 @@
+{
+  "started_at": "2026-03-04T00:00:33.201Z",
+  "finished_at": "2026-03-04T00:04:36.835Z",
+  "mode": "steady",
+  "lane_backlog": {
+    "ai": 0,
+    "infra": 0,
+    "ioHeavy": 0,
+    "cpuHeavy": 0
+  },
+  "aging_pending_60m": 0,
+  "lane_overrides": [],
+  "worker_targets": {
+    "claw-worker": 1,
+    "claw-worker-ai": 2,
+    "claw-worker-nas": 2
+  },
+  "min_online": 8,
+  "max_online": 13,
+  "online_count": 13,
+  "metrics": {
+    "healthOk": true,
+    "postgresOk": true,
+    "redisOk": true,
+    "queue": null,
+    "errors": [
+      "queue:Command failed: curl -m 4 -sS http://127.0.0.1:4051/api/dashboard/queue\ncurl: (28) Operation timed out after 4004 milliseconds with 0 bytes received\n",
+      "queue_db_fallback:column \"tags\" does not exist"
+    ]
+  },
+  "actions": [
+    {
+      "type": "stop",
+      "name": "claw-backlog-orchestrator",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-priority-repo-major-update-daily",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-repo-readiness-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-brand-control-plane",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-lead-autopilot-skynpatch",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-lead-autopilot-bws",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-needs-attention-autofix",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-offgrid-meshtastic-bridge",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-events-consumer",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-events-spawner",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-goal-autopilot",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-cookiespass-mission-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-prompt-oracle",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-device-utilization-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-bot-commerce-api",
+      "reason": "overflow",
+      "ok": true
+    }
+  ],
+  "protected": [
+    "claw-dispatcher",
+    "claw-task-governor",
+    "claw-webhook-server",
+    "claw-architect-api",
+    "claw-openclaw-coordinator",
+    "claw-ollama",
+    "claw-worker",
+    "claw-worker-ai",
+    "claw-worker-nas"
+  ]
+}

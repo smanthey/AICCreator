@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-04T05:00:02.039Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n✅ Postgres connected\n\n☠  Dead Letters (50)\n──────────────────────────────────────────────────────────────────────\n\nID:      65279560-66c7-4327-8864-c535a0288843\nType:    loyalty_send_outreach\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:23.374Z\n──────────────────────────────────────────────────────────────────────\n\nID:      d1146bd2-1bb8-448b-add4-8c9f39e1cf81\nType:    site_audit\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:22.240Z\n──────────────────────────────────────────────────────────────────────\n\nID:      e1c45ba1-401d-44fe-94d8-dbf6039f803d\nType:    loyalty_send_outreach\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:21.473Z\n──────────────────────────────────────────────────────────────────────\n\nID:      1f97272e-f36a-4afd-a7c9-9c1f67b8d480\nType:    loyalty_send_outreach\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:20.600Z\n──────────────────────────────────────────────────────────────────────\n\nID:      5ff2d490-46ff-4a04-af8a-2d9b708205ff\nType:    github_observability_scan\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:19.985Z\n──────────────────────────────────────────────────────────────────────\n\nID:      42d838cf-b04d-4d4e-a212-c0c78f622f73\nType:    github_repo_audit\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T04:53:19.441Z\n──────────────────────────────────────────────────────────────────────\n\nID:      a06a7f2e-eefa-4a58-b0c4-a809f"
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-04T05:00:10.686Z"
+}

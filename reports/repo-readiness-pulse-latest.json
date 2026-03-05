@@ -1,0 +1,2102 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-03T18:30:32.957Z",
+  "dry_run": true,
+  "min_score": 75,
+  "window_days": 14,
+  "repos_total": 50,
+  "repos": [
+    {
+      "id": "0f37d734-9ec3-45c9-afa9-f3b90899c2f1",
+      "client_name": "3ddesignafterschool",
+      "repo": "local/3ddesignafterschool",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 36,
+          "repo_autofix": 36,
+          "opencode_controller": 58
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:339715a8ed249376afce6010abed93b8944e7b8ee702ff56202b3058e654bc70"
+      }
+    },
+    {
+      "id": "e89ed766-0876-42ec-a26b-1f1b01fe0c07",
+      "client_name": "3dgamestake2",
+      "repo": "local/3dgamestake2",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 41,
+          "repo_autofix": 41,
+          "opencode_controller": 58
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:163f847270b55daba7b2304674cf20c0ff13e30f05923ba04ccd5888f9c96ec7"
+      }
+    },
+    {
+      "id": "9a2633af-e30c-4e43-aaa9-52d69a8c39d8",
+      "client_name": "ClawPay",
+      "repo": "local/clawpay",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 5,
+          "site_audit": 5,
+          "opencode_controller": 8
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:7f6ca11f7de6b2f58b08f150fe27a1c747cb749947705385491a689ea4e1af3b"
+      }
+    },
+    {
+      "id": "564cf0e0-2f81-4dc5-8276-fb79ff47e828",
+      "client_name": "Cookies_Pass",
+      "repo": "local/cookies_pass",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 62,
+          "repo_autofix": 42,
+          "site_audit": 42
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:b5bcc8981aaea9b06a71eb7929dc71d4db72dd446fd1d669776a798c39d66401"
+      }
+    },
+    {
+      "id": "0fbe6148-7753-48d9-af6a-fb6048ab361c",
+      "client_name": "crave",
+      "repo": "local/crave",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 61,
+          "repo_autofix": 40,
+          "site_audit": 40
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:c5d85066c86e57ea3a3ac4e9f65e09dc8b0ea5763d5f09ef7c9c21028da48193"
+      }
+    },
+    {
+      "id": "d6648354-69f3-4cda-8eb5-bda2a7df5f9f",
+      "client_name": "Leadgen",
+      "repo": "local/leadgen",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 60,
+          "repo_autofix": 43,
+          "site_audit": 43
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:09f64e02fe0c06ade4884faa772810402271256c362a7854715ab81a5581fc9e"
+      }
+    },
+    {
+      "id": "e565850e-8e03-472d-8997-38edfb40f28e",
+      "client_name": "MediaTranscribePro",
+      "repo": "local/mediatranscribepro",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 42,
+          "repo_autofix": 42,
+          "opencode_controller": 60
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:1dcf76193baf926dc0212177cfdc88c87582dff53eb85db9c1cda860b128173b"
+      }
+    },
+    {
+      "id": "3368843a-991b-4b32-86e4-bd21103e0a96",
+      "client_name": "QARunner",
+      "repo": "local/qarunner",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 5,
+          "repo_autofix": 2,
+          "site_audit": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:14014a7c2fb8d36b0cae3afe4071eee1a92e38a1bb1330a4b8697396a78e2f43"
+      }
+    },
+    {
+      "id": "496c7351-261c-461f-82c6-af6c58f24df2",
+      "client_name": "reframed",
+      "repo": "local/reframed",
+      "score": {
+        "total": 24,
+        "index_points": 0,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 2,
+          "repo_autofix": 2,
+          "opencode_controller": 5
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:16dddaf47f376246b0b1f652a598976e2c4f8b8c7c4e9fa90f77239b123e8cf5"
+      }
+    },
+    {
+      "id": "84535c84-72d4-4d37-985d-fc4a07ca0d29",
+      "client_name": "3DGameArtAcademy",
+      "repo": "local/3dgameartacademy",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-3dgameartacademy.json",
+        "age_hours": 30.92,
+        "mtime_ms": 1772451332524.7283
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 46,
+          "opencode_controller": 60,
+          "repo_autofix": 43
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:9c9fac1059f1777c3400cc258f1c5b60712f36e46e8e6ffdd85da84ec4600a05"
+      }
+    },
+    {
+      "id": "7bfc5eb5-c070-4d55-87c1-82ce075e7488",
+      "client_name": "autopay_ui",
+      "repo": "local/autopay_ui",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-autopay_ui.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451389923.2034
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 41,
+          "site_audit": 41,
+          "opencode_controller": 59
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:e8ce44c3a451c99d765ce1f3355da583a4170f3488d7dd00554216b8115ef1a0"
+      }
+    },
+    {
+      "id": "be03ad38-8df4-4513-86f5-ebfe5e7f1be5",
+      "client_name": "BakTokingcom",
+      "repo": "local/baktokingcom",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-baktokingcom.json",
+        "age_hours": 30.92,
+        "mtime_ms": 1772451336170.9365
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 40,
+          "site_audit": 41,
+          "opencode_controller": 61
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:c562fdb0e6dff74f32ade3a4b4832df4af84eac823721e3194e7d4405e7bcf41"
+      }
+    },
+    {
+      "id": "2368e83e-6d11-4d58-b641-43f424e263c4",
+      "client_name": "BlackWallStreetopoly",
+      "repo": "local/blackwallstreetopoly",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-blackwallstreetopoly.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451342649.1033
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 45,
+          "opencode_controller": 59,
+          "repo_autofix": 43
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:05e5348aeaba527661e896b12bbf9fe463ed6dcbc9b266ec17570802bb5a5788"
+      }
+    },
+    {
+      "id": "2e18f7ef-1ea2-4d9d-8dd9-3b8bf29f870e",
+      "client_name": "booked",
+      "repo": "local/booked",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-booked.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451392666.4995
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 43,
+          "opencode_controller": 58,
+          "repo_autofix": 42
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:acfac3dd03cffb7da41b27ec900d0a7f01d115756d3af007673ebdb630155e38"
+      }
+    },
+    {
+      "id": "6973ded0-5747-4e6d-bec6-358c29d2f2e6",
+      "client_name": "capture",
+      "repo": "local/capture",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-capture.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451401652.015
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 61,
+          "site_audit": 41,
+          "repo_autofix": 41
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:47486c5ef35e02993f7127301646fe81ec28cfa4b58595b6129ebef215265973"
+      }
+    },
+    {
+      "id": "9960ba65-2a0e-430c-b41d-c75e1045198c",
+      "client_name": "CaptureInbound",
+      "repo": "local/captureinbound",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-captureinbound.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451345694.039
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 44,
+          "opencode_controller": 60,
+          "site_audit": 44
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:5e02b90a4f7f52ea6a08fcf2d6ae30d6205e74ebba4e87bafeec3103686f5191"
+      }
+    },
+    {
+      "id": "a9d3d15f-bc55-4ab0-abb6-7e47addd71e9",
+      "client_name": "Coinstbl",
+      "repo": "local/coinstbl",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-coinstbl.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451347656.8218
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 120,
+          "site_audit": 84,
+          "repo_autofix": 82
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:8c90cfdedeb943d002c8d7a7f87280ca6a6b68c277fc2c562151a7b859912673"
+      }
+    },
+    {
+      "id": "ef5ef4ad-417b-450b-9954-550338562492",
+      "client_name": "CoinStbl",
+      "repo": "local/coinstbl",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-coinstbl.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451347656.8218
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 120,
+          "site_audit": 84,
+          "repo_autofix": 82
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:8c90cfdedeb943d002c8d7a7f87280ca6a6b68c277fc2c562151a7b859912673"
+      }
+    },
+    {
+      "id": "95a17957-73c1-4e7e-b7c2-e786f05d4c75",
+      "client_name": "cookies-tempe",
+      "repo": "local/cookies-tempe",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-cookies-tempe.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451403554.9165
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 41,
+          "repo_autofix": 40,
+          "opencode_controller": 60
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:e9b116710f0cd200c348e9e1ca08bd00ee6a713cba25d7fed05e6a45e16f971f"
+      }
+    },
+    {
+      "id": "420f035f-23eb-43e8-b1eb-18407f50028f",
+      "client_name": "FoodTruckPass",
+      "repo": "local/foodtruckpass",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-foodtruckpass.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451352959.218
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 60,
+          "repo_autofix": 40,
+          "site_audit": 40
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:88884c6272fd80fa21e77bcb79033a020fc74d338c305ea98d029fe0dc47337f"
+      }
+    },
+    {
+      "id": "d1fd6c29-a7e5-44b4-bd45-a1fb53f0331f",
+      "client_name": "gbusupdate",
+      "repo": "local/gbusupdate",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-gbusupdate.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451403912.5781
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 44,
+          "repo_autofix": 43,
+          "opencode_controller": 58
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:485951257f7eadb645c872a8dfe06ee542eed3836090452967286a2bfe3b1950"
+      }
+    },
+    {
+      "id": "4dec2488-4104-41a8-9d48-74bb38782eab",
+      "client_name": "glitch-app",
+      "repo": "local/glitch-app",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-glitch-app.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451406538.2888
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 42,
+          "repo_autofix": 42,
+          "opencode_controller": 60
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:fd0a28eff4a7ba45ea67ad88b42d8eeb9ae50d491ef2e5e0eea9e279722fcedc"
+      }
+    },
+    {
+      "id": "6c8354e7-d07d-44cf-aa88-1513b47f091f",
+      "client_name": "HowtoWatchStream-SmartKB",
+      "repo": "local/howtowatchstream-smartkb",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-howtowatchstream-smartkb.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451361269.944
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 60,
+          "site_audit": 41,
+          "repo_autofix": 40
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:17da6d025386c6235b6c1a0d7c5ae48c4b3b5f3adfa78dcec688029a30aaa0b3"
+      }
+    },
+    {
+      "id": "dccff8e1-921c-49fc-9fe4-c8c7d2fb50b0",
+      "client_name": "Inbound-cookies",
+      "repo": "local/inbound-cookies",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-inbound-cookies.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451366082.8262
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 43,
+          "site_audit": 45,
+          "opencode_controller": 61
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:38f5a7c9597e16252f65f46a76ec07ef1971c353ddfed7d2148efe8e9f5d584b"
+      }
+    },
+    {
+      "id": "4afa8e20-1cf7-408a-bf43-55c0220e3993",
+      "client_name": "infinitedata",
+      "repo": "local/infinitedata",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-infinitedata.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451407414.6074
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 43,
+          "repo_autofix": 42,
+          "opencode_controller": 60
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:0ba53aa93f79282093eea86c6f277a65101362d511a70cec992f2dcf581eaf37"
+      }
+    },
+    {
+      "id": "d2842ce2-6dc0-49c2-9439-2df2aad9f5dc",
+      "client_name": "LeadGen3",
+      "repo": "local/leadgen3",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-leadgen3.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451367164.4648
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 61,
+          "site_audit": 41,
+          "repo_autofix": 41
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:634257d79ed5bf51cfb0267dbb42de1be624bf65d25890de8b14810fdf5aea0a"
+      }
+    },
+    {
+      "id": "64916c98-a1f4-4937-8d6a-89c7c3802b06",
+      "client_name": "LeadGenAi",
+      "repo": "local/leadgenai",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-leadgenai.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451369810.8774
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 41,
+          "opencode_controller": 60,
+          "site_audit": 44
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:1e514284bd53f636c833d6bb79d529c621d971b6b9af0b556127aedf3f8c0b34"
+      }
+    },
+    {
+      "id": "46b8b0f7-9e16-4649-ab3c-e2fcb072b069",
+      "client_name": "leadgengit",
+      "repo": "local/leadgengit",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-leadgengit.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451408032.7698
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 44,
+          "opencode_controller": 58,
+          "site_audit": 44
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:d1901eceeff0488020570aa26863b1bac6e3e582a6957fc5e5c6fe9edb41f8dc"
+      }
+    },
+    {
+      "id": "9427de11-7548-49e1-a919-bc9c180e6dc8",
+      "client_name": "Madirectory",
+      "repo": "local/madirectory",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-madirectory.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451371058.5132
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 41,
+          "site_audit": 41,
+          "opencode_controller": 60
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:3bbad31c290577d55ccfb517176372e4f49ea47923b7180b7cfaecb2e7674f60"
+      }
+    },
+    {
+      "id": "e7cad918-6c16-41b7-8080-b3492d38fb3e",
+      "client_name": "manychatdupe",
+      "repo": "local/manychatdupe",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-manychatdupe.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451408808.002
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 44,
+          "repo_autofix": 44,
+          "opencode_controller": 59
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:ed74d55fa1115d015a2dc413c85d4846b64be0c6af84cf49d1ce9aea1d173469"
+      }
+    },
+    {
+      "id": "9524d61d-d1f0-46ff-a386-b079b33df4df",
+      "client_name": "mytutor",
+      "repo": "local/mytutor",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-mytutor.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451412420.8362
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 43,
+          "opencode_controller": 60,
+          "repo_autofix": 41
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:7cc2deef4fb2fbd525ae874939da5e8a1b6fda6a8d1d237089018b6e35888709"
+      }
+    },
+    {
+      "id": "204c5497-dc81-46ba-893f-acca4ca629db",
+      "client_name": "nfcverify",
+      "repo": "local/nfcverify",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-nfcverify.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451412437.2617
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 60,
+          "repo_autofix": 42,
+          "site_audit": 42
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:8e2fe33a04b0efca1ea46b6e01d2ea813ae21507b7e2e7b90aae8e5357591540"
+      }
+    },
+    {
+      "id": "3954680e-495a-40b3-ab21-47f0daefcbe4",
+      "client_name": "patentpal",
+      "repo": "local/patentpal",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-patentpal.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451427933.6143
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 84,
+          "opencode_controller": 120,
+          "site_audit": 86
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:044f19d1da83387afd237d6e571aed71e82bf858a926a522569b1a6bdd097be0"
+      }
+    },
+    {
+      "id": "14c56924-1ae8-4bc2-a6ea-a9ad9de1c48b",
+      "client_name": "PatentPal",
+      "repo": "local/patentpal",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-patentpal.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451427933.6143
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 84,
+          "opencode_controller": 120,
+          "site_audit": 86
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:044f19d1da83387afd237d6e571aed71e82bf858a926a522569b1a6bdd097be0"
+      }
+    },
+    {
+      "id": "0a523a79-daf6-41d7-8859-8f55f5b35e68",
+      "client_name": "PdfEzFill",
+      "repo": "local/pdfezfill",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-pdfezfill.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451373567.9688
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 45,
+          "repo_autofix": 43,
+          "opencode_controller": 59
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:793307e5351b86b22861e0d310986c3d6eef1607cacaf6b0db084d7222cd346d"
+      }
+    },
+    {
+      "id": "e87acab6-92ad-4cb7-a5c0-97d388860f8f",
+      "client_name": "pingmyself",
+      "repo": "local/pingmyself",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-pingmyself.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451429870.1555
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 115,
+          "repo_autofix": 79,
+          "site_audit": 82
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:9ec1c5cef0c998582d1055f1797a0be3c3c31f969f31ab864980705409f07748"
+      }
+    },
+    {
+      "id": "ad992ca9-5998-491e-8929-2789a1bff3e6",
+      "client_name": "PingMyself",
+      "repo": "local/pingmyself",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-pingmyself.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451429870.1555
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 115,
+          "repo_autofix": 79,
+          "site_audit": 82
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:9ec1c5cef0c998582d1055f1797a0be3c3c31f969f31ab864980705409f07748"
+      }
+    },
+    {
+      "id": "73e2d955-b0f7-44f1-9904-ab37d8ba686b",
+      "client_name": "SmartKB",
+      "repo": "local/smartkb",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-smartkb.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451381551.3816
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 2,
+          "opencode_controller": 3,
+          "site_audit": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:1b92cc668a4bb575d29fd2c588b09b7ae5400e99a6b10193fcbf6351bc64f2fb"
+      }
+    },
+    {
+      "id": "df8849be-2399-4a22-acf9-44867ada0e08",
+      "client_name": "SocialAiPilot",
+      "repo": "local/socialaipilot",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-socialaipilot.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451382116.1768
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 5,
+          "site_audit": 2,
+          "repo_autofix": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:90e2de093a434cea56f39a3180b0e2eaee243f3fd5b06877322bd0596ebc9c2f"
+      }
+    },
+    {
+      "id": "d509724a-09de-42d9-b1d9-0ae826137427",
+      "client_name": "SomaveaChaser",
+      "repo": "local/somaveachaser",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-somaveachaser.json",
+        "age_hours": 30.9,
+        "mtime_ms": 1772451382747.18
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 2,
+          "opencode_controller": 5,
+          "repo_autofix": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:1e3f9a2bfd3a7d78db944504dd35ba1955be736af915d37900463067c46a0929"
+      }
+    },
+    {
+      "id": "93aec5df-a1e1-4839-bf1b-65bf587591d5",
+      "client_name": "syrup-client-line-sheet",
+      "repo": "local/syrup-client-line-sheet",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-syrup-client-line-sheet.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451431869.555
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 5,
+          "repo_autofix": 2,
+          "site_audit": 3
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:f94c324dab1379b897bafa1298271fab121f05af8707dc9494e50b5a4c50e906"
+      }
+    },
+    {
+      "id": "68bd9bc0-4122-44a3-80a6-216502b4a507",
+      "client_name": "syrup-internal-line-sheet",
+      "repo": "local/syrup-internal-line-sheet",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-syrup-internal-line-sheet.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451433598.939
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 5,
+          "repo_autofix": 2,
+          "site_audit": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:4306110bbb051ce185bcbd303cbb765dac7889d00c17f48ec59034f5f5c0a9f0"
+      }
+    },
+    {
+      "id": "5ec860bc-25b9-4f53-a894-c0be11ff13db",
+      "client_name": "tap2",
+      "repo": "local/tap2",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-tap2.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451436493.6277
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 3,
+          "repo_autofix": 2,
+          "opencode_controller": 5
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:e70f3e7e10c00fa82e4d26c0c074dd0d1c4fa4d83f9758ce49ab0b3fdb896bae"
+      }
+    },
+    {
+      "id": "d6d3b10f-701b-48f2-955f-0859aeb0f9fa",
+      "client_name": "tapmenu",
+      "repo": "local/tapmenu",
+      "score": {
+        "total": 50,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing",
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-tapmenu.json",
+        "age_hours": 30.89,
+        "mtime_ms": 1772451436520.6675
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 5,
+          "site_audit": 2,
+          "repo_autofix": 2
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:6ef1bb224e82e38801098b000845493066868b271a6ae492884e67cda8ae391d"
+      }
+    },
+    {
+      "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+      "client_name": "CookiesPass",
+      "repo": "local/cookiespass",
+      "score": {
+        "total": 56,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 100
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-cookiespass.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451350708.4468
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 87,
+          "site_audit": 89,
+          "opencode_controller": 109
+        },
+        "agent_hits": 2
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:9be53456d0d26ac451eb90bf7a53c4f318ed37bb85827eedebe20fa70aba7254"
+      }
+    },
+    {
+      "id": "b520bf4d-0a86-4ef1-a662-b2bbef1cb8bd",
+      "client_name": "GoCrawdaddy",
+      "repo": "local/gocrawdaddy",
+      "score": {
+        "total": 56,
+        "index_points": 65,
+        "repomap_points": 0,
+        "coverage_points": 100
+      },
+      "reasons": [
+        "index_stale_or_missing",
+        "repomap_stale_or_missing"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-gocrawdaddy.json",
+        "age_hours": 30.91,
+        "mtime_ms": 1772451360816.9087
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 42,
+          "opencode_controller": 62,
+          "repo_autofix": 42
+        },
+        "agent_hits": 1
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:d596c038cd90981d24bb9f19cade9f2312e3cbec31184bc92108f5f40de2caf6"
+      }
+    },
+    {
+      "id": "aefc0f16-9910-4228-a50f-a94e2fbada68",
+      "client_name": "RobloxGitSync",
+      "repo": "local/robloxgitsync",
+      "score": {
+        "total": 60,
+        "index_points": 0,
+        "repomap_points": 100,
+        "coverage_points": 100
+      },
+      "reasons": [
+        "index_stale_or_missing"
+      ],
+      "index": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "repomap": {
+        "exists": true,
+        "path": "/Users/tatsheen/claw-architect/reports/repomaps/robloxgitsync-repomap.md",
+        "age_hours": 0.3,
+        "mtime_ms": 1772561557803.391
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "opencode_controller": 17,
+          "site_audit": 16,
+          "repo_autofix": 16
+        },
+        "agent_hits": 1
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:0c4bcf8557492e2987126f9828bd70600ff2f65c2bc5ca850adfe745b5db6ff6"
+      }
+    },
+    {
+      "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+      "client_name": "quantfusion",
+      "repo": "local/quantfusion",
+      "score": {
+        "total": 70,
+        "index_points": 100,
+        "repomap_points": 0,
+        "coverage_points": 100
+      },
+      "reasons": [
+        "repomap_stale_or_missing"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-quantfusion.json",
+        "age_hours": 0.37,
+        "mtime_ms": 1772561285934.3403
+      },
+      "repomap": {
+        "exists": false,
+        "path": null,
+        "age_hours": null,
+        "mtime_ms": null
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 151,
+          "opencode_controller": 273,
+          "repo_autofix": 152
+        },
+        "agent_hits": 1
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "dry_run",
+        "idempotency_key": "opencode_controller:a7accee84d457309a2b9c179f19983d309fac71037fdcaa90427954885c0ba37"
+      }
+    },
+    {
+      "id": "9ea4911d-3399-4c43-a422-86e2cc924de0",
+      "client_name": "claw-architect",
+      "repo": "local/claw-architect",
+      "score": {
+        "total": 94,
+        "index_points": 100,
+        "repomap_points": 100,
+        "coverage_points": 80
+      },
+      "reasons": [
+        "agent_coverage_low"
+      ],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-claw-architect.json",
+        "age_hours": 0.19,
+        "mtime_ms": 1772561940917.6592
+      },
+      "repomap": {
+        "exists": true,
+        "path": "/Users/tatsheen/claw-architect/reports/repomaps/claw-architect-repomap.md",
+        "age_hours": 0.12,
+        "mtime_ms": 1772562194165.085
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "site_audit": 189,
+          "opencode_controller": 784,
+          "repo_autofix": 191
+        },
+        "agent_hits": 0
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "not_required"
+      }
+    },
+    {
+      "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+      "client_name": "PayClaw",
+      "repo": "local/payclaw",
+      "score": {
+        "total": 100,
+        "index_points": 100,
+        "repomap_points": 100,
+        "coverage_points": 100
+      },
+      "reasons": [],
+      "index": {
+        "exists": true,
+        "path": "/Users/tatsheen/.code-index/local-payclaw.json",
+        "age_hours": 11.83,
+        "mtime_ms": 1772520035878.344
+      },
+      "repomap": {
+        "exists": true,
+        "path": "/Users/tatsheen/claw-architect/reports/repomaps/payclaw-repomap.md",
+        "age_hours": 0.26,
+        "mtime_ms": 1772561695789.132
+      },
+      "coverage": {
+        "task_types_distinct": 3,
+        "task_runs_by_type": {
+          "repo_autofix": 277,
+          "opencode_controller": 365,
+          "site_audit": 200
+        },
+        "agent_hits": 1
+      },
+      "remediation": {
+        "queued": false,
+        "reason": "not_required"
+      }
+    }
+  ],
+  "summary": {
+    "below_threshold": 48,
+    "remediations_queued": 0,
+    "duplicates_skipped": 0,
+    "dry_run_candidates": 48
+  }
+}

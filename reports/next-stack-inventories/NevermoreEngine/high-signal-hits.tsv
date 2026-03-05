@@ -1,0 +1,930 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Client/Player/PlayerSettingsClient.lua:3:	A player's current settings. Handles replication back to the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Client/Player/PlayerSettingsClient.lua:67:		-- actually done sending and the server acknowledges this is the state that
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Client/Player/PlayerSettingsClient.lua:68:		-- we have. Otherwise we accept the server as the state of truth
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Client/SettingsServiceClient.lua:4:	register settings on the server. See [SettingsService] for server component.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/streamingutils/src/Shared/StreamingUtils.lua:17:	be called on both the client and the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/valuebaseutils/src/Shared/ValueBaseValue.lua:62:	-- Initialize on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/benchmark.spec.lua:26:		local serverPrivate, serverPublic = ecc.keypair(DateTime.now().UnixTimestamp)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/benchmark.spec.lua:28:		local serverSecret = ecc.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/benchmark.spec.lua:29:		local clientSecret = ecc.exchange(clientPrivate, serverPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/benchmark.spec.lua:32:		expect(tostring(serverSecret)).toEqual(tostring(clientSecret))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/benchmark.spec.lua:47:			local plaintext = ecc.decrypt(ciphertext, serverSecret)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Player/PlayerSettingsBase.lua:169:	Ensures the setting is initialized on the server or client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/humanoidanimatorutils/src/Shared/HumanoidAnimatorUtils.lua:17:	There is undefined behavior when using this on the client when the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:86:	Velocity = Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:102:	Velocity: Vector3,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:122:	p.Velocity = p.Velocity or Vector3.zero
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:170:	p.Position = p.Position + p.Velocity * dt
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:174:		wind = (particleWind(t, p.Position) * self._windSpeed - p.Velocity) * p.WindResistance
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Client/ParticleEngineClient.lua:179:	p.Velocity = p.Velocity + (p.Gravity + wind) * dt
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:17:local function digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:18:	entropy = tostring(sha256.digest(entropy .. table.concat(accumulator)))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:49:	digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:51:	digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:70:	digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:72:	entropy = tostring(sha256.digest(entropy))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:82:	digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:92:	digest()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/random.lua:96:	entropy = tostring(sha256.digest(entropy))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/maid/src/Shared/Maid.lua:6:	See the [Five Powerful Code Patterns talk](https://developer.roblox.com/en-us/videos/5-powerful-code-patterns-behind-top-roblox-games)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Player/PlayerSettingsUtils.lua:45:	that cannot be loaded into datastore.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:110:local function counter(incr)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:147:	proc[blocks][15], proc[blocks][16] = counter(len * 8)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:151:local function digestblock(w, C)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:192:local function digest(data)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:199:		C = digestblock(value, C)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:211:	actualKey = #actualKey > blocksize and digest(actualKey) or actualKey
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:225:	ipad = digest(ipad)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:232:	return digest(padded_key)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/sha256.lua:276:	digest = digest,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/chacha20.lua:65:local function initState(key, nonce, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/chacha20.lua:84:	state[13] = counter
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Setting/SettingDefinitionProvider.lua:7:	These settings providers should be used on both the client and the server. On the client, these
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Setting/SettingDefinitionProvider.lua:11:	On the server, these are registered with [SettingsDataService] and then are checked before
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/binder/src/Shared/Binder.lua:481:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/binder/src/Shared/Binder.lua:489:				"[Binder.Bind] - Bindings '%s' done on the client! Will be disrupted upon server replication! %s",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/binder/src/Shared/Binder.lua:536:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/binder/src/Shared/Binder.lua:545:				"[Binder.Bind] - Unbinding '%s' done on the client! Might be disrupted upon server replication! %s",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/binder/src/Shared/Binder.lua:568:			string.format("[Binder.BindClient] - Bindings '%s' done on the server! Will be replicated!", self._tagName)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings-inputkeymap/src/Server/InputKeyMapSetting.lua:3:	Registers the settings automatically so we can validate on the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:23:		local serverPrivate, serverPublic = ecc.keypair(DateTime.now().UnixTimestamp)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:26:		local serverSecret = ecc.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:27:		local clientSecret = ecc.exchange(clientPrivate, serverPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:29:		expect(tostring(serverSecret)).toEqual(tostring(clientSecret))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:33:		local serverPrivate, serverPublic = ecc.keypair(DateTime.now().UnixTimestamp)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:35:		local serverSecret = ecc.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:36:		local clientSecret = ecc.exchange(clientPrivate, serverPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/testing.spec.lua:46:			local plaintext = ecc.decrypt(ciphertext, serverSecret)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Setting/SettingDefinition.lua:3:	These settings definitions are used to define a setting and register them on both the client and server. See
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/Setting/SettingDefinition.lua:6:	Notably a setting is basically anything on the client that can be stored on the server by the client, and that
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Server/ParticleEngineServer.lua:3:	Handles replication on the server side
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Server/ParticleEngineServer.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/particleengine/src/Server/ParticleEngineServer.lua:44:	p.Velocity = p.Velocity or Vector3.zero
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:33:		ObserveVelocityOnRenderStepped: (self: SpringObject<T>) -> Observable.Observable<T>,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:35:		ObserveVelocityOnSignal: (self: SpringObject<T>, signal: RBXScriptSignal) -> Observable.Observable<T>,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:38:		Impulse: (self: SpringObject<T>, velocity: T) -> (),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:40:		SetVelocity: (self: SpringObject<T>, velocity: T) -> (),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:53:		Velocity: T,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:174:function SpringObject:ObserveVelocityOnRenderStepped()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:175:	return self:ObserveVelocityOnSignal(RunService.RenderStepped)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:223:function SpringObject:ObserveVelocityOnSignal(signal)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:235:				sub:Fire(SpringUtils.fromLinearIfNeeded(currentSpring.Velocity))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:237:				sub:Fire(SpringUtils.fromLinearIfNeeded(0 * currentSpring.Velocity))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:293:	Impulses the spring, increasing velocity by the amount given. This is useful to make something shake,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:296:	@param velocity T -- The velocity to impulse with
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:299:function SpringObject:Impulse(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:300:	local converted = SpringUtils.toLinearIfNeeded(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:301:	local currentSpring = self:_getSpringForType(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:356:	Sets the velocity for the spring
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:358:	@param velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:360:function SpringObject:SetVelocity(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:361:	assert(velocity ~= nil, "Bad velocity")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:363:	local observable = Blend.toPropertyObservable(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:365:		self._maid._velocitySub = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:366:		self:_applyVelocity(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:368:		self._maid._velocitySub = observable:Subscribe(function(unconverted)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:369:			self:_applyVelocity(unconverted)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:374:function SpringObject:_applyVelocity(unconverted)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:377:	self:_getSpringForType(0 * (converted :: any)).Velocity = converted
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:531:	elseif index == "Velocity" or index == "v" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:533:			return SpringUtils.fromLinearIfNeeded(currentSpring.Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:580:	elseif index == "Velocity" or index == "v" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/SpringObject.lua:581:		self:SetVelocity(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/modq.lua:203:	return decodeModQ(sha256.digest(data))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/blend/src/Shared/Blend/Blend.lua:101:		Rx.throttleDefer(),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Shared/SettingsDataService.lua:3:	Shared between client and server, letting us centralize definitions in one place.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:87:	local sharedSecret = ECC.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:128:	local sharedSecret = ECC.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:162:	local serverPrivate, serverPublic = ECC.keypair(ECC.random.random())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:163:	local sharedSecret = ECC.exchange(serverPrivate, clientPublic)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:192:	This allows for each the client and the server to encrypt and
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:198:	local serverPrivate, serverPublic = ECC.keypair(ECC.random.random())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:199:	local sharedSecret = ECC.exchange(serverPrivate, clientPublic),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ellipticcurvecryptography/src/Shared/EllipticCurveCryptography/init.lua:214:	local sharedSecret = sha256.digest(Z:encode())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:28:		if keypoint.Envelope == 0 then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:38:				return keypoint.Value + (math.random() - 0.5) * keypoint.Envelope
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:45:		if first.Value == second.Value and first.Envelope == 0 and second.Envelope == 0 then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:52:			local firstValue = first.Value + (math.random() - 0.5) * first.Envelope
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:53:			local secondValue = second.Value + (math.random() - 0.5) * second.Envelope
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:65:			values[i] = point.Value + (math.random() - 0.5) * point.Envelope
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:105:		table.insert(waypoints, NumberSequenceKeypoint.new(keypoint.Time, callback(keypoint.Value), keypoint.Envelope))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:124:			NumberSequenceKeypoint.new(keypoint.Time, keypoint.Value * scale, keypoint.Envelope * scale)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/numbersequenceutils/src/Shared/NumberSequenceUtils.lua:148:				keypoint.Envelope * scale
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/badgeutils/src/Shared/BadgeUtils.lua:33:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/snackbar/src/Server/SnackbarService.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:39:		Velocity: T,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:52:		_velocity0: T,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:58:		_positionVelocity: (self: Spring<T>, now: number) -> (T, T),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:90:			_velocity0 = 0 * (p0 :: any),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:100:	Impulses the spring, increasing velocity by the amount given. This is useful to make something shake,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:103:	@param velocity T -- The velocity to impulse with
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:106:function Spring.Impulse<T>(self: Spring<T>, velocity: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:107:	self.Velocity = (self.Velocity :: any) + velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:117:	local position, velocity = self:_positionVelocity(now + delta)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:119:	self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:133:		self._velocity0 = 0 * (value :: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:159:	The current velocity. Assigning the velocity will change the spring to have that velocity.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:163:	print(spring.Velocity) --> 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:166:	@prop Velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:170:	Alias for [Spring.Velocity](/api/Spring#Velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:226:		local position, _ = self:_positionVelocity(self._clock())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:228:	elseif index == "Velocity" or index == "v" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:229:		local _, velocity = self:_positionVelocity(self._clock())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:230:		return velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:248:		local _, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:250:		self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:252:	elseif index == "Velocity" or index == "v" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:253:		local position, _ = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:255:		self._velocity0 = value
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:258:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:260:		self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:264:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:266:		self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:270:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:272:		self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:276:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:278:		self._velocity0 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:286:function Spring._positionVelocity<T>(self: Spring<T>, now: number): (T, T)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/Spring.lua:288:	local v0 = self._velocity0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:18:	velocity and closeness to target, and as the second value, the value that should be
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:34:			or math.abs((spring :: any).Velocity) > thisEpsilon
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:39:				or (spring :: any).Velocity.magnitude > thisEpsilon
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:54:	Add to spring position to adjust for velocity of target. May have to set clock to time().
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:56:	@param velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:61:function SpringUtils.getVelocityAdjustment<T>(velocity: T, dampen: number, speed: number): T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:62:	assert(velocity, "Bad velocity")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spring/src/Shared/SpringUtils.lua:66:	return (velocity :: any) * (2 * dampen / speed)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/textfilterservice/src/Client/TextFilterServiceClient.lua:106:				return reject(result or "Failed to get a valid result from server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/textfilterservice/src/Client/TextFilterServiceClient.lua:110:				return reject(err or result or "Failed to get string result from server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/brio/src/Shared/RxBrioUtils.lua:137:				-- Could happen due to throttle or delay...
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/brio/src/Shared/RxBrioUtils.lua:234:				-- Could happen due to throttle or delay...
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/fzy/src/Shared/Fzy.lua:212:	-- get all the characters from the haystack once now, to reuse below.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/brio/src/Shared/Brio.lua:24:	with downstream brios so create a chain of reliable resources.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:3:	Utilities to compute elo scores for players
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:21:	-- New rankings!
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:62:	Creates a new elo config.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:79:	Returns whether an object is an elo config
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:94:	Gets the standard deviation of the elo curve
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:96:	@param eloConfig EloConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:99:function EloUtils.getStandardDeviation(eloConfig: EloConfig): number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:100:	assert(EloUtils.isEloConfig(eloConfig), "Bad eloConfig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:102:	return 0.5 * eloConfig.factor * math.sqrt(2)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:106:	Gets the standard deviation of the elo curve from 0 to 1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:108:	@param eloConfig EloConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:109:	@param elo number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:112:function EloUtils.getPercentile(eloConfig: EloConfig, elo: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:113:	assert(EloUtils.isEloConfig(eloConfig), "Bad eloConfig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:115:	local standardDeviation = EloUtils.getStandardDeviation(eloConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:116:	local mean = eloConfig.initial
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:118:	local zScore = (elo - mean) / standardDeviation
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:123:	Gets the standard deviation of the elo curve from 0 to 1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:125:	@param eloConfig EloConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:129:function EloUtils.percentileToElo(eloConfig: EloConfig, percentile: number): number?
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:130:	assert(EloUtils.isEloConfig(eloConfig), "Bad eloConfig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:132:	local standardDeviation = EloUtils.getStandardDeviation(eloConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:133:	local mean = eloConfig.initial
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:149:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:157:	eloMatchResultList: EloMatchResultList
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:162:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:165:		EloUtils.getNewPlayerOneScore(config, playerOneRating, playerTwoRating, eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:170:		EloUtils.fromOpponentPerspective(eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:176:	Gets the change in elo for the given players and the results
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:181:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:185:function EloUtils.getEloChange(config: EloConfig, playerOneRating: number, playerTwoRating: number, eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:189:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:192:		EloUtils.getNewElo(config, playerOneRating, playerTwoRating, eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:204:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:210:	eloMatchResultList: EloMatchResultList
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:215:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:220:			+ EloUtils.getPlayerOneScoreAdjustment(config, playerOneRating, playerTwoRating, eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:251:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:258:	eloMatchResultList: EloMatchResultList
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:263:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:269:		local wins = EloUtils.countPlayerOneWins(eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:270:		local losses = EloUtils.countPlayerTwoWins(eloMatchResultList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:282:		for _, score in eloMatchResultList do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:294:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:297:function EloUtils.fromOpponentPerspective(eloMatchResultList: EloMatchResultList): EloMatchResultList
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:298:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:302:	for index, score in eloMatchResultList do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:312:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:315:function EloUtils.countPlayerOneWins(eloMatchResultList: EloMatchResultList): number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:316:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:319:	for _, score in eloMatchResultList do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:330:	@param eloMatchResultList { EloMatchResult }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:333:function EloUtils.countPlayerTwoWins(eloMatchResultList: EloMatchResultList): number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:334:	assert(EloMatchResultUtils.isEloMatchResultList(eloMatchResultList), "Bad eloMatchResultList")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:337:	for _, score in eloMatchResultList do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.lua:346:	Standard kfactor formula for use in the elo config.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloUtils.spec.lua:3:	Tests for elo utils
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloMatchResultUtils.lua:27:	@param eloMatchResultList any
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloMatchResultUtils.lua:30:function EloMatchResultUtils.isEloMatchResultList(eloMatchResultList: { number }): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloMatchResultUtils.lua:31:	if type(eloMatchResultList) ~= "table" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloMatchResultUtils.lua:35:	for _, eloMatchResult in eloMatchResultList do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/elo/src/Shared/EloMatchResultUtils.lua:36:		if not EloMatchResultUtils.isEloMatchResult(eloMatchResult) then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/settings/src/Server/Player/PlayerSettings.lua:106:				`[PlayerSettings] - Cannot set setting {attributeName} on attribute that is not defined on the server. Be sure to initialize settings on both server + client.`
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/spawning/src/Server/SpawnService.lua:84:							"[SpawnService.Update] - Class %q ran out of execution budget at %0.4f ms",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerservice/src/Server/NetworkOwnerService.lua:21:	-- Force this part to be owned by the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerservice/src/Server/NetworkOwnerService.lua:29:			-- stop using quenty, guess we're back to the server now
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerservice/src/Server/NetworkOwnerService.lua:35:		handle() -- stop forcing network ownership to be the server, now we're back to nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerservice/src/Server/NetworkOwnerService.lua:47:local SERVER_FLAG = "server"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cmdrservice/src/Client/CmdrServiceClient.lua:3:	Loads cmdr on the client. See [CmdrService] for the server equivalent.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Client/Providers/PermissionProviderClient.lua:73:				return reject("Got non-boolean from server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Client/PermissionServiceClient.lua:6:	Be sure to initialize the [PermissionService] on the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/humanoidteleportutils/src/Shared/HumanoidTeleportUtils.lua:71:	For NPCs, this should generally be the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/highlight/src/Client/AnimatedHighlight.lua:111:		target.Velocity = source.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/highlight/src/Client/AnimatedHighlight.lua:234:		self._outlineTransparencySpring.Velocity = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/highlight/src/Client/AnimatedHighlight.lua:254:		self._fillTransparencySpring.Velocity = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cmdrservice/src/Server/CmdrService.lua:6:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/animations/src/Shared/AnimationTrackPlayer.lua:76:			Rx.throttleDefer() :: any,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/PermissionProviderUtils.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/PermissionProviderUtils.lua:38:	Creates a group rank config
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/friendutils/src/Shared/RxFriendUtils.lua:21:	Observe friends in the current server (not including the LocalPlayer!), useful for social GUIs.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/friendutils/src/Shared/RxFriendUtils.lua:22:	The lifetimes exist for the whole duration another player is a friend and in your server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/friendutils/src/Shared/RxFriendUtils.lua:35:	-- Due to players initially starting with an 'unknown' friend value, they fire for all players in the game at launch, and on the first time another player that joins the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/friendutils/src/Shared/RxFriendUtils.lua:37:	-- Therefore, we must also use Player:IsFriendsWith() initially, and then use the below events just for when the state changes.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/friendutils/src/Shared/RxFriendUtils.lua:93:		-- Handle changes for players already in this server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/CreatorPermissionProvider.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/BasePermissionProvider.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:123:	return self:_promiseRankInGroup(player):Then(function(rank)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:124:		return rank >= self._config.minCreatorRequiredRank
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:143:	return self:_promiseRankInGroup(player):Then(function(rank)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:144:		return rank >= self._config.minAdminRequiredRank
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:151:	self:_promiseRankInGroup(player):Then(function(rank)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:152:		if rank >= self._config.minAdminRequiredRank then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/Providers/GroupPermissionProvider.lua:156:		if rank >= self._config.minCreatorRequiredRank then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/flipbook/src/Client/Flipbook.lua:146:function Flipbook.GetPreloadAssetId(self: Flipbook): { string }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:93:			local function getEstimatedVelocityFromUpperTorso()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:99:				return state.upperTorso:GetVelocityAtPosition(headPosition)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:102:			local lastVelocity = getEstimatedVelocityFromUpperTorso()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:108:				local velocity = getEstimatedVelocityFromUpperTorso()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:109:				local dVelocity = velocity - lastVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:110:				if dVelocity.magnitude >= 0 then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:120:							cameraCFrame:vectorToObjectSpace(-0.1 * cameraCFrame.lookVector:Cross(dVelocity)),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/Classes/RagdollCameraShakeClient.lua:127:				lastVelocity = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/permissionprovider/src/Server/PermissionService.lua:9:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Client/RagdollBindersClient.lua:3:	Holds binders for Ragdolls on the client. Be sure to initialize on the server. See [RagdollBindersClient] for details.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/flipbook/src/Client/Library/FlipbookLibrary.lua:38:function FlipbookLibrary:GetPreloadAssetIds()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/flipbook/src/Client/Library/FlipbookLibrary.lua:43:		table.insert(assets, sheet:GetPreloadAssetId())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cooldown/src/Server/Binders/Cooldown.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/playerinputmode/src/Client/PlayerInputModeServiceClient.lua:3:	Reports back the player input mode to the server which allows for displaying what
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/playerinputmode/src/Client/PlayerInputModeServiceClient.lua:49:				Rx.throttleTime(1, { leading = true, trailing = true }),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RxRagdollUtils.lua:178:			-- This velocity work only really needs to occur on the network owner and on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RxRagdollUtils.lua:179:			-- since the server will replicate all changes over to the client.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RxRagdollUtils.lua:181:				maid:GivePromise(RagdollMotorUtils.promiseVelocityRecordings(character, rigType))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RxRagdollUtils.lua:182:					:Then(function(velocityReadings)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RxRagdollUtils.lua:190:						maid:GiveTask(RagdollMotorUtils.suppressMotors(character, rigType, velocityReadings))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/playerinputmode/src/Server/PlayerInputModeService.lua:3:	Reports back the player input mode to the server which allows for displaying what
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/playerinputmode/src/Server/PlayerInputModeService.lua:6:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:323:function RagdollMotorUtils.suppressMotors(character: Model, rigType: Enum.HumanoidRigType, velocityReadings)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:365:				-- Note animator:ApplyJointVelocities fails. Do this manually.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:370:						local passed = time() - velocityReadings.readingTimePhysics
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:372:							local rotVelocity = velocityReadings.rotation[data]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:373:							if rotVelocity then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:374:								state.part1.AssemblyAngularVelocity += rotVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:377:							local velocity = velocityReadings.linear[data]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:378:							if velocity then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:379:								state.part1.AssemblyLinearVelocity += velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Rigging/RagdollMotorUtils.lua:410:function RagdollMotorUtils.promiseVelocityRecordings(character: Model, rigType: Enum.HumanoidRigType)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollModel.lua:97:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollModel.lua:98:		return self._spring.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollModel.lua:102:		return math.abs(self._spring.Target - self._spring.Position) < 1e-5 and math.abs(self._spring.Velocity) < 1e-5
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollModel.lua:135:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollModel.lua:136:		self._spring.Velocity = value
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/plugins/ui-converter-plugin/src/modules/Server/RxUIConverterUtils.lua:12:function RxUIConverterUtils.observeAnyChangedBelowInst(inst)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:5:	@class throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:18:	@function throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:19:	@within throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:22:	@param throttleConfig? { leading = true; trailing = true; }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:25:local function throttle<T...>(
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:28:	throttleConfig: ThrottledFunction.ThrottleConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:33:	local throttled = ThrottledFunction.new(timeoutInSeconds, func, throttleConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:36:		throttled:Call(TypeUtils.anyValue(...))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/throttle.lua:40:return throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:88:		self._model.Velocity = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:133:		if self._model.Velocity > 0 then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:134:			self._model.Target = math.max(self._model.Target, position + self._model.Velocity * 0.5)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:136:			self._model.Target = math.min(self._model.Target, position + self._model.Velocity * 0.5)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:164:function ScrollingFrame:_getVelocityTracker(strength)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:166:	self._model.Velocity = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:180:		self._model.Velocity = self._model.Velocity - (delta / elapsed) * strength
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:188:	local updateVelocity = self:_getVelocityTracker()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:198:		updateVelocity()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:287:	local updateVelocity = self:_getVelocityTracker(0.25)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/scrollingframe/src/Client/ScrollingFrame.lua:299:			updateVelocity()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/hide/src/Server/Hide.lua:9:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/plugins/ui-converter-plugin/src/modules/Server/ConverterPane.lua:181:		Rx.throttleTime(0.2),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/plugins/ui-converter-plugin/src/modules/Server/ConverterPane.lua:366:			table.insert(observables, RxUIConverterUtils.observeAnyChangedBelowInst(item))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/plugins/ui-converter-plugin/src/modules/Server/ConverterPane.lua:371:				Rx.throttleTime(0.2),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/ThrottledFunction.lua:101:function ThrottledFunction._configureOrError<T...>(self: ThrottledFunction<T...>, throttleConfig: ThrottleConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/ThrottledFunction.lua:102:	if throttleConfig == nil then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/ThrottledFunction.lua:106:	assert(type(throttleConfig) == "table", "Bad throttleConfig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/ThrottledFunction.lua:108:	for key, value in throttleConfig do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/throttle/src/Shared/ThrottledFunction.lua:109:		assert(type(value) == "boolean", "Bad throttleConfig entry")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:37:	self:_initLastVelocityRecords()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:48:			self:_updateVelocity()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:67:function BindableRagdollHumanoidOnFall:_initLastVelocityRecords()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:68:	self._lastVelocityRecords = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:70:		table.insert(self._lastVelocityRecords, Vector3.zero)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:77:	for _, velocityRecord in self._lastVelocityRecords do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:78:		local speed = velocityRecord.magnitude
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:105:function BindableRagdollHumanoidOnFall:_updateVelocity()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:106:	table.remove(self._lastVelocityRecords, 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:111:		table.insert(self._lastVelocityRecords, Vector3.zero)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:115:	local currentVelocity = rootPart.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:118:	local mostNegativeVelocityY = math.huge
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:119:	for _, velocityRecord in self._lastVelocityRecords do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:120:		if velocityRecord.y >= -2 then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:125:		if velocityRecord.y < mostNegativeVelocityY then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:126:			mostNegativeVelocityY = velocityRecord.y
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:130:	table.insert(self._lastVelocityRecords, currentVelocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:137:	if mostNegativeVelocityY >= REQUIRED_MAX_FALL_VELOCITY then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Shared/Classes/BindableRagdollHumanoidOnFall.lua:145:	-- print("currentVelocity.magnitude, mostNegativeVelocityY", currentVelocity.magnitude, mostNegativeVelocityY)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/roblox-api-dump/src/Server/RobloxApiClass.lua:138:	local function chain(current: RobloxApiClass): Promise.Promise<{ RobloxApiClass }>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/roblox-api-dump/src/Server/RobloxApiClass.lua:142:				return chain(superclass)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/roblox-api-dump/src/Server/RobloxApiClass.lua:149:	local promise = chain(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/inputkeymaputils/src/Shared/InputKeyMapRegistryServiceShared.lua:3:	Provides retrieval of input key maps across the game. Available on both the client and the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/inputkeymaputils/src/Shared/InputKeyMapRegistryServiceShared.lua:5:	Input key maps are needed on the server to bind datastore settings.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:3:	Wrapper around Roblox chat service on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:48:	-- note: normally we don't expose default API surfaces like this with defaults, however, because this only affects developers and this
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:50:	self:SetDeveloperTag(ChatTagDataUtils.createChatTagData({
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:71:	Sets the developer chat tag
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:76:function ChatProviderService:SetDeveloperTag(chatTagData: ChatTagDataUtils.ChatTagData)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:83:		self._maid._developer = self:_addObservablePlayerTag(observeBrio, chatTagData)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/chatproviderservice/src/Server/ChatProviderService.lua:85:		self._maid._developer = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/RagdollBindersServer.lua:10:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/UnragdollAutomatically.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/Ragdollable.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/Ragdollable.lua:43:	-- Ensure predefined physics rig immediatelly on the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/RagdollHumanoidOnFall.lua:6:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:28:			_cameraBelow: any,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:62:	local cameraBelow, assign = self._cameraStack:GetNewStateBelow()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:65:	self._cameraBelow = cameraBelow
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:66:	self._fadeBetween = FadeBetweenCamera3.new(cameraBelow, cameraEffect)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:154:	Gets the camera below this camera on the camera stack
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:157:function CameraStateTweener.GetCameraBelow(self: CameraStateTweener): CameraEffectUtils.CameraEffect
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:158:	return self._cameraBelow
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Utility/CameraStateTweener.lua:179:		self._fadeBetween.Velocity = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/physicsutils/src/Shared/PhysicsUtils.lua:133:	It should be noted that setting the velocity to one part of a connected part on Roblox sets
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/physicsutils/src/Shared/PhysicsUtils.lua:134:	the velocity of the whole physics model.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/physicsutils/src/Shared/PhysicsUtils.lua:161:	part.AssemblyAngularVelocity = part.AssemblyAngularVelocity + rotAcceleration
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/physicsutils/src/Shared/PhysicsUtils.lua:162:	part.AssemblyLinearVelocity = part.AssemblyLinearVelocity + acceleration
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/RagdollHumanoidOnDeath.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/avatareditorutils/src/Client/AvatarEditorInventoryServiceClient.lua:47:			-- Allow for replay
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/Classes/RagdollCameraShake.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/signal/src/Shared/Signal.lua:111:	-- disconnected nodes in the chain alive, keeping the function closure alive, and in return
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/signal/src/Shared/Signal.lua:252:		-- in this round. Any disconnections in the chain will still work here.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/adorneeboundingbox/src/Shared/AdorneeModelBoundingBox.lua:65:			Rx.throttleDefer() :: any,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/RagdollService.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ragdoll/src/Server/RagdollService.lua:17:	Initializes the ragdoll service on the server. Should be done via [ServiceBag].
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadingCamera.lua:84:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadingCamera.lua:85:		return self.Spring.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadingCamera.lua:87:		return math.abs(self.Value - self.Target) < 1e-4 and math.abs(self.Velocity) < 1e-4
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/secrets/src/Server/SecretsService.lua:152:			sub:Fail(err or "Failed to get datastore")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/secrets/src/Server/SecretsService.lua:199:	Clears all the secrets stored in the datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/secrets/src/Server/SecretsService.lua:232:		.. "\n\tTIP: If you set the private key seed in source code, attackers need source code AND datastore access"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/avatareditorutils/src/Shared/AvatarEditorUtils.lua:524:	Prompts the Players.LocalPlayer to allow the developer to read what items the user has in their inventory and other
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/avatareditorutils/src/Shared/AvatarEditorUtils.lua:525:	avatar editor related information. The prompt needs to be confirmed by the user for the developer to use
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SummedCamera.lua:98:			-- TODO: compute derivative velocity more correctly of this non-linear thing
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SummedCamera.lua:99:			local newQFrameVelocity = QFrame.fromCFrameClosestTo(
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SummedCamera.lua:103:			local cameraFrameVelocity = CameraFrame.new(
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SummedCamera.lua:104:				newQFrameVelocity,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SummedCamera.lua:108:			local result = CameraState.new(cameraFrame, cameraFrameVelocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Observable.lua:49:	Observables over signals are nice because observables may be chained and manipulated
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/idleservice/src/Client/IdleServiceClient.lua:218:			if rootPart.Velocity.magnitude > MOVE_DISTANCE_REQUIRED then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:439:	Same as [Rx.share] except it also replays the value
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:506:					-- Copy subs so removal doesn't affect replay
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:515:					-- Copy subs so removal doesn't affect replay
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:524:					-- Copy subs so removal doesn't affect replay
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1506:		for key, observer: any in observables do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1507:			if not Observable.isObservable(observer) then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1511:			maid:GiveTask(observer:Subscribe(function(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1529:	Equivalent of [Rx.combineLatest] and [Rx.throttleDefer] but avoids copying and emitting a new table
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1531:	frame, and we don't want to create a lot of work for the garbage collector.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1584:		for key, observer in observables do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1585:			if not Observable.isObservable(observer) then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1589:			maid:GiveTask(observer:Subscribe(function(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1896:	https://rxjs-dev.firebaseapp.com/api/operators/throttleTime
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1903:	@param throttleConfig { leading = true; trailing = true; }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1906:function Rx.throttleTime(duration: number, throttleConfig: ThrottledFunction.ThrottleConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1908:	assert(type(throttleConfig) == "table" or throttleConfig == nil, "Bad throttleConfig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1916:			local throttledFunction = ThrottledFunction.new(duration, function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1918:			end, throttleConfig)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1920:			maid:GiveTask(throttledFunction)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1922:				throttledFunction:Call(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:1962:function Rx.throttleDefer<T...>(): Observable.Transformer<T..., T...>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:2005:	https://rxjs.dev/api/operators/throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Rx.lua:2010:function Rx.throttle(durationSelector)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/LagPointCamera.lua:65:		self.FocusSpring.Velocity = Vector3.zero
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/LagPointCamera.lua:70:	elseif index == "Speed" or index == "Damper" or index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/LagPointCamera.lua:100:	elseif index == "Speed" or index == "Damper" or index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/httppromise/src/Server/HttpPromise.lua:21:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothZoomedCamera.lua:34:			Velocity: number,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothZoomedCamera.lua:125:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothZoomedCamera.lua:126:		return self.Spring.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothZoomedCamera.lua:128:		return math.abs(self.Value - self.Target) < 1e-4 and math.abs(self.Velocity) < 1e-4
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/nevermore-cli/build-scripts/smoke-test-server.luau:15:-- Collect eligible scripts (non-disabled, non-empty, only server Scripts)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/nevermore-cli/build-scripts/smoke-test-server.luau:34:for _, serverScript in scripts do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/nevermore-cli/build-scripts/smoke-test-server.luau:35:	local scriptName = serverScript:GetFullName()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/nevermore-cli/build-scripts/smoke-test-server.luau:36:	local fn, compileError = loadstring(serverScript.Source, scriptName)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:16:	Retrieves the rank of the player in the group.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:27:		local rank = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:29:			rank = player:GetRankInGroupAsync(groupId)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:36:		if type(rank) ~= "number" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:40:		return resolve(rank)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:118:	Retrieves group role info for a given rankId
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:121:	@param rankId number
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:124:function GroupUtils.promiseGroupRoleInfo(groupId: number, rankId: number): Promise.Promise<GroupRoleInfo>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:126:	assert(rankId, "Bad rankId")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:133:		for _, rankInfo in groupInfo.Roles do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:134:			if rankInfo.Rank == rankId then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:135:				return rankInfo
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/grouputils/src/Shared/GroupUtils.lua:139:		return Promise.rejected("No rank with given id")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:53:	@param velocity Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:57:function ImpulseCamera.Impulse(self: ImpulseCamera, velocity: Vector3, speed: number?, damper: number?): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:58:	assert(typeof(velocity) == "Vector3", "Bad velocity")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:63:	spring:Impulse(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:69:	@param velocity Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:73:function ImpulseCamera.ImpulseRandom(self: ImpulseCamera, velocity: Vector3, speed: number?, damper: number?): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:74:	assert(typeof(velocity) == "Vector3", "Bad velocity")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/ImpulseCamera.lua:80:	return self:Impulse(velocity * randomVector, speed, damper)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerutils/src/Server/NetworkOwnerUtils.lua:34:	it defaults to nil, which is sort of like pretending to be a server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerutils/src/Server/NetworkOwnerUtils.lua:55:	@param player Player? -- nil for server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/networkownerutils/src/Server/NetworkOwnerUtils.lua:71:	Returns whether or not the server is the network owner. Returns
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Subscription.lua:148:	can be chained into the the next subscription.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rx/src/Shared/Subscription.lua:178:	can be chained into the the next subscription.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothPositionCamera.lua:50:		self.Spring.Velocity = Vector3.zero
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothPositionCamera.lua:53:	elseif index == "Speed" or index == "Damper" or index == "Velocity" or index == "Position" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothPositionCamera.lua:70:			QFrame.fromVector3(self.Velocity, baseCameraFrameDerivative.QFrame),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/SmoothPositionCamera.lua:78:	elseif index == "Speed" or index == "Damper" or index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/deathreport/src/Shared/DeathReportProcessor.lua:3:	Handles shared observable subscription tables for the client and server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:121:	Returns a new camera state that retrieves the state below its set state.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:123:	@return CustomCameraEffect -- Effect below
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:126:function CameraStack.GetNewStateBelow(self: CameraStack)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:134:			local below: any = self._stack[index - 1]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:135:			if below then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:136:				return below.CameraState or below
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStack.lua:138:				warn("[CameraStack] - Could not get state below, found current state. Returning default.")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera.lua:49:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera.lua:50:		self._spring.Velocity = value
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera.lua:112:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera.lua:115:			return self._spring.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraState.lua:22:		Velocity: Vector3,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraState.lua:81:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraState.lua:95:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/GameProductServiceClient.lua:4:	marketplace items. This listens to events, handles requests between server and
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/GameProductServiceClient.lua:8:	See [GameProductService] for the server equivalent. The API surface should be
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera3.lua:32:			Velocity: number,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera3.lua:77:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera3.lua:78:		self._spring.Velocity = value
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera3.lua:158:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera3.lua:161:			return self._spring.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Realm/RemotingRealms.lua:10:export type RemotingRealm = "server" | "client"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Realm/RemotingRealms.lua:13:	SERVER = "server" :: "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera2.lua:88:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/GetRemoteEvent.lua:8:	Retrieves a global remote event from the store. On the server, it constructs a new one,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/GetRemoteEvent.lua:16:	-- server.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/GetRemoteEvent.lua:26:	remoteEvent:FireServer("Hello") --> Hello (on the server)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/Manager/PlayerProductManagerClient.lua:108:	-- I think this only fires on the server...
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/Manager/PlayerProductManagerClient.lua:135:	-- In case it comes from the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/Manager/PlayerProductManagerClient.lua:193:				-- We only read from the server purchase event
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Client/Manager/PlayerProductManagerClient.lua:203:	self._maid:GiveTask(self._remoting.DeveloperProductPurchased:Connect(function(productId)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/soundplayer/src/Client/Loops/LoopedSoundPlayer.lua:521:		Rx.throttleDefer() :: any,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/GetRemoteFunction.lua:9:	Retrieves a global remote function from the store. On the server, it constructs a new one,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/GetRemoteFunction.lua:17:	-- server.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Effects/FadeBetween/FadeBetweenCamera4.lua:87:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/studio-bridge/templates/studio-bridge-plugin/src/StudioBridgePlugin.server.lua:4:	Connects to a local WebSocket server, streams LogService output, and
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/studio-bridge/templates/studio-bridge-plugin/src/StudioBridgePlugin.server.lua:161:	-- Handle incoming messages from the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/tools/studio-bridge/templates/studio-bridge-plugin/src/StudioBridgePlugin.server.lua:178:			-- Execute an additional script sent by the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/deathreport/src/Server/DeathReportService.lua:6:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:231:	If on the server, creates a new [RemoteFunction] with the name `memberName` and binds the
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:410:	assert(self._remotingRealm == RemotingRealms.SERVER, "FireClient must be called on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:427:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:435:	assert(self._remotingRealm == RemotingRealms.SERVER, "InvokeClient must be called on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:453:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:459:	assert(self._remotingRealm == RemotingRealms.SERVER, "FireAllClients must be called on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:476:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:487:	assert(self._remotingRealm == RemotingRealms.SERVER, "FireAllClientsExcept must be called on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:505:	Fires the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:519:	Fires the server, resolving the promise once it is fired.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:559:	Invokes the server from the client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:573:	Invokes the server from the client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:620:	Invokes the client from the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:622:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/Remoting.lua:661:	assert(self._remotingRealm == RemotingRealms.SERVER, "Folder should only be created on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:23:			_rampVelocityX: AccelTween.AccelTween,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:24:			_rampVelocityY: AccelTween.AccelTween,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:38:	self._rampVelocityX = AccelTween.new(25)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:39:	self._rampVelocityY = AccelTween.new(25)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:59:	self._rampVelocityX.a = acceleration
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:60:	self._rampVelocityY.a = acceleration
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:72:	return Vector2.new(self._rampVelocityX.p, self._rampVelocityY.p)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:80:	self._rampVelocityX.t = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:81:	self._rampVelocityX.p = self._rampVelocityX.t
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:83:	self._rampVelocityY.t = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:84:	self._rampVelocityY.p = self._rampVelocityY.t
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:102:		self._rampVelocityX.t = adjustedStickOffset.X
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/GamepadRotateModel.lua:103:		self._rampVelocityY.t = adjustedStickOffset.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:53:	On the server this will create the remote function. On the client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:68:	On the server this will create the remote event. On the client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:97:	Fires the remote event on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:108:	Invokes the server from the client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:120:	Invokes the client from the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:132:	Fires the server from the client. Promise resolves once the event is sent.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:145:	Invokes the client from the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:149:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:162:	Invokes the client from the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:166:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:183:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:196:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:205:	assert(self._remotingRealm == RemotingRealms.SERVER, "FireAllClientsExcept must be called on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remoting/src/Shared/Interface/RemotingMember.lua:215:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/resetservice/src/Server/ResetService.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:23:local function rk4Integrator(position: number, velocity: number, t: number): (number, number)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:24:	local direction = velocity < 0 and -1 or 1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:31:	local v1 = velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:44:	local velocityResult = velocity + (a1 + 2 * a2 + 2 * a3 + a4) * (t / 6)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:45:	return positionResult, velocityResult
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:63:		_rotVelocityTracker: any?,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:80:	-- Destroyed below
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:149:	maid:GiveTask(UserInputService.TouchPinch:Connect(function(_, scale, velocity, userInputState)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:150:		self:_handleTouchPinch(scale, velocity, userInputState)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:206:		self._rotVelocityTracker = self:_getVelocityTracker(self._strength or 0.05, Vector2.zero)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:251:	velocity: number,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:260:			self._zoomedCamera.TargetZoom = self._zoomedCamera.Zoom + -velocity / 5
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:279:function CameraControls.SetVelocityStrength(self: CameraControls, strength: number): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:283:function CameraControls._getVelocityTracker(_self: CameraControls, initialStrength: number?, startVelocity: Vector2)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:287:	local velocity: Vector2 = startVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:293:			velocity = velocity / (2 ^ (elapsed / strength)) + (delta / (0.0001 + elapsed)) * strength
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:295:		GetVelocity = function(this)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:296:			this:Update(startVelocity * 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:297:			return velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:316:			if self._rotVelocityTracker then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:317:				self._rotVelocityTracker:Update(deltaAngle)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:329:function CameraControls._applyRotVelocityTracker(self: CameraControls, rotVelocityTracker)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:332:		local velocity = rotVelocityTracker:GetVelocity().X
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:333:		local newVelocityTarget = position + velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:336:		if math.abs(newVelocityTarget - position) > math.abs(target - position) then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:337:			self._rotatedCamera.TargetAngleXZ = newVelocityTarget
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:347:	if self._rotVelocityTracker then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:348:		self:_applyRotVelocityTracker(self._rotVelocityTracker)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:349:		self._rotVelocityTracker = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:361:	if self._rotVelocityTracker then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:362:		self:_applyRotVelocityTracker(self._rotVelocityTracker)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:363:		self._rotVelocityTracker = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:380:		self._rotVelocityTracker = self:_getVelocityTracker(0.05, Vector2.zero)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:390:		if self._rotVelocityTracker then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/Controls/CameraControls.lua:391:			self._rotVelocityTracker:Update(deltaAngle)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStackService.lua:196:	Returns a new camera state that retrieves the state below its set state.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStackService.lua:198:	@return CustomCameraEffect -- Effect below
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStackService.lua:201:function CameraStackService.GetNewStateBelow(self: CameraStackService)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/camera/src/Client/CameraStackService.lua:204:	return self._cameraStack:GetNewStateBelow()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/GameProductService.lua:4:	marketplace items. This listens to events, handles requests between server and
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/GameProductService.lua:11:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rotatinglabel/src/Client/RotatingCharacter.lua:21:	Velocity = true,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rotatinglabel/src/Client/RotatingCharacter.lua:80:		-- Adjust transparency upwards based upon velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rotatinglabel/src/Client/RotatingCharacter.lua:81:		default = Math.map(default, 0, 1, math.clamp(math.abs(self.Velocity * 2 / self.Speed), 0, 0.25), 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:3:	Handles product prompting state on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:82:		-- TODO: Validate on server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:92:	self._remoting.DeveloperProductPurchased:DeclareEvent()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:99:		-- We only read from the server purchase event
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameproductservice/src/Server/Manager/PlayerProductManager.lua:115:				self._remoting.DeveloperProductPurchased:FireClient(self._obj, productId)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameconfig/src/Server/Config/Config/GameConfig.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ContentProviderUtils.lua:3:	Utility functions to ensure that content is preloaded (wrapping calls in promises)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ContentProviderUtils.lua:16:	Preloads assets
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ContentProviderUtils.lua:18:	If strings are passed in, it only preloads textures, and will preload meshes, but only to http client.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ContentProviderUtils.lua:24:function ContentProviderUtils.promisePreload(contentIdList: { Instance | string })
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ContentProviderUtils.lua:29:			ContentProvider:PreloadAsync(contentIdList)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:13:local counters: { [string]: CounterData } = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:60:	local data = counters[label]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:68:		counters[label] = created
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:210:	Prints all counters to output.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:214:	for label, _ in counters do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/performanceutils/src/Shared/PerformanceUtils.lua:220:		local data = counters[label]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:25:	self._preloadImage = self._maid:Add(ValueObject.new(true, "boolean"))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:44:function ImageLabelLoaded:SetPreloadImage(preloadImage: boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:45:	assert(type(preloadImage) == "boolean", "Bad preloadImage")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:47:	self._preloadImage.Value = preloadImage
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:111:		-- Setup preloading as necessary
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:112:		maid:GiveTask(self._preloadImage
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:115:				Rx.switchMap(function(preload)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:116:					if preload then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/contentproviderutils/src/Client/ImageLabelLoaded.lua:128:					maid:GivePromise(ContentProviderUtils.promisePreload({ self._imageLabel })):Then(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:99:	rootHip.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:115:	leftHip.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:131:	rightHip.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:147:	leftShoulder.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:163:	rightShoulder.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rigbuilderutils/src/Shared/RigBuilderUtils.lua:179:	neck.MaxVelocity = 0.1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remotefunctionutils/src/Shared/RemoteFunctionUtils.lua:14:	Invokes the server with the remote function call.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remotefunctionutils/src/Shared/RemoteFunctionUtils.lua:31:			return reject(err or "Failed to invoke server from RemoteFunction")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/remotefunctionutils/src/Shared/RemoteFunctionUtils.lua:77:	Invokes the server with the remote function call.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/inputmode/src/Shared/InputModeTypes.lua:3:	Holds all the input mode type configuration, accessible on both the server and the client for keybinding validations.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/sprites/src/Shared/Sprite/Spritesheet.lua:38:	Retrieves the preload asset ids to use
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/sprites/src/Shared/Sprite/Spritesheet.lua:41:function Spritesheet:GetPreloadAssetId(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:3:	Class of functions that can be used to minimize entrance velocity of a projectile.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:4:	@class MinEntranceVelocityUtils
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:7:local MinEntranceVelocityUtils = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:12:	Determines the starting velocity to minimize the velocity at the target for a parabula
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:19:function MinEntranceVelocityUtils.minimizeEntranceVelocity(origin: Vector3, target: Vector3, accel: Vector3): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:33:	Computes the velocity the target will enter the target
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:36:	This may only works for a minimizeEntranceVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:39:	@param velocity Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:45:function MinEntranceVelocityUtils.computeEntranceVelocity(
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:46:	velocity: Vector3,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:51:	local entranceTime = MinEntranceVelocityUtils.computeEntranceTime(velocity, origin, target, accel)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:52:	return accel * entranceTime + velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:59:	This may only works for a minimizeEntranceVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:62:	@param velocity Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:68:function MinEntranceVelocityUtils.computeEntranceTime(
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:69:	velocity: Vector3,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:76:	local av = accel:Dot(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:77:	local vv = velocity:Dot(velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:78:	local vo = velocity:Dot(offset)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/MinEntranceVelocityUtils.lua:89:return MinEntranceVelocityUtils
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:9:	Returns two possible paths from origin to target where the magnitude of the initial velocity is initialVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:15:	@param initialVelocity number -- Magnitude of the initial velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:17:	@return Vector3? -- lowTrajectory Initial velocity for a low trajectory arc
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:18:	@return Vector3? -- highTrajectory Initial velocity for a high trajectory arc
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:24:	initialVelocity: number,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:33:		local v2 = initialVelocity * initialVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:53:			return nil, nil, Vector3.new(rx, (tx2 ^ 0.5), rz).Unit * initialVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/trajectory.lua:56:		local v = Vector3.new(0, initialVelocity * (ty > 0 and 1 or ty < 0 and -1 or 0), 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Shared/Utility/DataStoreStringUtils.lua:3:	Utility methods to validate strings which can be used to attack datastores in a string saving attack otherwise.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Shared/Utility/DataStoreStringUtils.lua:11:	Checks to see if a string can be stored in the datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:10:local MinEntranceVelocityUtils = require("MinEntranceVelocityUtils")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:20:function TrajectoryDrawUtils.draw(velocity: Vector3, origin: Vector3, target: Vector3, accel: Vector3): Maid.MaidTask
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:21:	local entranceTime = MinEntranceVelocityUtils.computeEntranceTime(velocity, origin, target, accel)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:23:	return TrajectoryDrawUtils.parabula(origin, velocity, accel, entranceTime)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:31:	velocity: Vector3,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:37:	local target = origin + totalTime * velocity + 0.5 * (totalTime * totalTime) * accel
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:46:		local p0 = origin + velocity * t0 + 0.5 * accel * t0 * t0
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/trajectory/src/Shared/TrajectoryDrawUtils.lua:47:		local p1 = origin + velocity * t1 + 0.5 * accel * t1 * t1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/Realms/TieRealms.lua:12:export type TieRealm = "shared" | "client" | "server"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/Realms/TieRealms.lua:17:	SERVER = "server" :: "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Utility/DataStorePromises.lua:3:	Utility methods to interactive with Roblox datastores.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Utility/DataStorePromises.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Utility/DataStorePromises.lua:21:	Promises a Roblox datastore object with the name and scope. Generally only fails
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Utility/DataStorePromises.lua:44:	Promises a Roblox datastore object with the name and scope. Generally only fails
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Utility/DataStorePromises.lua:320:					-- https://devforum.roblox.com/t/ordereddatastore-pages-object-is-never-isfinished-resulting-in-finite-loops-when-n-0/3558372
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/InfluxDBClient.lua:3:	Client to write InfluxDB points to the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/InfluxDBClient.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/TieDefinition.lua:803:	-- TODO: Handle server/actor
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/TieDefinition.lua:810:		-- Shared contains both server and client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/TieImplementation.lua:210:				"%s\n\tHINT: This is declared as a %s implementation. Shared implements require both client and server components. You could also specify the implementation realm by writing %sInterface.%s:Implement(...)",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/tie/src/Shared/Members/TieMemberDefinition.lua:84:		-- Require both client and server if we're shared to be implemented
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PrivateServerDataStoreService.lua:3:	Service which manages central access to datastore. This datastore is per a private server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PrivateServerDataStoreService.lua:4:	or reserved server. The main server will also get one, with an empty key.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PrivateServerDataStoreService.lua:41:	Promises a DataStore for the current private server. If this is not a private server, it returns a datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PrivateServerDataStoreService.lua:74:		"[PrivateServerDataStoreService] - Already got datastore, cannot set custom key"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/Write/InfluxDBWriteBuffer.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/Write/InfluxDBWriteAPI.lua:3:	InfluxDB API to write to the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/Write/InfluxDBWriteAPI.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/Write/InfluxDBWriteAPI.lua:121:	Queues a new influx DB point to send to the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/influxdbclient/src/Server/Write/InfluxDBWriteAPI.lua:139:	Queues a new list of influx DB points to send to the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/adorneeutils/src/Shared/AdorneeUtils.lua:177:	Retrieves this adornee's "part"'s Velocity.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/adorneeutils/src/Shared/AdorneeUtils.lua:181:function AdorneeUtils.getPartVelocity(adornee: Instance): Vector3?
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/adorneeutils/src/Shared/AdorneeUtils.lua:187:	return part.AssemblyLinearVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/sprites/src/Shared/InputImageLibrary/init.lua:29:	Retrieves all the asset ids to preload
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/sprites/src/Shared/InputImageLibrary/init.lua:33:function InputImageLibrary:GetPreloadAssetIds(): { string }
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/sprites/src/Shared/InputImageLibrary/init.lua:37:			table.insert(assets, sheet:GetPreloadAssetId())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Maid.lua:6:	See the [Five Powerful Code Patterns talk](https://developer.roblox.com/en-us/videos/5-powerful-code-patterns-behind-top-roblox-games)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/weldconstraintutils/src/Shared/WeldConstraintUtils.lua:14:	https://devforum.roblox.com/t/weld-constraint-behaves-differently-on-server-compared-to-client/445036
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/weldconstraintutils/src/Shared/WeldConstraintUtils.lua:48:	-- https://devforum.roblox.com/t/weld-constraint-behaves-differently-on-server-compared-to-client/445036
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/weldconstraintutils/src/Shared/WeldConstraintUtils.lua:85:	-- https://devforum.roblox.com/t/weld-constraint-behaves-differently-on-server-compared-to-client/445036
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/bodycolorsutils/src/Shared/BodyColorsDataUtils.lua:102:	Returns true if the data is a datastore safe body color
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/bodycolorsutils/src/Shared/BodyColorsDataUtils.lua:126:	Gets a datastore safe version of body color
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/bodycolorsutils/src/Shared/BodyColorsDataUtils.lua:150:	Constructs a BodyColorsData from a datastore safe body color
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/Replicator.lua:6:	filter out server-specific assets while any client-side assets are still replicated
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/Replicator.lua:10:	we can more easily support hot reloading and future loading scenarios.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/Replicator.lua:15:	3. Module scripts that are in server mode won't replicate unless a client dependency is needed or found.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/Replicator.lua:19:	This system is designed to minimize changes such that hot reloading can be easily
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/Replicator.lua:164:	avoid leaking more server-side information than needed for the user.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/overriddenproperty/src/Shared/OverriddenProperty.lua:3:	Sets properties on the client and then replicates them to the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/overriddenproperty/src/Shared/OverriddenProperty.lua:44:		self._throttledExecuteReplicate = self._maid:Add(ThrottledFunction.new(replicateRate, replicateCallback))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/overriddenproperty/src/Shared/OverriddenProperty.lua:77:	if doReplicate and self._throttledExecuteReplicate then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/overriddenproperty/src/Shared/OverriddenProperty.lua:78:		self._throttledExecuteReplicate:Call(self._value)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/ReplicationType.lua:13:	SERVER: "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/ReplicationType.lua:18:export type ReplicationType = "client" | "server" | "shared" | "plugin"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/Replication/ReplicationType.lua:22:	SERVER = "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/loader/src/init.lua:146:				error(string.format("[Loader] - %q is only available on the server", foundServerDependency.Name))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreStage.lua:14:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreStage.lua:166:	Promises the full content for the datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreStage.lua:188:	Gets a sub-datastore that will write at the given key. This will have the same
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreStage.lua:374:	Retrieves the full path of this datastore stage for diagnostic purposes.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:54:		_indexObservers: any,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:79:	self._indexObservers = self._maid:Add(ObservableSubscriptionTable.new())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:356:	return self._indexObservers:Observe(indexToObserve, function(sub)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:603:	-- We assume there's not that many index observers at once (since you're usually looking for the ordinal first/last)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:604:	for rawIndex, _ in self._indexObservers:GetRawSubscriptionMap() do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:613:			self._indexObservers:Fire(rawIndex, node.data, node)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:615:			self._indexObservers:Fire(rawIndex, nil, nil)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/SortedList/ObservableSortedList.lua:623:	-- We assume there could be a lot of node index observers at once (used for layout order)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreWriter.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:19:	kinematics.Velocity = 10
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:37:	rawset(self, "_velocity0", 0 * initial)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:46:	Impulses the current kinematics object, applying velocity to it.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:47:	@param velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:49:function Kinematics:Impulse<T>(velocity: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:50:	self.Velocity = self.Velocity + velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:61:	local position, velocity = self:_positionVelocity(now + delta)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:63:	rawset(self, "_velocity0", velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:73:	@param velocity0 T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:76:function Kinematics:SetData<T>(startTime: number, position0: T, velocity0: T, acceleration: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:79:	rawset(self, "_velocity0", velocity0)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:90:	Gets and sets the current velocity of the Kinematics
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:91:	@prop Velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:114:	Sets the start velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:115:	@prop StartVelocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:145:		local position, _ = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:147:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:148:		local _, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:149:		return velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:156:	elseif index == "StartVelocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:157:		return rawget(self, "_velocity0")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:172:		local _, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:174:		rawset(self, "_velocity0", velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:175:	elseif index == "Velocity" then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:176:		local position, _ = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:178:		rawset(self, "_velocity0", value)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:180:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:182:		rawset(self, "_velocity0", velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:185:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:187:		rawset(self, "_velocity0", velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:190:		local position, velocity = self:_positionVelocity(now)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:192:		rawset(self, "_velocity0", velocity)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:201:function Kinematics:_positionVelocity<T>(now: number): (T, T)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/Kinematics.lua:206:	local v0: T = rawget(self, "_velocity0")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/Modules/DataStoreDeleteToken.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/kinematics/src/Shared/KinematicUtils.lua:8:function KinematicUtils.positionVelocity(now, t0, p0, v0, a0)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rogue-properties/src/Shared/Implementation/RoguePropertyArrayHelper.lua:154:			-- TODO: Replication is cursed here, and won't be consistent between client vs. server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:9:	This will ensure that the datastores are reused between different services and other things integrating
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:48:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:79:			_datastores: { [PlayerUserId]: DataStore.DataStore },
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:113:	self._datastores = {} -- [userId] = datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:171:	Gets the datastore for a player. If it does not exist, it will create one.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:190:	if self._datastores[userId] then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:191:		return self._datastores[userId]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:213:	for userId, _ in self._datastores do
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:223:	assert(not self._datastores[userId], "Bad player")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:228:	local datastore = DataStore.new(self._robloxDataStore, self:_getKey(userId))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:229:	datastore:SetSessionLockingEnabled(true)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:230:	datastore:SetSessionMessagingEnabled(true, self._serviceBag)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:231:	datastore:SetUserIdList({ userId })
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:233:	maid:GivePromise(datastore:PromiseSessionLockingFailed()):Then(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:236:			player:Kick("DataStore session lock failed to load. Please message developers.")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:242:	maid:GiveTask(datastore.SessionStolen:Connect(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:245:			player:Kick("DataStore session stolen by another active session. Please message developers.")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:250:	maid:GiveTask(datastore.SessionCloseRequested:Connect(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:258:	maid:GiveTask(datastore.Saving:Connect(function(promise)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:263:	self._datastores[userId] = datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:265:	return datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:269:	local datastore = self._datastores[userId]
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:270:	if not datastore then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:291:			return datastore:SaveAndCloseSession()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:294:			datastore:Destroy()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreManager.lua:299:	self._datastores[userId] = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/marketplaceutils/src/Shared/MarketplaceUtils.lua:75:	@interface GamePassOrDeveloperProductInfo
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/marketplaceutils/src/Shared/MarketplaceUtils.lua:89:export type GamePassOrDeveloperProductInfo = {
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/marketplaceutils/src/Shared/MarketplaceUtils.lua:120:	@return Promise<AssetProductInfo | GamePassOrDeveloperProductInfo>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/marketplaceutils/src/Shared/MarketplaceUtils.lua:125:): Promise.Promise<AssetProductInfo | GamePassOrDeveloperProductInfo>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/transitionmodel/src/Shared/SpringTransitionModel.lua:165:	Returns the spring's velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/transitionmodel/src/Shared/SpringTransitionModel.lua:169:function SpringTransitionModel.GetVelocity<T>(self: SpringTransitionModel<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/transitionmodel/src/Shared/SpringTransitionModel.lua:170:	return self._springObject.Velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/rogue-properties/src/Shared/Definition/RoguePropertyTableDefinition.lua:201:	value of the adornee. This will initialize the properties on the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStoreLockHelper.lua:271:		-- Assume the server crashed if it's been a while since the last update
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:3:	Wraps the datastore object to provide async cached loading and saving. See [DataStoreStage] for more API.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:24:	To use a datastore for a player, it's recommended you use the [PlayerDataStoreService]. This looks
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:63:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:92:local DEFAULT_JITTER_PROPORTION = 0.1 -- Randomly assign jitter so if a ton of players join at once we don't hit the datastore at once
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:176:	assert(not self._firstLoadPromise, "Must set session locking before datastore is loaded")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:223:	Returns the key for this datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:231:	Returns the session id for this datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:239:	Returns a promise that rejects on datastore cleanup, and resolves only when the session locking
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:279:	Returns the full path for the datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:287:	How frequent the data store will autosave (or sync) to the cloud. If set to nil then the datastore
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:317:	Returns whether the datastore failed.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:333:	Returns whether the datastore has loaded successfully.\
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:364:	Same as saving the data but it also loads fresh data from the datastore, which may consume
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:374:	Sets the user id list associated with this datastore. Can be useful for GDPR compliance.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:395:	Overridden helper method for data store stage below.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:429:			-- TODO: First jitter is way noisier to differentiate servers
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:541:				DataStorePromises.updateAsync(self._robloxDataStore, self._key, function(original, datastoreKeyInfo)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:582:					if datastoreKeyInfo then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:583:						userIdList = datastoreKeyInfo:GetUserIds()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:587:					if datastoreKeyInfo then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:588:						metadata = datastoreKeyInfo:GetMetadata()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:627:					DataStorePromises.updateAsync(self._robloxDataStore, self._key, function(data, datastoreKeyInfo)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:629:						if datastoreKeyInfo then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:630:							userIdList = datastoreKeyInfo:GetUserIds()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:634:						if datastoreKeyInfo then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/DataStore.lua:635:							metadata = datastoreKeyInfo:GetMetadata()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/GameDataStoreService.lua:3:	Service which manages central access to datastore. This datastore will refresh pretty frequently and
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/GameDataStoreService.lua:6:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/promise/src/Shared/Promise.lua:436:	Like then, but the value passed down the chain is the resolved value of the promise, not
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:31:		_indexObservers: any, -- ObservableSubscriptionTable.ObservableSubscriptionTable<T?>,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:74:	self._indexObservers = self._maid:Add(ObservableSubscriptionTable.new())
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:200:	return self._indexObservers:Observe(indexToObserve, function(sub)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:367:	self._indexObservers:Fire(index, item)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:368:	self._indexObservers:Fire(ListIndexUtils.toNegativeIndex(listLength, index), item)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:372:			self._indexObservers:Fire(data.newIndex, self._contents[data.key])
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:373:			self._indexObservers:Fire(ListIndexUtils.toNegativeIndex(listLength, index), self._contents[data.key])
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:448:	self._indexObservers:Fire(listLength, nil)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:451:		self._indexObservers:Fire(-1, nil)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:457:			self._indexObservers:Fire(data.newIndex, self._contents[data.key])
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/observablecollection/src/Shared/ObservableList.lua:458:			self._indexObservers:Fire(ListIndexUtils.toNegativeIndex(listLength, index), self._contents[data.key])
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:3:	Centralized service using serviceBag. This will let other packages work with a single player datastore service.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:53:	Initializes the datastore service for players. Should be done via [ServiceBag.Start].
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:61:	Sets the name for the datastore to retrieve.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:78:	Sets the scope for the datastore to retrieve.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:95:	Gets the datastore for the player.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:98:	If you get the datastore by UserId, be sure to call datastore:PromiseCloseSession()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/src/Server/PlayerDataStoreService.lua:152:			-- A lot safer if we're hot reloading or need to monitor bind to close calls
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/acceltween/src/Shared/AccelTween.lua:3:	Provides a means to, with both a continuous position and velocity,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/acceltween/src/Shared/AccelTween.lua:23:			Gets and sets the current velocity of the AccelTween
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/acceltween/src/Shared/AccelTween.lua:52:			Sets the current and target position, and sets the velocity to 0.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/quaternion/src/Shared/Quaternion.lua:39:local function BezierVelocity(x0, x1, v0, v1, t)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/quaternion/src/Shared/Quaternion.lua:43:lib.BezierVelocity = BezierVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/quaternion/src/Shared/Quaternion.lua:183:					BezierVelocity(data.x0,data.x1,data.v0,data.v1,t)/dt,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/quaternion/src/Shared/Quaternion.lua:296:					BezierVelocity(data.x0,data.x1,data.v0,data.v1,t)/dt,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Client/ClientMain.client.lua:6:local loader = game:GetService("ReplicatedStorage"):WaitForChild("datastore"):WaitForChild("loader")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/conditions/src/Shared/AdorneeConditionUtils.lua:8:	must be defined on both the client and server. However, these conditions can be reactive. It would be very simple
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/conditions/src/Shared/AdorneeConditionUtils.lua:9:	to create a condition that also just links to a bool value if conditions should be only on the server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/conditions/src/Shared/AdorneeConditionUtils.lua:269:	if this condition is on the server or the client.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:10:local require = require(loader).bootstrapGame(ServerScriptService.datastore)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:14:if NevermoreTestRunnerUtils.runTestsIfNeededAsync(ServerScriptService.datastore) then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:59:				warn("Blue server is restoring data")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:64:			warn(string.format("%s server is storing data", prefix))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:72:				warn(string.format("%s server is wiping data", prefix))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:78:					warn(string.format("%s server is adding substore data", prefix))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/datastore/test/scripts/Server/ServerMain.server.lua:87:						warn(string.format("%s server is changing player count", prefix))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/TemplateProvider.lua:15:	If the TemplateProvider is initialized on the server, the the templates will be hidden from the client until the
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/TemplateProvider.lua:262:	assert(self._replicationMode == TemplateReplicationModes.SERVER, "Only should be invoked on server")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/TemplateProvider.lua:419:							"[TemplateProvider.%s.PromiseTemplate] - Failed to replicate template %q from server to client",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/TemplateProvider.lua:489:				-- This tempTemplate will get destroyed by the server soon to free up server memory
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/basicpane/src/Shared/BasicPane.lua:9:	-- Standard visibility chaining
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/Replication/Util/TemplateReplicationModes.lua:10:export type TemplateReplicationMode = "client" | "server" | "shared"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/templateprovider/src/Shared/Replication/Util/TemplateReplicationModes.lua:14:	SERVER = "server" :: "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/soundgroups/src/Server/SoundGroupService.lua:29:	-- Ensure initial creation of these so server effects can work
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/humanoidspeed/src/Server/HumanoidSpeed.lua:5:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/TimeSyncService.lua:3:	Syncronizes time between the server and client. This creates a shared timestamp that can be used to reasonably time
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/TimeSyncService.lua:4:	events between the server and client.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/TimeSyncService.lua:51:		-- Assume we're in server mode
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameversionutils/src/Server/GameVersionUtils.lua:12:	The server type to return
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameversionutils/src/Server/GameVersionUtils.lua:31:	Gets the game build with a server type specified for debugging
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameversionutils/src/Server/GameVersionUtils.lua:39:	Gets a string label for the current server type
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/gameversionutils/src/Server/GameVersionUtils.lua:55:	Returns true if we're a VIP server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/Clocks/SlaveClock.lua:55:	self._remoteEvent:FireServer() -- Request server to syncronize with us
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/Clocks/SlaveClock.lua:102:	Returns true if the manager has synced with the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/Clocks/SlaveClock.lua:153:	self._offset = offset -- Estimated difference between server/client
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/soundgroups/src/Shared/Volume/SoundGroupVolume.lua:43:	-- Assign our volume to the current volume if we're on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/Clocks/MasterClock.lua:3:	Master clock on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/timesyncservice/src/Shared/Clocks/MasterClock.lua:88:	Returns true if the manager has synced with the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cubicspline/src/Shared/CubicSplineUtils.lua:34:	@param velocity T
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cubicspline/src/Shared/CubicSplineUtils.lua:37:function CubicSplineUtils.newSplineNode<T>(t: number, position: T, velocity: T): CubicSplineNode<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cubicspline/src/Shared/CubicSplineUtils.lua:41:		v = velocity,
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cubicspline/src/Shared/CubicSplineUtils.lua:122:	For a given node list, populates the velocity values of the nodes.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/cubicspline/src/Shared/CubicSplineUtils.lua:128:function CubicSplineUtils.populateVelocities<T>(nodeList: { CubicSplineNode<T> }, index0: number?, index1: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/counter/src/Shared/Counter.lua:36:	Creates a new counter
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/counter/src/Shared/Counter.lua:69:	Adds an amount to the counter.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Server/SoftShutdownService.lua:3:	This service lets you shut down servers without losing a bunch of players.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Server/SoftShutdownService.lua:4:	When game.OnClose is called, the script teleports everyone in the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Server/SoftShutdownService.lua:5:	into a reserved server.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Server/SoftShutdownService.lua:7:	When the reserved servers start up, they wait a few seconds, and then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Shared/SoftShutdownTranslator.lua:11:			title = "Rebooting servers for update.",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Shared/SoftShutdownTranslator.lua:15:			title = "Rebooting servers for update.",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/src/Shared/SoftShutdownTranslator.lua:19:			title = "Rebooting servers for update.",
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Client/IKServiceClient.lua:6:	Be sure to also initialize the client side service [IKService] on the server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:3:	This bootstraps both the server and the client code for pretty soft shutdown logic.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:8:	This version supports a nice UI and reserved servers in a normal usage.
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:50:local client, server, shared = require(script:FindFirstChild("LoaderUtils", true)).toWallyFormat(script.src, false)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:52:server.Name = "_SoftShutdownServerPackages"
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:53:server.Parent = script
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:65:local serviceBag = require(server.ServiceBag).new()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/softshutdown/test/scripts/Server/init.server.lua:66:serviceBag:GetService(require(server.SoftShutdownService))
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:3:	Handles the replication of inverse kinematics (IK) from clients to servers
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:17:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:139:	local serverRig = self._ikRigBinder:Bind(humanoid)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:140:	if not serverRig then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:141:		warn("[IKService.UpdateServerRigTarget] - No serverRig")
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/IKService.lua:145:	serverRig:SetAimPosition(target)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Server/Rig/IKRig.lua:4:	@server
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/ik/src/Shared/Arm/ArmIKBase.lua:302:		Rx.throttleDefer(),
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DSmoothTransformer.lua:16:export type GetTransformFunction = (below: CFrame) -> CFrame?
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DSmoothTransformer.lua:50:	getBelow: Motor6DTransformer.GetBelowFunction
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DSmoothTransformer.lua:54:	local below = getBelow()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DSmoothTransformer.lua:55:	local transform = self._getTransform(below)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DSmoothTransformer.lua:67:	local result = below:Lerp(transform, percent)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DTransformer.lua:26:export type GetBelowFunction = () -> CFrame
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DTransformer.lua:40:function Motor6DTransformer.Transform(_self: Motor6DTransformer, _getBelow: GetBelowFunction): CFrame?
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DPhysicsTransformer.lua:49:	getBelow: Motor6DTransformer.GetBelowFunction
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DPhysicsTransformer.lua:53:	local below = getBelow()
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DPhysicsTransformer.lua:55:	local result = self._physicsTransform:Lerp(below, percent)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DAnimator.lua:101:		local belowIndex = index - 1
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DAnimator.lua:102:		if self._stack[belowIndex] then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DAnimator.lua:103:			local belowResult = self:_computeNewTransform(self._stack[belowIndex], defaultTransform)
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DAnimator.lua:104:			if belowResult then
+/Users/tatsheen/claw-repos/oss-index/roblox/NevermoreEngine/src/motor6d/src/Shared/Animation/Motor6DAnimator.lua:105:				return belowResult

@@ -1,0 +1,39 @@
+{
+  "ok": false,
+  "generated_at": "2026-03-04T06:43:23.031Z",
+  "max_age_hours": 48,
+  "repos": [
+    {
+      "repo": "sim",
+      "ok": false,
+      "reason": "index_missing"
+    },
+    {
+      "repo": "flowise",
+      "ok": false,
+      "reason": "index_missing"
+    },
+    {
+      "repo": "maxkb",
+      "ok": false,
+      "reason": "index_missing"
+    },
+    {
+      "repo": "dify",
+      "index_file": "/Users/tatsheen/.code-index/local-dify.json",
+      "index_age_hours": 22.5,
+      "index_fresh": true,
+      "symbols_total": 3395,
+      "sample_symbol_id": "api/app.py::is_db_command#function",
+      "repomap_path": "/Users/tatsheen/claw-architect/scripts/reports/repomaps/dify-repomap.md",
+      "repomap_exists": true,
+      "repomap_age_hours": 0.19,
+      "repomap_fresh": true,
+      "symbol_probe": {
+        "ok": true,
+        "symbol_id": "api/app.py::is_db_command#function",
+        "file": "api/app.py"
+      }
+    }
+  ]
+}

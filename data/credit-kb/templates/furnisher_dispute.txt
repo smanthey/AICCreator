@@ -1,0 +1,25 @@
+[Your Name]
+[Your Address]
+[City, State ZIP]
+[Date]
+
+{{furnisher}}
+[Address]
+
+Re: Furnisher Dispute and Validation Request – {{account_number}}
+
+To Whom It May Concern:
+
+I dispute the accuracy/completeness of reporting on this account and request validation under FCRA furnisher duties.
+
+Account: {{account_number}}
+Issue Type: {{issue_type}}
+Reported field: {{field_name}}
+
+Please provide the following in writing:
+{{request_items}}
+
+If you cannot substantiate the current reporting with complete records, please correct or delete inaccurate fields and notify all bureaus to update.
+
+Sincerely,
+[Your Signature]

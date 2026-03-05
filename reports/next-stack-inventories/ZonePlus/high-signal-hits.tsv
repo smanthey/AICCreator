@@ -1,0 +1,22 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:143:	-- This will only ever connect once per triggerType per server
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:171:			-- If a zone belongs to a settingsGroup with 'onlyEnterOnceExitedAll = true' , and the occupant already exists in a member group, then
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:303:		-- If the volume of all *characters/items* within the server is *less than* the total
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:306:		-- then determine the zones they belong to
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:322:		-- If the volume of all *active zones* within the server is *less than* the total
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:437:	-- If the bound parts belong to a zone that isn't entirely made up of blocks, then
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/Detection.lua:7:	--{"Automatic", 3}, -- REMOVED DUE TO UNECESSARY COMPLEXITY. ZonePlus will dynamically switch between 'WholeBody' and 'Centre' depending upon the number of players in a server (this typically only occurs for servers with 100+ players when volume checks begin to exceed 0.5% in script performance).
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:153:	@returns [t:Janitor] The same janitor, for chaining reasons.
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:272:	"Links" this Janitor to an Instance, such that the Janitor will `Cleanup` when the Instance is `Destroyed()` and garbage collected. A Janitor may only be linked to one instance at a time, unless `AllowMultiple` is true. When called with a truthy `AllowMultiple` parameter, the Janitor will "link" the Instance without overwriting any previous links, and will also not be overwritable. When called with a falsy `AllowMultiple` parameter, the Janitor will overwrite the previous link which was also called with a falsy `AllowMultiple` parameter, if applicable.
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:99:			-- this enables us to determine when a developer connects to an event
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:172:	zone:relocate()
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:342:			error("Zone parts must belong to the 'Default' (0) CollisionGroup! Consider using zone:relocate() if you wish to move zones outside of workspace to prevent them interacting with other parts.")
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:375:	-- everything below is now irrelevant however I'll keep just in case I use again for future
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:792:function Zone:relocate()
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:793:	if self.hasRelocated then
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:800:	self.hasRelocated = true
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:802:	local relocationContainer = self.container
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:803:	if typeof(relocationContainer) == "table" then
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:804:		relocationContainer = Instance.new("Folder")
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:806:			zonePart.Parent = relocationContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:809:	self.relocationContainer = self.janitor:add(relocationContainer, "Destroy", "RelocationContainer")
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:810:	relocationContainer.Parent = worldModel

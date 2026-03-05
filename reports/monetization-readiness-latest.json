@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-03-05T03:16:39.341Z",
+  "pillars": {
+    "clawpay": {
+      "apps": {
+        "claw-prompt-oracle": "online",
+        "claw-bot-commerce-api": "online",
+        "claw-bot-discovery": "stopped",
+        "claw-bot-outreach": "stopped"
+      },
+      "env_set": {
+        "STRIPE_SECRET_KEY": true,
+        "STRIPE_WEBHOOK_SECRET": true,
+        "COMMERCE_PUBLIC_URL": true
+      },
+      "ready": true
+    },
+    "lead_gen": {
+      "skynpatch_send_max": 50,
+      "bws_send_max": 12,
+      "config_loaded": true,
+      "note": "Skyn Patch should get more sends than BWS (100k+ wholesale). Lead autopilots run via PM2 cron."
+    },
+    "saas_completion": {
+      "p0_p1_repos": [
+        "CookiesPass",
+        "payclaw",
+        "CaptureInbound",
+        "capture",
+        "autopay_ui"
+      ],
+      "last_gap": {
+        "CookiesPass": {
+          "capability_score": 51,
+          "incomplete_sections": 5,
+          "next_actions": [
+            "Add tenant resolver and organization_id guardrails",
+            "Remove placeholder/fake patterns"
+          ]
+        },
+        "payclaw": {
+          "capability_score": 75,
+          "incomplete_sections": 0,
+          "next_actions": []
+        },
+        "CaptureInbound": {
+          "capability_score": 81,
+          "incomplete_sections": 0,
+          "next_actions": []
+        },
+        "capture": {
+          "capability_score": 85,
+          "incomplete_sections": 0,
+          "next_actions": [
+            "Remove placeholder/fake patterns"
+          ]
+        },
+        "autopay_ui": {
+          "capability_score": 83,
+          "incomplete_sections": 0,
+          "next_actions": []
+        }
+      },
+      "next_actions_combined": [
+        "[CookiesPass] Add tenant resolver and organization_id guardrails",
+        "[CookiesPass] Remove placeholder/fake patterns",
+        "[capture] Remove placeholder/fake patterns"
+      ]
+    }
+  },
+  "blockers": [
+    "SaaS: Close P0/P1 gaps — run repo-completion-gap-one then enqueue gap-closure tasks (npm run monetization:gap:enqueue)"
+  ],
+  "next_steps": [
+    "ClawPay is configured (cron apps may show stopped between runs); focus on discovery volume and first conversion.",
+    "Lead gen: Ensure claw-lead-autopilot-skynpatch and claw-lead-autopilot-bws are in PM2 (cron); check config/leadgen-send-ratio.json.",
+    "Run: node scripts/repo-completion-gap-one.js --repo CookiesPass (or --next); then npm run monetization:gap:enqueue"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "zzzzz": {
+    "productId": "prod_U34swGKEjWojjt",
+    "priceId": "price_1T4yiMKCahDryrU4REm9NWAq",
+    "paymentLinkId": "plink_1T4yiMKCahDryrU4GLY6d0ad",
+    "url": "https://buy.stripe.com/aFa14ob5p9EY9kC6dU00000",
+    "name": "Zzzzz — Sleep Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "ignite": {
+    "productId": "prod_U34szuNpGiQBvt",
+    "priceId": "price_1T4yiNKCahDryrU4S1tOud0q",
+    "paymentLinkId": "plink_1T4yiNKCahDryrU4m3M8dhky",
+    "url": "https://buy.stripe.com/00w00k2yT6sMfJ0fOu00001",
+    "name": "Ignite — Energy Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "longevity": {
+    "productId": "prod_U34sCUUyGcBK3d",
+    "priceId": "price_1T4yiOKCahDryrU4MmPCn5be",
+    "paymentLinkId": "plink_1T4yiOKCahDryrU4yJpBPcwy",
+    "url": "https://buy.stripe.com/4gM6oIddx2cw54m45M00002",
+    "name": "Longevity — Vitality Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "synergy": {
+    "productId": "prod_U34sUhjBHLsGZO",
+    "priceId": "price_1T4yiOKCahDryrU44TsZ5VAD",
+    "paymentLinkId": "plink_1T4yiPKCahDryrU4GFY68wgA",
+    "url": "https://buy.stripe.com/eVq8wQ6P9cRabsK59Q00003",
+    "name": "Synergy — Digestive & Immunity Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "starter_bundle": {
+    "productId": "prod_U34suiWjKxwG4J",
+    "priceId": "price_1T4yiPKCahDryrU4SazNNcIe",
+    "paymentLinkId": "plink_1T4yiQKCahDryrU4dWrC2I4l",
+    "url": "https://buy.stripe.com/aFa9AUa1ldVe0O6fOu00004",
+    "name": "Skyn Patch Starter Bundle — All 4 SKUs (Wholesale)",
+    "amount": 90000
+  },
+  "updatedAt": "2026-03-02T00:00:00.000Z",
+  "pre_party": {
+    "productId": "prod_U3DID8N1eE6QJ0",
+    "priceId": "price_1T56sGKCahDryrU4HqrszU2D",
+    "paymentLinkId": "plink_1T56sHKCahDryrU4GhQwff5P",
+    "url": "https://buy.stripe.com/3cIbJ2b5p2cw54mdGm00005",
+    "name": "Pre-Party — Recovery Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "sku_007": {
+    "productId": "prod_U3DV1UJb2GiigY",
+    "priceId": "price_1T574sKCahDryrU4AqcdS0Rg",
+    "paymentLinkId": "plink_1T574tKCahDryrU4lEuKzDq6",
+    "url": "https://buy.stripe.com/8x26oI1uP9EY2We0TA00006",
+    "name": "Zzzzzz — Sleep Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "lust": {
+    "productId": "prod_U4SLPa2SznMuT3",
+    "priceId": "price_1T6JR3G6UWB8vnsWS8GbFzBm",
+    "paymentLinkId": "plink_1T6JR3G6UWB8vnsWetP9pxm1",
+    "url": "https://buy.stripe.com/7sY7sL3N79Sw7jA6igdby06",
+    "name": "Lust — Libido Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "grace": {
+    "productId": "prod_U4SLvr1mk6mHNy",
+    "priceId": "price_1T6JR3G6UWB8vnsWOqr1aRBE",
+    "paymentLinkId": "plink_1T6JR4G6UWB8vnsWXDbackBw",
+    "url": "https://buy.stripe.com/4gMcN55VfaWA7jAgWUdby07",
+    "name": "Grace — Menopause Support (Wholesale Case)",
+    "amount": 25000
+  },
+  "crave": {
+    "productId": "prod_U4o9vNkWt0jBGV",
+    "priceId": "price_1T6eXGKCahDryrU4q1BEpNDu",
+    "name": "Crave Patch | 300 Patches / 50pk (Wholesale Case)",
+    "amount": 62500
+  }
+}

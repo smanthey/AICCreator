@@ -1,0 +1,29 @@
+{
+  "description": "Template: repo names come from repo-completion-master-list.local.json (gitignored) or REPO_COMPLETION_MASTER_LIST_PATH. Only repos that exist under CLAW_REPOS are run.",
+  "source": "Copy repo-completion-master-list.local.json.example to repo-completion-master-list.local.json and set priority_repos + additional_repos to your repo folder names.",
+  "sections_to_complete": [
+    "email_setup",
+    "admin_setup",
+    "auth",
+    "stripe_checkout",
+    "stripe_webhooks",
+    "telnyx_sms",
+    "webhooks_signature_verify",
+    "queue_retry",
+    "observability",
+    "e2e",
+    "security_sweep",
+    "capability_factory_health",
+    "feature_benchmark_vs_exemplar"
+  ],
+  "priority_repos": [],
+  "additional_repos": [],
+  "best_case_sources": {
+    "stripe_webhooks": "local/<stripe_exemplar>",
+    "email_delivery": "local/<email_exemplar>, docs/EMAIL_RESEND_MIGRATION.md",
+    "auth": "local/<auth_exemplar>",
+    "admin_ui": "oss-dashboard-benchmark top repos",
+    "feature_benchmark": "scripts/feature-benchmark-score.js EXEMPLAR_LIBRARY, data/exemplar-repos.json",
+    "capability_factory": "config/capabilities.yaml, scripts/capability-factory.js pickCanonicalCandidates"
+  }
+}

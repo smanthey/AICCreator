@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-03-01T01:15:00.851Z",
+  "rolloutPlan": [
+    {
+      "repo": "3ddesignafterschool",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "3dgamestake2",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "Cookies_Pass",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "crave",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "Leadgen",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "glitch-app",
+      "priority": "P1",
+      "score": 21,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "cookies-tempe",
+      "priority": "P1",
+      "score": 36,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "HowtoWatchStream-SmartKB",
+      "priority": "P1",
+      "score": 37,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "LeadGen3",
+      "priority": "P0",
+      "score": 38,
+      "critical": [
+        "AUTH_NOT_STANDARDIZED"
+      ],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "migrate runtime auth handlers to better-auth and remove legacy auth imports",
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "Coinstbl",
+      "priority": "P1",
+      "score": 42,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "CookiesPass",
+      "priority": "P1",
+      "score": 49,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "FoodTruckPass",
+      "priority": "P1",
+      "score": 50,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "3DGameArtAcademy",
+      "priority": "P1",
+      "score": 54,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "BakTokingcom",
+      "priority": "P1",
+      "score": 57,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "booked",
+      "priority": "P1",
+      "score": 66,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    }
+  ]
+}

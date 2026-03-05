@@ -1,0 +1,1641 @@
+{
+  "generatedAt": "2026-02-28T21:36:35.818Z",
+  "scoreboard": [
+    {
+      "repo": "claw-architect",
+      "score": 95,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 5 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 90
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "CaptureInbound",
+      "score": 88,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 7 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "Inbound-cookies",
+      "score": 80,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 10 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 10 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "capture",
+      "score": 79,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 7 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 90
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "autopay_ui",
+      "score": 72,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "gbusupdate",
+      "score": 71,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 6 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 10 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 90
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "BlackWallStreetopoly",
+      "score": 68,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 3 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 6 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "booked",
+      "score": 66,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 4 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 25
+        },
+        {
+          "id": "email.maileroo",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "BakTokingcom",
+      "score": 57,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "mockTranslate( in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 90
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "3DGameArtAcademy",
+      "score": 54,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 5 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 10 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 25
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "infinitedata",
+      "score": 54,
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 9 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 55
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 55
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": true,
+          "score": 95
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 65
+        }
+      ]
+    },
+    {
+      "repo": "FoodTruckPass",
+      "score": 50,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 4 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "CookiesPass",
+      "score": 49,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 90
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 25
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "Coinstbl",
+      "score": 42,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 2 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "LeadGen3",
+      "score": 38,
+      "issues": [
+        {
+          "severity": "critical",
+          "code": "AUTH_NOT_STANDARDIZED",
+          "detail": "legacy auth detected without better-auth baseline"
+        },
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 10 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": true,
+          "score": 100
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 25
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "HowtoWatchStream-SmartKB",
+      "score": 37,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 55
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": true,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "repo": "cookies-tempe",
+      "score": 36,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 55
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 55
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 65
+        }
+      ]
+    },
+    {
+      "repo": "LeadGenAi",
+      "score": 24,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 65
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 65
+        }
+      ]
+    },
+    {
+      "repo": "glitch-app",
+      "score": 21,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 25
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 65
+        }
+      ]
+    },
+    {
+      "repo": "3ddesignafterschool",
+      "score": 14,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 30
+        }
+      ]
+    },
+    {
+      "repo": "3dgamestake2",
+      "score": 14,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 30
+        }
+      ]
+    },
+    {
+      "repo": "Cookies_Pass",
+      "score": 14,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 30
+        }
+      ]
+    },
+    {
+      "repo": "crave",
+      "score": 14,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 30
+        }
+      ]
+    },
+    {
+      "repo": "Leadgen",
+      "score": 14,
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "capabilityScores": [
+        {
+          "id": "billing.stripe.checkout",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "present": false,
+          "score": 10
+        },
+        {
+          "id": "auth.better_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "auth.supabase_auth",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "tenancy.multitenant",
+          "present": false,
+          "score": 20
+        },
+        {
+          "id": "email.maileroo",
+          "present": false,
+          "score": 30
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "present": false,
+          "score": 30
+        }
+      ]
+    }
+  ],
+  "canonicalCandidates": [
+    {
+      "capability": "billing.stripe.checkout",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 16,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "billing.stripe.webhooks",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 20,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "comms.telnyx.sms",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 14,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "webhooks.signature_verify",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 7,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "tenancy.multitenant",
+      "repo": "claw-architect",
+      "score": 100,
+      "filesMatched": 6,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "auth.better_auth",
+      "repo": "CaptureInbound",
+      "score": 100,
+      "filesMatched": 7,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "auth.supabase_auth",
+      "repo": "claw-architect",
+      "score": 100,
+      "filesMatched": 36,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "email.maileroo",
+      "repo": "capture",
+      "score": 100,
+      "filesMatched": 11,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "auth.legacy_nextauth",
+      "repo": "claw-architect",
+      "score": 100,
+      "filesMatched": 1,
+      "issuePenalty": 0,
+      "rankScore": 100
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "generated_at": "2026-03-04T08:04:13.305Z",
+    "source_mode": {
+      "ytdlp": false,
+      "ffmpeg": true,
+      "dry_run": true
+    },
+    "counts": {
+      "requested": 1,
+      "indexed": 1,
+      "failed": 0,
+      "with_transcript": 0,
+      "with_visuals": 0
+    },
+    "top_ranked": [
+      {
+        "video_id": "dQw4w9WgXcQ",
+        "title": null,
+        "quality_score": 0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "video_id": "dQw4w9WgXcQ",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "metadata": {
+        "id": "dQw4w9WgXcQ",
+        "webpage_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      "transcript": {
+        "has_transcript": false,
+        "segment_count": 0,
+        "text_chars": 0,
+        "top_terms": [],
+        "segments": []
+      },
+      "visual": {
+        "keyshot_count": 0,
+        "keyshots": [],
+        "thumbnail": null,
+        "has_visual_extract": false
+      },
+      "benchmark": {
+        "quality_score": 0,
+        "gates": {
+          "transcript_present": false,
+          "visuals_present": false
+        }
+      }
+    }
+  ]
+}

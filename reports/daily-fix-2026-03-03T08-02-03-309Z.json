@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-03T08:02:03.309Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n✅ Postgres connected\n\n☠  Dead Letters (50)\n──────────────────────────────────────────────────────────────────────\n\nID:      f33e3b23-16ab-480a-929c-247f318c666f\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 3\nError:   EXECUTION_ERROR: repo_autofix repo missing: /Users/tatsheen/claw-repos/local/claw-architect\nWhen:    2026-03-03T07:33:22.058Z\n──────────────────────────────────────────────────────────────────────\n\nID:      cfa362a2-1e42-4055-a65d-59334f62595a\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 3\nError:   EXECUTION_ERROR: repo_autofix repo missing: /Users/tatsheen/claw-repos/local/claw-architect\nWhen:    2026-03-03T07:33:22.058Z\n──────────────────────────────────────────────────────────────────────\n\nID:      b272b100-6327-4485-9d10-6303eaaeb5ad\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 3\nError:   EXECUTION_ERROR: repo_autofix repo missing: /Users/tatsheen/claw-repos/local/claw-architect\nWhen:    2026-03-03T07:33:21.883Z\n──────────────────────────────────────────────────────────────────────\n\nID:      a3a2cb62-75c0-4ad6-8b41-fddb30f7ad95\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 3\nError:   EXECUTION_ERROR: repo_autofix repo missing: /Users/tatsheen/claw-repos/local/claw-architect\nWhen:    2026-03-03T07:33:07.371Z\n──────────────────────────────────────────────────────────────────────\n\nID:      ea6452e9-e6a1-4191-91bd-503bf338d323\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 3\nError:   EXECUTION_ERROR: repo_autofix repo missing: /Users/tatsheen/claw-repos/local/claw-architect\nWhen:    2026-03-03T07:33:07.141Z\n──────────────────────────────────────────────────────────────────────\n\nID:      c7afad5a-da49-436a-8332-b7d99cc34500\nType:    repo_autofix\nTitle:   (none)\nPlan:   "
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-03T08:02:11.767Z"
+}

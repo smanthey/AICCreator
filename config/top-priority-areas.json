@@ -1,0 +1,97 @@
+{
+  "description": "Monetization order: (1) Lead gen push Skyn Patch most (100k+ wholesale). (2) ClawPay unlimited — find OpenClaw $1+ asks, complete Stripe. (3) Complete SaaS repos closest to revenue after real-world testing. Execution: CookiesPass first, then PayClaw; ClawPay is growth (find $1+ + Stripe), not just maintenance.",
+  "priority_tiers": {
+    "p0": 10,
+    "p1": 9,
+    "p2": 7
+  },
+  "areas": [
+    {
+      "id": "cookiespass",
+      "name": "CookiesPass",
+      "priority": 10,
+      "sources": ["cookiespass_mission_pulse", "launch_e2e_matrix", "qa_human_grade"],
+      "mission_id": null,
+      "notes": "P0: finish CookiesPass critical flows first. Before implementation, run jcodemunch MCP symbol index, then run repo_mapper to map entrypoints/dependencies."
+    },
+    {
+      "id": "payclaw",
+      "name": "PayClaw",
+      "priority": 9,
+      "sources": ["payclaw_chunk_*", "payclaw_dispatch_chunks", "payclaw_saas_builder"],
+      "mission_id": "payclaw_saas_builder",
+      "repo": "https://github.com/smanthey/payclaw",
+      "notes": "P1: finish PayClaw macOS app after CookiesPass. Before implementation, run jcodemunch MCP symbol index, then run repo_mapper to map entrypoints/dependencies."
+    },
+    {
+      "id": "captureinbound",
+      "name": "CaptureInbound",
+      "priority": 9,
+      "sources": ["repo_priority_major_update_daily", "captureinbound_multitenant_guardian"],
+      "mission_id": "captureinbound_multitenant_guardian",
+      "repo": "https://github.com/smanthey/CaptureInbound",
+      "notes": "P1: multitenant number/account mismatch hardening, self-heal automation, and tenant diagnostics."
+    },
+    {
+      "id": "capture",
+      "name": "capture",
+      "priority": 9,
+      "sources": ["repo_priority_major_update_daily", "capture_usage_report_hardener"],
+      "mission_id": "capture_usage_report_hardener",
+      "repo": "https://github.com/smanthey/capture",
+      "notes": "P1: keep TS compile clean, enforce release checks, and finish usage-report scheduled job E2E."
+    },
+    {
+      "id": "infinitedata",
+      "name": "infinitedata",
+      "priority": 9,
+      "sources": ["repo_priority_major_update_daily", "infinitedata_integrity_lane"],
+      "mission_id": "infinitedata_integrity_lane",
+      "repo": "https://github.com/smanthey/infinitedata",
+      "notes": "P1: close data-persistence and analytics-flow gaps with symbol-index-driven hardening."
+    },
+    {
+      "id": "inbound_cookies",
+      "name": "Inbound-cookies",
+      "priority": 8,
+      "sources": ["repo_priority_major_update_daily", "inbound_cookies_release_guard"],
+      "mission_id": "inbound_cookies_release_guard",
+      "repo": "https://github.com/smanthey/Inbound-cookies",
+      "notes": "P2: enforce webhook signature paths, Python webhook parity, and release validation."
+    },
+    {
+      "id": "autopay_ui",
+      "name": "autopay_ui",
+      "priority": 8,
+      "sources": ["repo_priority_major_update_daily", "autopay_ui_integrity_lane"],
+      "mission_id": "autopay_ui_integrity_lane",
+      "repo": "https://github.com/smanthey/autopay_ui",
+      "notes": "P2: flow integrity hardening and webhook/payment path correctness."
+    },
+    {
+      "id": "clawpay",
+      "name": "ClawPay",
+      "priority": 7,
+      "sources": ["bot_collection_autonomous", "bot_outreach", "bot_discovery", "bot_commerce"],
+      "mission_id": "bot_collection_autonomous",
+      "notes": "ClawPay: unlimited upside — find OpenClaw comms asking for $1+, route to Stripe. Growth focus: discovery + Stripe completion. See docs/MONETIZATION_STRATEGY.md."
+    },
+    {
+      "id": "lead_gen",
+      "name": "Lead Gen",
+      "priority": 7,
+      "sources": ["lead_autopilot", "lead_bws_send", "lead_bws_collect", "content_publish"],
+      "mission_id": null,
+      "notes": "Push Skyn Patch the most (100k+ wholesale inventory). Volume + buyer quality; see docs/LEADGEN-RUNBOOK.md and docs/MONETIZATION_STRATEGY.md."
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox",
+      "priority": 7,
+      "sources": ["roblox_game_growth_pulse", "roblox_game_growth_pulse_growth"],
+      "mission_id": "roblox_game_growth",
+      "notes": "Run after P0/P1 objectives are stable."
+    }
+  ],
+  "spread_work": "All devices (NAS, i7-desktop, AI satellite) must have REDIS_HOST=192.168.1.164 to consume from shared queue."
+}

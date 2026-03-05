@@ -1,0 +1,23 @@
+[Your Name]
+[Your Address]
+[City, State ZIP]
+[Date]
+
+Consumer Financial Protection Bureau
+PO Box 4503
+Iowa City, IA 52244
+
+Re: Complaint re: Credit Reporting Process Failure
+
+Please review the attached evidence packet regarding account {{account_number}} and issue {{issue_type}}.
+Despite prior dispute attempts, required correction/verification was not properly completed.
+
+Attached:
+- Prior correspondence
+- Tracking records
+- Supporting evidence
+
+I request review and enforcement under applicable FCRA/FDCPA requirements.
+
+Sincerely,
+[Your Signature]

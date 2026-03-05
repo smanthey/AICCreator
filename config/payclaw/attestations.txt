@@ -1,0 +1,8 @@
+# PayClaw onboarding attestations (canonical)
+# Require all five checkboxes at onboarding. Store attestation with timestamp and business type.
+
+1. I only message people who have an existing business relationship with me.
+2. These messages are for invoices under 45 days old.
+3. This is not debt collection.
+4. Recipients can opt out (STOP).
+5. I will not upload purchased lists.

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pa_coordinator",
+    "name": "PA/Coordinator",
+    "writer_file": "DAILY-BRIEF.md",
+    "session_folder": "pa_coordinator",
+    "cron": "0 8 * * *",
+    "refresh_command": "npm run -s daily:progress"
+  },
+  {
+    "id": "x_growth",
+    "name": "X Growth",
+    "writer_file": "X_DRAFTS.md",
+    "session_folder": "x_growth",
+    "cron": "10 * * * *",
+    "refresh_command": "npm run -s copy:lab -- --brand skynpatch --channel email --topic \"x growth narrative\" --iterations 1 --dry-run"
+  },
+  {
+    "id": "opportunities_scout",
+    "name": "Opportunities Scout",
+    "writer_file": "OPPORTUNITIES.md",
+    "session_folder": "opportunities_scout",
+    "cron": "15 * * * *",
+    "refresh_command": "npm run -s brief:weekly -- --refresh"
+  },
+  {
+    "id": "trading_paper",
+    "name": "Trading (paper only)",
+    "writer_file": "TRADING_LOG.md",
+    "session_folder": "trading_paper",
+    "cron": "*/30 * * * *",
+    "refresh_command": "npm run -s quantfusion:trading:status"
+  },
+  {
+    "id": "security_monitor",
+    "name": "Security Monitor",
+    "writer_file": "SECURITY_STATUS.md",
+    "session_folder": "security_monitor",
+    "cron": "20 * * * *",
+    "refresh_command": "npm run -s security:runtime -- --json --no-fail"
+  },
+  {
+    "id": "builder",
+    "name": "Builder",
+    "writer_file": "SHIP_LOG.md",
+    "session_folder": "builder",
+    "cron": "25 * * * *",
+    "refresh_command": "npm run -s brief:weekly && npm run -s builder:gap:pulse -- --repos-from-context"
+  }
+]

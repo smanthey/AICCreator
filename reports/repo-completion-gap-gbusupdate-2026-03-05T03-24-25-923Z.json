@@ -1,0 +1,89 @@
+{
+  "repo": "gbusupdate",
+  "started_at": "2026-03-05T03:24:23.502Z",
+  "completed_at": "2026-03-05T03:24:25.923Z",
+  "capability_score": 79,
+  "capability_factory_exit_code": 0,
+  "sections": {
+    "stripe_checkout": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "stripe_webhooks": {
+      "status": "complete",
+      "detail": "score=90 securityCoverage=0.5"
+    },
+    "telnyx_sms": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "auth": {
+      "status": "complete",
+      "detail": "api-key"
+    },
+    "admin_setup": {
+      "status": "complete",
+      "detail": "tenant signals=true"
+    },
+    "email_setup": {
+      "status": "complete",
+      "detail": "email provider capability present"
+    },
+    "queue_retry": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "observability": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "e2e": {
+      "status": "incomplete",
+      "detail": "score=65"
+    },
+    "security_sweep": {
+      "status": "complete",
+      "detail": "security.runtime_baseline"
+    },
+    "webhooks_signature_verify": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "capability_factory_health": {
+      "status": "complete",
+      "detail": "score=79"
+    },
+    "feature_benchmark_vs_exemplar": {
+      "status": "complete",
+      "detail": "run completed"
+    }
+  },
+  "issues": [
+    {
+      "code": "FORBIDDEN_PATTERN",
+      "severity": "medium",
+      "detail": "fake in 1 file(s)"
+    }
+  ],
+  "next_actions": [
+    "Remove placeholder/fake patterns"
+  ],
+  "best_case_ref": {
+    "stripe_webhooks": "local/autopay_ui, local/CaptureInbound, local/payclaw",
+    "email_delivery": "local/CaptureInbound, docs/EMAIL_RESEND_MIGRATION.md",
+    "auth": "local/veritap_2026, config/capabilities.yaml auth.better_auth",
+    "admin_ui": "oss-dashboard-benchmark top repos",
+    "feature_benchmark": "scripts/feature-benchmark-score.js EXEMPLAR_LIBRARY, data/exemplar-repos.json",
+    "capability_factory": "config/capabilities.yaml, scripts/capability-factory.js pickCanonicalCandidates"
+  },
+  "benchmark_lookup": {
+    "e2e": {
+      "status": "incomplete",
+      "detail": "score=65",
+      "best_case_ref": "oss-dashboard-benchmark top repos",
+      "github_search_query": "playwright e2e test OR cypress",
+      "github_search_url": "https://github.com/search?type=repositories&q=playwright%20e2e%20test%20OR%20cypress"
+    }
+  },
+  "feature_benchmark_run": true
+}

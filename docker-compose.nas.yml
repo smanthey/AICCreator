@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  opa:
+    image: openpolicyagent/opa:latest
+    container_name: claw-opa
+    restart: unless-stopped
+    ports:
+      - "8181:8181"
+    command:
+      - "run"
+      - "--server"
+      - "--addr=0.0.0.0:8181"
+      - "/policy"
+    volumes:
+      - ./policy/opa:/policy:ro
+
+  redis:
+    image: redis:7-alpine
+    container_name: claw-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+  dispatcher:
+    image: node:20-alpine
+    container_name: claw-dispatcher
+    restart: unless-stopped
+    working_dir: /app
+    env_file:
+      - .env
+    command: sh -lc "npm ci && node cli/run-dispatcher.js"
+    volumes:
+      - ./:/app
+    depends_on:
+      - redis
+      - opa
+
+  worker:
+    image: node:20-alpine
+    container_name: claw-worker-nas
+    restart: unless-stopped
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      WORKER_TAGS: "infra,deterministic,io_heavy,cpu_heavy"
+      NODE_ROLE: "nas_worker"
+      WORKER_ALWAYS_ON: "true"
+    command: sh -lc "npm ci && node workers/worker.js"
+    volumes:
+      - ./:/app
+    depends_on:
+      - redis
+      - dispatcher
+      - opa
+
+volumes:
+  redis_data:

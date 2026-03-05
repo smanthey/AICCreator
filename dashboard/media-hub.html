@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Hub - Pinterest Ops</title>
+  <style>
+    :root {
+      --bg: #f5f7f6;
+      --card: #ffffff;
+      --ink: #111827;
+      --muted: #5b6474;
+      --line: #dde3ea;
+      --brand: #d43f2f;
+      --brand-dark: #ad2f22;
+      --good: #1f7a52;
+      --warn: #9a6700;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% -10%, #ffe9d9 0%, transparent 35%),
+        radial-gradient(circle at 100% 0%, #e6f0ff 0%, transparent 30%),
+        var(--bg);
+    }
+    .wrap { max-width: 1400px; margin: 0 auto; padding: 24px; }
+    .top { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    h1 { margin: 0; font-size: 28px; }
+    .sub { margin: 4px 0 0; color: var(--muted); }
+    .api { display: flex; gap: 8px; align-items: center; }
+    .api input, .api button, select, input {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font: inherit;
+      background: #fff;
+    }
+    .btn {
+      border: none;
+      background: var(--brand);
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .btn:hover { background: var(--brand-dark); }
+    .btn.alt { background: #243046; }
+    .kpis {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(140px, 1fr));
+      gap: 10px;
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+    }
+    .kpi .label { color: var(--muted); font-size: 12px; }
+    .kpi .value { font-size: 22px; font-weight: 700; margin-top: 4px; }
+    .filters {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(8, minmax(120px, 1fr));
+      gap: 8px;
+      align-items: end;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+    }
+    .presets {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filters label { display: grid; gap: 5px; font-size: 12px; color: var(--muted); }
+    .main {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .assets {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .asset {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      display: grid;
+      grid-template-rows: 180px auto;
+    }
+    .thumb {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: linear-gradient(120deg, #f2f2f2, #e5e7eb);
+    }
+    .meta { padding: 10px; display: grid; gap: 6px; }
+    .tiny { font-size: 12px; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      background: #f2f4f8;
+      color: #374151;
+      font-size: 11px;
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
+    .row { display: flex; gap: 6px; flex-wrap: wrap; }
+    .cap-box {
+      margin-top: 8px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 12px;
+      background: #fbfbfd;
+      display: none;
+      white-space: pre-wrap;
+    }
+    .queue-list { display: grid; gap: 8px; margin-top: 10px; max-height: 70vh; overflow: auto; }
+    .tools { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .q {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 13px;
+    }
+    .q .status-draft { color: var(--warn); }
+    .q .status-approved { color: var(--good); }
+    .q .status-posted { color: #0f766e; }
+    .empty { color: var(--muted); font-size: 13px; }
+    .small { font-size: 11px; }
+    @media (max-width: 1100px) {
+      .main { grid-template-columns: 1fr; }
+      .assets { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .filters { grid-template-columns: repeat(4, minmax(120px, 1fr)); }
+      .kpis { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+    }
+    @media (max-width: 760px) {
+      .assets { grid-template-columns: 1fr; }
+      .filters { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Media Hub - Pinterest Ops</h1>
+        <p class="sub">Visual index, review, and manual-first posting queue for multi-brand growth.</p>
+      </div>
+      <div class="api">
+        <input id="apiKey" type="password" placeholder="ARCHITECT_API_KEY (optional)" />
+        <button id="saveKey" class="btn alt">Save Key</button>
+      </div>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="filters">
+      <label>Brand
+        <input id="fBrand" placeholder="e.g. skynpatch" />
+      </label>
+      <label>Host
+        <input id="fHost" placeholder="hostname" />
+      </label>
+      <label>Scene
+        <input id="fScene" placeholder="product, lifestyle..." />
+      </label>
+      <label>Media Class
+        <select id="fMediaClass">
+          <option value="">Any</option>
+          <option value="real_photo">Real Photos</option>
+          <option value="raw_photo">RAW Photos</option>
+          <option value="screenshot">Screenshots</option>
+          <option value="non_screenshot">Exclude Screenshots</option>
+          <option value="document">Documents</option>
+          <option value="design_asset">Design Assets</option>
+        </select>
+      </label>
+      <label>Review
+        <select id="fReview">
+          <option value="">Any</option>
+          <option value="pending">pending</option>
+          <option value="approved">approved</option>
+          <option value="needs_edit">needs_edit</option>
+          <option value="rejected">rejected</option>
+        </select>
+      </label>
+      <label>Search
+        <input id="fQ" placeholder="path/name/tag" />
+      </label>
+      <label>Min MP
+        <input id="fMinMP" type="number" min="0" max="200" step="0.1" value="0" />
+      </label>
+      <label>Camera Only
+        <select id="fCameraOnly">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="fSort">
+          <option value="recent">Recent</option>
+          <option value="largest_resolution">Largest Resolution</option>
+          <option value="largest_file">Largest File</option>
+          <option value="highest_visual_confidence">Best Visual Confidence</option>
+          <option value="review_priority">Review Priority</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </label>
+      <label>Dedupe
+        <select id="fDedupeMode">
+          <option value="collapse">Collapse Duplicates</option>
+          <option value="all">Show All</option>
+          <option value="duplicates_only">Only Duplicates</option>
+        </select>
+      </label>
+      <label>Page Size
+        <input id="fLimit" type="number" min="12" max="120" step="12" value="48" />
+      </label>
+      <label>
+        <button id="refresh" class="btn">Refresh</button>
+      </label>
+    </div>
+    <div class="presets">
+      <button class="btn alt small" onclick="applyPreset('real_photo')">Real Photos</button>
+      <button class="btn alt small" onclick="applyPreset('raw_large')">RAW + High Res</button>
+      <button class="btn alt small" onclick="applyPreset('exclude_screenshots')">Exclude Screenshots</button>
+      <button class="btn alt small" onclick="applyPreset('review_ready')">Review Ready</button>
+      <button class="btn alt small" onclick="applyPreset('clear')">Clear Preset</button>
+    </div>
+
+    <div class="main">
+      <section class="panel">
+        <div class="row" style="justify-content:space-between; align-items:center;">
+          <strong>Image Catalog</strong>
+          <span class="tiny" id="assetsCount"></span>
+        </div>
+        <div class="tools">
+          <button id="selectLoaded" class="btn alt small">Select Loaded</button>
+          <button id="clearSelected" class="btn alt small">Clear Selection</button>
+          <button id="bulkCaption" class="btn small">Generate Captions (Selected/Loaded)</button>
+          <button id="loadMore" class="btn alt small">Load More</button>
+        </div>
+        <div class="tiny" id="selectionInfo" style="margin-top:6px;"></div>
+        <div class="assets" id="assets"></div>
+      </section>
+
+      <aside class="panel">
+        <strong>Pinterest Queue (Manual-first)</strong>
+        <p class="tiny">Queue top assets for human review/posting now. Later this same queue can be auto-posted.</p>
+
+        <label class="small">Account
+          <input id="qAccount" placeholder="brand_main_account" />
+        </label>
+        <label class="small">Board
+          <input id="qBoard" placeholder="Spring Drops" />
+        </label>
+        <label class="small">Destination URL
+          <input id="qUrl" placeholder="https://..." />
+        </label>
+        <label class="small">Auto Queue Limit
+          <input id="autoLimit" type="number" min="1" max="300" value="80" />
+        </label>
+        <label class="small" style="display:flex;align-items:center;gap:6px;">
+          <input id="autoDry" type="checkbox" checked />
+          Dry-run auto queue first
+        </label>
+        <label class="small" style="display:flex;align-items:center;gap:6px;">
+          <input id="canonicalOnly" type="checkbox" checked />
+          Canonical-only queue (skip non-primary duplicates)
+        </label>
+        <div class="tools">
+          <button id="autoQueueFiltered" class="btn">Auto Queue Filtered</button>
+        </div>
+        <div class="tiny" id="autoQueueResult"></div>
+        <div class="queue-list" id="queue"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const KEY_STORAGE = "architect_api_key";
+    const $ = (id) => document.getElementById(id);
+    let loadedAssets = [];
+    let currentOffset = 0;
+    const selectedAssetIds = new Set();
+    const captionsByAssetId = new Map();
+
+    function getApiKey() {
+      return localStorage.getItem(KEY_STORAGE) || "";
+    }
+
+    function setApiKey(v) {
+      localStorage.setItem(KEY_STORAGE, v || "");
+      $("apiKey").value = v || "";
+    }
+
+    async function apiFetch(path, options = {}) {
+      const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
+      const key = getApiKey();
+      if (key) headers.Authorization = `Bearer ${key}`;
+      const res = await fetch(path, { ...options, headers });
+      const text = await res.text();
+      let json;
+      try { json = JSON.parse(text); } catch { json = { raw: text }; }
+      if (!res.ok) throw new Error(json.error || `HTTP ${res.status}`);
+      return json;
+    }
+
+    function imageSrc(assetId) {
+      const key = getApiKey();
+      const qs = key ? `?api_key=${encodeURIComponent(key)}` : "";
+      return `/api/media-hub/assets/${encodeURIComponent(assetId)}/image${qs}`;
+    }
+
+    function esc(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    async function loadSummary() {
+      const data = await apiFetch("/api/media-hub/summary");
+      const s = data.summary || {};
+      const cards = [
+        ["Total Images", s.total_images || 0],
+        ["Real Photos", s.real_photo_images || 0],
+        ["RAW Photos", s.raw_photo_images || 0],
+        ["Screenshots", s.screenshot_images || 0],
+        ["Product Matched", s.product_matched_images || 0],
+        ["Level3 Tagged", s.level3_categorized_images || 0],
+        ["Duplicate Groups", s.duplicate_groups || 0],
+        ["Duplicate Extras", s.duplicate_extra_images || 0],
+        ["Visual Tagged", s.visual_cataloged || 0],
+        ["Review Pending", s.review_pending || 0],
+        ["Queue Draft", s.queue_draft || 0],
+      ];
+      $("kpis").innerHTML = cards.map(([label, value]) => `
+        <div class="kpi">
+          <div class="label">${esc(label)}</div>
+          <div class="value">${Number(value).toLocaleString()}</div>
+        </div>
+      `).join("");
+    }
+
+    function filterQuery() {
+      const q = new URLSearchParams();
+      const map = {
+        brand: $("fBrand").value.trim(),
+        hostname: $("fHost").value.trim(),
+        scene_type: $("fScene").value.trim(),
+        media_class: $("fMediaClass").value,
+        review_status: $("fReview").value,
+        q: $("fQ").value.trim(),
+        min_megapixels: String(Math.max(0, Number($("fMinMP").value || 0) || 0)),
+        camera_only: $("fCameraOnly").value,
+        sort_by: $("fSort").value,
+        dedupe_mode: $("fDedupeMode").value,
+        limit: String(Math.max(12, Math.min(120, Number($("fLimit").value || 48) || 48))),
+        offset: String(currentOffset),
+      };
+      Object.entries(map).forEach(([k, v]) => v && q.set(k, v));
+      return q.toString();
+    }
+
+    function renderSelectionInfo() {
+      $("selectionInfo").textContent = `${selectedAssetIds.size} selected`;
+    }
+
+    function renderAssets(list) {
+      $("assetsCount").textContent = `${list.length.toLocaleString()} loaded assets`;
+      if (!list.length) {
+        $("assets").innerHTML = `<div class="empty">No assets matched filters.</div>`;
+        renderSelectionInfo();
+        return;
+      }
+      $("assets").innerHTML = list.map((a) => {
+        const labels = (a.visual_labels || []).slice(0, 6);
+        const dedupeChip = Number(a.duplicate_count || 0) > 1
+          ? `<span class="chip">dupes:${Number(a.duplicate_count)}</span>`
+          : "";
+        const chips = [dedupeChip, ...labels.map((t) => `<span class="chip">${esc(t)}</span>`)].filter(Boolean).join("");
+        const info = [a.brand || "unbranded", a.capture_type || "unknown", a.scene_type || "scene:unknown", a.orientation || "unknown", a.review_status || "pending"].join(" • ");
+        const resolution = (Number(a.width || 0) > 0 && Number(a.height || 0) > 0)
+          ? `${Number(a.width)}x${Number(a.height)} (${Number(a.megapixels || 0).toFixed(2)}MP)`
+          : "resolution:unknown";
+        const matchedProduct = a.product_match_title
+          ? `Product: ${a.product_match_title}${a.product_match_source ? ` (${a.product_match_source})` : ""}`
+          : "";
+        const levels = [a.level1_capture, a.level2_visual_type, a.level3_commerce_type].filter(Boolean).join(" > ");
+        const caption = captionsByAssetId.get(a.id);
+        const isSelected = selectedAssetIds.has(a.id);
+        return `
+          <article class="asset" id="asset-${esc(a.id)}">
+            <img class="thumb" src="${imageSrc(a.id)}" alt="${esc(a.name)}" loading="lazy" />
+            <div class="meta">
+              <strong title="${esc(a.path)}">${esc(a.name || "unnamed")}</strong>
+              <div class="tiny">${esc(info)}</div>
+              <div class="tiny">${esc(resolution)}${a.camera_make || a.camera_model ? ` • ${esc([a.camera_make, a.camera_model].filter(Boolean).join(" "))}` : ""}</div>
+              ${matchedProduct ? `<div class="tiny">${esc(matchedProduct)}</div>` : ""}
+              ${levels ? `<div class="tiny">${esc(levels)}</div>` : ""}
+              <div class="chips">${chips || '<span class="chip">no labels</span>'}</div>
+              ${caption ? `<div class="tiny">Quality score: ${Number(caption.quality_score || 0)}</div>` : ""}
+              <div class="row">
+                <label class="tiny" style="display:flex;align-items:center;gap:6px;">
+                  <input type="checkbox" ${isSelected ? "checked" : ""} onchange="toggleAssetSelect('${esc(a.id)}', this.checked)" />
+                  Select
+                </label>
+                <button class="btn small" onclick="generateCaption('${esc(a.id)}')">Caption</button>
+                <button class="btn alt small" onclick="queueAsset('${esc(a.id)}')">Queue Pin</button>
+                <button class="btn alt small" onclick="setReview('${esc(a.id)}','approved')">Approve</button>
+              </div>
+              <div class="cap-box" id="cap-${esc(a.id)}"></div>
+            </div>
+          </article>
+        `;
+      }).join("");
+      renderSelectionInfo();
+    }
+
+    async function loadAssets({ append = false } = {}) {
+      const data = await apiFetch(`/api/media-hub/assets?${filterQuery()}`);
+      const list = data.assets || [];
+      loadedAssets = append ? [...loadedAssets, ...list] : list;
+      renderAssets(loadedAssets);
+      $("loadMore").disabled = list.length < Math.max(12, Math.min(120, Number($("fLimit").value || 48) || 48));
+    }
+
+    async function loadQueue() {
+      const data = await apiFetch("/api/media-hub/queue?limit=80");
+      const list = data.queue || [];
+      if (!list.length) {
+        $("queue").innerHTML = '<div class="empty">Queue is empty.</div>';
+        return;
+      }
+      $("queue").innerHTML = list.map((q) => `
+        <div class="q">
+          <div><strong>${esc(q.pin_title || q.file_name || "Untitled pin")}</strong></div>
+          <div class="tiny">${esc(q.brand_slug || "unknown")} • ${esc(q.pinterest_account)} • ${esc(q.board_name)}</div>
+          <div class="tiny status-${esc(q.status || "draft")}">status: ${esc(q.status || "draft")}</div>
+        </div>
+      `).join("");
+    }
+
+    async function generateCaption(fileIndexId) {
+      const box = $("cap-" + fileIndexId);
+      box.style.display = "block";
+      box.textContent = "Generating caption...";
+      try {
+        const payload = {
+          file_index_id: fileIndexId,
+          brand_slug: $("fBrand").value.trim() || null,
+          objective: "drive_traffic",
+          tone: "confident",
+          target_audience: "buyers",
+          destination_url: $("qUrl").value.trim() || null,
+        };
+        const data = await apiFetch("/api/media-hub/caption/generate", {
+          method: "POST",
+          body: JSON.stringify(payload),
+        });
+        const c = data.caption || {};
+        captionsByAssetId.set(fileIndexId, c);
+        box.textContent = [
+          `Title: ${c.title || ""}`,
+          `\nCaption:\n${c.description || ""}`,
+          `\nHashtags: ${(c.hashtags || []).join(" ")}`,
+          `\nQuality Score: ${Number(c.quality_score || 0)}`,
+        ].join("\n");
+      } catch (err) {
+        box.textContent = `Failed: ${err.message}`;
+      }
+    }
+
+    async function generateCaptionsBulk() {
+      const ids = selectedAssetIds.size ? Array.from(selectedAssetIds) : loadedAssets.map((a) => a.id).slice(0, 16);
+      if (!ids.length) {
+        alert("No assets loaded.");
+        return;
+      }
+      $("selectionInfo").textContent = `Generating captions for ${ids.length} assets...`;
+      const data = await apiFetch("/api/media-hub/caption/generate-batch", {
+        method: "POST",
+        body: JSON.stringify({
+          file_index_ids: ids,
+          objective: "drive_traffic",
+          tone: "confident",
+          target_audience: "buyers",
+          destination_url: $("qUrl").value.trim() || null,
+          max_assets: Math.min(ids.length, 16),
+          concurrency: 4,
+        }),
+      });
+      const items = data.captions || [];
+      for (const item of items) {
+        if (!item.file_index_id || !item.caption) continue;
+        captionsByAssetId.set(item.file_index_id, item.caption);
+        const box = $("cap-" + item.file_index_id);
+        if (box) {
+          box.style.display = "block";
+          const c = item.caption;
+          box.textContent = [
+            `Title: ${c.title || ""}`,
+            `\nCaption:\n${c.description || ""}`,
+            `\nHashtags: ${(c.hashtags || []).join(" ")}`,
+            `\nQuality Score: ${Number(c.quality_score || 0)}`,
+          ].join("\n");
+        }
+      }
+      renderAssets(loadedAssets);
+      $("selectionInfo").textContent = `Generated ${items.filter((i) => i.caption).length}/${ids.length} captions`;
+    }
+
+    async function queueAsset(fileIndexId) {
+      const account = $("qAccount").value.trim();
+      const board = $("qBoard").value.trim();
+      if (!account || !board) {
+        alert("Set Account and Board first.");
+        return;
+      }
+
+      const capText = $("cap-" + fileIndexId)?.textContent || "";
+      const title = (capText.match(/Title:\s*(.*)/) || [])[1] || null;
+      const descMatch = capText.match(/Caption:\n([\s\S]*?)\n\nHashtags:/);
+      const description = descMatch ? descMatch[1].trim() : null;
+      const hashMatch = capText.match(/Hashtags:\s*(.*)/);
+      const hashtags = hashMatch ? hashMatch[1].split(/\s+/).filter(Boolean) : [];
+
+      try {
+        await apiFetch("/api/media-hub/queue", {
+          method: "POST",
+          body: JSON.stringify({
+            file_index_id: fileIndexId,
+            brand_slug: $("fBrand").value.trim() || null,
+            pinterest_account: account,
+            board_name: board,
+            destination_url: $("qUrl").value.trim() || null,
+            pin_title: title,
+            pin_description: description,
+            hashtags,
+            canonical_only: $("canonicalOnly").checked,
+            created_by: "media_hub_dashboard",
+          }),
+        });
+        await loadQueue();
+        await loadSummary();
+      } catch (err) {
+        alert(`Queue failed: ${err.message}`);
+      }
+    }
+
+    async function setReview(fileIndexId, reviewStatus) {
+      try {
+        await apiFetch(`/api/media-hub/assets/${encodeURIComponent(fileIndexId)}/review`, {
+          method: "POST",
+          body: JSON.stringify({ review_status: reviewStatus }),
+        });
+        await loadAssets();
+        await loadSummary();
+      } catch (err) {
+        alert(`Review update failed: ${err.message}`);
+      }
+    }
+
+    function toggleAssetSelect(fileIndexId, checked) {
+      if (checked) selectedAssetIds.add(fileIndexId);
+      else selectedAssetIds.delete(fileIndexId);
+      renderSelectionInfo();
+    }
+
+    function applyPreset(kind) {
+      if (kind === "real_photo") {
+        $("fMediaClass").value = "real_photo";
+        $("fMinMP").value = "2";
+        $("fCameraOnly").value = "0";
+        $("fSort").value = "largest_resolution";
+      } else if (kind === "raw_large") {
+        $("fMediaClass").value = "raw_photo";
+        $("fMinMP").value = "8";
+        $("fCameraOnly").value = "1";
+        $("fSort").value = "largest_resolution";
+      } else if (kind === "exclude_screenshots") {
+        $("fMediaClass").value = "non_screenshot";
+        $("fMinMP").value = "0";
+        $("fCameraOnly").value = "0";
+        $("fSort").value = "recent";
+        $("fDedupeMode").value = "collapse";
+      } else if (kind === "review_ready") {
+        $("fReview").value = "pending";
+        $("fMediaClass").value = "real_photo";
+        $("fSort").value = "review_priority";
+        $("fDedupeMode").value = "collapse";
+      } else if (kind === "clear") {
+        $("fBrand").value = "";
+        $("fHost").value = "";
+        $("fScene").value = "";
+        $("fMediaClass").value = "";
+        $("fReview").value = "";
+        $("fQ").value = "";
+        $("fMinMP").value = "0";
+        $("fCameraOnly").value = "0";
+        $("fSort").value = "recent";
+        $("fDedupeMode").value = "collapse";
+      }
+      $("refresh").click();
+    }
+
+    async function runAutoQueueFiltered() {
+      const account = $("qAccount").value.trim();
+      const board = $("qBoard").value.trim();
+      if (!account || !board) {
+        alert("Set Account and Board first.");
+        return;
+      }
+      $("autoQueueResult").textContent = "Running auto-queue...";
+      const payload = {
+        brand: $("fBrand").value.trim(),
+        hostname: $("fHost").value.trim(),
+        scene_type: $("fScene").value.trim(),
+        media_class: $("fMediaClass").value,
+        review_status: $("fReview").value || "approved",
+        q: $("fQ").value.trim(),
+        min_megapixels: Math.max(0, Number($("fMinMP").value || 0) || 0),
+        camera_only: $("fCameraOnly").value === "1",
+        sort_by: $("fSort").value,
+        dedupe_mode: $("fDedupeMode").value,
+        limit: Math.max(1, Math.min(300, Number($("autoLimit").value || 80) || 80)),
+        pinterest_account: account,
+        board_name: board,
+        destination_url: $("qUrl").value.trim() || null,
+        objective: "drive_traffic",
+        tone: "confident",
+        target_audience: "buyers",
+        dry_run: $("autoDry").checked,
+        canonical_only: $("canonicalOnly").checked,
+        created_by: "media_hub_dashboard_auto",
+      };
+      try {
+        const data = await apiFetch("/api/media-hub/queue/auto-from-filters", {
+          method: "POST",
+          body: JSON.stringify(payload),
+        });
+        const r = data.result || {};
+        $("autoQueueResult").textContent =
+          `inspected=${Number(r.inspected || 0)} created=${Number(r.created || 0)} skipped_existing=${Number(r.skipped_existing || 0)} skipped_non_canonical=${Number(r.skipped_non_canonical || 0)} errors=${Number(r.errors || 0)} dry_run=${!!r.dry_run}`;
+        await loadQueue();
+        await loadSummary();
+      } catch (err) {
+        $("autoQueueResult").textContent = `Auto-queue failed: ${err.message}`;
+      }
+    }
+
+    async function boot() {
+      $("apiKey").value = getApiKey();
+      $("saveKey").addEventListener("click", () => setApiKey($("apiKey").value.trim()));
+      $("refresh").addEventListener("click", async () => {
+        currentOffset = 0;
+        await loadSummary();
+        await loadAssets({ append: false });
+        await loadQueue();
+      });
+      ["fBrand", "fHost", "fScene", "fMediaClass", "fReview", "fQ", "fMinMP", "fCameraOnly", "fSort", "fDedupeMode"].forEach((id) => {
+        $(id).addEventListener("keydown", (evt) => {
+          if (evt.key === "Enter") $("refresh").click();
+        });
+      });
+      $("loadMore").addEventListener("click", async () => {
+        currentOffset += Math.max(12, Math.min(120, Number($("fLimit").value || 48) || 48));
+        await loadAssets({ append: true });
+      });
+      $("selectLoaded").addEventListener("click", () => {
+        loadedAssets.forEach((a) => selectedAssetIds.add(a.id));
+        renderSelectionInfo();
+        renderAssets(loadedAssets);
+      });
+      $("clearSelected").addEventListener("click", () => {
+        selectedAssetIds.clear();
+        renderSelectionInfo();
+        renderAssets(loadedAssets);
+      });
+      $("bulkCaption").addEventListener("click", async () => {
+        await generateCaptionsBulk();
+      });
+      $("autoQueueFiltered").addEventListener("click", async () => {
+        await runAutoQueueFiltered();
+      });
+
+      await loadSummary();
+      await loadAssets({ append: false });
+      await loadQueue();
+    }
+
+    boot().catch((err) => {
+      console.error(err);
+      alert(`Media Hub load failed: ${err.message}`);
+    });
+
+    window.generateCaption = generateCaption;
+    window.queueAsset = queueAsset;
+    window.setReview = setReview;
+    window.toggleAssetSelect = toggleAssetSelect;
+    window.applyPreset = applyPreset;
+  </script>
+</body>
+</html>

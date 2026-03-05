@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masterpiece Builder Dashboard</title>
+  <style>
+    :root {
+      --bg: #0a1210;
+      --surface: #12201b;
+      --card: #162720;
+      --text: #e8f8f1;
+      --muted: #9ac7b7;
+      --line: #21443a;
+      --accent: #3ddc97;
+      --accent2: #2fb67e;
+      --danger: #ff6b6b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(61,220,151,0.12), transparent 35%),
+        radial-gradient(circle at 90% 20%, rgba(47,182,126,0.1), transparent 30%),
+        linear-gradient(180deg, #08100e, #0a1210 45%, #0b1412);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 18px 40px; }
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(29,53,45,0.72), rgba(14,28,23,0.9));
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.35rem; }
+    p { margin: 0; color: var(--muted); }
+    .toolbar {
+      margin-top: 14px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    input, button {
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #0f1d18;
+      color: var(--text);
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+    input { min-width: 260px; }
+    button { cursor: pointer; }
+    .primary {
+      border-color: #2aa56f;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      color: #042b1a;
+      font-weight: 700;
+    }
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1rem; }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+      white-space: pre-wrap;
+      color: #c9f7e2;
+      background: #0b1713;
+      border: 1px solid #1b332b;
+      padding: 10px;
+      border-radius: 8px;
+      max-height: 280px;
+      overflow: auto;
+    }
+    .muted { color: var(--muted); }
+    .ok { color: var(--accent); }
+    .bad { color: var(--danger); }
+    .links { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+    a {
+      color: #9df5cd;
+      text-decoration: none;
+      border-bottom: 1px dotted #9df5cd;
+    }
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+      input { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Masterpiece Builder Public Dashboard</h1>
+      <p>Tracks repo scout + index + build automation lane. Designed for remote ops access.</p>
+      <div class="toolbar">
+        <input id="apiKey" type="password" placeholder="ARCHITECT_API_KEY" />
+        <button id="saveKey">Save Key</button>
+        <button id="refresh" class="primary">Refresh Summary</button>
+      </div>
+      <div class="links">
+        <a href="/">Main dashboard</a>
+        <a href="/ops">Ops dashboard</a>
+        <a href="/media-hub">Media hub</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Scout Status</h2>
+        <div id="scoutMeta" class="muted">Loading…</div>
+        <div id="scoutTop" class="mono"></div>
+      </div>
+      <div class="card">
+        <h2>Builder Status</h2>
+        <div id="builderMeta" class="muted">Loading…</div>
+        <div id="builderTop" class="mono"></div>
+      </div>
+      <div class="card" style="grid-column: 1 / -1;">
+        <h2>Queue Snapshot</h2>
+        <div id="queueMeta" class="mono"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const KEY_NAME = "masterpiece_api_key";
+    const apiKeyInput = document.getElementById("apiKey");
+    const saveBtn = document.getElementById("saveKey");
+    const refreshBtn = document.getElementById("refresh");
+
+    const scoutMeta = document.getElementById("scoutMeta");
+    const scoutTop = document.getElementById("scoutTop");
+    const builderMeta = document.getElementById("builderMeta");
+    const builderTop = document.getElementById("builderTop");
+    const queueMeta = document.getElementById("queueMeta");
+
+    function getKey() {
+      return localStorage.getItem(KEY_NAME) || "";
+    }
+
+    function setKey(v) {
+      localStorage.setItem(KEY_NAME, v || "");
+    }
+
+    function authHeaders() {
+      const k = getKey();
+      return k ? { Authorization: `Bearer ${k}` } : {};
+    }
+
+    async function fetchSummary() {
+      scoutMeta.textContent = "Loading…";
+      builderMeta.textContent = "Loading…";
+      queueMeta.textContent = "Loading…";
+
+      const res = await fetch("/api/masterpiece/summary", {
+        headers: {
+          "Content-Type": "application/json",
+          ...authHeaders(),
+        },
+      });
+
+      if (!res.ok) {
+        const txt = await res.text();
+        throw new Error(`summary_failed: ${res.status} ${txt}`);
+      }
+
+      const data = await res.json();
+      const scout = data.scout || {};
+      const builder = data.builder || {};
+      const queue = data.queue || {};
+
+      scoutMeta.innerHTML = `Updated: <span class="ok">${scout.generated_at || "n/a"}</span> · Candidates: <span class="ok">${scout.candidates_total || 0}</span> · Applied: <span class="ok">${scout.applied || 0}</span>`;
+      builderMeta.innerHTML = `Updated: <span class="ok">${builder.generated_at || "n/a"}</span> · Selected: <span class="ok">${builder.repos_selected || 0}</span> · Queued created: <span class="ok">${builder.queued_created || 0}</span>`;
+
+      scoutTop.textContent = (scout.top_repos || []).length
+        ? (scout.top_repos || []).map((x, i) => `${i + 1}. ${x.repo} | score=${x.score} | stars=${x.stars}`).join("\n")
+        : "No scout candidates found yet.";
+
+      builderTop.textContent = (builder.queue_repos || []).length
+        ? (builder.queue_repos || []).map((x, i) => `${i + 1}. ${x.repo} | index=${x.index_created ? "queued" : "skipped"} | build=${x.build_created ? "queued" : "skipped"}`).join("\n")
+        : "No builder queue activity yet.";
+
+      queueMeta.textContent = JSON.stringify(queue, null, 2);
+    }
+
+    saveBtn.addEventListener("click", () => {
+      setKey(apiKeyInput.value.trim());
+      fetchSummary().catch((err) => {
+        scoutMeta.textContent = err.message;
+      });
+    });
+
+    refreshBtn.addEventListener("click", () => {
+      fetchSummary().catch((err) => {
+        scoutMeta.textContent = err.message;
+      });
+    });
+
+    apiKeyInput.value = getKey();
+    fetchSummary().catch((err) => {
+      scoutMeta.textContent = err.message;
+    });
+  </script>
+</body>
+</html>

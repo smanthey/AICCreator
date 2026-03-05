@@ -1,0 +1,209 @@
+---
+description: Standard patterns for business platform data collector integrations
+---
+
+# Business Integration Patterns
+
+Standard patterns for building data collector integrations for business platforms.
+
+## Authentication Patterns
+
+### OAuth 2.0
+```javascript
+// OAuth flow implementation
+async function authenticateOAuth(platform, credentials) {
+  // 1. Get authorization URL
+  // 2. Redirect user or use refresh token
+  // 3. Exchange code for access token
+  // 4. Store encrypted tokens
+  // 5. Implement token refresh
+}
+```
+
+### API Key
+```javascript
+// API key authentication
+const headers = {
+  'Authorization': `Bearer ${apiKey}`,
+  // or
+  'X-API-Key': apiKey,
+};
+```
+
+### Webhook
+```javascript
+// Webhook setup for real-time updates
+async function setupWebhook(platform, url, events) {
+  // Register webhook endpoint
+  // Verify webhook signatures
+  // Process webhook events
+}
+```
+
+## Error Handling Patterns
+
+### Retry Logic
+```javascript
+async function syncWithRetry(platform, syncFn, maxRetries = 3) {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      return await syncFn();
+    } catch (err) {
+      if (i === maxRetries - 1) throw err;
+      await sleep(Math.pow(2, i) * 1000); // Exponential backoff
+    }
+  }
+}
+```
+
+### Rate Limiting
+```javascript
+// Respect API rate limits
+const rateLimiter = {
+  requests: 0,
+  windowStart: Date.now(),
+  async checkLimit(maxRequests, windowMs) {
+    const now = Date.now();
+    if (now - this.windowStart > windowMs) {
+      this.requests = 0;
+      this.windowStart = now;
+    }
+    if (this.requests >= maxRequests) {
+      await sleep(windowMs - (now - this.windowStart));
+    }
+    this.requests++;
+  }
+};
+```
+
+### Error Logging
+```javascript
+// Log errors to business_sync_logs
+async function logSyncError(platform, error, metadata = {}) {
+  await pg.query(
+    `INSERT INTO business_sync_logs 
+     (platform, sync_status, error_message, metadata)
+     VALUES ($1, 'failed', $2, $3)`,
+    [platform, error.message, JSON.stringify(metadata)]
+  );
+}
+```
+
+## Data Transformation Patterns
+
+### Unified Schema Mapping
+```javascript
+// Transform platform-specific data to unified schema
+function transformOrder(platformOrder, platform) {
+  return {
+    source_platform: platform,
+    platform_order_id: platformOrder.id,
+    order_status: mapStatus(platformOrder.status, platform),
+    total_amount_usd: convertCurrency(platformOrder.total, platformOrder.currency),
+    order_date: parseDate(platformOrder.created_at),
+    // ... map all fields to unified schema
+  };
+}
+```
+
+### Customer Matching
+```javascript
+// Match customers across platforms
+async function matchCustomer(email, phone, platform) {
+  // Try email first
+  let customer = await findCustomerByEmail(email);
+  if (!customer && phone) {
+    customer = await findCustomerByPhone(phone);
+  }
+  if (!customer) {
+    customer = await createCustomer({ email, phone, platforms: [platform] });
+  } else {
+    // Add platform to existing customer
+    await addPlatformToCustomer(customer.id, platform);
+  }
+  return customer;
+}
+```
+
+## Sync Patterns
+
+### Incremental Sync
+```javascript
+// Sync only new/updated records
+async function incrementalSync(platform, lastSyncAt) {
+  const records = await fetchUpdatedRecords(platform, lastSyncAt);
+  for (const record of records) {
+    await upsertToUnifiedSchema(record, platform);
+  }
+  await updateLastSyncTime(platform, new Date());
+}
+```
+
+### Full Sync
+```javascript
+// Full sync with pagination
+async function fullSync(platform) {
+  let page = 1;
+  let hasMore = true;
+  
+  while (hasMore) {
+    const response = await fetchPage(platform, page);
+    await processRecords(response.data, platform);
+    hasMore = response.hasMore;
+    page++;
+  }
+}
+```
+
+## Data Storage Patterns
+
+### Unified Revenue Storage
+```javascript
+// Store revenue in unified schema
+async function storeRevenue(platform, orderId, amount, currency, date) {
+  await pg.query(
+    `INSERT INTO business_revenue 
+     (source_platform, order_id, amount_usd, currency, transaction_date)
+     VALUES ($1, $2, $3, $4, $5)
+     ON CONFLICT (source_platform, order_id, transaction_date) DO UPDATE SET
+       amount_usd = EXCLUDED.amount_usd`,
+    [platform, orderId, convertToUSD(amount, currency), currency, date]
+  );
+}
+```
+
+### Sync Logging
+```javascript
+// Log every sync operation
+async function logSync(platform, syncType, status, recordsSynced, error = null) {
+  const syncLogId = await pg.query(
+    `INSERT INTO business_sync_logs 
+     (platform, sync_type, sync_status, records_synced, error_message, started_at)
+     VALUES ($1, $2, $3, $4, $5, NOW())
+     RETURNING id`,
+    [platform, syncType, status, recordsSynced, error?.message || null]
+  );
+  
+  if (status === 'completed' || status === 'failed') {
+    await pg.query(
+      `UPDATE business_sync_logs 
+       SET completed_at = NOW(), duration_seconds = EXTRACT(EPOCH FROM (NOW() - started_at))::int
+       WHERE id = $1`,
+      [syncLogId.rows[0].id]
+    );
+  }
+}
+```
+
+## Best Practices
+
+1. **Always use transactions** for multi-table operations
+2. **Handle currency conversion** to USD for unified storage
+3. **Implement idempotency** using platform IDs + timestamps
+4. **Log all operations** to business_sync_logs
+5. **Handle pagination** for large datasets
+6. **Respect rate limits** with exponential backoff
+7. **Store platform metadata** in JSONB columns
+8. **Match customers** across platforms using email/phone
+9. **Transform data** to unified schema before storage
+10. **Test authentication** before attempting syncs

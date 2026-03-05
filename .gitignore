@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+
+# Environment — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Artifacts & QA output
+artifacts/
+*.har
+*.zip
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime
+.pm2/
+pids/
+*.pid
+.runtime/
+
+# Local dev/runtime state
+.venv/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.leadgen-state.json
+.load-reduced.json
+scripts/reports/
+scripts/ip-rules-reports/
+scripts/idm-playwright-rows.json
+
+.env.bak*
+
+# Tax receipts and financial data (may contain account IDs)
+taxes/2026/receipts/
+taxes/2026/income/
+
+# Agent memory files (may contain API keys in logs)
+agent-state/agents/*/memory/*.md
+agent-state/bot-discovery/*.jsonl
+agent-state/security/*.json
+
+# Reports with potentially sensitive data
+reports/capability-factory/*.json
+reports/capability-factory/*.md
+reports/dashboard-action-history.json
+
+# Local repo list (your repo names; premade code uses template only)
+config/repo-completion-master-list.local.json
+# Local convergence targets override
+config/convergence-targets.local.json

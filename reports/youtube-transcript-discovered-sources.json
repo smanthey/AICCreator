@@ -1,0 +1,2346 @@
+{
+  "generated_at": "2026-03-05T04:15:36.728Z",
+  "source_index": "/Users/tatsheen/claw-architect/reports/youtube-transcript-visual-index-latest.json",
+  "video_count": 12,
+  "with_transcript": 11,
+  "github_repos": [],
+  "reddit_subreddits": [],
+  "github_repo_keys": [],
+  "reddit_subs": [],
+  "search_terms": [
+    {
+      "term": "workflow",
+      "video_ids": [
+        "1q__Vs2JqbI",
+        "LFO4cP0KMwk",
+        "DqY797MuQio",
+        "rp6_d6sNYXY",
+        "QR4Tt6j8aNU",
+        "0rMMWOWVBo0",
+        "R9c_JQrEtu8",
+        "Jsx-rImkdQk",
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI",
+        "The ULTIMATE Agent to Auto-Publish Content Daily - 9 Social Platforms in 1 | n8n NO-CODE Tutorial",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)",
+        "This AI Tool Just Killed Every Other Video Generator",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos",
+        "How This AI Automation Creates 100 Viral TikTok Videos Daily!",
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript",
+        "transcript"
+      ]
+    },
+    {
+      "term": "automation",
+      "video_ids": [
+        "2UxulrochNI",
+        "4ZI_fL4cw_c",
+        "LFO4cP0KMwk",
+        "DqY797MuQio",
+        "rp6_d6sNYXY",
+        "0rMMWOWVBo0",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!",
+        "The ULTIMATE Agent to Auto-Publish Content Daily - 9 Social Platforms in 1 | n8n NO-CODE Tutorial",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "transcript",
+        "transcript",
+        "transcript",
+        "tag",
+        "transcript",
+        "transcript",
+        "transcript"
+      ]
+    },
+    {
+      "term": "n8n",
+      "video_ids": [
+        "2UxulrochNI",
+        "DqY797MuQio",
+        "rp6_d6sNYXY",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "transcript",
+        "tag",
+        "transcript",
+        "tag"
+      ]
+    },
+    {
+      "term": "chatgpt",
+      "video_ids": [
+        "2UxulrochNI",
+        "LFO4cP0KMwk",
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "The ULTIMATE Agent to Auto-Publish Content Daily - 9 Social Platforms in 1 | n8n NO-CODE Tutorial",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag",
+        "transcript",
+        "tag"
+      ]
+    },
+    {
+      "term": "openai",
+      "video_ids": [
+        "2UxulrochNI",
+        "DqY797MuQio",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag",
+        "transcript"
+      ]
+    },
+    {
+      "term": "ai",
+      "video_ids": [
+        "2UxulrochNI",
+        "DqY797MuQio",
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag",
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "artificial intelligence",
+      "video_ids": [
+        "2UxulrochNI",
+        "DqY797MuQio",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag",
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation",
+      "video_ids": [
+        "4ZI_fL4cw_c",
+        "DqY797MuQio",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!",
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai tools",
+      "video_ids": [
+        "DqY797MuQio",
+        "QR4Tt6j8aNU",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "This AI Tool Just Killed Every Other Video Generator",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag",
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "midjourney",
+      "video_ids": [
+        "2UxulrochNI",
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag",
+        "transcript"
+      ]
+    },
+    {
+      "term": "replicate",
+      "video_ids": [
+        "2UxulrochNI",
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "transcript",
+        "transcript"
+      ]
+    },
+    {
+      "term": "claude",
+      "video_ids": [
+        "2UxulrochNI",
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "transcript",
+        "transcript"
+      ]
+    },
+    {
+      "term": "social media automation ai",
+      "video_ids": [
+        "4ZI_fL4cw_c",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation tool",
+      "video_ids": [
+        "4ZI_fL4cw_c",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "workflow automation",
+      "video_ids": [
+        "DqY797MuQio",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai content creation",
+      "video_ids": [
+        "DqY797MuQio",
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "youtube automation",
+      "video_ids": [
+        "DqY797MuQio",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "automation tools",
+      "video_ids": [
+        "rp6_d6sNYXY",
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)",
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video generator",
+      "video_ids": [
+        "QR4Tt6j8aNU",
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator",
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n youtube automation",
+      "video_ids": [
+        "0rMMWOWVBo0",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n automation",
+      "video_ids": [
+        "0rMMWOWVBo0",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation agency",
+      "video_ids": [
+        "0rMMWOWVBo0",
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)",
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag",
+        "tag"
+      ]
+    },
+    {
+      "term": "gpt4",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "google bard",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "microsoft",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "bing ai",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "palm-e",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "auto-gpt",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai news",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "sam altman",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "huggingface",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "machine learning",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "meetkevin",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "google ai",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "meta ai",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai art",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "microsoft ai",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "chatgpt plugins",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai andy",
+      "video_ids": [
+        "2UxulrochNI"
+      ],
+      "titles": [
+        "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media automation",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media automation tools",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "automate social media",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media marketing automation",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media automation 2024",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media automation software",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "automatic social media posting",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "automate social media content",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media auto publish",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com ai automation",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com automation ai",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com tutorial",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com guide",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com automation",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make.com ai",
+      "video_ids": [
+        "4ZI_fL4cw_c"
+      ],
+      "titles": [
+        "AI Social Media Automation: How to Post Daily Content 100% on Autopilot!"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to grow on social media",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "instagram",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "tiktok",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "instagram reels",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to go viral",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to grow on youtube",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "kallaway",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media is now on easy mode",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to make money as a creator",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to make money on youtube",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to make money online",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media strategy in 2025",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai content tools",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "easy mode",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "hard mode",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "hooks",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "psychology",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media game",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "best social media strategy",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "storytelling 101",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "best storytelling training",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media strategy",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "content",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "scriptwriting",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to create any content 10x faster with ai",
+      "video_ids": [
+        "1q__Vs2JqbI"
+      ],
+      "titles": [
+        "How to Create Any Content 10x Faster With AI"
+      ],
+      "sources": [
+        "title"
+      ]
+    },
+    {
+      "term": "ai workflow",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai integration",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "no-code automation",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "low-code tools",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "openai api",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai scripting",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "automation tutorials",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "tech automation",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai chatbots",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "prompt engineering",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai business tools",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai software",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai productivity",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai workflows",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai trends",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai agents",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "veo3",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "zapier",
+      "video_ids": [
+        "DqY797MuQio"
+      ],
+      "titles": [
+        "I Used N8N to Automate a $10M/yr AI Influencer - Here's How (AI Influencer Toolkit Tutorial 🥚)"
+      ],
+      "sources": [
+        "transcript"
+      ]
+    },
+    {
+      "term": "ads creation",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "agentic platforms",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "cloud code",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "creative ai",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "generative ai",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "image generation",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "live demo",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "prompting challenges",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "video generation",
+      "video_ids": [
+        "rp6_d6sNYXY"
+      ],
+      "titles": [
+        "Antigravity + Every Image & Video AI is a Cheat Code for Creators (NEW Skill)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "best ai video generator",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video creator",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "top ai tools",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo ai",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo ai tutorial",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo tutorial",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video generation",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video editing",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo ai video generator",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "text to video ai generator",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video editor",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo ai tips and tricks",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "best ai tools",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai tools for video editing",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai tools for video creation",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "invideo step by step",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai for content creation",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai for youtube videos",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai for content creators",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "this ai tool just killed every other video generator",
+      "video_ids": [
+        "QR4Tt6j8aNU"
+      ],
+      "titles": [
+        "This AI Tool Just Killed Every Other Video Generator"
+      ],
+      "sources": [
+        "title"
+      ]
+    },
+    {
+      "term": "google veo 3",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai videos",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "make money online",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n tutorial",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "video editing",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to use n8n",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "digital marketing",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "content creation",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "automation workflow",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "video marketing",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "viral videos",
+      "video_ids": [
+        "0rMMWOWVBo0"
+      ],
+      "titles": [
+        "This is How I Automated Viral AI Videos for FREE (n8n + Veo 3)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n ai automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "tiktok automation n8n",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai content automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation tutorial",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n social media automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "youtube automation ai agent",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "build ai agent with n8n",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n ai integration",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation guide",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai automation hindi",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai video automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "n8n ai agent tutorial",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "linkedin post automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "instagram automation",
+      "video_ids": [
+        "R9c_JQrEtu8"
+      ],
+      "titles": [
+        "I Built An AI Influencer Automation in N8n that Automatically Posts Videos"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "imagine art",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "imagineart",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "imagine.art",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "imagine art tutorial",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "klingai",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "kling 2.6",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "kling ai",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "nano banana pro tutorial",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "nano banana pro",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "nano banana",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to use nano banana pro",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "nano banana pro free",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "imagine art workflow",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "content creation full course",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "content schedule for social media",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "content creation for beginners",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "social media content planning",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "ai generated video",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "gemini pro",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "gemini 3.0 pro",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "gemini 3.0",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to create ai video",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    },
+    {
+      "term": "how to grow on instagram",
+      "video_ids": [
+        "MH1xW_7YRHw"
+      ],
+      "titles": [
+        "Automated AI Content Creation Workflow (Less Than 10 Minutes)"
+      ],
+      "sources": [
+        "tag"
+      ]
+    }
+  ],
+  "search_terms_for_reddit": [
+    "workflow",
+    "automation",
+    "n8n",
+    "chatgpt",
+    "openai",
+    "artificial intelligence",
+    "ai automation",
+    "ai tools",
+    "midjourney",
+    "replicate",
+    "claude",
+    "social media automation ai",
+    "ai automation tool",
+    "workflow automation",
+    "ai content creation",
+    "youtube automation",
+    "automation tools",
+    "ai video generator",
+    "n8n youtube automation",
+    "n8n automation",
+    "ai automation agency",
+    "gpt4",
+    "google bard",
+    "microsoft",
+    "bing ai",
+    "palm-e",
+    "auto-gpt",
+    "ai news",
+    "sam altman",
+    "huggingface",
+    "machine learning",
+    "meetkevin",
+    "google ai",
+    "meta ai",
+    "ai art",
+    "microsoft ai",
+    "chatgpt plugins",
+    "ai andy",
+    "social media automation",
+    "social media automation tools",
+    "automate social media",
+    "social media marketing automation",
+    "social media automation 2024",
+    "social media automation software",
+    "automatic social media posting",
+    "automate social media content",
+    "social media auto publish",
+    "make.com ai automation",
+    "make.com automation ai",
+    "make.com"
+  ],
+  "search_terms_for_github": [
+    "workflow",
+    "automation",
+    "n8n",
+    "chatgpt",
+    "openai",
+    "ai",
+    "artificial intelligence",
+    "ai automation",
+    "ai tools",
+    "midjourney",
+    "replicate",
+    "claude",
+    "social media automation ai",
+    "ai automation tool",
+    "workflow automation",
+    "ai content creation",
+    "youtube automation",
+    "automation tools",
+    "ai video generator",
+    "n8n youtube automation",
+    "n8n automation",
+    "ai automation agency",
+    "gpt4",
+    "google bard",
+    "microsoft",
+    "bing ai",
+    "palm-e",
+    "auto-gpt",
+    "ai news",
+    "sam altman"
+  ]
+}

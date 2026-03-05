@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+pypdf
+html2text
+tqdm
+urllib3<2

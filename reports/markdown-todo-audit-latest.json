@@ -1,0 +1,1275 @@
+{
+  "generatedAt": "2026-03-04T02:58:16.910Z",
+  "uncheckedTotal": 253,
+  "actionableCount": 221,
+  "nonActionableCount": 32,
+  "actionable": [
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 245,
+      "text": "- [ ] Memory deduplication based on similarity"
+    },
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 246,
+      "text": "- [ ] Automatic memory summarization"
+    },
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 247,
+      "text": "- [ ] Memory clustering and topic modeling"
+    },
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 248,
+      "text": "- [ ] Cross-agent memory sharing"
+    },
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 249,
+      "text": "- [ ] Memory versioning and history"
+    },
+    {
+      "file": "docs/SQL_MEMORY_SYSTEM.md",
+      "line": 250,
+      "text": "- [ ] Integration with external vector databases (Pinecone, Weaviate)"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 60,
+      "text": "- [ ] MCP `search_symbols` for `\"webhook\"`, `\"checkout\"`, `\"subscription\"` to locate:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 73,
+      "text": "- [ ] Replace direct `checkout.sessions.create` calls with:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 75,
+      "text": "- [ ] Replace webhook handlers’ direct Stripe usage with:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 78,
+      "text": "- [ ] Replace subscription lookup / cancel calls with:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 84,
+      "text": "- [ ] Implement a Stripe integration layer that:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 87,
+      "text": "- [ ] Ensure public controllers/routes keep the same external behavior in both modes"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 91,
+      "text": "- [ ] Unit/integration tests for:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 94,
+      "text": "- [ ] Optional: repo‑local CLI or script that exercises:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 105,
+      "text": "- [ ] List all modules that:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 111,
+      "text": "- [ ] Introduce thin helpers for this repo, e.g.:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 114,
+      "text": "- [ ] Inside helpers, use:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 116,
+      "text": "- [ ] Preserve existing brand details:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 122,
+      "text": "- [ ] Add `CORE_EMAIL_ENABLED` checks around existing email flows:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 125,
+      "text": "- [ ] Start rollout with:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 131,
+      "text": "- [ ] Add or update tests that assert:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 134,
+      "text": "- [ ] Optionally wire `scripts/email-core-smoke.js` (from `claw-architect`) or repo‑local equivalent:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 143,
+      "text": "- [ ] MCP / Grep for:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 154,
+      "text": "- [ ] For new or refactored background jobs:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 157,
+      "text": "- [ ] For retry logic around external calls:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 162,
+      "text": "- [ ] Ensure jobs have:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 165,
+      "text": "- [ ] Confirm logs include:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 175,
+      "text": "- [ ] MCP `search_text` for `stripe.` and `require(\"stripe\")` — only allowed in shared core (`core/stripe`) or legacy code explicitly marked for removal"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 177,
+      "text": "- [ ] MCP `search_text` for `MailerSend`, `Maileroo`, `Resend`, `sendEmail(`"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 180,
+      "text": "- [ ] MCP `search_text` or Grep for:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 195,
+      "text": "- [ ] All feature flags `CORE_STRIPE_ENABLED`, `CORE_EMAIL_ENABLED`, `CORE_QUEUE_ENABLED` are **on** in production."
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 196,
+      "text": "- [ ] Tests and smoke scripts pass for:"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 200,
+      "text": "- [ ] Drift and landmine sweeps report:"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 39,
+      "text": "- [ ] Reports Control Center hardening: full report history retention + retry/dead-letter dashboards"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 40,
+      "text": "- [ ] Mission Control action center hardening: no-loop guardrails for diagnose/fix actions"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 41,
+      "text": "- [ ] Dashboard parity checks: local + NAS endpoints verified every 3 hours"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 59,
+      "text": "- [ ] Mission control completing > 30 tasks/day (currently 28, dispatcher tuning in progress)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 60,
+      "text": "- [ ] Self-awareness index covering 65 active repos (currently 52)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 61,
+      "text": "- [ ] Agent-generated weekly infrastructure health report to #monitoring (in progress)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 62,
+      "text": "- [ ] AGENT_PRINCIPLES.md v3.0 amendment cycle (CEO ratification pending — see PR)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 74,
+      "text": "- [ ] Roblox game: growth pulse running daily with measurable DAU increase (currently baseline only)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 83,
+      "text": "- [ ] Zero critical security vulnerabilities (sustained 30 days)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 84,
+      "text": "- [ ] PM2 restart rate < 5/day sustained (currently 8/day, approaching)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 85,
+      "text": "- [ ] Live Trigger.dev deployment for content pipeline"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 86,
+      "text": "- [ ] Meshtastic bridge: offline-capable agent communication"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 87,
+      "text": "- [ ] Automated regression detection and self-healing across all repos (autofix expanding)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 88,
+      "text": "- [ ] Multi-brand unified observability dashboard (beyond Mission Control)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 89,
+      "text": "- [ ] SSE/WebSocket push replacing 30s polling in dashboard"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 90,
+      "text": "- [ ] One-click \"fix with confirmation\" workflows with deterministic stop conditions per lane"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 93,
+      "text": "- [ ] Resume SkynPatch, BWS growth initiatives at full capacity"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 96,
+      "text": "- [ ] First greenfield SaaS launched: concept → live < 48 hours"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 97,
+      "text": "- [ ] Customer support agent handling > 85% tickets autonomously (currently 78%)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 98,
+      "text": "- [ ] AutoPayAgent checkout expanded to BWS and SkynPatch products"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 101,
+      "text": "- [ ] Agents cross-referencing findings across orgs"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 102,
+      "text": "- [ ] Automated A/B testing of agent prompts → learnings promoted to SOUL.md"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 103,
+      "text": "- [ ] Agent-generated weekly business report to #monitoring"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 104,
+      "text": "- [ ] Mission control task completion > 40/day"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 105,
+      "text": "- [ ] Self-awareness index automated evolution based on commit patterns"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 106,
+      "text": "- [ ] AGENT_PRINCIPLES.md evolution to v4.0 based on Q2 operational learnings"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 293,
+      "text": "- [ ] All foreign key constraints applied"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 294,
+      "text": "- [ ] No orphaned data in tables"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 295,
+      "text": "- [ ] bot_conversion_events table exists"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 296,
+      "text": "- [ ] All ensureSchema() functions replaced with migration checks"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 299,
+      "text": "- [ ] Redis requires authentication"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 300,
+      "text": "- [ ] Postgres requires authentication"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 301,
+      "text": "- [ ] Discord gateway stable (<1 restart/day)"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 302,
+      "text": "- [ ] Critical security findings reduced from 3+ to <3"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 305,
+      "text": "- [ ] Restart rate <5/day (currently 8/day)"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 306,
+      "text": "- [ ] No memory leaks detected"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 307,
+      "text": "- [ ] Connection pool errors resolved"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 308,
+      "text": "- [ ] Ollama port conflicts resolved"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 313,
+      "text": "- [ ] MTTR <15 minutes"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 920,
+      "text": "- [ ] Tools enable complete workflows, not just API endpoint wrappers"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 921,
+      "text": "- [ ] Tool names reflect natural task subdivisions"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 922,
+      "text": "- [ ] Response formats optimize for agent context efficiency"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 923,
+      "text": "- [ ] Human-readable identifiers used where appropriate"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 924,
+      "text": "- [ ] Error messages guide agents toward correct usage"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 927,
+      "text": "- [ ] FOCUSED IMPLEMENTATION: Most important and valuable tools implemented"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 928,
+      "text": "- [ ] All tools registered using `registerTool` with complete configuration"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 929,
+      "text": "- [ ] All tools include `title`, `description`, `inputSchema`, and `annotations`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 930,
+      "text": "- [ ] Annotations correctly set (readOnlyHint, destructiveHint, idempotentHint, openWorldHint)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 931,
+      "text": "- [ ] All tools use Zod schemas for runtime input validation with `.strict()` enforcement"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 932,
+      "text": "- [ ] All Zod schemas have proper constraints and descriptive error messages"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 933,
+      "text": "- [ ] All tools have comprehensive descriptions with explicit input/output types"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 934,
+      "text": "- [ ] Descriptions include return value examples and complete schema documentation"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 935,
+      "text": "- [ ] Error messages are clear, actionable, and educational"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 938,
+      "text": "- [ ] TypeScript interfaces are defined for all data structures"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 939,
+      "text": "- [ ] Strict TypeScript is enabled in tsconfig.json"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 940,
+      "text": "- [ ] No use of `any` type - use `unknown` or proper types instead"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 941,
+      "text": "- [ ] All async functions have explicit Promise<T> return types"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 942,
+      "text": "- [ ] Error handling uses proper type guards (e.g., `axios.isAxiosError`, `z.ZodError`)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 945,
+      "text": "- [ ] Resources registered for appropriate data endpoints"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 946,
+      "text": "- [ ] Appropriate transport configured (stdio or streamable HTTP)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 947,
+      "text": "- [ ] Notifications implemented for dynamic server capabilities"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 948,
+      "text": "- [ ] Type-safe with SDK interfaces"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 951,
+      "text": "- [ ] Package.json includes all necessary dependencies"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 952,
+      "text": "- [ ] Build script produces working JavaScript in dist/ directory"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 953,
+      "text": "- [ ] Main entry point is properly configured as dist/index.js"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 954,
+      "text": "- [ ] Server name follows format: `{service}-mcp-server`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 955,
+      "text": "- [ ] tsconfig.json properly configured with strict mode"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 958,
+      "text": "- [ ] Pagination is properly implemented where applicable"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 959,
+      "text": "- [ ] Large responses check CHARACTER_LIMIT constant and truncate with clear messages"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 960,
+      "text": "- [ ] Filtering options are provided for potentially large result sets"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 961,
+      "text": "- [ ] All network operations handle timeouts and connection errors gracefully"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 962,
+      "text": "- [ ] Common functionality is extracted into reusable functions"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 963,
+      "text": "- [ ] Return types are consistent across similar operations"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 966,
+      "text": "- [ ] `npm run build` completes successfully without errors"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 967,
+      "text": "- [ ] dist/index.js created and executable"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 968,
+      "text": "- [ ] Server runs: `node dist/index.js --help`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 969,
+      "text": "- [ ] All imports resolve correctly"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/node_mcp_server.md",
+      "line": 970,
+      "text": "- [ ] Sample tool calls work as expected"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 673,
+      "text": "- [ ] Tools enable complete workflows, not just API endpoint wrappers"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 674,
+      "text": "- [ ] Tool names reflect natural task subdivisions"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 675,
+      "text": "- [ ] Response formats optimize for agent context efficiency"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 676,
+      "text": "- [ ] Human-readable identifiers used where appropriate"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 677,
+      "text": "- [ ] Error messages guide agents toward correct usage"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 680,
+      "text": "- [ ] FOCUSED IMPLEMENTATION: Most important and valuable tools implemented"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 681,
+      "text": "- [ ] All tools have descriptive names and documentation"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 682,
+      "text": "- [ ] Return types are consistent across similar operations"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 683,
+      "text": "- [ ] Error handling is implemented for all external calls"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 684,
+      "text": "- [ ] Server name follows format: `{service}_mcp`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 685,
+      "text": "- [ ] All network operations use async/await"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 686,
+      "text": "- [ ] Common functionality is extracted into reusable functions"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 687,
+      "text": "- [ ] Error messages are clear, actionable, and educational"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 688,
+      "text": "- [ ] Outputs are properly validated and formatted"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 691,
+      "text": "- [ ] All tools implement 'name' and 'annotations' in the decorator"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 692,
+      "text": "- [ ] Annotations correctly set (readOnlyHint, destructiveHint, idempotentHint, openWorldHint)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 693,
+      "text": "- [ ] All tools use Pydantic BaseModel for input validation with Field() definitions"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 694,
+      "text": "- [ ] All Pydantic Fields have explicit types and descriptions with constraints"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 695,
+      "text": "- [ ] All tools have comprehensive docstrings with explicit input/output types"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 696,
+      "text": "- [ ] Docstrings include complete schema structure for dict/JSON returns"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 697,
+      "text": "- [ ] Pydantic models handle input validation (no manual validation needed)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 700,
+      "text": "- [ ] Context injection used for logging, progress, or elicitation"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 701,
+      "text": "- [ ] Resources registered for appropriate data endpoints"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 702,
+      "text": "- [ ] Lifespan management implemented for persistent connections"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 703,
+      "text": "- [ ] Structured output types used (TypedDict, Pydantic models)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 704,
+      "text": "- [ ] Appropriate transport configured (stdio or streamable HTTP)"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 707,
+      "text": "- [ ] File includes proper imports including Pydantic imports"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 708,
+      "text": "- [ ] Pagination is properly implemented where applicable"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 709,
+      "text": "- [ ] Filtering options are provided for potentially large result sets"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 710,
+      "text": "- [ ] All async functions are properly defined with `async def`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 712,
+      "text": "- [ ] Type hints are used throughout the code"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 713,
+      "text": "- [ ] Constants are defined at module level in UPPER_CASE"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 716,
+      "text": "- [ ] Server runs successfully: `python your_server.py --help`"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 717,
+      "text": "- [ ] All imports resolve correctly"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 718,
+      "text": "- [ ] Sample tool calls work as expected"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 719,
+      "text": "- [ ] Error scenarios handled gracefully"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 232,
+      "text": "- [ ] **Test 2-3 sample references**: Verify they pull correct values before building full model"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 233,
+      "text": "- [ ] **Column mapping**: Confirm Excel columns match (e.g., column 64 = BL, not BK)"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 234,
+      "text": "- [ ] **Row offset**: Remember Excel rows are 1-indexed (DataFrame row 5 = Excel row 6)"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 237,
+      "text": "- [ ] **NaN handling**: Check for null values with `pd.notna()`"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 238,
+      "text": "- [ ] **Far-right columns**: FY data often in columns 50+"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 239,
+      "text": "- [ ] **Multiple matches**: Search all occurrences, not just first"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 240,
+      "text": "- [ ] **Division by zero**: Check denominators before using `/` in formulas (#DIV/0!)"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 241,
+      "text": "- [ ] **Wrong references**: Verify all cell references point to intended cells (#REF!)"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 242,
+      "text": "- [ ] **Cross-sheet references**: Use correct format (Sheet1!A1) for linking sheets"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 245,
+      "text": "- [ ] **Start small**: Test formulas on 2-3 cells before applying broadly"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 246,
+      "text": "- [ ] **Verify dependencies**: Check all cells referenced in formulas exist"
+    },
+    {
+      "file": "skills/skills/xlsx/SKILL.md",
+      "line": 247,
+      "text": "- [ ] **Test edge cases**: Include zero, negative, and very large values"
+    },
+    {
+      "file": "docs/SELF_HEALING_AUTO_IMPROVEMENT.md",
+      "line": 268,
+      "text": "- [ ] Predictive failure detection"
+    },
+    {
+      "file": "docs/SELF_HEALING_AUTO_IMPROVEMENT.md",
+      "line": 269,
+      "text": "- [ ] Automatic service restart (PM2 integration)"
+    },
+    {
+      "file": "docs/SELF_HEALING_AUTO_IMPROVEMENT.md",
+      "line": 270,
+      "text": "- [ ] Multi-agent coordination for recovery"
+    },
+    {
+      "file": "docs/SELF_HEALING_AUTO_IMPROVEMENT.md",
+      "line": 271,
+      "text": "- [ ] Advanced ML-based parameter tuning"
+    },
+    {
+      "file": "docs/SELF_HEALING_AUTO_IMPROVEMENT.md",
+      "line": 272,
+      "text": "- [ ] Cross-system learning (learn from other agents)"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 78,
+      "text": "- [ ] `STRIPE_SECRET_KEY` is set in `.env`"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 79,
+      "text": "- [ ] `STRIPE_WEBHOOK_SECRET` is set in `.env`"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 80,
+      "text": "- [ ] `.stripe-products.json` exists (SkynPatch) ✅"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 81,
+      "text": "- [ ] `.stripe-products-blackwallstreetopoly.json` exists (BlackWallStreet) ⚠️"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 82,
+      "text": "- [ ] Stripe webhook endpoint is registered in Stripe Dashboard"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 83,
+      "text": "- [ ] Webhook server is running (`scripts/webhook-server.js`)"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 84,
+      "text": "- [ ] Test payment links work in Stripe test mode"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 36,
+      "text": "- [ ] **BLOCKER: Greptile PR enforcement Monday March 3 (FOURTH MISSED DEADLINE — GOVERNANCE CRISIS)**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 51,
+      "text": "- [ ] **NEW: Dispatcher connection pool investigation** (new error signal: \"Cannot use a pool af...\")"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 53,
+      "text": "- [ ] **SUSPENDED: Security remediation trajectory assessment** (scan methodology conflicts + baseline volatility)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 68,
+      "text": "- [ ] Mission control completing > 20 tasks/day (currently unknown — monitoring dark 28+ days)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 69,
+      "text": "- [ ] Self-awareness index covering 100% of active development repos (currently 30+)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 70,
+      "text": "- [ ] Agent-generated weekly infrastructure health report to #monitoring"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 73,
+      "text": "- [ ] SkynPatch: lead autopilot reaching 500 enriched leads"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 74,
+      "text": "- [ ] BlackWallStreetOpoly: expand to 700 leads in 5 cities"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 75,
+      "text": "- [ ] Roblox game: growth pulse running daily with measurable DAU increase"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 77,
+      "text": "- [ ] QuantFusion: paper trading validation (3 months profitable before live consideration)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 91,
+      "text": "- [ ] Zero critical security vulnerabilities (sustained 30 days, VERIFIED with consistent scanning)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 92,
+      "text": "- [ ] PM2 restart rate < 5/day sustained (current ~21/day estimated, measure after reconciliation)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 93,
+      "text": "- [ ] Mission control stats dashboard with real-time visibility"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 94,
+      "text": "- [ ] Live Trigger.dev deployment for content pipeline"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 95,
+      "text": "- [ ] Meshtastic bridge: offline-capable agent communication"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 96,
+      "text": "- [ ] Automated regression detection and self-healing across all repos"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 106,
+      "text": "- [ ] Resume SkynPatch, BWS, Roblox growth initiatives"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 108,
+      "text": "- [ ] CopyLab: first paid content pack delivered"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 109,
+      "text": "- [ ] First greenfield SaaS launched (concept → live < 48 hours)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 110,
+      "text": "- [ ] Customer support agent handling > 85% tickets autonomously"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 111,
+      "text": "- [ ] Model portfolio routing operational"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 114,
+      "text": "- [ ] Agents cross-referencing findings across orgs"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 115,
+      "text": "- [ ] Automated A/B testing of agent prompts → learnings promoted to SOUL.md"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 116,
+      "text": "- [ ] Agent-generated weekly business report to #monitoring"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 117,
+      "text": "- [ ] Mission control task completion > 30/day"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 118,
+      "text": "- [ ] Telegram watchdog checks fully operational with alerting"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 119,
+      "text": "- [ ] Self-awareness index automated evolution based on commit patterns"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 116,
+      "text": "- [ ] 文字对比度≥7:1（主要内容）"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 117,
+      "text": "- [ ] 文字对比度≥4.5:1（次要内容）"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 118,
+      "text": "- [ ] 圆角≤12px"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 119,
+      "text": "- [ ] 阴影Y轴≤8px"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 120,
+      "text": "- [ ] 装饰透明度≤0.10"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 121,
+      "text": "- [ ] 装饰面积≤5%"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 122,
+      "text": "- [ ] 背景是纯白或极浅灰"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 123,
+      "text": "- [ ] 无圆润字体"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 124,
+      "text": "- [ ] 无emoji装饰"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 125,
+      "text": "- [ ] 无有机形状（云朵、花朵）"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 126,
+      "text": "- [ ] 无强阴影（扩散>12px）"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/modern-minimal/constraints.md",
+      "line": 127,
+      "text": "- [ ] 留白≥50%"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 115,
+      "text": "- [ ] 主色饱和度在60-70%"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 116,
+      "text": "- [ ] 主色明度在75-85%"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 117,
+      "text": "- [ ] 文字对比度≥4.5:1"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 118,
+      "text": "- [ ] 圆角≥16px"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 119,
+      "text": "- [ ] 阴影Y轴≥12px"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 120,
+      "text": "- [ ] 装饰透明度≤0.25"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 121,
+      "text": "- [ ] 装饰面积≤10%"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 122,
+      "text": "- [ ] 无纯黑#000000"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 123,
+      "text": "- [ ] 无尖锐元素（<8px圆角）"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 124,
+      "text": "- [ ] 无硬边阴影"
+    },
+    {
+      "file": "skills/skill-prompt-generator/design-logic/warm-cute/constraints.md",
+      "line": 125,
+      "text": "- [ ] 留白≥55%"
+    }
+  ],
+  "nonActionable": [
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 59,
+      "text": "- [ ] MCP `search_text` for `stripe.` and `require(\"stripe\")` in `<repo-name>`"
+    },
+    {
+      "file": "docs/CORE-MIGRATION-template.md",
+      "line": 104,
+      "text": "- [ ] MCP `search_text` for `MailerSend`, `Maileroo`, `Resend`, `sendEmail` in `<repo-name>`"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 34,
+      "text": "- [ ] PM2 restart rate 8/day → <5/day by week 9 (dispatcher queue throughput tuning in progress)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 35,
+      "text": "- [ ] PM2 uptime 88% → 95% sustained by week 10"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 36,
+      "text": "- [ ] Security critical 3 → 0 by week 10 (findings in sprint, PRs blocked)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 37,
+      "text": "- [ ] Infrastructure commit ratio 26% → 30% by week 9"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 38,
+      "text": "- [ ] Self-awareness index 52 → 65 repos by week 10"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 70,
+      "text": "- [ ] SkynPatch: reach 500 enriched leads/week by week 10"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 71,
+      "text": "- [ ] SkynPatch: first signed client by week 11"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 72,
+      "text": "- [ ] CopyLab: second client onboarded, $800 MRR by end of Q1"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 73,
+      "text": "- [ ] Agency OS: first paying client close by week 12, $1,200 MRR"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 75,
+      "text": "- [ ] QuantFusion: continue paper trading — week 12 live capital evaluation"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 82,
+      "text": "- [ ] Achieve 99.5% PM2 uptime target (sustained 30 days)"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 94,
+      "text": "- [ ] Agency OS: first paying client onboarded"
+    },
+    {
+      "file": "ROADMAP.md",
+      "line": 95,
+      "text": "- [ ] CopyLab: pipeline systematized, $2,000+ MRR"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 311,
+      "text": "- [ ] Uptime >95% (currently 88%)"
+    },
+    {
+      "file": "ACTION-PLAN-STATUS-REVIEW.md",
+      "line": 312,
+      "text": "- [ ] Target: 99.5% uptime"
+    },
+    {
+      "file": "skills/skills/mcp-builder/reference/python_mcp_server.md",
+      "line": 711,
+      "text": "- [ ] HTTP client usage follows async patterns with proper context managers"
+    },
+    {
+      "file": "STRIPE_PAYMENT_SETUP.md",
+      "line": 85,
+      "text": "- [ ] Email templates use correct payment URLs"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 17,
+      "text": "- [ ] **BLOCKER: Reconcile PM2 measurement conflicts by March 3 (MEASUREMENT INTEGRITY CRISIS)**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 24,
+      "text": "- [ ] **BLOCKER: Reconcile security scan conflicts by March 3 (CONTRADICTS IMPROVEMENT NARRATIVE)**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 30,
+      "text": "- [ ] **CRITICAL: Mission-control monitoring restored by March 7 (28+ days operational blindness)**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 43,
+      "text": "- [ ] **SUSTAIN: Infrastructure commit ratio 10% → 30% by March 14 (PLATEAU AFTER FIRST TRACTION)**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 49,
+      "text": "- [ ] Gateway DISCORD_BOT_TOKEN loop fix by March 7 (10+ reviews unfixed, WORSENING from 9+)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 50,
+      "text": "- [ ] Ollama port conflict (0.0.0.0:11434) resolution by March 7 (10+ consecutive errors, WORSENING from 9+)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 52,
+      "text": "- [ ] **SUSPENDED: PM2 stabilization trajectory assessment** (measurement conflicts + static uptime + restart acceleration)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 76,
+      "text": "- [ ] Agency OS: first paying client onboarded"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 78,
+      "text": "- [ ] CopyLab: first client content pack delivered"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 85,
+      "text": "- [ ] **PREREQUISITE: Instrumentation audit complete by March 14**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 90,
+      "text": "- [ ] Achieve 99.5% PM2 uptime target (sustained 30 days, VERIFIED with reconciled metrics)"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 97,
+      "text": "- [ ] **PATH 3 ARCHITECTURAL REDESIGN IF (by March 21):**"
+    },
+    {
+      "file": "org/ROADMAP.md",
+      "line": 107,
+      "text": "- [ ] Agency OS: first paying client onboarded"
+    }
+  ]
+}

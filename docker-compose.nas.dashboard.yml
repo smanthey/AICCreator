@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  architect-api:
+    image: node:20-alpine
+    container_name: claw-architect-api-nas
+    restart: unless-stopped
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      ARCHITECT_PORT: "4051"
+      ARCHITECT_ALLOWED_ORIGINS: "${ARCHITECT_ALLOWED_ORIGINS:-https://${DASHBOARD_DOMAIN}}"
+    command: sh -lc "npm ci && node ./scripts/architect-api.js"
+    volumes:
+      - ./:/app
+    expose:
+      - "4051"
+
+  caddy:
+    image: caddy:2.9-alpine
+    container_name: claw-dashboard-caddy
+    restart: unless-stopped
+    depends_on:
+      - architect-api
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DASHBOARD_DOMAIN: "${DASHBOARD_DOMAIN}"
+      DASHBOARD_EMAIL: "${DASHBOARD_EMAIL}"
+      DASHBOARD_BASICAUTH_USER: "${DASHBOARD_BASICAUTH_USER}"
+      DASHBOARD_BASICAUTH_HASH: "${DASHBOARD_BASICAUTH_HASH}"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: claw-dashboard-tunnel
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      TUNNEL_TOKEN: "${CLOUDFLARE_TUNNEL_TOKEN}"
+    depends_on:
+      - caddy
+    profiles:
+      - tunnel
+
+volumes:
+  caddy_data:
+  caddy_config:
+

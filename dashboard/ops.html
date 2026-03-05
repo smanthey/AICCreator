@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Ops Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111a2e;
+      --text: #eaf0ff;
+      --muted: #9fb0d1;
+      --ok: #3ddc97;
+      --warn: #ffb020;
+      --bad: #ff5d5d;
+      --line: #233252;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top right, #182746 0%, var(--bg) 45%);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .wrap {
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .title { margin: 0; font-size: 1.15rem; }
+    .meta { color: var(--muted); font-size: .85rem; }
+    .btn {
+      background: #1a2b4e;
+      color: #fff;
+      border: 1px solid #2b3f67;
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .card .label { color: var(--muted); font-size: .82rem; }
+    .card .value { font-size: 1.45rem; font-weight: 700; margin-top: 2px; }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap: 12px;
+    }
+    .panel h3 { margin: 0 0 10px 0; font-size: 1rem; }
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .panel-head h3 { margin: 0; }
+    .toggle-group {
+      display: inline-flex;
+      border: 1px solid #2b3f67;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .toggle-btn {
+      background: #1a2b4e;
+      color: #cfe0ff;
+      border: 0;
+      border-right: 1px solid #2b3f67;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: .82rem;
+    }
+    .toggle-btn:last-child { border-right: 0; }
+    .toggle-btn.active {
+      background: #2a4f8a;
+      color: #fff;
+      font-weight: 600;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+    th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid #1d2a43; }
+    th { color: var(--muted); font-weight: 600; }
+    .status.online { color: var(--ok); }
+    .status.stopped, .status.errored { color: var(--bad); }
+    .status.stale { color: var(--warn); }
+    .bottom { min-height: 280px; }
+    @media (max-width: 1024px) {
+      .kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <h1 class="title">Agent Ops Dashboard</h1>
+      <div>
+        <button class="btn" id="refreshBtn">Refresh</button>
+        <span class="meta" id="updatedAt">loading...</span>
+      </div>
+    </div>
+
+    <section class="kpis">
+      <div class="card"><div class="label">Running</div><div class="value" id="kpiRunning">-</div></div>
+      <div class="card"><div class="label">Failed Today</div><div class="value" id="kpiFailed">-</div></div>
+      <div class="card"><div class="label">Queue Depth</div><div class="value" id="kpiQueue">-</div></div>
+      <div class="card"><div class="label">Spend Today</div><div class="value" id="kpiSpend">-</div></div>
+    </section>
+
+    <section class="layout">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>PM2 Processes</h3>
+          <div class="toggle-group" role="tablist" aria-label="PM2 type filter">
+            <button class="toggle-btn active" id="jobsFilterAll" data-filter="all" type="button">All</button>
+            <button class="toggle-btn" id="jobsFilterPersistent" data-filter="persistent" type="button">Persistent</button>
+            <button class="toggle-btn" id="jobsFilterScheduled" data-filter="scheduled" type="button">Scheduled</button>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th><th>Type</th><th>Status</th><th>Schedule</th><th>Restarts</th><th>Uptime</th><th>CPU</th><th>Mem</th>
+            </tr>
+          </thead>
+          <tbody id="jobsBody"></tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h3>Running Now</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Worker</th><th>Role</th><th>Status</th><th>Heartbeat</th>
+            </tr>
+          </thead>
+          <tbody id="workersBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel bottom">
+      <h3>Daily Spend by Provider (last 14 days)</h3>
+      <canvas id="spendChart"></canvas>
+    </section>
+  </div>
+
+  <script>
+    const byId = (id) => document.getElementById(id);
+    let chart;
+    let jobsFilter = "all";
+    let lastJobs = [];
+
+    async function getJson(path) {
+      // Add timestamp to prevent caching
+      const url = path + (path.includes("?") ? "&" : "?") + "_t=" + Date.now();
+      const r = await fetch(url, { cache: "no-store" });
+      if (!r.ok) throw new Error(path + " failed");
+      return r.json();
+    }
+
+    function money(n) { return "$" + Number(n || 0).toFixed(3); }
+
+    function setJobsFilter(nextFilter) {
+      jobsFilter = nextFilter;
+      const buttons = document.querySelectorAll(".toggle-btn[data-filter]");
+      buttons.forEach((btn) => {
+        const active = btn.getAttribute("data-filter") === jobsFilter;
+        btn.classList.toggle("active", active);
+        btn.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      renderJobs(lastJobs);
+    }
+
+    function renderJobs(jobs) {
+      lastJobs = Array.isArray(jobs) ? jobs : [];
+      const rows = jobsFilter === "all"
+        ? lastJobs
+        : lastJobs.filter((j) => String(j.runtime_class || "").toLowerCase() === jobsFilter);
+      const body = byId("jobsBody");
+      body.innerHTML = rows.map((j) => `
+        <tr>
+          <td>${j.name}</td>
+          <td>${j.runtime_class || "unknown"}</td>
+          <td class="status ${j.status}">${j.status}</td>
+          <td>${j.schedule || "-"}</td>
+          <td>${j.restarts}</td>
+          <td>${j.uptime}</td>
+          <td>${j.cpu}%</td>
+          <td>${j.memory_mb} MB</td>
+        </tr>
+      `).join("") || `<tr><td colspan="8">No jobs found</td></tr>`;
+    }
+
+    function renderWorkers(workers) {
+      const body = byId("workersBody");
+      body.innerHTML = workers.map((w) => `
+        <tr>
+          <td>${w.worker_id}</td>
+          <td>${w.role}</td>
+          <td class="status ${w.status}">${w.status}</td>
+          <td>${w.heartbeat_age_sec}s</td>
+        </tr>
+      `).join("") || `<tr><td colspan="4">No active workers</td></tr>`;
+    }
+
+    function renderChart(series) {
+      const days = [...new Set(series.map((x) => x.day))].sort();
+      const providers = [...new Set(series.map((x) => x.provider))].sort();
+      const colors = { openai: "#3ddc97", anthropic: "#ffb020", ollama: "#57a1ff", unknown: "#9fb0d1" };
+
+      const datasets = providers.map((p) => ({
+        label: p,
+        data: days.map((d) => series
+          .filter((x) => x.day === d && x.provider === p)
+          .reduce((s, x) => s + Number(x.usd || 0), 0)),
+        borderColor: colors[p] || "#9fb0d1",
+        backgroundColor: colors[p] || "#9fb0d1",
+        tension: .25,
+        fill: false,
+      }));
+
+      const cfg = {
+        type: "line",
+        data: { labels: days, datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { labels: { color: "#eaf0ff" } } },
+          scales: {
+            x: { ticks: { color: "#9fb0d1" }, grid: { color: "#1d2a43" } },
+            y: { ticks: { color: "#9fb0d1" }, grid: { color: "#1d2a43" } },
+          }
+        }
+      };
+
+      if (chart) chart.destroy();
+      chart = new Chart(byId("spendChart"), cfg);
+    }
+
+    async function loadAll() {
+      const [overview, jobs, workers] = await Promise.all([
+        getJson('/api/overview'), getJson('/api/jobs'), getJson('/api/workers')
+      ]);
+
+      byId("kpiRunning").textContent = overview.kpis.running;
+      byId("kpiFailed").textContent = overview.kpis.failed_today;
+      byId("kpiQueue").textContent = overview.kpis.queue_depth;
+      byId("kpiSpend").textContent = money(overview.kpis.spend_today_usd);
+      byId("updatedAt").textContent = `updated ${overview.generated_at}`;
+
+      renderJobs(jobs.jobs || []);
+      renderWorkers(workers.workers || []);
+      renderChart(overview.spend_series || []);
+    }
+
+    byId("refreshBtn").addEventListener("click", loadAll);
+    byId("jobsFilterAll").addEventListener("click", () => setJobsFilter("all"));
+    byId("jobsFilterPersistent").addEventListener("click", () => setJobsFilter("persistent"));
+    byId("jobsFilterScheduled").addEventListener("click", () => setJobsFilter("scheduled"));
+    setJobsFilter("all");
+    loadAll();
+    setInterval(loadAll, 15000);
+  </script>
+</body>
+</html>

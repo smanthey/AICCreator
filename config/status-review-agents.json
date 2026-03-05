@@ -1,0 +1,57 @@
+[
+  {
+    "id": "status_review_coordinator",
+    "name": "Status Review Coordinator",
+    "owner": "OpenClaw Mission Control",
+    "description": "Orchestrates status review remediation workflow, tracks progress, and manages priorities across schema integrity, security, worker stability, and uptime monitoring.",
+    "job_description": "Read ACTION-PLAN-STATUS-REVIEW.md, determine which areas need attention, trigger appropriate worker agents, synthesize reports, and update STATUS.md.",
+    "primary_command": "npm run -s status:review:coordinator",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *",
+    "priority": 1
+  },
+  {
+    "id": "schema_integrity_agent",
+    "name": "Schema Integrity Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Manages database schema integrity: applies migrations, verifies foreign keys, consolidates ensureSchema() functions.",
+    "job_description": "Verify migration 078 applied, check bot_conversion_events table, audit ensureSchema() functions, replace with migration checks, report missing foreign keys.",
+    "primary_command": "npm run -s status:review:schema",
+    "heartbeat_minutes": 120,
+    "cron": "0 */2 * * *",
+    "priority": 2
+  },
+  {
+    "id": "security_remediation_agent",
+    "name": "Security Remediation Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Remediates critical security findings: Redis/Postgres authentication, Discord gateway stability, security posture tracking.",
+    "job_description": "Test Redis/Postgres authentication, enable if missing, monitor Discord gateway, implement fixes for crash-looping, track security critical count.",
+    "primary_command": "npm run -s status:review:security",
+    "heartbeat_minutes": 60,
+    "cron": "0 * * * *",
+    "priority": 1
+  },
+  {
+    "id": "worker_stability_agent",
+    "name": "Worker Stability Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Analyzes and fixes worker restart patterns, memory leaks, connection pool errors, and service conflicts.",
+    "job_description": "Analyze PM2 logs for restart patterns, check memory leaks, monitor connection pools, investigate Ollama conflicts, implement fixes.",
+    "primary_command": "npm run -s status:review:worker",
+    "heartbeat_minutes": 30,
+    "cron": "*/30 * * * *",
+    "priority": 2
+  },
+  {
+    "id": "uptime_monitoring_agent",
+    "name": "Uptime Monitoring Agent",
+    "owner": "OpenClaw Mission Control",
+    "description": "Monitors and improves system uptime: tracks downtime causes, implements infrastructure hardening, improves alerting.",
+    "job_description": "Calculate uptime percentage, identify downtime causes, track service health, implement monitoring improvements and infrastructure hardening.",
+    "primary_command": "npm run -s status:review:uptime",
+    "heartbeat_minutes": 15,
+    "cron": "*/15 * * * *",
+    "priority": 2
+  }
+]

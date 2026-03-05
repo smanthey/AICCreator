@@ -1,0 +1,910 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-05T03:47:01.098Z",
+  "removed_disallowed_channels": [
+    "claw-discord-gateway"
+  ],
+  "duplicate_singleton_candidates": [
+    {
+      "name": "claw-priority-repo-major-update-daily",
+      "count": 2,
+      "statuses": [
+        "online",
+        "online"
+      ]
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "count": 10,
+      "statuses": [
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped",
+        "stopped"
+      ]
+    }
+  ],
+  "remaining_processes": [
+    {
+      "name": "claw-dispatcher",
+      "status": "online",
+      "restarts": 75
+    },
+    {
+      "name": "claw-webhook-server",
+      "status": "online",
+      "restarts": 50
+    },
+    {
+      "name": "claw-platform-daily",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-salesops-maintenance",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-credit-autopilot",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-loyalty-maintenance",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-security-sweep",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-ollama",
+      "status": "online",
+      "restarts": 19
+    },
+    {
+      "name": "claw-ollama-maintenance",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-global-status-pulse",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-ai-work-pulse",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-git-sites-subagent-pulse",
+      "status": "stopped",
+      "restarts": 4
+    },
+    {
+      "name": "claw-flow-regression-pulse",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-utilization-autofill",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-worker",
+      "status": "online",
+      "restarts": 13
+    },
+    {
+      "name": "claw-regression-autofix-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-brand-control-plane",
+      "status": "online",
+      "restarts": 10
+    },
+    {
+      "name": "claw-launch-e2e-matrix",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-security-remediation-queue",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-credit-e2e-live-loop",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-backlog-orchestrator",
+      "status": "stopped",
+      "restarts": 264
+    },
+    {
+      "name": "claw-dead-letter-reconcile",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-github-scan-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "m1-laptop-worker-ai",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "m1-laptop-ollama-maint",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-lead-autopilot-skynpatch",
+      "status": "online",
+      "restarts": 13
+    },
+    {
+      "name": "claw-lead-autopilot-bws",
+      "status": "online",
+      "restarts": 13
+    },
+    {
+      "name": "claw-system-cleanup",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-capability-factory-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-saas-opportunity-researcher",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-backup-to-nas",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-backup-verify-nas",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-needs-attention-autofix",
+      "status": "stopped",
+      "restarts": 45
+    },
+    {
+      "name": "claw-telegram-health",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-qa-human-blocking",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-agent-memory-maintenance",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-proactive-research-assistant",
+      "status": "stopped",
+      "restarts": 4
+    },
+    {
+      "name": "claw-autonomy-pr-cycle",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-self-awareness-index",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-self-mod-worker",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-heartbeat",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-mission-saas_development",
+      "status": "stopped",
+      "restarts": 57
+    },
+    {
+      "name": "claw-mission-content_writing",
+      "status": "stopped",
+      "restarts": 56
+    },
+    {
+      "name": "claw-mission-research_analysis",
+      "status": "stopped",
+      "restarts": 55
+    },
+    {
+      "name": "claw-mission-data_processing",
+      "status": "stopped",
+      "restarts": 28
+    },
+    {
+      "name": "claw-mission-scheduling_calendar",
+      "status": "stopped",
+      "restarts": 274
+    },
+    {
+      "name": "claw-mission-code_review",
+      "status": "stopped",
+      "restarts": 20
+    },
+    {
+      "name": "claw-mission-debugging",
+      "status": "stopped",
+      "restarts": 35
+    },
+    {
+      "name": "claw-mission-ui_ux_design",
+      "status": "stopped",
+      "restarts": 37
+    },
+    {
+      "name": "claw-mission-marketing_social",
+      "status": "stopped",
+      "restarts": 16
+    },
+    {
+      "name": "claw-mission-system_administration",
+      "status": "stopped",
+      "restarts": 30
+    },
+    {
+      "name": "claw-overnight-maintenance",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-overnight-backup",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-resourceful-file-resolver",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-offgrid-meshtastic-bridge",
+      "status": "stopped",
+      "restarts": 12
+    },
+    {
+      "name": "claw-saas-pain-opportunity-report",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-roblox_game_growth",
+      "status": "stopped",
+      "restarts": 183
+    },
+    {
+      "name": "claw-events-consumer",
+      "status": "stopped",
+      "restarts": 12
+    },
+    {
+      "name": "claw-events-spawner",
+      "status": "stopped",
+      "restarts": 10
+    },
+    {
+      "name": "claw-finance-queue",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-quantfusion-queue",
+      "status": "stopped",
+      "restarts": 4
+    },
+    {
+      "name": "claw-marketplace-os",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-agency-growth-os",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-roblox-growth-pulse",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-goal-autopilot",
+      "status": "stopped",
+      "restarts": 9
+    },
+    {
+      "name": "claw-clawhub-skill-factory",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-quantfusion_algo_dev",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-oss-code-review",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-quantfusion-overnight-algo-dev",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-opengoat-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-overnight-advisory-board",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-ai-satellite-worker-ai",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-ai-satellite-ollama-maint",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-ai-satellite-system-cleanup",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-ai-satellite-backup-to-nas",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "i7-desktop-worker-nas",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "i7-desktop-worker-io",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "i7-desktop-system-cleanup",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "i7-desktop-backup-to-nas",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-model-routing-watchdog",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-cookiespass-mission-pulse",
+      "status": "stopped",
+      "restarts": 7
+    },
+    {
+      "name": "claw-weekly-trends-brief",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-team-pa-coordinator",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-team-x-growth",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-team-opportunities-scout",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-team-trading-paper",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-team-security-monitor",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-team-builder",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-todo-6am-pull",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-prompt-oracle",
+      "status": "online",
+      "restarts": 79
+    },
+    {
+      "name": "claw-auto-heal-3h",
+      "status": "stopped",
+      "restarts": 7
+    },
+    {
+      "name": "claw-github-bootstrap-managed-repos",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-device-utilization-pulse",
+      "status": "stopped",
+      "restarts": 70
+    },
+    {
+      "name": "claw-openclaw-coordinator",
+      "status": "online",
+      "restarts": 909
+    },
+    {
+      "name": "claw-coordinator-watchdog",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-auto-recovery",
+      "status": "stopped",
+      "restarts": 12
+    },
+    {
+      "name": "claw-bot-commerce-api",
+      "status": "online",
+      "restarts": 76
+    },
+    {
+      "name": "claw-bot-discovery",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-bot-outreach",
+      "status": "stopped",
+      "restarts": 20
+    },
+    {
+      "name": "claw-db-janitor",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-status-review-coordinator",
+      "status": "stopped",
+      "restarts": 59
+    },
+    {
+      "name": "claw-status-review-schema",
+      "status": "stopped",
+      "restarts": 16
+    },
+    {
+      "name": "claw-status-review-security",
+      "status": "stopped",
+      "restarts": 28
+    },
+    {
+      "name": "claw-status-review-worker",
+      "status": "stopped",
+      "restarts": 55
+    },
+    {
+      "name": "claw-status-review-uptime",
+      "status": "stopped",
+      "restarts": 122
+    },
+    {
+      "name": "claw-daily-fix-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-security-council",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-experiment-engine",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-payclaw_saas_builder",
+      "status": "stopped",
+      "restarts": 16
+    },
+    {
+      "name": "claw-sre-hourly-triage",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-sre-daily-maintenance",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-mission-bot_collection_autonomous",
+      "status": "stopped",
+      "restarts": 11
+    },
+    {
+      "name": "claw-uptime-watchdog-hourly",
+      "status": "stopped",
+      "restarts": 5
+    },
+    {
+      "name": "jcodemunch-api",
+      "status": "stopped",
+      "restarts": 5
+    },
+    {
+      "name": "claw-repomap",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-payclaw-drift-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-pm2-failure-symbol-triage",
+      "status": "online",
+      "restarts": 1
+    },
+    {
+      "name": "claw-daily-feature-rotation",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-symbolic-qa-hub",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-closed-loop-daily",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-knowledge-troll-harvest",
+      "status": "stopped",
+      "restarts": 3
+    },
+    {
+      "name": "claw-pattern-robust-builder",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-production-kpi-flywheel",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-forward-progress-enforcer",
+      "status": "online",
+      "restarts": 23
+    },
+    {
+      "name": "claw-agent-streamline-pulse",
+      "status": "online",
+      "restarts": 1
+    },
+    {
+      "name": "claw-learning-journal-email",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-learning_journal_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-media_os_lane",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-learning_flywheel_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-fix_lane_guardian",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-mission-gocrawdaddy_saas_builder",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-cookiespass_finisher",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-business_research_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-business_builder_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-business_updater_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-business_improver_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-business_coordinator_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-task-governor",
+      "status": "online",
+      "restarts": 140
+    },
+    {
+      "name": "claw-security-bind-guard",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-priority-repo-major-update-daily",
+      "status": "online",
+      "restarts": 22
+    },
+    {
+      "name": "claw-priority-repo-major-update-daily",
+      "status": "online",
+      "restarts": 22
+    },
+    {
+      "name": "claw-system-4h-checkfix",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-mcp-ops-agent",
+      "status": "stopped",
+      "restarts": 2
+    },
+    {
+      "name": "claw-agent-fleet-manager",
+      "status": "stopped",
+      "restarts": 17
+    },
+    {
+      "name": "claw-mission-index_sync_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 1
+    },
+    {
+      "name": "claw-architect-api",
+      "status": "online",
+      "restarts": 296
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-captureinbound_multitenant_guardian",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-capture_usage_report_hardener",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-infinitedata_integrity_lane",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-inbound_cookies_release_guard",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-autopay_ui_integrity_lane",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-bot-sales-research-daily",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "clawpay-task-master",
+      "status": "online",
+      "restarts": 74
+    },
+    {
+      "name": "clawpay-taskmaster-checkfix",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "clawpay-kaizen-swarm",
+      "status": "stopped",
+      "restarts": 5
+    },
+    {
+      "name": "claw-moltbook-harvester",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mcp-memory-consolidate",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mcp-benchmark-pack",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mcp-inspector-contract",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-mission-masterpiece_builder_agent",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-worker-nas",
+      "status": "online",
+      "restarts": 2
+    },
+    {
+      "name": "claw-worker-ai",
+      "status": "online",
+      "restarts": 1
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-exemplar-repos",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-repo-readiness-pulse",
+      "status": "stopped",
+      "restarts": 0
+    },
+    {
+      "name": "claw-worker-ai",
+      "status": "online",
+      "restarts": 0
+    },
+    {
+      "name": "claw-worker-nas",
+      "status": "online",
+      "restarts": 0
+    }
+  ]
+}

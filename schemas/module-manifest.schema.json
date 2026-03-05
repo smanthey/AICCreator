@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://claw-architect.local/schemas/module-manifest.schema.json",
+  "title": "Clawbuilder Module Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "version",
+    "kind",
+    "runtime",
+    "framework",
+    "requires",
+    "installs"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[a-z0-9][a-z0-9._/-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "module",
+        "blueprint"
+      ]
+    },
+    "runtime": {
+      "type": "string",
+      "enum": [
+        "node"
+      ]
+    },
+    "framework": {
+      "type": "string",
+      "enum": [
+        "nextjs-app-router"
+      ]
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "installs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "env",
+        "routes",
+        "db_migrations",
+        "ui_pages",
+        "jobs",
+        "playwright_packs"
+      ],
+      "properties": {
+        "env": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "uniqueItems": true
+        },
+        "db_migrations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "ui_pages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "uniqueItems": true
+        },
+        "jobs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "playwright_packs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

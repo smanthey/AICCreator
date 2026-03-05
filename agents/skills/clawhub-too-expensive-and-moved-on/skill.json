@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-too-expensive-and-moved-on",
+  "name": "Too Expensive\" And Moved On Skill",
+  "version": "1.0.0",
+  "description": "too expensive\" and moved on",
+  "tasks": [
+    "CLAWHUB_TOO_EXPENSIVE_AND_MOVED_ON_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 19,
+    "model": "one_time"
+  }
+}

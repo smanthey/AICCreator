@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "cycle_started_at": "2026-03-04T07:00:15.965Z",
+  "cycle_finished_at": "2026-03-04T07:00:20.434Z",
+  "cycle_number": 11,
+  "config": {
+    "loop_seconds": 600,
+    "discovery_every_minutes": 120,
+    "outreach_every_minutes": 60,
+    "research_every_minutes": 1440,
+    "kaizen_every_minutes": 60
+  },
+  "services": {
+    "claw-prompt-oracle": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-commerce-api": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-discord-gateway": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-discovery": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    },
+    "claw-bot-outreach": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-sales-research-daily": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    }
+  },
+  "always_on_recovery": [
+    {
+      "name": "claw-prompt-oracle",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-bot-commerce-api",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-discord-gateway",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    }
+  ],
+  "channel_readiness": {
+    "discord": {
+      "configured": true,
+      "missing": []
+    },
+    "telegram": {
+      "configured": true,
+      "missing": []
+    },
+    "whatsapp": {
+      "configured": true,
+      "missing": []
+    },
+    "reddit": {
+      "configured": false,
+      "missing": [
+        "REDDIT_CLIENT_ID",
+        "REDDIT_CLIENT_SECRET"
+      ]
+    },
+    "email": {
+      "configured": true,
+      "missing": []
+    },
+    "github_discovery": {
+      "configured": true,
+      "missing": []
+    },
+    "stripe_checkout": {
+      "configured": true,
+      "missing": []
+    }
+  },
+  "cadence_runs": [],
+  "budget": {
+    "limits": {
+      "max_calls": 60,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 120000
+    },
+    "usage": {
+      "calls": 4,
+      "total_tokens": 12,
+      "by_tool": {
+        "pm2_list": 12
+      }
+    },
+    "violations": [],
+    "ok": true
+  },
+  "state": {
+    "cycles": 11,
+    "last_discovery_at": "2026-03-04T05:01:32.451Z",
+    "last_outreach_at": "2026-03-04T06:43:09.759Z",
+    "last_research_at": "2026-03-04T05:26:32.776Z",
+    "last_kaizen_at": "2026-03-04T06:56:54.908Z",
+    "last_bootstrap_at": "2026-03-04T05:00:19.495Z"
+  }
+}

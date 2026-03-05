@@ -1,0 +1,28 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/init.luau:18:local server = require("@self/process/server")
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/init.luau:29:	server.start()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:12:-- Shared with: src/process/server.luau (Infeasible to split this into another file)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:43:local function on_server_event(player: Player, data, references)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:63:local server = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:65:function server.sendAllReliable(id: number, writer: (value: any) -> (), data: { [string]: any })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:69:function server.sendAllUnreliable(id: number, writer: (value: any) -> (), data: { [string]: any })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:73:function server.sendPlayerReliable(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:82:function server.sendPlayerUnreliable(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:91:function server.start()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:94:	reliableRemote.OnServerEvent:Connect(on_server_event)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:99:	unreliableRemote.OnServerEvent:Connect(on_server_event)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:146:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:8:local server = require("../process/server")
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:10:local run_context: "server" | "client" = if RunService:IsServer() then "server" else "client"
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:21:	local serverSendFunction: (player: Player, id: number, writer: (value: any) -> (), data: any) -> () = if reliabilityType
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:23:		then server.sendPlayerReliable
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:24:		else server.sendPlayerUnreliable
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:26:	local serverSendAllFunction: (id: number, writer: (value: any) -> (), data: any) -> () = if reliabilityType
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:28:		then server.sendAllReliable
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:29:		else server.sendAllUnreliable
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:49:			elseif index == "send" and run_context == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:50:				error("You cannot use send on the server")
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:58:	if run_context == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:61:				serverSendFunction(player, id, writer, data)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:66:			serverSendFunction(player, id, writer, data)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:72:					serverSendFunction(player, id, writer, data)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:78:			serverSendAllFunction(id, writer, data)

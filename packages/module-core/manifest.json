@@ -1,0 +1,28 @@
+{
+  "name": "module-core/platform-baseline",
+  "version": "1.0.0",
+  "kind": "module",
+  "runtime": "node",
+  "framework": "nextjs-app-router",
+  "requires": [
+    "core"
+  ],
+  "installs": {
+    "env": [
+      "POSTGRES_HOST",
+      "POSTGRES_PORT",
+      "POSTGRES_DB",
+      "POSTGRES_USER",
+      "POSTGRES_PASSWORD"
+    ],
+    "routes": [
+      "/api/healthz"
+    ],
+    "db_migrations": [],
+    "ui_pages": [],
+    "jobs": [],
+    "playwright_packs": [
+      "core-smoke"
+    ]
+  }
+}

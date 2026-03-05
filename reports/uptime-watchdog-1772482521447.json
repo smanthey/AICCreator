@@ -1,0 +1,496 @@
+{
+  "started": "2026-03-02T20:00:00.841Z",
+  "dry_run": false,
+  "phase1": {
+    "pm2": {
+      "ok": false,
+      "processesTotal": 123,
+      "alwaysOnExpected": [
+        "claw-ollama",
+        "claw-dispatcher",
+        "claw-worker-nas",
+        "claw-worker-ai",
+        "claw-architect-api",
+        "claw-webhook-server",
+        "claw-offgrid-meshtastic-bridge",
+        "claw-brand-control-plane",
+        "claw-lead-autopilot-skynpatch",
+        "claw-lead-autopilot-bws",
+        "claw-discord-gateway",
+        "claw-prompt-oracle",
+        "claw-bot-commerce-api",
+        "claw-events-consumer",
+        "claw-events-spawner"
+      ],
+      "cronApps": [
+        "claw-auto-heal-3h",
+        "claw-daily-fix-pulse",
+        "claw-platform-daily",
+        "claw-security-sweep",
+        "claw-security-remediation-queue",
+        "claw-dead-letter-reconcile",
+        "claw-salesops-maintenance",
+        "claw-credit-autopilot",
+        "claw-credit-e2e-live-loop",
+        "claw-loyalty-maintenance",
+        "claw-ollama-maintenance",
+        "claw-system-cleanup",
+        "claw-backup-to-nas",
+        "claw-backup-verify-nas",
+        "claw-global-status-pulse",
+        "claw-discord-health",
+        "claw-launch-e2e-matrix",
+        "claw-ai-work-pulse",
+        "claw-backlog-orchestrator",
+        "claw-git-sites-subagent-pulse",
+        "claw-github-scan-pulse",
+        "claw-capability-factory-pulse",
+        "claw-saas-opportunity-researcher",
+        "claw-saas-pain-opportunity-report",
+        "claw-weekly-trends-brief",
+        "claw-db-janitor",
+        "claw-flow-regression-pulse",
+        "claw-regression-autofix-pulse",
+        "claw-utilization-autofill",
+        "claw-device-utilization-pulse",
+        "claw-needs-attention-autofix",
+        "claw-cookiespass-mission-pulse",
+        "claw-resourceful-file-resolver",
+        "claw-qa-human-blocking",
+        "claw-agent-memory-maintenance",
+        "claw-proactive-research-assistant",
+        "claw-self-awareness-index",
+        "claw-github-bootstrap-managed-repos",
+        "claw-self-mod-worker",
+        "claw-openclaw-coordinator",
+        "claw-coordinator-watchdog",
+        "claw-auto-recovery",
+        "claw-mission-heartbeat",
+        "claw-mission-saas_development",
+        "claw-mission-content_writing",
+        "claw-mission-research_analysis",
+        "claw-mission-data_processing",
+        "claw-mission-scheduling_calendar",
+        "claw-mission-code_review",
+        "claw-mission-debugging",
+        "claw-mission-ui_ux_design",
+        "claw-mission-marketing_social",
+        "claw-mission-system_administration",
+        "claw-mission-roblox_game_growth",
+        "claw-mission-quantfusion_algo_dev",
+        "claw-mission-payclaw_saas_builder",
+        "claw-mission-bot_collection_autonomous",
+        "claw-sre-hourly-triage",
+        "claw-sre-daily-maintenance",
+        "claw-uptime-watchdog-hourly",
+        "claw-status-review-coordinator",
+        "claw-status-review-schema",
+        "claw-status-review-security",
+        "claw-status-review-worker",
+        "claw-status-review-uptime",
+        "claw-security-council",
+        "claw-oss-code-review",
+        "claw-quantfusion-overnight-algo-dev",
+        "claw-opengoat-pulse",
+        "claw-bot-discovery",
+        "claw-bot-outreach",
+        "claw-overnight-advisory-board",
+        "claw-autonomy-pr-cycle",
+        "claw-overnight-maintenance",
+        "claw-overnight-backup",
+        "claw-finance-queue",
+        "claw-model-routing-watchdog",
+        "claw-quantfusion-queue",
+        "claw-marketplace-os",
+        "claw-agency-growth-os",
+        "claw-roblox-growth-pulse",
+        "claw-goal-autopilot",
+        "claw-experiment-engine",
+        "claw-clawhub-skill-factory",
+        "claw-team-pa-coordinator",
+        "claw-team-x-growth",
+        "claw-team-opportunities-scout",
+        "claw-team-trading-paper",
+        "claw-team-security-monitor",
+        "claw-team-builder",
+        "claw-team-telegram-summary",
+        "claw-todo-6am-pull"
+      ],
+      "findings": [
+        {
+          "type": "cron_crash_loop",
+          "process": "claw-backlog-orchestrator",
+          "restarts": 155,
+          "message": "claw-backlog-orchestrator (cron) has 155 restarts while online (rapid crash loop)"
+        },
+        {
+          "type": "cron_crash_loop",
+          "process": "claw-openclaw-coordinator",
+          "restarts": 217,
+          "message": "claw-openclaw-coordinator (cron) has 217 restarts while online (rapid crash loop)"
+        },
+        {
+          "type": "cron_crash_loop",
+          "process": "claw-mission-scheduling_calendar",
+          "restarts": 203,
+          "message": "claw-mission-scheduling_calendar (cron) has 203 restarts while online (rapid crash loop)"
+        },
+        {
+          "type": "cron_crash_loop",
+          "process": "claw-mission-roblox_game_growth",
+          "restarts": 109,
+          "message": "claw-mission-roblox_game_growth (cron) has 109 restarts while online (rapid crash loop)"
+        },
+        {
+          "type": "cron_crash_loop",
+          "process": "claw-status-review-uptime",
+          "restarts": 67,
+          "message": "claw-status-review-uptime (cron) has 67 restarts while online (rapid crash loop)"
+        }
+      ],
+      "actions": [
+        {
+          "action": "restart",
+          "process": "claw-backlog-orchestrator",
+          "reason": "cron crash loop"
+        },
+        {
+          "action": "restart",
+          "process": "claw-openclaw-coordinator",
+          "reason": "cron crash loop"
+        },
+        {
+          "action": "restart",
+          "process": "claw-mission-scheduling_calendar",
+          "reason": "cron crash loop"
+        },
+        {
+          "action": "restart",
+          "process": "claw-mission-roblox_game_growth",
+          "reason": "cron crash loop"
+        },
+        {
+          "action": "restart",
+          "process": "claw-status-review-uptime",
+          "reason": "cron crash loop"
+        }
+      ]
+    },
+    "heartbeat": {
+      "ok": false,
+      "agentsChecked": 20,
+      "findings": [
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "saas_development",
+          "agent_name": "SaaS Development Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 15,
+          "message": "SaaS Development Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "content_writing",
+          "agent_name": "Content Writing Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 20,
+          "message": "Content Writing Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "research_analysis",
+          "agent_name": "Research and Analysis Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 20,
+          "message": "Research and Analysis Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "data_processing",
+          "agent_name": "Data Processing Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Data Processing Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "scheduling_calendar",
+          "agent_name": "Scheduling and Calendar Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 15,
+          "message": "Scheduling and Calendar Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "code_review",
+          "agent_name": "Code Review Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 60,
+          "message": "Code Review Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "debugging",
+          "agent_name": "Debugging Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Debugging Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "ui_ux_design",
+          "agent_name": "UI/UX Design Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "UI/UX Design Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "marketing_social",
+          "agent_name": "Marketing and Social Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 120,
+          "message": "Marketing and Social Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "system_administration",
+          "agent_name": "System Administration Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "System Administration Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "roblox_game_growth",
+          "agent_name": "Roblox Game Growth Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 10,
+          "message": "Roblox Game Growth Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "quantfusion_algo_dev",
+          "agent_name": "QuantFusion Algo Dev Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 60,
+          "message": "QuantFusion Algo Dev Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "gocrawdaddy_saas_builder",
+          "agent_name": "GoCrawdaddy SaaS Builder Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 60,
+          "message": "GoCrawdaddy SaaS Builder Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "payclaw_saas_builder",
+          "agent_name": "PayClaw SaaS Builder Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 60,
+          "message": "PayClaw SaaS Builder Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "bot_collection_autonomous",
+          "agent_name": "Autonomous Bot Collection Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Autonomous Bot Collection Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "business_research_agent",
+          "agent_name": "Business Intelligence Research Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Business Intelligence Research Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "business_builder_agent",
+          "agent_name": "Business Intelligence Builder Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Business Intelligence Builder Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "business_updater_agent",
+          "agent_name": "Business Intelligence Updater Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Business Intelligence Updater Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "business_improver_agent",
+          "agent_name": "Business Intelligence Improver Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 30,
+          "message": "Business Intelligence Improver Agent heartbeat stale (never ran)"
+        },
+        {
+          "type": "stale_heartbeat",
+          "agent_id": "business_coordinator_agent",
+          "agent_name": "Business Intelligence Coordinator Agent",
+          "age_minutes": null,
+          "heartbeat_minutes": 15,
+          "message": "Business Intelligence Coordinator Agent heartbeat stale (never ran)"
+        }
+      ],
+      "actions": [
+        {
+          "action": "force_run_agent",
+          "agent_id": "saas_development",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "content_writing",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "research_analysis",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "data_processing",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "scheduling_calendar",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "code_review",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "debugging",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "ui_ux_design",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "marketing_social",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "system_administration",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "roblox_game_growth",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "quantfusion_algo_dev",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "gocrawdaddy_saas_builder",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "payclaw_saas_builder",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "bot_collection_autonomous",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "business_research_agent",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "business_builder_agent",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "business_updater_agent",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "business_improver_agent",
+          "reason": "stale heartbeat"
+        },
+        {
+          "action": "force_run_agent",
+          "agent_id": "business_coordinator_agent",
+          "reason": "stale heartbeat"
+        }
+      ]
+    },
+    "queue": {
+      "ok": false,
+      "deadLetterCount": 0,
+      "taskHealthOk": false,
+      "actions": [],
+      "findings": [
+        {
+          "type": "queue_issues",
+          "deadLetterCount": 0,
+          "taskHealthOk": false
+        }
+      ]
+    }
+  },
+  "phase2_recovery": {
+    "restarted": [
+      "claw-backlog-orchestrator",
+      "claw-openclaw-coordinator",
+      "claw-mission-scheduling_calendar",
+      "claw-mission-roblox_game_growth",
+      "claw-status-review-uptime"
+    ],
+    "forceRun": [],
+    "reconciled": false,
+    "errors": [
+      {
+        "agent_id": "saas_development",
+        "error": "Command failed: npm run mission:control:run -- --agent saas_development --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n"
+      },
+      {
+        "agent_id": "content_writing",
+        "error": "Command failed: npm run mission:control:run -- --agent content_writing --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n"
+      },
+      {
+        "agent_id": "research_analysis",
+        "error": "Command failed: npm run mission:control:run -- --agent research_analysis --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n"
+      }
+    ]
+  },
+  "phase3_diagnosis": {
+    "ok": false,
+    "error": "BUDGET_BLOCKED: no eligible provider for triage",
+    "suggestions": null
+  },
+  "completed_at": "2026-03-02T20:15:18.772Z",
+  "summary": {
+    "findings_count": 26,
+    "actions_planned": 25
+  }
+}

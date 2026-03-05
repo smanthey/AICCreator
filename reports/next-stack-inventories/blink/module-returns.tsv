@@ -1,0 +1,337 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:17:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:326:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:340:	return (Number // 1) == Number
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:356:		return (Parent ~= nil and Parent:IsA("StringValue")) and Parent.Value or nil, ""
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:372:	return fs.readFile(Path), FileDirectory
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:377:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:381:		return (A == "TagEnum" and B == "Enum") or (A == "Enum" and B == "TagEnum")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:384:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:399:	return Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:422:	return Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:438:	return Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:446:			return Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:464:	return table.unpack(Tokens)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:485:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:530:	return Result
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:551:		return self.Generics
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:586:	return Generics
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:596:			return NumberRange.new(Single)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:601:			return NumberRange.new(LowerBounds, Bounds.Max)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:606:			return NumberRange.new(Bounds.Min, UpperBounds)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:612:			return NumberRange.new(Minimum, Maximum)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:642:	return Range
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:653:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:669:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:678:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:733:	return Components
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:737:	return self:TryConsume("Optional")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:807:	return Clone
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:828:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:914:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:953:	return Options
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1064:	return Declarations
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1074:			return Option
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1156:	return Fields
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1166:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1182:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1218:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1370:	return Declaration
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1392:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1415:		return Declaration
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1426:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1442:		return self:TagEnum(Tag, Name)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1462:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1511:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1541:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1630:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1652:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1680:		return Generic
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1703:	return To
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Parser.luau:1706:return Parser
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:101:			return "String", ""
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:108:			return "String", string.sub(Token, 2, #Token - 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:115:			return "String", string.sub(Token, 2)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:125:				return "Import", Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:127:				return "As", Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:129:				return "Keyword", Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:131:				return "Primitive", Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:133:				return "Boolean", (Token == "true")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:136:			return "Identifier", Token
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:160:	return setmetatable(
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:179:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:194:			return nil, Position, Position
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:198:		return Text, Position, math.min(Position + #Text, self.Size)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:220:			return self:GetNextToken(DontAdvanceCursor)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:231:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:251:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Lexer.luau:259:return Lexer
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Builder.luau:34:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Builder.luau:53:			return table.concat(Strings)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Builder.luau:59:			return Text
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Builder.luau:63:			return Strings
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Builder.luau:70:return Builder
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:6:	return `{stdio.style(style)}{text}{stdio.style("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:10:	return `{stdio.color(color)}{text}{stdio.color("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:39:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:43:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:47:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:51:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:55:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:58:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:75:		return ""
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:80:		return Color(`"{Value}"`, "green")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:83:			return Color("math.huge", "cyan")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:86:			return Color("-math.huge", "cyan")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:88:		return Color(Value, "cyan")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:90:		return Color(Value, "yellow")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:94:			return `{Color("{CACHED}", "red")} {Style(Address, "dim")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:120:		return Text
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:123:	return `<{Type}>`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Format.luau:126:return Format
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:60:	return `{stdio.style(Style)}{Text}{stdio.style("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:64:	return `{stdio.color(Color)}{Text}{stdio.color("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:80:		return a.Aliases[1] < b.Aliases[1]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:97:	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:118:	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:122:	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/init.luau:139:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Settings.luau:4:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Settings.luau:197:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Settings.luau:225:		return Casing
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Table.luau:1:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Table.luau:18:		return Merged
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Table.luau:26:				return Cached
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Table.luau:39:			return Copy
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Table.luau:42:		return Clone(Table)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:20:		return "absolute"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:25:		return "absolute"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:28:	return "relative"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:44:	return Directory, Filename, Extension
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:49:	return Filename
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:54:	return Directory
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:59:	return Extension
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:65:		return `{Name}.{Extension}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Path.luau:75:return Utility
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:1:return [[local Invocations = 0
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:37:    return Offset
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:41:    return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:73:    return Invocation
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:92:    return SendOffset
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:96:    return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Base.luau:109:    return head.value
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:115:		return `<font color="{Colors[Color]}">{Text}</font>`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:118:	return `{stdio.color(Color)}{Text}{stdio.color("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:123:		return Text
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:126:	return `{stdio.style(Style)}{Text}{stdio.style("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:136:			return Name
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:149:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:192:	return Slices
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:222:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:227:	return self:Label(Span, Text, "red")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:231:	return self:Label(Span, Text, "blue")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Modules/Error.luau:280:return Error
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/GetDefinitionFilePath.luau:12:return function(Path: string): string
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/GetDefinitionFilePath.luau:20:			return Temporary
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/GetDefinitionFilePath.luau:24:	return Path
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Compile.luau:44:		return `{Time * 1E+9} ns`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Compile.luau:46:		return `{Time * 1E+6} μs`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Compile.luau:48:		return `{Time * 1000} ms`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Compile.luau:50:		return `{Time} seconds`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Compile.luau:197:return Utility
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:102:	return Identifier:match("%a%w*") == Identifier
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:107:		return `["{Key}"]`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:109:	return Key
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:114:		return `["{Index}"]`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:116:	return `.{Index}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:120:	return `0x{string.format("%x", 2 ^ Index)}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1008:	return Type, Values, Export, Returns
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1132:	return Read:Return(Returns):End().Content, Write:End().Content
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1304:	return table.concat(MergedOutput)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1333:	return table.concat(MergedOutput)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1337:	return GenerateTypescript(FileContext, AbstractSyntaxTree)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/init.luau:1340:return Generator
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Watch.luau:36:	return `{stdio.color(Color)}{Text}{stdio.color("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Watch.luau:68:	return Array
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Watch.luau:93:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/CLI/Utility/Watch.luau:142:return Utility
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Client.luau:1:return [[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/Performance.luau:26:	return `{stdio.color("green")}{string.format("%.2f", Time)} {Suffix}{stdio.color("reset")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/Performance.luau:32:	return Samples[Index]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/Performance.luau:51:		return a < b
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/init.server.luau:174:		return Source
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/init.server.luau:184:	return Success
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/init.server.luau:206:	return SaveFolder
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/init.server.luau:213:		return nil, SourceParser:Parse(Source)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/init.server.luau:262:		return a.Name < b.Name
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:44:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:63:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:79:		return Variable
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:92:		return OperationOffset
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:95:	return `{self.Unique} + {Offset}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:99:	return self:_operation("Read", Bytes)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:103:	return self:_operation("Allocate", Bytes)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:108:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:115:		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:123:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:133:		return Variable
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:147:		return Variable
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:157:	return `local {Variable}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:166:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:171:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:176:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:181:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:190:		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:199:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:208:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:215:	return Loop
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:220:	return Block.new(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:225:	return Block.new(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:230:	return Block.new(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:254:	return Block.new(Parent)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:259:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:269:		return Parent
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:273:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:283:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:287:	return table.concat(self.Content)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:309:	return Block
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:321:	return Block
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:326:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Blocks.luau:329:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:13:	return Prefix
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:17:	return math.max(#string.split(GetScopePrefix(nil, true, CurrentScope), "."), 1)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:21:	return `SerdesFunctions.{GetScopePrefix(nil, false, CurrentScope)}{Write and "Write" or "Read"}{Name}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:25:	return `{GetScopePrefix(nil, false, CurrentScope)}{Name}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:33:	return `{table.concat(Literals, " | ")}`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Util.luau:36:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Templates/Server.luau:1:return [[local Players = game:GetService("Players")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/download.luau:58:	return process.exec("curl", Arguments)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/download.luau:81:	return Response
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/download.luau:121:		return a.id > b.id
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Client.luau:10:	return Target
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Client.luau:52:return ClientEnviornment
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:45:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:53:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:61:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:69:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:79:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:105:			return Types[NumberType.Type]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:115:			return Types[NumberType.Type]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:123:	return function(
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:195:	return Prefab, Primitive
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:538:			return Declaration.Value.Class
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Prefabs.luau:562:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:35:	return Indent == 0 and "declare " or ""
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:39:	return Identifier:match("%a%w*") == Identifier
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:44:		return Key
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:46:	return `["{Key}"]`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:154:	return Type, Values
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:312:return function(FileContext: Context, AbstractSyntaxTree: AbstractSyntaxTree): string
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/src/Generator/Typescript.luau:335:	return table.concat(StringBuilder.DumpLines())
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/client/init.client.luau:52:	return Samples[Index]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/client/init.client.luau:114:		return a > b
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/client/init.client.luau:125:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:7:	return "Player"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:16:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:30:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:44:				return { Player }
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:52:				return Instances[Name]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:59:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:62:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:65:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:83:		return table.freeze({ R = R, G = G, B = B, __typeof = "Color3" }) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:87:		return Color3.new(R / 255, G / 255, B / 255)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:92:		return table.freeze({ UnixTimestamp = Timestamp, __typeof = "DateTime" })
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:96:		return table.freeze({ UnixTimestampMillis = TimestampMillis, __typeof = "DateTime" })
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:101:		return table.freeze({ Number = Number, __typeof = "BrickColor" })
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:104:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:108:				return Services[Service]
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Shared.luau:120:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:62:		return a.__typeof
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:65:	return TypeofA
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:87:	return Execute()
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:110:	return Flags
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:124:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:129:				return Cyclic[a] == b
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:159:						return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:163:						return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:169:						return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:175:				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:178:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:180:			return buffer.tostring(a) == buffer.tostring(b)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:183:		return a == b
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:186:	return Compare(a, b)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:282:		return Recieve
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:286:		return ClientFunction.Invoke(Data)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:458:		return table.unpack(Return)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:633:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:637:		return "Instance"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:645:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Test.luau:649:		return "Instance (Invalid)"
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:176:	return `<font color="#{Color:ToHex()}">{Text}</font>`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:184:	return Text
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:202:	return Item
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:280:		return SourceParser:Parse(Editor.GetSource())
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:789:	return Input.Text
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:819:			return #a.Label < #b.Label
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/init.luau:859:return Editor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:9:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:13:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:17:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:24:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:31:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:35:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:40:		return CompareTables(a, b)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:42:	return (a == b)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:53:		return function(Player, Recieve)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/server/init.server.luau:89:	return Recieved
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Table.luau:14:	return Array
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Table.luau:27:	return Dictionary
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Table.luau:35:	return Keys
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Table.luau:38:return Table
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/generate.luau:76:	return QueryResult
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/generate.luau:151:	return #a < #b
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Profiler.luau:36:	return DebugContainer.Visible
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Profiler.luau:40:	return `{math.floor(Percentage * 100)} %`
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Profiler.luau:44:	return string.format("%.2f ms", Seconds * 1000)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Profiler.luau:128:return Profiler
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:48:	return Ranges
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:64:	return Line, Slices
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:87:	return Range
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:95:			return Range
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:99:	return DEFAULT_RANGE
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:107:			return Ranges[Index - 1] or DEFAULT_RANGE
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:111:	return DEFAULT_RANGE
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Utility.luau:114:return Utility
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/benches/Entities.luau:12:return Array
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/State.luau:33:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/State.luau:40:	return self.Value
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/State.luau:56:	return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/State.luau:71:return State
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:33:		return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:36:	return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:44:		return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:47:	return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:52:		return OnGain(Text, Cursor)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:54:		return OnRemove(Text, PreviousText, Cursor)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:57:	return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoBracket.luau:60:return Hook
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/init.luau:14:return Modes
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/zap.luau:3:	return require("../zap/Server")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/zap.luau:5:	return require("../zap/Client")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/benches/init.luau:8:return Benches
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/warp.luau:16:return Events
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/benches/Booleans.luau:1:return table.create(1000, true)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Server.luau:10:	return Target
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/test/Server.luau:52:return ServerEnviornment
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:17:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:21:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:25:	return #(string.match(Line, "^\t*") :: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:30:		return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:51:		return Text, Cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:66:	return Text, Cursor + Indentation
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/plugin/src/Editor/Styling/AutoIndent.luau:69:return Hook
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/roblox.luau:22:return Events
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/bytenet.luau:2:return ByteNet.defineNamespace("Benchmark", function()
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/bytenet.luau:3:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/blink.luau:3:	return require("../blink/Server")
+/Users/tatsheen/claw-repos/oss-index/roblox/blink/benchmark/src/shared/modes/blink.luau:5:	return require("../blink/Client")

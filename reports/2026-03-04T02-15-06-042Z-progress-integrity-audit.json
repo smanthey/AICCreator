@@ -1,0 +1,1535 @@
+{
+  "generated_at": "2026-03-04T02:15:05.572Z",
+  "window_minutes": 60,
+  "lanes": [
+    {
+      "lane": "cookiespass",
+      "completed": 89,
+      "failed": 0,
+      "queued": 9,
+      "running": 0,
+      "in_flight": 9,
+      "oldest_in_flight_minutes": 54.6,
+      "blockers": 0,
+      "completed_with_evidence": 0,
+      "integrity_blocked": 0,
+      "blocked_loop": 0,
+      "symbol_preflight_failed": 0,
+      "checklist": [
+        {
+          "id": "repo_autofix",
+          "type": "repo_autofix",
+          "source": "cookiespass_mission_pulse",
+          "done": true,
+          "count": 15
+        },
+        {
+          "id": "site_audit",
+          "type": "site_audit",
+          "source": "cookiespass_mission_pulse",
+          "done": true,
+          "count": 15
+        },
+        {
+          "id": "site_fix_plan",
+          "type": "site_fix_plan",
+          "source": "cookiespass_mission_pulse",
+          "done": true,
+          "count": 17
+        },
+        {
+          "id": "loyalty_send_outreach",
+          "type": "loyalty_send_outreach",
+          "source": "cookiespass_mission_pulse",
+          "done": true,
+          "count": 21
+        },
+        {
+          "id": "loyalty_process_webhooks",
+          "type": "loyalty_process_webhooks",
+          "source": "cookiespass_mission_pulse",
+          "done": true,
+          "count": 7
+        }
+      ],
+      "checklist_completed": 5,
+      "checklist_total": 5,
+      "research_relevance_score": null,
+      "movement_ok": true,
+      "escalation_required": false,
+      "pretend_work_signals": [
+        "completed_without_evidence"
+      ]
+    },
+    {
+      "lane": "gocrawdaddy",
+      "completed": 15,
+      "failed": 0,
+      "queued": 0,
+      "running": 0,
+      "in_flight": 0,
+      "oldest_in_flight_minutes": 0,
+      "blockers": 0,
+      "completed_with_evidence": 0,
+      "integrity_blocked": 0,
+      "blocked_loop": 0,
+      "symbol_preflight_failed": 0,
+      "checklist": [
+        {
+          "id": "research_sync",
+          "type": "research_sync",
+          "source": "gocrawdaddy_launch",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "research_signals",
+          "type": "research_signals",
+          "source": "gocrawdaddy_launch",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "affiliate_research",
+          "type": "affiliate_research",
+          "source": "gocrawdaddy_launch",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "opencode_controller",
+          "type": "opencode_controller",
+          "source": "gocrawdaddy_launch",
+          "done": false,
+          "count": 0
+        }
+      ],
+      "checklist_completed": 0,
+      "checklist_total": 4,
+      "research_relevance_score": 100,
+      "movement_ok": false,
+      "escalation_required": true,
+      "pretend_work_signals": [
+        "completed_without_evidence",
+        "sla_no_net_movement"
+      ]
+    },
+    {
+      "lane": "payclaw",
+      "completed": 4,
+      "failed": 0,
+      "queued": 13,
+      "running": 0,
+      "in_flight": 13,
+      "oldest_in_flight_minutes": 48.7,
+      "blockers": 0,
+      "completed_with_evidence": 0,
+      "integrity_blocked": 0,
+      "blocked_loop": 0,
+      "symbol_preflight_failed": 0,
+      "checklist": [
+        {
+          "id": "chunk_sms",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_sms",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "chunk_stripe",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_stripe",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "chunk_api",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_api",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "chunk_dashboard",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_dashboard",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "chunk_mac_shell",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_mac_shell",
+          "done": false,
+          "count": 0
+        },
+        {
+          "id": "chunk_compliance",
+          "type": "opencode_controller",
+          "source": "payclaw_chunk_compliance",
+          "done": false,
+          "count": 0
+        }
+      ],
+      "checklist_completed": 0,
+      "checklist_total": 6,
+      "research_relevance_score": null,
+      "movement_ok": false,
+      "escalation_required": true,
+      "pretend_work_signals": [
+        "completed_without_evidence",
+        "sla_no_net_movement"
+      ]
+    }
+  ],
+  "blockers": [],
+  "runner_reports_considered": 32,
+  "quarantine_queue_depth": 11,
+  "pretend_work_signals": [
+    {
+      "lane": "cookiespass",
+      "signal": "completed_without_evidence"
+    },
+    {
+      "lane": "gocrawdaddy",
+      "signal": "completed_without_evidence"
+    },
+    {
+      "lane": "gocrawdaddy",
+      "signal": "sla_no_net_movement"
+    },
+    {
+      "lane": "payclaw",
+      "signal": "completed_without_evidence"
+    },
+    {
+      "lane": "payclaw",
+      "signal": "sla_no_net_movement"
+    }
+  ],
+  "escalations": [
+    {
+      "lane": "gocrawdaddy",
+      "reason": "SLA_NO_NET_MOVEMENT",
+      "action": "Escalate to human owner: provide blocker decision or revised acceptance criteria."
+    },
+    {
+      "lane": "payclaw",
+      "reason": "SLA_NO_NET_MOVEMENT",
+      "action": "Escalate to human owner: provide blocker decision or revised acceptance criteria."
+    }
+  ],
+  "unified_state": {
+    "queue_state": {
+      "lanes": [
+        {
+          "lane": "cookiespass",
+          "in_flight": 9,
+          "blockers": 0
+        },
+        {
+          "lane": "gocrawdaddy",
+          "in_flight": 0,
+          "blockers": 0
+        },
+        {
+          "lane": "payclaw",
+          "in_flight": 13,
+          "blockers": 0
+        }
+      ]
+    },
+    "evidence_state": {
+      "completed_with_evidence": 0,
+      "completed_total": 108
+    },
+    "symbol_usage_state": {
+      "preflight_failed_total": 0,
+      "blocked_loop_total": 0
+    },
+    "health_state": {
+      "schema_version": "2026-03-03.health.v1",
+      "checked_at": "2026-03-04T02:15:05.559Z",
+      "overall_status": "healthy",
+      "safe_mode": false,
+      "totals": {
+        "healthy": 2,
+        "degraded": 0,
+        "down": 0,
+        "unknown": 0
+      },
+      "services": [
+        {
+          "name": "database",
+          "status": "healthy",
+          "healthy": true,
+          "latency_ms": 5,
+          "consecutive_failures": 0,
+          "error": null
+        },
+        {
+          "name": "coordinator",
+          "status": "healthy",
+          "healthy": true,
+          "latency_ms": 0,
+          "consecutive_failures": 0,
+          "error": null
+        }
+      ],
+      "auth_providers": [
+        {
+          "name": "openai",
+          "ok": true,
+          "reason": "configured"
+        },
+        {
+          "name": "anthropic",
+          "ok": true,
+          "reason": "configured"
+        },
+        {
+          "name": "ollama",
+          "ok": true,
+          "reason": "host configured"
+        }
+      ],
+      "coordinator": {
+        "healthy": true,
+        "last_update": "2026-03-04T02:15:02.631Z",
+        "age_minutes": 0,
+        "stale": false
+      }
+    }
+  },
+  "auto_quarantine": {
+    "enabled": true,
+    "quarantined_lanes": [
+      "cookiespass",
+      "gocrawdaddy",
+      "payclaw"
+    ],
+    "unblock_tasks": [
+      {
+        "lane": "cookiespass",
+        "created": false,
+        "reason": "already_exists",
+        "task_id": "91890212-90b3-4234-a1a4-31a40de512f1"
+      },
+      {
+        "lane": "gocrawdaddy",
+        "created": true,
+        "task_id": "839cf304-d539-45fc-9f85-a5ac81eee201",
+        "source": "gocrawdaddy_integrity_unblock",
+        "repo": "gocrawdaddy"
+      },
+      {
+        "lane": "payclaw",
+        "created": false,
+        "reason": "already_exists",
+        "task_id": "5a020879-3c59-436f-8678-6607fbb86588"
+      }
+    ]
+  },
+  "recent": [
+    {
+      "id": "3cffb476-aac5-4872-aa09-d932084f0251",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:04.024Z",
+      "updated_at": "2026-03-04T02:10:14.298Z"
+    },
+    {
+      "id": "52a7111f-5fde-446b-aed1-8172e352afad",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.921Z",
+      "updated_at": "2026-03-04T02:10:10.558Z"
+    },
+    {
+      "id": "677b4774-6b53-45a3-866a-73dc438494b5",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.764Z",
+      "updated_at": "2026-03-04T02:10:09.994Z"
+    },
+    {
+      "id": "56079261-3796-4d64-8dad-e2779052676b",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.653Z",
+      "updated_at": "2026-03-04T02:10:09.658Z"
+    },
+    {
+      "id": "87c9cf4b-7f89-4349-9315-31c16f8cc5d3",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.486Z",
+      "updated_at": "2026-03-04T02:10:08.126Z"
+    },
+    {
+      "id": "6d506480-4ee4-495c-b4b0-6cb698a10427",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.374Z",
+      "updated_at": "2026-03-04T02:10:09.017Z"
+    },
+    {
+      "id": "78d5e630-f4db-4bfa-beac-37877c0168f8",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.259Z",
+      "updated_at": "2026-03-04T02:10:14.898Z"
+    },
+    {
+      "id": "bd72806f-3601-4e38-a4c3-98e5118a22d2",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:03.155Z",
+      "updated_at": "2026-03-04T02:10:06.228Z"
+    },
+    {
+      "id": "f36f4620-cd40-437b-bafc-ea666ccac83f",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:02.988Z",
+      "updated_at": "2026-03-04T02:10:08.888Z"
+    },
+    {
+      "id": "00b8049e-7484-41b5-9ddc-d996c92b0e3d",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:10:02.809Z",
+      "updated_at": "2026-03-04T02:10:12.974Z"
+    },
+    {
+      "id": "55ab1a9f-adc1-4184-9765-454174e6675b",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "CREATED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:18.733Z",
+      "updated_at": "2026-03-04T02:00:18.733Z"
+    },
+    {
+      "id": "10033a95-c8eb-4d9c-a5fe-ea8c2a462d65",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "CREATED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:18.553Z",
+      "updated_at": "2026-03-04T02:00:18.553Z"
+    },
+    {
+      "id": "46d74a2f-f806-458f-a742-a11c8e7b9970",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "CREATED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:13.108Z",
+      "updated_at": "2026-03-04T02:00:13.108Z"
+    },
+    {
+      "id": "4cee9598-fadc-442b-b82f-99ab04ae47e5",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "CREATED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:12.978Z",
+      "updated_at": "2026-03-04T02:00:12.978Z"
+    },
+    {
+      "id": "dec54bb8-0f49-4460-b170-3ac47ef6b18b",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.920Z",
+      "updated_at": "2026-03-04T02:00:13.109Z"
+    },
+    {
+      "id": "b095f321-ad9e-4de4-8eca-f574e6afa14c",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.765Z",
+      "updated_at": "2026-03-04T02:00:13.814Z"
+    },
+    {
+      "id": "032c559a-7b28-4775-9e23-180cccd3fbd1",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.584Z",
+      "updated_at": "2026-03-04T02:00:13.684Z"
+    },
+    {
+      "id": "7723be32-da41-4a53-9b13-4004251da39c",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.464Z",
+      "updated_at": "2026-03-04T02:00:13.573Z"
+    },
+    {
+      "id": "d2d9ee9d-fec0-4cd3-a437-f021bdad7a74",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.322Z",
+      "updated_at": "2026-03-04T02:00:12.642Z"
+    },
+    {
+      "id": "fd48feff-df73-427e-aeb5-4c4efb83f222",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:10.038Z",
+      "updated_at": "2026-03-04T02:00:12.642Z"
+    },
+    {
+      "id": "147f7e1f-baf0-4992-81de-9b3386b1a7e3",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:09.850Z",
+      "updated_at": "2026-03-04T02:00:19.020Z"
+    },
+    {
+      "id": "38ad1d5f-5fd9-4a63-b2a6-e64c7932309d",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:09.714Z",
+      "updated_at": "2026-03-04T02:00:12.575Z"
+    },
+    {
+      "id": "846bc6fb-cbef-41e7-8e9a-85f1818fa9d8",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:07.824Z",
+      "updated_at": "2026-03-04T02:00:12.158Z"
+    },
+    {
+      "id": "a5721943-974b-4cb9-8487-624c4abd5849",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T09:00:07.300Z",
+      "updated_at": "2026-03-04T02:00:13.237Z"
+    },
+    {
+      "id": "eb4fe543-ebf8-4d3e-bf57-0258c5989c27",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.896Z",
+      "updated_at": "2026-03-04T01:50:11.371Z"
+    },
+    {
+      "id": "914dbfd8-0f1e-4ee1-a14b-801ab5f803d5",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.787Z",
+      "updated_at": "2026-03-04T01:50:11.368Z"
+    },
+    {
+      "id": "5030ef84-1d62-40c7-b816-e5f4e87b1b3e",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.576Z",
+      "updated_at": "2026-03-04T01:50:10.520Z"
+    },
+    {
+      "id": "da5a6f0f-9d69-4873-a011-f2f27a234eda",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.475Z",
+      "updated_at": "2026-03-04T01:50:09.844Z"
+    },
+    {
+      "id": "ddead606-90b2-4d52-a189-adcacff0655e",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.384Z",
+      "updated_at": "2026-03-04T01:50:06.943Z"
+    },
+    {
+      "id": "1c066d6b-d58f-496a-aa3a-26301d7aa62d",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.242Z",
+      "updated_at": "2026-03-04T01:50:10.051Z"
+    },
+    {
+      "id": "35cbc2ff-deb6-4e10-aabb-4b2e57c80278",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.155Z",
+      "updated_at": "2026-03-04T01:50:17.746Z"
+    },
+    {
+      "id": "b052c37d-27ff-4fc8-ad7c-9b3c664cb95c",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:03.060Z",
+      "updated_at": "2026-03-04T01:50:05.857Z"
+    },
+    {
+      "id": "0af1f5de-f9b5-4fc5-a2c4-e176772277bc",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:02.977Z",
+      "updated_at": "2026-03-04T01:50:08.408Z"
+    },
+    {
+      "id": "2a804a2a-d61f-4565-8805-2b17f8fd1395",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:50:02.848Z",
+      "updated_at": "2026-03-04T01:50:17.746Z"
+    },
+    {
+      "id": "e6fd9046-7628-4235-bbba-a42b09e72d35",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:49:10.372Z",
+      "updated_at": "2026-03-04T01:49:16.726Z"
+    },
+    {
+      "id": "3ae4cc45-8c0f-41a1-9a78-28ccef940e7e",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:48:19.150Z",
+      "updated_at": "2026-03-04T01:48:23.308Z"
+    },
+    {
+      "id": "cb60df74-42fc-42bc-af60-a2e483d32caf",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:47:40.086Z",
+      "updated_at": "2026-03-04T01:47:42.027Z"
+    },
+    {
+      "id": "0249fb32-bffc-48b6-8cb8-46bca6fbb0bf",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:45:49.649Z",
+      "updated_at": "2026-03-04T01:45:52.702Z"
+    },
+    {
+      "id": "35f261cc-5354-4864-97e3-6367685ab999",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:45:11.136Z",
+      "updated_at": "2026-03-04T01:45:17.452Z"
+    },
+    {
+      "id": "91890212-90b3-4234-a1a4-31a40de512f1",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:45:10.820Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "cb38f0b9-52e9-4277-a301-c73f8cd612eb",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:41:55.238Z",
+      "updated_at": "2026-03-04T01:42:04.774Z"
+    },
+    {
+      "id": "cdc51d06-130f-406e-b925-165b2ec8e7e7",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:41:55.034Z",
+      "updated_at": "2026-03-04T01:42:02.183Z"
+    },
+    {
+      "id": "908eb49a-78ba-4661-8c02-5e3a6b32cf8c",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:14.529Z",
+      "updated_at": "2026-03-04T01:40:47.447Z"
+    },
+    {
+      "id": "f0496e98-1188-4d18-90b0-adb41a58fb73",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:14.327Z",
+      "updated_at": "2026-03-04T01:40:45.010Z"
+    },
+    {
+      "id": "88bea24c-57c2-4adf-b2d4-201eb6800bfd",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:14.030Z",
+      "updated_at": "2026-03-04T01:40:42.300Z"
+    },
+    {
+      "id": "39f53e00-64be-47ba-afe7-8d65b3481f76",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.797Z",
+      "updated_at": "2026-03-04T01:40:38.500Z"
+    },
+    {
+      "id": "5ce8762d-e138-44a0-bf14-7ac005086773",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.676Z",
+      "updated_at": "2026-03-04T01:40:31.702Z"
+    },
+    {
+      "id": "e894ea94-1f0e-4b54-a96c-0edcda19cf84",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.574Z",
+      "updated_at": "2026-03-04T01:40:18.836Z"
+    },
+    {
+      "id": "1c93bd41-f62c-4e75-8560-26754855244c",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.488Z",
+      "updated_at": "2026-03-04T01:40:42.048Z"
+    },
+    {
+      "id": "d1266068-9430-47d7-97bb-02ab8bcedb44",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.343Z",
+      "updated_at": "2026-03-04T01:40:27.681Z"
+    },
+    {
+      "id": "4fd2f8b9-9d14-4b9a-808b-e7fd2fff9f66",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.190Z",
+      "updated_at": "2026-03-04T01:40:31.713Z"
+    },
+    {
+      "id": "fa833d15-d2b9-49e7-a21e-8aa95684ef8c",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:40:13.035Z",
+      "updated_at": "2026-03-04T01:40:42.054Z"
+    },
+    {
+      "id": "bd982477-8fdc-47ef-8da1-4c844df16c1c",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "CREATED",
+      "repo": "nirvaan/CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:36:14.316Z",
+      "updated_at": "2026-03-04T01:36:14.316Z"
+    },
+    {
+      "id": "2558c504-f743-44aa-bdc8-0979c307226c",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "CREATED",
+      "repo": "nirvaan/CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:36:14.194Z",
+      "updated_at": "2026-03-04T01:36:14.194Z"
+    },
+    {
+      "id": "13a29f9c-8c3f-4116-a3b7-bb306e0f1b51",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:35:14.728Z",
+      "updated_at": "2026-03-04T01:36:02.467Z"
+    },
+    {
+      "id": "dd82b548-21e4-4393-b646-7d39d65e2e1a",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:35:14.580Z",
+      "updated_at": "2026-03-04T01:36:02.254Z"
+    },
+    {
+      "id": "1525a0a9-dd36-4682-a7d3-eefafba3a132",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:33:18.175Z",
+      "updated_at": "2026-03-04T01:33:25.933Z"
+    },
+    {
+      "id": "f948c59e-e116-40c1-9b25-a48e64ae8a76",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:33:17.736Z",
+      "updated_at": "2026-03-04T01:33:25.811Z"
+    },
+    {
+      "id": "d0d88b9f-e11a-4adc-81cd-dfab9dd04145",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_sms",
+      "created_at": "2026-03-04T08:31:37.896Z",
+      "updated_at": "2026-03-04T01:31:37.896Z"
+    },
+    {
+      "id": "ea0d164f-733d-4636-8005-f21adfef0703",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_mac_shell",
+      "created_at": "2026-03-04T08:31:25.283Z",
+      "updated_at": "2026-03-04T01:31:25.283Z"
+    },
+    {
+      "id": "b14cd276-edae-439a-a773-ce68da8a67fe",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_api",
+      "created_at": "2026-03-04T08:30:58.841Z",
+      "updated_at": "2026-03-04T01:30:58.841Z"
+    },
+    {
+      "id": "124a626c-0746-49d8-b50b-0f7fa64d4877",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "nirvaan/CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:48.251Z",
+      "updated_at": "2026-03-04T01:33:07.147Z"
+    },
+    {
+      "id": "501ea444-b873-4351-87df-d41302db1f5f",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "nirvaan/CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:48.084Z",
+      "updated_at": "2026-03-04T01:35:56.817Z"
+    },
+    {
+      "id": "bde0c9ad-60dc-44e2-b834-72e6c675cd36",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "nirvaan/CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:47.993Z",
+      "updated_at": "2026-03-04T01:36:14.419Z"
+    },
+    {
+      "id": "5d43d05b-d1ba-420c-a7dc-bdeecaa4aafb",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:40.014Z",
+      "updated_at": "2026-03-04T01:31:44.711Z"
+    },
+    {
+      "id": "51561b63-1336-4688-ba34-51d93c872383",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.896Z",
+      "updated_at": "2026-03-04T01:35:43.184Z"
+    },
+    {
+      "id": "33a13439-a0f5-4719-a2d9-5a3080e47b67",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.797Z",
+      "updated_at": "2026-03-04T01:31:38.376Z"
+    },
+    {
+      "id": "7daeb029-6020-440c-b1a9-ce97ebfa34a4",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.703Z",
+      "updated_at": "2026-03-04T01:31:37.565Z"
+    },
+    {
+      "id": "a00341bc-34bb-49ef-8028-71e7c5fabec8",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_compliance",
+      "created_at": "2026-03-04T08:30:39.440Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "5d457e7b-2e72-4358-8ba6-655e764d493b",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.432Z",
+      "updated_at": "2026-03-04T01:33:06.749Z"
+    },
+    {
+      "id": "5ce67771-2439-489d-af9f-84e68b9483aa",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.301Z",
+      "updated_at": "2026-03-04T01:31:38.316Z"
+    },
+    {
+      "id": "3994b9e1-004a-48ec-8f9e-586855abaf02",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_mac_shell",
+      "created_at": "2026-03-04T08:30:39.299Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "b023e307-fadf-4c85-b368-e1d2e2acdaf9",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_dashboard",
+      "created_at": "2026-03-04T08:30:39.200Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "636450c8-905d-4cdc-a27d-21020fb50b88",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.184Z",
+      "updated_at": "2026-03-04T01:34:56.821Z"
+    },
+    {
+      "id": "14b4f177-09a8-4891-b45c-7c6e702d7d07",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_api",
+      "created_at": "2026-03-04T08:30:39.110Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "2157979f-9332-4478-9334-d9d36589e97f",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:39.063Z",
+      "updated_at": "2026-03-04T01:33:06.463Z"
+    },
+    {
+      "id": "dea8e90f-9510-4188-a034-5a2c34c672e2",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_stripe",
+      "created_at": "2026-03-04T08:30:39.039Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "37f341e7-8eef-41c2-9ae2-a5354f57dd5a",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_sms",
+      "created_at": "2026-03-04T08:30:38.799Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "8e7f3882-d089-41ac-8177-4db7fadd5563",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:38.796Z",
+      "updated_at": "2026-03-04T01:30:48.898Z"
+    },
+    {
+      "id": "0ec3e299-d1ca-4646-b20c-9c940d8b84fa",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:30:34.132Z",
+      "updated_at": "2026-03-04T01:31:37.483Z"
+    },
+    {
+      "id": "2c9e850d-501a-49ff-86d1-c34a60b49ffa",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:29:51.418Z",
+      "updated_at": "2026-03-04T01:29:58.399Z"
+    },
+    {
+      "id": "212f8196-3517-47ab-93e2-b2599717f618",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:29:51.202Z",
+      "updated_at": "2026-03-04T01:29:58.171Z"
+    },
+    {
+      "id": "3a87ed12-2545-4d1f-9d78-4c08d4fb63f0",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:29:38.707Z",
+      "updated_at": "2026-03-04T01:29:43.984Z"
+    },
+    {
+      "id": "d89a86bb-38a4-459a-bef6-f86abcbbf7ce",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:29:38.241Z",
+      "updated_at": "2026-03-04T01:29:43.870Z"
+    },
+    {
+      "id": "2fb82a1e-d644-4c81-814c-379546c348ab",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:29:12.958Z",
+      "updated_at": "2026-03-04T01:29:18.283Z"
+    },
+    {
+      "id": "af00131a-173f-40a3-8c0c-bc652fa90034",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:29:12.805Z",
+      "updated_at": "2026-03-04T01:29:18.261Z"
+    },
+    {
+      "id": "8504b9aa-0540-4098-93bb-7917d5025be3",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_stripe",
+      "created_at": "2026-03-04T08:29:04.764Z",
+      "updated_at": "2026-03-04T01:29:04.764Z"
+    },
+    {
+      "id": "fb6d8db2-a500-451b-a9dd-469c8fa978ca",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_chunk_compliance",
+      "created_at": "2026-03-04T08:29:04.616Z",
+      "updated_at": "2026-03-04T01:29:04.616Z"
+    },
+    {
+      "id": "5a020879-3c59-436f-8678-6607fbb86588",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "payclaw",
+      "source": "payclaw_integrity_unblock",
+      "created_at": "2026-03-04T08:28:34.819Z",
+      "updated_at": "2026-03-04T02:14:58.557Z"
+    },
+    {
+      "id": "ccbdee7d-b446-4af1-b85e-93c008527b25",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:28:34.578Z",
+      "updated_at": "2026-03-04T01:28:52.747Z"
+    },
+    {
+      "id": "10318cb2-5e8d-48ce-8dd4-a0577d4805db",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:28:34.088Z",
+      "updated_at": "2026-03-04T01:28:52.562Z"
+    },
+    {
+      "id": "26cd2228-e30b-4369-be50-2f6c7138e3c6",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "payclaw",
+      "source": "payclaw_integrity_unblock",
+      "created_at": "2026-03-04T08:26:28.640Z",
+      "updated_at": "2026-03-04T01:26:58.883Z"
+    },
+    {
+      "id": "5f51358b-373b-4d77-94d8-9c1927d8cecc",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:26:28.191Z",
+      "updated_at": "2026-03-04T01:26:57.575Z"
+    },
+    {
+      "id": "aa44a5f5-aff9-4140-b818-0b5f53eaf245",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:26:27.951Z",
+      "updated_at": "2026-03-04T01:26:52.791Z"
+    },
+    {
+      "id": "a54f5468-2c2d-46b3-a38e-f9b41b963229",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "CREATED",
+      "repo": "local/payclaw",
+      "source": "payclaw_chunk_api",
+      "created_at": "2026-03-04T08:26:17.785Z",
+      "updated_at": "2026-03-04T01:26:17.785Z"
+    },
+    {
+      "id": "fea28ecd-6113-4c6b-bfcd-14f4d156d2e5",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:13.663Z",
+      "updated_at": "2026-03-04T01:26:17.076Z"
+    },
+    {
+      "id": "c0efc06c-53e5-4ea1-b4f0-7b8ea37e0191",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:13.527Z",
+      "updated_at": "2026-03-04T01:30:42.769Z"
+    },
+    {
+      "id": "7c65df9d-b979-4737-9ab2-3729b865d5ad",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:13.338Z",
+      "updated_at": "2026-03-04T01:30:42.668Z"
+    },
+    {
+      "id": "5b63b225-ad2e-446d-93cb-b206066b618d",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:13.242Z",
+      "updated_at": "2026-03-04T01:30:42.580Z"
+    },
+    {
+      "id": "5d0285ff-0c45-45f0-811e-da4b4b636440",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:13.099Z",
+      "updated_at": "2026-03-04T01:26:17.079Z"
+    },
+    {
+      "id": "3e9d69e8-28cd-4a6f-aa1f-c08a4dcd3571",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:12.943Z",
+      "updated_at": "2026-03-04T01:26:17.075Z"
+    },
+    {
+      "id": "30c04a85-a0f5-4733-8e89-c54585a45003",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:12.840Z",
+      "updated_at": "2026-03-04T01:26:17.076Z"
+    },
+    {
+      "id": "8c20c10d-8a89-4fc8-8ede-7d2c802362eb",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:12.745Z",
+      "updated_at": "2026-03-04T01:26:17.079Z"
+    },
+    {
+      "id": "f88122dc-67c2-495d-8881-dc8632afd79e",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:12.620Z",
+      "updated_at": "2026-03-04T01:26:06.862Z"
+    },
+    {
+      "id": "25616cd7-368b-4290-94d0-be7dc510d6c1",
+      "lane": "cookiespass",
+      "type": "repo_autofix",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:25:12.452Z",
+      "updated_at": "2026-03-04T01:25:58.805Z"
+    },
+    {
+      "id": "f7930fb6-d330-4507-b535-51b4d0cc82e3",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "payclaw",
+      "source": "payclaw_integrity_unblock",
+      "created_at": "2026-03-04T08:25:11.014Z",
+      "updated_at": "2026-03-04T01:26:04.135Z"
+    },
+    {
+      "id": "9667b2f8-171a-41db-af8d-fc4e8c381980",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:24:57.778Z",
+      "updated_at": "2026-03-04T01:29:23.859Z"
+    },
+    {
+      "id": "1590c8b2-4e19-4a72-886d-a07179cbc9d8",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "payclaw",
+      "source": "payclaw_integrity_unblock",
+      "created_at": "2026-03-04T08:22:50.405Z",
+      "updated_at": "2026-03-04T01:22:53.052Z"
+    },
+    {
+      "id": "f4dec06d-0d14-4be0-8d49-3fa7f7699838",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:22:50.288Z",
+      "updated_at": "2026-03-04T01:22:52.936Z"
+    },
+    {
+      "id": "e17130c9-4151-4a3c-b9bb-438a5702b07a",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:22:50.150Z",
+      "updated_at": "2026-03-04T01:22:52.913Z"
+    },
+    {
+      "id": "220503d4-44b0-4fac-a362-4563a9ec5b05",
+      "lane": "payclaw",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "payclaw",
+      "source": "payclaw_integrity_unblock",
+      "created_at": "2026-03-04T08:22:43.357Z",
+      "updated_at": "2026-03-04T01:22:49.515Z"
+    },
+    {
+      "id": "f9e761b6-956d-4833-a4ad-2fe6c1572133",
+      "lane": "gocrawdaddy",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "gocrawdaddy",
+      "source": "gocrawdaddy_integrity_unblock",
+      "created_at": "2026-03-04T08:22:42.857Z",
+      "updated_at": "2026-03-04T01:22:49.441Z"
+    },
+    {
+      "id": "f4b13026-7d80-40de-9aa8-9df07ff37d54",
+      "lane": "cookiespass",
+      "type": "opencode_controller",
+      "status": "COMPLETED",
+      "repo": "cookiespass",
+      "source": "cookiespass_integrity_unblock",
+      "created_at": "2026-03-04T08:22:42.608Z",
+      "updated_at": "2026-03-04T01:22:49.397Z"
+    },
+    {
+      "id": "8a30d350-6778-4073-9d1d-a4ad967e19f4",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:37.036Z",
+      "updated_at": "2026-03-04T02:14:06.316Z"
+    },
+    {
+      "id": "fe831373-0a1e-4c40-9555-f3b0d223cc34",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "CREATED",
+      "repo": "TempeCookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:36.947Z",
+      "updated_at": "2026-03-04T02:10:30.774Z"
+    },
+    {
+      "id": "4bdca8a7-5585-4ea4-8ed2-9d7eebb00bd6",
+      "lane": "cookiespass",
+      "type": "site_fix_plan",
+      "status": "COMPLETED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:26.815Z",
+      "updated_at": "2026-03-04T02:14:05.390Z"
+    },
+    {
+      "id": "34245208-5d95-4b30-b094-19f05015dee3",
+      "lane": "cookiespass",
+      "type": "site_audit",
+      "status": "CREATED",
+      "repo": "CookiesPass",
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:26.700Z",
+      "updated_at": "2026-03-04T02:10:30.774Z"
+    },
+    {
+      "id": "3fc100f7-0b95-4875-9c5f-2519cf67caec",
+      "lane": "cookiespass",
+      "type": "loyalty_process_webhooks",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:14.914Z",
+      "updated_at": "2026-03-04T01:20:43.595Z"
+    },
+    {
+      "id": "d30f8931-50f0-4b66-bb79-bc6fa7c2111d",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:14.805Z",
+      "updated_at": "2026-03-04T01:20:41.294Z"
+    },
+    {
+      "id": "730fc15d-acb0-4bb3-b5e7-8734757e04ec",
+      "lane": "cookiespass",
+      "type": "loyalty_send_outreach",
+      "status": "COMPLETED",
+      "repo": null,
+      "source": "cookiespass_mission_pulse",
+      "created_at": "2026-03-04T08:20:14.639Z",
+      "updated_at": "2026-03-04T01:20:35.388Z"
+    }
+  ]
+}

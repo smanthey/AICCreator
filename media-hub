@@ -1,0 +1,2970 @@
+# Repo Map
+
+
+# generated repo map
+```
+└── claw-architect
+    ├── =
+    ├── agent-state
+    │   ├── agents
+    │   │   ├── autopay_ui_integrity_lane
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── bot_collection_autonomous
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── builder
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── business_builder_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── business_coordinator_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── business_improver_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── business_research_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── business_updater_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── capture_usage_report_hardener
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── captureinbound_multitenant_guardian
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── classifier
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── code_review
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── content
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── content_writing
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── cookiespass_finisher
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── data_processing
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── debugging
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── fix_lane_guardian
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── gocrawdaddy_saas_builder
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── inbound_cookies_release_guard
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── index_sync_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── infinitedata_integrity_lane
+    │   │   │   └── memory
+    │   │   ├── leadgen
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── learning_flywheel_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── learning_journal_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── marketing_social
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── media_os_lane
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── opportunities_scout
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── orchestrator
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── pa_coordinator
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── payclaw_saas_builder
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── planner
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── qa
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── quantfusion_algo_dev
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── reddit
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   ├── SOUL.md
+    │   │   │   └── source-health-state.json
+    │   │   ├── repo_autofix
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── research
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── research_analysis
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── roblox_game_growth
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── saas_development
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── scheduling_calendar
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── schema_integrity_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── security_monitor
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── security_remediation_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── status_review_coordinator
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   ├── SOUL.md
+    │   │   │   └── STATUS.md
+    │   │   ├── system_administration
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── trading_paper
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── ui_ux_design
+    │   │   │   ├── archive
+    │   │   │   │   └── 2026-02-28.md
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── uptime_monitoring_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   ├── worker_stability_agent
+    │   │   │   ├── archive
+    │   │   │   ├── memory
+    │   │   │   ├── AGENTS.md
+    │   │   │   ├── IDENTITY.md
+    │   │   │   ├── MEMORY.md
+    │   │   │   └── SOUL.md
+    │   │   └── x_growth
+    │   │       ├── archive
+    │   │       ├── memory
+    │   │       ├── AGENTS.md
+    │   │       ├── MEMORY.md
+    │   │       └── SOUL.md
+    │   ├── bot-analytics
+    │   │   └── outreach-results.jsonl
+    │   ├── bot-autonomous-agent
+    │   │   ├── memory.json
+    │   │   └── strategies.json
+    │   ├── bot-discovery
+    │   ├── bot-health
+    │   │   └── health-log.jsonl
+    │   ├── bot-improvement
+    │   │   ├── daily-reports
+    │   │   │   ├── 2026-03-02.json
+    │   │   │   └── 2026-03-03.json
+    │   │   ├── metrics.json
+    │   │   └── parameters.json
+    │   ├── clawpay-task-master
+    │   ├── commerce
+    │   │   ├── credits
+    │   │   │   └── 10.json
+    │   │   └── sessions
+    │   │       └── whatsapp_15551234567.json
+    │   ├── discord
+    │   ├── email-hub
+    │   │   ├── events.jsonl
+    │   │   ├── flows.json
+    │   │   └── metrics.json
+    │   ├── handoffs
+    │   │   ├── DAILY-ASSIGNMENT.md
+    │   │   ├── DAILY-DRAFTS.md
+    │   │   ├── DAILY-INTEL.md
+    │   │   ├── GOALS.md
+    │   │   └── SELF-MOD-REQUEST.md
+    │   ├── moltbook-harvester
+    │   │   └── state.json
+    │   ├── payclaw-research
+    │   │   └── status.md
+    │   ├── security
+    │   ├── shared-context
+    │   │   ├── status-review
+    │   │   │   ├── SCHEMA_STATUS.md
+    │   │   │   ├── SECURITY_STATUS.md
+    │   │   │   ├── UPTIME_STATUS.md
+    │   │   │   └── WORKER_STATUS.md
+    │   │   ├── FEEDBACK-LOG.md
+    │   │   ├── FULL-THROTTLE-PROMPTS.md
+    │   │   ├── INDEX-KNOWLEDGE-LATEST.md
+    │   │   ├── JOURNAL-LATEST.md
+    │   │   ├── MCP-SERVERS-LATEST.json
+    │   │   ├── MISSION-CONTROL.md
+    │   │   ├── SIGNALS.md
+    │   │   ├── THESIS.md
+    │   │   ├── management-integrity-state.json
+    │   │   └── repo-readiness-trend.json
+    │   ├── USER.md
+    │   ├── agent-signals.ndjson
+    │   ├── ambassador-state.json
+    │   ├── consumer-driven-research-state.json
+    │   ├── performance.ndjson
+    │   ├── research-coordinator-state.json
+    │   ├── schedule-weights.json
+    │   └── system-health-state.json
+    ├── agents
+    │   ├── skills
+    │   │   ├── clawhub-cost-down-stack-migrator
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-invoice-ops-automation-starter
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-manual-processes
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-manual-processes-were-costing-me
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-manually-excel-google-sheets-handwritten-etc
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-manuals-user-guides-etc-and-all-in-different-formats
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-multiformat-doc-localizer
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-ops-automation-audit-pack
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-research-backed-workflow-pack
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-too-expensive-and-moved-on
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-workflow-manual-computer-task-and-i-might-automate-it-fo
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   ├── clawhub-workflow-manual-data-entry-integrate-with-existing-tools
+    │   │   │   ├── prompts
+    │   │   │   │   └── default.md
+    │   │   │   ├── LISTING.md
+    │   │   │   ├── README.md
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── TEST_CASES.md
+    │   │   │   ├── index.js
+    │   │   │   ├── pricing.json
+    │   │   │   └── skill.json
+    │   │   └── clawhub-workflow-struggling-to-define-my-positioning
+    │   │       ├── prompts
+    │   │       │   └── default.md
+    │   │       ├── LISTING.md
+    │   │       ├── README.md
+    │   │       ├── SKILL.md
+    │   │       ├── TEST_CASES.md
+    │   │       ├── index.js
+    │   │       ├── pricing.json
+    │   │       └── skill.json
+    │   ├── brand-provision-agent.js
+    │   ├── business-builder-agent.js
+    │   ├── business-coordinator-agent.js
+    │   ├── business-improver-agent.js
+    │   ├── business-research-agent.js
+    │   ├── business-updater-agent.js
+    │   ├── classify-agent.js
+    │   ├── claw-agent.js
+    │   ├── cluster-agent.js
+    │   ├── content-agent.js
+    │   ├── dedupe-agent.js
+    │   ├── dev-pipeline-agent.js
+    │   ├── echo-agent.js
+    │   ├── finance-automation-agent.js
+    │   ├── github-sync-agent.js
+    │   ├── google-workspace-agent.js
+    │   ├── hardware-research-agent.js
+    │   ├── index-agent.js
+    │   ├── leadgen-agent.js
+    │   ├── loyalty-agent.js
+    │   ├── media-detect-agent.js
+    │   ├── media-enrich-agent.js
+    │   ├── media-hash-agent.js
+    │   ├── media-visual-agent.js
+    │   ├── migrate-agent.js
+    │   ├── obsidian-agent.js
+    │   ├── openclaw-creator-pack-agent.js
+    │   ├── opencode-controller-agent.js
+    │   ├── orchestrator.js
+    │   ├── patch-agent.js
+    │   ├── planner.js
+    │   ├── playwright-scraper-agent.js
+    │   ├── qa-agent.js
+    │   ├── quantfusion-trading-agent.js
+    │   ├── registry.js
+    │   ├── repo-autofix-agent.js
+    │   ├── repo-index-autopatch-agent.js
+    │   ├── report-agent.js
+    │   ├── report-refresh-agent.js
+    │   ├── research-agent.js
+    │   ├── resourceful-file-resolve-agent.js
+    │   ├── schema-integrity-agent.js
+    │   ├── security-agent.js
+    │   ├── security-remediation-agent.js
+    │   ├── site-audit-agent.js
+    │   ├── status-review-coordinator.js
+    │   ├── stub-agents.js
+    │   ├── triage-agent.js
+    │   ├── uptime-monitoring-agent.js
+    │   ├── verifier.js
+    │   └── worker-stability-agent.js
+    ├── apps
+    │   └── openclaw-setup-macos
+    │       ├── OpenClawSetupApp.swift
+    │       └── README.md
+    ├── cli
+    │   ├── claw.js
+    │   ├── create-task.js
+    │   ├── dead-letters.js
+    │   ├── metrics.js
+    │   ├── plan-status.js
+    │   ├── plan.js
+    │   ├── run-dispatcher.js
+    │   └── test-infra.js
+    ├── config
+    │   ├── ip-rules
+    │   │   ├── overrides
+    │   │   └── ip-rules.v1.json
+    │   ├── payclaw
+    │   │   ├── attestations.txt
+    │   │   ├── message-templates.txt
+    │   │   └── risk-categories.json
+    │   ├── agent-focus-profiles.json
+    │   ├── agent-team.json
+    │   ├── capabilities.yaml
+    │   ├── domain-exemplars.json
+    │   ├── launch-e2e-targets.json
+    │   ├── lead-categories-blackwallstreetopoly.js
+    │   ├── lead-categories.js
+    │   ├── mcp-servers.shared.json
+    │   ├── mission-control-agents.json
+    │   ├── mission-openclaw-architect.json
+    │   ├── model-routing-policy.json
+    │   ├── products.js
+    │   ├── research-domains.json
+    │   ├── saas-core-adoption.json
+    │   ├── security-bind-guard-allowlist.json
+    │   ├── status-review-agents.json
+    │   ├── task-routing.js
+    │   └── top-priority-areas.json
+    ├── context
+    │   ├── AGENT_MEMORY_SYSTEM.md
+    │   ├── AI_SATELLITE_SETUP.md
+    │   ├── ALIGNMENT_GATE_RUNBOOK.md
+    │   ├── BLACKWALLSTREETOPOLY_LEADGEN.md
+    │   ├── BOOTSTRAP.md
+    │   ├── DEV_PIPELINE_RUNBOOK.md
+    │   ├── FALLBACK_ACCESS_POLICY.md
+    │   ├── HEARTBEAT.md
+    │   ├── INDUSTRY.md
+    │   ├── LLM_GUARDRAILS.md
+    │   ├── MODEL_PORTFOLIO.md
+    │   ├── NAS_BACKUP_SYSTEM.md
+    │   ├── REDIS_PRODUCTION.md
+    │   ├── SHIP_DISCIPLINE_RUNBOOK.md
+    │   ├── SOUL.md
+    │   ├── SYSTEM_CLEANUP_AND_I7.md
+    │   ├── SYSTEM_STATE_2026-02-26.md
+    │   ├── TASKS_KANBAN_RUNBOOK.md
+    │   ├── TOOLS.md
+    │   └── USER.md
+    ├── control
+    │   ├── credit
+    │   │   ├── compliance-kb.js
+    │   │   ├── drafting.js
+    │   │   ├── evidence.js
+    │   │   ├── intake.js
+    │   │   ├── optimizer.js
+    │   │   ├── pdf-parser.js
+    │   │   ├── policy.js
+    │   │   ├── prioritizer.js
+    │   │   ├── recipients.js
+    │   │   ├── rules.js
+    │   │   ├── templates.js
+    │   │   ├── utils.js
+    │   │   └── workflow.js
+    │   ├── ip
+    │   │   ├── office-action.js
+    │   │   ├── pipeline-gate.js
+    │   │   ├── prefiling.js
+    │   │   ├── rule-patch.js
+    │   │   ├── rules-engine.js
+    │   │   ├── rules-harness.js
+    │   │   └── utils.js
+    │   ├── loyalty
+    │   │   ├── engine.js
+    │   │   └── outreach.js
+    │   ├── sell
+    │   │   └── rules.js
+    │   ├── agent-focus-profiles.js
+    │   ├── agent-memory-sql.js
+    │   ├── agent-memory.js
+    │   ├── ai-lane-health.js
+    │   ├── ambassador-agent.js
+    │   ├── atomic-state.js
+    │   ├── budget.js
+    │   ├── change-impact.js
+    │   ├── closed-loop.js
+    │   ├── concurrency-cap.js
+    │   ├── consumer-driven-research.js
+    │   ├── context-pruner.js
+    │   ├── coordinator-watchdog.js
+    │   ├── cost-coordinator.js
+    │   ├── cross-agent-learning.js
+    │   ├── dependency-health-check.js
+    │   ├── device-utilization.js
+    │   ├── dispatcher.js
+    │   ├── dispatcher.js.backup.1772425284259
+    │   ├── dlq.js
+    │   ├── emergency.js
+    │   ├── entropy-monitor.js
+    │   ├── event-bus.js
+    │   ├── event-spawn-task.js
+    │   ├── event-task-mapper.js
+    │   ├── exclusive-lock.js
+    │   ├── finance-ops.js
+    │   ├── follow-up-tasks.js
+    │   ├── health-summary.js
+    │   ├── heartbeat-validator.js
+    │   ├── idempotency.js
+    │   ├── inserter.js
+    │   ├── integrity-events.js
+    │   ├── judge.js
+    │   ├── local-alternatives.js
+    │   ├── management-integrity.js
+    │   ├── metrics.js
+    │   ├── monitoring-notify.js
+    │   ├── notifier.js
+    │   ├── offgrid-home.js
+    │   ├── opa-client.js
+    │   ├── pg-notify.js
+    │   ├── pm2-runtime-classifier.js
+    │   ├── policy-engine.js
+    │   ├── predictive-scheduler.js
+    │   ├── quantfusion-trading-ops.js
+    │   ├── quarantine.js
+    │   ├── replay-hash.js
+    │   ├── report-registry.js
+    │   ├── research-coordinator.js
+    │   ├── retry.js
+    │   ├── runner-preflight.js
+    │   ├── scheduler.js
+    │   ├── stream-consumer.js
+    │   ├── symbol-context.js
+    │   ├── system-health-coordinator.js
+    │   ├── task-capabilities.js
+    │   ├── task-model-router.js
+    │   ├── task-runs.js
+    │   └── uptime-watchdog-agents.js
+    ├── core
+    │   ├── email.js
+    │   ├── queue.js
+    │   ├── stripe.js
+    │   └── trading.js
+    ├── dashboard
+    │   ├── email-hub
+    │   │   └── index.html
+    │   ├── index.html
+    │   ├── local-alternatives.html
+    │   ├── media-hub.html
+    │   ├── offgrid-home.html
+    │   ├── openclaw-creator-studio.html
+    │   ├── ops.html
+    │   └── workshop-openclaw.html
+    ├── data
+    │   ├── credit-kb
+    │   │   ├── laws
+    │   │   │   ├── ecoa.json
+    │   │   │   ├── facta.json
+    │   │   │   ├── fcra.json
+    │   │   │   └── fdcpa.json
+    │   │   ├── policy
+    │   │   │   ├── allowed_actions.json
+    │   │   │   ├── issue_evidence.json
+    │   │   │   └── prohibited_actions.json
+    │   │   ├── templates
+    │   │   │   ├── bureau_dispute.txt
+    │   │   │   ├── cfpb_escalation.txt
+    │   │   │   ├── debt_validation.txt
+    │   │   │   ├── furnisher_dispute.txt
+    │   │   │   └── goodwill_request.txt
+    │   │   └── workflows
+    │   │       ├── bureau_dispute.json
+    │   │       ├── cfpb_escalation.json
+    │   │       ├── debt_validation.json
+    │   │       ├── furnisher_dispute.json
+    │   │       └── goodwill.json
+    │   ├── local-alternatives
+    │   │   ├── ai-log.jsonl
+    │   │   ├── email-outbox.jsonl
+    │   │   └── sms-outbox.jsonl
+    │   └── offgrid-home
+    │       └── meshtastic-heartbeat.json
+    ├── docs
+    │   ├── payclaw
+    │   │   ├── COMPLIANCE.md
+    │   │   ├── CONTEXT.md
+    │   │   ├── DISTRIBUTED-BUILD.md
+    │   │   ├── RESEARCH-NOTES-2026-03-02.md
+    │   │   ├── RESEARCH.md
+    │   │   ├── SOURCES.md
+    │   │   ├── SPEC.md
+    │   │   ├── UPDATE.md
+    │   │   └── WORKFLOW.md
+    │   ├── AGENCY_100K_MONTH_MODEL.md
+    │   ├── AGENT_TEAM_SHARED_CONTEXT.md
+    │   ├── AI_MARKETPLACE_SERVICES.md
+    │   ├── ALIGNMENT_GATE.md
+    │   ├── AMBASSADOR_COST_COORDINATOR.md
+    │   ├── BOT_PLATFORM.md
+    │   ├── BRAND_CONTROL_PLANE_MIGRATION_PLAN.md
+    │   ├── CLAWBUILDER_PLATFORM.md
+    │   ├── CLAWHUB_SKILL_FACTORY.md
+    │   ├── CLAWPAY-HEALTH-CHECK.md
+    │   ├── COOKIESPASS-V1-SPEC.md
+    │   ├── CORE-MIGRATION-template.md
+    │   ├── DAILY-FIX-AGENT-RUNBOOK.md
+    │   ├── DAILY-FIX-PREVENTION.md
+    │   ├── DEV_PIPELINE_TASK_CHAIN.md
+    │   ├── EMAIL_DELIVERY_CHECKLIST.md
+    │   ├── EMAIL_HUB_INTEGRATION.md
+    │   ├── EMAIL_HUB_OSS_BENCHMARK.md
+    │   ├── EMAIL_RESEND_MIGRATION.md
+    │   ├── EVENT_CHANNEL_MAP.md
+    │   ├── EVENT_PLANE_RUNBOOK.md
+    │   ├── EXTERNAL-SKILLS-OPENCLAW.md
+    │   ├── FINANCE_AUTOMATION.md
+    │   ├── FOREMAN-COORDINATION-AND-PAYCLAW.md
+    │   ├── FOUR-REPO-RELEASE-CHECKLIST-2026-03-03.md
+    │   ├── GITEA_NAS_SELF_HOSTED.md
+    │   ├── GOCRAWDADDY_BUILD_PLAN.md
+    │   ├── INTEGRATION-GAPS-AUDIT-2026-03-03.md
+    │   ├── IP_SYSTEM.md
+    │   ├── MEDIA_HUB_PINTEREST_SYSTEM_BLUEPRINT.md
+    │   ├── MEMORY_EXTRACTION_LOOP.md
+    │   ├── MISSION_CONTROL_10_AGENT.md
+    │   ├── NAS_DASHBOARD_HOSTING.md
+    │   ├── OFFGRID_SMARTHOME_MESHTASTIC.md
+    │   ├── OPENCLAW_60_DAY_IMPROVEMENTS.md
+    │   ├── OPENCLAW_CREATOR_PACKAGE.md
+    │   ├── OPENCLAW_TOP10_ADOPTABLE_PATTERNS.md
+    │   ├── OPENCLAW_WORKSHOP_PLAN.md
+    │   ├── OPENCODE_CONTROLLER_INTEGRATION.md
+    │   ├── OVERNIGHT_SELF_MAINTENANCE.md
+    │   ├── PINTEREST-CAPTION-CONVERSION-PLAYBOOK.md
+    │   ├── PM2_PERSISTENCE_SETUP.md
+    │   ├── PREDICTIVE_SCHEDULING_CROSS_AGENT_LEARNING.md
+    │   ├── QUANTFUSION_TRADING_AUTOPILOT.md
+    │   ├── RELEASE-INDEXING-TRIAGE-2026-03-03.md
+    │   ├── ROBLOX-AGENT-STATUS.md
+    │   ├── ROBLOX-OSS-INDEX-JUMPSTART.md
+    │   ├── ROBLOX-PUZZLE-FIGHTER-RESEARCH.md
+    │   ├── ROBLOX_GAME_GROWTH_TEAM.md
+    │   ├── SAAS_PAIN_OPPORTUNITY_PIPELINE.md
+    │   ├── SELF_HEALING_AUTO_IMPROVEMENT.md
+    │   ├── SHIP_DISCIPLINE.md
+    │   ├── SQL_MEMORY_SYSTEM.md
+    │   ├── SWARM-MUST-COMPLETE-INDEXING.md
+    │   ├── SYMBOLIC_QA_ENGINE_PLAN.md
+    │   ├── TASKS_JSON_KANBAN.md
+    │   ├── TODO_6AM_PULL.md
+    │   ├── TOP-PRIORITY-AREAS.md
+    │   ├── UPTIME-WATCHDOG.md
+    │   ├── WEEKLY_TRENDS_BRIEF.md
+    │   ├── WORKER_TAG_MATRIX.md
+    │   ├── core-stripe-pattern.md
+    │   ├── distributed-runbook.md
+    │   ├── external-repo-onboarding.md
+    │   ├── jcodemunch.md
+    │   ├── leadgen-email-summary.md
+    │   ├── mcp-sweeps-drift.md
+    │   ├── mcp-sweeps-landmines.md
+    │   ├── policy-gating.md
+    │   ├── self-modifying-system.md
+    │   └── senior-dev-gap-closure-runbook.md
+    ├── gateway
+    │   └── telegram.js
+    ├── infra
+    │   ├── caddy
+    │   │   └── Caddyfile
+    │   ├── gitea
+    │   ├── claw-db.js
+    │   ├── confidence.js
+    │   ├── config.js
+    │   ├── gmail-client.js
+    │   ├── maileroo.js
+    │   ├── model-router.js
+    │   ├── nas-auth-hardening.md
+    │   ├── outbound-email-policy.js
+    │   ├── postgres.js
+    │   ├── redis-config-check.sh
+    │   ├── redis-setup.sh
+    │   ├── redis.js
+    │   ├── secrets-crypto.js
+    │   ├── send-email.js
+    │   └── telnyx.js
+    ├── mcp
+    │   ├── detectors
+    │   │   ├── drift.json
+    │   │   └── landmines.json
+    │   ├── domain-exemplars.json
+    │   └── mission.json
+    ├── media
+    ├── media-hub
+    ├── memory
+    │   ├── bug-classes
+    │   │   ├── cron-restart-misclassification.ts
+    │   │   ├── execsync-blocking.ts
+    │   │   ├── missing-await-coordinator.ts
+    │   │   └── unguarded-tofixed.ts
+    │   ├── operational-rules
+    │   │   └── uuid-generation.ts
+    │   ├── patterns
+    │   │   ├── mcp-landmine-sweeps.ts
+    │   │   ├── pm2-async-status-query.ts
+    │   │   ├── redis-queue-reliability.ts
+    │   │   ├── sql-memory-system-invariants.ts
+    │   │   ├── stripe-webhook-idempotency.ts
+    │   │   └── uptime-watchdog-orchestration.ts
+    │   ├── _schema.ts
+    │   └── docs-index.ts
+    ├── migrations
+    │   ├── 001_initial_schema.sql
+    │   ├── 005_task_chaining_and_retry.sql
+    │   ├── 006_audit_log_approvals_hardening.sql
+    │   ├── 007_workers_and_queues.sql
+    │   ├── 008_vault_files.sql
+    │   ├── 009_fix_queue_names.sql
+    │   ├── 010_intent_tiers.sql
+    │   ├── 011_brands_and_leads.sql
+    │   ├── 012_telegram_users.sql
+    │   ├── 013_file_index.sql
+    │   ├── 014_qa_results.sql
+    │   ├── 015_model_usage_orchestrations.sql
+    │   ├── 016_claw_files_brand.sql
+    │   ├── 017_file_index_brand.sql
+    │   ├── 018_duplicate_groups_improve.sql
+    │   ├── 019_expand_brand_patterns.sql
+    │   ├── 020_brand_aloc_cookies_scottmanthey.sql
+    │   ├── 021_brand_cookies_ariel_3d.sql
+    │   ├── 022_mass_category_by_extension.sql
+    │   ├── 023_deep_category_columns.sql
+    │   ├── 024_email_sends_engagement.sql
+    │   ├── 025_orders_table.sql
+    │   ├── 026_experiment_engine.sql
+    │   ├── 027_email_sends_dedup_guard.sql
+    │   ├── 028_media_hashes.sql
+    │   ├── 029_shoot_groups.sql
+    │   ├── 030_file_index_deep_category_columns.sql
+    │   ├── 031_distributed_routing_registry.sql
+    │   ├── 032_leadgen_schema_hardening.sql
+    │   ├── 033_task_runs_idempotency.sql
+    │   ├── 034_workflow_locks_quarantine.sql
+    │   ├── 035_ip_system_core.sql
+    │   ├── 036_ip_rules_outcomes.sql
+    │   ├── 037_ip_borderline_pattern_engine.sql
+    │   ├── 038_ip_prefiling_assessments.sql
+    │   ├── 039_github_observability.sql
+    │   ├── 040_platform_research_monitor.sql
+    │   ├── 041_email_sends_dedup_fix.sql
+    │   ├── 042_credit_agent_phase1.sql
+    │   ├── 043_loyalty_core.sql
+    │   ├── 044_loyalty_webhook_conflict_fix.sql
+    │   ├── 045_brand_cookies_nirvana_canonical.sql
+    │   ├── 046_credit_outcomes_correspondence_learning.sql
+    │   ├── 047_media_metadata.sql
+    │   ├── 048_loyalty_event_spine.sql
+    │   ├── 049_loyalty_event_backfill.sql
+    │   ├── 050_skynpatch_schema_hardening.sql
+    │   ├── 051_tasks_status_check.sql
+    │   ├── 052_tasks_updated_at_compat.sql
+    │   ├── 053_managed_repos_hardening.sql
+    │   ├── 054_managed_repos_url_normalize_followup.sql
+    │   ├── 055_model_usage_routing_telemetry.sql
+    │   ├── 056_brand_provisioning_control_plane.sql
+    │   ├── 057_brand_sender_hardening.sql
+    │   ├── 058_orchestrator_step_runs.sql
+    │   ├── 059_sell_intake_dashboard.sql
+    │   ├── 060_sell_pipeline_core.sql
+    │   ├── 061_sell_inventory_sales_hub.sql
+    │   ├── 062_blackwallstreetopoly_brand.sql
+    │   ├── 063_event_bus_audit.sql
+    │   ├── 064_event_receipts.sql
+    │   ├── 065_content_pipeline_core.sql
+    │   ├── 066_media_visual_catalog.sql
+    │   ├── 067_agency_growth_os.sql
+    │   ├── 068_clawhub_skill_factory.sql
+    │   ├── 069_marketplace_services_os.sql
+    │   ├── 070_marketplace_jobs_unique_index_fix.sql
+    │   ├── 071_finance_automation_os.sql
+    │   ├── 072_bot_platform.sql
+    │   ├── 073_bot_collection_system.sql
+    │   ├── 074_agent_memory_sql.sql
+    │   ├── 075_bot_collection_schema_fixes.sql
+    │   ├── 076_task_routing_columns.sql
+    │   ├── 077_device_registry_hardware_metrics.sql
+    │   ├── 078_schema_foreign_key_hardening.sql
+    │   ├── 079_quantfusion_trading_core.sql
+    │   ├── 080_cost_coordinator_ambassador.sql
+    │   ├── 081_business_data_collection.sql
+    │   ├── 082_skynpatch_no_take_back_offer.sql
+    │   ├── 083_trading_audit_fields.sql
+    │   ├── 084_symbol_exemplar_hub.sql
+    │   ├── 085_production_kpi_flywheel.sql
+    │   ├── 086_feature_benchmark_gate.sql
+    │   └── 087_pinterest_publish_queue.sql
+    ├── org
+    │   ├── KPIs.md
+    │   ├── MISSION.md
+    │   ├── ROADMAP.md
+    │   ├── STRATEGY.md
+    │   └── VISION.md
+    ├── packages
+    │   └── module-core
+    │       ├── decision.md
+    │       ├── env.schema.json
+    │       ├── manifest.json
+    │       └── runbook.md
+    ├── policy
+    │   ├── opa
+    │   │   └── claw-policy.rego
+    │   ├── codebase-first-debug-rule.md
+    │   └── fallback-access-policy.md
+    ├── reports
+    │   ├── capability-factory
+    │   ├── next-stack-inventories
+    │   │   ├── AeroGameFramework
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── BridgeNet2
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── ByteNet
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Cmdr
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Fusion
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Iris
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Knit
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── MockDataStoreService
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Nature2D
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── NevermoreEngine
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── ReplicaService
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── Roblox-Game-Template
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── RobloxGitSync
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── TopbarPlus
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── ZonePlus
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── blink
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── creator-docs
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── flamework-core
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── jecs
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── knit-starter
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── matter
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── nullpomino
+    │   │   │   ├── code-symbolish.tsv
+    │   │   │   ├── code-symbols.tsv
+    │   │   │   ├── gameplay-keywords.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   └── source-files.txt
+    │   │   ├── panel-attack
+    │   │   │   ├── code-symbolish.tsv
+    │   │   │   ├── gameplay-keywords.tsv
+    │   │   │   └── source-files.txt
+    │   │   ├── panel-pop
+    │   │   │   ├── code-symbolish.tsv
+    │   │   │   ├── gameplay-keywords.tsv
+    │   │   │   └── source-files.txt
+    │   │   ├── puyoai
+    │   │   │   ├── code-symbolish.tsv
+    │   │   │   ├── code-symbols.tsv
+    │   │   │   ├── gameplay-keywords.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   └── source-files.txt
+    │   │   ├── rbx-net
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── reflex
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── inventory.md
+    │   │   │   ├── lua-files.txt
+    │   │   │   ├── luau-functions.tsv
+    │   │   │   ├── luau-modules.tsv
+    │   │   │   └── module-returns.tsv
+    │   │   ├── roact
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── roact-rodux
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── roblox-lua-promise
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── rodux
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── rust-puzzlefighter
+    │   │   │   ├── code-symbolish.tsv
+    │   │   │   ├── gameplay-keywords.tsv
+    │   │   │   └── source-files.txt
+    │   │   ├── t
+    │   │   │   ├── functions.tsv
+    │   │   │   ├── high-signal-hits.tsv
+    │   │   │   ├── lua-files.txt
+    │   │   │   └── module-returns.tsv
+    │   │   ├── INDEX.md
+    │   │   ├── NEXT_REPO_RECOMMENDATIONS_2026-03-03.md
+    │   │   ├── PUZZLE_BENCH_SUMMARY_2026-03-03.tsv
+    │   │   ├── REINDEX_SUMMARY_2026-03-03.sorted.tsv
+    │   │   └── REINDEX_SUMMARY_2026-03-03.tsv
+    │   ├── repomaps
+    │   │   ├── RobloxGitSync-repomap.md
+    │   │   ├── autopay_ui-repomap.md
+    │   │   ├── capture-repomap.md
+    │   │   ├── claw-architect-repomap.md
+    │   │   ├── indexed-AeroGameFramework-repomap.md
+    │   │   ├── indexed-ByteNet-repomap.md
+    │   │   ├── indexed-Fusion-repomap.md
+    │   │   ├── indexed-Iris-repomap.md
+    │   │   ├── indexed-Knit-repomap.md
+    │   │   ├── indexed-MockDataStoreService-repomap.md
+    │   │   ├── indexed-Nature2D-repomap.md
+    │   │   ├── indexed-NevermoreEngine-repomap.md
+    │   │   ├── indexed-Roblox-Game-Template-repomap.md
+    │   │   ├── indexed-TopbarPlus-repomap.md
+    │   │   ├── indexed-ZonePlus-repomap.md
+    │   │   ├── indexed-creator-docs-repomap.md
+    │   │   ├── indexed-jecs-repomap.md
+    │   │   ├── indexed-knit-starter-repomap.md
+    │   │   ├── indexed-matter-repomap.md
+    │   │   ├── indexed-nullpomino-repomap.md
+    │   │   ├── indexed-puyoai-repomap.md
+    │   │   ├── indexed-rbx-net-repomap.md
+    │   │   ├── indexed-reflex-repomap.md
+    │   │   ├── indexed-roact-repomap.md
+    │   │   ├── indexed-roact-rodux-repomap.md
+    │   │   ├── indexed-roblox-lua-promise-repomap.md
+    │   │   ├── indexed-rodux-repomap.md
+    │   │   ├── indexed-t-repomap.md
+    │   │   ├── infinitedata-repomap.md
+    │   │   ├── payclaw-repomap.md
+    │   │   ├── roblox-AeroGameFramework-repomap.md
+    │   │   ├── roblox-ByteNet-repomap.md
+    │   │   ├── roblox-Fusion-repomap.md
+    │   │   ├── roblox-Iris-repomap.md
+    │   │   ├── roblox-Knit-repomap.md
+    │   │   ├── roblox-MockDataStoreService-repomap.md
+    │   │   ├── roblox-Nature2D-repomap.md
+    │   │   ├── roblox-NevermoreEngine-repomap.md
+    │   │   ├── roblox-Roblox-Game-Template-repomap.md
+    │   │   ├── roblox-TopbarPlus-repomap.md
+    │   │   ├── roblox-ZonePlus-repomap.md
+    │   │   ├── roblox-creator-docs-repomap.md
+    │   │   ├── roblox-jecs-repomap.md
+    │   │   ├── roblox-knit-starter-repomap.md
+    │   │   ├── roblox-matter-repomap.md
+    │   │   ├── roblox-nullpomino-repomap.md
+    │   │   ├── roblox-puyoai-repomap.md
+    │   │   ├── roblox-rbx-net-repomap.md
+    │   │   ├── roblox-reflex-repomap.md
+    │   │   ├── roblox-roact-repomap.md
+    │   │   ├── roblox-roact-rodux-repomap.md
+    │   │   ├── roblox-roblox-lua-promise-repomap.md
+    │   │   ├── roblox-rodux-repomap.md
+    │   │   └── roblox-t-repomap.md
+    │   ├── 1772524721582-learning-journal.json
+    │   ├── 1772524837551-learning-journal.json
+    │   ├── 1772524866140-learning-journal.json
+    │   ├── 1772524893599-learning-journal.json
+    │   ├── 1772525051103-learning-journal.json
+    │   ├── 1772525051156-learning-journal.json
+    │   ├── 1772525051241-learning-journal.json
+    │   ├── 1772525505344-learning-journal.json
+    │   ├── 1772529376904-learning-journal.json
+    │   ├── 1772532722951-learning-journal.json
+    │   ├── 1772536323748-learning-journal.json
+    │   ├── 1772539923155-learning-journal.json
+    │   ├── 1772543523768-learning-journal.json
+    │   ├── 1772547123554-learning-journal.json
+    │   ├── 1772548278407-learning-journal.json
+    │   ├── 1772550722665-learning-journal.json
+    │   ├── 1772554414028-learning-journal.json
+    │   ├── 1772557922672-learning-journal.json
+    │   ├── 1772560214953-learning-journal.json
+    │   ├── 1772560214969-learning-journal.json
+    │   ├── 1772560659041-learning-journal.json
+    │   ├── 1772561348706-learning-journal.json
+    │   ├── 1772583758076-learning-journal.json
+    │   ├── 1772585031113-learning-journal.json
+    │   ├── 1772586659643-learning-journal.json
+    │   ├── 1772587570753-learning-journal.json
+    │   ├── 2026-03-03T17-57-39-019Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T17-58-58-838Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-04-04-286Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-04-09-851Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-04-35-836Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-11-07-263Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-11-07-267Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-11-07-280Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-17-52-164Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-18-13-686Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-18-25-805Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-18-26-005Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-19-18-182Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-21-21-753Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-21-32-122Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-23-56-177Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-24-03-698Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-24-44-312Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-24-52-669Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-30-11-582Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-30-14-729Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-30-14-824Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T18-30-22-185Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-30-33-248Z-repo-readiness-pulse.json
+    │   ├── 2026-03-03T18-36-32-894Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T18-41-59-154Z-index-knowledge.json
+    │   ├── 2026-03-03T18-41-59-156Z-openclaw-index-sync-agent.json
+    │   ├── 2026-03-03T19-00-14-631Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T19-00-15-020Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T19-00-26-011Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T19-00-26-530Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T19-00-40-261Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T19-15-05-783Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T19-30-11-220Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T19-30-11-374Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T19-30-11-459Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T19-30-15-357Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T19-45-05-362Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T20-00-11-660Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T20-00-11-972Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T20-00-12-054Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T20-15-06-063Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T20-33-51-602Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T20-33-53-644Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T20-33-53-715Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T20-33-54-712Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T20-45-05-344Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T21-02-10-668Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T21-09-56-743Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T21-09-56-772Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T21-46-37-569Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T21-46-37-601Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T21-46-37-631Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T21-46-38-930Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-03T22-13-06-097Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T22-55-13-582Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T22-57-00-989Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T22-57-22-159Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-03-07-758Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-03-51-545Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-03-51-678Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-04-43-286Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-04-43-364Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-05-47-760Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-06-03-533Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-06-18-227Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-06-19-263Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-08-31-517Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T23-09-22-552Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T23-10-39-653Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-10-41-062Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-20-52-417Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-20-54-454Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-30-32-168Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-30-34-731Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-38-24-655Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T23-40-17-187Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-40-18-002Z-mcp-ops-agent.json
+    │   ├── 2026-03-03T23-42-31-261Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-48-06-275Z-progress-integrity-audit.json
+    │   ├── 2026-03-03T23-50-09-208Z-symbol-index-preflight.json
+    │   ├── 2026-03-03T23-50-09-823Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-00-08-513Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-00-09-014Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-04-25-245Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-07-04-760Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-10-08-214Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-10-08-807Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-15-05-721Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-15-08-161Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-20-06-781Z-finish-fast-matrix.json
+    │   ├── 2026-03-04T00-20-10-877Z-finish-fast-matrix.json
+    │   ├── 2026-03-04T00-20-17-412Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-20-18-446Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-20-51-677Z-finish-fast-matrix.json
+    │   ├── 2026-03-04T00-21-31-237Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-21-45-648Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-22-45-382Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-22-47-458Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-26-10-938Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-26-40-000Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-31-49-531Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-31-59-118Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-37-04-238Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-37-06-239Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T00-38-06-772Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-40-00-449Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-40-38-973Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-40-43-324Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-50-22-210Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T00-50-23-339Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T00-54-19-541Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-59-17-103Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T00-59-53-980Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-00-00-966Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T01-00-35-027Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-00-54-091Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T01-00-54-876Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T01-03-53-179Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-04-04-334Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-10-22-959Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-10-25-488Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-13-19-410Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-13-23-234Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-15-48-416Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-17-39-478Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-17-40-636Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-18-00-321Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-18-22-672Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-20-27-685Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-20-28-409Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-22-43-774Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-22-50-541Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-25-11-784Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-26-14-475Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-26-18-218Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-26-28-836Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-28-35-237Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-29-13-412Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-29-38-934Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-29-51-654Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-30-28-840Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-30-52-002Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T01-30-52-113Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T01-31-11-246Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-31-19-563Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-33-18-953Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-35-14-967Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-40-36-136Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-40-38-173Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T01-41-55-521Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-45-11-366Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-45-49-810Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-47-40-291Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-48-19-401Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-49-10-594Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T01-50-13-795Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T01-50-14-921Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-00-06-858Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-00-11-615Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-00-12-335Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-00-22-736Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-00-22-763Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-00-22-812Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-10-14-974Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-10-15-869Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-15-06-042Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-15-29-619Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-20-13-227Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-20-14-208Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-25-33-885Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-30-11-163Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-30-19-946Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-30-21-172Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-30-26-022Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-30-27-397Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-30-31-083Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T02-40-10-546Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-40-11-457Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T02-40-14-122Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-45-03-699Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-45-09-430Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T02-50-08-798Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T02-50-09-432Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-00-14-503Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-00-31-821Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-00-33-326Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-00-35-345Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T03-00-35-413Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-00-35-422Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-00-44-062Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T03-00-44-137Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T03-04-08-387Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-05-10-757Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-10-12-063Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-10-12-747Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-10-13-221Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-15-03-712Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-15-10-719Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-20-26-279Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-20-28-457Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-25-17-932Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-25-17-932Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-29-06-091Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-29-06-091Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-29-41-955Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-29-41-955Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-30-06-774Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-30-14-022Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-30-14-714Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-30-18-078Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T03-30-18-547Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T03-30-57-941Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-30-57-941Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-33-52-999Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-33-52-999Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-34-03-407Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-35-38-057Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-35-38-057Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-35-51-513Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T03-36-17-042Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T03-36-22-882Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-36-22-882Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-36-31-081Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-36-43-611Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T03-36-56-489Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-36-56-489Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-37-11-034Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-37-35-390Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T03-40-08-317Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-40-08-966Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-40-10-382Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-44-28-746Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-44-28-746Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-44-48-792Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T03-45-03-997Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-45-05-572Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T03-50-09-633Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T03-50-10-267Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T03-58-41-831Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-58-41-831Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-58-55-582Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T03-58-55-582Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T03-59-01-696Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T04-00-14-662Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-00-34-644Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T04-00-35-717Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T04-00-37-715Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-00-41-866Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T04-00-41-990Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T04-00-54-873Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-00-54-873Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-01-41-701Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-01-41-701Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-01-53-856Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-02-08-144Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-02-08-144Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-02-14-725Z-clawpay-taskmaster-checkfix.json
+    │   ├── 2026-03-04T04-05-13-378Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-10-12-078Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T04-10-12-808Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T04-12-57-725Z-clawpay-kaizen-swarm.json
+    │   ├── 2026-03-04T04-15-03-752Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-15-07-512Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-20-29-523Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T04-20-33-541Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T04-25-37-474Z-clawpay-kaizen-swarm.json
+    │   ├── 2026-03-04T04-27-22-427Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-27-22-427Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-30-16-303Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-30-26-866Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T04-30-27-406Z-progress-integrity-audit.json
+    │   ├── 2026-03-04T04-30-28-048Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T04-30-36-805Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T04-30-36-928Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T04-30-38-226Z-priority-repo-major-update-daily.json
+    │   ├── 2026-03-04T04-32-04-950Z-clawpay-kaizen-swarm.json
+    │   ├── 2026-03-04T04-32-43-149Z-clawpay-kaizen-swarm.json
+    │   ├── 2026-03-04T04-34-35-155Z-moltbook-harvester.json
+    │   ├── 2026-03-04T04-34-35-175Z-moltbook-harvester.json
+    │   ├── 2026-03-04T04-39-42-921Z-moltbook-harvester.json
+    │   ├── 2026-03-04T04-39-45-872Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-39-45-872Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-39-47-897Z-bot-sales-research-daily.json
+    │   ├── 2026-03-04T04-39-47-897Z-bot-sales-research-daily.md
+    │   ├── 2026-03-04T04-40-10-836Z-symbol-index-preflight.json
+    │   ├── 2026-03-04T04-40-11-532Z-mcp-ops-agent.json
+    │   ├── 2026-03-04T04-41-14-369Z-moltbook-harvester.json
+    │   ├── agent-comm-source-seed-latest.json
+    │   ├── agent-communication-research-latest.md
+    │   ├── agent-harmony-audit-2026-03-03.md
+    │   ├── agent-streamline-pulse-latest.json
+    │   ├── agent-symbiosis-audit-latest.json
+    │   ├── bot-sales-research-daily-latest.json
+    │   ├── bot-sales-research-daily-latest.md
+    │   ├── claw-architect-checklist-unchecked-latest.json
+    │   ├── claw-architect-checklist-unchecked-latest.md
+    │   ├── claw-architect-full-index-latest.json
+    │   ├── claw-architect-full-index-latest.md
+    │   ├── claw-architect-git-index-latest.json
+    │   ├── claw-architect-git-index-latest.md
+    │   ├── claw-architect-repomap.md
+    │   ├── clawpay-kaizen-swarm-latest.json
+    │   ├── clawpay-openbot-index-gap-benchmark-latest.md
+    │   ├── clawpay-outreach-verification-latest.json
+    │   ├── clawpay-taskmaster-checkfix-latest.json
+    │   ├── closed-loop-daily-latest.json
+    │   ├── daily-feature-rotation-latest.json
+    │   ├── daily-fix-2026-03-01T21-31-10-686Z.json
+    │   ├── daily-fix-2026-03-02T05-00-00-912Z.json
+    │   ├── daily-fix-2026-03-02T13-00-01-833Z.json
+    │   ├── daily-fix-2026-03-02T14-18-19-909Z.json
+    │   ├── daily-fix-2026-03-02T14-20-52-842Z.json
+    │   ├── daily-fix-2026-03-02T20-32-09-108Z.json
+    │   ├── daily-fix-2026-03-02T20-47-22-971Z.json
+    │   ├── daily-fix-2026-03-02T21-00-01-087Z.json
+    │   ├── daily-fix-2026-03-03T05-00-01-064Z.json
+    │   ├── daily-fix-2026-03-03T08-02-03-309Z.json
+    │   ├── daily-fix-2026-03-03T08-11-37-367Z.json
+    │   ├── daily-fix-2026-03-03T13-00-01-036Z.json
+    │   ├── daily-fix-2026-03-03T17-46-53-212Z.json
+    │   ├── daily-fix-2026-03-03T17-56-21-318Z.json
+    │   ├── daily-fix-2026-03-03T18-07-02-560Z.json
+    │   ├── daily-fix-2026-03-03T21-00-01-627Z.json
+    │   ├── daily-fix-2026-03-04T00-22-01-310Z.json
+    │   ├── daily-fix-2026-03-04T00-38-16-422Z.json
+    │   ├── daily-fix-2026-03-04T01-01-06-904Z.json
+    │   ├── daily-fix-2026-03-04T01-25-14-078Z.json
+    │   ├── daily-fix-latest.json
+    │   ├── feature-benchmark-gate-latest.json
+    │   ├── feature-benchmark-score-latest.json
+    │   ├── finish-fast-matrix-latest.json
+    │   ├── fleet-position-1772579118841.json
+    │   ├── fleet-position-1772579118858.json
+    │   ├── fleet-position-1772579169392.json
+    │   ├── fleet-position-1772579209446.json
+    │   ├── fleet-position-1772579210481.json
+    │   ├── fleet-position-1772579262571.json
+    │   ├── fleet-position-1772579292162.json
+    │   ├── fleet-position-1772579292922.json
+    │   ├── fleet-position-1772579319638.json
+    │   ├── fleet-position-1772579319934.json
+    │   ├── fleet-position-1772579362635.json
+    │   ├── fleet-position-1772579441425.json
+    │   ├── fleet-position-1772579683224.json
+    │   ├── fleet-position-1772580109476.json
+    │   ├── fleet-position-1772580667867.json
+    │   ├── fleet-position-1772580930652.json
+    │   ├── fleet-position-1772581101224.json
+    │   ├── fleet-position-1772581148064.json
+    │   ├── fleet-position-1772581194725.json
+    │   ├── fleet-position-1772581448367.json
+    │   ├── fleet-position-1772581495268.json
+    │   ├── fleet-position-1772581683363.json
+    │   ├── fleet-position-1772581729712.json
+    │   ├── fleet-position-1772581776039.json
+    │   ├── fleet-position-1772581827940.json
+    │   ├── fleet-position-1772581874279.json
+    │   ├── fleet-position-1772581921149.json
+    │   ├── fleet-position-1772581967439.json
+    │   ├── fleet-position-1772582014210.json
+    │   ├── fleet-position-1772582061142.json
+    │   ├── fleet-position-1772582108342.json
+    │   ├── fleet-position-1772582155295.json
+    │   ├── fleet-position-1772582202073.json
+    │   ├── fleet-position-1772582248456.json
+    │   ├── fleet-position-1772582295494.json
+    │   ├── fleet-position-1772582341815.json
+    │   ├── fleet-position-1772582388199.json
+    │   ├── fleet-position-1772582676835.json
+    │   ├── fleet-position-1772582825724.json
+    │   ├── fleet-position-1772582872053.json
+    │   ├── fleet-position-1772582918414.json
+    │   ├── fleet-position-1772582964802.json
+    │   ├── fleet-position-1772583017595.json
+    │   ├── fleet-position-1772583066577.json
+    │   ├── fleet-position-1772583112942.json
+    │   ├── fleet-position-1772583159352.json
+    │   ├── fleet-position-1772583206869.json
+    │   ├── fleet-position-1772583253813.json
+    │   ├── fleet-position-1772583301162.json
+    │   ├── fleet-position-1772583348896.json
+    │   ├── fleet-position-1772583395496.json
+    │   ├── fleet-position-1772583442051.json
+    │   ├── fleet-position-1772583489004.json
+    │   ├── fleet-position-1772583535276.json
+    │   ├── fleet-position-1772583582704.json
+    │   ├── fleet-position-1772583637185.json
+    │   ├── fleet-position-1772583682995.json
+    │   ├── fleet-position-1772583834879.json
+    │   ├── fleet-position-1772583970555.json
+    │   ├── fleet-position-1772584053348.json
+    │   ├── fleet-position-1772584356901.json
+    │   ├── fleet-position-1772584620621.json
+    │   ├── fleet-position-1772586421352.json
+    │   ├── fleet-position-1772586479099.json
+    │   ├── fleet-position-1772586533136.json
+    │   ├── fleet-position-1772586585943.json
+    │   ├── fleet-position-1772586831795.json
+    │   ├── fleet-position-1772586877599.json
+    │   ├── fleet-position-1772586926600.json
+    │   ├── fleet-position-1772586951360.json
+    │   ├── fleet-position-1772587003731.json
+    │   ├── fleet-position-1772587057683.json
+    │   ├── fleet-position-1772587114446.json
+    │   ├── fleet-position-1772587161750.json
+    │   ├── fleet-position-1772587235842.json
+    │   ├── fleet-position-1772587286076.json
+    │   ├── fleet-position-1772587333525.json
+    │   ├── fleet-position-1772587351573.json
+    │   ├── fleet-position-1772587398744.json
+    │   ├── fleet-position-1772587444854.json
+    │   ├── fleet-position-1772587666550.json
+    │   ├── fleet-position-1772587743116.json
+    │   ├── fleet-position-1772587794904.json
+    │   ├── fleet-position-1772587900615.json
+    │   ├── fleet-position-1772587966059.json
+    │   ├── fleet-position-1772588019142.json
+    │   ├── fleet-position-1772588092753.json
+    │   ├── fleet-position-1772588172937.json
+    │   ├── fleet-position-1772588219219.json
+    │   ├── fleet-position-1772588266365.json
+    │   ├── fleet-position-1772588312700.json
+    │   ├── fleet-position-1772588360233.json
+    │   ├── fleet-position-1772588443276.json
+    │   ├── fleet-position-1772588499505.json
+    │   ├── fleet-position-1772588550424.json
+    │   ├── fleet-position-1772588598828.json
+    │   ├── fleet-position-1772588660935.json
+    │   ├── fleet-position-1772588714425.json
+    │   ├── fleet-position-1772588762281.json
+    │   ├── fleet-position-1772588809022.json
+    │   ├── fleet-position-1772588855156.json
+    │   ├── fleet-position-1772588904420.json
+    │   ├── fleet-position-1772588921069.json
+    │   ├── fleet-position-1772588967144.json
+    │   ├── fleet-position-1772589020021.json
+    │   ├── fleet-position-1772589065957.json
+    │   ├── fleet-position-1772589112707.json
+    │   ├── fleet-position-1772589159487.json
+    │   ├── fleet-position-1772589206970.json
+    │   ├── fleet-position-1772589256242.json
+    │   ├── fleet-position-1772589304544.json
+    │   ├── fleet-position-1772589350762.json
+    │   ├── fleet-position-1772589396753.json
+    │   ├── fleet-position-1772589442797.json
+    │   ├── fleet-position-1772589489036.json
+    │   ├── fleet-position-1772589534810.json
+    │   ├── fleet-position-1772589580660.json
+    │   ├── fleet-position-1772589636808.json
+    │   ├── fleet-position-1772589682583.json
+    │   ├── fleet-position-1772589728831.json
+    │   ├── fleet-position-1772589774600.json
+    │   ├── fleet-position-1772589820369.json
+    │   ├── fleet-position-1772589866903.json
+    │   ├── fleet-position-1772589915303.json
+    │   ├── fleet-position-1772589961896.json
+    │   ├── fleet-position-1772590008005.json
+    │   ├── fleet-position-1772590055712.json
+    │   ├── fleet-position-1772590103874.json
+    │   ├── fleet-position-1772590150438.json
+    │   ├── fleet-position-1772590196786.json
+    │   ├── fleet-position-1772590247402.json
+    │   ├── fleet-position-1772590297410.json
+    │   ├── fleet-position-1772590344443.json
+    │   ├── fleet-position-1772590391482.json
+    │   ├── fleet-position-1772590437521.json
+    │   ├── fleet-position-1772590483601.json
+    │   ├── fleet-position-1772590533569.json
+    │   ├── fleet-position-1772590582228.json
+    │   ├── fleet-position-1772590630216.json
+    │   ├── fleet-position-1772590676177.json
+    │   ├── fleet-position-1772590721988.json
+    │   ├── fleet-position-1772590768707.json
+    │   ├── fleet-position-1772590823537.json
+    │   ├── fleet-position-1772590869317.json
+    │   ├── fleet-position-1772590915324.json
+    │   ├── fleet-position-1772590961203.json
+    │   ├── fleet-position-1772591007426.json
+    │   ├── fleet-position-1772591054672.json
+    │   ├── fleet-position-1772593283566.json
+    │   ├── fleet-position-1772593334589.json
+    │   ├── fleet-position-1772593380512.json
+    │   ├── fleet-position-1772593426536.json
+    │   ├── fleet-position-1772593473253.json
+    │   ├── fleet-position-1772593523859.json
+    │   ├── fleet-position-1772593570609.json
+    │   ├── fleet-position-1772593617048.json
+    │   ├── fleet-position-1772593663888.json
+    │   ├── fleet-position-1772593711277.json
+    │   ├── fleet-position-1772593759483.json
+    │   ├── fleet-position-latest.json
+    │   ├── forward-progress-enforcer-latest.json
+    │   ├── hourly-fix-1772424800000.json
+    │   ├── hourly-fix-deep-scan-1772425200000.json
+    │   ├── hourly-fix-verification-1772425593.json
+    │   ├── index-knowledge-latest.json
+    │   ├── integrity-quarantine-1772563021639.json
+    │   ├── integrity-quarantine-latest.json
+    │   ├── integrity-unquarantine-1772562361484.json
+    │   ├── integrity-unquarantine-1772563009547.json
+    │   ├── integrity-unquarantine-latest.json
+    │   ├── knowledge-troll-harvest-latest.json
+    │   ├── learning-journal-latest.json
+    │   ├── learning-journal-latest.md
+    │   ├── markdown-files-raw-latest.txt
+    │   ├── markdown-todo-audit-latest.json
+    │   ├── markdown-todo-audit-latest.md
+    │   ├── markdown-unchecked-raw-latest.txt
+    │   ├── markdown-usefulness-index-latest.json
+    │   ├── markdown-usefulness-index-latest.md
+    │   ├── mcp-ops-agent-latest.json
+    │   ├── model-fleet-setup-latest.json
+    │   ├── moltbook-harvester-latest.json
+    │   ├── openclaw-index-sync-agent-latest.json
+    │   ├── pattern-robust-builder-latest.json
+    │   ├── payclaw-drift-latest.json
+    │   ├── payclaw-repomap.md
+    │   ├── pm2-failure-symbol-triage-latest.json
+    │   ├── priority-repo-major-update-daily-latest.json
+    │   ├── production-kpi-flywheel-latest.json
+    │   ├── progress-integrity-audit-latest.json
+    │   ├── progress-integrity-audit-latest.md
+    │   ├── repo-readiness-pulse-latest.json
+    │   ├── repomap-background-latest.json
+    │   ├── roblox-index-everything-status-latest.md
+    │   ├── roblox-oss-monetization-seeds-2026-03-03T18-18-50Z.md
+    │   ├── roblox-oss-monetization-seeds-2026-03-03T18-29-51Z.md
+    │   ├── roblox-oss-monetization-seeds-latest.md
+    │   ├── security-bind-guard-1772560248327.json
+    │   ├── security-bind-guard-1772560288388.json
+    │   ├── security-bind-guard-1772560298707.json
+    │   ├── security-bind-guard-1772560570711.json
+    │   ├── security-bind-guard-1772560606412.json
+    │   ├── security-bind-guard-1772560698757.json
+    │   ├── security-bind-guard-1772560698758.json
+    │   ├── security-bind-guard-1772560861833.json
+    │   ├── security-bind-guard-1772560873696.json
+    │   ├── security-bind-guard-1772561081037.json
+    │   ├── security-bind-guard-1772561256001.json
+    │   ├── security-bind-guard-1772561364437.json
+    │   ├── security-bind-guard-1772561629946.json
+    │   ├── security-bind-guard-1772561629967.json
+    │   ├── security-bind-guard-1772561746216.json
+    │   ├── security-bind-guard-1772561903512.json
+    │   ├── security-bind-guard-1772561903526.json
+    │   ├── security-bind-guard-1772561956073.json
+    │   ├── security-bind-guard-1772562180427.json
+    │   ├── security-bind-guard-1772562229892.json
+    │   ├── security-bind-guard-1772562241748.json
+    │   ├── security-bind-guard-1772562276915.json
+    │   ├── security-bind-guard-1772562290616.json
+    │   ├── security-bind-guard-1772562617957.json
+    │   ├── security-bind-guard-1772564412246.json
+    │   ├── security-bind-guard-1772564421855.json
+    │   ├── security-bind-guard-1772564436219.json
+    │   ├── security-bind-guard-1772565303269.json
+    │   ├── security-bind-guard-1772565780171.json
+    │   ├── security-bind-guard-1772566208992.json
+    │   ├── security-bind-guard-1772567103303.json
+    │   ├── security-bind-guard-1772568007942.json
+    │   ├── security-bind-guard-1772568904055.json
+    │   ├── security-bind-guard-1772569380254.json
+    │   ├── security-bind-guard-1772569809152.json
+    │   ├── security-bind-guard-1772570703215.json
+    │   ├── security-bind-guard-1772571606189.json
+    │   ├── security-bind-guard-1772572677325.json
+    │   ├── security-bind-guard-1772572980211.json
+    │   ├── security-bind-guard-1772574031203.json
+    │   ├── security-bind-guard-1772574394251.json
+    │   ├── security-bind-guard-1772575209215.json
+    │   ├── security-bind-guard-1772576424932.json
+    │   ├── security-bind-guard-1772576580202.json
+    │   ├── security-bind-guard-1772577527764.json
+    │   ├── security-bind-guard-1772578474617.json
+    │   ├── security-bind-guard-1772578511282.json
+    │   ├── security-bind-guard-1772578965268.json
+    │   ├── security-bind-guard-1772579072269.json
+    │   ├── security-bind-guard-1772579359794.json
+    │   ├── security-bind-guard-1772579433690.json
+    │   ├── security-bind-guard-1772580100931.json
+    │   ├── security-bind-guard-1772580180403.json
+    │   ├── security-bind-guard-1772581101895.json
+    │   ├── security-bind-guard-1772581684054.json
+    │   ├── security-bind-guard-1772582430306.json
+    │   ├── security-bind-guard-1772583306255.json
+    │   ├── security-bind-guard-1772583735016.json
+    │   ├── security-bind-guard-1772583739172.json
+    │   ├── security-bind-guard-1772583781131.json
+    │   ├── security-bind-guard-1772583967561.json
+    │   ├── security-bind-guard-1772583996425.json
+    │   ├── security-bind-guard-1772584616351.json
+    │   ├── security-bind-guard-1772584733778.json
+    │   ├── security-bind-guard-1772584742850.json
+    │   ├── security-bind-guard-1772585356985.json
+    │   ├── security-bind-guard-1772586068807.json
+    │   ├── security-bind-guard-1772586112776.json
+    │   ├── security-bind-guard-1772586136714.json
+    │   ├── security-bind-guard-1772586745088.json
+    │   ├── security-bind-guard-1772586800676.json
+    │   ├── security-bind-guard-1772586962133.json
+    │   ├── security-bind-guard-1772587058207.json
+    │   ├── security-bind-guard-1772587077032.json
+    │   ├── security-bind-guard-1772587357699.json
+    │   ├── security-bind-guard-1772587368280.json
+    │   ├── security-bind-guard-1772587380636.json
+    │   ├── security-bind-guard-1772587531530.json
+    │   ├── security-bind-guard-1772587539728.json
+    │   ├── security-bind-guard-1772587584413.json
+    │   ├── security-bind-guard-1772587711418.json
+    │   ├── security-bind-guard-1772587751037.json
+    │   ├── security-bind-guard-1772587766896.json
+    │   ├── security-bind-guard-1772587789350.json
+    │   ├── security-bind-guard-1772587963795.json
+    │   ├── security-bind-guard-1772588095430.json
+    │   ├── security-bind-guard-1772588494630.json
+    │   ├── security-bind-guard-1772588740003.json
+    │   ├── security-bind-guard-1772588855669.json
+    │   ├── security-bind-guard-1772588894881.json
+    │   ├── security-bind-guard-1772588945504.json
+    │   ├── security-bind-guard-1772590981402.json
+    │   ├── security-bind-guard-1772592011989.json
+    │   ├── security-bind-guard-1772592307398.json
+    │   ├── security-bind-guard-1772593211815.json
+    │   ├── security-bind-guard-1772593229830.json
+    │   ├── security-bind-guard-1772593508695.json
+    │   ├── security-bind-guard-1772593811071.json
+    │   ├── security-bind-guard-1772594108211.json
+    │   ├── security-bind-guard-1772594580361.json
+    │   ├── security-bind-guard-1772595241418.json
+    │   ├── security-bind-guard-1772595389103.json
+    │   ├── security-bind-guard-1772595428681.json
+    │   ├── security-bind-guard-1772595608494.json
+    │   ├── security-bind-guard-1772595903766.json
+    │   ├── security-bind-guard-1772596823937.json
+    │   ├── security-bind-guard-1772596911719.json
+    │   ├── security-bind-guard-1772597108609.json
+    │   ├── security-bind-guard-1772597705568.json
+    │   ├── security-bind-guard-1772598180511.json
+    │   ├── security-bind-guard-1772598623563.json
+    │   ├── security-bind-guard-latest.json
+    │   ├── sre-daily-maintenance-latest.json
+    │   ├── sre-hourly-triage-latest.json
+    │   ├── symbol-delta-0d4ed91-2026-03-03T23-32-17Z.md
+    │   ├── symbol-delta-0d4ed91-2026-03-03T23-32-41Z.md
+    │   ├── symbol-delta-latest.md
+    │   ├── symbol-index-preflight-latest.json
+    │   ├── symbolic-qa-hub-latest.json
+    │   ├── system-4h-checkfix-1772562263282.json
+    │   ├── system-4h-checkfix-1772562316203.json
+    │   ├── system-4h-checkfix-1772564472670.json
+    │   ├── system-4h-checkfix-1772588524834.json
+    │   ├── system-4h-checkfix-1772588760511.json
+    │   ├── system-4h-checkfix-1772588867800.json
+    │   ├── system-4h-checkfix-1772588909849.json
+    │   ├── system-4h-checkfix-1772588957405.json
+    │   ├── system-4h-checkfix-1772593271299.json
+    │   ├── system-4h-checkfix-latest.json
+    │   ├── system-gap-analysis-latest.txt
+    │   ├── task-governor-1772560698948.json
+    │   ├── task-governor-1772561082257.json
+    │   ├── task-governor-1772561252408.json
+    │   ├── task-governor-1772561630137.json
+    │   ├── task-governor-1772561631331.json
+    │   ├── task-governor-1772561762992.json
+    │   ├── task-governor-1772561906048.json
+    │   ├── task-governor-1772561910101.json
+    │   ├── task-governor-1772561960875.json
+    │   ├── task-governor-1772562246601.json
+    │   ├── task-governor-1772562296199.json
+    │   ├── task-governor-1772562388351.json
+    │   ├── task-governor-1772562625781.json
+    │   ├── task-governor-1772564447614.json
+    │   ├── task-governor-1772564450429.json
+    │   ├── task-governor-1772565307277.json
+    │   ├── task-governor-1772566217693.json
+    │   ├── task-governor-1772567106703.json
+    │   ├── task-governor-1772568014113.json
+    │   ├── task-governor-1772568913313.json
+    │   ├── task-governor-1772570038217.json
+    │   ├── task-governor-1772570707053.json
+    │   ├── task-governor-1772572197417.json
+    │   ├── task-governor-1772575085905.json
+    │   ├── task-governor-1772579339243.json
+    │   ├── task-governor-1772579365578.json
+    │   ├── task-governor-1772579365733.json
+    │   ├── task-governor-1772587715987.json
+    │   ├── task-governor-1772587753600.json
+    │   ├── task-governor-1772591994242.json
+    │   ├── task-governor-latest.json
+    │   ├── uptime-watchdog-1772422559028.json
+    │   ├── uptime-watchdog-1772423502549.json
+    │   ├── uptime-watchdog-1772423563204.json
+    │   ├── uptime-watchdog-1772424907593.json
+    │   ├── uptime-watchdog-1772428509001.json
+    │   ├── uptime-watchdog-1772432114267.json
+    │   ├── uptime-watchdog-1772435713426.json
+    │   ├── uptime-watchdog-1772439310110.json
+    │   ├── uptime-watchdog-1772442911664.json
+    │   ├── uptime-watchdog-1772446512285.json
+    │   ├── uptime-watchdog-1772450113699.json
+    │   ├── uptime-watchdog-1772453714158.json
+    │   ├── uptime-watchdog-1772456800430.json
+    │   ├── uptime-watchdog-1772457323742.json
+    │   ├── uptime-watchdog-1772460968626.json
+    │   ├── uptime-watchdog-1772462182048.json
+    │   ├── uptime-watchdog-1772464511438.json
+    │   ├── uptime-watchdog-1772468113403.json
+    │   ├── uptime-watchdog-1772471725074.json
+    │   ├── uptime-watchdog-1772475312596.json
+    │   ├── uptime-watchdog-1772478913361.json
+    │   ├── uptime-watchdog-1772482521447.json
+    │   ├── uptime-watchdog-1772486117313.json
+    │   ├── uptime-watchdog-1772489717826.json
+    │   ├── uptime-watchdog-1772493319417.json
+    │   ├── uptime-watchdog-1772496953563.json
+    │   ├── uptime-watchdog-1772500539600.json
+    │   ├── uptime-watchdog-1772504117991.json
+    │   ├── uptime-watchdog-1772507727593.json
+    │   ├── uptime-watchdog-1772511318500.json
+    │   ├── uptime-watchdog-1772514915960.json
+    │   ├── uptime-watchdog-1772517873261.json
+    │   ├── uptime-watchdog-1772521264861.json
+    │   ├── uptime-watchdog-1772525066878.json
+    │   ├── uptime-watchdog-1772525535132.json
+    │   ├── uptime-watchdog-1772528429061.json
+    │   ├── uptime-watchdog-1772532019313.json
+    │   ├── uptime-watchdog-1772535689231.json
+    │   ├── uptime-watchdog-1772539220455.json
+    │   ├── uptime-watchdog-1772542821227.json
+    │   ├── uptime-watchdog-1772546421328.json
+    │   ├── uptime-watchdog-1772550060604.json
+    │   ├── uptime-watchdog-1772553658634.json
+    │   ├── uptime-watchdog-1772557223307.json
+    │   ├── uptime-watchdog-1772560133324.json
+    │   ├── uptime-watchdog-1772560696886.json
+    │   ├── uptime-watchdog-1772560876341.json
+    │   ├── uptime-watchdog-1772561405802.json
+    │   ├── uptime-watchdog-1772564424011.json
+    │   ├── uptime-watchdog-1772564445179.json
+    │   ├── uptime-watchdog-1772568012285.json
+    │   ├── uptime-watchdog-1772568912231.json
+    │   ├── uptime-watchdog-1772570036931.json
+    │   ├── uptime-watchdog-1772571609716.json
+    │   ├── uptime-watchdog-1772574420256.json
+    │   ├── uptime-watchdog-1772575212292.json
+    │   ├── uptime-watchdog-1772579337493.json
+    │   ├── uptime-watchdog-1772582452897.json
+    │   ├── uptime-watchdog-1772583801718.json
+    │   ├── uptime-watchdog-1772586822144.json
+    │   ├── uptime-watchdog-1772587090464.json
+    │   ├── uptime-watchdog-1772587609679.json
+    │   ├── uptime-watchdog-1772587640279.json
+    │   ├── uptime-watchdog-1772589633381.json
+    │   ├── uptime-watchdog-1772595350523.json
+    │   ├── uptime-watchdog-1772595376699.json
+    │   ├── uptime-watchdog-1772595402308.json
+    │   ├── uptime-watchdog-1772595453658.json
+    │   ├── uptime-watchdog-1772595887750.json
+    │   ├── uptime-watchdog-1772596740102.json
+    │   ├── uptime-watchdog-1772596866089.json
+    │   ├── uptime-watchdog-1772596933281.json
+    │   ├── uptime-watchdog-latest.json
+    │   ├── veritap-oss-benchmark-2026-03-03.md
+    │   └── wallet-env-validation-latest.md
+    ├── schemas
+    │   ├── SHIP_DISCIPLINE_SCHEMA_NOTES.md
+    │   ├── module-manifest.schema.json
+    │   ├── payloads.js
+    │   └── task.js
+    ├── scripts
+    │   ├── ip-rules-proposals
+    │   │   ├── 1772115053146-rules-proposal-v1.json
+    │   │   ├── 1772115091527-rules-proposal-v1.json
+    │   │   ├── 1772115257195-rules-proposal-v1.json
+    │   │   ├── 1772115551120-rules-proposal-v1.json
+    │   │   ├── 1772115956383-rules-proposal-v1.json
+    │   │   ├── 1772116327517-rules-proposal-v1.json
+    │   │   ├── 1772116727429-rules-proposal-v1.json
+    │   │   ├── 1772118157313-rules-proposal-v1.json
+    │   │   ├── 1772122854283-rules-proposal-v1.json
+    │   │   └── 1772126366431-rules-proposal-v1.json
+    │   ├── account-provisioner.js
+    │   ├── adaptive-sender.js
+    │   ├── affiliate-rollout-research.js
+    │   ├── agency-growth-os.js
+    │   ├── agent-drift-audit.js
+    │   ├── agent-feedback-add.js
+    │   ├── agent-fleet-position-manager.js
+    │   ├── agent-memory-audit.js
+    │   ├── agent-memory-maintenance.js
+    │   ├── agent-memory-sql-verify.js
+    │   ├── agent-state-init.js
+    │   ├── agent-streamline-pulse.js
+    │   ├── agent-symbiosis-audit.js
+    │   ├── agent-team-cycle.js
+    │   ├── agent-toolkit.js
+    │   ├── ai-work-pulse.js
+    │   ├── alignment-gate.js
+    │   ├── api-key-manager.js
+    │   ├── architect-api.js
+    │   ├── audit-deep.js
+    │   ├── audit-folder-contents.js
+    │   ├── audit-idling-systems.js
+    │   ├── audit-missing-brands.js
+    │   ├── auto-heal-cycle.js
+    │   ├── auto-recovery-pulse.js
+    │   ├── auto-start-all.js
+    │   ├── autonomous-pr-cycle.js
+    │   ├── backlog-orchestrator.js
+    │   ├── backup-to-nas.js
+    │   ├── backup-verify-nas.js
+    │   ├── blackwallstreetopoly-send-scheduler.js
+    │   ├── bootstrap-db.js
+    │   ├── bot-ai-helper.js
+    │   ├── bot-auto-improvement.js
+    │   ├── bot-autonomous-agent.js
+    │   ├── bot-commerce-api.js
+    │   ├── bot-commerce.js
+    │   ├── bot-conversion-tracker.js
+    │   ├── bot-daily-improvement.js
+    │   ├── bot-discovery-advanced.js
+    │   ├── bot-discovery-aggressive.js
+    │   ├── bot-lead-discovery.js
+    │   ├── bot-learning-system.js
+    │   ├── bot-message-optimizer.js
+    │   ├── bot-outreach-coordinator.js
+    │   ├── bot-outreach-scheduler.js
+    │   ├── bot-outreach.js
+    │   ├── bot-platform-verify.js
+    │   ├── bot-platform.js
+    │   ├── bot-protocol.js
+    │   ├── bot-registry.js
+    │   ├── bot-sales-research-daily.js
+    │   ├── bot-self-healing.js
+    │   ├── brand-control-plane.js
+    │   ├── brand-image-catalog.js
+    │   ├── build-lanes-audit.js
+    │   ├── build-lanes-start.js
+    │   ├── capability-factory-pulse.js
+    │   ├── capability-factory.js
+    │   ├── check-brand-coverage.js
+    │   ├── check-categorization-readiness.js
+    │   ├── classify-claw-files.js
+    │   ├── claw-scan.js
+    │   ├── clawdhub.js
+    │   ├── clawhub-skill-factory.js
+    │   ├── clawpay-kaizen-swarm.js
+    │   ├── clawpay-task-master.js
+    │   ├── clawpay-taskmaster-checkfix.js
+    │   ├── closed-loop-daily.js
+    │   ├── closed-self-correct-loop.js
+    │   ├── content-draft-generate.js
+    │   ├── content-draft-score.js
+    │   ├── content-intake.js
+    │   ├── content-publish.js
+    │   ├── content-review.js
+    │   ├── cookiespass-mission-pulse.js
+    │   ├── coordinator-watchdog-pulse.js
+    │   ├── copy-lab-run.js
+    │   ├── credit-analyze.js
+    │   ├── credit-attach-evidence.js
+    │   ├── credit-autopilot.js
+    │   ├── credit-e2e-live-loop.js
+    │   ├── credit-generate-letter.js
+    │   ├── credit-intake-pdf.js
+    │   ├── credit-intake.js
+    │   ├── credit-kb-validate.js
+    │   ├── credit-learning-report.js
+    │   ├── credit-log-outcome.js
+    │   ├── credit-next-actions.js
+    │   ├── credit-oauth-check.js
+    │   ├── credit-parse-pdf.js
+    │   ├── credit-phase2.js
+    │   ├── credit-plan.js
+    │   ├── credit-send-queued.js
+    │   ├── credit-sync-replies.js
+    │   ├── daily-feature-rotation.js
+    │   ├── daily-fix-pulse.js
+    │   ├── daily-progress-report.js
+    │   ├── daily-send-scheduler.js
+    │   ├── dashboard-nudge.js
+    │   ├── dead-letter-reconcile.js
+    │   ├── dedupe-quarantine.js
+    │   ├── dedupe-review-report.js
+    │   ├── dedupe-split-remove-lists.js
+    │   ├── deep-categorizer.js
+    │   ├── dev-pipeline.js
+    │   ├── device-utilization-pulse.js
+    │   ├── discord-gateway.js
+    │   ├── discord-health-check.js
+    │   ├── dispatch-media-chain.js
+    │   ├── e2e-brand-control-plane.js
+    │   ├── email-core-smoke.js
+    │   ├── email-diagnose.js
+    │   ├── email-finder.js
+    │   ├── email-hub-server.js
+    │   ├── enrich-leads-email.js
+    │   ├── ensure-pm2-persistence.js
+    │   ├── events-domain-consumer.js
+    │   ├── events-domain-spawner.js
+    │   ├── experiment-dashboard.js
+    │   ├── experiment-engine.js
+    │   ├── feature-benchmark-gate.js
+    │   ├── feature-benchmark-score.js
+    │   ├── fetch-leads-runner.js
+    │   ├── finance-automation-queue.js
+    │   ├── finance-automation.js
+    │   ├── finish-fast-matrix.js
+    │   ├── flow-regression-pulse.js
+    │   ├── forward-progress-enforcer.js
+    │   ├── generate-doc-symbol-index.js
+    │   ├── generate-memory-skill.js
+    │   ├── git-sites-subagent-pulse.js
+    │   ├── gitea-configure-remote.sh
+    │   ├── gitea-create-agent-key.sh
+    │   ├── gitea-nas-backup.sh
+    │   ├── gitea-nas-bootstrap.sh
+    │   ├── gitea-nas-restore.sh
+    │   ├── github-baseline-gate.js
+    │   ├── github-bootstrap-managed-repos.js
+    │   ├── github-observability-scan.js
+    │   ├── global-redgreen-status.js
+    │   ├── goal-autopilot.js
+    │   ├── gocrawdaddy-launch.js
+    │   ├── google-maps-scraper.js
+    │   ├── greptile-code-review.js
+    │   ├── index-github-repos.js
+    │   ├── index-nas-storage.js
+    │   ├── integrity-quarantine-list.js
+    │   ├── integrity-quarantine.js
+    │   ├── integrity-unquarantine.js
+    │   ├── ip-extract-mbox.js
+    │   ├── ip-ingest.js
+    │   ├── ip-kb-embed.py
+    │   ├── ip-kb-ingest-idm-playwright.js
+    │   ├── ip-kb-ingest-idm.py
+    │   ├── ip-kb-ingest-tbmp.py
+    │   ├── ip-kb-ingest-tmep-html.py
+    │   ├── ip-kb-init.py
+    │   ├── ip-kb-requirements.txt
+    │   ├── ip-kb-search.py
+    │   ├── ip-log-outcome.js
+    │   ├── ip-mark-stage.js
+    │   ├── ip-next-actions.js
+    │   ├── ip-parse-office-action.js
+    │   ├── ip-prefiling-assess.js
+    │   ├── ip-refresh-patterns.js
+    │   ├── ip-rules-promote.js
+    │   ├── ip-rules-score.js
+    │   ├── ip-rules-simulate.js
+    │   ├── ip-rules-suggest.js
+    │   ├── ip-sync-loop.js
+    │   ├── ip-sync-uspto.js
+    │   ├── ip_kb_common.py
+    │   ├── janitor-vacuum.js
+    │   ├── jcodemunch-api.js
+    │   ├── jcodemunch-mcp.sh
+    │   ├── kill-commerce-server.js
+    │   ├── knowledge-troll-harvest.js
+    │   ├── launch-e2e-matrix.js
+    │   ├── lead-autopilot.js
+    │   ├── lead-pipeline.js
+    │   ├── learning-journal-agent.js
+    │   ├── linkedin-scraper.js
+    │   ├── loyalty-maintenance.js
+    │   ├── loyalty-process-webhooks.js
+    │   ├── loyalty-send-outreach.js
+    │   ├── loyalty-test-cookies-priority.js
+    │   ├── loyalty-test-webhooks.js
+    │   ├── marketplace-services-os.js
+    │   ├── mcp-context7.sh
+    │   ├── mcp-filesystem.sh
+    │   ├── mcp-github.sh
+    │   ├── mcp-health-check.js
+    │   ├── mcp-maintenance-loop.js
+    │   ├── mcp-ops-agent.js
+    │   ├── mcp-postgres.sh
+    │   ├── mcp-sync-config.js
+    │   ├── media-hub-autopilot.js
+    │   ├── media-visual-catalog.js
+    │   ├── memory-compress.js
+    │   ├── memory-enforcement.ts
+    │   ├── mission-control-agent-runner.js
+    │   ├── mission-control-heartbeat.js
+    │   ├── mission-control-init.js
+    │   ├── mission-control-pm2-only.js
+    │   ├── model-fleet-setup.js
+    │   ├── model-portfolio-audit.js
+    │   ├── model-provider-setup-check.js
+    │   ├── model-routing-stats.js
+    │   ├── model-routing-watchdog.js
+    │   ├── model-spend-report.js
+    │   ├── moltbook-discovery.js
+    │   ├── moltbook-harvester-responder.js
+    │   ├── nas-preflight.js
+    │   ├── needs-attention-autofix-pulse.js
+    │   ├── needs-work-report.js
+    │   ├── offgrid-meshtastic-bridge.py
+    │   ├── ollama-maintenance.js
+    │   ├── ollama-prune-redundant.js
+    │   ├── openclaw-build-integrations.js
+    │   ├── openclaw-coordinator-pulse.js
+    │   ├── openclaw-creator-pack.js
+    │   ├── openclaw-index-sync-agent.js
+    │   ├── opencode-controller-queue.js
+    │   ├── opengoat-org-pulse.js
+    │   ├── opengoat-setup.js
+    │   ├── ops-api.js
+    │   ├── overnight-advisory-board.js
+    │   ├── overnight-backup-sanitize-push.js
+    │   ├── overnight-self-maintenance.js
+    │   ├── pattern-robust-builder.js
+    │   ├── payclaw-dispatch-chunks.js
+    │   ├── payclaw-drift-pulse.js
+    │   ├── payclaw-launch.js
+    │   ├── payment-router.js
+    │   ├── platform-daily.js
+    │   ├── platform-health-report.js
+    │   ├── pm2-failure-symbol-triage.js
+    │   ├── pm2-runtime-view.js
+    │   ├── policy-gate-assert.js
+    │   ├── priority-repo-major-update-daily.js
+    │   ├── proactive-research-assistant.js
+    │   ├── production-kpi-flywheel.js
+    │   ├── progress-integrity-audit.js
+    │   ├── prompt-oracle.js
+    │   ├── qa-fast.js
+    │   ├── qa-human-grade.js
+    │   ├── quantfusion-overnight-algo-dev.js
+    │   ├── quantfusion-trading-os.js
+    │   ├── quantfusion-trading-queue.js
+    │   ├── queue-security-council.js
+    │   ├── record-orchestrator-step.js
+    │   ├── reddit-digest.js
+    │   ├── regression-autofix-pulse.js
+    │   ├── release-checklist-four-repos.js
+    │   ├── repo-baseline-rollout.js
+    │   ├── repo-map.js
+    │   ├── repo-normalization-queue.js
+    │   ├── repo-readiness-pulse.js
+    │   ├── repomap-background.js
+    │   ├── research-signals.js
+    │   ├── research-sync.js
+    │   ├── resend-converting-emails.js
+    │   ├── resourceful-file-resolver.js
+    │   ├── roblox-game-growth-pulse.js
+    │   ├── roblox-oss-jumpstart.sh
+    │   ├── run-dedup.js
+    │   ├── run-lead-ops.sh
+    │   ├── run-migrations.js
+    │   ├── run-next-steps.sh
+    │   ├── runtime-audit.js
+    │   ├── saas-opportunity-researcher.js
+    │   ├── saas-overlap-research.js
+    │   ├── saas-pain-opportunity-report.js
+    │   ├── sales-attribution-qa.js
+    │   ├── sales-daily-conversion-report.js
+    │   ├── sales-production-validate.js
+    │   ├── sales-webhook-replay.js
+    │   ├── salesops-maintenance.js
+    │   ├── schema-audit-comprehensive.js
+    │   ├── schema-mismatch-audit.js
+    │   ├── security-bind-guard.js
+    │   ├── security-council.js
+    │   ├── security-deps-audit.js
+    │   ├── security-remediation-queue.js
+    │   ├── security-runtime-audit.js
+    │   ├── security-secrets-scan.js
+    │   ├── security-sweep.js
+    │   ├── seed-agent-comm-sources.js
+    │   ├── seed-shared-flow-pack.js
+    │   ├── self-awareness-index.js
+    │   ├── self-mod-request.js
+    │   ├── self-mod-worker.js
+    │   ├── sell-process-item.js
+    │   ├── semantic-log-pruner.js
+    │   ├── send-test-email.js
+    │   ├── setup.sh
+    │   ├── ship-discipline-checklist.js
+    │   ├── skynpatch-website-add-wholesale.js
+    │   ├── skynpatch-wholesale-checkout-server.js
+    │   ├── sre-daily-maintenance.js
+    │   ├── sre-hourly-triage.js
+    │   ├── start-all-persistent.sh
+    │   ├── start-whatsapp-payments.js
+    │   ├── status-review-agent-runner.js
+    │   ├── status-review-init.js
+    │   ├── stripe-add-skus.js
+    │   ├── stripe-bws-update-products.js
+    │   ├── stripe-core-smoke.js
+    │   ├── stripe-create-multi-sku-checkout.js
+    │   ├── stripe-crypto-setup.js
+    │   ├── stripe-setup-blackwallstreet.js
+    │   ├── stripe-setup-products.js
+    │   ├── stripe-update-checkout.js
+    │   ├── stripe-update-lust-grace-ids.js
+    │   ├── stripe-webhook-handler.js
+    │   ├── symbol-index-preflight.js
+    │   ├── symbolic-qa-hub.js
+    │   ├── sync-files-to-file-index.js
+    │   ├── system-4h-checkfix.js
+    │   ├── system-cleanup.js
+    │   ├── system-dashboard.js
+    │   ├── system-gap-analysis.js
+    │   ├── task-contract-audit.js
+    │   ├── task-governor.js
+    │   ├── tasks-health.js
+    │   ├── tasks-kanban.js
+    │   ├── telegram-health-check.js
+    │   ├── todo-6am-pull.js
+    │   ├── unknown-file-intake.js
+    │   ├── uptime-watchdog-hourly.js
+    │   ├── utilization-autofill-pulse.js
+    │   ├── vacuum-state.js
+    │   ├── verify-runtime-topology.js
+    │   ├── verify-stripe-pricing.js
+    │   ├── wallet-repos-env-validate.mjs
+    │   ├── web-fallback-extract.js
+    │   ├── webhook-server.js
+    │   ├── weekly-trends-brief.js
+    │   ├── whatsapp-payment-setup.js
+    │   └── workflow-walkthrough-audit.js
+    ├── skills
+    │   ├── skill-prompt-generator
+    │   │   ├── core
+    │   │   │   ├── cross_domain_generator.py
+    │   │   │   ├── cross_domain_query.py
+    │   │   │   ├── design_bridge.py
+    │   │   │   ├── schema_migration_v1.sql
+    │   │   │   ├── variable_sampler.py
+    │   │   │   └── yaml_sampler.py
+    │   │   ├── design-logic
+    │   │   │   ├── modern-minimal
+    │   │   │   │   ├── constraints.md
+    │   │   │   │   └── principles.md
+    │   │   │   └── warm-cute
+    │   │   │       ├── constraints.md
+    │   │   │       └── principles.md
+    │   │   ├── extracted_results
+    │   │   ├── knowledge_base
+    │   │   │   └── how_to_control_color.md
+    │   │   ├── variables
+    │   │   │   ├── borders.yaml
+    │   │   │   ├── colors.yaml
+    │   │   │   └── decorations.yaml
+    │   │   ├── README.md
+    │   │   ├── README_v2.0.md
+    │   │   ├── UPGRADE_GUIDE_v2.0.md
+    │   │   ├── element_db.py
+    │   │   ├── framework_loader.py
+    │   │   ├── intelligent_generator.py
+    │   │   ├── prompt_framework.yaml
+    │   │   └── requirements.txt
+    │   ├── skills
+    │   │   ├── algorithmic-art
+    │   │   │   ├── templates
+    │   │   │   │   ├── generator_template.js
+    │   │   │   │   └── viewer.html
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── brand-guidelines
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── canvas-design
+    │   │   │   ├── canvas-fonts
+    │   │   │   │   ├── ArsenalSC-OFL.txt
+    │   │   │   │   ├── ArsenalSC-Regular.ttf
+    │   │   │   │   ├── BigShoulders-Bold.ttf
+    │   │   │   │   ├── BigShoulders-OFL.txt
+    │   │   │   │   ├── BigShoulders-Regular.ttf
+    │   │   │   │   ├── Boldonse-OFL.txt
+    │   │   │   │   ├── Boldonse-Regular.ttf
+    │   │   │   │   ├── BricolageGrotesque-Bold.ttf
+    │   │   │   │   ├── BricolageGrotesque-OFL.txt
+    │   │   │   │   ├── BricolageGrotesque-Regular.ttf
+    │   │   │   │   ├── CrimsonPro-Bold.ttf
+    │   │   │   │   ├── CrimsonPro-Italic.ttf
+    │   │   │   │   ├── CrimsonPro-OFL.txt
+    │   │   │   │   ├── CrimsonPro-Regular.ttf
+    │   │   │   │   ├── DMMono-OFL.txt
+    │   │   │   │   ├── DMMono-Regular.ttf
+    │   │   │   │   ├── EricaOne-OFL.txt
+    │   │   │   │   ├── EricaOne-Regular.ttf
+    │   │   │   │   ├── GeistMono-Bold.ttf
+    │   │   │   │   ├── GeistMono-OFL.txt
+    │   │   │   │   ├── GeistMono-Regular.ttf
+    │   │   │   │   ├── Gloock-OFL.txt
+    │   │   │   │   ├── Gloock-Regular.ttf
+    │   │   │   │   ├── IBMPlexMono-Bold.ttf
+    │   │   │   │   ├── IBMPlexMono-OFL.txt
+    │   │   │   │   ├── IBMPlexMono-Regular.ttf
+    │   │   │   │   ├── IBMPlexSerif-Bold.ttf
+    │   │   │   │   ├── IBMPlexSerif-BoldItalic.ttf
+    │   │   │   │   ├── IBMPlexSerif-Italic.ttf
+    │   │   │   │   ├── IBMPlexSerif-Regular.ttf
+    │   │   │   │   ├── InstrumentSans-Bold.ttf
+    │   │   │   │   ├── InstrumentSans-BoldItalic.ttf
+    │   │   │   │   ├── InstrumentSans-Italic.ttf
+    │   │   │   │   ├── InstrumentSans-OFL.txt
+    │   │   │   │   ├── InstrumentSans-Regular.ttf
+    │   │   │   │   ├── InstrumentSerif-Italic.ttf
+    │   │   │   │   ├── InstrumentSerif-Regular.ttf
+    │   │   │   │   ├── Italiana-OFL.txt
+    │   │   │   │   ├── Italiana-Regular.ttf
+    │   │   │   │   ├── JetBrainsMono-Bold.ttf
+    │   │   │   │   ├── JetBrainsMono-OFL.txt
+    │   │   │   │   ├── JetBrainsMono-Regular.ttf
+    │   │   │   │   ├── Jura-Light.ttf
+    │   │   │   │   ├── Jura-Medium.ttf
+    │   │   │   │   ├── Jura-OFL.txt
+    │   │   │   │   ├── LibreBaskerville-OFL.txt
+    │   │   │   │   ├── LibreBaskerville-Regular.ttf
+    │   │   │   │   ├── Lora-Bold.ttf
+    │   │   │   │   ├── Lora-BoldItalic.ttf
+    │   │   │   │   ├── Lora-Italic.ttf
+    │   │   │   │   ├── Lora-OFL.txt
+    │   │   │   │   ├── Lora-Regular.ttf
+    │   │   │   │   ├── NationalPark-Bold.ttf
+    │   │   │   │   ├── NationalPark-OFL.txt
+    │   │   │   │   ├── NationalPark-Regular.ttf
+    │   │   │   │   ├── NothingYouCouldDo-OFL.txt
+    │   │   │   │   ├── NothingYouCouldDo-Regular.ttf
+    │   │   │   │   ├── Outfit-Bold.ttf
+    │   │   │   │   ├── Outfit-OFL.txt
+    │   │   │   │   ├── Outfit-Regular.ttf
+    │   │   │   │   ├── PixelifySans-Medium.ttf
+    │   │   │   │   ├── PixelifySans-OFL.txt
+    │   │   │   │   ├── PoiretOne-OFL.txt
+    │   │   │   │   ├── PoiretOne-Regular.ttf
+    │   │   │   │   ├── RedHatMono-Bold.ttf
+    │   │   │   │   ├── RedHatMono-OFL.txt
+    │   │   │   │   ├── RedHatMono-Regular.ttf
+    │   │   │   │   ├── Silkscreen-OFL.txt
+    │   │   │   │   ├── Silkscreen-Regular.ttf
+    │   │   │   │   ├── SmoochSans-Medium.ttf
+    │   │   │   │   ├── SmoochSans-OFL.txt
+    │   │   │   │   ├── Tektur-Medium.ttf
+    │   │   │   │   ├── Tektur-OFL.txt
+    │   │   │   │   ├── Tektur-Regular.ttf
+    │   │   │   │   ├── WorkSans-Bold.ttf
+    │   │   │   │   ├── WorkSans-BoldItalic.ttf
+    │   │   │   │   ├── WorkSans-Italic.ttf
+    │   │   │   │   ├── WorkSans-OFL.txt
+    │   │   │   │   ├── WorkSans-Regular.ttf
+    │   │   │   │   ├── YoungSerif-OFL.txt
+    │   │   │   │   └── YoungSerif-Regular.ttf
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── doc-coauthoring
+    │   │   │   └── SKILL.md
+    │   │   ├── docx
+    │   │   │   ├── scripts
+    │   │   │   │   ├── office
+    │   │   │   │   │   ├── helpers
+    │   │   │   │   │   │   ├── __init__.py
+    │   │   │   │   │   │   ├── merge_runs.py
+    │   │   │   │   │   │   └── simplify_redlines.py
+    │   │   │   │   │   ├── schemas
+    │   │   │   │   │   │   ├── ISO-IEC29500-4_2016
+    │   │   │   │   │   │   │   ├── dml-chart.xsd
+    │   │   │   │   │   │   │   ├── dml-chartDrawing.xsd
+    │   │   │   │   │   │   │   ├── dml-diagram.xsd
+    │   │   │   │   │   │   │   ├── dml-lockedCanvas.xsd
+    │   │   │   │   │   │   │   ├── dml-main.xsd
+    │   │   │   │   │   │   │   ├── dml-picture.xsd
+    │   │   │   │   │   │   │   ├── dml-spreadsheetDrawing.xsd
+    │   │   │   │   │   │   │   ├── dml-wordprocessingDrawing.xsd
+    │   │   │   │   │   │   │   ├── pml.xsd
+    │   │   │   │   │   │   │   ├── shared-additionalCharacteristics.xsd
+    │   │   │   │   │   │   │   ├── shared-bibliography.xsd
+    │   │   │   │   │   │   │   ├── shared-commonSimpleTypes.xsd
+    │   │   │   │   │   │   │   ├── shared-customXmlDataProperties.xsd
+    │   │   │   │   │   │   │   ├── shared-customXmlSchemaProperties.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesCustom.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesExtended.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesVariantTypes.xsd
+    │   │   │   │   │   │   │   ├── shared-math.xsd
+    │   │   │   │   │   │   │   ├── shared-relationshipReference.xsd
+    │   │   │   │   │   │   │   ├── sml.xsd
+    │   │   │   │   │   │   │   ├── vml-main.xsd
+    │   │   │   │   │   │   │   ├── vml-officeDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-presentationDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-spreadsheetDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-wordprocessingDrawing.xsd
+    │   │   │   │   │   │   │   ├── wml.xsd
+    │   │   │   │   │   │   │   └── xml.xsd
+    │   │   │   │   │   │   ├── ecma
+    │   │   │   │   │   │   │   └── fouth-edition
+    │   │   │   │   │   │   │       ├── opc-contentTypes.xsd
+    │   │   │   │   │   │   │       ├── opc-coreProperties.xsd
+    │   │   │   │   │   │   │       ├── opc-digSig.xsd
+    │   │   │   │   │   │   │       └── opc-relationships.xsd
+    │   │   │   │   │   │   ├── mce
+    │   │   │   │   │   │   │   └── mc.xsd
+    │   │   │   │   │   │   └── microsoft
+    │   │   │   │   │   │       ├── wml-2010.xsd
+    │   │   │   │   │   │       ├── wml-2012.xsd
+    │   │   │   │   │   │       ├── wml-2018.xsd
+    │   │   │   │   │   │       ├── wml-cex-2018.xsd
+    │   │   │   │   │   │       ├── wml-cid-2016.xsd
+    │   │   │   │   │   │       ├── wml-sdtdatahash-2020.xsd
+    │   │   │   │   │   │       └── wml-symex-2015.xsd
+    │   │   │   │   │   ├── validators
+    │   │   │   │   │   │   ├── __init__.py
+    │   │   │   │   │   │   ├── base.py
+    │   │   │   │   │   │   ├── docx.py
+    │   │   │   │   │   │   ├── pptx.py
+    │   │   │   │   │   │   └── redlining.py
+    │   │   │   │   │   ├── pack.py
+    │   │   │   │   │   ├── soffice.py
+    │   │   │   │   │   ├── unpack.py
+    │   │   │   │   │   └── validate.py
+    │   │   │   │   ├── templates
+    │   │   │   │   │   ├── comments.xml
+    │   │   │   │   │   ├── commentsExtended.xml
+    │   │   │   │   │   ├── commentsExtensible.xml
+    │   │   │   │   │   ├── commentsIds.xml
+    │   │   │   │   │   └── people.xml
+    │   │   │   │   ├── __init__.py
+    │   │   │   │   ├── accept_changes.py
+    │   │   │   │   └── comment.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── frontend-design
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── internal-comms
+    │   │   │   ├── examples
+    │   │   │   │   ├── 3p-updates.md
+    │   │   │   │   ├── company-newsletter.md
+    │   │   │   │   ├── faq-answers.md
+    │   │   │   │   └── general-comms.md
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── mcp-builder
+    │   │   │   ├── reference
+    │   │   │   │   ├── evaluation.md
+    │   │   │   │   ├── mcp_best_practices.md
+    │   │   │   │   ├── node_mcp_server.md
+    │   │   │   │   └── python_mcp_server.md
+    │   │   │   ├── scripts
+    │   │   │   │   ├── connections.py
+    │   │   │   │   ├── evaluation.py
+    │   │   │   │   ├── example_evaluation.xml
+    │   │   │   │   └── requirements.txt
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── pdf
+    │   │   │   ├── scripts
+    │   │   │   │   ├── check_bounding_boxes.py
+    │   │   │   │   ├── check_fillable_fields.py
+    │   │   │   │   ├── convert_pdf_to_images.py
+    │   │   │   │   ├── create_validation_image.py
+    │   │   │   │   ├── extract_form_field_info.py
+    │   │   │   │   ├── extract_form_structure.py
+    │   │   │   │   ├── fill_fillable_fields.py
+    │   │   │   │   └── fill_pdf_form_with_annotations.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── forms.md
+    │   │   │   └── reference.md
+    │   │   ├── pptx
+    │   │   │   ├── scripts
+    │   │   │   │   ├── office
+    │   │   │   │   │   ├── helpers
+    │   │   │   │   │   │   ├── __init__.py
+    │   │   │   │   │   │   ├── merge_runs.py
+    │   │   │   │   │   │   └── simplify_redlines.py
+    │   │   │   │   │   ├── schemas
+    │   │   │   │   │   │   ├── ISO-IEC29500-4_2016
+    │   │   │   │   │   │   │   ├── dml-chart.xsd
+    │   │   │   │   │   │   │   ├── dml-chartDrawing.xsd
+    │   │   │   │   │   │   │   ├── dml-diagram.xsd
+    │   │   │   │   │   │   │   ├── dml-lockedCanvas.xsd
+    │   │   │   │   │   │   │   ├── dml-main.xsd
+    │   │   │   │   │   │   │   ├── dml-picture.xsd
+    │   │   │   │   │   │   │   ├── dml-spreadsheetDrawing.xsd
+    │   │   │   │   │   │   │   ├── dml-wordprocessingDrawing.xsd
+    │   │   │   │   │   │   │   ├── pml.xsd
+    │   │   │   │   │   │   │   ├── shared-additionalCharacteristics.xsd
+    │   │   │   │   │   │   │   ├── shared-bibliography.xsd
+    │   │   │   │   │   │   │   ├── shared-commonSimpleTypes.xsd
+    │   │   │   │   │   │   │   ├── shared-customXmlDataProperties.xsd
+    │   │   │   │   │   │   │   ├── shared-customXmlSchemaProperties.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesCustom.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesExtended.xsd
+    │   │   │   │   │   │   │   ├── shared-documentPropertiesVariantTypes.xsd
+    │   │   │   │   │   │   │   ├── shared-math.xsd
+    │   │   │   │   │   │   │   ├── shared-relationshipReference.xsd
+    │   │   │   │   │   │   │   ├── sml.xsd
+    │   │   │   │   │   │   │   ├── vml-main.xsd
+    │   │   │   │   │   │   │   ├── vml-officeDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-presentationDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-spreadsheetDrawing.xsd
+    │   │   │   │   │   │   │   ├── vml-wordprocessingDrawing.xsd
+    │   │   │   │   │   │   │   ├── wml.xsd
+    │   │   │   │   │   │   │   └── xml.xsd
+    │   │   │   │   │   │   ├── ecma
+    │   │   │   │   │   │   │   └── fouth-edition
+    │   │   │   │   │   │   │       ├── opc-contentTypes.xsd
+    │   │   │   │   │   │   │       ├── opc-coreProperties.xsd
+    │   │   │   │   │   │   │       ├── opc-digSig.xsd
+    │   │   │   │   │   │   │       └── opc-relationships.xsd
+    │   │   │   │   │   │   ├── mce
+    │   │   │   │   │   │   │   └── mc.xsd
+    │   │   │   │   │   │   └── microsoft
+    │   │   │   │   │   │       ├── wml-2010.xsd
+    │   │   │   │   │   │       ├── wml-2012.xsd
+    │   │   │   │   │   │       ├── wml-2018.xsd
+    │   │   │   │   │   │       ├── wml-cex-2018.xsd
+    │   │   │   │   │   │       ├── wml-cid-2016.xsd
+    │   │   │   │   │   │       ├── wml-sdtdatahash-2020.xsd
+    │   │   │   │   │   │       └── wml-symex-2015.xsd
+    │   │   │   │   │   ├── validators
+    │   │   │   │   │   │   ├── __init__.py
+    │   │   │   │   │   │   ├── base.py
+    │   │   │   │   │   │   ├── docx.py
+    │   │   │   │   │   │   ├── pptx.py
+    │   │   │   │   │   │   └── redlining.py
+    │   │   │   │   │   ├── pack.py
+    │   │   │   │   │   ├── soffice.py
+    │   │   │   │   │   ├── unpack.py
+    │   │   │   │   │   └── validate.py
+    │   │   │   │   ├── __init__.py
+    │   │   │   │   ├── add_slide.py
+    │   │   │   │   ├── clean.py
+    │   │   │   │   └── thumbnail.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   ├── SKILL.md
+    │   │   │   ├── editing.md
+    │   │   │   └── pptxgenjs.md
+    │   │   ├── skill-creator
+    │   │   │   ├── agents
+    │   │   │   │   ├── analyzer.md
+    │   │   │   │   ├── comparator.md
+    │   │   │   │   └── grader.md
+    │   │   │   ├── assets
+    │   │   │   │   └── eval_review.html
+    │   │   │   ├── eval-viewer
+    │   │   │   │   ├── generate_review.py
+    │   │   │   │   └── viewer.html
+    │   │   │   ├── references
+    │   │   │   │   └── schemas.md
+    │   │   │   ├── scripts
+    │   │   │   │   ├── __init__.py
+    │   │   │   │   ├── aggregate_benchmark.py
+    │   │   │   │   ├── generate_report.py
+    │   │   │   │   ├── improve_description.py
+    │   │   │   │   ├── package_skill.py
+    │   │   │   │   ├── quick_validate.py
+    │   │   │   │   ├── run_eval.py
+    │   │   │   │   ├── run_loop.py
+    │   │   │   │   └── utils.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   ├── slack-gif-creator
+    │   │   │   ├── core
+    │   │   │   │   ├── easing.py
+    │   │   │   │   ├── frame_composer.py
+    │   │   │   │   ├── gif_builder.py
+    │   │   │   │   └── validators.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   ├── SKILL.md
+    │   │   │   └── requirements.txt
+    │   │   ├── theme-factory
+    │   │   │   ├── themes
+    │   │   │   │   ├── arctic-frost.md
+    │   │   │   │   ├── botanical-garden.md
+    │   │   │   │   ├── desert-rose.md
+    │   │   │   │   ├── forest-canopy.md
+    │   │   │   │   ├── golden-hour.md
+    │   │   │   │   ├── midnight-galaxy.md
+    │   │   │   │   ├── modern-minimalist.md
+    │   │   │   │   ├── ocean-depths.md
+    │   │   │   │   ├── sunset-boulevard.md
+    │   │   │   │   └── tech-innovation.md
+    │   │   │   ├── LICENSE.txt
+    │   │   │   ├── SKILL.md
+    │   │   │   └── theme-showcase.pdf
+    │   │   ├── webapp-testing
+    │   │   │   ├── examples
+    │   │   │   │   ├── console_logging.py
+    │   │   │   │   ├── element_discovery.py
+    │   │   │   │   └── static_html_automation.py
+    │   │   │   ├── scripts
+    │   │   │   │   └── with_server.py
+    │   │   │   ├── LICENSE.txt
+    │   │   │   └── SKILL.md
+    │   │   └── xlsx
+    │   │       ├── scripts
+    │   │       │   ├── office
+    │   │       │   │   ├── helpers
+    │   │       │   │   │   ├── __init__.py
+    │   │       │   │   │   ├── merge_runs.py
+    │   │       │   │   │   └── simplify_redlines.py
+    │   │       │   │   ├── schemas
+    │   │       │   │   │   ├── ISO-IEC29500-4_2016
+    │   │       │   │   │   │   ├── dml-chart.xsd
+    │   │       │   │   │   │   ├── dml-chartDrawing.xsd
+    │   │       │   │   │   │   ├── dml-diagram.xsd
+    │   │       │   │   │   │   ├── dml-lockedCanvas.xsd
+    │   │       │   │   │   │   ├── dml-main.xsd
+    │   │       │   │   │   │   ├── dml-picture.xsd
+    │   │       │   │   │   │   ├── dml-spreadsheetDrawing.xsd
+    │   │       │   │   │   │   ├── dml-wordprocessingDrawing.xsd
+    │   │       │   │   │   │   ├── pml.xsd
+    │   │       │   │   │   │   ├── shared-additionalCharacteristics.xsd
+    │   │       │   │   │   │   ├── shared-bibliography.xsd
+    │   │       │   │   │   │   ├── shared-commonSimpleTypes.xsd
+    │   │       │   │   │   │   ├── shared-customXmlDataProperties.xsd
+    │   │       │   │   │   │   ├── shared-customXmlSchemaProperties.xsd
+    │   │       │   │   │   │   ├── shared-documentPropertiesCustom.xsd
+    │   │       │   │   │   │   ├── shared-documentPropertiesExtended.xsd
+    │   │       │   │   │   │   ├── shared-documentPropertiesVariantTypes.xsd
+    │   │       │   │   │   │   ├── shared-math.xsd
+    │   │       │   │   │   │   ├── shared-relationshipReference.xsd
+    │   │       │   │   │   │   ├── sml.xsd
+    │   │       │   │   │   │   ├── vml-main.xsd
+    │   │       │   │   │   │   ├── vml-officeDrawing.xsd
+    │   │       │   │   │   │   ├── vml-presentationDrawing.xsd
+    │   │       │   │   │   │   ├── vml-spreadsheetDrawing.xsd
+    │   │       │   │   │   │   ├── vml-wordprocessingDrawing.xsd
+    │   │       │   │   │   │   ├── wml.xsd
+    │   │       │   │   │   │   └── xml.xsd
+    │   │       │   │   │   ├── ecma
+    │   │       │   │   │   │   └── fouth-edition
+    │   │       │   │   │   │       ├── opc-contentTypes.xsd
+    │   │       │   │   │   │       ├── opc-coreProperties.xsd
+    │   │       │   │   │   │       ├── opc-digSig.xsd
+    │   │       │   │   │   │       └── opc-relationships.xsd
+    │   │       │   │   │   ├── mce
+    │   │       │   │   │   │   └── mc.xsd
+    │   │       │   │   │   └── microsoft
+    │   │       │   │   │       ├── wml-2010.xsd
+    │   │       │   │   │       ├── wml-2012.xsd
+    │   │       │   │   │       ├── wml-2018.xsd
+    │   │       │   │   │       ├── wml-cex-2018.xsd
+    │   │       │   │   │       ├── wml-cid-2016.xsd
+    │   │       │   │   │       ├── wml-sdtdatahash-2020.xsd
+    │   │       │   │   │       └── wml-symex-2015.xsd
+    │   │       │   │   ├── validators
+    │   │       │   │   │   ├── __init__.py
+    │   │       │   │   │   ├── base.py
+    │   │       │   │   │   ├── docx.py
+    │   │       │   │   │   ├── pptx.py
+    │   │       │   │   │   └── redlining.py
+    │   │       │   │   ├── pack.py
+    │   │       │   │   ├── soffice.py
+    │   │       │   │   ├── unpack.py
+    │   │       │   │   └── validate.py
+    │   │       │   └── recalc.py
+    │   │       ├── LICENSE.txt
+    │   │       └── SKILL.md
+    │   ├── spec
+    │   │   └── agent-skills-spec.md
+    │   ├── template
+    │   │   └── SKILL.md
+    │   ├── README.md
+    │   ├── THIRD_PARTY_NOTICES.md
+    │   ├── _schema.ts
+    │   └── landmine_sweep.ts
+    ├── specs
+    │   └── forgot-password.yaml
+    ├── taxes
+    │   └── 2026
+    │       └── summaries
+    │           ├── tax-summary-2026.json
+    │           └── tax-summary-2026.md
+    ├── tests
+    │   └── playwright
+    │       └── packs
+    │           └── core-smoke.yaml
+    ├── trigger-tasks
+    │   ├── bot-collection-autonomous.ts
+    │   ├── business-intelligence-cycles.ts
+    │   └── content-tasks.js
+    ├── workers
+    │   └── worker.js
+    ├── ACTION-PLAN-STATUS-REVIEW.md
+    ├── ADVANCED_BOT_DISCOVERY.md
+    ├── AGENTS.md
+    ├── AGENT_PRINCIPLES.md
+    ├── AGGRESSIVE_BOT_COLLECTION_STRATEGY.md
+    ├── AUDIT-MISSION-CONTROL.md
+    ├── AUDIT_FINDINGS.md
+    ├── AUTOMATED_OUTREACH_SETUP.md
+    ├── AUTONOMOUS_BOT_COLLECTION_SYSTEM.md
+    ├── AUTONOMOUS_SYSTEM_COMPLETE.md
+    ├── AUTO_START_COMPLETE.md
+    ├── BOT_AI_CONFIGURATION.md
+    ├── BOT_DISCOVERY_RESEARCH.md
+    ├── BOT_DISCOVERY_SETUP.md
+    ├── BOT_LEAD_DISCOVERY.md
+    ├── BOT_OUTREACH_SETUP.md
+    ├── BOT_PLATFORM_SUMMARY.md
+    ├── BOT_TO_BOT_COMMERCE.md
+    ├── CLAUDE.md
+    ├── CREDITS_REAL_VALUE.md
+    ├── CRYPTO_ENABLED.md
+    ├── CRYPTO_ONBOARDING_BEST_PRACTICES.md
+    ├── DEEP_AUDIT_FIXES.md
+    ├── DISCORD_SETUP.md
+    ├── ETHICS_AND_STRATEGY.md
+    ├── FIXES_APPLIED.md
+    ├── FIX_PM2_PORT.md
+    ├── IDLING_SYSTEMS_FIX.md
+    ├── IMMUNE_SYSTEM_IMPLEMENTATION.md
+    ├── KILL_PORT_3031.md
+    ├── KPIs.md
+    ├── MEMORY.md
+    ├── MISSION.md
+    ├── MOLTBOOK_INTEGRATION.md
+    ├── OPENCLAW_AUDIT_IMPROVEMENTS.md
+    ├── OPENCLAW_AUTONOMOUS_AGENT.md
+    ├── PM2_PERSISTENCE_COMPLETE.md
+    ├── QUICK_START_AGGRESSIVE_COLLECTION.md
+    ├── REDDIT_MOLTBOOK_SETUP.md
+    ├── RESILIENT_DISCOVERY.md
+    ├── ROADMAP.md
+    ├── RUN_IN_BACKGROUND.md
+    ├── SCHEMA_AUDIT_REPORT.md
+    ├── SELF_HEALING_AUTO_IMPROVEMENT_COMPLETE.md
+    ├── STRATEGY.md
+    ├── STRIPE_CRYPTO_SETUP.md
+    ├── STRIPE_PAYMENT_SETUP.md
+    ├── SYSTEM_AUDIT_REPORT.md
+    ├── SYSTEM_LOAD_REDUCTION_FEATURE.md
+    ├── SYSTEM_PAUSE_RESUME_FEATURE.md
+    ├── VERTICAL_STABILITY_IMPLEMENTATION.md
+    ├── VISION.md
+    ├── WHATSAPP_BUSINESS_APPLICATION.md
+    ├── WHATSAPP_PAYMENT_QUICKSTART.md
+    ├── WHATSAPP_SERVER_HELP.md
+    ├── WHATSAPP_START.md
+    ├── docker-compose.nas.dashboard.yml
+    ├── docker-compose.nas.yml
+    ├── ecosystem.ai-satellite.config.js
+    ├── ecosystem.background.config.js
+    ├── ecosystem.config.js
+    ├── ecosystem.i7-satellite.config.js
+    ├── env.nas.dashboard.example
+    ├── env.nas.example
+    ├── package-lock.json
+    ├── package.json
+    └── trigger.config.ts
+::
+```

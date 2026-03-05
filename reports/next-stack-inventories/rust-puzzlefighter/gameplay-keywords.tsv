@@ -1,0 +1,76 @@
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/human_player.rs:239:                                    board.attack(6);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:30:    fn apply(&self, dimensions: Dimension, attack_from_left: bool) -> LinkedList<PositionedBlock> {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:31:        let mut attack = LinkedList::new();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:36:            let x = if attack_from_left {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:53:            attack.push_back(pb);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:56:        attack
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:71:    attacks: LinkedList<Attack>,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:73:    // Pending attack strength. Accumulates through combos then is dispatched
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:74:    // in a single attack when board is settled.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:77:    // Toggles each attack, alternate which sides sprinkles fall from.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:78:    attack_from_left: bool,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:110:            attacks: LinkedList::new(),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:112:            attack_from_left: false,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:171:    pub fn attack(&mut self, strength: u32) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:173:            // Ken drop pattern
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:174:            let mut drop_pattern = Board::new(Dimension::new(6, 4));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:175:            drop_pattern.add_blocks(vec!(
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:182:            self.attacks.push_back(Attack::sprinkles(drop_pattern.grid, strength));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:214:                // Apply attack
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:215:                if let Some(attack) = self.attacks.pop_front() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:216:                    let blocks = attack.apply(self.dimensions, self.attack_from_left);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:224:                    self.attack_from_left = !self.attack_from_left;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:254:                                    let resting = pb.drop(pb.y() - bottom.y());
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:273:            Phase::Settling(combo_depth, age_and_attack) => {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:275:                    if !self.drop_blocks() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:278:                        let break_depth = self.break_blocks(combo_depth) as f64;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:281:                            self.phase = Phase::Settling(combo_depth + 1, age_and_attack);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:283:                            enemy.attack(self.strength);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:285:                            self.phase = if age_and_attack {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:297:    // Scan the board looking for blocks that should be dropped down to a lower
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:299:    // blocks need to move out of the way for higher ones to drop into that
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:303:    pub fn drop_blocks(&mut self) -> bool {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:306:        let mut dropped = false;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:310:            // rather than moving it immediately. We need to drop the block
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:320:                // Only once the entire bottom side is accumulated do we drop
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:324:                        dropped |= self.drop_block(block, block.drop(fused_depth));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:332:                dropped |= self.drop_block(block, bottom);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:335:        dropped
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:338:    fn drop_block(&mut self, block: PositionedBlock, bottom: PositionedBlock) -> bool {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:560:    fn break_blocks(&mut self, combo_depth: u32) -> u8 {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:566:            let mut attack: u32 = 0;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:581:                        let fuse_attack = (w * h) as u32 * fuse_multiplier;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:583:                        attack += fuse_attack;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:586:                    attack += 1
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board.rs:590:            let x = (attack / 2) * (combo_depth + 1);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/block_grid.rs:123:    // Returns a positioned block dropped as far as possible.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:46:    dropping: u32,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:58:        self.dropping == 0 && self.break_wait <= 0.0
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:63:            dropping: 0,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:179:                        // Animated drop to new position
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:205:                            let mut rng = thread_rng();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:207:                            let t = rng.gen_range(0.4, 0.7);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:208:                            let s = rng.gen_range(1.3, 1.7);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:209:                            let r = rng.gen_range(-90.0, 90.0);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/board_renderer.rs:233:                    render_state.dropping += 1;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:319:        let mut rng = thread_rng();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:321:        let block1 = Block::new(Color::rand(), rng.gen_weighted_bool(4));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:322:        let block2 = Block::new(Color::rand(), rng.gen_weighted_bool(4));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:459:    pub fn drop(&self, height: i8) -> Self {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:492:        let mut rng = rand::thread_rng();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/src/values.rs:494:        *rng.choose(&all).unwrap()
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:4:fn drop_to_bottom() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:10:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:17:fn drop_on_other_block() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:24:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:32:fn drop_fused() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:39:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:48:fn fused_does_not_drop_unless_all_below_spaces_are_open() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:55:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:64:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:69:fn adjacent_fused_drops_correctly() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/test_drop.rs:76:    board.drop_blocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/tests/tests.rs:64:mod test_drop;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/README.md:7:over to your opponent. Chain combos for larger attacks! First one to run out of
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/README.md:15:* Sprinkle attacks with combo multiplier.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/rust-puzzlefighter/README.md:38:    5:   Drop an attack.

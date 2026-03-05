@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-03-05T04:20:11.402Z",
+  "source": {
+    "tool_policy": "/Users/tatsheen/claw-architect/config/mcp-tool-policy.json",
+    "oauth_policy": "/Users/tatsheen/claw-architect/config/mcp-remote-oauth-policy.json"
+  },
+  "defaults": {
+    "strategy": "resources_first_tools_second",
+    "require_confirmation_on_write": true,
+    "max_tool_calls_per_run": 30,
+    "max_tokens_per_tool": 12000,
+    "max_tokens_total": 80000
+  },
+  "tools": [
+    {
+      "id": "filesystem.read",
+      "transport": "mcp",
+      "class": "read",
+      "use_when": "You need local file/directory content or metadata from workspace paths.",
+      "do_not_use_when": "You need web data, credentials, or to mutate files."
+    },
+    {
+      "id": "filesystem.write",
+      "transport": "mcp",
+      "class": "write",
+      "requires_confirmation": true,
+      "use_when": "A concrete file change is approved and path scope is known.",
+      "do_not_use_when": "The edit is speculative, broad, or reversible planning only."
+    },
+    {
+      "id": "github.search",
+      "transport": "mcp",
+      "class": "read",
+      "use_when": "You need repository/issue/code discovery from GitHub.",
+      "do_not_use_when": "You already have the content locally or only need a single known file."
+    },
+    {
+      "id": "postgres.query",
+      "transport": "mcp",
+      "class": "read",
+      "use_when": "You need database-backed facts, counts, or retrieval results.",
+      "do_not_use_when": "A cached answer is fresh and sufficient."
+    },
+    {
+      "id": "postgres.write",
+      "transport": "mcp",
+      "class": "write",
+      "requires_confirmation": true,
+      "use_when": "A bounded data mutation is required for a validated workflow.",
+      "do_not_use_when": "Schema intent is unclear or rollback path is unknown."
+    },
+    {
+      "id": "memory.retrieve",
+      "transport": "local",
+      "class": "read",
+      "use_when": "You need historical context, episodes, or graph-linked facts.",
+      "do_not_use_when": "Input query is empty or stale low-trust recall is unacceptable."
+    },
+    {
+      "id": "memory.consolidate",
+      "transport": "local",
+      "class": "write",
+      "requires_confirmation": false,
+      "use_when": "Nightly memory compression and long-term fact stabilization windows.",
+      "do_not_use_when": "Real-time request path or high-latency sensitive flow."
+    }
+  ],
+  "remote_mcp": {
+    "enabled": true,
+    "transport": [
+      "http",
+      "sse"
+    ],
+    "oauth": {
+      "required": true,
+      "default_scope_strategy": "least_privilege",
+      "token_ttl_minutes": 60,
+      "refresh_required": true
+    },
+    "writes": {
+      "no_broad_write_by_default": true,
+      "explicit_confirmation_required": true,
+      "allowlisted_tools_only": true
+    },
+    "connector_rollout": {
+      "chatgpt_codex_remote_only": true,
+      "streaming_enabled": true
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-05T04:11:01.513Z",
+  "score": 46,
+  "summary": "Production KPIs need aggressive improvement (score 46). Top gaps: revenue_7d_cents, orders_7d, queue_active.",
+  "metrics": {
+    "orders_24h": 0,
+    "orders_7d": 0,
+    "revenue_7d_cents": 0,
+    "sends_24h": 118,
+    "sends_7d": 490,
+    "delivery_rate_24h": 0.03389830508474576,
+    "open_rate_24h": 0.03389830508474576,
+    "click_rate_24h": 0.03389830508474576,
+    "task_completed_24h": 5808,
+    "task_failed_24h": 0,
+    "task_success_rate_24h": 1,
+    "dead_letter_open": 2,
+    "queue_active": 2347,
+    "leads_total": 1218,
+    "leads_24h": 0,
+    "insights_24h": 150,
+    "playbooks": 6,
+    "features_indexed": 6,
+    "feature_upgrades_queued": 80,
+    "repos_discovered": 29,
+    "papers_discovered": 88
+  },
+  "targets": {
+    "orders_7d": 25,
+    "revenue_7d_cents": 250000,
+    "sends_24h": 150,
+    "delivery_rate_24h": 0.9,
+    "open_rate_24h": 0.12,
+    "click_rate_24h": 0.02,
+    "task_success_rate_24h": 0.92,
+    "queue_active_max": 80,
+    "dead_letter_open_max": 5,
+    "insights_24h": 8,
+    "feature_upgrades_queued": 40
+  },
+  "gaps": [
+    {
+      "key": "revenue_7d_cents",
+      "current": 0,
+      "target": 250000,
+      "direction": "gte",
+      "deficit": 250000,
+      "severity": "high",
+      "penalty": 14
+    },
+    {
+      "key": "orders_7d",
+      "current": 0,
+      "target": 25,
+      "direction": "gte",
+      "deficit": 25,
+      "severity": "high",
+      "penalty": 12
+    },
+    {
+      "key": "queue_active",
+      "current": 2347,
+      "target": 80,
+      "direction": "lte",
+      "deficit": 2267,
+      "severity": "high",
+      "penalty": 12
+    },
+    {
+      "key": "delivery_rate_24h",
+      "current": 0.03389830508474576,
+      "target": 0.9,
+      "direction": "gte",
+      "deficit": 0.8661016949152542,
+      "severity": "medium",
+      "penalty": 7.7
+    },
+    {
+      "key": "open_rate_24h",
+      "current": 0.03389830508474576,
+      "target": 0.12,
+      "direction": "gte",
+      "deficit": 0.08610169491525424,
+      "severity": "low",
+      "penalty": 5.74
+    },
+    {
+      "key": "sends_24h",
+      "current": 118,
+      "target": 150,
+      "direction": "gte",
+      "deficit": 32,
+      "severity": "low",
+      "penalty": 2.13
+    }
+  ],
+  "action_plan": [
+    {
+      "kpi_key": "orders_revenue",
+      "severity": "high",
+      "repo": "local/payclaw",
+      "objective": "Production revenue lift: harden Stripe checkout + webhook reconciliation paths, remove payment friction, and ship 2 concrete conversion upgrades with tests.",
+      "feature_key": "conversion_revenue"
+    },
+    {
+      "kpi_key": "send_funnel",
+      "severity": "high",
+      "repo": "local/claw-architect",
+      "objective": "Improve outbound funnel KPI: optimize subject/send windows/templates using existing experiment data, then implement the top 2 changes and validate with live send metrics.",
+      "feature_key": "outreach_funnel"
+    },
+    {
+      "kpi_key": "throughput_reliability",
+      "severity": "high",
+      "repo": "local/claw-architect",
+      "objective": "Reduce backlog and failures: map top failed workflows to symbols, patch root causes, and verify improved queue throughput and success rate.",
+      "feature_key": "throughput_reliability"
+    }
+  ],
+  "queued_actions": [
+    {
+      "kpi_key": "orders_revenue",
+      "severity": "high",
+      "repo": "local/payclaw",
+      "objective": "Production revenue lift: harden Stripe checkout + webhook reconciliation paths, remove payment friction, and ship 2 concrete conversion upgrades with tests.",
+      "feature_key": "conversion_revenue",
+      "created": true,
+      "id": "de3c57d5-a221-4505-bfc2-8c8d00dabbca",
+      "type": "opencode_controller",
+      "idempotencyKey": "kpi:orders_revenue:2026-03-05T04"
+    },
+    {
+      "kpi_key": "send_funnel",
+      "severity": "high",
+      "repo": "local/claw-architect",
+      "objective": "Improve outbound funnel KPI: optimize subject/send windows/templates using existing experiment data, then implement the top 2 changes and validate with live send metrics.",
+      "feature_key": "outreach_funnel",
+      "created": true,
+      "id": "d23a6ee2-dabc-4174-ae2f-1962301c388b",
+      "type": "opencode_controller",
+      "idempotencyKey": "kpi:send_funnel:2026-03-05T04"
+    },
+    {
+      "kpi_key": "throughput_reliability",
+      "severity": "high",
+      "repo": "local/claw-architect",
+      "objective": "Reduce backlog and failures: map top failed workflows to symbols, patch root causes, and verify improved queue throughput and success rate.",
+      "feature_key": "throughput_reliability",
+      "created": true,
+      "id": "b993ad18-b6b8-48fb-b313-5a6cfa21d0bc",
+      "type": "opencode_controller",
+      "idempotencyKey": "kpi:throughput_reliability:2026-03-05T04"
+    }
+  ]
+}

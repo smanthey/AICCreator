@@ -1,0 +1,585 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-05T04:07:00.325Z",
+  "repos_discovered": 29,
+  "papers_discovered": 88,
+  "domains": {
+    "stripe": {
+      "repos": 4,
+      "papers": 16,
+      "top_repo_candidates": [
+        {
+          "key": "repo:medusajs/medusa",
+          "score": 52,
+          "url": "https://github.com/medusajs/medusa"
+        },
+        {
+          "key": "repo:vendure-ecommerce/vendure",
+          "score": 52,
+          "url": "https://github.com/vendure-ecommerce/vendure"
+        },
+        {
+          "key": "repo:saleor/saleor",
+          "score": 52,
+          "url": "https://github.com/saleor/saleor"
+        },
+        {
+          "key": "repo:formbricks/formbricks",
+          "score": 52,
+          "url": "https://github.com/formbricks/formbricks"
+        }
+      ],
+      "top_paper_candidates": [
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 82,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04395v1",
+          "score": 80,
+          "url": "http://arxiv.org/abs/2603.04395v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04395v1",
+          "score": 80,
+          "url": "http://arxiv.org/abs/2603.04395v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04383v1",
+          "score": 79,
+          "url": "http://arxiv.org/abs/2603.04383v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04380v1",
+          "score": 79,
+          "url": "http://arxiv.org/abs/2603.04380v1"
+        }
+      ]
+    },
+    "qa": {
+      "repos": 8,
+      "papers": 16,
+      "top_repo_candidates": [
+        {
+          "key": "repo:microsoft/playwright",
+          "score": 52,
+          "url": "https://github.com/microsoft/playwright"
+        },
+        {
+          "key": "repo:cypress-io/cypress",
+          "score": 52,
+          "url": "https://github.com/cypress-io/cypress"
+        },
+        {
+          "key": "repo:webdriverio/webdriverio",
+          "score": 52,
+          "url": "https://github.com/webdriverio/webdriverio"
+        },
+        {
+          "key": "repo:SeleniumHQ/selenium",
+          "score": 52,
+          "url": "https://github.com/SeleniumHQ/selenium"
+        },
+        {
+          "key": "repo:puppeteer/puppeteer",
+          "score": 52,
+          "url": "https://github.com/puppeteer/puppeteer"
+        }
+      ],
+      "top_paper_candidates": [
+        {
+          "key": "paper:arxiv:2603.04363v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04363v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04363v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04363v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04351v1",
+          "score": 84,
+          "url": "http://arxiv.org/abs/2603.04351v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04361v1",
+          "score": 83,
+          "url": "http://arxiv.org/abs/2603.04361v1"
+        }
+      ]
+    },
+    "queue": {
+      "repos": 5,
+      "papers": 16,
+      "top_repo_candidates": [
+        {
+          "key": "repo:triggerdotdev/trigger.dev",
+          "score": 52,
+          "url": "https://github.com/triggerdotdev/trigger.dev"
+        },
+        {
+          "key": "repo:temporalio/temporal",
+          "score": 52,
+          "url": "https://github.com/temporalio/temporal"
+        },
+        {
+          "key": "repo:bullmq/bullmq",
+          "score": 52,
+          "url": "https://github.com/bullmq/bullmq"
+        },
+        {
+          "key": "repo:taskforcesh/bullmq",
+          "score": 52,
+          "url": "https://github.com/taskforcesh/bullmq"
+        },
+        {
+          "key": "repo:apache/kafka",
+          "score": 52,
+          "url": "https://github.com/apache/kafka"
+        }
+      ],
+      "top_paper_candidates": [
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 82,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04181v1",
+          "score": 79,
+          "url": "http://arxiv.org/abs/2603.04181v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04291v1",
+          "score": 78,
+          "url": "http://arxiv.org/abs/2603.04291v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04259v1",
+          "score": 78,
+          "url": "http://arxiv.org/abs/2603.04259v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04390v1",
+          "score": 77,
+          "url": "http://arxiv.org/abs/2603.04390v1"
+        }
+      ]
+    },
+    "agent": {
+      "repos": 7,
+      "papers": 24,
+      "top_repo_candidates": [
+        {
+          "key": "repo:langchain-ai/langchain",
+          "score": 52,
+          "url": "https://github.com/langchain-ai/langchain"
+        },
+        {
+          "key": "repo:microsoft/autogen",
+          "score": 52,
+          "url": "https://github.com/microsoft/autogen"
+        },
+        {
+          "key": "repo:crewAIInc/crewAI",
+          "score": 52,
+          "url": "https://github.com/crewAIInc/crewAI"
+        },
+        {
+          "key": "repo:run-llama/llama_index",
+          "score": 52,
+          "url": "https://github.com/run-llama/llama_index"
+        },
+        {
+          "key": "repo:OpenDevin/OpenDevin",
+          "score": 52,
+          "url": "https://github.com/OpenDevin/OpenDevin"
+        }
+      ],
+      "top_paper_candidates": [
+        {
+          "key": "paper:arxiv:2603.04397v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04397v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04397v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04397v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 87,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        }
+      ]
+    },
+    "trading": {
+      "repos": 5,
+      "papers": 16,
+      "top_repo_candidates": [
+        {
+          "key": "repo:freqtrade/freqtrade",
+          "score": 52,
+          "url": "https://github.com/freqtrade/freqtrade"
+        },
+        {
+          "key": "repo:quantopian/zipline",
+          "score": 52,
+          "url": "https://github.com/quantopian/zipline"
+        },
+        {
+          "key": "repo:mementum/backtrader",
+          "score": 52,
+          "url": "https://github.com/mementum/backtrader"
+        },
+        {
+          "key": "repo:kernc/backtesting.py",
+          "score": 52,
+          "url": "https://github.com/kernc/backtesting.py"
+        },
+        {
+          "key": "repo:ccxt/ccxt",
+          "score": 52,
+          "url": "https://github.com/ccxt/ccxt"
+        }
+      ],
+      "top_paper_candidates": [
+        {
+          "key": "paper:arxiv:2603.04393v1",
+          "score": 82,
+          "url": "http://arxiv.org/abs/2603.04393v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04395v1",
+          "score": 80,
+          "url": "http://arxiv.org/abs/2603.04395v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04364v1",
+          "score": 80,
+          "url": "http://arxiv.org/abs/2603.04364v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04383v1",
+          "score": 79,
+          "url": "http://arxiv.org/abs/2603.04383v1"
+        },
+        {
+          "key": "paper:arxiv:2603.04382v1",
+          "score": 79,
+          "url": "http://arxiv.org/abs/2603.04382v1"
+        }
+      ]
+    }
+  },
+  "queued_index_subagent_tasks": [
+    {
+      "source_key": "repo:vendure-ecommerce/vendure",
+      "repo": "vendure-ecommerce/vendure",
+      "domain": "stripe",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:2970c5b069cd93cf9af3314fa5f54230549472e3b07ea1e785c36ecaba25eae1",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:saleor/saleor",
+      "repo": "saleor/saleor",
+      "domain": "stripe",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:369589a9eab6bd39574aba03c8adafe85fb1eed63c39a44bb05614aabb42c422",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:formbricks/formbricks",
+      "repo": "formbricks/formbricks",
+      "domain": "stripe",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:535edf85e08e9631dc4b253a28d006876e1e459d4e89aa8d957b0289462b6204",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:microsoft/playwright",
+      "repo": "microsoft/playwright",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:62498726af06efb5a5f2c0194e1c30216794370d84bc8acfbc7531e7b6e4df36",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:webdriverio/webdriverio",
+      "repo": "webdriverio/webdriverio",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:7e4ab3a74de9f919e46504f3a18bac78fdaf77ca4502b6aa7d4297686bdeaed2",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:SeleniumHQ/selenium",
+      "repo": "SeleniumHQ/selenium",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:033011861d4983caef0248030407b20cd3447065931e2fb5d88eef00e6940f3d",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:puppeteer/puppeteer",
+      "repo": "puppeteer/puppeteer",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:d24205d13d80ed589c984677d294a9172da292f91293da45cda5000d5ac4ef5b",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:DevExpress/testcafe",
+      "repo": "DevExpress/testcafe",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:1a6d9e8b65854212c29cda847318a2a45326c21454c33331808e153e4d81c090",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:garris/BackstopJS",
+      "repo": "garris/BackstopJS",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:a89fa4a2a09fb278db2241c8215e219b6d53f7c1b65e49d45b11d7f52f0db48f",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:grafana/k6",
+      "repo": "grafana/k6",
+      "domain": "qa",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:2e9684cd7ff34c3c6172dcf2e7b9d6736debf55411153e51d6e14f70415fb651",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:triggerdotdev/trigger.dev",
+      "repo": "triggerdotdev/trigger.dev",
+      "domain": "queue",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:520bf517fead9dd00efaea278723cbfdcabcbcaec97a897587f182b1280c32f5",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:temporalio/temporal",
+      "repo": "temporalio/temporal",
+      "domain": "queue",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:ba03adff38e3a1912d5fa5e4b6917979e7e78d12cfcd4300178997aa79f7438e",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:bullmq/bullmq",
+      "repo": "bullmq/bullmq",
+      "domain": "queue",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:2f620546e3cfd7d494d4469ddc756f996b6b9a384ea1e602cc9c59c022632aa7",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:apache/kafka",
+      "repo": "apache/kafka",
+      "domain": "queue",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:6f8909fcaa484d6ae2c5ca57ae75bf2e7678540abf2c4da620fc107218907189",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:langchain-ai/langchain",
+      "repo": "langchain-ai/langchain",
+      "domain": "agent",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:ef96bed18cbab40395ddcc8c8250340aa96aad5fe1bd88ed392a4615222a548f",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:microsoft/autogen",
+      "repo": "microsoft/autogen",
+      "domain": "agent",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:162cff21fe8aa743c248eed4be424bace32fc65add25e317d5ea425196b73ef9",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:crewAIInc/crewAI",
+      "repo": "crewAIInc/crewAI",
+      "domain": "agent",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:f2490d731bfee1f7f65bc825936131056696597b077dff6bdf70f9869fdee2a6",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "repo:run-llama/llama_index",
+      "repo": "run-llama/llama_index",
+      "domain": "agent",
+      "score": 52,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:83214118adccf8f2b8128f00c1348711b93255f8976d6d3168511b2ea1da3e63",
+      "type": "opencode_controller"
+    }
+  ],
+  "queued_pattern_subagent_tasks": [
+    {
+      "source_key": "paper:arxiv:2603.04363v1",
+      "domain": "qa",
+      "score": 87,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:cb02894d3855291cabbfe07d52aa2735d8087fb264523242a2d54ec7869e9867",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04397v1",
+      "domain": "agent",
+      "score": 87,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:4db40cb8622f7c51a6096cc8316c6d67186791f8e3b3a08946c51491cbea176b",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04351v1",
+      "domain": "qa",
+      "score": 84,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:0ad2ace50cedd9b55f021fc7ef8cf2dd26975c09e138f934122c450ad8799e94",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04361v1",
+      "domain": "qa",
+      "score": 83,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:e2979c937397906996b3c294e78967f716c3bc5ddc3bb8e4a5c33499fb486174",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04393v1",
+      "domain": "trading",
+      "score": 82,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:aed7d4855fbd19900e68789cf9a2efa803c4d780a280292285202be10eff2f18",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04353v1",
+      "domain": "qa",
+      "score": 82,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:41722a124c9f31a2c5c5de00ee263522b6e3185b29207152a6a5aec7d79ccec7",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04389v1",
+      "domain": "agent",
+      "score": 82,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:138c31427ec01abbe4faa37a95eec014db8fab5e9d99858b4941cfc7e20e4b4e",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04358v1",
+      "domain": "qa",
+      "score": 81,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:e63883ebff870fd5c651b884cfa2c273d166541dc07e802ea472e34941d87b8c",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04394v1",
+      "domain": "agent",
+      "score": 81,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:8cbdf70c1985213ce7827b05e13c01841b74d29007000dff959a8e1afd5ae291",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04401v1",
+      "domain": "agent",
+      "score": 80,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:2dd10bb90007dac5d0bb14814201add16dfb7ec5a4dd0048e9bda0b239ffd7e4",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04395v1",
+      "domain": "trading",
+      "score": 80,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:3209c43203885f9872331cdfa5ba150db5bb3653c8a8efda871c03f4b106597a",
+      "type": "opencode_controller"
+    },
+    {
+      "source_key": "paper:arxiv:2603.04400v1",
+      "domain": "agent",
+      "score": 80,
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:5c0b21195c3f7a222ff9c624923ee6dfed0260bc43afce420a6b14a684d005ee",
+      "type": "opencode_controller"
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T01:25:27.550Z",
+  "agent_id": "learning_journal_agent",
+  "window_hours": 24,
+  "task_metrics": {
+    "totals": {
+      "created": 36481,
+      "completed": 31273,
+      "failed": 0,
+      "dead_letter": 0,
+      "active_open": 822
+    },
+    "by_type": [
+      {
+        "type": "opencode_controller",
+        "total": 8267,
+        "completed": 7612,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_audit",
+        "total": 7445,
+        "completed": 7251,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_fix_plan",
+        "total": 7135,
+        "completed": 7073,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "repo_autofix",
+        "total": 4840,
+        "completed": 2341,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_compare",
+        "total": 3386,
+        "completed": 3370,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "github_observability_scan",
+        "total": 1430,
+        "completed": 1406,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "github_repo_audit",
+        "total": 720,
+        "completed": 202,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "repo_index_autopatch",
+        "total": 488,
+        "completed": 123,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "loyalty_send_outreach",
+        "total": 434,
+        "completed": 410,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "echo",
+        "total": 336,
+        "completed": 335,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "github_sync",
+        "total": 194,
+        "completed": 189,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "report",
+        "total": 186,
+        "completed": 82,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "loyalty_process_webhooks",
+        "total": 177,
+        "completed": 159,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "generate_copy",
+        "total": 160,
+        "completed": 0,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "total": 157,
+        "completed": 9,
+        "failed": 0,
+        "dead_letter": 0
+      }
+    ],
+    "recent_completed": [
+      {
+        "id": "f7930fb6-d330-4507-b535-51b4d0cc82e3",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:26:04.135Z"
+      },
+      {
+        "id": "0401dcbf-1bc3-4a30-8dcc-17ac828da8cd",
+        "type": "site_compare",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:25:59.063Z"
+      },
+      {
+        "id": "25616cd7-368b-4290-94d0-be7dc510d6c1",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:25:58.805Z"
+      },
+      {
+        "id": "9667b2f8-171a-41db-af8d-fc4e8c381980",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:25:54.190Z"
+      },
+      {
+        "id": "1590c8b2-4e19-4a72-886d-a07179cbc9d8",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:53.052Z"
+      },
+      {
+        "id": "f4dec06d-0d14-4be0-8d49-3fa7f7699838",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:52.936Z"
+      },
+      {
+        "id": "e17130c9-4151-4a3c-b9bb-438a5702b07a",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:52.913Z"
+      },
+      {
+        "id": "220503d4-44b0-4fac-a362-4563a9ec5b05",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:49.515Z"
+      },
+      {
+        "id": "f9e761b6-956d-4833-a4ad-2fe6c1572133",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:49.441Z"
+      },
+      {
+        "id": "f4b13026-7d80-40de-9aa8-9df07ff37d54",
+        "type": "opencode_controller",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:22:49.397Z"
+      },
+      {
+        "id": "c89aa54b-64a1-4a17-b566-f40dae0d1300",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:21:13.372Z"
+      },
+      {
+        "id": "fe4f28b0-3fa2-4695-b10a-f8a3eb58a826",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:21:04.290Z"
+      },
+      {
+        "id": "cfa0983a-00d0-4b32-8b15-a8b75de1b46e",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:21:00.236Z"
+      },
+      {
+        "id": "4b2a1c99-689b-4168-8d51-1118c963ef8e",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:21:00.093Z"
+      },
+      {
+        "id": "46ca4306-eac7-43d5-ba25-0b5a2de32398",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:59.562Z"
+      },
+      {
+        "id": "00632338-4797-4e39-a887-3c961c2237af",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:58.374Z"
+      },
+      {
+        "id": "0d09ad9d-a386-4d4c-ae75-0a32854d951f",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:58.110Z"
+      },
+      {
+        "id": "79277815-bbdc-4c00-a535-16a8c5c1d819",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:57.081Z"
+      },
+      {
+        "id": "43452ea6-6b59-4e4d-bea5-3c08f14bc55b",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:56.551Z"
+      },
+      {
+        "id": "cf473dc0-3647-4224-bae3-eba6c6a8056f",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:56.141Z"
+      },
+      {
+        "id": "cc2e4f05-7a29-4f0c-925a-864bdd2bc3ab",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:55.892Z"
+      },
+      {
+        "id": "7d2ef6e2-04a4-4d3a-b67d-2ee82d674ee4",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:55.640Z"
+      },
+      {
+        "id": "053b4963-7359-4217-8a9f-ed7abc5dbf2e",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:55.613Z"
+      },
+      {
+        "id": "24d392a5-691f-4412-bcba-9c54d253378d",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:54.788Z"
+      },
+      {
+        "id": "7d2c266e-e39c-4990-9123-7e10f79f15d9",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T08:20:54.532Z"
+      }
+    ],
+    "issue_patterns": [],
+    "plan_summary": {
+      "plans_created": 128,
+      "plans_completed": 99,
+      "plans_active": 29,
+      "avg_tasks_per_plan": "3.52"
+    }
+  },
+  "research_metrics": {
+    "signals": [
+      {
+        "domain_key": "nextjs",
+        "signal_type": "feature",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "feature (low) from nextjs: v16.2.0-canary.75",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.75",
+        "published_at": "2026-03-03T23:33:03.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v6.2.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.2.0",
+        "published_at": "2026-03-03T22:59:11.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v6.1.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.1.0",
+        "published_at": "2026-03-03T22:36:42.000Z"
+      },
+      {
+        "domain_key": "nextjs",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from nextjs: v16.2.0-canary.74",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.74",
+        "published_at": "2026-03-03T19:28:44.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "breaking_change",
+        "urgency": "high",
+        "requires_action": true,
+        "summary": "breaking_change (high) from telnyx: v6.0.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.0.0",
+        "published_at": "2026-03-03T12:02:49.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v5.55.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v5.55.0",
+        "published_at": "2026-03-03T11:15:20.000Z"
+      },
+      {
+        "domain_key": "nextjs",
+        "signal_type": "performance",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "performance (low) from nextjs: v16.2.0-canary.73",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.73",
+        "published_at": "2026-03-03T10:40:00.000Z"
+      },
+      {
+        "domain_key": "betterauth",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from betterauth: v1.5.2",
+        "url": "https://github.com/better-auth/better-auth/releases/tag/v1.5.2",
+        "published_at": "2026-03-03T09:30:10.000Z"
+      },
+      {
+        "domain_key": "betterauth",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from betterauth: v1.5.1-beta.3",
+        "url": "https://github.com/better-auth/better-auth/releases/tag/v1.5.1-beta.3",
+        "published_at": "2026-03-03T03:15:26.000Z"
+      }
+    ],
+    "signal_counts": [
+      {
+        "signal_type": "docs",
+        "urgency": "low",
+        "count": 6
+      },
+      {
+        "signal_type": "breaking_change",
+        "urgency": "high",
+        "count": 1
+      },
+      {
+        "signal_type": "feature",
+        "urgency": "low",
+        "count": 1
+      },
+      {
+        "signal_type": "performance",
+        "urgency": "low",
+        "count": 1
+      }
+    ],
+    "knowledge_sources": [
+      {
+        "source_type": "paper",
+        "total": 40,
+        "indexed_total": 0,
+        "added_in_window": 40
+      },
+      {
+        "source_type": "repo",
+        "total": 38,
+        "indexed_total": 2,
+        "added_in_window": 38
+      }
+    ],
+    "library_snapshot": {
+      "playbooks_total": 6,
+      "symbol_exemplars_total": 381,
+      "symbol_exemplars_new": 381,
+      "pattern_insights_new": 252,
+      "pattern_insights_total": 252
+    },
+    "report_files": {
+      "knowledge_troll_harvest": {
+        "repos_discovered": 29,
+        "papers_discovered": 88,
+        "queued_index_subagent_tasks": 18
+      },
+      "pattern_robust_builder": {
+        "playbooks_updated": 6
+      },
+      "symbolic_qa_hub": {
+        "features": 6,
+        "repos_missing_index": 7
+      },
+      "daily_feature_rotation": {
+        "repos_considered": 40,
+        "queued": 80
+      },
+      "production_kpi_flywheel": {
+        "score": 47,
+        "score_delta": 0
+      }
+    }
+  },
+  "agent_memory": [
+    {
+      "agent": "uptime_monitoring_agent",
+      "entries": 141,
+      "learned_entries": 56,
+      "blocker_entries": 45,
+      "strategy_entries": 40,
+      "last_entry_at": "2026-03-03T23:02:46.656Z"
+    },
+    {
+      "agent": "trading_paper",
+      "entries": 138,
+      "learned_entries": 56,
+      "blocker_entries": 40,
+      "strategy_entries": 42,
+      "last_entry_at": "2026-03-04T01:25:10.896Z"
+    },
+    {
+      "agent": "research_analysis",
+      "entries": 122,
+      "learned_entries": 60,
+      "blocker_entries": 3,
+      "strategy_entries": 59,
+      "last_entry_at": "2026-03-03T23:21:31.655Z"
+    },
+    {
+      "agent": "content_writing",
+      "entries": 101,
+      "learned_entries": 51,
+      "blocker_entries": 2,
+      "strategy_entries": 48,
+      "last_entry_at": "2026-03-03T23:10:07.659Z"
+    },
+    {
+      "agent": "roblox_game_growth",
+      "entries": 95,
+      "learned_entries": 95,
+      "blocker_entries": 0,
+      "strategy_entries": 0,
+      "last_entry_at": "2026-03-03T23:10:05.225Z"
+    },
+    {
+      "agent": "status_review_coordinator",
+      "entries": 91,
+      "learned_entries": 56,
+      "blocker_entries": 19,
+      "strategy_entries": 16,
+      "last_entry_at": "2026-03-03T23:02:48.437Z"
+    },
+    {
+      "agent": "opportunities_scout",
+      "entries": 76,
+      "learned_entries": 38,
+      "blocker_entries": 0,
+      "strategy_entries": 38,
+      "last_entry_at": "2026-03-04T01:25:48.045Z"
+    },
+    {
+      "agent": "builder",
+      "entries": 69,
+      "learned_entries": 35,
+      "blocker_entries": 0,
+      "strategy_entries": 34,
+      "last_entry_at": "2026-03-04T01:25:13.587Z"
+    },
+    {
+      "agent": "x_growth",
+      "entries": 66,
+      "learned_entries": 36,
+      "blocker_entries": 0,
+      "strategy_entries": 30,
+      "last_entry_at": "2026-03-04T01:25:10.701Z"
+    },
+    {
+      "agent": "learning_journal_agent",
+      "entries": 61,
+      "learned_entries": 36,
+      "blocker_entries": 0,
+      "strategy_entries": 25,
+      "last_entry_at": "2026-03-04T01:11:07.874Z"
+    },
+    {
+      "agent": "saas_development",
+      "entries": 57,
+      "learned_entries": 53,
+      "blocker_entries": 2,
+      "strategy_entries": 2,
+      "last_entry_at": "2026-03-03T23:08:45.058Z"
+    },
+    {
+      "agent": "security_monitor",
+      "entries": 57,
+      "learned_entries": 30,
+      "blocker_entries": 0,
+      "strategy_entries": 27,
+      "last_entry_at": "2026-03-04T01:25:11.792Z"
+    },
+    {
+      "agent": "system_administration",
+      "entries": 47,
+      "learned_entries": 18,
+      "blocker_entries": 11,
+      "strategy_entries": 18,
+      "last_entry_at": "2026-03-03T17:55:57.783Z"
+    },
+    {
+      "agent": "fix_lane_guardian",
+      "entries": 38,
+      "learned_entries": 13,
+      "blocker_entries": 12,
+      "strategy_entries": 13,
+      "last_entry_at": "2026-03-03T17:06:21.737Z"
+    },
+    {
+      "agent": "data_processing",
+      "entries": 29,
+      "learned_entries": 14,
+      "blocker_entries": 2,
+      "strategy_entries": 13,
+      "last_entry_at": "2026-03-03T17:55:13.617Z"
+    },
+    {
+      "agent": "cookiespass_finisher",
+      "entries": 29,
+      "learned_entries": 27,
+      "blocker_entries": 1,
+      "strategy_entries": 1,
+      "last_entry_at": "2026-03-03T23:02:34.500Z"
+    },
+    {
+      "agent": "pa_coordinator",
+      "entries": 27,
+      "learned_entries": 15,
+      "blocker_entries": 0,
+      "strategy_entries": 12,
+      "last_entry_at": "2026-03-04T01:25:09.452Z"
+    },
+    {
+      "agent": "worker_stability_agent",
+      "entries": 26,
+      "learned_entries": 24,
+      "blocker_entries": 1,
+      "strategy_entries": 1,
+      "last_entry_at": "2026-03-03T23:02:52.116Z"
+    },
+    {
+      "agent": "media_os_lane",
+      "entries": 25,
+      "learned_entries": 23,
+      "blocker_entries": 1,
+      "strategy_entries": 1,
+      "last_entry_at": "2026-03-03T23:12:01.970Z"
+    },
+    {
+      "agent": "scheduling_calendar",
+      "entries": 24,
+      "learned_entries": 24,
+      "blocker_entries": 0,
+      "strategy_entries": 0,
+      "last_entry_at": "2026-03-03T23:15:01.546Z"
+    }
+  ],
+  "swarm_actions": [],
+  "email": null,
+  "dry_run": false
+}

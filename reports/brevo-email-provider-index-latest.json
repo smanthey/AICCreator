@@ -1,0 +1,812 @@
+{
+  "summary": {
+    "generated_at": "2026-03-04T11:48:39.389Z",
+    "root": "/Users/tatsheen/claw-repos",
+    "repos_scanned": 72,
+    "brevo_present": 2,
+    "legacy_provider_present": 21,
+    "no_email_signals": 49
+  },
+  "repos": [
+    {
+      "repo": "v0-skyn-patch",
+      "status": "brevo_present",
+      "brevo_refs": 6,
+      "maileroo_refs": 40,
+      "resend_refs": 30,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/v0-skyn-patch/AUTOMATION_PIPELINE.md:608:  - Attempts to resend failed email",
+        "/Users/tatsheen/claw-repos/v0-skyn-patch/quarantine/REMOVED_PACKAGES.md:8:- **resend** (6.1.0) - REMOVED",
+        "/Users/tatsheen/claw-repos/v0-skyn-patch/docs/GAP_ANALYSIS.md:106:- **Tracking in order confirmation:** Emails say “we’ll send tracking when it ships”; Shippo webhook + admin “update tracking” / “resend tracking email” implement it. TESTING_CHECKLIST “tracking info placeholder” is likely referring to the wording (“placeholder” for when tracking isn’t available yet), not missing functionality.",
+        "/Users/tatsheen/claw-repos/v0-skyn-patch/DOCUMENTATION.md:178:- `/api/admin/resend-order-email?id=...` - Resend order email",
+        "/Users/tatsheen/claw-repos/v0-skyn-patch/lib/email.test.ts:9:  it(\"resend-tracking-email style object has customerEmail and items array\", () => {"
+      ]
+    },
+    {
+      "repo": "3DGameArtAcademy",
+      "status": "brevo_present",
+      "brevo_refs": 18,
+      "maileroo_refs": 0,
+      "resend_refs": 30,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/3DGameArtAcademy/package.json:97:    \"resend\": \"^4.0.0\",",
+        "/Users/tatsheen/claw-repos/3DGameArtAcademy/server/premium-email-templates.ts:1:import { sendEmailViaResend } from './resend-email';",
+        "/Users/tatsheen/claw-repos/3DGameArtAcademy/package-lock.json:94:        \"resend\": \"^4.0.0\",",
+        "/Users/tatsheen/claw-repos/3DGameArtAcademy/package-lock.json:9955:    \"node_modules/resend\": {",
+        "/Users/tatsheen/claw-repos/3DGameArtAcademy/package-lock.json:9957:      \"resolved\": \"https://registry.npmjs.org/resend/-/resend-4.0.0.tgz\","
+      ]
+    },
+    {
+      "repo": "SomaveaChaser",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 180,
+      "resend_refs": 5,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/SomaveaChaser/replit.md:74:- **Webhooks:** Dedicated endpoints for Stripe (`/api/webhooks/stripe`), Maileroo (`/webhooks/maileroo`), and Shippo (`/shippo/webhook`) events.",
+        "/Users/tatsheen/claw-repos/SomaveaChaser/replit.md:97:- **Maileroo:** Transactional email (delivery only; all logic in backend). Requires `MAILEROO_API_KEY`; optional `MAILEROO_FROM_EMAIL`, `MAILEROO_FROM_NAME`, `MAILEROO_WEBHOOK_SECRET`. Webhook: `POST /webhooks/maileroo`. Logs to console if unconfigured.",
+        "/Users/tatsheen/claw-repos/SomaveaChaser/replit.md:106:| Email | `MAILEROO_API_KEY` | Maileroo API key for transactional email. Optional: `MAILEROO_FROM_EMAIL`, `MAILEROO_FROM_NAME`, `MAILEROO_WEBHOOK_SECRET`. |",
+        "/Users/tatsheen/claw-repos/SomaveaChaser/replit.md:135:- **Funnel emails:** Reflection prompt, feedback prompt, permission ask, social proof surface, soft reorder, and unsubscribe confirmation are implemented in `server/services/maileroo.ts` with canonical copy. Triggers (morning-after, after feedback, weekly, reorder window) must be implemented in your job queue or cron; see CREDENTIALS_AND_SETUP.md.",
+        "/Users/tatsheen/claw-repos/SomaveaChaser/.env.example:18:MAILEROO_API_KEY=your-maileroo-api-key"
+      ]
+    },
+    {
+      "repo": "veritap_2026",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 74,
+      "resend_refs": 0,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/veritap_2026/.env.example:31:# Sign up at: https://maileroo.com",
+        "/Users/tatsheen/claw-repos/veritap_2026/.env.example:33:MAILEROO_API_KEY=your_maileroo_api_key",
+        "/Users/tatsheen/claw-repos/veritap_2026/.env.example:41:# Configure in Maileroo dashboard: https://app.maileroo.com/settings/webhooks",
+        "/Users/tatsheen/claw-repos/veritap_2026/.env.example:42:MAILEROO_WEBHOOK_SECRET=your_maileroo_webhook_secret",
+        "/Users/tatsheen/claw-repos/veritap_2026/server/services/emailTriggerService.ts:10:import { sendEmail as mailerooSendEmail, isMailerooConfigured } from \"../integrations/maileroo\";"
+      ]
+    },
+    {
+      "repo": "capture",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 70,
+      "resend_refs": 0,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/capture/migrations/0006_add_maileroo_enum.sql:1:-- Add maileroo value to webhook_source enum",
+        "/Users/tatsheen/claw-repos/capture/migrations/0006_add_maileroo_enum.sql:2:ALTER TYPE webhook_source ADD VALUE IF NOT EXISTS 'maileroo';",
+        "/Users/tatsheen/claw-repos/capture/docs/analytics-contract.json:180:        \"authoritative\": \"maileroo\",",
+        "/Users/tatsheen/claw-repos/capture/attached_assets/Pasted-Original-Message-Message-ID-675533632334981457499485-56_1767003047535.txt:42:       dkim=pass header.i=@maileroo.info header.s=mta header.b=\"kJNo/foL\";",
+        "/Users/tatsheen/claw-repos/capture/attached_assets/Pasted-Original-Message-Message-ID-675533632334981457499485-56_1767003047535.txt:47:Received: from mta-88-33-39.maileroo.com (mta-88-33-39.maileroo.com. [212.83.33.39])"
+      ]
+    },
+    {
+      "repo": "gbusupdate",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 35,
+      "resend_refs": 0,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/gbusupdate/FULL_AUDIT_COOKIES_TEMPE.md:46:- For notifications: `EMAIL_FROM` or `MAILEROO_FROM_EMAIL`, and `MAILEROO_API_KEY` if using Maileroo.",
+        "/Users/tatsheen/claw-repos/gbusupdate/LOCAL_SETUP.md:53:MAILEROO_API_KEY=your_maileroo_key",
+        "/Users/tatsheen/claw-repos/gbusupdate/LOCAL_SETUP.md:293:- ❌ Email notifications (needs `MAILEROO_API_KEY`)",
+        "/Users/tatsheen/claw-repos/gbusupdate/SITE_AUDIT_REPORT.md:32:- `node_modules/maileroo-sdk` README: `client.sendBasicEmail({ from: new EmailAddress(...), to: [...], subject, html, plain })`",
+        "/Users/tatsheen/claw-repos/gbusupdate/SITE_AUDIT_REPORT.md:35:**Impact:** All email flows (approval, batch approval, new-review notifications) fail at runtime when `MAILEROO_API_KEY` is set."
+      ]
+    },
+    {
+      "repo": "claw-architect",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 28,
+      "resend_refs": 1,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/claw-architect/scripts/stripe-webhook-handler.js:23:const { sendMaileroo } = require(\"../infra/maileroo\");",
+        "/Users/tatsheen/claw-repos/claw-architect/scripts/stripe-webhook-handler.js:35:const MAILEROO_KEY   = process.env.MAILEROO_API_KEY;",
+        "/Users/tatsheen/claw-repos/claw-architect/scripts/stripe-webhook-handler.js:71:  if (!MAILEROO_KEY) { console.warn(\"[stripe-wh] MAILEROO_API_KEY not set — skipping email\"); return Promise.resolve(); }",
+        "/Users/tatsheen/claw-repos/claw-architect/infra/config.js:40:  { key: \"MAILEROO_API_KEY\",        desc: \"send_email tasks will fail\" },",
+        "/Users/tatsheen/claw-repos/claw-architect/agents/site-audit-agent.js:16://   { task: \"site_compare\",  pattern: \"maileroo\" }"
+      ]
+    },
+    {
+      "repo": "Inbound-cookies",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 19,
+      "resend_refs": 10,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/Inbound-cookies/DEV_PRODUCTION_SYNC_CHECKLIST.md:23:- ✅ `MAILEROO_API_KEY` - Already in secrets",
+        "/Users/tatsheen/claw-repos/Inbound-cookies/docs/TEST_PLAN_READINESS.md:90:- `MAILEROO_API_KEY` and `ENABLE_EMAIL_SERVICE` – needed for real email delivery.",
+        "/Users/tatsheen/claw-repos/Inbound-cookies/test-results.txt:2255:  ✓  243 [chromium] › tests/e2e/email-transcription-sequential.spec.ts:200:3 › Email on Transcription Complete - Sequential Tests › Step 4: Email service is configured (if MAILEROO_API_KEY exists) (4ms)",
+        "/Users/tatsheen/claw-repos/Inbound-cookies/python-backend/docs/DEPLOYMENT.md:29:MAILEROO_API_KEY=your-api-key",
+        "/Users/tatsheen/claw-repos/Inbound-cookies/scripts/preflight-check.ts:21:    \"MAILEROO_API_KEY\","
+      ]
+    },
+    {
+      "repo": "CaptureInbound",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 10,
+      "resend_refs": 3,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/CaptureInbound/client/src/pages/SignupSuccess.tsx:9:import { resendVerificationEmail } from \"@/lib/auth\";",
+        "/Users/tatsheen/claw-repos/CaptureInbound/client/src/pages/SignupSuccess.tsx:89:      await resendVerificationEmail(email);",
+        "/Users/tatsheen/claw-repos/CaptureInbound/client/src/pages/VerifyEmail.tsx:9:import { resendVerificationEmail } from \"@/lib/auth\";",
+        "/Users/tatsheen/claw-repos/CaptureInbound/client/src/pages/VerifyEmail.tsx:124:                      resendVerificationEmail(email)",
+        "/Users/tatsheen/claw-repos/CaptureInbound/client/src/pages/VerifyEmail.tsx:129:                          setMessage(\"Failed to resend verification email. Please try again.\");"
+      ]
+    },
+    {
+      "repo": "booked",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 9,
+      "resend_refs": 5,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/booked/TESTING_GUIDE.md:302:MAILEROO_API_KEY=...",
+        "/Users/tatsheen/claw-repos/booked/STRIPE_METERED_BILLING.md:45:- On error: log, optionally retry with new identifier; fix invalid events and resend",
+        "/Users/tatsheen/claw-repos/booked/server/lib/email/maileroo.ts:14:const MAILEROO_API_KEY = process.env.MAILEROO_API_KEY || '';",
+        "/Users/tatsheen/claw-repos/booked/server/lib/email/maileroo.ts:50:        provider: 'maileroo',",
+        "/Users/tatsheen/claw-repos/booked/server/lib/email/maileroo.ts:90:  if (!MAILEROO_API_KEY) {"
+      ]
+    },
+    {
+      "repo": "v0-morningops",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 6,
+      "resend_refs": 2,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/v0-morningops/TESTING.md:29:- `MAILEROO_API_KEY` — Brief delivery",
+        "/Users/tatsheen/claw-repos/v0-morningops/TESTING.md:83:   - Plus: `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `STRIPE_*`, `DEEPSEEK_API_KEY`, `OPENAI_API_KEY`, `MAILEROO_API_KEY`, `ADMIN_EMAILS` as needed.",
+        "/Users/tatsheen/claw-repos/v0-morningops/UX_TEST_REPORT.md:453:- `MAILEROO_API_KEY` → For email sending",
+        "/Users/tatsheen/claw-repos/v0-morningops/docs/PIPELINE_STATUS.md:18:| **8. Store brief + send** | Upsert Brief (html + jsonData), optional send via Maileroo or in-app fallback | `DATABASE_URL`; optional `MAILEROO_API_KEY` | ✅ Real. |",
+        "/Users/tatsheen/claw-repos/v0-morningops/lib/email.ts:3:// Docs: https://maileroo.com/docs"
+      ]
+    },
+    {
+      "repo": "sim",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 238,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/sim/helm/sim/values.yaml:101:    RESEND_API_KEY: \"\"                                    # Resend API key for transactional emails",
+        "/Users/tatsheen/claw-repos/sim/helm/sim/values.schema.json:159:            \"RESEND_API_KEY\": {",
+        "/Users/tatsheen/claw-repos/sim/helm/sim/examples/values-production.yaml:45:    RESEND_API_KEY: \"your-resend-api-key\"",
+        "/Users/tatsheen/claw-repos/sim/bun.lock:187:        \"resend\": \"^4.1.2\",",
+        "/Users/tatsheen/claw-repos/sim/bun.lock:3196:    \"resend\": [\"resend@4.8.0\", \"\", { \"dependencies\": { \"@react-email/render\": \"1.1.2\" } }, \"sha512-R8eBOFQDO6dzRTDmaMEdpqrkmgSjPpVXt4nGfWsZdYOet0kqra0xgbvTES6HmCriZEXbmGk3e0DiGIaLFTFSHA==\"],"
+      ]
+    },
+    {
+      "repo": "dify",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 155,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/dify/docker/docker-compose.yaml:421:  MAIL_TYPE: ${MAIL_TYPE:-resend}",
+        "/Users/tatsheen/claw-repos/dify/docker/docker-compose.yaml:423:  RESEND_API_URL: ${RESEND_API_URL:-https://api.resend.com}",
+        "/Users/tatsheen/claw-repos/dify/docker/docker-compose.yaml:424:  RESEND_API_KEY: ${RESEND_API_KEY:-your-resend-api-key}",
+        "/Users/tatsheen/claw-repos/dify/web/app/reset-password/check-code/page.tsx:53:  const resendCode = async () => {",
+        "/Users/tatsheen/claw-repos/dify/web/app/reset-password/check-code/page.tsx:87:        <Countdown onResend={resendCode} />"
+      ]
+    },
+    {
+      "repo": "autopay_ui",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 38,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/autopay_ui/README.md:253:- `POST /api/payment-requests/:id/resend` - Resend SMS",
+        "/Users/tatsheen/claw-repos/autopay_ui/public/app.html:1611:            ${req.status !== 'paid' && req.status !== 'canceled' ? `<button class=\"btn\" style=\"padding: 6px 12px; font-size: 12px; margin-right: 5px;\" onclick=\"resendPaymentRequest('${req.id}')\">Resend</button>` : ''}",
+        "/Users/tatsheen/claw-repos/autopay_ui/public/app.html:2418:    async function resendPaymentRequest(requestId) {",
+        "/Users/tatsheen/claw-repos/autopay_ui/public/app.html:2422:        const response = await fetch(`/api/payment-requests/${requestId}/resend`, {",
+        "/Users/tatsheen/claw-repos/autopay_ui/public/app.html:2433:          alert(error.error || 'Failed to resend payment request');"
+      ]
+    },
+    {
+      "repo": "litellm",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 22,
+      "has_provider_env": true,
+      "sample": [
+        "/Users/tatsheen/claw-repos/litellm/litellm/__init__.py:134:    \"resend_email\",",
+        "/Users/tatsheen/claw-repos/litellm/litellm/litellm_core_utils/litellm_logging.py:178:    from litellm_enterprise.enterprise_callbacks.send_emails.resend_email import (",
+        "/Users/tatsheen/claw-repos/litellm/litellm/litellm_core_utils/litellm_logging.py:4082:        elif logging_integration == \"resend_email\":",
+        "/Users/tatsheen/claw-repos/litellm/litellm/litellm_core_utils/litellm_logging.py:4086:            resend_email_logger = ResendEmailLogger()",
+        "/Users/tatsheen/claw-repos/litellm/litellm/litellm_core_utils/litellm_logging.py:4087:            _in_memory_loggers.append(resend_email_logger)"
+      ]
+    },
+    {
+      "repo": "BlackWallStreetopoly",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 14,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/BlackWallStreetopoly/EMAIL_SYSTEM_STATUS.md:17:- **Fallback:** Admin resend endpoint available at `/api/admin/resend-vip-email`",
+        "/Users/tatsheen/claw-repos/BlackWallStreetopoly/EMAIL_SYSTEM_STATUS.md:72:  → Admin resend endpoint",
+        "/Users/tatsheen/claw-repos/BlackWallStreetopoly/EMAIL_SYSTEM_STATUS.md:113:- Monitor admin resend endpoint usage for failed auto-sends",
+        "/Users/tatsheen/claw-repos/BlackWallStreetopoly/EMAIL_SYSTEM_STATUS.md:120:3. ✅ Have admin team ready to use resend endpoint if needed",
+        "/Users/tatsheen/claw-repos/BlackWallStreetopoly/EMAIL_SYSTEM_STATUS.md:127:- **Resend VIP Confirmation:** `/api/admin/resend-vip-email` (POST with subscriber email)"
+      ]
+    },
+    {
+      "repo": "usipeorg",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 12,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/usipeorg/auth_routes.py:3:Handles email verification, resend verification, and verification pending page",
+        "/Users/tatsheen/claw-repos/usipeorg/auth_routes.py:79:@auth_bp.route('/resend-verification', methods=['POST'])",
+        "/Users/tatsheen/claw-repos/usipeorg/auth_routes.py:80:def resend_verification():",
+        "/Users/tatsheen/claw-repos/usipeorg/auth_routes.py:120:            logger.warning(f\"Failed to resend verification email: {verification_result.get('error')}\")",
+        "/Users/tatsheen/claw-repos/usipeorg/auth_routes.py:127:        flash('Failed to resend verification email. Please try again.', 'error')"
+      ]
+    },
+    {
+      "repo": "mytutor",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 9,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/mytutor/reports/api-contract-report.json:39:      \"/api/auth/resend-verification\",",
+        "/Users/tatsheen/claw-repos/mytutor/reports/api-contract-report.json:96:      \"/api/auth/resend-verification\",",
+        "/Users/tatsheen/claw-repos/mytutor/reports/api-contract-report.json:210:      \"/api/auth/resend-verification\"",
+        "/Users/tatsheen/claw-repos/mytutor/reports/api-contract-report.json:618:      \"endpoint\": \"/api/auth/resend-verification\",",
+        "/Users/tatsheen/claw-repos/mytutor/client/src/App.tsx:46:  const publicRoutes = ['/about', '/resources', '/help', '/success-stories', '/api-docs', '/careers', '/contact', '/partners', '/blog', '/signup', '/login', '/admin/login', '/admin/dashboard', '/admin', '/forgot-password', '/reset-password', '/verify-email', '/resend-verification', '/onboarding', '/simple-onboarding', '/apply-tutor'];"
+      ]
+    },
+    {
+      "repo": "VeriTapco_archive",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 7,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/VeriTapco_archive/blog-posts.json:72:    \"content\": \"<h1>Creators & Freelancers</h1><h2>Sharing Work, Taking Payment, and Following Up — All from One Link</h2><p><strong>Summary:</strong> Creators don't need more platforms — they need fewer interruptions. This article explores how one flexible link simplifies creator workflows.</p><hr/><h2>The Creator Stack Problem</h2><p>Creators often juggle:</p><ul><li>Portfolio links</li><li>Payment tools</li><li>Contact forms</li><li>Bio tools</li></ul><p>Each adds friction.</p><hr/><h2>Why One Link Wins</h2><p>A single <a href=\\\"/guides/dynamic-qr-nfc-links\\\">dynamic link</a> can:</p><ul><li>Show work</li><li>Collect payment</li><li>Capture contact</li><li>Change per context</li></ul><p>No rebuilding. No resending.</p><hr/><h2>The Psychological Advantage</h2><p>One link feels intentional.<br/>Multiple links feel improvised.</p>\",",
+        "/Users/tatsheen/claw-repos/VeriTapco_archive/extracted-content.json:197:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/VeriTapco_archive/extracted-content.json:203:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/VeriTapco_archive/extracted-content.json:209:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/VeriTapco_archive/server/services/authTokenService.ts:236:  async resendEmailVerification(userId: string, email: string): Promise<string> {"
+      ]
+    },
+    {
+      "repo": "veritap",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 7,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/veritap/extracted-content.json:197:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/veritap/extracted-content.json:203:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/veritap/extracted-content.json:209:      \"content\": \"🧠 TL;DR\\n\\nReplit’s Ghostwriter/Agent does not support permanent, cross-session memory. All instructions and context must be re-applied each time. But you can build pseudo-memory via workspace-level prompts, seed files, CI checks, and automation. Below are new refined prompts you can paste or load on every new session (or inject via extension or pre-run script) to prevent it from auto-stubbing endpoints or inventing fake data.\\n\\n⸻\\n\\n❌ Why there’s no native long‑term memory\\n\\nReddit‑users have confirmed:\\n\\n“Replit Agent does not have persistent memory … every request is treated like an isolated conversation.”\\n“It doesn’t recall prior context unless you paste it in or implement a database for that purpose.”  ￼\\n\\nThe AI resets after each chat session or page refresh—it won’t “remember” previous policy statements or previous behaviour unless you resend them.\\n\\n⸻\\n\\n🔐 In‑practice “tools” for making it consistently follow a policy\\n\\t1.\\tSet a Custom Assistant Prompt (per-Workspace)\\nOpen Settings → Ghostwriter/Assistant → Custom prompt and paste one of the prompt templates below. This is loaded at the start of the assistant’s thinking for every task, simulating a mini‑memory.\\n\\t2.\\tSeed‑file prompt auto‑inject\\nCreate a prompt‑seed.md (or .agent-rules.txt) in your repo. Using a pre‑run snippet or extension, automatically paste its contents into the first assistant message every session.\\n\\t3.\\tEnforcement via Lint/Extension/CI hook\\nRun a script (lint-stubs.js, .eslintrc, or pre-commit hook) that checks for suspicious routes like (()=>'« ) or empty handlers, and fails. This doesn’t teach the AI, but prevents the code from going in.\\n\\t4.\\tPull‑based memory system (e.g. Pieces.app)\\nSave policy rules to an external memory-tool and feed them to the assistant in each session. Not seamless, but granular and cross-repo.\\n\\n⸻\\n\\n🗣️ “Better” Prompt Templates (choose one and apply in your setup)\\n\\n⸻\\n\\nA – Project‑level policy (system prompt style)\\n\\n(Paste into Workspace → Ghostwriter → Custom prompt)\\n\\nYou are CodingAid, the backend developer assistant for SMAT design.\\nBefore planning or writing any new endpoint, you must:\\n\\n• Only suggest routes I already defined. If I ask for a new route, **explicitly ask for validation**, do not invent it.  \\n• Never put sample data or return statements in a controller without indicating (in comments) it’s a placeholder that must be replaced.  \\n• If logic is missing, return a short explanation like “ERROR: missing {detail} – needs spec” instead of stubbing.  \\n• Always ask follow‑up if I say “create a user\\\", e.g. “What fields should /user accept in JSON? Authentication?”  \\n• At the start of every new task, say: “Loaded policy: no new stub routes, no dummy data, ask me.”  \\n• After carrying out instructions, end with the summary: “✔ Policy-checked: X rules enforced. 0 unapproved stubs.”  \\n\\n\\n⸻\\n\\nB – Chat/session seed prompt\\n\\n(Paste into the very first assistant message each session)\\n\\nAssistant, from now on in this session:\\n\\n1. Enforce the SMAT policy: **no stub endpoints**, **no fake return data**, **no empty functions or silent catches**—only throw an error or ask me.  \\n2. I will say “<NEW‑TASK>” before giving you instructions.    \\n3. Before acting, always restate the **minimal endpoint**, **input fields**, and **intended behavior**, then ask for clarification if needed.  \\n4. If you generate any code, end with a “COMMENTS:” section where you flag any TODOs or assumptions.  \\n5. If you detect I asked for an endpoint I did not explicitly define, you must reply:  \\n   “Error: unknown route ‘/….’ — please confirm you meant it or define it.”  \\n\\n\\n⸻\\n\\nC – Annotate stubs via inline comments\\n\\n(Insert at top of any code file or template)\\n\\n/**\\n * AGENT-POLICY BREAKER: Any endpoint generated _without_ a spec comment\\n * “// AGENT-SPEC: description, fields, return type” must be considered untrusted.\\n * If no spec comment is found, automagically regenerate or flag for review.\\n */\\n\\n\\n⸻\\n\\nD – Test-first prompt for each endpoint\\n\\n(You can paste it into Ghostwriter chat or invoke via CLI)\\n\\nWrite the **unit and integration tests** before writing the controller:\\n\\nExample for route GET /user:\\n- Should return 404 if no user exists.\\n- Should return 200 with property “name” when a user exists.\\n\\nPlease provide only the test suite; once I approve, we will implement the endpoint logic.\\n\\n\\n⸻\\n\\nE – Clarifying‑first conversation starter\\n\\n(Use when starting a new feature)\\n\\nI’d like to add a new endpoint, but before writing anything, let’s align on the spec first:\\n- Purpose of the endpoint (use case).\\n- HTTP method and path (/…).\\n- Expected inputs (JSON schema or query params).\\n- Authentication rules.\\n- Expected database tables/fields.\\n- Response format and error handling.\\n\\nOnly generate code after I type “SPEC OK”, otherwise ask questions.\\n\\n\\n⸻\\n\\n🚀 Frame/Trigger prompts you can automate into alias or command\\n\\nIf you find yourself repeating the first message of each new session, define a bash alias or JSON snippet:\\n\\nalias reprompt_policy='pbpaste < prompt-seed.md | tr \\\"\\\\\\\\n\\\" \\\"\\\\n\\\\n\\\" | replit_chat --first'\\n\\nOr, inside Replit, set a snippet that expands to insert your seed prompt and customized prompt message.\\n\\n⸻\\n\\n🧪 Why these are more reliable\\n\\t•\\t⭐ The system-level prompt (A) gets enforced at the start of every conversation automatically. That’s where Replit does have permanent but per-repl memory.\\n\\t•\\t⚙️ The seed prompt (B) ensures policy stays in scope even if Replit resets or you open a new tab/project.\\n\\t•\\t🚫 The annotate/lint approach stops broken or stub code before save or merge.\\n\\t•\\t📜 The test-first and spec-first templates force you and the AI to think, not guess.\\n\\n⸻\\n\\n🧭 What can you ask next?\\n\\nTo tailor this further:\\n\\t1.\\tAre you using Ghostwriter Chat, or the Replit Agent CLI/API?\\n\\t2.\\tDo you prefer short inline specs, or long-form dialog before write?\\n\\t3.\\tWant integration in your GitHub Actions or CI pipeline? I can help with that script.\\n\\t4.\\tAre these policies shared with Ariel/team? I can format them as .md with badge integration or Slack reminders.\\n\\nLet me know your workflow preference and I’ll help scaffold automated enforcement for your code environment (and reduce context drift over time).\",",
+        "/Users/tatsheen/claw-repos/veritap/client/src/pages/team.tsx:189:  const resendInviteMutation = useMutation({",
+        "/Users/tatsheen/claw-repos/veritap/client/src/pages/team.tsx:191:      await apiRequest(\"POST\", `/api/team/members/${memberId}/resend-invite`);"
+      ]
+    },
+    {
+      "repo": "MaxKB",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 5,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/MaxKB/ui/src/locales/lang/en-US/views/login.ts:59:    resend: 'Resend',",
+        "/Users/tatsheen/claw-repos/MaxKB/ui/src/locales/lang/zh-CN/views/login.ts:59:    resend: '重新发送',",
+        "/Users/tatsheen/claw-repos/MaxKB/ui/src/views/login/ForgotPassword.vue:44:                    ? `${$t('views.login.verificationCode.resend')}（${time}s）`",
+        "/Users/tatsheen/claw-repos/MaxKB/ui/src/locales/lang/zh-Hant/views/login.ts:59:    resend: '重新發送',"
+      ]
+    },
+    {
+      "repo": "Flowise",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 4,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/Flowise/packages/ui/src/api/account.api.js:6:const resendVerificationEmail = (body) => client.post('/account/resend-verification', body)",
+        "/Users/tatsheen/claw-repos/Flowise/packages/ui/src/api/account.api.js:19:    resendVerificationEmail,",
+        "/Users/tatsheen/claw-repos/Flowise/packages/server/src/utils/constants.ts:32:    '/api/v1/account/resend-verification',",
+        "/Users/tatsheen/claw-repos/Flowise/packages/server/src/enterprise/services/account.service.ts:77:    public async resendVerificationEmail({ email }: { email: string }) {",
+        "/Users/tatsheen/claw-repos/Flowise/packages/server/src/enterprise/services/account.service.ts:101:            // resend invite"
+      ]
+    },
+    {
+      "repo": "pingmyself",
+      "status": "legacy_provider_present",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 1,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/pingmyself/attached_assets/Pasted--Developer-Brief-PINGMYSELF-LIV-Author-Scott-Manthey-SMATdesigns-Goal-A-minimal-voice-fr-1760687247764_1760687247765.txt:33:\t•\tUser: upcoming + past reminders, resend/snooze."
+      ]
+    },
+    {
+      "repo": "3ddesignafterschool",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "3dgamestake2",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "BakTokingcom",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "Coinstbl",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "CookiesPass",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/CookiesPass/server/services/pushTracking.ts:50:  // Include hour in the hash to allow resending after some time"
+      ]
+    },
+    {
+      "repo": "Cookies_Pass",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "FoodTruckPass",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "GoCrawdaddy",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "HowtoWatchStream-SmartKB",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "InayanBuilderBot",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "LeadGen3",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "LeadGenAi",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "Leadgen",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "Madirectory",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "MediaTranscribePro",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "PdfEzFill",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "QARunner",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "RobloxGitSync",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "SmartKB",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "SocialAiPilot",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "TempeCookiesPass",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/TempeCookiesPass/server/services/pushTracking.ts:50:  // Include hour in the hash to allow resending after some time"
+      ]
+    },
+    {
+      "repo": "TrademarkHelper",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "Veritap_chat",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "browser-use",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "cookies-tempe",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "crave",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "glitch-app",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "infinitedata",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "keploy",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "langfuse",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "leadgengit",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "manychatdupe",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/manychatdupe/node_modules/googleapis/build/src/apis/analyticshub/v1.d.ts:435:         * Optional. The approximate amount of time (on a best-effort basis) Pub/Sub waits for the subscriber to acknowledge receipt before resending the message. In the interval after the message is delivered and before it is acknowledged, it is considered to be _outstanding_. During that time period, the message will not be redelivered (on a best-effort basis). For pull subscriptions, this value is used as the initial value for the ack deadline. To override this value for a given message, call `ModifyAckDeadline` with the corresponding `ack_id` if using non-streaming pull or send the `ack_id` in a `StreamingModifyAckDeadlineRequest` if using streaming pull. The minimum custom deadline you can specify is 10 seconds. The maximum custom deadline you can specify is 600 seconds (10 minutes). If this parameter is 0, a default value of 10 seconds is used. For push delivery, this value is also used to set the request timeout for the call to the push endpoint. If the subscriber never acknowledges the message, the Pub/Sub system will eventually redeliver the message.",
+        "/Users/tatsheen/claw-repos/manychatdupe/node_modules/googleapis/build/src/apis/compute/alpha.d.ts:12987:        resendInterval?: Schema$Duration;",
+        "/Users/tatsheen/claw-repos/manychatdupe/node_modules/googleapis/build/src/apis/compute/beta.d.ts:11397:        resendInterval?: Schema$Duration;",
+        "/Users/tatsheen/claw-repos/manychatdupe/node_modules/googleapis/build/src/apis/compute/v1.d.ts:10809:        resendInterval?: Schema$Duration;",
+        "/Users/tatsheen/claw-repos/manychatdupe/node_modules/googleapis/build/src/apis/pubsub/v1.d.ts:723:         * Optional. The approximate amount of time (on a best-effort basis) Pub/Sub waits for the subscriber to acknowledge receipt before resending the message. In the interval after the message is delivered and before it is acknowledged, it is considered to be _outstanding_. During that time period, the message will not be redelivered (on a best-effort basis). For pull subscriptions, this value is used as the initial value for the ack deadline. To override this value for a given message, call `ModifyAckDeadline` with the corresponding `ack_id` if using non-streaming pull or send the `ack_id` in a `StreamingModifyAckDeadlineRequest` if using streaming pull. The minimum custom deadline you can specify is 10 seconds. The maximum custom deadline you can specify is 600 seconds (10 minutes). If this parameter is 0, a default value of 10 seconds is used. For push delivery, this value is also used to set the request timeout for the call to the push endpoint. If the subscriber never acknowledges the message, the Pub/Sub system will eventually redeliver the message."
+      ]
+    },
+    {
+      "repo": "nfcverify",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "open-webui",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/open-webui/src/lib/i18n/locales/da-DK/translation.json:919:\t\"Forwards system user OAuth access token to authenticate\": \"Videresender system bruger OAuth access token til autentificering\",",
+        "/Users/tatsheen/claw-repos/open-webui/src/lib/i18n/locales/da-DK/translation.json:920:\t\"Forwards system user session credentials to authenticate\": \"Videresender system bruger session credentials til autentificering\","
+      ]
+    },
+    {
+      "repo": "patentpal",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "payclaw",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "portkey-gateway",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "qawolf",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "quantfusion",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "reframed",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "syrup-client-line-sheet",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "syrup-internal-line-sheet",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "tap2",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "tapmenu",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": [
+        "/Users/tatsheen/claw-repos/tapmenu/node_modules/buffer/AUTHORS.md:16:- Mike Brevoort (mike.brevoort@pearson.com)",
+        "/Users/tatsheen/claw-repos/tapmenu/node_modules/growly/README.md:62:Sends a Growl notification. If an application wasn't registered beforehand with `growly.register()`, a default application will automatically be registered beforesending the notification.",
+        "/Users/tatsheen/claw-repos/tapmenu/node_modules/async/dist/async.mjs:1979: * // Requires lodash (or underscore), express3 and dresende's orm2.",
+        "/Users/tatsheen/claw-repos/tapmenu/node_modules/async/dist/async.js:1985:     * // Requires lodash (or underscore), express3 and dresende's orm2.",
+        "/Users/tatsheen/claw-repos/tapmenu/node_modules/async/seq.js:37: * // Requires lodash (or underscore), express3 and dresende's orm2."
+      ]
+    },
+    {
+      "repo": "uspto-trademark-analyzer",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "v0-untitled-project",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "wmac",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "wmactealth",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    },
+    {
+      "repo": "wmactealth-lc",
+      "status": "no_email_signals",
+      "brevo_refs": 0,
+      "maileroo_refs": 0,
+      "resend_refs": 0,
+      "has_provider_env": false,
+      "sample": []
+    }
+  ]
+}

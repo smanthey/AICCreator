@@ -1,0 +1,11 @@
+{
+  "global": [
+    "no_fabricated_documents",
+    "no_false_identity_theft_claims",
+    "no_blanket_disputes",
+    "no_disputing_known_accurate_data_without_inaccuracy_signal"
+  ],
+  "requires_explicit_flags": {
+    "not_mine_account": ["assertedNotMine", "identity_theft_report_if_claimed"]
+  }
+}

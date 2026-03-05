@@ -1,0 +1,118 @@
+capabilities:
+  - id: billing.stripe.checkout
+    domain: billing
+    required_patterns:
+      - stripe
+      - checkout.sessions.create
+    forbidden_outside_canonical:
+      - new Stripe(
+      - checkout.sessions.create
+  - id: billing.stripe.webhooks
+    domain: billing
+    required_patterns:
+      - stripe
+      - webhook
+    required_security_patterns:
+      - constructEvent(
+      - signature
+    forbidden_outside_canonical:
+      - webhook
+      - constructEvent(
+  - id: comms.telnyx.sms
+    domain: comms
+    required_patterns:
+      - telnyx
+      - messages
+    required_security_patterns:
+      - signature
+      - webhook
+  - id: auth.better_auth
+    domain: auth
+    required_patterns:
+      - better-auth
+  - id: auth.legacy_nextauth
+    domain: auth
+    required_patterns:
+      - next-auth
+  - id: auth.supabase_auth
+    domain: auth
+    required_patterns:
+      - supabase
+      - auth
+  - id: auth.jwt_custom
+    domain: auth
+    required_patterns:
+      - jsonwebtoken
+      - /api/auth/login
+  - id: tenancy.multitenant
+    domain: tenancy
+    required_patterns:
+      - tenant
+    optional_patterns:
+      - organization_id
+      - workspace
+  - id: email.maileroo
+    domain: email
+    required_patterns:
+      - maileroo
+  - id: email.resend
+    domain: email
+    required_patterns:
+      - resend
+  - id: email.brevo
+    domain: email
+    required_patterns:
+      - brevo
+      - smtp/email
+  - id: email.mailersend
+    domain: email
+    required_patterns:
+      - mailersend
+  - id: auth.api_key
+    domain: auth
+    required_patterns:
+      - X-API-Key
+      - admin_api_key
+  - id: queue.bullmq
+    domain: queue
+    required_patterns:
+      - bullmq
+  - id: queue.retry_worker
+    domain: queue
+    required_patterns:
+      - bullmq
+      - new Worker(
+  - id: observability.logging
+    domain: observability
+    required_patterns:
+      - observability
+      - logging
+  - id: observability.logging_health
+    domain: observability
+    required_patterns:
+      - winston
+      - /health
+  - id: qa.e2e_playwright
+    domain: e2e
+    required_patterns:
+      - playwright
+      - .spec.js
+  - id: security.audit
+    domain: security
+    required_patterns:
+      - audit
+  - id: security.runtime_baseline
+    domain: security
+    required_patterns:
+      - helmet
+      - express-rate-limit
+  - id: webhooks.signature_verify
+    domain: webhooks
+    required_patterns:
+      - webhook
+      - signature
+forbidden_global_patterns:
+  - mockTranslate(
+  - "TODO:"
+  - fake
+  - example.com

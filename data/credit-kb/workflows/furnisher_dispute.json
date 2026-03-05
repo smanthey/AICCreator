@@ -1,0 +1,16 @@
+{
+  "workflow": "furnisher_dispute",
+  "description": "Direct dispute to furnisher when bureau verification remains inconsistent.",
+  "requires_evidence": true,
+  "steps": [
+    "Attach prior bureau response",
+    "Attach account statements/records",
+    "Submit direct dispute",
+    "Track response and update issue"
+  ],
+  "allowed_issue_types": [
+    "balance_mismatch",
+    "date_inconsistency",
+    "duplicate_tradeline"
+  ]
+}

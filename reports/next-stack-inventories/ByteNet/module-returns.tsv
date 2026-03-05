@@ -1,0 +1,87 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/init.luau:34:return table.freeze({
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/read.luau:50:return read
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:15:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:30:	return dump_buffer, if #channel.references > 0 then channel.references else nil
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:75:return client
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/channel_state.luau:9:return channel_state
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:19:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:34:	return dump_buff, if #channel.references > 0 then channel.references else nil
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:146:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:102:		return coroutine.yield()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:110:		return listeners
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:113:	return exported
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/types.luau:36:	return data_type:readproperty(types.singleton("__T"))
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/types.luau:39:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/define_packet.luau:14:	return @native function(id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/define_packet.luau:15:		return packet(props, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/define_packet.luau:19:return define_packet
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/buff.luau:11:		return freshBuffer, length + 2
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/buff.luau:24:return @native function(): types.DataType<buffer>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/buff.luau:25:	return buff
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/unknown.luau:6:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/unknown.luau:16:				return nil, 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/unknown.luau:19:			return refs[buffer.readu8(b, cursor)], 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/unknown.luau:24:return unknown
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/inst.luau:3:return @native function(): types.DataType<Instance?>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/inst.luau:4:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/inst.luau:14:				return nil, 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/inst.luau:20:				return ref, 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/inst.luau:22:				return nil, 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/color3.luau:14:		return Color3.fromRGB(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/color3.luau:25:return @native function(): types.DataType<Color3>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/color3.luau:26:	return color3
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/optional.luau:8:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/optional.luau:17:				return nil, 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/optional.luau:21:				return item, length + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/optional.luau:37:return optional
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float64.luau:9:		return buffer.readf64(b, cursor), 8
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float64.luau:13:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float64.luau:14:	return float64
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint16.luau:7:		return buffer.readu16(b, cursor), 2
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint16.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint16.luau:12:	return uint16
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int16.luau:7:		return buffer.readi16(b, cursor), 2
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int16.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int16.luau:12:	return int16
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/array.luau:12:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/array.luau:28:			return array, array_cursor - cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/array.luau:42:return array
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/cframe.luau:14:		return CFrame.new(x, y, z) * CFrame.Angles(rx, ry, rz), 24
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/cframe.luau:31:return @native function(): types.DataType<CFrame>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/cframe.luau:32:	return cframe
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/string.luau:9:		return buffer.readstring(b, cursor + 2, length), length + 2
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/string.luau:20:return @native function(): types.DataType<string>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/string.luau:21:	return str
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int8.luau:7:		return buffer.readi8(b, cursor), 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int8.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int8.luau:12:	return int8
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/struct.luau:7:return function<T, V>(input: T & {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/struct.luau:24:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/struct.luau:39:			return constructed, struct_cursor - cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/map.luau:12:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/map.luau:33:			return map, mapCursor - cursor
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/map.luau:53:return map
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int32.luau:7:		return buffer.readi32(b, cursor), 4
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int32.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/int32.luau:12:	return int32
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec3.luau:7:		return vector.create(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec3.luau:24:return @native function(): types.DataType<vector>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec3.luau:25:	return vec3
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint32.luau:7:		return buffer.readu32(b, cursor), 4
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint32.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint32.luau:12:	return uint32
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float32.luau:9:		return buffer.readf32(b, cursor), 4
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float32.luau:13:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/float32.luau:14:	return float32
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/nothing.luau:7:		return nil, 0
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/nothing.luau:11:return @native function(): types.DataType<nil>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/nothing.luau:12:	return nothing
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/bool.luau:22:		return bool_modifier[buffer.readu8(b, cursor)], 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/bool.luau:34:	return bool_data_type
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/bool.luau:37:return bool
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint8.luau:7:		return buffer.readu8(b, cursor), 1
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint8.luau:11:return @native function(): types.DataType<number>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/uint8.luau:12:	return uint8
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec2.luau:9:		return Vector2.new(buffer.readf32(b, cursor), buffer.readf32(b, cursor + 4)), 8
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec2.luau:18:return @native function(): types.DataType<Vector2>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/vec2.luau:19:	return vec2

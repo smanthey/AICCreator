@@ -1,0 +1,172 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	42	module_export				local counts = {}				local counts = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	77	module_export				local state = {}				local state = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	128	module_export				local order = {}				local order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	170	module_export				local _order = {}				local _order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	200	module_export				local _order = {}				local _order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	224	module_export				local _order = {}				local _order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	242	module_export				local _order = {}				local _order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	243	module_export				local systemC = {}				local systemC = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	273	module_export				local _order = {}				local _order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	292	module_export				local order = {}				local order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	351	module_export				local order = {}				local order = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.spec.lua	412	module_export				local called = {}				local called = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	5	module_export	local recentErrors = {}	local recentErrors = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	13	module_export		return system		return system
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	39	module_export	local Loop = {}	local Loop = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	49	module_export		local gameState = {}		local gameState = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	229	module_export		local scheduledSystemsSet = {}		local scheduledSystemsSet = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	230	module_export		local scheduledSystems = {}		local scheduledSystems = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	272	module_export		return scheduledSystems		return scheduledSystems
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	276	module_export		local systemsByEvent = {}		local systemsByEvent = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	349	module_export		local connections = {}		local connections = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	486	module_export		return connections		return connections
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua	516	module_export	return Loop	return Loop
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	1	module_export	local None = {}	local None = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	14	module_export		return new		return new
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	19	module_export		local set = {}		local set = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	25	module_export		return set		return set
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	30	module_export		local valuesList = {}		local valuesList = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/immutable.lua	39	module_export		return valuesList		return valuesList
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	17	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	20	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	27	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	31	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	172	module_export				local found = {}				local found = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	249	module_export					local map = {}					local map = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.spec.lua	374	module_export						local results = {}						local results = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/mock/BindableEvent.lua	1	module_export	local BindableEvent = {}	local BindableEvent = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/mock/BindableEvent.lua	12	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/mock/BindableEvent.lua	45	module_export	return BindableEvent	return BindableEvent
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua	39	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/queryInspect.lua	5	module_export			return plasma			return plasma
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/queryInspect.lua	25	module_export						local componentNames = {}						local componentNames = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/queryInspect.lua	61	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.lua	1	module_export	local stack = {}	local stack = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.lua	110	module_export				return true				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.lua	113	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/frame.lua	44	module_export				return Frame				return Frame
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	23	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	26	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	32	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	40	module_export			return config			return config
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	45	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	56	module_export		local hookedWidgets = {}		local hookedWidgets = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	69	module_export					return dummyHandle					return dummyHandle
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	85	module_export				return returnValue				return returnValue
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	98	module_export		return hookedWidgets		return hookedWidgets
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/hookWidgets.lua	101	module_export	return hookWidgets	return hookWidgets
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	19	module_export	local World = {}	local World = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	26	module_export		local firstStorage = {}		local firstStorage = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	66	module_export					return storage					return storage
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	70	module_export		return nil		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	74	module_export		local newStorage = {}		local newStorage = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	96	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	159	module_export		local components = {}		local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	160	module_export		local metatables = {}		local metatables = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	183	module_export		return id		return id
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	265	module_export		local components = {}		local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	266	module_export		local metatables = {}		local metatables = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	323	module_export		local firstStorage = {}		local firstStorage = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	363	module_export		local components = {}		local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	387	module_export	local QueryResult = {}	local QueryResult = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	485	module_export		return list		return list
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	602	module_export		local seenEntities = {}		local seenEntities = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	757	module_export		local storage = {}		local storage = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	877	module_export		local removed = {}		local removed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	894	module_export		local metatables = {}		local metatables = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/World.lua	958	module_export	return World	return World
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/worldInspect.lua	62	module_export					local items = {}					local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/worldInspect.lua	98	module_export							local intersectingComponents = {}							local intersectingComponents = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/worldInspect.lua	100	module_export							local intersectingData = {}							local intersectingData = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/worldInspect.lua	187	module_export				return closed				return closed
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/worldInspect.lua	189	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/mouseHighlight.lua	76	module_export	return mouseHighlight	return mouseHighlight
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/realmSwitch.lua	83	module_export						return true						return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/realmSwitch.lua	86	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/realmSwitch.lua	90	module_export			return handle			return handle
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/clientBindings.lua	4	module_export		local connections = {}		local connections = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/clientBindings.lua	39	module_export		return connections		return connections
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/clientBindings.lua	42	module_export	return clientBindings	return clientBindings
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/errorInspect.lua	10	module_export				local items = {}				local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua	62	module_export	local Debugger = {}	local Debugger = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua	77	module_export				return true				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua	176	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua	492	module_export	return Debugger	return Debugger
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/EventBridge.lua	2	module_export	local EventBridge = {}	local EventBridge = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/EventBridge.lua	9	module_export	local debounce = {}	local debounce = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/EventBridge.lua	27	module_export	local clientConnections = {}	local clientConnections = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/EventBridge.lua	207	module_export	return EventBridge	return EventBridge
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	16	module_export	local components = {}	local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	22	module_export	local archetypes = {}	local archetypes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	24	module_export		local archetype = {}		local archetype = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	36	module_export		local componentsToAdd = {}		local componentsToAdd = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	49	module_export	local systemComponentsToQuery = {}	local systemComponentsToQuery = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	53	module_export		local componentsToQuery = {}		local componentsToQuery = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/tests/stressTest.client.lua	63	module_export	local results = {}	local results = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Queue.lua	1	module_export	local Queue = {}	local Queue = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Queue.lua	30	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Queue.lua	36	module_export		return value		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Queue.lua	39	module_export	return Queue	return Queue
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/selectionList.lua	75	module_export				return button				return button
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/selectionList.lua	97	module_export						return true						return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/selectionList.lua	100	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/selectionList.lua	122	module_export				return frame				return frame
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/selectionList.lua	135	module_export					return selected					return selected
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/formatTable.lua	18	module_export		local values = {}		local values = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/formatTable.lua	104	module_export		return str		return str
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useThrottle.lua	45	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useThrottle.lua	48	module_export		return false		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useThrottle.lua	51	module_export	return useThrottle	return useThrottle
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useDeltaTime.lua	18	module_export	return useDeltaTime	return useDeltaTime
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	3	module_export	local valueIds = {}	local valueIds = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	5	module_export	local compatibilityCache = {}	local compatibilityCache = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	6	module_export	local archetypeCache = {}	local archetypeCache = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	16	module_export		return valueId		return valueId
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	56	module_export		return archetype		return archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	62	module_export			return cachedCompatibility			return cachedCompatibility
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	73	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/archetype.lua	80	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/log.lua	22	module_export		local segments = {}		local segments = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/log.lua	41	module_export	return log	return log
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/link.lua	82	module_export				return button				return button
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/link.lua	96	module_export						return true						return true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/link.lua	99	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useEvent.lua	198	module_export	return useEvent	return useEvent
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua	10	module_export			return name			return name
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua	74	module_export				local items = {}				local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua	135	module_export					local items = {}					local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua	265	module_export								local items = {}								local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua	298	module_export	return ui	return ui
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/valueInspect.lua	35	module_export					local items = {}					local items = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/valueInspect.lua	72	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/component.lua	46	module_export	local DIAGNOSTIC_COMPONENT_MARKER = {}	local DIAGNOSTIC_COMPONENT_MARKER = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/component.lua	56	module_export		local component = {}		local component = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/component.lua	102	module_export			return patch			return patch
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/component.lua	110	module_export				return name				return name
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/component.lua	115	module_export		return component		return component
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	12	module_export		local entityIdMap = {}		local entityIdMap = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	25	module_export				local componentsToInsert = {}				local componentsToInsert = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	26	module_export				local componentsToRemove = {}				local componentsToRemove = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	28	module_export				local insertNames = {}				local insertNames = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	29	module_export				local removeNames = {}				local removeNames = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua	72	module_export	return setupReplication	return setupReplication
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/components.lua	17	module_export	local components = {}	local components = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/components.lua	23	module_export	return components	return components
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/spawnMotherships.lua	65	module_export	return spawnMotherships	return spawnMotherships
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/setupTags.lua	42	module_export	return setupTags	return setupTags
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/removeMissingModels.lua	27	module_export	return removeMissingModels	return removeMissingModels
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/playersAreTargets.lua	24	module_export	return playersAreTargets	return playersAreTargets
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua	12	module_export		local state = {}		local state = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua	32	module_export		local firstRunSystems = {}		local firstRunSystems = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua	33	module_export		local systemsByModule = {}		local systemsByModule = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua	98	module_export	return start	return start
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/mothershipsSpawnRoombas.lua	39	module_export	return mothershipsSpawnRoombas	return mothershipsSpawnRoombas
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/replication.lua	19	module_export	local replicatedComponents = {}	local replicatedComponents = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/replication.lua	27	module_export			local payload = {}			local payload = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/replication.lua	30	module_export				local entityPayload = {}				local entityPayload = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/replication.lua	44	module_export		local changes = {}		local changes = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/roombasMove.lua	5	module_export		local targets = {}		local targets = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/roombasMove.lua	63	module_export	return roombasMove	return roombasMove
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/spawnRoombas.lua	19	module_export	return spawnRoombas	return spawnRoombas
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/systems/updateModelAttribute.lua	15	module_export	return updateModelAttribute	return updateModelAttribute
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/systems/roombasHurt.lua	35	module_export	return roombasHurt	return roombasHurt

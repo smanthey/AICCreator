@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T08:21:39.274Z",
+  "dry_run": true,
+  "system": {
+    "node_version": "v25.6.1",
+    "platform": "darwin",
+    "hostname": "MacBook-Pro-2.local"
+  },
+  "failed_checks_initial": [],
+  "healed": [
+    "chmod_wrappers",
+    "mcp_sync"
+  ],
+  "steps": [
+    {
+      "name": "topology_precheck",
+      "dry_run": true,
+      "command": "npm run -s verify:topology",
+      "ok": true,
+      "parsed": {
+        "ok": true
+      }
+    },
+    {
+      "name": "mcp_sync_initial",
+      "dry_run": true,
+      "command": "npm run -s mcp:sync",
+      "ok": true
+    },
+    {
+      "name": "mcp_health_initial",
+      "dry_run": true,
+      "command": "npm run -s mcp:health",
+      "ok": true,
+      "parsed": {
+        "ok": true,
+        "checks": []
+      }
+    },
+    {
+      "name": "chmod_wrappers",
+      "dry_run": true,
+      "command": "chmod +x scripts/mcp-postgres.sh && chmod +x scripts/mcp-filesystem.sh && chmod +x scripts/mcp-github.sh && chmod +x scripts/mcp-context7.sh",
+      "ok": true
+    },
+    {
+      "name": "mcp_sync",
+      "dry_run": true,
+      "command": "npm run -s mcp:sync",
+      "ok": true
+    },
+    {
+      "name": "mcp_health_final",
+      "dry_run": true,
+      "command": "npm run -s mcp:health",
+      "ok": true,
+      "parsed": {
+        "ok": true,
+        "checks": []
+      }
+    },
+    {
+      "name": "priority_symbol_preflight",
+      "dry_run": true,
+      "command": "npm run -s index:preflight:priority",
+      "ok": true,
+      "parsed": {
+        "ok": true
+      }
+    },
+    {
+      "name": "topology_postcheck",
+      "dry_run": true,
+      "command": "npm run -s verify:topology",
+      "ok": true,
+      "parsed": {
+        "ok": true
+      }
+    }
+  ],
+  "pm2": {
+    "pre": {
+      "ok": true,
+      "missing_or_down": []
+    },
+    "post": {
+      "ok": true,
+      "missing_or_down": []
+    }
+  },
+  "budget": {
+    "limits": {
+      "max_calls": 40,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 90000
+    },
+    "usage": {
+      "calls": 2,
+      "total_tokens": 6,
+      "by_tool": {
+        "pm2_snapshot": 6
+      }
+    },
+    "violations": [],
+    "ok": true
+  },
+  "summary": {
+    "mcp_health_ok": true,
+    "priority_index_preflight_ok": true,
+    "topology_ok": true,
+    "core_pm2_ok": true,
+    "checks_total": 0,
+    "checks_failed": [],
+    "budget_ok": true
+  }
+}

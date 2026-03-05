@@ -1,0 +1,14 @@
+{
+  "not_mine_account": ["government_id", "proof_of_address", "identity_theft_report"],
+  "mixed_file_indicator": ["government_id", "proof_of_address"],
+  "unauthorized_inquiry": ["government_id", "proof_of_address"],
+  "duplicate_collection": [],
+  "duplicate_tradeline": [],
+  "balance_mismatch": ["statement_or_billing_record"],
+  "date_inconsistency": ["statement_or_billing_record"],
+  "high_utilization": [],
+  "collection_validation_needed": [],
+  "transfer_validation_needed": [],
+  "collection_status_validation": [],
+  "verification_without_substance": ["prior_dispute_packet", "response_evidence"]
+}

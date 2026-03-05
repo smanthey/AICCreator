@@ -1,0 +1,309 @@
+{
+  "started_at": "2026-03-04T01:17:28.734Z",
+  "finished_at": "2026-03-04T01:17:37.683Z",
+  "mode": "steady",
+  "lane_backlog": {
+    "ai": 0,
+    "infra": 0,
+    "ioHeavy": 0,
+    "cpuHeavy": 0
+  },
+  "aging_pending_60m": 0,
+  "lane_overrides": [],
+  "worker_targets": {
+    "claw-worker": 1,
+    "claw-worker-ai": 2,
+    "claw-worker-nas": 2
+  },
+  "min_online": 8,
+  "max_online": 13,
+  "online_count": 14,
+  "metrics": {
+    "healthOk": true,
+    "postgresOk": true,
+    "redisOk": true,
+    "queue": {
+      "tab": "queue",
+      "generated_at": "2026-03-04T01:17:32.590Z",
+      "status_summary": {
+        "green": 0,
+        "yellow": 0,
+        "red": 1,
+        "total": 1,
+        "overall": "red"
+      },
+      "cards": [
+        {
+          "label": "Created",
+          "value": 442
+        },
+        {
+          "label": "Pending",
+          "value": 180
+        },
+        {
+          "label": "Running",
+          "value": 3
+        },
+        {
+          "label": "Dead Letter",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "id": "global_diagnose",
+          "name": "Diagnose All Lanes",
+          "lane": "ops",
+          "verb": "diagnose",
+          "command": "npm run -s status:redgreen && npm run -s audit:deep && npm run -s audit:gaps",
+          "running": false,
+          "current_status": "idle",
+          "stale_result": true,
+          "latest_age_min": 375,
+          "latest": {
+            "action_id": "global_diagnose",
+            "status": "failed",
+            "exit_code": 1,
+            "started_at": "2026-03-03T19:01:41.965Z",
+            "finished_at": "2026-03-03T19:02:22.811Z",
+            "pid": 65655,
+            "error": null,
+            "run_id": "1772564501965-257495"
+          }
+        },
+        {
+          "id": "global_fix",
+          "name": "Fix Top Blockers",
+          "lane": "ops",
+          "verb": "fix",
+          "command": "npm run -s needs:attention:autofix && npm run -s status:redgreen",
+          "running": false,
+          "current_status": "idle",
+          "stale_result": true,
+          "latest_age_min": 364,
+          "latest": {
+            "action_id": "global_fix",
+            "status": "failed",
+            "exit_code": 1,
+            "started_at": "2026-03-03T19:01:41.980Z",
+            "finished_at": "2026-03-03T19:13:37.863Z",
+            "pid": 65664,
+            "error": null,
+            "run_id": "1772564501980-0d5ad9"
+          }
+        },
+        {
+          "id": "workflow_continue",
+          "name": "Continue Workflow Audit",
+          "lane": "ops",
+          "verb": "continue",
+          "command": "npm run -s workflow:audit:soft",
+          "running": false,
+          "current_status": "idle",
+          "stale_result": true,
+          "latest_age_min": 368,
+          "latest": {
+            "action_id": "workflow_continue",
+            "status": "completed",
+            "exit_code": 0,
+            "started_at": "2026-03-03T19:06:53.264Z",
+            "finished_at": "2026-03-03T19:09:21.640Z",
+            "pid": 86808,
+            "error": null,
+            "run_id": "1772564813264-44ce4d"
+          }
+        },
+        {
+          "id": "queue_retry_failed",
+          "name": "Retry Failed/Dead-letter Tasks",
+          "lane": "ops",
+          "verb": "fix",
+          "command": "npm run -s tasks:reconcile-deadletters -- --requeue",
+          "running": false,
+          "current_status": "idle",
+          "stale_result": true,
+          "latest_age_min": 1695,
+          "latest": {
+            "action_id": "queue_retry_failed",
+            "status": "completed",
+            "exit_code": 0,
+            "started_at": "2026-03-02T21:02:25.306Z",
+            "finished_at": "2026-03-02T21:02:25.874Z",
+            "pid": 20946,
+            "error": null,
+            "run_id": "1772485345306-8d5f40"
+          }
+        },
+        {
+          "id": "progress_enforce",
+          "name": "Enforce Forward Progress",
+          "lane": "ops",
+          "verb": "enforce",
+          "command": "npm run -s progress:enforce",
+          "running": false,
+          "current_status": "idle",
+          "stale_result": false,
+          "latest_age_min": 0
+        }
+      ],
+      "findings": [
+        {
+          "id": "queue-backlog-high",
+          "severity": "red",
+          "lane": "jobs_queue",
+          "title": "Queue backlog is high",
+          "detail": "created+pending=622",
+          "impact": "New work can be delayed for long periods.",
+          "recommendation": "Scale workers and clear blocked tasks.",
+          "command": "npm run tasks:health",
+          "action_id": "workflow_continue"
+        }
+      ],
+      "active_issues": {
+        "openIncidents": 1,
+        "failingChecks": 0,
+        "regressionDetected": false,
+        "shouldShowFix": true,
+        "open_incidents": 1,
+        "failing_checks": 0,
+        "regression_detected": false,
+        "should_show_fix": true
+      },
+      "data": {
+        "queue": {
+          "created": 442,
+          "pending": 180,
+          "dispatched": 81,
+          "running": 3,
+          "failed": 0,
+          "dead_letter": 0
+        },
+        "task_status_7d": [
+          {
+            "status": "CANCELLED",
+            "n": 5218
+          },
+          {
+            "status": "COMPLETED",
+            "n": 84601
+          },
+          {
+            "status": "CREATED",
+            "n": 442
+          },
+          {
+            "status": "DISPATCHED",
+            "n": 81
+          },
+          {
+            "status": "PENDING",
+            "n": 180
+          },
+          {
+            "status": "RETRY",
+            "n": 172
+          },
+          {
+            "status": "RUNNING",
+            "n": 3
+          },
+          {
+            "status": "SKIPPED",
+            "n": 19
+          }
+        ],
+        "plan_status_7d": [
+          {
+            "status": "active",
+            "n": 29
+          },
+          {
+            "status": "failed",
+            "n": 1
+          },
+          {
+            "status": "completed",
+            "n": 378
+          }
+        ],
+        "queue_aging": [
+          {
+            "status": "CREATED",
+            "n": 160
+          },
+          {
+            "status": "PENDING",
+            "n": 146
+          }
+        ],
+        "queue_by_tag": [
+          {
+            "tag": "ai",
+            "n": 417
+          },
+          {
+            "tag": "infra",
+            "n": 137
+          },
+          {
+            "tag": "io_heavy",
+            "n": 131
+          },
+          {
+            "tag": "cpu_heavy",
+            "n": 13
+          },
+          {
+            "tag": "unscoped",
+            "n": 8
+          }
+        ],
+        "active_issues": {
+          "openIncidents": 1,
+          "failingChecks": 0,
+          "regressionDetected": false,
+          "shouldShowFix": true,
+          "open_incidents": 1,
+          "failing_checks": 0,
+          "regression_detected": false,
+          "should_show_fix": true
+        }
+      }
+    },
+    "errors": []
+  },
+  "actions": [
+    {
+      "type": "scale",
+      "name": "claw-worker-ai",
+      "from": 1,
+      "to": 2,
+      "ok": true
+    },
+    {
+      "type": "scale",
+      "name": "claw-worker-nas",
+      "from": 1,
+      "to": 2,
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-openclaw-coordinator",
+      "reason": "overflow",
+      "ok": true
+    }
+  ],
+  "protected": [
+    "claw-dispatcher",
+    "claw-webhook-server",
+    "claw-architect-api",
+    "claw-ollama",
+    "claw-lead-autopilot-skynpatch",
+    "claw-lead-autopilot-bws",
+    "claw-worker",
+    "claw-worker-ai",
+    "claw-worker-nas"
+  ]
+}

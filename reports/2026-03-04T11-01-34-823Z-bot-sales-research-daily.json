@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-03-04T11:01:34.603Z",
+  "window_hours": 24,
+  "summary": {
+    "attempts": 162,
+    "sent": 119,
+    "rejected": 43,
+    "responded": 0,
+    "converted": 0,
+    "with_payment_link": 0,
+    "delivery_rate_pct": 73.46,
+    "response_rate_pct": 0,
+    "conversion_rate_pct": 0,
+    "payment_link_rate_pct": 0
+  },
+  "monetization_goals": {
+    "targets": {
+      "delivery_rate_pct": 95,
+      "response_rate_pct": 3,
+      "conversion_rate_pct": 1,
+      "payment_link_rate_pct": 60
+    },
+    "current": {
+      "delivery_rate_pct": 73.46,
+      "response_rate_pct": 0,
+      "conversion_rate_pct": 0,
+      "payment_link_rate_pct": 0
+    },
+    "gaps_to_target": {
+      "delivery_rate_pct": 21.54,
+      "response_rate_pct": 3,
+      "conversion_rate_pct": 1,
+      "payment_link_rate_pct": 60
+    },
+    "met": {
+      "delivery_rate_pct": false,
+      "response_rate_pct": false,
+      "conversion_rate_pct": false,
+      "payment_link_rate_pct": false
+    },
+    "all_met": false
+  },
+  "by_platform": [
+    {
+      "platform": "email",
+      "attempts": 162,
+      "sent": 119,
+      "rejected": 43,
+      "responded": 0,
+      "converted": 0
+    }
+  ],
+  "by_variant": [
+    {
+      "message_variant": "A",
+      "attempts": 84,
+      "sent": 44,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "C",
+      "attempts": 38,
+      "sent": 38,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "B",
+      "attempts": 37,
+      "sent": 37,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "INVALID",
+      "attempts": 3,
+      "sent": 0,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    }
+  ],
+  "top_errors": [
+    {
+      "error": "Email send failed: HTTP 0",
+      "count": 40
+    },
+    {
+      "error": "invalid_email_artifact",
+      "count": 3
+    }
+  ],
+  "suspicious_targets": [
+    {
+      "platform": "email",
+      "bot_id": "become_a_patron_button@2x.png",
+      "contact_info": "become_a_patron_button@2x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:38:20.765Z"
+    },
+    {
+      "platform": "email",
+      "bot_id": "icon@3x.png",
+      "contact_info": "icon@3x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:36:55.910Z"
+    },
+    {
+      "platform": "email",
+      "bot_id": "forum_widget_thumbnail@2x.png",
+      "contact_info": "forum_widget_thumbnail@2x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:24:15.848Z"
+    }
+  ],
+  "interesting_conversations_or_creations": [],
+  "conversions": []
+}

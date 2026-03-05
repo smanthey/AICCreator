@@ -1,0 +1,44 @@
+---
+description: Rules for working on PayClaw repo or PayClaw-related tasks. Claw-architect oversees and equips creators; follow these constraints so PayClaw stays compliant and on-model.
+---
+
+# PayClaw Overseer Rules
+
+When working on the **PayClaw** repo (https://github.com/smanthey/payclaw) or any PayClaw-related task, agents and creators **must** follow these rules.
+
+## Source: AutopayAgent (autopay_ui)
+
+PayClaw is essentially a version of the **AutopayAgent** system (repo: **autopay_ui**, e.g. in claw-repos or managed_repos). **Copy as much as possible from autopay_ui that works:** Stripe checkout/webhooks, Telnyx SMS, webhook signature verification, message flow, and any compliant patterns. Do **not** carry over auth or multi-tenant abstractions — PayClaw does not need full user auth or multi-tenant isolation; simplify to single-tenant / desktop-app usage and platform-controlled merchant onboarding (Stripe Connect only).
+
+**Finding code to copy:** Before implementing, read **docs/SOURCES.md** (claw-architect: `docs/payclaw/SOURCES.md`; copied into PayClaw repo by `npm run payclaw:launch`). That doc lists explicit paths for autopay_ui files, Swift/Mac shell references (e.g. glitch-app, Apple docs), git repos under `~/claw-repos` or `$REPOS_BASE_PATH`, and capability-factory capability names to search for.
+
+## Architecture (Model 1)
+
+- **Centralized Telnyx/10DLC:** One PayClaw umbrella brand/campaign. Merchants do NOT register their own brand or touch Telnyx directly. Platform provisions numbers from master account and assigns to merchants.
+- **Stripe Connect per merchant:** Each merchant connects their Stripe account via OAuth (standard or custom). PayClaw stores account ID and takes a platform fee; payment links use the merchant’s connected account.
+- **Locked message templates only:** No free-form SMS or email copy. Use the canonical templates from `docs/payclaw/` (or `config/payclaw/message-templates.txt`). Placeholders only: merchant name, amount, link, description; no custom wording.
+- **Server-controlled scheduling and rate limits:** Cadence (e.g. day 0, 3, 7) and send rates are platform-controlled. Merchants cannot set custom blast schedules or bypass rate limits.
+- **Business-type risk gate and attestation:** Onboarding must collect business category (low/medium/high from canonical list), require attestation (invoice payment only, not debt collection; invoices under 45 days; consent to contact). Auto-reject prohibited industries per `config/payclaw/risk-categories.json`.
+- **45-day invoice scope:** Product is for invoice payment reminders, not debt collection. Enforce “invoices under 45 days” in copy and attestation.
+- **Tech stack:** Node.js, PostgreSQL, Telnyx API, Stripe Connect, Electron/Vite or Tauri for the macOS DMG. OpenClaw/BullMQ can run PayClaw agent tasks where appropriate.
+
+## Summary dashboard (required)
+
+- The program must have a **summary dashboard** where the user can **upload** (e.g. CSV) or **manually add** the list (debtors/invoices: name, email, phone, invoice number, amount, due date, description). Include validate, dedupe, and invalid-number handling. The dashboard should show list summary, invoice statuses, success rates, payments collected, fees; export for audits.
+
+## Compliance and research
+
+- **Canonical compliance** lives in claw-architect: `docs/payclaw/COMPLIANCE.md`, `config/payclaw/risk-categories.json`, `config/payclaw/message-templates.txt`. When in doubt, use these; do not invent new categories or template text.
+- **Research** (Telnyx 10DLC, Stripe Connect, DMG packaging) is maintained in claw-architect under `docs/payclaw/RESEARCH.md` or `agent-state/payclaw-research/`. Prefer that over ad-hoc web search when implementing.
+
+## What not to do
+
+- Do not allow merchants to send arbitrary messages or customize SMS/email wording beyond allowed placeholders.
+- Do not support prohibited industries (debt collectors, payday lending, gambling, etc.); reject at onboarding.
+- Do not implement debt-collection flows, threats, or marketing blasts; this is invoice payment reminder only.
+- Do not add features that bypass the risk gate, attestation, or template lock without updating the rules and compliance first.
+
+## Orientation
+
+- PayClaw project context and how the swarm researches/manages/updates: see **docs/payclaw/CONTEXT.md** in claw-architect.
+- Repo: https://github.com/smanthey/payclaw. Creators build the product there; claw-architect provides rules, compliance, and overseer swarm.

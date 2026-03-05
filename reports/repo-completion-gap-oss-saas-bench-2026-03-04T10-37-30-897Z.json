@@ -1,0 +1,90 @@
+{
+  "repo": "oss-saas-bench",
+  "started_at": "2026-03-04T10:37:28.319Z",
+  "completed_at": "2026-03-04T10:37:30.897Z",
+  "capability_score": 68,
+  "capability_factory_exit_code": 0,
+  "sections": {
+    "email_setup": {
+      "status": "incomplete",
+      "detail": "email.maileroo"
+    },
+    "admin_setup": {
+      "status": "complete",
+      "detail": "tenant signals=true"
+    },
+    "auth": {
+      "status": "incomplete",
+      "detail": "better-auth"
+    },
+    "stripe_checkout": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "stripe_webhooks": {
+      "status": "complete",
+      "detail": "score=100 securityCoverage=1"
+    },
+    "telnyx_sms": {
+      "status": "incomplete",
+      "detail": "score=65"
+    },
+    "webhooks_signature_verify": {
+      "status": "complete",
+      "detail": "score=100"
+    },
+    "queue_retry": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "observability": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "e2e": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "security_sweep": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "capability_factory_health": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "feature_benchmark_vs_exemplar": {
+      "status": "complete",
+      "detail": "run completed"
+    }
+  },
+  "issues": [
+    {
+      "code": "FORBIDDEN_PATTERN",
+      "severity": "medium",
+      "detail": "TODO: in 10 file(s)"
+    },
+    {
+      "code": "FORBIDDEN_PATTERN",
+      "severity": "medium",
+      "detail": "fake in 2 file(s)"
+    },
+    {
+      "code": "FORBIDDEN_PATTERN",
+      "severity": "medium",
+      "detail": "example.com in 10 file(s)"
+    }
+  ],
+  "next_actions": [
+    "Remove placeholder/fake patterns"
+  ],
+  "best_case_ref": {
+    "stripe_webhooks": "local/autopay_ui, local/CaptureInbound, local/payclaw (feature-benchmark exemplars)",
+    "email_delivery": "local/CaptureInbound, docs/EMAIL_RESEND_MIGRATION.md",
+    "auth": "local/veritap_2026, config/capabilities.yaml auth.better_auth",
+    "admin_ui": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+    "feature_benchmark": "scripts/feature-benchmark-score.js EXEMPLAR_LIBRARY, data/exemplar-repos.json",
+    "capability_factory": "config/capabilities.yaml, scripts/capability-factory.js pickCanonicalCandidates"
+  },
+  "feature_benchmark_run": true
+}

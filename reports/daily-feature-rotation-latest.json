@@ -1,0 +1,737 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T10:31:11.125Z",
+  "run_date": "2026-03-04",
+  "repos_considered": 40,
+  "features_per_repo": 2,
+  "priority_repos": [
+    "local/quantfusion",
+    "local/payclaw",
+    "local/CookiesPass",
+    "local/TempeCookiesPass",
+    "local/claw-architect"
+  ],
+  "queued": [
+    {
+      "repo": "local/quantfusion",
+      "feature": "desktop_packaging",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-quantfusion-desktop_packaging-2026-03-04",
+      "task_ids": [
+        "fba5add2-9fe5-485c-bbd1-5dcc0449485d",
+        "f908cedf-1c28-4706-acdb-94f27e23785e",
+        "dc526812-54f7-4ed6-a945-0e3d83a236a7",
+        "b67067b1-5991-4d0f-a5a8-86c05101e5d8",
+        "1e02f025-d63e-4000-94ec-db07208b5802",
+        "31ea5bb5-5ac6-411b-8f20-f4c5e63d2c73",
+        "e7d34b55-6df8-4d57-b8ee-d2cc5c08b500",
+        "f7aeb4e1-0f42-4623-8da1-d2f0dc0ad58d"
+      ],
+      "root_task_id": "fba5add2-9fe5-485c-bbd1-5dcc0449485d"
+    },
+    {
+      "repo": "local/quantfusion",
+      "feature": "symbolic_qa_engine",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-quantfusion-symbolic_qa_engine-2026-03-04",
+      "task_ids": [
+        "012a1916-0384-45b8-ac8f-3a5ec466c992",
+        "9d099147-5aa0-4214-8410-80e8ee80e02f",
+        "1a47f581-f7e5-4274-ae71-32cf2fff2f7d",
+        "c342e37a-2d00-4712-be34-8c9e29adc91a",
+        "7c282b3c-bf3c-4c63-af69-768ea652628b",
+        "fb667b6d-f59c-411c-9a2b-b78871b97c82",
+        "878d4a33-9e2c-47c4-80df-5a3d3042e94e",
+        "634e58f1-a94d-4dd9-b276-9661adeb27a7"
+      ],
+      "root_task_id": "012a1916-0384-45b8-ac8f-3a5ec466c992"
+    },
+    {
+      "repo": "local/payclaw",
+      "feature": "cdp_contract_probe",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-payclaw-cdp_contract_probe-2026-03-04",
+      "task_ids": [
+        "99099929-13b2-41ca-b16a-adaf226d386a",
+        "71e00f52-81e5-48cf-b161-53a0e3e3d2f1",
+        "78796de4-e90c-4499-9734-049e5a192856",
+        "08834187-14d9-4813-b76c-549a66bcfaea",
+        "22c19aa5-fb27-48d1-8b43-a50ac84fca24",
+        "2c49f57e-68ab-4493-93dc-c5533ca88e86",
+        "f2549376-6ea0-4a7a-8b90-33f39efb01bf",
+        "86eef105-61c0-4a73-a36a-d974be0d8d79"
+      ],
+      "root_task_id": "99099929-13b2-41ca-b16a-adaf226d386a"
+    },
+    {
+      "repo": "local/payclaw",
+      "feature": "visual_regression_fastlane",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-payclaw-visual_regression_fastlane-2026-03-04",
+      "task_ids": [
+        "0f79c4cb-b8d5-4895-b6f2-e63c8f58ba92",
+        "b5f00e40-2ea3-4a96-af8c-360b61226ef8",
+        "20e4a578-1197-4ff4-ac62-42ac8c98bb17",
+        "a637b63f-df2e-4a60-9c53-460b2c2cbef1",
+        "a1a7a2e4-943b-4fd0-a062-64b16c671ed1",
+        "4d642477-844c-4bf7-9143-4bbe6292b5c5",
+        "f06ba903-4d87-40a2-8695-db11eb55a6a7",
+        "39da228f-e58a-4753-a74b-b0b7c743ac19"
+      ],
+      "root_task_id": "0f79c4cb-b8d5-4895-b6f2-e63c8f58ba92"
+    },
+    {
+      "repo": "local/CookiesPass",
+      "feature": "data_integrity",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-cookiespass-data_integrity-2026-03-04",
+      "task_ids": [
+        "a9c7d89b-d8ab-4cf3-ac14-6101dcb13d7c",
+        "b95c9212-bc54-48ae-b684-8283393c72f8",
+        "07451d3d-7e06-4333-b426-f2abac1661d4",
+        "98289361-ca13-458c-b30a-2657ab95592c",
+        "8dd929b1-f8dd-447a-8b31-cd38dd3c35b8",
+        "40d70c91-fb71-42c7-9b94-6eea54269e1d",
+        "3d93f215-5a9a-423a-86ed-7f013f5ce979",
+        "f9696bc8-cbbd-4fdf-976c-0fe0497ece82"
+      ],
+      "root_task_id": "a9c7d89b-d8ab-4cf3-ac14-6101dcb13d7c"
+    },
+    {
+      "repo": "local/CookiesPass",
+      "feature": "desktop_packaging",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-cookiespass-desktop_packaging-2026-03-04",
+      "task_ids": [
+        "b89999a8-68b2-4138-9c3c-ab241a017fa8",
+        "dbe9ef1f-6445-4d2d-adbc-3cbfe17c9fd9",
+        "15f1af21-c0bb-4fba-9d7a-a6f92b81bb2c",
+        "0561733c-9d4d-4e1d-ae99-dbcbcb3fd795",
+        "7990ec54-2d72-45d8-b117-13d63b0c67c9",
+        "1722a9ad-d109-4ee2-acf5-434cda31537c",
+        "933a6c58-c7dd-44dd-8e3d-364a006b573a",
+        "d1c75693-53cb-414d-9bfa-7d98d0c31d80"
+      ],
+      "root_task_id": "b89999a8-68b2-4138-9c3c-ab241a017fa8"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature": "cdp_contract_probe",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-claw-architect-cdp_contract_probe-2026-03-04",
+      "task_ids": [
+        "77586b9c-c038-4144-ab4b-39653b8753dc",
+        "c536f94c-650b-49eb-80ae-aac826f994c0",
+        "463a4200-d8a4-40c7-9cd2-e2c27dba3204",
+        "20f99ebd-380c-4e26-9eeb-624d1bb493e5",
+        "fc5085c7-4aec-4d78-8eff-89d39ebaa0f6",
+        "d3655f0f-4290-4d90-8102-666c9ec4bc60",
+        "54a50746-a1d7-4a2d-96a0-dbd8b5b7badc",
+        "d6d18f53-ce85-40e0-b385-3dac80b4df86"
+      ],
+      "root_task_id": "77586b9c-c038-4144-ab4b-39653b8753dc"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature": "visual_regression_fastlane",
+      "mode": "closed_loop_chain",
+      "created": true,
+      "workflow_run_id": "closedloop-local-claw-architect-visual_regression_fastlane-2026-03-04",
+      "task_ids": [
+        "3c9fea70-96a9-4c28-8a7c-20cd9332b2a8",
+        "4647e51f-028e-49c6-9dd1-cc1a0a4c0583",
+        "c2c71487-0669-4d0c-a4fc-83b087841d76",
+        "279b775a-ad02-41dd-96b2-3309fd46cb8d",
+        "fb1eb736-5fb9-46b0-8ca7-38ba5a115946",
+        "6e4a9318-1818-45d0-8f7e-bea3ccc7212b",
+        "07bb197f-7c55-4f7e-a200-5c658c45ee21",
+        "b43532a4-8455-4d42-a500-4080f219bf5b"
+      ],
+      "root_task_id": "3c9fea70-96a9-4c28-8a7c-20cd9332b2a8"
+    },
+    {
+      "repo": "local/3ddesignafterschool",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "10855a54-d49b-42c6-aa5d-5b061700a56c",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:8b0efd9285ddd0fa8a5a70c2a2c1b6c9b0fee05c0d177aa4e239c034fdd1e4eb"
+    },
+    {
+      "repo": "local/3ddesignafterschool",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "e040ec2f-697c-464d-886c-d73113794373",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:03edb14d6ee805f3c980bc2c6a9c7f7547c20055d8fba0ec3b640b807ba7c67d"
+    },
+    {
+      "repo": "local/3DGameArtAcademy",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "4ae7ef44-c3de-496e-8189-49a9ddfaba36",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:22aa888d4fec1e9ff15ab3cf181ed7d9fec2cb7df9f974f8696e2a590009ee15"
+    },
+    {
+      "repo": "local/3DGameArtAcademy",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "e2b5449f-ed76-4b35-b2de-cf36ddd8f0cd",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:890dede646c81b7768446631ce688a708ec35180d551957dc3193f66cb665db2"
+    },
+    {
+      "repo": "local/3dgamestake2",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "631c7620-6394-40b4-830d-bc1f630f5801",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:0d827fdecba55297ba2587ec1a22c52d7a2403e11306ef4a0432d74b6728bd28"
+    },
+    {
+      "repo": "local/3dgamestake2",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "693658d2-b4ea-454d-b622-53cd2252741d",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:3a270239dbe3da552ffbc781a12b2a8b25e610db05cfc7677e655253156f583b"
+    },
+    {
+      "repo": "local/autopay_ui",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "d4add7e7-366e-45a2-8e94-fa50174517cf",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:61b3148f6ab80652d0bc80c30844f3b1ca8abd05b4457decb0e5b0b7d615f53f"
+    },
+    {
+      "repo": "local/autopay_ui",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "40059e2d-b7d3-485c-8cb0-cb0426868328",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:36e2f5da017a8ab008bd10152acb1bfff6cc5a09cca1b3af2f782c54eaed23f8"
+    },
+    {
+      "repo": "local/BakTokingcom",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "1c59d043-d2f0-4097-a358-a678778ec04e",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:b567f06ac27cc15be5c554b665f797564e609051b5247612aab9e12da5fac924"
+    },
+    {
+      "repo": "local/BakTokingcom",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "a5dc80d2-1206-4e53-a6e9-69efdd010720",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:df691b4d9942c57e5fd8fa77439d6a5c2d20625ac371089a61584f56a1fc67c0"
+    },
+    {
+      "repo": "local/BlackWallStreetopoly",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "3a5ab05f-f8f3-4041-a68d-b63053fbc6e4",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:92b1ad24fe246cf63a48a76a00305f13c24589eefb50aca8ec34e9f708ff7128"
+    },
+    {
+      "repo": "local/BlackWallStreetopoly",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "cf2ffacf-e6b1-466f-ab37-0d4d6421c757",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:c36b4fdb21e592a349bc166f36efeea34e4499320a929c6cb1b4cba5c0c371de"
+    },
+    {
+      "repo": "local/booked",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "26b7c8fa-36ed-44d7-9717-fd1847d974ee",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:1c511121667a25225acf96f1b4a3ba3e864ee21344660dde27c249367dc3c496"
+    },
+    {
+      "repo": "local/booked",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "7337129a-b09b-48eb-9e32-990184bbd9bc",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:4f2c11b76cbde3bd2b246a6e167cbd6b1da5618da51e4793676beb7dd8e809a6"
+    },
+    {
+      "repo": "local/capture",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "cf4ea742-a28c-4e55-9e23-833d6e4176c7",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:9759f77ec5cb8e810b60e81a7333087c591d489afa11638aa1a70c62f709da40"
+    },
+    {
+      "repo": "local/capture",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "b6bca138-aeee-4524-b582-8631548c8adc",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:aa28597d504b08b3db2fe487cc4742843ed348851573aac84f3a99b1ae173d95"
+    },
+    {
+      "repo": "local/CaptureInbound",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "d1f2d448-7526-4f95-9596-850db547bc20",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:d3dd76598722f6456d4b2cef3ed62826ab14375214786b320b15c435c2d16b80"
+    },
+    {
+      "repo": "local/CaptureInbound",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "97095cdd-bf7f-4dee-bc5a-b36f47a7fa8b",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:f062861fe45bacbe3bdac27a4d363059d92b4424bb66e670a29140e489a8b744"
+    },
+    {
+      "repo": "local/clawpay",
+      "feature": "queue_backpressure",
+      "created": true,
+      "id": "a53e5cd0-4ace-42bf-bb4c-626d70758fea",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:f85d2f4b8d97a07b7a0114b825de4ebc7a0ab29abe97b5d58189d9604939ccc3"
+    },
+    {
+      "repo": "local/clawpay",
+      "feature": "auth_session",
+      "created": true,
+      "id": "91b8e85f-b9d2-4c4b-a38f-d380181af5b5",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:7e94d370029eb575a0009c4b262e27235a316949dc407bc9836e003559b56693"
+    },
+    {
+      "repo": "local/Coinstbl",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "e2d33e78-1487-442d-adca-e56a798aec1f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:c150bd8bc3699a5a2babadcf412016661eff1305d30bbc33d660dbd26c052281"
+    },
+    {
+      "repo": "local/Coinstbl",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "8590de3a-e640-4f88-953a-a97e567cdb5f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:284eff4d73c4309f643017fd66511670b8a5857ceea15e12cae3ec39475ea098"
+    },
+    {
+      "repo": "local/CoinStbl",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "5a870463-b7c1-4578-b547-f47e6058082e",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:6efd0861ad7542eb7abd2f72c777b729eb31ef071499a9a26f3faeed3d88bcba"
+    },
+    {
+      "repo": "local/CoinStbl",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "d0cc7ceb-9539-4ee3-b58f-5e145c416806",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:29de6ffbfd37af0a39d0801935d30b765ddca1db98c624a121c022b9bede19fa"
+    },
+    {
+      "repo": "local/Cookies_Pass",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "40217958-da95-4aa3-83a9-6902dc0e29b9",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:40b5854485f1b234269cd4eaac34dcd6c3356c0682a63046d11fafe5c6e75423"
+    },
+    {
+      "repo": "local/Cookies_Pass",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "93eee010-a503-4951-b065-fa2c65cc97e7",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:0f121a7d4fee5fa6efa0cd2fab79277c83ed07e14b1c67bb65ef48a829f1ae77"
+    },
+    {
+      "repo": "local/cookies-tempe",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "76397c22-1a11-4bb2-b9a0-41641840b320",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:8fc030927504cece76a762392d601115e63b7d82101bb5d445b2f05027eb4166"
+    },
+    {
+      "repo": "local/cookies-tempe",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "a3cfb0bc-419d-420f-bd1e-03620639f25f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:47e5f8af239d7d26eac17448e4935f9888e51c3e61b7e5d753d477695396db44"
+    },
+    {
+      "repo": "local/crave",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "f745234a-6feb-4ebe-9a50-7a32b9cde441",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:b3bbf1e5c2d82e252ce3386ccd05d9d994bf81f7efb431835e4b026baa3f677c"
+    },
+    {
+      "repo": "local/crave",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "4024eeb9-2531-4269-94d5-60325658df74",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:b528faa97f235c9399c9f5005a43fabbb4a831819db7af241f5f86e1d66e771e"
+    },
+    {
+      "repo": "local/dify",
+      "feature": "stripe_checkout",
+      "created": true,
+      "id": "347be2b6-bb86-47b5-890a-8fbde2baa5fd",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:d54a95f16a999a3c09a57d503489a67f5dfb4f1cebba6ff52120bb15c849ee43"
+    },
+    {
+      "repo": "local/dify",
+      "feature": "stripe_webhooks",
+      "created": true,
+      "id": "28fc3817-dc94-48a5-8893-264e9d5811a8",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:610bdaf516f0474de4699a79450df0ebd2f4dfd69d686a1974239897abf3bc6f"
+    },
+    {
+      "repo": "local/Flowise",
+      "feature": "stripe_checkout",
+      "created": true,
+      "id": "fa602c0e-2eca-468b-8b53-b0b6860e0fb8",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:1e60a9ad88dd80022f490aa61d4c107ca1c87df629f72869d6e9a92a2f5c61ea"
+    },
+    {
+      "repo": "local/Flowise",
+      "feature": "stripe_webhooks",
+      "created": true,
+      "id": "b5328ca4-3c5b-4cf5-8bf6-bdb9bac356f1",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:9eef9adec582e8331a2d7cda44e421cd1eb85062ea1b1e6a4547bfdee805a94b"
+    },
+    {
+      "repo": "local/FoodTruckPass",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "2eafcb5d-b92c-45d9-aa78-a59b80cafb76",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:5d034cc2d76af62d0ac8ced1e5247383c1b0aea3e909ba738b803a649eaa6bff"
+    },
+    {
+      "repo": "local/FoodTruckPass",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "433189fd-8c98-4bdb-a87e-76b08ca119c6",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:ccf53e03fcb437bc9a03b0f162d1d412cfc99077f17c6c5398f35ca9daa74fcf"
+    },
+    {
+      "repo": "local/gbusupdate",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "d127c029-e1b6-4286-8b48-be4793df60d6",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:b179ec4039efc6c65226b0460eaceb43ad500ddd63d82bda86bf4c297f2c0083"
+    },
+    {
+      "repo": "local/gbusupdate",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "ecf0bd6d-ceea-4d11-b028-10ba135545ce",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:74d9434f6d6cb07e462482ff5511eb21c34b1f60ba0124d3686aece55d015180"
+    },
+    {
+      "repo": "local/glitch-app",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "7c84ee29-7377-4ab6-ba10-beb98667b83b",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:0ca4c4953b8f39c7fd3bf9cc1664484263c4a2de867e770a41e17ace2013688e"
+    },
+    {
+      "repo": "local/glitch-app",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "8322a8bd-659c-4c36-ba85-961bdb850a68",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:49cfea70b6d1cd714f140fdca3f4452bacc535be35d4676638f964b0a44f65fc"
+    },
+    {
+      "repo": "local/GoCrawdaddy",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "8876260d-6dd0-4dc0-a393-c59015a7fed6",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:695671bdc4d0f8e9b9d0b9b6d52647a064bbdf6cab823586191d5cd0a244dbe2"
+    },
+    {
+      "repo": "local/GoCrawdaddy",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "dce9d6a5-4d93-4d55-839d-c8d8bfa552c4",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:20ad20d1840b1a5bb7635a3bb81c853609a25f7b0a68e3a99097d67cc23adc58"
+    },
+    {
+      "repo": "local/HowtoWatchStream-SmartKB",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "6d6f238b-b43f-44c6-96e0-93fb428b11e3",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:03a1cece1d2a5ad3741d179f1147187276378c6e4f32f57fbc8e64806ac7068f"
+    },
+    {
+      "repo": "local/HowtoWatchStream-SmartKB",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "e4a90b96-1b3d-4892-9fdc-8d2ed3476c5d",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:aa8a1c8cd3a0040a75cc81f57fe0ff20b221151525f3d4ccc113c4729b42f588"
+    },
+    {
+      "repo": "local/InayanBuilderBot",
+      "feature": "stripe_checkout",
+      "created": true,
+      "id": "12cb2dbd-caec-46f7-bc83-043902843960",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:fbd7b3551548d5da5594f3a0e1fbe1a8b8f98049b8866b7df3b7e0c547335009"
+    },
+    {
+      "repo": "local/InayanBuilderBot",
+      "feature": "stripe_webhooks",
+      "created": true,
+      "id": "eeba4f5c-732c-477f-a388-9779b36baee3",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:3938dad68414ab20de6587d2e7b5a131ba8adab97958d11ec686302696febd0d"
+    },
+    {
+      "repo": "local/Inbound-cookies",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "10708460-65f2-455a-aad3-11e127c9953e",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:780c57caed0584e7abecf80a65b73493f317d7d009d02945ec29776ba245ed46"
+    },
+    {
+      "repo": "local/Inbound-cookies",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "c5a42ca9-ef00-4c72-9a17-86973f19bbff",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:d32d1fd31c527d88c720b60004e51ce2ad067213e2e5311d2a3ea0278b6e696b"
+    },
+    {
+      "repo": "local/infinitedata",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "e8777ff9-d4d5-4f9a-a52e-4577ca4c52b2",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:a336cb7fd19311a1794329cf75376c1360378dcb0733b17504ae2ccc483bc85f"
+    },
+    {
+      "repo": "local/infinitedata",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "d98cbcdb-c88c-43b5-be17-df53f5fa3e3f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:8c8074ff5eb82b148f5dcdd5c5119082a957369a7dff2db84e160d738b56b912"
+    },
+    {
+      "repo": "local/Leadgen",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "ec5a1d8a-cfb9-48a7-828e-9d34dd5e5f58",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:7b80e058d703cbdd7120fa5cd3a46577d216d2ec48d88f7ef9f95ae76ce6c8bc"
+    },
+    {
+      "repo": "local/Leadgen",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "7dfc2e53-e646-4cfa-a485-a719a0c51f50",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:edcfda6ec1cbbffeb60810b6f6c8fafcb93912aa2d7c47651b09f4c4c9637392"
+    },
+    {
+      "repo": "local/LeadGen3",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "5287dbc9-4f31-41cb-8b3f-e7137cb7f4ca",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:e6d8a0fea4a242c2ed58900785246a1f7d72cbcfe361e72132516ee3c9ee822b"
+    },
+    {
+      "repo": "local/LeadGen3",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "e771335d-9ff2-46b4-b635-31f9b0cf1029",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:0be6fdcdd0401301fba5d0b9cea9a070778fa9a4f42b3a492bf41527a1bf76cc"
+    },
+    {
+      "repo": "local/LeadGenAi",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "6aa96cc1-37e3-499b-af69-7ef5f1f25541",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:124b9b72d59d749b9d13811946f1e3fee553463be58db77491c507f758301be3"
+    },
+    {
+      "repo": "local/LeadGenAi",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "fb8335fc-5c75-4a46-9462-b791d29332c9",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:3e80a5c18a28f452abbaeb03aa875e8ed95ced079cbdff140228d963a289f961"
+    },
+    {
+      "repo": "local/leadgengit",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "1dafd3a0-2a93-421b-a930-1b59d1a4ac3e",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:35c62d240404e1ab121cc974ed1046561b9890b3cac4cd28e8fda0447393331d"
+    },
+    {
+      "repo": "local/leadgengit",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "7fc6f0b6-c957-402c-ab0c-65f52a45045a",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:5969c9e085c5ed48f314147626bef0a6d3155ee90cc418a470d8105543794ddc"
+    },
+    {
+      "repo": "local/Madirectory",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "fd0694a3-79b1-4bbf-b673-e594e5336d92",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:3a0fa346be3d0c2f80af8eefce8fa87004e97b15a6708f076ac349e1d115079c"
+    },
+    {
+      "repo": "local/Madirectory",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "76f0a360-bc67-47fe-a303-bb39b50273aa",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:afde3093b3e22f4e680661e009c4992e9d664edc6487269a57966727c5836c28"
+    },
+    {
+      "repo": "local/manychatdupe",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "968e6e60-ef18-4736-aca1-0fd60c604000",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:fea89704324a5bf4d1da7f6a2e16fc38c54c2cd84f026757c111d0e892ef8863"
+    },
+    {
+      "repo": "local/manychatdupe",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "cac86e7f-8d81-4af0-a715-e8224a23b1f9",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:0ba913230ec4589d9c9f8ad6ced0fcd00d6047bfcdd491f14e20a6102d93e43f"
+    },
+    {
+      "repo": "local/MaxKB",
+      "feature": "stripe_checkout",
+      "created": true,
+      "id": "12fb6890-bac8-4d34-bced-9b40197170a1",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:a9214c884b0e9986b0fad0562bd527986da2bcbf6bef09ab231f944d55e46615"
+    },
+    {
+      "repo": "local/MaxKB",
+      "feature": "stripe_webhooks",
+      "created": true,
+      "id": "b40727c8-8131-44ff-8c9d-4057504f1c59",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:5be44c19a035dc6ec3acffd5fbc0fe4a10498d31f2a1f35f0a4e77d4e53831ea"
+    },
+    {
+      "repo": "local/MediaTranscribePro",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "58af6e0b-b041-4050-b2ac-20a40f454fe4",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:99671ac2883197e79a7c5285f1d4db9a62b1a696a00783fa6cc1895974ebf1f4"
+    },
+    {
+      "repo": "local/MediaTranscribePro",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "1c39659d-c02a-4774-b2a4-25426c0f1453",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:93dae557282ff6ec7b13cf78b5df6adbc2a1678e1a94a434f674069413cc1fbb"
+    },
+    {
+      "repo": "local/mytutor",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "7e812f7c-be1f-4ae3-ba86-f4ef41db438b",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:5c75900d9880dcef733febc23420f2721947812adca7935f8c0c60fa516d8062"
+    },
+    {
+      "repo": "local/mytutor",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "75df0a11-beb3-4144-aa47-de646e0f638f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:9bd29349b3702f94830ab6c390051b33e62dd5e165f753bf39477cbfea3fad51"
+    },
+    {
+      "repo": "local/nfcverify",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "0507c21f-e0e3-462f-9d16-1dfdecf5b98b",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:1e8406a7a986be4047fd40ca839542a25bcc428baceb79742f5ffff9627da97d"
+    },
+    {
+      "repo": "local/nfcverify",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "dc1658fc-9fdb-4c7c-a828-3f423f302d2f",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:337a4a55f5b2e5802ba0d344613d28e7acf68ea4bc88348fddc118e8a230ea75"
+    },
+    {
+      "repo": "local/patentpal",
+      "feature": "data_integrity",
+      "created": true,
+      "id": "cc234faf-8226-4429-ade6-fe6aa3050bcf",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:fc47253935db9a06708cc427daa173e25bca7136d179598d11420be1946f9857"
+    },
+    {
+      "repo": "local/patentpal",
+      "feature": "desktop_packaging",
+      "created": true,
+      "id": "a7fc5a11-54a0-467a-9790-9b0df0300e32",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:3d5d38c0c6c5826f0b2b626568bf11f1a7e26840c1962a471a6bf65372a73df5"
+    }
+  ],
+  "skipped": []
+}

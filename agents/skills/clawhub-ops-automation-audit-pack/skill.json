@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-ops-automation-audit-pack",
+  "name": "Ops Automation Audit Pack Skill",
+  "version": "1.0.0",
+  "description": "Core operations rely on repetitive manual workflows that block growth",
+  "tasks": [
+    "CLAWHUB_OPS_AUTOMATION_AUDIT_PACK_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 29,
+    "model": "one_time"
+  }
+}

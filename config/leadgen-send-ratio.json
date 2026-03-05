@@ -1,0 +1,8 @@
+{
+  "description": "Daily send allocation: way more Skyn Patch than BWS. SEND_MAX per autopilot cycle; ratio is approximate over the day.",
+  "skynpatch_send_max": 50,
+  "bws_send_max": 12,
+  "skynpatch_target_leads": 800,
+  "bws_target_leads": 400,
+  "notes": "Ecosystem env overrides these when set. Use LEAD_AUTOPILOT_SEND_MAX per process or keep ecosystem in sync with this file."
+}

@@ -1,0 +1,26 @@
+{
+  "stripe": [
+    "local/BlackWallStreetopoly",
+    "local/v0-skyn-patch",
+    "local/claw-architect"
+  ],
+  "email": [
+    "local/claw-architect",
+    "local/v0-skyn-patch"
+  ],
+  "queue": [
+    "local/claw-architect"
+  ],
+  "trading": [
+    "local/quantfusion",
+    "local/claw-architect"
+  ],
+  "auth": [
+    "local/veritap",
+    "local/CaptureInbound"
+  ],
+  "pm2": [
+    "local/claw-architect"
+  ]
+}
+

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "landmine_execsync",
+    "type": "search_text",
+    "pattern": "execSync(",
+    "severity": "high",
+    "message": "execSync is a performance + reliability risk. Replace with async helpers or background tasks.",
+    "notes": [
+      "CLAUDE.md landmine: execSync for PM2 queries blocks the Node event loop.",
+      "Prefer pm2 jlist via async exec and symbol-indexed helpers."
+    ]
+  },
+  {
+    "id": "landmine_json_state",
+    "type": "search_text",
+    "pattern": ".json",
+    "severity": "medium",
+    "message": "Direct JSON file state may be a TOCTOU / concurrency landmine; consider moving to Postgres.",
+    "notes": [
+      "Look for shared JSON state on hot paths (agent history, dashboards).",
+      "Use SQL tables or queues for concurrent state."
+    ]
+  },
+  {
+    "id": "landmine_raw_stripe",
+    "type": "search_text",
+    "pattern": "stripe.",
+    "severity": "medium",
+    "message": "Raw Stripe SDK calls should be centralized in core/stripe modules.",
+    "notes": [
+      "New SaaS repos should call core/stripe only, not new Stripe() in app code."
+    ]
+  },
+  {
+    "id": "landmine_legacy_email_providers",
+    "type": "search_text",
+    "pattern": "MailerSend",
+    "severity": "medium",
+    "message": "Legacy MailerSend usage; preferred provider is Resend with per-site config.",
+    "notes": [
+      "See docs/EMAIL_RESEND_MIGRATION.md for migration plan."
+    ]
+  },
+  {
+    "id": "landmine_legacy_email_providers_maileroo",
+    "type": "search_text",
+    "pattern": "Maileroo",
+    "severity": "medium",
+    "message": "Legacy Maileroo usage; preferred provider is Resend with per-site config.",
+    "notes": [
+      "See docs/EMAIL_RESEND_MIGRATION.md for migration plan."
+    ]
+  },
+  {
+    "id": "landmine_raw_redis",
+    "type": "search_text",
+    "pattern": "new Redis",
+    "severity": "medium",
+    "message": "Direct Redis client creation outside queue/core modules can fragment connection handling.",
+    "notes": [
+      "Prefer centralized queue/Redis clients in core/queue."
+    ]
+  },
+  {
+    "id": "landmine_bullmq_inline",
+    "type": "search_text",
+    "pattern": "BullMQ",
+    "severity": "low",
+    "message": "Inline BullMQ usage; consider normalizing via core/queue abstractions.",
+    "notes": [
+      "Not always a bug; should be reviewed for consistency."
+    ]
+  }
+]
+

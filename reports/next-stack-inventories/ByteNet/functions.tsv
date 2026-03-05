@@ -1,0 +1,33 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/read.luau:10:local function function_passer(fn, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/read.luau:18:local function yielder()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/read.luau:25:local function run_listener(fn, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/read.luau:30:local function read(incoming_buff: buffer, references: { [number]: unknown }?, player: Player?)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:8:local function onClientEvent(receivedBuffer, ref)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:14:local function create(): types.ChannelState
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:24:local function dump(channel: types.ChannelState): (buffer, { unknown }?)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:39:function client.send_reliable<T>(id: number, data: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:43:function client.send_unreliable(id: number, writer: (value: any) -> (), data: { [string]: any })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/client.luau:47:function client.init()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:18:local function create(): types.ChannelState
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:28:local function dump(channel: types.ChannelState): (buffer, { unknown }?)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:43:local function on_server_event(player: Player, data, references)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:53:local function player_added(player)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:65:function server.sendAllReliable(id: number, writer: (value: any) -> (), data: { [string]: any })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:69:function server.sendAllUnreliable(id: number, writer: (value: any) -> (), data: { [string]: any })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:73:function server.sendPlayerReliable(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:82:function server.sendPlayerUnreliable(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/process/server.luau:91:function server.start()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/optional.luau:4:local function optional<T>(value_type: types.DataType<T>): types.DataType<T?>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/define_packet.luau:13:local function define_packet(props: types.PacketProps<any>)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:59:		function exported.sendToList(data, players: { Player })
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:65:		function exported.sendTo(data, player: Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:69:		function exported.sendToAllExcept(data, except: Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:77:		function exported.sendToAll(data)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:81:		function exported.send(data)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:86:	function exported.wait()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:105:	function exported.listen(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/packets/packet.luau:109:	function exported.getListeners()
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/array.luau:8:local function array<T>(value_ty: types.DataType<T>): types.DataType<{ T }>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/map.luau:4:local function map(
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/bool.luau:33:local function bool(): types.DataType<boolean>
+/Users/tatsheen/claw-repos/oss-index/roblox/ByteNet/src/data_types/unknown.luau:5:local function unknown(): types.DataType<unknown>

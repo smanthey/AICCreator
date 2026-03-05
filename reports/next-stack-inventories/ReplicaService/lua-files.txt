@@ -1,0 +1,14 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ProfileServiceExample/ReplicaTestServer.server.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ProfileServiceExample/ReplicaTestClient.client.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ExperimentalListenersExample/TestWriteLib.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ExperimentalListenersExample/ReplicaTestServer.server.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ExperimentalListenersExample/ReplicaTestClient.client.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/AbstractExample/TestWriteLib.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/AbstractExample/ReplicaTestServer.server.lua
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/AbstractExample/ReplicaTestClient.client.lua

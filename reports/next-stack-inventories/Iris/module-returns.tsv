@@ -1,0 +1,341 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:61:    return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:104:    return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:117:    return connection
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:154:    return coroutine.yield()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:167:    return cn
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/Signal.lua:180:return Signal
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/init.lua:33:    return Vector2.new(Input.X, Input.Y)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/init.lua:38:        return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/init.lua:40:    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/src/libraries/UserInputService/init.lua:73:return Input
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/stories/exampleStory.story.lua:4:return function(parent: GuiObject)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/stories/exampleStory.story.lua:26:    return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/tests/State.spec.lua:3:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:3:return function(Iris: Types.Iris)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:123:                    return check and Enum.ResamplerMode.Pixelated or Enum.ResamplerMode.Default
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:1265:                return not newValue
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:1552:                            return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:1821:    return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:1834:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:1957:        return window
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Types.lua:660:return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:13:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:16:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:19:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:22:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:25:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:50:            return Button
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:69:                return Button
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Button.lua:86:                return SmallButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/tests/Widgets.spec.lua:9:return function(_Iris: Types.Iris) end
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:16:                    return thisWidget.lastSelectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:22:                    return thisWidget.lastUnselectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:28:                    return thisWidget.state.index.value == thisWidget.arguments.Index
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:32:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/RadioButton.lua:90:            return RadioButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/config.lua:305:return TemplateConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/WidgetTypes.lua:521:return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Text.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Text.lua:16:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Text.lua:30:            return Text
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Text.lua:69:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Text.lua:118:            return SeparatorText
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:17:                    return thisWidget.lastSelectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:23:                    return thisWidget.lastUnselectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:29:                    return thisWidget.state.index.value == thisWidget.arguments.Index
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:34:                return Selectable.SelectableButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:38:                return Selectable.SelectableButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:42:                return Selectable.SelectableButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:46:                return Selectable.SelectableButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:50:                return Selectable.SelectableButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:94:            return Selectable
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:180:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:183:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:186:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:189:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:199:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:205:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:228:                    return thisWidget.lastOpenedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:234:                    return thisWidget.lastClosedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:240:                    return thisWidget.lastChangedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:245:                return Combo.PreviewContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:248:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:347:                    return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:399:            return Combo
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:478:            return thisWidget.ChildContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:5:return function(Iris: Types.Internal)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:28:            return os.clock()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:30:            return time()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:52:        return widgets.UserInputService:GetMouseLocation() - widgets.MouseOffset
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:56:        return pos.X >= rectMin.X and pos.X <= rectMax.X and pos.Y >= rectMin.Y and pos.Y <= rectMax.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:75:        return Vector2.new(math.max(math.min(refPos.X + size.X, outerMax.X) - size.X, outerMin.X), math.max(math.min(refPos.Y + size.Y, outerMax.Y) - size.Y, outerMin.Y))
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:80:            return thisWidget.Instance.AbsoluteSize
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:84:                return rootParent.AbsoluteSize
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:87:                    return rootParent.AbsoluteSize
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:89:                    return workspace.CurrentCamera.ViewportSize
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:100:        return newClass
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:110:        return UIPaddingInstance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:119:        return UIListLayoutInstance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:130:        return UIStrokeInstance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:137:        return UICornerInstance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:145:        return UISizeConstraintInstance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:181:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:189:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:226:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:236:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:331:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:343:                    return thisWidget.isHoveredEvent
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:349:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:359:                    return thisWidget.lastClickedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:365:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:375:                    return thisWidget.lastRightClickedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:381:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:400:                    return thisWidget.lastDoubleClickedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:406:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:418:                    return thisWidget.lastCtrlClickedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:11:                    return thisWidget.lastCollapsedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:17:                    return thisWidget.lastUncollapsedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:21:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:33:            return ChildContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:151:                return Tree
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tree.lua:275:                return CollapsingHeader
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:32:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:67:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:70:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:73:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:76:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:121:            return MenuBar
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:127:            return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:143:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:146:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:151:                    return thisWidget.lastOpenedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:157:                    return thisWidget.lastClosedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:295:            return Menu
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:309:            return thisWidget.ChildContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:365:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:368:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:434:            return MenuItem
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:468:                    return thisWidget.lastCheckedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:474:                    return thisWidget.lastUncheckedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:478:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Menu.lua:561:            return MenuToggle
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:3:return function(Iris: Types.Iris): Types.Internal
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:132:        return self.value
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:147:            return self.value
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:160:        return self.value
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:179:        return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:192:        return self.lastChangeTick + 1 == Internal._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:212:            return -- Stops all rendering, effectively freezes the current frame with no interaction.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:428:                    return Internal._EventCall(Internal._lastWidget, index)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:454:            return Internal._ContinueWidget(ID, widgetType)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:531:        return thisWidget
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:613:            return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:614:                return Internal._EventCall(thisWidget, eventName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:617:        return thisWidget
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:642:        return thisWidget
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:684:            return Internal._states[ID]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:695:            return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:718:        return Event.Get(thisWidget)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:729:        return Internal._VDOM[Internal._IDStack[Internal._stackIndex]]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:743:        return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:803:            return ID
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:825:            return ID .. ":" .. discriminator
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:828:            return ID .. "::" .. table.concat(Internal._pushedIds, "\\")
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:830:            return ID .. ":" .. discriminator .. ":" .. table.concat(Internal._pushedIds, "\\")
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:853:                        return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:856:                    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:860:                    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:865:        return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:886:        return copy
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:895:    return Internal
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:14:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:19:                    return thisWidget.lastChangedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:86:            return ProgressBar
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:146:        return Block
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:207:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:301:            return PlotLines
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:401:        return Block
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:458:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Plot.lua:550:            return PlotHistogram
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:32:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:100:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:165:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:172:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:216:        return Cell
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:269:        return Border
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:308:        return Row
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:329:        return Border
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:404:            return Table
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:596:                return thisWidget._cellInstances[rowIndex][columnIndex]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Table.lua:612:            return thisWidget._cellInstances[rowIndex][columnIndex]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:98:            return Root
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:116:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:118:                return Root.PopupScreenGui.TooltipContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:120:                return Root.PopupScreenGui.MenuBarContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Root.lua:128:                return PseudoWindow
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:26:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:39:                return Image
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:76:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:79:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:82:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:85:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:88:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Image.lua:122:                return Button
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:3:return function(Iris: Types.Iris)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:6:        return function(arguments, states)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:7:            return Iris.Internal._Insert(name, arguments, states)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:442:        return Iris.Internal._Insert("Text", arguments)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:468:        return Iris.Internal._Insert("Text", arguments)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1681:        return thisWidget
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1730:        return thisWidget
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1984:        return Table._columnIndex
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1998:        return Table._rowIndex
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:2045:        return Table._columnIndex
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:25:            return Separator
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:52:            return Indent
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:60:            return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:87:            return SameLine
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:106:            return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:130:            return Group
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Format.lua:134:            return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:6:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:10:            return thisWidget.lastNumberChangedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:17:            return val
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:20:                return val.X
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:22:                return val.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:26:                return val.X
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:28:                return val.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:30:                return val.Z
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:34:                return val.Scale
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:36:                return val.Offset
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:40:                return val.X.Scale
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:42:                return val.X.Offset
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:44:                return val.Y.Scale
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:46:                return val.Y.Offset
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:51:                return color[1]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:53:                return color[2]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:55:                return color[3]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:59:                return val.Min.X
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:61:                return val.Min.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:63:                return val.Max.X
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:65:                return val.Max.Y
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:68:            return val[index]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:77:            return newValue :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:80:                return Vector2.new(newValue, val.Y) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:82:                return Vector2.new(val.X, newValue) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:86:                return Vector3.new(newValue, val.Y, val.Z) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:88:                return Vector3.new(val.X, newValue, val.Z) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:90:                return Vector3.new(val.X, val.Y, newValue) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:94:                return UDim.new(newValue, val.Offset) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:96:                return UDim.new(val.Scale, newValue) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:100:                return UDim2.new(UDim.new(newValue, val.X.Offset), val.Y) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:102:                return UDim2.new(UDim.new(val.X.Scale, newValue), val.Y) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:104:                return UDim2.new(val.X, UDim.new(newValue, val.Y.Offset)) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:106:                return UDim2.new(val.X, UDim.new(val.Y.Scale, newValue)) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:110:                return Rect.new(Vector2.new(newValue, val.Min.Y), val.Max) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:112:                return Rect.new(Vector2.new(val.Min.X, newValue), val.Max) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:114:                return Rect.new(val.Min, Vector2.new(newValue, val.Max.Y)) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:116:                return Rect.new(val.Min, Vector2.new(val.Max.X, newValue)) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:122:                    return Color3.fromHSV(newValue, s, v) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:124:                    return Color3.fromHSV(h, newValue, v) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:126:                    return Color3.fromHSV(h, s, newValue) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:130:                return Color3.new(newValue, val.G, val.B) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:132:                return Color3.new(val.R, newValue, val.B) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:134:                return Color3.new(val.R, val.G, newValue) :: any
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:195:        return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:208:                    return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:396:            return 2 * Iris._config.ItemInnerSpacing.X + 2 * textHeight
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:428:            return InputField
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:434:            return widgets.extend(input, {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:476:                    return Input
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:511:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:514:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:566:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:573:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:639:            return DragField
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:645:            return widgets.extend(input, {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:701:                    return Drag
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:756:            return widgets.extend(input, {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:824:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:827:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:863:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:870:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:975:            return SliderField
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:981:            return widgets.extend(input, {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:1014:                    return Slider
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:1070:            return widgets.extend(input, {
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:1150:                    return thisWidget.lastTextChangedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:1154:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Input.lua:1204:            return InputText
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/PubTypes.lua:43:return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:6:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:14:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:21:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:29:                return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:88:            return TabBar
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:99:            return TabBar.Bar
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:133:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:136:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:141:                    return thisWidget.lastSelectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:147:                    return thisWidget.lastUnselectedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:153:                    return thisWidget.state.index.value == thisWidget.Index
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:159:                    return thisWidget.lastOpenedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:165:                    return thisWidget.lastClosedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:268:            return Tab
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Tab.lua:279:            return thisWidget.ChildContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:6:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:17:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:56:            return Tooltip
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:94:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:113:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:129:        return Vector2.new(math.clamp(intentedSize.X, minWindowSize, math.max(maxWindowSize.X, minWindowSize)), math.clamp(intentedSize.Y, minWindowSize, math.max(maxWindowSize.Y, minWindowSize)))
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:137:        return Vector2.new(
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:145:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:206:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:252:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:261:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:315:            return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:354:                    return thisWidget.lastClosedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:360:                    return thisWidget.lastOpenedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:366:                    return thisWidget.lastCollapsedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:372:                    return thisWidget.lastUncollapsedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:377:                return Window.WindowButton
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:427:                    return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:487:                    return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:836:                    return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:855:            return Window
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:1053:                return Content
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:1055:            return thisWidget.ChildContainer
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Checkbox.lua:3:return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Checkbox.lua:15:                    return thisWidget.lastCheckedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Checkbox.lua:21:                    return thisWidget.lastUncheckedTick == Iris._cycleTick
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Checkbox.lua:25:                return thisWidget.Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Checkbox.lua:87:            return Checkbox
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:78:        return Iris
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:113:    return Iris
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:165:    return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:369:        return
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:442:        return Internal._states[ID]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:453:    return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:471:            return Internal._states[ID]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:483:    return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:532:        return state
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:547:    return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:592:       return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:614:        return state
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:637:    return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:652:        return not newValue
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:661:        return Internal._states[ID]
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:676:        return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:696:return Iris

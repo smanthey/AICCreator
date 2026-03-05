@@ -1,0 +1,16 @@
+{
+  "code": "FCRA",
+  "title": "Fair Credit Reporting Act",
+  "authority_url": "https://www.consumerfinance.gov/rules-policy/regulations/1022/",
+  "key_sections": [
+    {"section": "611", "topic": "Dispute process and reinvestigation"},
+    {"section": "623", "topic": "Furnisher duties"},
+    {"section": "605", "topic": "Obsolete information limits"},
+    {"section": "609", "topic": "Disclosure rights"}
+  ],
+  "agent_use": [
+    "dispute_timeline_enforcement",
+    "furnisher_dispute_eligibility",
+    "reporting_obsolescence_checks"
+  ]
+}

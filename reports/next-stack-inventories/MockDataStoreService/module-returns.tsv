@@ -1,0 +1,94 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockGlobalDataStore.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockGlobalDataStore.spec.lua:650:                        return oldValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/init.lua:28:	return require(MockDataStoreServiceModule)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/init.lua:30:	return game:GetService("DataStoreService")
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockDataStoreConstants.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:19:		return s:sub(1,num-2) .. ".."
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:21:	return s
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:86:		return n
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:88:		return t
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:94:		return scanValidity({input = tbl}, {}, {})
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:112:				return false, path, "cannot store mixed tables"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:114:				return false, path, "cannot store tables with non-integer indices"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:116:				return false, path, "cannot store tables with (-)infinity indices"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:119:			return false, path, "dictionaries cannot have keys of type " .. typeof(key)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:121:			return false, path, "cannot store mixed tables"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:123:			return false, path, "dictionary has key that is invalid UTF-8"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:127:				return false, path, "array has non-sequential indices"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:132:			return false, path, "cannot store value '" .. tostring(value) .. "' of type " .. typeof(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:134:			return false, path, "cannot store strings that are invalid UTF-8"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:138:				return false, path, "cannot store cyclic tables"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:142:				return isValid, keyPath, reason
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:148:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:152:	return table.concat(path, '.')
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:239:		return dataPrepared
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:246:			return "NAN"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:248:			return "INF"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:250:			return "-INF"
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:252:		return tostring(key)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:254:	return key
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreUtils.lua:281:return MockDataStoreUtils
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:84:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:88:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:91:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:155:	return Data.GlobalDataStore
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:169:	return Data.DataStore[name][scope]
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:183:	return Data.OrderedDataStore[name][scope]
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:187:	return Interfaces[data]
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:199:		return math.floor(Budgets[requestType] or 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:201:		return math.huge
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:241:		return false -- no room in throttle queue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:255:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:267:		return false -- no room in throttle queue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:279:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:291:	return HttpService:JSONEncode(export)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreManager.lua:424:return MockDataStoreManager
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockDataStorePages.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStoreConstants.lua:9:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:46:	return self.__event.Event:Connect(function(k, v)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:67:		return Utils.deepcopy(self.__data[key])
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:91:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:166:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:226:	return value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:364:		return nil -- this is what datastores do even though it should be old value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:410:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:414:	return HttpService:JSONEncode(self.__data)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockGlobalDataStore.lua:448:return MockGlobalDataStore
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:27:        return t1 == t2
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:33:                    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:36:                return false
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:39:            return false
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:42:    return true
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:85:    return match
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/Test.lua:88:return Test
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStorePages.lua:24:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockDataStorePages.lua:56:return MockDataStorePages
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockDataStoreUtils.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:47:	return self.__event.Event:Connect(function(k, v)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:68:		return self.__data[key]
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:92:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:174:	return retValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:241:	return value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:313:	return value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:369:		return nil -- this is what datastores do even though it should be old value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:402:	return value
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:487:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:497:	return HttpService:JSONEncode(self.__data)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/MockOrderedDataStore.lua:529:return MockOrderedDataStore
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockOrderedDataStore.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/MockOrderedDataStore.spec.lua:566:                        return oldValue
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/spec/MockDataStoreService/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:19:	return function(_, name, scope)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:25:			return getObject()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:46:			return getObject(name, scope or "global")
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:59:            return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:73:		return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:85:            return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:101:        return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:112:            return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:131:		return interface
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:149:	return MockDataStoreManager.GetBudget(DataStoreRequestTypes[requestType])
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:169:	return MockDataStoreManager.ImportFromJSON(content, verbose)
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:173:	return MockDataStoreManager.ExportToJSON()
+/Users/tatsheen/claw-repos/oss-index/roblox/MockDataStoreService/lib/MockDataStoreService/init.lua:176:return MockDataStoreService

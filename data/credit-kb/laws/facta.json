@@ -1,0 +1,13 @@
+{
+  "code": "FACTA",
+  "title": "Fair and Accurate Credit Transactions Act",
+  "authority_url": "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/",
+  "key_sections": [
+    {"section": "Free Annual Reports", "topic": "Consumer access"},
+    {"section": "Fraud Alerts", "topic": "Identity theft safeguards"}
+  ],
+  "agent_use": [
+    "identity_theft_guardrails",
+    "annual_report_intake_support"
+  ]
+}

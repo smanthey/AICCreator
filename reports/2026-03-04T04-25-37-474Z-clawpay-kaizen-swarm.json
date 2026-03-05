@@ -1,0 +1,126 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T04:25:37.405Z",
+  "mode": {
+    "execute_actions": false,
+    "run_daily_learning": false
+  },
+  "benchmark": {
+    "target_credits": 100000,
+    "target_days": 90,
+    "total_revenue": 0,
+    "conversions_24h": 0,
+    "revenue_24h": 0,
+    "daily_needed": 1111.11,
+    "progress_percent": 0,
+    "behind": true
+  },
+  "funnel": {
+    "overall_conversion": 0,
+    "sent": 0,
+    "responded": 0,
+    "converted": 0
+  },
+  "projection": {
+    "current": {
+      "daily": 0,
+      "weekly": 0,
+      "monthly": 0,
+      "quarterly": 0
+    },
+    "with_growth": {
+      "quarterly": 0
+    },
+    "metrics": {
+      "daily_conversions": "0.00",
+      "avg_value": "0.00",
+      "conversion_rate": 0
+    }
+  },
+  "actions": [
+    {
+      "action": "discovery_refresh",
+      "reason": "payment velocity below target",
+      "command": "node scripts/bot-lead-discovery.js all"
+    },
+    {
+      "action": "discovery_github_enrichment",
+      "reason": "expand external discovery sources",
+      "command": "npm run -s discover:bots:github"
+    },
+    {
+      "action": "discovery_reddit_enrichment",
+      "reason": "expand external discovery sources",
+      "command": "npm run -s discover:bots:reddit"
+    },
+    {
+      "action": "outreach_push",
+      "reason": "payment velocity below target",
+      "command": "node scripts/bot-outreach.js"
+    },
+    {
+      "action": "research_snapshot",
+      "reason": "publish A/B/C findings and outliers",
+      "command": "npm run -s research:bots:daily"
+    },
+    {
+      "action": "auto_improvement_cycle",
+      "reason": "continuous kaizen",
+      "command": "internal:runAutoImprovementCycle"
+    }
+  ],
+  "action_results": [
+    {
+      "action": "discovery_refresh",
+      "reason": "payment velocity below target",
+      "command": "node scripts/bot-lead-discovery.js all",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "action": "discovery_github_enrichment",
+      "reason": "expand external discovery sources",
+      "command": "npm run -s discover:bots:github",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "action": "discovery_reddit_enrichment",
+      "reason": "expand external discovery sources",
+      "command": "npm run -s discover:bots:reddit",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "action": "outreach_push",
+      "reason": "payment velocity below target",
+      "command": "node scripts/bot-outreach.js",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "action": "research_snapshot",
+      "reason": "publish A/B/C findings and outliers",
+      "command": "npm run -s research:bots:daily",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "action": "auto_improvement_cycle",
+      "reason": "continuous kaizen",
+      "command": "internal:runAutoImprovementCycle",
+      "executed": false,
+      "ok": true,
+      "skipped": true
+    }
+  ],
+  "loop_health": {
+    "action_success_rate": 100,
+    "next_run_recommended_minutes": 30
+  }
+}

@@ -1,0 +1,953 @@
+{
+  "started_at": "2026-03-03T23:02:37.452Z",
+  "generated_at": "2026-03-03T23:08:59.243Z",
+  "dry_run": false,
+  "use_llm": false,
+  "checks": {
+    "runtime_audit": {
+      "command": "npm run -s audit:runtime",
+      "started_at": "2026-03-03T23:02:37.453Z",
+      "finished_at": "2026-03-03T23:02:46.758Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n\n=== Runtime Audit ===\n\n",
+      "stderr_tail": "error: sorry, too many clients already\n    at /Users/tatsheen/claw-architect/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async main (/Users/tatsheen/claw-architect/scripts/runtime-audit.js:20:3) {\n  length: 85,\n  severity: 'FATAL',\n  code: '53300',\n  detail: undefined,\n  hint: undefined,\n  position: undefined,\n  internalPosition: undefined,\n  internalQuery: undefined,\n  where: undefined,\n  schema: undefined,\n  table: undefined,\n  column: undefined,\n  dataType: undefined,\n  constraint: undefined,\n  file: 'proc.c',\n  line: '351',\n  routine: 'InitProcess'\n}\n",
+      "error": null
+    },
+    "schema_audit": {
+      "command": "npm run -s schema:audit:json",
+      "started_at": "2026-03-03T23:02:46.759Z",
+      "finished_at": "2026-03-03T23:04:21.684Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n{\n  \"ok\": true,\n  \"failures\": [],\n  \"warnings\": [],\n  \"stats\": {\n    \"migration_files\": 83,\n    \"migration_versions_in_files\": 83,\n    \"migration_versions_applied\": 83,\n    \"pending_versions\": 0,\n    \"applied_without_file\": 0,\n    \"invalid_constraints\": 0,\n    \"invalid_indexes\": 0\n  }\n}\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "task_contract": {
+      "command": "npm run -s audit:tasks",
+      "started_at": "2026-03-03T23:04:21.685Z",
+      "finished_at": "2026-03-03T23:04:29.461Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[site-audit] ✅ Handlers registered: site_audit, site_compare, site_fix_plan, site_extract_patterns\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n\n=== Task Contract Audit ===\n\nregistered handlers : 81\nrouting entries     : 81\npayload schemas     : 81\n\nOK: handlers, routing, and payload schemas are aligned.\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "bind_guard": {
+      "command": "npm run -s security:bind:guard",
+      "started_at": "2026-03-03T23:04:29.461Z",
+      "finished_at": "2026-03-03T23:04:32.326Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[security-bind-guard] OK scanned=306 violations=0\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "progress_integrity": {
+      "command": "npm run -s audit:progress:integrity",
+      "started_at": "2026-03-03T23:04:32.326Z",
+      "finished_at": "2026-03-03T23:08:31.622Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n✅ Postgres connected\n{\n  \"ok\": false,\n  \"lanes\": [\n    {\n      \"lane\": \"cookiespass\",\n      \"completed\": 20,\n      \"failed\": 0,\n      \"queued\": 8,\n      \"running\": 1,\n      \"in_flight\": 9,\n      \"oldest_in_flight_minutes\": 52.6,\n      \"blockers\": 0,\n      \"completed_with_evidence\": 0,\n      \"integrity_blocked\": 1,\n      \"blocked_loop\": 0,\n      \"symbol_preflight_failed\": 0,\n      \"checklist\": [\n        {\n          \"id\": \"repo_autofix\",\n          \"type\": \"repo_autofix\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 5\n        },\n        {\n          \"id\": \"site_audit\",\n          \"type\": \"site_audit\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 3\n        },\n        {\n          \"id\": \"site_fix_plan\",\n          \"type\": \"site_fix_plan\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 8\n        },\n        {\n          \"id\": \"loyalty_send_outreach\",\n          \"type\": \"loyalty_send_outreach\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": true,\n          \"count\": 1\n        },\n        {\n          \"id\": \"loyalty_process_webhooks\",\n          \"type\": \"loyalty_process_webhooks\",\n          \"source\": \"cookiespass_mission_pulse\",\n          \"done\": false,\n          \"count\": 0\n        }\n      ],\n      \"checklist_completed\": 4,\n      \"checklist_total\": 5,\n      \"research_relevance_score\": null,\n      \"movement_ok\": false,\n      \"escalation_required\": true,\n      \"pretend_work_signals\": [\n        \"completed_without_evidence\",\n        \"sla_no_net_movement\"\n      ]\n    },\n    {\n      \"lane\": \"gocrawdaddy\",\n      \"completed\": 0,\n      \"failed\": 0,\n      \"queued\": 0,\n      \"running\": 0,\n      \"in_flight\": 0,\n      \"oldest_in_flight_minutes\": 0,\n      \"blockers\": 0,\n      \"completed_with_evidence\": 0,\n      \"integrity_blocked\": 0,\n      \"blocked_loop\": 0,\n      \"symbol_preflight_failed\": 0,\n      \"checklist\": [\n        {\n          \"id\": \"research_sync\",\n          \"type\": \"research_sync\",\n          \"source\": \"gocrawdaddy_launch\",\n          \"done\": false,\n          \"count\": 0\n        },\n        {\n          \"id\": \"research_signals\",\n          \"type\": \"research_signals\",\n          \"source\": \"gocrawdaddy_launch\",\n          \"done\": \n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    }
+  },
+  "metrics": {
+    "by_status": [
+      {
+        "status": "CANCELLED",
+        "n": 4993
+      },
+      {
+        "status": "COMPLETED",
+        "n": 84342
+      },
+      {
+        "status": "CREATED",
+        "n": 156
+      },
+      {
+        "status": "DEAD_LETTER",
+        "n": 2
+      },
+      {
+        "status": "DISPATCHED",
+        "n": 81
+      },
+      {
+        "status": "PENDING",
+        "n": 148
+      },
+      {
+        "status": "RETRY",
+        "n": 164
+      },
+      {
+        "status": "RUNNING",
+        "n": 4
+      },
+      {
+        "status": "SKIPPED",
+        "n": 20
+      }
+    ],
+    "freshness": {
+      "dead_letter": 2,
+      "stale_created": 248,
+      "stale_dispatched": 0,
+      "stale_running": 0,
+      "active_backlog": 553,
+      "completed_1h": 125,
+      "created_1h": 198
+    },
+    "dead_letter_top_errors": [
+      {
+        "err": "INVALID_SCHEMA: / must have required property 'plan_id'",
+        "n": 2
+      }
+    ],
+    "stale_by_type_45m": [
+      {
+        "type": "opencode_controller",
+        "n": 190
+      },
+      {
+        "type": "repo_index_autopatch",
+        "n": 53
+      },
+      {
+        "type": "repo_autofix",
+        "n": 13
+      },
+      {
+        "type": "media_visual_catalog",
+        "n": 9
+      },
+      {
+        "type": "site_audit",
+        "n": 7
+      },
+      {
+        "type": "github_scan",
+        "n": 7
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "n": 6
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "n": 5
+      },
+      {
+        "type": "classify",
+        "n": 3
+      },
+      {
+        "type": "cluster_media",
+        "n": 2
+      },
+      {
+        "type": "github_repo_audit",
+        "n": 2
+      },
+      {
+        "type": "media_hash",
+        "n": 2
+      },
+      {
+        "type": "tax_prep_automation_run",
+        "n": 1
+      },
+      {
+        "type": "report",
+        "n": 1
+      },
+      {
+        "type": "subscription_audit_run",
+        "n": 1
+      },
+      {
+        "type": "orchestrate",
+        "n": 1
+      }
+    ],
+    "active_by_type": [
+      {
+        "type": "opencode_controller",
+        "status": "PENDING",
+        "n": 130
+      },
+      {
+        "type": "repo_autofix",
+        "status": "RETRY",
+        "n": 118
+      },
+      {
+        "type": "opencode_controller",
+        "status": "CREATED",
+        "n": 83
+      },
+      {
+        "type": "repo_index_autopatch",
+        "status": "DISPATCHED",
+        "n": 64
+      },
+      {
+        "type": "github_repo_audit",
+        "status": "RETRY",
+        "n": 39
+      },
+      {
+        "type": "site_audit",
+        "status": "CREATED",
+        "n": 17
+      },
+      {
+        "type": "repo_autofix",
+        "status": "CREATED",
+        "n": 17
+      },
+      {
+        "type": "index",
+        "status": "CREATED",
+        "n": 16
+      },
+      {
+        "type": "media_visual_catalog",
+        "status": "PENDING",
+        "n": 9
+      },
+      {
+        "type": "github_scan",
+        "status": "CREATED",
+        "n": 8
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "status": "DISPATCHED",
+        "n": 8
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "status": "DISPATCHED",
+        "n": 7
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "CREATED",
+        "n": 4
+      },
+      {
+        "type": "classify",
+        "status": "PENDING",
+        "n": 3
+      },
+      {
+        "type": "subscription_audit_run",
+        "status": "CREATED",
+        "n": 3
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "RETRY",
+        "n": 3
+      },
+      {
+        "type": "github_repo_audit",
+        "status": "CREATED",
+        "n": 3
+      },
+      {
+        "type": "report",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "tax_prep_automation_run",
+        "status": "CREATED",
+        "n": 2
+      },
+      {
+        "type": "media_hash",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "github_observability_scan",
+        "status": "CREATED",
+        "n": 2
+      },
+      {
+        "type": "cluster_media",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "classify",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "site_audit",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "type": "site_compare",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "resourceful_file_resolve",
+        "status": "DISPATCHED",
+        "n": 1
+      },
+      {
+        "type": "orchestrate",
+        "status": "CREATED",
+        "n": 1
+      },
+      {
+        "type": "opencode_controller",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "type": "repo_autofix",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "type": "repo_autofix",
+        "status": "DISPATCHED",
+        "n": 1
+      }
+    ],
+    "completion_mix_1h": [
+      {
+        "type": "repo_index_autopatch",
+        "n": 29
+      },
+      {
+        "type": "site_fix_plan",
+        "n": 27
+      },
+      {
+        "type": "repo_autofix",
+        "n": 18
+      },
+      {
+        "type": "site_audit",
+        "n": 13
+      },
+      {
+        "type": "opencode_controller",
+        "n": 11
+      },
+      {
+        "type": "site_compare",
+        "n": 9
+      },
+      {
+        "type": "github_observability_scan",
+        "n": 3
+      },
+      {
+        "type": "loyalty_send_outreach",
+        "n": 3
+      },
+      {
+        "type": "research_signals",
+        "n": 3
+      },
+      {
+        "type": "github_sync",
+        "n": 1
+      },
+      {
+        "type": "report",
+        "n": 1
+      },
+      {
+        "type": "tax_prep_automation_run",
+        "n": 1
+      }
+    ],
+    "duplicate_idempotency_families": [],
+    "productivity": {
+      "completed_total_1h": 119,
+      "top_completed_type": "repo_index_autopatch",
+      "top_completed_count": 29,
+      "top_completed_share_pct": 24
+    }
+  },
+  "post_metrics": {
+    "by_status": [
+      {
+        "status": "CANCELLED",
+        "n": 4999
+      },
+      {
+        "status": "COMPLETED",
+        "n": 84356
+      },
+      {
+        "status": "CREATED",
+        "n": 136
+      },
+      {
+        "status": "DEAD_LETTER",
+        "n": 2
+      },
+      {
+        "status": "DISPATCHED",
+        "n": 100
+      },
+      {
+        "status": "PENDING",
+        "n": 148
+      },
+      {
+        "status": "RETRY",
+        "n": 164
+      },
+      {
+        "status": "RUNNING",
+        "n": 5
+      },
+      {
+        "status": "SKIPPED",
+        "n": 20
+      }
+    ],
+    "freshness": {
+      "dead_letter": 2,
+      "stale_created": 241,
+      "stale_dispatched": 0,
+      "stale_running": 0,
+      "active_backlog": 553,
+      "completed_1h": 139,
+      "created_1h": 218
+    },
+    "dead_letter_top_errors": [
+      {
+        "err": "stale dispatched requeue loop cleanup",
+        "n": 1
+      },
+      {
+        "err": "Task type \"qa_spec\" payload error — qa_spec requires { spec: \"name\" } or { specs_dir: \"/path\" }",
+        "n": 1
+      }
+    ],
+    "stale_by_type_45m": [
+      {
+        "type": "opencode_controller",
+        "n": 190
+      },
+      {
+        "type": "repo_index_autopatch",
+        "n": 51
+      },
+      {
+        "type": "repo_autofix",
+        "n": 13
+      },
+      {
+        "type": "media_visual_catalog",
+        "n": 9
+      },
+      {
+        "type": "github_scan",
+        "n": 7
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "n": 6
+      },
+      {
+        "type": "site_audit",
+        "n": 5
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "n": 4
+      },
+      {
+        "type": "classify",
+        "n": 3
+      },
+      {
+        "type": "cluster_media",
+        "n": 2
+      },
+      {
+        "type": "github_repo_audit",
+        "n": 2
+      },
+      {
+        "type": "media_hash",
+        "n": 2
+      },
+      {
+        "type": "orchestrate",
+        "n": 1
+      },
+      {
+        "type": "report",
+        "n": 1
+      }
+    ],
+    "active_by_type": [
+      {
+        "type": "opencode_controller",
+        "status": "PENDING",
+        "n": 130
+      },
+      {
+        "type": "repo_autofix",
+        "status": "RETRY",
+        "n": 118
+      },
+      {
+        "type": "opencode_controller",
+        "status": "CREATED",
+        "n": 79
+      },
+      {
+        "type": "repo_index_autopatch",
+        "status": "DISPATCHED",
+        "n": 70
+      },
+      {
+        "type": "github_repo_audit",
+        "status": "RETRY",
+        "n": 39
+      },
+      {
+        "type": "site_audit",
+        "status": "CREATED",
+        "n": 15
+      },
+      {
+        "type": "index",
+        "status": "CREATED",
+        "n": 15
+      },
+      {
+        "type": "repo_autofix",
+        "status": "CREATED",
+        "n": 11
+      },
+      {
+        "type": "media_visual_catalog",
+        "status": "PENDING",
+        "n": 9
+      },
+      {
+        "type": "github_scan",
+        "status": "CREATED",
+        "n": 8
+      },
+      {
+        "type": "repo_autofix",
+        "status": "DISPATCHED",
+        "n": 8
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "status": "DISPATCHED",
+        "n": 7
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "status": "DISPATCHED",
+        "n": 6
+      },
+      {
+        "type": "site_audit",
+        "status": "DISPATCHED",
+        "n": 3
+      },
+      {
+        "type": "github_repo_audit",
+        "status": "DISPATCHED",
+        "n": 3
+      },
+      {
+        "type": "classify",
+        "status": "PENDING",
+        "n": 3
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "CREATED",
+        "n": 3
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "RETRY",
+        "n": 3
+      },
+      {
+        "type": "cluster_media",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "site_fix_plan",
+        "status": "RUNNING",
+        "n": 2
+      },
+      {
+        "type": "site_audit",
+        "status": "RUNNING",
+        "n": 2
+      },
+      {
+        "type": "report",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "media_hash",
+        "status": "PENDING",
+        "n": 2
+      },
+      {
+        "type": "github_observability_scan",
+        "status": "DISPATCHED",
+        "n": 2
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "classify",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "tax_prep_automation_run",
+        "status": "CREATED",
+        "n": 1
+      },
+      {
+        "type": "site_compare",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "github_observability_scan",
+        "status": "CREATED",
+        "n": 1
+      },
+      {
+        "type": "subscription_audit_run",
+        "status": "CREATED",
+        "n": 1
+      },
+      {
+        "type": "resourceful_file_resolve",
+        "status": "DISPATCHED",
+        "n": 1
+      },
+      {
+        "type": "index",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "type": "orchestrate",
+        "status": "CREATED",
+        "n": 1
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "status": "RETRY",
+        "n": 1
+      },
+      {
+        "type": "github_repo_audit",
+        "status": "CREATED",
+        "n": 1
+      }
+    ],
+    "completion_mix_1h": [
+      {
+        "type": "site_fix_plan",
+        "n": 30
+      },
+      {
+        "type": "repo_index_autopatch",
+        "n": 29
+      },
+      {
+        "type": "repo_autofix",
+        "n": 20
+      },
+      {
+        "type": "opencode_controller",
+        "n": 17
+      },
+      {
+        "type": "site_audit",
+        "n": 14
+      },
+      {
+        "type": "site_compare",
+        "n": 9
+      },
+      {
+        "type": "research_signals",
+        "n": 3
+      },
+      {
+        "type": "github_observability_scan",
+        "n": 3
+      },
+      {
+        "type": "loyalty_send_outreach",
+        "n": 3
+      },
+      {
+        "type": "subscription_audit_run",
+        "n": 2
+      },
+      {
+        "type": "tax_prep_automation_run",
+        "n": 1
+      },
+      {
+        "type": "report",
+        "n": 1
+      }
+    ],
+    "duplicate_idempotency_families": [],
+    "productivity": {
+      "completed_total_1h": 132,
+      "top_completed_type": "site_fix_plan",
+      "top_completed_count": 30,
+      "top_completed_share_pct": 23
+    }
+  },
+  "risks": [
+    {
+      "level": "critical",
+      "key": "runtime_audit_failed",
+      "detail": "runtime-audit failed"
+    },
+    {
+      "level": "high",
+      "key": "progress_integrity_failed",
+      "detail": "progress integrity audit failed"
+    },
+    {
+      "level": "critical",
+      "key": "dead_letter_backlog",
+      "detail": "dead_letter=2"
+    },
+    {
+      "level": "high",
+      "key": "stale_created",
+      "detail": "stale_created=248"
+    },
+    {
+      "level": "high",
+      "key": "loop_pressure",
+      "detail": "stale_45m_top_type=opencode_controller:190"
+    }
+  ],
+  "post_risks": [
+    {
+      "level": "critical",
+      "key": "runtime_audit_failed",
+      "detail": "runtime-audit failed"
+    },
+    {
+      "level": "high",
+      "key": "progress_integrity_failed",
+      "detail": "progress integrity audit failed"
+    },
+    {
+      "level": "critical",
+      "key": "dead_letter_backlog",
+      "detail": "dead_letter=2"
+    },
+    {
+      "level": "high",
+      "key": "stale_created",
+      "detail": "stale_created=241"
+    },
+    {
+      "level": "high",
+      "key": "loop_pressure",
+      "detail": "stale_45m_top_type=opencode_controller:190"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "reconcile_deadletters",
+      "kind": "command",
+      "reason": "Dead-letter backlog detected",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "tasks:reconcile-deadletters",
+        "--",
+        "--requeue"
+      ]
+    },
+    {
+      "id": "prune_loop_duplicates",
+      "kind": "internal",
+      "reason": "Loop pattern detected in stale active queue"
+    },
+    {
+      "id": "uptime_watchdog_recovery",
+      "kind": "command",
+      "reason": "Runtime staleness detected",
+      "cmd": "node",
+      "args": [
+        "scripts/uptime-watchdog-hourly.js",
+        "--no-diagnosis"
+      ]
+    },
+    {
+      "id": "forward_progress_enforcer",
+      "kind": "command",
+      "reason": "Force measurable product progress",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "progress:enforce"
+      ]
+    },
+    {
+      "id": "forward_progress_enforcer_integrity",
+      "kind": "command",
+      "reason": "Progress integrity failure requires explicit net movement enforcement",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "progress:enforce"
+      ]
+    }
+  ],
+  "executions": [
+    {
+      "id": "reconcile_deadletters",
+      "kind": "command",
+      "reason": "Dead-letter backlog detected",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "tasks:reconcile-deadletters",
+        "--",
+        "--requeue"
+      ],
+      "command": "npm run -s tasks:reconcile-deadletters -- --requeue",
+      "started_at": "2026-03-03T23:08:31.844Z",
+      "finished_at": "2026-03-03T23:08:32.591Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n✅ Postgres connected\n\n=== Dead Letter Reconcile ===\n\nmode:                 requeue\ndead_letters_scanned: 2\nrequeued:             0\ncancelled:            2\nremaining_deadletter: 0\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    {
+      "id": "prune_loop_duplicates",
+      "kind": "internal",
+      "reason": "Loop pattern detected in stale active queue",
+      "started_at": "2026-03-03T23:08:32.591Z",
+      "finished_at": "2026-03-03T23:08:32.854Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "{\"ok\":true,\"pruned\":4,\"sample\":[{\"id\":\"dc446b99-ed21-4a6d-88ce-190d50346c35\",\"type\":\"repo_index_autopatch\",\"idempotency_key\":\"repo_index_autopatch:93b9366ae25fd10fd996c08d6f79d3d8313a1f8c42bec410168376ca9b477f54\"},{\"id\":\"5681b291-1772-48cc-82d5-369be1fbb869\",\"type\":\"tax_prep_automation_run\",\"idempotency_key\":\"tax_prep_automation_run:8e44aa44387e584a1e1e383e4afe723991c473add1eb60d0c515ef0901839542\"},{\"id\":\"73bd3042-41de-4a6b-a0ef-5487a47582eb\",\"type\":\"subscription_audit_run\",\"idempotency_key\":\"subscription_audit_run:3268733fc6e883dc928ecb4de3e721648fe167ba220c68f8a085270a8fbb93ee\"},{\"id\":\"e4473086-52a3-41f9-8ddd-e771352832b9\",\"type\":\"repo_index_autopatch\",\"idempotency_key\":\"repo_index_autopatch:796f39fdce159a0d114e415943e0f818b9a7dbfded7dfd2be3c6ef959ccae8db\"}]}",
+      "stderr_tail": "",
+      "error": null
+    },
+    {
+      "id": "uptime_watchdog_recovery",
+      "kind": "command",
+      "reason": "Runtime staleness detected",
+      "cmd": "node",
+      "args": [
+        "scripts/uptime-watchdog-hourly.js",
+        "--no-diagnosis"
+      ],
+      "command": "node scripts/uptime-watchdog-hourly.js --no-diagnosis",
+      "started_at": "2026-03-03T23:08:32.854Z",
+      "finished_at": "2026-03-03T23:08:57.497Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[uptime-watchdog] Starting at 2026-03-03T23:08:32.974Z (dryRun=false)\n[uptime-watchdog] Found 38 issue(s):\n  - claw-architect-api has 37 restarts (possible crash loop)\n  - claw-offgrid-meshtastic-bridge should be online but is stopped\n  - claw-brand-control-plane should be online but is stopped\n  - claw-lead-autopilot-skynpatch should be online but is stopped\n  - claw-lead-autopilot-bws should be online but is stopped\n  - claw-prompt-oracle should be online but is stopped\n  - claw-bot-commerce-api should be online but is stopped\n  - claw-events-consumer should be online but is stopped\n  - claw-events-spawner should be online but is stopped\n  - claw-openclaw-coordinator (cron) has 559 restarts while online (rapid crash loop)\n[uptime-watchdog] Executing 38 recovery action(s)...\n[uptime-watchdog] ✅ Restarted: claw-architect-api, claw-offgrid-meshtastic-bridge, claw-brand-control-plane, claw-lead-autopilot-skynpatch, claw-lead-autopilot-bws, claw-prompt-oracle, claw-bot-commerce-api, claw-events-consumer, claw-events-spawner, claw-openclaw-coordinator, claw-mission-index_sync_agent\n[uptime-watchdog] Report saved to reports/uptime-watchdog-latest.json\n",
+      "stderr_tail": "[uptime-watchdog] ⚠️ Recovery errors: 3\n  - saas_development: Command failed: npm run mission:control:run -- --agent saas_development --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n  - content_writing: Command failed: npm run mission:control:run -- --agent content_writing --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n  - research_analysis: Command failed: npm run mission:control:run -- --agent research_analysis --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n",
+      "error": null
+    },
+    {
+      "id": "forward_progress_enforcer",
+      "kind": "command",
+      "reason": "Force measurable product progress",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "progress:enforce"
+      ],
+      "command": "npm run -s progress:enforce",
+      "started_at": "2026-03-03T23:08:57.498Z",
+      "finished_at": "2026-03-03T23:08:58.058Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n✅ Postgres connected\n{\n  \"ok\": true,\n  \"generated_at\": \"2026-03-03T23:08:58.037Z\",\n  \"metrics\": {\n    \"completed_1h\": 139,\n    \"queue_active\": 389,\n    \"dead_letter_open\": 2,\n    \"created_1h\": 218,\n    \"plans_2h\": 7,\n    \"kpi_score\": 35\n  },\n  \"objectives\": [],\n  \"queued\": []\n}\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    {
+      "id": "forward_progress_enforcer_integrity",
+      "kind": "command",
+      "reason": "Progress integrity failure requires explicit net movement enforcement",
+      "cmd": "npm",
+      "args": [
+        "run",
+        "-s",
+        "progress:enforce"
+      ],
+      "command": "npm run -s progress:enforce",
+      "started_at": "2026-03-03T23:08:58.058Z",
+      "finished_at": "2026-03-03T23:08:59.113Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n✅ Postgres connected\n{\n  \"ok\": true,\n  \"generated_at\": \"2026-03-03T23:08:59.085Z\",\n  \"metrics\": {\n    \"completed_1h\": 139,\n    \"queue_active\": 389,\n    \"dead_letter_open\": 2,\n    \"created_1h\": 218,\n    \"plans_2h\": 7,\n    \"kpi_score\": 35\n  },\n  \"objectives\": [],\n  \"queued\": []\n}\n",
+      "stderr_tail": "",
+      "error": null
+    }
+  ],
+  "summary": null,
+  "ok": false
+}

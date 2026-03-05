@@ -1,0 +1,31 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/client/Store/init.lua:19:return store
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/client/Store/Middleware/ReceiverMiddleware.lua:21:	return receiver.middleware
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/client/Store/Middleware/ReceiverMiddleware.lua:24:return receiverMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/client/Controllers/Guis/CurrencyController.lua:25:return Shared
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/client/Controllers/GuiController.lua:13:return Shared
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Store/init.lua:19:return store
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Remotes.lua:5:return Net.CreateDefinitions({
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Services/PlayerDataService.lua:108:return Shared
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Store/Middleware/BroadcasterMiddleware.lua:20:		return broadcaster:start(player)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Store/Middleware/BroadcasterMiddleware.lua:23:	return broadcaster.middleware
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Store/Middleware/BroadcasterMiddleware.lua:26:return broadcasterMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/ModuleLoader.lua:22:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Cmdr/Commands/AdjustBalance.lua:1:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Cmdr/Commands/AdjustBalanceServer.lua:7:return function (context, currency: PlayerData.Currency, amount: number, player: Player?)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/init.lua:7:return Sift.Dictionary.merge(Players) :: typeof(Players)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/init.lua:9:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Cmdr/Types/Currency.lua:11:return function (registry)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Configs/PlayerData.lua:19:return PlayerData
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/Players.lua:9:    return function(state: Slices.SharedState)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/Players.lua:10:        return state.players.balance[playerId]
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/Players.lua:15:    return Reflex.createSelector(
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/Players.lua:23:            return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Selectors/Players.lua:30:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/init.lua:23:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Cmdr/Hooks/Permissions.lua:7:return function (registry)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/server/Cmdr/Hooks/Permissions.lua:11:			return "You don't have permission to use this command!"
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/Balance.lua:24:        return Sift.Dictionary.set(state, playerId, data.balance)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/Balance.lua:28:        return Sift.Dictionary.removeKey(state, playerId)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/Balance.lua:32:        return Sift.Dictionary.update(state, playerId, function(balance: PlayerData.PlayerBalance)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/Balance.lua:37:            return Sift.Dictionary.set(balance, currency, balance[currency] + amount)
+/Users/tatsheen/claw-repos/oss-index/roblox/Roblox-Game-Template/src/shared/Store/Slices/Players/Balance.lua:42:return balanceSlice

@@ -1,0 +1,862 @@
+{
+  "last_notified": {
+    "conflict:duplicate_tasks:site_compare": "2026-03-04T02:40:13.395Z",
+    "conflict:duplicate_tasks:site_audit": "2026-03-05T03:30:28.233Z",
+    "conflict:duplicate_tasks:site_fix_plan": "2026-03-05T03:30:29.234Z",
+    "conflict:duplicate_tasks:opencode_controller": "2026-03-05T04:10:05.807Z",
+    "service:ollama:unhealthy": "2026-03-03T22:55:05.348Z",
+    "conflict:duplicate_tasks:repo_autofix": "2026-03-05T04:10:04.807Z",
+    "agent_block:saas_development:high": "2026-03-03T03:20:09.594Z",
+    "agent_block:content_writing:high": "2026-03-03T03:20:10.595Z",
+    "agent_block:research_analysis:high": "2026-03-03T03:20:11.596Z",
+    "agent_block:data_processing:high": "2026-03-03T03:20:12.597Z",
+    "agent_block:scheduling_calendar:high": "2026-03-03T03:20:13.597Z",
+    "agent_block:code_review:high": "2026-03-03T03:20:14.598Z",
+    "agent_block:debugging:high": "2026-03-03T03:20:15.598Z",
+    "agent_block:ui_ux_design:high": "2026-03-03T03:20:16.600Z",
+    "agent_block:marketing_social:high": "2026-03-03T03:20:17.602Z",
+    "agent_block:system_administration:high": "2026-03-03T03:20:18.602Z",
+    "agent_block:roblox_game_growth:high": "2026-03-03T03:20:19.603Z",
+    "agent_block:quantfusion_algo_dev:high": "2026-03-03T03:20:20.604Z",
+    "agent_block:gocrawdaddy_saas_builder:high": "2026-03-03T03:20:21.605Z",
+    "agent_block:payclaw_saas_builder:high": "2026-03-03T03:20:22.607Z",
+    "agent_block:bot_collection_autonomous:high": "2026-03-03T03:20:23.608Z",
+    "agent_block:business_research_agent:high": "2026-03-03T03:20:24.609Z",
+    "agent_block:business_builder_agent:high": "2026-03-03T03:20:25.611Z",
+    "agent_block:business_updater_agent:high": "2026-03-03T03:20:26.612Z",
+    "agent_block:business_improver_agent:high": "2026-03-03T03:20:27.613Z",
+    "agent_block:business_coordinator_agent:high": "2026-03-03T03:20:28.615Z",
+    "service:database:unhealthy": "2026-03-03T03:20:29.615Z",
+    "conflict:duplicate_tasks:github_repo_audit": "2026-03-04T02:00:12.649Z",
+    "conflict:duplicate_tasks:github_observability_scan": "2026-03-04T02:20:10.568Z",
+    "resources:211": "2026-03-03T06:55:06.766Z",
+    "resources:346": "2026-03-03T07:01:27.073Z",
+    "resources:854": "2026-03-03T07:05:07.724Z",
+    "resources:1028": "2026-03-03T07:10:17.479Z",
+    "resources:967": "2026-03-03T07:15:01.771Z",
+    "resources:730": "2026-03-03T07:20:05.052Z",
+    "resources:549": "2026-03-03T07:25:07.305Z",
+    "resources:113": "2026-03-04T22:45:04.763Z",
+    "resources:254": "2026-03-03T13:20:05.456Z",
+    "resources:579": "2026-03-03T08:10:14.694Z",
+    "resources:616": "2026-03-03T08:11:44.165Z",
+    "resources:649": "2026-03-03T08:12:02.134Z",
+    "resources:701": "2026-03-03T08:15:02.619Z",
+    "resources:510": "2026-03-03T08:20:06.853Z",
+    "resources:240": "2026-03-03T08:25:03.112Z",
+    "resources:227": "2026-03-03T09:20:08.512Z",
+    "resources:175": "2026-03-03T09:25:02.219Z",
+    "resources:314": "2026-03-03T11:20:07.523Z",
+    "resources:200": "2026-03-03T11:25:00.937Z",
+    "resources:428": "2026-03-03T13:25:03.848Z",
+    "resources:422": "2026-03-03T13:30:04.602Z",
+    "resources:266": "2026-03-03T13:35:00.680Z",
+    "resources:162": "2026-03-04T03:45:01.774Z",
+    "resources:207": "2026-03-03T14:25:05.932Z",
+    "resources:169": "2026-03-03T17:25:01.768Z",
+    "resources:102": "2026-03-05T02:35:02.023Z",
+    "resources:126": "2026-03-04T10:35:02.836Z",
+    "resources:294": "2026-03-03T17:56:19.177Z",
+    "resources:290": "2026-03-03T17:58:15.097Z",
+    "resources:350": "2026-03-04T01:40:13.324Z",
+    "resources:399": "2026-03-03T18:00:47.477Z",
+    "resources:383": "2026-03-03T18:05:04.855Z",
+    "resources:440": "2026-03-03T18:09:12.880Z",
+    "resources:553": "2026-03-03T18:10:56.417Z",
+    "resources:887": "2026-03-03T18:15:16.236Z",
+    "resources:721": "2026-03-03T18:20:56.970Z",
+    "resources:695": "2026-03-03T18:25:16.727Z",
+    "resources:565": "2026-03-03T18:30:10.952Z",
+    "resources:512": "2026-03-03T18:35:02.495Z",
+    "conflict:duplicate_tasks:index": "2026-03-04T07:10:09.939Z",
+    "conflict:duplicate_tasks:repo_index_autopatch": "2026-03-05T00:45:01.333Z",
+    "resources:111": "2026-03-05T00:20:08.231Z",
+    "resources:84": "2026-03-03T23:10:21.405Z",
+    "resources:141": "2026-03-03T23:21:35.863Z",
+    "conflict:duplicate_tasks:loyalty_send_outreach": "2026-03-04T22:10:02.188Z",
+    "resources:119": "2026-03-03T23:38:27.091Z",
+    "resources:114": "2026-03-04T23:15:05.097Z",
+    "resources:123": "2026-03-04T11:15:05.425Z",
+    "resources:48": "2026-03-04T00:04:27.623Z",
+    "resources:60": "2026-03-04T00:07:05.406Z",
+    "resources:120": "2026-03-05T03:00:18.502Z",
+    "resources:132": "2026-03-04T10:40:06.637Z",
+    "resources:241": "2026-03-04T00:22:17.524Z",
+    "resources:245": "2026-03-04T00:26:12.504Z",
+    "resources:265": "2026-03-04T00:36:44.319Z",
+    "resources:353": "2026-03-04T00:38:14.675Z",
+    "resources:352": "2026-03-04T00:44:03.312Z",
+    "resources:374": "2026-03-04T00:49:09.731Z",
+    "resources:358": "2026-03-04T00:54:21.032Z",
+    "resources:370": "2026-03-04T00:59:59.319Z",
+    "conflict:duplicate_tasks:quant_trading_signal_scan": "2026-03-04T22:20:04.352Z",
+    "conflict:duplicate_tasks:quant_trading_execute_orders": "2026-03-05T01:25:01.410Z",
+    "resources:435": "2026-03-04T01:00:26.149Z",
+    "resources:436": "2026-03-04T01:01:04.605Z",
+    "resources:367": "2026-03-04T01:13:40.028Z",
+    "resources:377": "2026-03-04T01:18:11.113Z",
+    "resources:282": "2026-03-04T01:20:13.972Z",
+    "resources:281": "2026-03-04T01:25:13.931Z",
+    "resources:344": "2026-03-04T01:26:25.811Z",
+    "resources:395": "2026-03-04T01:27:16.185Z",
+    "resources:362": "2026-03-04T01:30:40.335Z",
+    "resources:394": "2026-03-04T01:35:17.176Z",
+    "resources:420": "2026-03-04T01:45:07.012Z",
+    "resources:419": "2026-03-04T01:50:03.972Z",
+    "resources:412": "2026-03-04T02:00:13.653Z",
+    "resources:410": "2026-03-04T02:00:22.029Z",
+    "resources:408": "2026-03-04T02:05:01.070Z",
+    "resources:407": "2026-03-04T02:10:04.270Z",
+    "resources:387": "2026-03-04T02:15:02.659Z",
+    "resources:375": "2026-03-04T02:20:12.572Z",
+    "resources:218": "2026-03-04T02:30:12.537Z",
+    "resources:150": "2026-03-04T06:35:01.201Z",
+    "resources:135": "2026-03-04T02:40:14.396Z",
+    "resources:152": "2026-03-04T06:25:01.190Z",
+    "resources:165": "2026-03-04T03:44:44.443Z",
+    "resources:118": "2026-03-05T03:00:49.107Z",
+    "resources:142": "2026-03-05T01:05:01.862Z",
+    "resources:155": "2026-03-04T05:45:02.263Z",
+    "resources:161": "2026-03-04T05:50:06.245Z",
+    "resources:130": "2026-03-04T10:32:17.569Z",
+    "resources:144": "2026-03-05T01:15:06.005Z",
+    "resources:136": "2026-03-04T06:05:01.588Z",
+    "resources:140": "2026-03-04T06:10:14.179Z",
+    "resources:138": "2026-03-05T02:20:05.550Z",
+    "resources:145": "2026-03-04T06:20:06.250Z",
+    "resources:185": "2026-03-04T06:45:06.695Z",
+    "resources:188": "2026-03-04T06:50:07.168Z",
+    "resources:128": "2026-03-04T10:45:10.981Z",
+    "resources:116": "2026-03-05T01:40:02.799Z",
+    "resources:124": "2026-03-04T11:01:32.889Z",
+    "resources:122": "2026-03-04T11:10:06.787Z",
+    "resources:121": "2026-03-04T11:30:13.040Z",
+    "resources:101": "2026-03-04T21:45:02.165Z",
+    "resources:105": "2026-03-04T21:50:02.662Z",
+    "resources:106": "2026-03-05T02:25:10.419Z",
+    "resources:115": "2026-03-05T02:05:01.380Z",
+    "resources:117": "2026-03-05T02:00:39.615Z",
+    "resources:131": "2026-03-04T22:30:14.990Z",
+    "resources:112": "2026-03-05T02:40:03.287Z",
+    "resources:110": "2026-03-04T22:55:01.666Z",
+    "resources:108": "2026-03-05T01:50:07.521Z",
+    "resources:107": "2026-03-05T02:50:03.762Z",
+    "resources:204": "2026-03-05T00:35:01.578Z",
+    "resources:212": "2026-03-05T00:40:04.998Z",
+    "resources:315": "2026-03-05T00:45:02.334Z",
+    "resources:309": "2026-03-05T00:50:05.147Z",
+    "resources:296": "2026-03-05T00:55:40.305Z",
+    "resources:205": "2026-03-05T01:00:13.606Z",
+    "resources:192": "2026-03-05T01:00:38.910Z",
+    "resources:186": "2026-03-05T01:00:44.439Z",
+    "resources:139": "2026-03-05T01:10:06.201Z",
+    "resources:183": "2026-03-05T01:20:10.988Z",
+    "resources:214": "2026-03-05T01:25:02.410Z",
+    "resources:172": "2026-03-05T01:30:13.063Z",
+    "resources:109": "2026-03-05T01:35:01.294Z",
+    "resources:174": "2026-03-05T02:10:08.919Z",
+    "resources:171": "2026-03-05T02:15:05.096Z"
+  },
+  "notification_history": [
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T22:30:11.985Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n46 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:30:12.986Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:30:13.987Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:131",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:30:14.990Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 131 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:112",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:35:00.964Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 112 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_index_autopatch",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T22:45:03.761Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n11 concurrent tasks of type `repo_index_autopatch`\n\n*What t"
+    },
+    {
+      "issueKey": "resources:113",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:45:04.763Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 113 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T22:50:07.408Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n47 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T22:50:08.409Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n46 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:116",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:50:09.410Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 116 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:110",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T22:55:01.666Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 110 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:120",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T23:05:01.812Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 120 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T23:10:05.871Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n47 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T23:10:06.872Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n46 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:114",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T23:15:05.097Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 114 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:117",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-04T23:20:06.687Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 117 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T23:30:12.279Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n46 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-04T23:50:03.613Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n46 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:05:01.555Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n32 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:05:02.555Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n7 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:05:03.556Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:108",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:05:04.558Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 108 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:10:05.181Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n47 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:112",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:10:06.181Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 112 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:106",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:15:04.283Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 106 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:20:05.225Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n32 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:20:06.226Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:20:07.228Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:111",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:20:08.231Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 111 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:30:09.013Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n47 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:107",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:30:10.013Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 107 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:204",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:35:01.578Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 204 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:40:01.997Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n128 concurrent tasks of type `opencode_controller`\n\n*What t"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:40:02.997Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n7 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:40:03.997Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n7 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:212",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:40:04.998Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 212 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_index_autopatch",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:45:01.333Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n99 concurrent tasks of type `repo_index_autopatch`\n\n*What t"
+    },
+    {
+      "issueKey": "resources:315",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:45:02.334Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 315 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:50:04.147Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n48 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:309",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:50:05.147Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 309 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T00:55:37.273Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n120 concurrent tasks of type `opencode_controller`\n\n*What t"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:55:38.278Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n7 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:55:39.299Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n7 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:296",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T00:55:40.305Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 296 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:205",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:00:13.606Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 205 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:quant_trading_execute_orders",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:00:37.909Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `quant_trading_execute_orders`\n\n"
+    },
+    {
+      "issueKey": "resources:192",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:00:38.910Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 192 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:186",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:00:44.439Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 186 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:142",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:05:01.862Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 142 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:10:05.201Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n48 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:139",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:10:06.201Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 139 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:15:03.001Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n62 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:15:04.003Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:15:05.004Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:144",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:15:06.005Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 144 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:183",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:20:10.988Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 183 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:quant_trading_execute_orders",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:25:01.410Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `quant_trading_execute_orders`\n\n"
+    },
+    {
+      "issueKey": "resources:214",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:25:02.410Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 214 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:30:11.061Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n100 concurrent tasks of type `opencode_controller`\n\n*What t"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:30:12.062Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n44 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:172",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:30:13.063Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 172 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:109",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:35:01.294Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 109 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:116",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:40:02.799Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 116 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:107",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:45:02.100Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 107 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:50:05.518Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n48 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T01:50:06.519Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n44 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:108",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T01:50:07.521Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 108 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:117",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:00:39.615Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 117 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:115",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:05:01.380Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 115 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:10:06.915Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n84 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:10:07.917Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n70 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:174",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:10:08.919Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 174 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:171",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:15:05.096Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 171 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:138",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:20:05.550Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 138 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:25:08.417Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n49 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:25:09.419Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n37 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:106",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:25:10.419Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 106 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:30:12.173Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:30:13.175Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:102",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:35:02.023Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 102 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:112",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:40:03.287Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 112 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:45:04.775Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n49 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T02:45:05.775Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n38 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:107",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T02:50:03.762Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 107 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:00:16.497Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n52 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:00:17.499Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n42 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "resources:120",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:00:18.502Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 120 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "resources:118",
+      "type": "resources",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:00:49.107Z",
+      "message_preview": "📊 *Resource Alert*\n\nQueue backlog: 118 pending tasks\n\n*Possible actions:*\n- Wait for queue to proce"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:15:14.261Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:15:15.262Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:15:39.312Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n27 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:15:40.314Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n16 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_audit",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:30:28.233Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_audit`\n\n*What this means:*"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:site_fix_plan",
+      "type": "conflict",
+      "priority": "medium",
+      "sent_at": "2026-03-05T03:30:29.234Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n6 concurrent tasks of type `site_fix_plan`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:35:06.172Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n27 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:35:07.173Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n25 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:55:02.415Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n23 concurrent tasks of type `opencode_controller`\n\n*What th"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T03:55:03.416Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n20 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:repo_autofix",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T04:10:04.807Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n21 concurrent tasks of type `repo_autofix`\n\n*What this mean"
+    },
+    {
+      "issueKey": "conflict:duplicate_tasks:opencode_controller",
+      "type": "conflict",
+      "priority": "high",
+      "sent_at": "2026-03-05T04:10:05.807Z",
+      "message_preview": "⚠️ *Conflict Detected: duplicate_tasks*\n\n12 concurrent tasks of type `opencode_controller`\n\n*What th"
+    }
+  ]
+}

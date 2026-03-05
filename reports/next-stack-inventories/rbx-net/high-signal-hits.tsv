@@ -1,0 +1,15 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/luau/dist/init.lua:6:local NetServerContext = TS.import(script, script, "server")
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:2:	counters = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:9:		counter = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:16:	local counter = self.counter
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:17:	local playerQueue = counter[player.UserId]
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:22:	local counter = self.counter
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:23:	local playerQueue = counter[player.UserId]
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:25:	if not counter[player.UserId] then
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:26:		counter[player.UserId] = 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:28:		counter[player.UserId] = playerQueue + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:37:	self.counter = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:41:	local existing = self.counters[name]
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:46:		self.counters[name] = newCounter
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:52:	for _, counter in pairs(self.counters) do
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:53:		counter:ClearAll()

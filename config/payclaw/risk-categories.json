@@ -1,0 +1,44 @@
+{
+  "description": "Canonical business-type risk categories for PayClaw onboarding. Low = auto-approve; medium = manual review; reject = block onboarding.",
+  "low": [
+    "home_services",
+    "fitness_studios",
+    "salons",
+    "consultants",
+    "freelancers",
+    "marketing_agencies",
+    "creative_services",
+    "saas",
+    "retail_stores",
+    "local_service_providers"
+  ],
+  "medium": [
+    "legal_services",
+    "accounting_firms",
+    "real_estate",
+    "property_management",
+    "construction",
+    "event_venues",
+    "b2b_wholesale"
+  ],
+  "reject": [
+    "third_party_debt_collectors",
+    "debt_buyers",
+    "collections_law_firms",
+    "medical_debt_recovery",
+    "credit_repair_services",
+    "payday_lending",
+    "title_loans",
+    "pawn_shops",
+    "political_campaigns",
+    "adult_entertainment",
+    "gambling",
+    "firearms",
+    "controlled_substances",
+    "lead_gen_restricted_verticals",
+    "crypto_investment_solicitation",
+    "mlm",
+    "multi_level_affiliate_schemes",
+    "collections_agencies"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Copy to repo-completion-master-list.local.json and set to your repo folder names (under CLAW_REPOS). Not committed.",
+  "priority_repos": [
+    "example_priority_1",
+    "example_priority_2"
+  ],
+  "additional_repos": [
+    "example_additional_1"
+  ],
+  "best_case_sources": {
+    "stripe_webhooks": "local/example_stripe_repo",
+    "email_delivery": "local/example_email_repo",
+    "auth": "local/example_auth_repo"
+  }
+}

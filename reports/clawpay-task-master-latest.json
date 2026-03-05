@@ -1,0 +1,152 @@
+{
+  "ok": true,
+  "cycle_started_at": "2026-03-05T04:00:50.351Z",
+  "cycle_finished_at": "2026-03-05T04:20:53.223Z",
+  "cycle_number": 84,
+  "config": {
+    "loop_seconds": 600,
+    "discovery_every_minutes": 120,
+    "outreach_every_minutes": 60,
+    "research_every_minutes": 1440,
+    "kaizen_every_minutes": 60
+  },
+  "services": {
+    "claw-prompt-oracle": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-commerce-api": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-discord-gateway": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-discovery": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    },
+    "claw-bot-outreach": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    },
+    "claw-bot-sales-research-daily": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    }
+  },
+  "always_on_recovery": [
+    {
+      "name": "claw-prompt-oracle",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-bot-commerce-api",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-discord-gateway",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    }
+  ],
+  "channel_readiness": {
+    "discord": {
+      "configured": true,
+      "missing": []
+    },
+    "telegram": {
+      "configured": true,
+      "missing": []
+    },
+    "whatsapp": {
+      "configured": true,
+      "missing": []
+    },
+    "reddit": {
+      "configured": false,
+      "missing": [
+        "REDDIT_CLIENT_ID",
+        "REDDIT_CLIENT_SECRET"
+      ]
+    },
+    "email": {
+      "configured": true,
+      "missing": []
+    },
+    "github_discovery": {
+      "configured": true,
+      "missing": []
+    },
+    "stripe_checkout": {
+      "configured": true,
+      "missing": []
+    }
+  },
+  "cadence_runs": [
+    {
+      "type": "kaizen",
+      "result": {
+        "command": "npm run -s clawpay:kaizen",
+        "ok": false,
+        "code": 1,
+        "started_at": "2026-03-05T04:00:53.110Z",
+        "finished_at": "2026-03-05T04:20:53.221Z",
+        "stdout_tail": "[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n",
+        "stderr_tail": "",
+        "stdout": "[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n",
+        "stderr": "",
+        "error": "Command failed: npm run -s clawpay:kaizen\n"
+      }
+    }
+  ],
+  "budget": {
+    "limits": {
+      "max_calls": 25,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 120000
+    },
+    "usage": {
+      "calls": 5,
+      "total_tokens": 19,
+      "by_tool": {
+        "pm2_list": 12,
+        "kaizen": 7
+      }
+    },
+    "violations": [],
+    "ok": true
+  },
+  "state": {
+    "cycles": 84,
+    "last_discovery_at": "2026-03-05T03:11:58.216Z",
+    "last_outreach_at": "2026-03-05T03:50:36.410Z",
+    "last_research_at": "2026-03-04T05:26:32.776Z",
+    "last_kaizen_at": "2026-03-05T04:20:53.223Z",
+    "last_bootstrap_at": "2026-03-04T23:35:48.023Z"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "started": "2026-03-04T01:01:09.590Z",
+  "dry_run": false,
+  "context_gathered": true,
+  "llm_called": false,
+  "llm_output": "LLM error: BUDGET_BLOCKED: no eligible provider for orchestrate",
+  "errors": [
+    "BUDGET_BLOCKED: no eligible provider for orchestrate"
+  ],
+  "completed_at": "2026-03-04T01:06:44.084Z"
+}

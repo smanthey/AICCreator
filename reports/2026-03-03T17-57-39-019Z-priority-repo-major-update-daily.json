@@ -1,0 +1,186 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-03T17:57:38.006Z",
+  "run_date": "2026-03-03",
+  "dry_run": true,
+  "targets": [
+    {
+      "key": "quantfusion",
+      "repo": "local/quantfusion",
+      "managed_repo": {
+        "action": "updated",
+        "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+        "client_name": "quantfusion"
+      },
+      "tasks": {
+        "opencode_controller": {
+          "created": true,
+          "dry_run": true,
+          "type": "opencode_controller",
+          "payload": {
+            "repo": "local/quantfusion",
+            "source": "priority_repo_major_update_daily",
+            "objective": "Daily major-update mandate for local/quantfusion. Run jcodemunch symbol index + repo_mapper first, then implement a meaningful production update (not formatting-only), validate with targeted checks, and commit + push the change today with a clear message.",
+            "run_date": "2026-03-03",
+            "feature_key": "trading_reliability",
+            "max_iterations": 6,
+            "quality_target": 96,
+            "auto_iterate": true,
+            "force_implement": true,
+            "commit_required": true,
+            "push_required": true
+          },
+          "priority": 10,
+          "idempotencyKey": "opencode_controller:eeec2e9952c70d7074e1c7191be55a32e181b2aa9c986eef19724a8b5710249e"
+        },
+        "repo_autofix": {
+          "created": true,
+          "dry_run": true,
+          "type": "repo_autofix",
+          "payload": {
+            "repo": "local/quantfusion",
+            "source": "priority_repo_major_update_daily",
+            "reason": "preflight_before_major_daily_commit",
+            "run_date": "2026-03-03"
+          },
+          "priority": 9,
+          "idempotencyKey": "repo_autofix:0fc85eb7e7c67341e27486118e6c941ca8a237a89bd7c962ff6beda2459bce3d"
+        }
+      }
+    },
+    {
+      "key": "payclaw",
+      "repo": "local/payclaw",
+      "managed_repo": {
+        "action": "updated",
+        "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+        "client_name": "PayClaw"
+      },
+      "tasks": {
+        "opencode_controller": {
+          "created": true,
+          "dry_run": true,
+          "type": "opencode_controller",
+          "payload": {
+            "repo": "local/payclaw",
+            "source": "priority_repo_major_update_daily",
+            "objective": "Daily major-update mandate for local/payclaw. Run jcodemunch symbol index + repo_mapper first, then implement a meaningful production update (not formatting-only), validate with targeted checks, and commit + push the change today with a clear message.",
+            "run_date": "2026-03-03",
+            "feature_key": "payment_and_webhook_hardening",
+            "max_iterations": 6,
+            "quality_target": 96,
+            "auto_iterate": true,
+            "force_implement": true,
+            "commit_required": true,
+            "push_required": true
+          },
+          "priority": 10,
+          "idempotencyKey": "opencode_controller:0a3d2be94646f526a3c74f242ab923ceb6d311e96de539b9a7cf50b302a26541"
+        },
+        "repo_autofix": {
+          "created": true,
+          "dry_run": true,
+          "type": "repo_autofix",
+          "payload": {
+            "repo": "local/payclaw",
+            "source": "priority_repo_major_update_daily",
+            "reason": "preflight_before_major_daily_commit",
+            "run_date": "2026-03-03"
+          },
+          "priority": 9,
+          "idempotencyKey": "repo_autofix:06aae09a2034c4477d66d33b31b54e5c720198159281d80fe5dd29171738cfae"
+        }
+      }
+    },
+    {
+      "key": "cookiespass",
+      "repo": "local/CookiesPass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+        "client_name": "CookiesPass"
+      },
+      "tasks": {
+        "opencode_controller": {
+          "created": true,
+          "dry_run": true,
+          "type": "opencode_controller",
+          "payload": {
+            "repo": "local/CookiesPass",
+            "source": "priority_repo_major_update_daily",
+            "objective": "Daily major-update mandate for local/CookiesPass. Run jcodemunch symbol index + repo_mapper first, then implement a meaningful production update (not formatting-only), validate with targeted checks, and commit + push the change today with a clear message.",
+            "run_date": "2026-03-03",
+            "feature_key": "wallet_pass_and_loyalty_flow",
+            "max_iterations": 6,
+            "quality_target": 96,
+            "auto_iterate": true,
+            "force_implement": true,
+            "commit_required": true,
+            "push_required": true
+          },
+          "priority": 10,
+          "idempotencyKey": "opencode_controller:26da6b789550f4b6e85c88ee07e9df3146b83229229bca253f8c4f6e79670090"
+        },
+        "repo_autofix": {
+          "created": true,
+          "dry_run": true,
+          "type": "repo_autofix",
+          "payload": {
+            "repo": "local/CookiesPass",
+            "source": "priority_repo_major_update_daily",
+            "reason": "preflight_before_major_daily_commit",
+            "run_date": "2026-03-03"
+          },
+          "priority": 9,
+          "idempotencyKey": "repo_autofix:dded2e1bf8625c9b80c6d6b848b802454fa172850c9aaeaafad6818abe1b6470"
+        }
+      }
+    },
+    {
+      "key": "cookiespass_copy",
+      "repo": "local/TempeCookiesPass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "ada9101d-1ac7-4e5f-9863-af4001ceee97",
+        "client_name": "TempeCookiesPass"
+      },
+      "tasks": {
+        "opencode_controller": {
+          "created": true,
+          "dry_run": true,
+          "type": "opencode_controller",
+          "payload": {
+            "repo": "local/TempeCookiesPass",
+            "source": "priority_repo_major_update_daily",
+            "objective": "Daily major-update mandate for local/TempeCookiesPass. Run jcodemunch symbol index + repo_mapper first, then implement a meaningful production update (not formatting-only), validate with targeted checks, and commit + push the change today with a clear message.",
+            "run_date": "2026-03-03",
+            "feature_key": "tempe_variant_stability",
+            "max_iterations": 6,
+            "quality_target": 96,
+            "auto_iterate": true,
+            "force_implement": true,
+            "commit_required": true,
+            "push_required": true
+          },
+          "priority": 10,
+          "idempotencyKey": "opencode_controller:be871b4bfa8594d8dc6b588b11feba3bc154bbf1c872a351df580109b724222e"
+        },
+        "repo_autofix": {
+          "created": true,
+          "dry_run": true,
+          "type": "repo_autofix",
+          "payload": {
+            "repo": "local/TempeCookiesPass",
+            "source": "priority_repo_major_update_daily",
+            "reason": "preflight_before_major_daily_commit",
+            "run_date": "2026-03-03"
+          },
+          "priority": 9,
+          "idempotencyKey": "repo_autofix:bbc73986f32cfb45899cb0c617211268a9709b2dfccf5d5dd4dad67a0f999a58"
+        }
+      }
+    }
+  ],
+  "created_count": 8,
+  "skipped_duplicates": 0
+}

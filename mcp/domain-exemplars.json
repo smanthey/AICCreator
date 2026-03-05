@@ -1,0 +1,73 @@
+{
+  "stripe": {
+    "targets": [
+      "local/PayClaw",
+      "local/BlackWallStreetopoly",
+      "local/v0-skyn-patch",
+      "local/claw-architect"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "handleStripeWebhook" },
+      { "kind": "function", "query": "createCheckoutSession" },
+      { "kind": "function", "query": "syncSubscription" }
+    ]
+  },
+  "email": {
+    "targets": [
+      "local/CaptureInbound",
+      "local/v0-skyn-patch",
+      "local/claw-architect"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "sendEmail" },
+      { "kind": "function", "query": "renderEmail" },
+      { "kind": "function", "query": "handleEmailWebhook" }
+    ]
+  },
+  "queue": {
+    "targets": [
+      "local/claw-architect"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "createWorker" },
+      { "kind": "function", "query": "withRetry" },
+      { "kind": "function", "query": "deadLetter" }
+    ]
+  },
+  "auth": {
+    "targets": [
+      "local/veritap",
+      "local/CaptureInbound"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "createSession" },
+      { "kind": "function", "query": "requireAuth" }
+    ]
+  },
+  "pm2": {
+    "targets": [
+      "local/claw-architect"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "health" },
+      { "kind": "function", "query": "watchdog" }
+    ]
+  },
+  "trading": {
+    "targets": [
+      "local/quantfusion",
+      "local/claw-architect"
+    ],
+    "exemplars": [],
+    "queries": [
+      { "kind": "function", "query": "trading_orders" },
+      { "kind": "function", "query": "trading_signals" }
+    ]
+  }
+}
+

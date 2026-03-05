@@ -1,0 +1,14 @@
+{
+  "code": "FDCPA",
+  "title": "Fair Debt Collection Practices Act",
+  "authority_url": "https://www.ftc.gov/legal-library/browse/statutes/fair-debt-collection-practices-act",
+  "key_sections": [
+    {"section": "809", "topic": "Validation of debts"},
+    {"section": "806", "topic": "Harassment/abuse prohibitions"},
+    {"section": "807", "topic": "False/misleading representations"}
+  ],
+  "agent_use": [
+    "debt_validation_workflows",
+    "collector_communication_guardrails"
+  ]
+}

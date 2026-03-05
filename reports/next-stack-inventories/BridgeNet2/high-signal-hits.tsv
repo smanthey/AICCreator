@@ -1,0 +1,44 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:4:local serverActor = require("@src/initialization/serverActor")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:6:local serverSerial = require("@src/initialization/serverSerial")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:9:local runContext: "server" | "client" = if RunService:IsServer() then "server" else "client"
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:13:elseif threadContext == "actor" and runContext == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:14:	serverActor()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:17:elseif threadContext == "serial" and runContext == "server" then
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/init.luau:18:	serverSerial()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverSerial.luau:1:local process = require("@src/server/process")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverSerial.luau:2:local identifiers = require("@src/server/identifiers")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/serverSerial.luau:4:local logger = require("@src/logger").new("server")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/initialization/clientSerial.luau:2:local identifiers = require("@src/server/identifiers")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/core/deserializer.luau:63:		debug.profilebegin("server event end")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:15:local server = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:17:function server.init(tree: dataModelTree.Identity)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:22:			server.emptyPlayerQueue(player)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:45:	RunService.PostSimulation:Connect(server.step)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:51:function server.firePlayer(player: Player, id: number, content: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:58:function server.fireAll(id: number, content: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:65:function server.emptyPlayerQueue(player: Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:79:function server.step()
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:81:		debug.profilebegin("server begin")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:85:		server.emptyPlayerQueue(player)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/process.luau:93:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:2:local process = require("@src/server/process")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/bridge.luau:3:local identifiers = require("@src/server/identifiers")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/lune/dev.luau:27:print(colorful.color.blueBright("Starting development server"))
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:2:local logger = require("@src/logger").new("server identifiers")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:6:local counter: Identifier = 1
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:17:local server = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:19:function server.init(tree: dataModelTree.Identity)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:23:function server.register(name: string): number
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:26:	counter += 1
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:27:	local chosenId = counter
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:30:	identifierMap.addIdentifier(name, counter)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:32:	return counter
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/src/server/identifiers.luau:35:return server
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverRunner.server.luau:8:local serverProcess = require("@src/server/process")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverRunner.server.luau:10:serverProcess.addEvent(1)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverRunner.server.luau:11:serverProcess.connect(1, print)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverRunner.server.luau:14:	serverProcess.fireAll(1, "testing")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverStress.server.luau:11:local serverProcess = require("@src/server/process")
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverStress.server.luau:13:serverProcess.addEvent(1)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverStress.server.luau:14:serverProcess.connect(1, print)
+/Users/tatsheen/claw-repos/oss-index/roblox/BridgeNet2/tests/roblox/serverStress.server.luau:19:		serverProcess.fireAll(1, "")

@@ -1,0 +1,92 @@
+{
+  "started_at": "2026-03-04T08:20:53.814Z",
+  "generated_at": "2026-03-04T08:20:55.867Z",
+  "dry_run": true,
+  "use_llm": false,
+  "checks": {
+    "runtime_audit": {
+      "command": "npm run -s audit:runtime",
+      "started_at": "2026-03-04T08:20:53.821Z",
+      "finished_at": "2026-03-04T08:20:55.103Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2\n\n=== Runtime Audit ===\n\n✅ Postgres connected\n✅ Postgres connected\n# terminal_error_tasks\n[ { status: 'DEAD_LETTER', n: 1 } ]\n\n# recent_dead_letters_24h\n[ { n: 0 } ]\n\n# stale_task_runs\n[ { n: 0 } ]\n\n# stale_workers_legacy\n[ { n: 0 } ]\n\n# stale_devices\n[ { n: 0 } ]\n\nOK: runtime audit passed.\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "schema_audit": {
+      "command": "npm run -s schema:audit:json",
+      "started_at": "2026-03-04T08:20:55.104Z",
+      "finished_at": "2026-03-04T08:20:55.866Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n{\n  \"ok\": false,\n  \"failures\": [\n    {\n      \"code\": \"PENDING_MIGRATIONS\",\n      \"detail\": [\n        \"087\"\n      ]\n    }\n  ],\n  \"warnings\": [],\n  \"stats\": {\n    \"migration_files\": 84,\n    \"migration_versions_in_files\": 84,\n    \"migration_versions_applied\": 83,\n    \"pending_versions\": 1,\n    \"applied_without_file\": 0,\n    \"invalid_constraints\": 0,\n    \"invalid_indexes\": 0\n  }\n}\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "task_contract": {
+      "command": "npm run -s audit:tasks",
+      "started_at": "2026-03-04T08:20:55.866Z",
+      "finished_at": "2026-03-04T08:20:55.866Z",
+      "ok": false,
+      "blocked_by_budget": true,
+      "code": 429,
+      "stdout_tail": "",
+      "stderr_tail": "tool_budget_exceeded: max_calls_exceeded:3>2",
+      "error": "tool_budget_exceeded: max_calls_exceeded:3>2"
+    },
+    "bind_guard": {
+      "command": "npm run -s security:bind:guard",
+      "started_at": "2026-03-04T08:20:55.866Z",
+      "finished_at": "2026-03-04T08:20:55.866Z",
+      "ok": false,
+      "blocked_by_budget": true,
+      "code": 429,
+      "stdout_tail": "",
+      "stderr_tail": "tool_budget_exceeded: max_calls_exceeded:3>2, max_calls_exceeded:4>2",
+      "error": "tool_budget_exceeded: max_calls_exceeded:3>2, max_calls_exceeded:4>2"
+    },
+    "progress_integrity": {
+      "command": "node scripts/progress-integrity-audit.js --lock-timeout-ms 6000 --statement-timeout-ms 30000 --query-timeout-ms 20000 --fail-open-on-timeout",
+      "started_at": "2026-03-04T08:20:55.866Z",
+      "finished_at": "2026-03-04T08:20:55.866Z",
+      "ok": false,
+      "blocked_by_budget": true,
+      "code": 429,
+      "stdout_tail": "",
+      "stderr_tail": "tool_budget_exceeded: max_calls_exceeded:3>2, max_calls_exceeded:4>2, max_calls_exceeded:5>2",
+      "error": "tool_budget_exceeded: max_calls_exceeded:3>2, max_calls_exceeded:4>2, max_calls_exceeded:5>2"
+    }
+  },
+  "metrics": null,
+  "post_metrics": null,
+  "risks": [],
+  "post_risks": [],
+  "decisions": [],
+  "executions": [],
+  "summary": null,
+  "ok": false,
+  "fatal_error": "tool_budget_exceeded: max_calls_exceeded:3>2, max_calls_exceeded:4>2, max_calls_exceeded:5>2, max_calls_exceeded:6>2",
+  "budget": {
+    "limits": {
+      "max_calls": 2,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 120000
+    },
+    "usage": {
+      "calls": 6,
+      "total_tokens": 81,
+      "by_tool": {
+        "check_command": 62,
+        "postgres_query": 19
+      }
+    },
+    "violations": [
+      "max_calls_exceeded:3>2",
+      "max_calls_exceeded:4>2",
+      "max_calls_exceeded:5>2",
+      "max_calls_exceeded:6>2"
+    ],
+    "ok": false
+  }
+}

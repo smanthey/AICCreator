@@ -1,0 +1,115 @@
+---
+description: Rules for coordinating the business intelligence agent swarm
+---
+
+# Business Agent Coordination Rules
+
+Rules for coordinating the business intelligence agent swarm.
+
+## Agent Handoff Protocol
+
+### Research → Builder
+1. Research Agent completes research and sets `research_status = 'completed'`
+2. Research Agent inserts into `business_build_queue` with `build_status = 'queued'`
+3. Builder Agent checks build queue every cycle
+4. Builder Agent processes queued builds in priority order
+5. Builder Agent updates `build_status = 'completed'` when done
+
+### Builder → Updater
+1. Builder Agent marks integration as `status = 'connected'` in `business_data_sources`
+2. Updater Agent monitors all `status = 'connected'` integrations
+3. Updater Agent checks `business_sync_logs` for errors
+4. Updater Agent fixes issues and updates integration
+
+### Updater → Improver
+1. Updater Agent detects performance issues
+2. Updater Agent logs issues to `business_improvement_logs`
+3. Improver Agent analyzes improvement logs
+4. Improver Agent generates and implements optimizations
+
+### All Agents → Coordinator
+1. All agents write to daily memory logs
+2. Coordinator Agent reads all agent statuses
+3. Coordinator Agent synthesizes progress
+4. Coordinator Agent generates status reports
+
+## Communication Protocol
+
+### Database as Communication Channel
+- Use database tables for agent communication
+- Research findings → `business_integration_research`
+- Build queue → `business_build_queue`
+- Improvement proposals → `business_improvement_logs`
+- Sync status → `business_sync_logs`
+
+### Priority Handling
+1. **Critical**: Integration errors (Updater Agent)
+2. **High**: Build queue items (Builder Agent)
+3. **Medium**: Research pending (Research Agent)
+4. **Low**: Improvements (Improver Agent)
+
+## Conflict Resolution
+
+### Build Conflicts
+- If multiple builds queued, process by priority then creation date
+- If build fails, mark as failed and log error
+- Research Agent can re-research if build fails
+
+### Update Conflicts
+- If integration has errors, Updater Agent takes priority
+- If multiple updates needed, process by error severity
+- Test updates before deploying
+
+### Improvement Conflicts
+- If multiple improvements proposed, prioritize by impact_score
+- Test improvements before deploying
+- Measure impact after deployment
+
+## Coordination Rules
+
+1. **No duplicate work**: Check database before starting work
+2. **Respect dependencies**: Wait for prerequisites before starting
+3. **Log everything**: All agents log to daily memory
+4. **Report blockers**: Agents report blockers to Coordinator
+5. **Coordinate handoffs**: Use database tables for handoffs
+6. **Priority handling**: Process high-priority items first
+7. **Error recovery**: Agents recover from errors automatically
+8. **Status updates**: All agents update status in database
+
+## Agent Responsibilities
+
+### Research Agent
+- Discovers new platforms
+- Researches APIs
+- Queues findings for Builder
+
+### Builder Agent
+- Builds integrations from research
+- Creates migrations
+- Marks integrations as connected
+
+### Updater Agent
+- Monitors integration health
+- Fixes broken integrations
+- Updates deprecated APIs
+
+### Improver Agent
+- Analyzes performance
+- Proposes improvements
+- Implements optimizations
+
+### Coordinator Agent
+- Orchestrates all agents
+- Synthesizes progress
+- Reports status
+
+## Best Practices
+
+1. **Idempotency**: All operations should be idempotent
+2. **Error handling**: Never crash, always log and recover
+3. **Status tracking**: Always update status in database
+4. **Handoff clarity**: Use clear status transitions
+5. **Priority respect**: Process high-priority items first
+6. **Communication**: Use database for agent communication
+7. **Coordination**: Coordinator manages overall flow
+8. **Autonomy**: Agents work independently but coordinate

@@ -1,0 +1,693 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T11:10:42.977Z",
+  "top_n_per_feature": 12,
+  "repos_total": 20,
+  "repos_indexed": 8,
+  "repos_missing_index": [
+    "microsoft/playwright",
+    "webdriverio/webdriverio",
+    "seleniumhq/selenium",
+    "puppeteer/puppeteer",
+    "DevExpress/testcafe",
+    "garris/BackstopJS",
+    "grafana/k6",
+    "triggerdotdev/trigger.dev",
+    "supabase/supabase",
+    "calcom/cal.com",
+    "directus/directus",
+    "appsmithorg/appsmith"
+  ],
+  "features": [
+    {
+      "feature_key": "symbol_failure_mapping",
+      "title": "Failure to symbol mapping",
+      "top_symbols": [
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::enqueueTask#function",
+          "symbol_name": "enqueueTask",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 4
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::errorLines#function",
+          "symbol_name": "errorLines",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 4
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::main#function",
+          "symbol_name": "main",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::taskExists#function",
+          "symbol_name": "taskExists",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::fingerprint#function",
+          "symbol_name": "fingerprint",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::detectRepo#function",
+          "symbol_name": "detectRepo",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::runPm2Logs#function",
+          "symbol_name": "runPm2Logs",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/pm2-failure-symbol-triage.js::ensureRoutingColumns#function",
+          "symbol_name": "ensureRoutingColumns",
+          "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.updateEmailQueueItem#method",
+          "symbol_name": "updateEmailQueueItem",
+          "symbol_file": "server/storage.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+          "symbol_name": "assertNoConsoleErrors",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "server/logger.ts::generateTraceId#function",
+          "symbol_name": "generateTraceId",
+          "symbol_file": "server/logger.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "server/webhookRetry.ts::incrementWebhookRetry#function",
+          "symbol_name": "incrementWebhookRetry",
+          "symbol_file": "server/webhookRetry.ts",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "feature_key": "cdp_network_contracts",
+      "title": "CDP network and API contracts",
+      "top_symbols": [
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+          "symbol_name": "assertNoConsoleErrors",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "control/replay-hash.js::replayMiddleware#function",
+          "symbol_name": "replayMiddleware",
+          "symbol_file": "control/replay-hash.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "client/src/lib/queryClient.ts::apiRequest#function",
+          "symbol_name": "apiRequest",
+          "symbol_file": "client/src/lib/queryClient.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/services/webhookService.ts::executeWebhook#function",
+          "symbol_name": "executeWebhook",
+          "symbol_file": "server/services/webhookService.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::InsertEmailQueueItem#type",
+          "symbol_name": "InsertEmailQueueItem",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::EmailQueueItem#type",
+          "symbol_name": "EmailQueueItem",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::EmailQueueStatus#type",
+          "symbol_name": "EmailQueueStatus",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::InsertProcessedWebhookEvent#type",
+          "symbol_name": "InsertProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::ProcessedWebhookEvent#type",
+          "symbol_name": "ProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/routes.ts::requireAuth#function",
+          "symbol_name": "requireAuth",
+          "symbol_file": "server/routes.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+          "symbol_name": "WebhookDeadLetterQueue",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "server/auth.ts::requireTenantAccess#function",
+          "symbol_name": "requireTenantAccess",
+          "symbol_file": "server/auth.ts",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "feature_key": "auto_wait_stability",
+      "title": "Auto wait and flake resistance",
+      "top_symbols": [
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/retry.ts::fetchAndRetry#function",
+          "symbol_name": "fetchAndRetry",
+          "symbol_file": "integration-tests/helpers/retry.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::waitForPageLoad#function",
+          "symbol_name": "waitForPageLoad",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::waitForJsonResponse#function",
+          "symbol_name": "waitForJsonResponse",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/bot-self-healing.js::retryWithBackoff#function",
+          "symbol_name": "retryWithBackoff",
+          "symbol_file": "scripts/bot-self-healing.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "infra/redis.js::waitForRedisReady#function",
+          "symbol_name": "waitForRedisReady",
+          "symbol_file": "infra/redis.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "core/queue.js::withRetry#function",
+          "symbol_name": "withRetry",
+          "symbol_file": "core/queue.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "control/retry.js::rescheduleRetryTask#function",
+          "symbol_name": "rescheduleRetryTask",
+          "symbol_file": "control/retry.js",
+          "score": 3
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/exponential-backoff.ts::isRetryableError#function",
+          "symbol_name": "isRetryableError",
+          "symbol_file": "server/services/exponential-backoff.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/exponential-backoff.ts::RetryConfig#type",
+          "symbol_name": "RetryConfig",
+          "symbol_file": "server/services/exponential-backoff.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/wait-for-index.ts::waitForIndexedEntities#function",
+          "symbol_name": "waitForIndexedEntities",
+          "symbol_file": "integration-tests/helpers/wait-for-index.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/wait-for-index.ts::WaitForIndexOptions#type",
+          "symbol_name": "WaitForIndexOptions",
+          "symbol_file": "integration-tests/helpers/wait-for-index.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/services/emailQueue.ts::retryFailedEmail#function",
+          "symbol_name": "retryFailedEmail",
+          "symbol_file": "server/services/emailQueue.ts",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "feature_key": "selector_resilience",
+      "title": "Selector resilience and accessibility probes",
+      "top_symbols": [
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "server/cron.ts::retryQuery#function",
+          "symbol_name": "retryQuery",
+          "symbol_file": "server/cron.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/ab-testing.ts::ABTestingService.recordTestResult#method",
+          "symbol_name": "recordTestResult",
+          "symbol_file": "server/services/ab-testing.ts",
+          "score": 3
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::expectTextContent#function",
+          "symbol_name": "expectTextContent",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/overnight-advisory-board.js::rolePrompt#function",
+          "symbol_name": "rolePrompt",
+          "symbol_file": "scripts/overnight-advisory-board.js",
+          "score": 2
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/google-maps-scraper.js::scrapeWithRetry#function",
+          "symbol_name": "scrapeWithRetry",
+          "symbol_file": "scripts/google-maps-scraper.js",
+          "score": 2
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "scripts/bot-message-optimizer.js::suggestNewVariantsToTest#function",
+          "symbol_name": "suggestNewVariantsToTest",
+          "symbol_file": "scripts/bot-message-optimizer.js",
+          "score": 2
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "infra/config.js::validateWorkerRoleTagPolicy#function",
+          "symbol_name": "validateWorkerRoleTagPolicy",
+          "symbol_file": "infra/config.js",
+          "score": 2
+        },
+        {
+          "repo_key": "local/claw-architect",
+          "symbol_id": "agents/google-workspace-agent.js::gmailList#function",
+          "symbol_name": "gmailList",
+          "symbol_file": "agents/google-workspace-agent.js",
+          "score": 2
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "client/src/pages/ab-testing.tsx::ABTestVariant#type",
+          "symbol_name": "ABTestVariant",
+          "symbol_file": "client/src/pages/ab-testing.tsx",
+          "score": 2
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/ab-testing.ts::ABTestingService.resumeTest#method",
+          "symbol_name": "resumeTest",
+          "symbol_file": "server/services/ab-testing.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/ab-testing.ts::ABTestingService.pauseTest#method",
+          "symbol_name": "pauseTest",
+          "symbol_file": "server/services/ab-testing.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/quantfusion",
+          "symbol_id": "server/services/ab-testing.ts::ABTestingService.getTestResults#method",
+          "symbol_name": "getTestResults",
+          "symbol_file": "server/services/ab-testing.ts",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "feature_key": "visual_regression_baselines",
+      "title": "Visual regression baseline fastlane",
+      "top_symbols": [
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/wait-for-index.ts::waitForIndexedEntities#function",
+          "symbol_name": "waitForIndexedEntities",
+          "symbol_file": "integration-tests/helpers/wait-for-index.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/wait-for-index.ts::WaitForIndexOptions#type",
+          "symbol_name": "WaitForIndexOptions",
+          "symbol_file": "integration-tests/helpers/wait-for-index.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "medusajs/medusa",
+          "symbol_id": "integration-tests/helpers/retry.ts::fetchAndRetry#function",
+          "symbol_name": "fetchAndRetry",
+          "symbol_file": "integration-tests/helpers/retry.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::EmailQueueStatus#type",
+          "symbol_name": "EmailQueueStatus",
+          "symbol_file": "shared/schema.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::InsertProcessedWebhookEvent#type",
+          "symbol_name": "InsertProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::ProcessedWebhookEvent#type",
+          "symbol_name": "ProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.deleteEmailQueueItem#method",
+          "symbol_name": "deleteEmailQueueItem",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.updateEmailQueueItem#method",
+          "symbol_name": "updateEmailQueueItem",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.getEmailQueueItemsByUser#method",
+          "symbol_name": "getEmailQueueItemsByUser",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.getPendingEmailQueueItems#method",
+          "symbol_name": "getPendingEmailQueueItems",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.getEmailQueueItem#method",
+          "symbol_name": "getEmailQueueItem",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/storage.ts::DatabaseStorage.createEmailQueueItem#method",
+          "symbol_name": "createEmailQueueItem",
+          "symbol_file": "server/storage.ts",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "feature_key": "trace_replay_debug",
+      "title": "Trace replay and debug artifacts",
+      "top_symbols": [
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "client/src/components/ui/chart.tsx::ChartConfig#type",
+          "symbol_name": "ChartConfig",
+          "symbol_file": "client/src/components/ui/chart.tsx",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/services/webhookService.ts::parseMailerooWebhook#function",
+          "symbol_name": "parseMailerooWebhook",
+          "symbol_file": "server/services/webhookService.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "server/services/emailQueue.ts::queueEmail#function",
+          "symbol_name": "queueEmail",
+          "symbol_file": "server/services/emailQueue.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::InsertEmailQueueItem#type",
+          "symbol_name": "InsertEmailQueueItem",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::EmailQueueItem#type",
+          "symbol_name": "EmailQueueItem",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::EmailQueueStatus#type",
+          "symbol_name": "EmailQueueStatus",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::InsertProcessedWebhookEvent#type",
+          "symbol_name": "InsertProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/veritap_2026",
+          "symbol_id": "shared/schema.ts::ProcessedWebhookEvent#type",
+          "symbol_name": "ProcessedWebhookEvent",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+          "symbol_name": "assertNoConsoleErrors",
+          "symbol_file": "tests/e2e/fixtures.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "shared/schema.ts::UsageRecord#type",
+          "symbol_name": "UsageRecord",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+          "symbol_name": "WebhookDeadLetterQueue",
+          "symbol_file": "shared/schema.ts",
+          "score": 2
+        },
+        {
+          "repo_key": "local/CaptureInbound",
+          "symbol_id": "server/transcription.ts::updateCallDebugMetadata#function",
+          "symbol_name": "updateCallDebugMetadata",
+          "symbol_file": "server/transcription.ts",
+          "score": 2
+        }
+      ]
+    }
+  ],
+  "queued_tasks": [
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "microsoft/playwright",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:634395a5a3f1ccf6c2ba724306b7525c923916dcbb41720e551dce8de071c146",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "webdriverio/webdriverio",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:76756286bb31e4ce203f55f051bdc6273d23a07680113a9c01007bc05f44c02e",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "seleniumhq/selenium",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:62b6d11712125857b37db8ece8fdabe8eec595e307deb48ca3616a206d45c875",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "puppeteer/puppeteer",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:92bfcc9e4db54dde72a46adf91bfa6e6f09031f01e81dd0694b8fca0db64e93d",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "DevExpress/testcafe",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:5952fa5a59a11f9d08ab93ae419e801fd55ded7457ed9d342a10ce49b3f7e223",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "garris/BackstopJS",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:c617867039e72e7e77ea5fe481ac17d81386f24034dd5d87f2a4ca21b20e442b",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "grafana/k6",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:2e7a027c6be2e86f4798f56efb172590856004de4b2f31f0f3226404382b8d9b",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "index_backfill",
+      "target_repo": "triggerdotdev/trigger.dev",
+      "created": true,
+      "id": "a83784eb-a761-477d-8b2d-b96916e86ba9",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:d224e75d688309a983257c62400d8b1598b2c65b7bea04ad51887f65dbb8c81f"
+    },
+    {
+      "repo": "local/quantfusion",
+      "feature_key": "cdp_network_contracts",
+      "created": true,
+      "id": "c3e3e9d5-d2f8-4e15-b4bf-82ba53b7b4e8",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:70e5f61fc3f9092a040afb42c4c8530e07869231037dc7e81e242a4b708b5527"
+    },
+    {
+      "repo": "local/quantfusion",
+      "feature_key": "symbol_failure_mapping",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:d4529352c5716f0293d890841e0c5c7a72ba54021a1e87c0354f50749b718b8b",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/claw-architect",
+      "feature_key": "symbol_failure_mapping",
+      "created": false,
+      "reason": "duplicate_active",
+      "idempotencyKey": "opencode_controller:43a1d3e9f160bb08fc502ed145dd47814eeebf71427255e992a8b47a7a373afb",
+      "type": "opencode_controller"
+    },
+    {
+      "repo": "local/payclaw",
+      "feature_key": "auto_wait_stability",
+      "created": true,
+      "id": "06568e80-612a-4306-acfc-930c5ee48a44",
+      "type": "opencode_controller",
+      "idempotencyKey": "opencode_controller:adfad8722f002919f518039a437e02a9d3c46043dac1abd911d67042b25c20ea"
+    },
+    {
+      "repo": "local/quantfusion",
+      "feature_key": "cdp_network_contracts",
+      "created": false,
+      "reason": "duplicate_active_workflow",
+      "workflow_run_id": "closedloop-local-quantfusion-cdp_network_contracts-2026-03-04",
+      "task_ids": []
+    },
+    {
+      "repo": "local/quantfusion",
+      "feature_key": "symbol_failure_mapping",
+      "created": false,
+      "reason": "duplicate_active_workflow",
+      "workflow_run_id": "closedloop-local-quantfusion-symbol_failure_mapping-2026-03-04",
+      "task_ids": []
+    },
+    {
+      "repo": "local/payclaw",
+      "feature_key": "auto_wait_stability",
+      "created": false,
+      "reason": "duplicate_active_workflow",
+      "workflow_run_id": "closedloop-local-payclaw-auto_wait_stability-2026-03-04",
+      "task_ids": []
+    }
+  ]
+}

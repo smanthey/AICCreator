@@ -1,0 +1,9 @@
+{
+  "wholesale": {
+    "productId": "prod_XXX",
+    "url": "https://buy.stripe.com/XXXXXX",
+    "name": "Black Wall Street Monopoly — Wholesale",
+    "amount": 5000
+  },
+  "updatedAt": ""
+}

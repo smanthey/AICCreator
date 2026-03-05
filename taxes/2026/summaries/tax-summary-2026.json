@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-03T13:44:40.871Z",
+  "tax_year": 2026,
+  "dry_run": false,
+  "warnings": [
+    "plaid_transactions: plaid_env_missing"
+  ],
+  "totals_by_category": {
+    "other": 294.9,
+    "business_software": 21.62
+  },
+  "deductible_total_usd": 21.62,
+  "income_docs_count": 3,
+  "expense_items_count": 12,
+  "missing_flags": [
+    "No 1099 or W-2 detected in income folder"
+  ],
+  "folder_structure": {
+    "root": "/Users/tatsheen/claw-architect/taxes/2026",
+    "income": "/Users/tatsheen/claw-architect/taxes/2026/income",
+    "receipts": "/Users/tatsheen/claw-architect/taxes/2026/receipts",
+    "summaries": "/Users/tatsheen/claw-architect/taxes/2026/summaries"
+  }
+}

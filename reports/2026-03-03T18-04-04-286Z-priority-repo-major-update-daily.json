@@ -1,0 +1,105 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-03T18:04:03.661Z",
+  "run_date": "2026-03-03",
+  "dry_run": true,
+  "source": "priority_repo_major_update_daily",
+  "bootstrap_managed_repos": [
+    {
+      "target": "quantfusion",
+      "managed_repo": {
+        "action": "updated",
+        "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+        "client_name": "quantfusion"
+      }
+    },
+    {
+      "target": "payclaw",
+      "managed_repo": {
+        "action": "updated",
+        "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+        "client_name": "PayClaw"
+      }
+    },
+    {
+      "target": "cookiespass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+        "client_name": "CookiesPass"
+      }
+    },
+    {
+      "target": "cookiespass_copy",
+      "managed_repo": {
+        "action": "updated",
+        "id": "ada9101d-1ac7-4e5f-9863-af4001ceee97",
+        "client_name": "TempeCookiesPass"
+      }
+    },
+    {
+      "target": "clawpay",
+      "managed_repo": {
+        "action": "would_insert",
+        "client_name": "ClawPay"
+      }
+    }
+  ],
+  "targets": [
+    {
+      "key": "robloxgitsync",
+      "repo": "local/RobloxGitSync",
+      "priority": 10,
+      "high_priority_lane": true,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "dry_run": true,
+        "type": "opencode_controller",
+        "payload": {
+          "repo": "local/RobloxGitSync",
+          "source": "priority_repo_major_update_daily",
+          "objective": "Daily major-update mandate for local/RobloxGitSync. Execute exactly one meaningful production update item, then move to the next repo. Run jcodemunch symbol index + repo_mapper first, implement the chosen update, validate with targeted checks, and commit + push today. Prioritize completion velocity over broad refactors.",
+          "run_date": "2026-03-03",
+          "feature_key": "game_growth_quality_and_retention",
+          "max_iterations": 6,
+          "quality_target": 96,
+          "auto_iterate": true,
+          "force_implement": true,
+          "one_item_then_move_on": true,
+          "high_priority_lane": true,
+          "close_to_finish_hint": false,
+          "commit_required": true,
+          "push_required": true
+        },
+        "priority": 10,
+        "idempotencyKey": "opencode_controller:5aee5fd8cfd43a49cf80fc1a6df38d75995865c0c40828bb4ecb77dccbd2cc7e"
+      }
+    },
+    {
+      "key": "quantfusion",
+      "repo": "local/quantfusion",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "cookiespass",
+      "repo": "local/CookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "tempecookiespass",
+      "repo": "local/TempeCookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "payclaw",
+      "repo": "local/payclaw",
+      "skipped": "already_queued_today"
+    }
+  ],
+  "created_count": 1,
+  "skipped_duplicates": 4
+}

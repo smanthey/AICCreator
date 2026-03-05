@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-workflow-struggling-to-define-my-positioning",
+  "name": "Struggling To Define My Positioning Skill",
+  "version": "1.0.0",
+  "description": "Struggling to define my positioning",
+  "tasks": [
+    "CLAWHUB_WORKFLOW_STRUGGLING_TO_DEFINE_MY_POSITIONING_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 19,
+    "model": "one_time"
+  }
+}

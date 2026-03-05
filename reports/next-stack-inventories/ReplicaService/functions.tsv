@@ -1,0 +1,112 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/AbstractExample/ReplicaTestClient.client.lua:39:local function GetAllMessages(messages)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ExperimentalListenersExample/ReplicaTestClient.client.lua:42:local function GetAllMessages(messages)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ExperimentalListenersExample/ReplicaTestServer.server.lua:84:	local function GetAllMessages(messages)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ProfileServiceExample/ReplicaTestServer.server.lua:59:local function PlayerAdded(player)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ProfileServiceExample/ReplicaTestServer.server.lua:103:function PlayerProfile:GiveCash(cash_amount)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerStorage/Examples/ProfileServiceExample/ReplicaTestServer.server.lua:110:function PlayerProfile:IsActive() --> is_active
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:138:	local function WaitForDescendant(ancestor, instance_name, warn_name)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:293:local function ParseReplicaBranch(replica, func) -- func(replica)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:300:local function GetWriteLibFunctionsRecursive(list_table, pointer, name_stack)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:312:local function LoadWriteLib(write_lib_module)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:358:local function StringPathToArray(path)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:368:local function DestroyReplicaAndDescendantsRecursive(replica, not_first_in_stack)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:403:function Replica:SetValue(path, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:426:function Replica:SetValues(path, values)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:452:function Replica:ArrayInsert(path, value) --> new_index
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:476:function Replica:ArraySet(path, index, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:503:function Replica:ArrayRemove(path, index) --> removed_value
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:528:function Replica:Write(function_name, ...) --> return_params...
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:552:function Replica:ConnectOnServerEvent(listener) --> [ScriptConnection]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:560:function Replica:FireClient(player, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:567:function Replica:FireAllClients(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:582:function Replica:SetParent(new_parent)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:687:function Replica:ReplicateFor(param)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:734:function Replica:DestroyFor(param)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:773:function Replica:Identify() --> [string]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:784:function Replica:IsActive() --> is_active [bool]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:788:function Replica:AddCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:792:function Replica:RemoveCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:796:function Replica:Destroy()
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:817:function ReplicaService.NewClassToken(class_name) --> [ReplicaClassToken]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:830:function ReplicaService.NewReplica(replica_params) --> [Replica]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/ReplicaService.lua:967:function ReplicaService.CheckWriteLib(module_script)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:60:local function AcquireRunnerThreadAndCallEventHandler(fn, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:68:local function RunEventHandlerInFreeThread(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:88:function ArrayScriptConnection:Disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:107:function MadworkScriptSignal.NewArrayScriptConnection(listener_table, listener, disconnect_listener, disconnect_param) --> [ScriptConnection]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:132:function ScriptConnection:Disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:173:function ScriptSignal:Connect(listener, disconnect_listener, disconnect_param) --> [ScriptConnection]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:193:function ScriptSignal:GetListenerCount() --> [number]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:197:function ScriptSignal:Fire(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:210:function ScriptSignal:FireUntil(continue_callback, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkScriptSignal.lua:223:function MadworkScriptSignal.NewScriptSignal() --> [ScriptSignal]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:44:local function StringPathToArray(path)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:54:local function CreateTableListenerPathIndex(replica, path_array, listener_type)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:75:local function CleanTableListenerTable(disconnect_param)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:110:function ArrayScriptConnection:Disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:126:local function NewArrayScriptConnection(listener_table, listener, disconnect_listener, disconnect_param) --> [ScriptConnection]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:145:	function ReplicaService.NewReplica(replica_params)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:164:	function Replica:SetValue(path, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:204:	function Replica:SetValues(path, values)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:248:	function Replica:ArrayInsert(path, value) --> new_index
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:278:	function Replica:ArraySet(path, index, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:304:	function Replica:ArrayRemove(path, index) --> removed_value
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:331:	function Replica:Write(function_name, ...) --> return_params...
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:347:	function Replica:ListenToChange(path, listener) --> [ScriptConnection] listener(new_value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:363:	function Replica:ListenToNewKey(path, listener) --> [ScriptConnection] listener(new_value, new_key)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:380:	function Replica:ListenToArrayInsert(path, listener) --> [ScriptConnection] listener(new_value, new_index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:397:	function Replica:ListenToArraySet(path, listener) --> [ScriptConnection] listener(new_value, index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:414:	function Replica:ListenToArrayRemove(path, listener) --> [ScriptConnection] listener(old_value, old_index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:431:	function Replica:ListenToWrite(function_name, listener) --> [ScriptConnection] listener(params...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ServerScriptService/Experimental/ReplicaServiceListeners.lua:456:	function Replica:ListenToRaw(listener) --> [ScriptConnection] (action_name, params...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:41:local function AcquireRunnerThreadAndCallEventHandler(fn, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:49:local function RunEventHandlerInFreeThread(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:56:local function CleanupTask(task, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:72:local function PerformCleanupTask(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:89:function Maid:AddCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:116:function Maid:RemoveCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:124:function Maid:CleanupOfOne(task, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:129:function Maid:Cleanup(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/MadworkMaid.lua:139:function MadworkMaid.NewMaid() --> [Maid]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua:59:function RateLimiterObject:CheckRate(source) --> is_to_be_processed [bool] -- Whether event should be processed
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua:83:function RateLimiterObject:CleanSource(source) -- Forgets about the source - must be called for any object that
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua:87:function RateLimiterObject:Cleanup() -- Forgets all sources
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua:91:function RateLimiterObject:Destroy() -- Make the RateLimiter module forget about this RateLimiter object
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/RateLimiter.lua:96:function RateLimiter.NewRateLimiter(rate) --> [RateLimiter]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:127:	local function WaitForDescendant(ancestor, instance_name, warn_name)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:300:local function GetWriteLibFunctionsRecursive(list_table, pointer, name_stack)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:312:local function LoadWriteLib(write_lib_module)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:342:local function StringPathToArray(path)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:352:local function DestroyReplicaAndDescendantsRecursive(replica, not_first_in_stack)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:374:local function CreateTableListenerPathIndex(replica, path_array, listener_type)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:395:local function CleanTableListenerTable(disconnect_param)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:420:local function CreateReplicaBranch(replica_entries, created_replicas) --> created_replicas: {replica, ...}
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:514:local function ReplicaSetValue(replica_id, path_array, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:553:local function ReplicaSetValues(replica_id, path_array, values)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:594:local function ReplicaArrayInsert(replica_id, path_array, value) --> new_index
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:623:local function ReplicaArraySet(replica_id, path_array, index, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:650:local function ReplicaArrayRemove(replica_id, path_array, index) --> removed_value
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:686:function Replica:ListenToChange(path, listener) --> [ScriptConnection] listener(new_value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:702:function Replica:ListenToNewKey(path, listener) --> [ScriptConnection] listener(new_value, new_key)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:719:function Replica:ListenToArrayInsert(path, listener) --> [ScriptConnection] listener(new_value, new_index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:736:function Replica:ListenToArraySet(path, listener) --> [ScriptConnection] listener(new_value, index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:753:function Replica:ListenToArrayRemove(path, listener) --> [ScriptConnection] listener(old_value, old_index)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:770:function Replica:ListenToWrite(function_name, listener) --> [ScriptConnection] listener(params...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:794:function Replica:ListenToRaw(listener) --> [ScriptConnection] (action_name, params...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:801:function Replica:ConnectOnClientEvent(listener) --> [ScriptConnection] listener(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:809:function Replica:FireServer(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:814:function Replica:ListenToChildAdded(listener) --> [ScriptConnection] listener(replica)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:832:function Replica:FindFirstChildOfClass(replica_class) --> [Replica] or nil
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:842:function Replica:Identify() --> [string]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:853:function Replica:IsActive() --> is_active [bool]
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:857:function Replica:AddCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:861:function Replica:RemoveCleanupTask(task)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:867:function Replica:SetValue(path, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:875:function Replica:SetValues(path, values)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:883:function Replica:ArrayInsert(path, value) --> new_index
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:891:function Replica:ArraySet(path, index, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:899:function Replica:ArrayRemove(path, index) --> removed_value
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:907:function Replica:Write(function_name, ...) --> return_params...
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:925:function ReplicaController.RequestData() -- Call after all client controllers are loaded and before CoreReadySignal is fired
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:944:function ReplicaController.ReplicaOfClassCreated(replica_class, listener) --> [ScriptConnection] listener(replica)
+/Users/tatsheen/claw-repos/oss-index/roblox/ReplicaService/src/ReplicatedStorage/ReplicaController.lua:965:function ReplicaController.GetReplicaById(replica_id)

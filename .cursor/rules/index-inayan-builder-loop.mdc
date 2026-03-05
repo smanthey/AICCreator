@@ -1,0 +1,36 @@
+---
+description: Standing instruction — index → Inayan research → benchmark → update app; keep InayanBuilderBot production-ready and used.
+globs: 
+alwaysApply: true
+---
+
+# Index + Inayan Builder Loop (standing instruction)
+
+**You only need to be told once. Apply this every time you index a repo.**
+
+## 1. When you index a repo
+
+Each time you **index** a repo (e.g. jCodeMunch `index_folder` or `index_repo`):
+
+1. **Use InayanBuilderBot** to research Reddit and GitHub for that repo’s domain (e.g. data pipeline, dashboard, auth, payments).
+2. **Find similar repos** from that research to index, benchmark, and compare.
+3. **Benchmark** the indexed repo (and similar ones) using claw-architect tools (e.g. `repo-completion-gap-one.js`, `repo:benchmark:lookup`, capability-factory, feature-benchmark).
+4. **Compare** the app to best-case exemplars and fill gaps (docs, code, or tasks).
+5. **Update the app** (the repo you indexed): apply improvements, remove placeholders, fix gaps identified by the benchmark.
+
+In short: **index → Inayan research (Reddit + GitHub) → find similar repos → index/benchmark/compare → update the app.**
+
+## 2. InayanBuilderBot is a product, not just theory
+
+- **Continuously improve InayanBuilderBot** (repo: `claw-repos/InayanBuilderBot`): remove bugs, harden APIs, improve research and magic-run pipelines.
+- **Make it a used git repo:** real usage, real commits, real integrations (Mission Control, builder-gap-pulse, research calls). Not just documentation or “theory.”
+- When you run the loop above, prefer **calling or integrating with InayanBuilderBot** (e.g. its research endpoints, masterpiece/magic-run) where it makes sense, and fix any issues you find in InayanBuilderBot so the next run is better.
+
+## 3. Commands (from claw-architect)
+
+- Index: jCodeMunch `index_folder` for `claw-repos/<repo>`.
+- Research: `npm run reddit:search` (with `--query`); InayanBuilderBot `POST /api/v1/reddit/search`, `POST /api/v1/github/research`, `POST /api/v1/research/fusion`.
+- Benchmark: `npm run repo:benchmark:lookup -- --repo <name>`; `node scripts/repo-completion-gap-one.js --repo <name>`; `npm run capability:factory`; `npm run builder:gap:pulse -- --repos <name>`.
+- Update app: apply changes to the indexed repo (and/or queue repo_autofix), then commit and push with clear notes.
+
+Apply this loop every time you index a repo. Keep InayanBuilderBot production-ready and actively used.

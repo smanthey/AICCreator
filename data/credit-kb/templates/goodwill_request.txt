@@ -1,0 +1,19 @@
+[Your Name]
+[Your Address]
+[City, State ZIP]
+[Date]
+
+{{furnisher}}
+[Address]
+
+Re: Goodwill Adjustment Request – {{account_number}}
+
+To Whom It May Concern:
+
+I respectfully request a goodwill adjustment for late payment reporting on this account.
+I have maintained improved payment behavior and request consideration for a courtesy adjustment.
+
+Thank you for your consideration.
+
+Sincerely,
+[Your Signature]

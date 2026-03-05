@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T03:00:35.161Z",
+  "run_date": "2026-03-04",
+  "dry_run": false,
+  "all_git": false,
+  "source": "priority_repo_major_update_daily",
+  "bootstrap_managed_repos": [
+    {
+      "target": "quantfusion",
+      "managed_repo": {
+        "action": "updated",
+        "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+        "client_name": "quantfusion"
+      }
+    },
+    {
+      "target": "payclaw",
+      "managed_repo": {
+        "action": "updated",
+        "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+        "client_name": "PayClaw"
+      }
+    },
+    {
+      "target": "cookiespass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+        "client_name": "CookiesPass"
+      }
+    },
+    {
+      "target": "cookiespass_copy",
+      "managed_repo": {
+        "action": "updated",
+        "id": "ada9101d-1ac7-4e5f-9863-af4001ceee97",
+        "client_name": "TempeCookiesPass"
+      }
+    },
+    {
+      "target": "clawpay",
+      "managed_repo": {
+        "action": "updated",
+        "id": "9a2633af-e30c-4e43-aaa9-52d69a8c39d8",
+        "client_name": "ClawPay"
+      }
+    },
+    {
+      "target": "captureinbound",
+      "managed_repo": {
+        "action": "updated",
+        "id": "9960ba65-2a0e-430c-b41d-c75e1045198c",
+        "client_name": "CaptureInbound"
+      }
+    },
+    {
+      "target": "capture",
+      "managed_repo": {
+        "action": "updated",
+        "id": "6973ded0-5747-4e6d-bec6-358c29d2f2e6",
+        "client_name": "capture"
+      }
+    },
+    {
+      "target": "infinitedata",
+      "managed_repo": {
+        "action": "updated",
+        "id": "4afa8e20-1cf7-408a-bf43-55c0220e3993",
+        "client_name": "infinitedata"
+      }
+    },
+    {
+      "target": "inbound_cookies",
+      "managed_repo": {
+        "action": "updated",
+        "id": "dccff8e1-921c-49fc-9fe4-c8c7d2fb50b0",
+        "client_name": "Inbound-cookies"
+      }
+    },
+    {
+      "target": "autopay_ui",
+      "managed_repo": {
+        "action": "updated",
+        "id": "7bfc5eb5-c070-4d55-87c1-82ce075e7488",
+        "client_name": "autopay_ui"
+      }
+    }
+  ],
+  "discovered_git_repos": 0,
+  "targets": [
+    {
+      "key": "captureinbound",
+      "repo": "local/CaptureInbound",
+      "skipped": "already_queued_today"
+    }
+  ],
+  "created_count": 0,
+  "skipped_duplicates": 1
+}

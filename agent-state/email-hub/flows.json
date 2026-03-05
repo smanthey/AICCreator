@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "flows": [
+    {
+      "id": "test-flow",
+      "name": "Test Flow",
+      "trigger": "custom.event",
+      "enabled": true,
+      "site": null,
+      "conditions": {},
+      "actions": [
+        {
+          "type": "webhook",
+          "url": "http://127.0.0.1:4045/api/email-hub/health"
+        }
+      ],
+      "updatedAt": "2026-03-04T03:01:09.888Z",
+      "createdAt": "2026-03-04T03:01:09.888Z"
+    }
+  ]
+}

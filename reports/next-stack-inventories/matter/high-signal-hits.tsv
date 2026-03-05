@@ -1,0 +1,47 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua:117:	This can happen when your systems have circular or unresolvable dependency chains.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua:159:	This is intended to be used for hot reloading. Dynamically loading and unloading systems for gameplay logic
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/Loop.lua:184:	by hooks) will be moved to be associated with the new system. This is intended to be used for hot reloading.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:9:				storage.counter = (storage.counter or 0) + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:11:				return storage.counter
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:43:				storage.counter = (storage.counter or 0) + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:45:				return storage.counter
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:86:				storage.counter = (storage.counter or 0) + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/topoRuntime.spec.lua:88:				return storage.counter
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/ui.lua:58:						right = "server",
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/widgets/panel.lua:17:					-- GuiService:GetGuiInset returns wrong info on the server :(
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/mouseHighlight.lua:30:				id = instance:GetAttribute(debugger:_isServerView() and "serverEntityId" or "clientEntityId")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/setupTags.lua:21:		instance:SetAttribute("serverEntityId", id)
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/setupTags.lua:34:			local id = instance:GetAttribute("serverEntityId")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:15:		for serverEntityId, componentMap in entities do
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:16:			local clientEntityId = entityIdMap[serverEntityId]
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:20:				entityIdMap[serverEntityId] = nil
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:21:				debugPrint(string.format("Despawn %ds%d", clientEntityId, serverEntityId))
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:44:				entityIdMap[serverEntityId] = clientEntityId
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:47:					string.format("Spawn %ds%d with %s", clientEntityId, serverEntityId, table.concat(insertNames, ","))
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/client/receiveReplication.lua:62:						serverEntityId,
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:7:local HotReloader = require(Packages.rewire).HotReloader
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:28:	-- Set up hot reloading
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:30:	local hotReloader = HotReloader.new()
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:41:			warn("Error when hot-reloading system", module.name, system)
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:58:		if context.isReloading then
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/start.lua:70:		hotReloader:scan(container, loadModule, unloadModule)
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:70:	allowed to connect to the server-side debugger.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:286:		error("connectClient can only be called from the server")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:290:		print("Matter server debugger started")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:299:		error("disconnectClient can only be called from the server")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:307:		print("Matter server debugger stopped")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:391:	Alert the debugger when a system is hot reloaded.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:405:	Switch the client to server view. This starts the server debugger if it isn't already started.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:414:	if not self.serverGui then
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:415:		self.serverGui = ReplicatedStorage:WaitForChild("MatterDebugger")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:417:		self.serverGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:422:	self.serverGui.Enabled = true
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:426:	Switch the client to client view. This stops the server debugger if there are no other players connected.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:433:	if not self.serverGui then
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:439:	self.serverGui.Enabled = false
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/debugger/debugger.lua:443:	return self.serverGui and self.serverGui.Enabled
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/shared/systems/updateModelAttribute.lua:5:local name = RunService:IsServer() and "serverEntityId" or "clientEntityId"
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useThrottle.lua:21:	throttle doing something to each entity individually.
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/lib/hooks/useThrottle.lua:35:	@param seconds number -- The number of seconds to throttle for
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/roombasMove.lua:51:			local angularVelocity = body.AssemblyAngularVelocity
+/Users/tatsheen/claw-repos/oss-index/roblox/matter/example/src/server/systems/roombasMove.lua:55:			local friction = angularVelocity.Y * -12

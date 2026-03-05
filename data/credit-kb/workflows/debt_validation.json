@@ -1,0 +1,14 @@
+{
+  "workflow": "debt_validation",
+  "description": "Validation request workflow for collections under FDCPA.",
+  "requires_evidence": false,
+  "steps": [
+    "Send validation request",
+    "Pause follow-on until response window",
+    "Escalate if non-response or insufficient validation"
+  ],
+  "allowed_issue_types": [
+    "collection_validation_needed",
+    "duplicate_collection"
+  ]
+}

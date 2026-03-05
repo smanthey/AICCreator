@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-03-04T08:16:38.618Z",
+  "required_services": [
+    "clawpay-task-master",
+    "claw-prompt-oracle",
+    "claw-bot-commerce-api",
+    "claw-discord-gateway"
+  ],
+  "taskmaster_stale_minutes_threshold": 40,
+  "checks": {
+    "pm2_jlist": {
+      "command": "pm2 jlist",
+      "started_at": "2026-03-04T08:16:38.619Z",
+      "finished_at": "2026-03-04T08:16:38.990Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[{\"pid\":8597,\"name\":\"claw-dispatcher\",\"pm2_env\":{\"prev_restart_delay\":0,\"pm_id\":1,\"ANTHROPIC_ALLOWED\":\"false\",\"MODEL_ROUTING_ANTHROPIC_LAST\":\"true\",\"MODEL_ROUTING_EXTRA_PROVIDERS\":\"deepseek,gemini\",\"max_memory_restart\":536870912,\"min_uptime\":10000,\"CODEX_CI\":\"1\",\"CODEX_INTERNAL_ORIGINATOR_OVERRIDE\":\"Codex Desktop\",\"CODEX_SHELL\":\"1\",\"CODEX_THREAD_ID\":\"019cb265-d6ce-7060-8bfc-d4b075786d24\",\"COMMAND_MODE\":\"unix2003\",\"DISABLE_AUTO_UPDATE\":\"true\",\"GH_PAGER\":\"cat\",\"GIT_PAGER\":\"cat\",\"LC_ALL\":\"C.UTF-8\",\"LC_CTYPE\":\"C.UTF-8\",\"MallocNanoZone\":\"0\",\"NO_COLOR\":\"1\",\"RUST_LOG\":\"warn\",\"ZSH_TMUX_AUTOSTART\":\"false\",\"ZSH_TMUX_AUTOSTARTED\":\"true\",\"CLASSIFY_PROVIDER\":\"openai\",\"exit_code\":130,\"script\":\"cli/run-dispatcher.js\",\"log_date_format\":\"YYYY-MM-DD HH:mm:ss\",\"restart_delay\":5000,\"max_restarts\":10,\"node_version\":\"25.6.1\",\"version\":\"1.0.0\",\"unstable_restarts\":0,\"restart_time\":43,\"created_at\":1772611211836,\"axm_dynamic\":{},\"axm_options\":{\"error\":true,\"heapdump\":true,\"feature.profiler.heapsnapshot\":false,\"feature.profiler.heapsampling\":true,\"feature.profiler.cpu_js\":true,\"latency\":true,\"catchExceptions\":true,\"profiling\":true,\"metrics\":{\"http\":true,\"runtime\":true,\"eventLoop\":true,\"network\":false,\"v8\":true},\"standalone\":false,\"module_conf\":{},\"apm\":{\"version\":\"6.1.0\",\"type\":\"node\"},\"module_name\":\"claw-dispatcher\",\"module_version\":\"6.0.14\"},\"axm_monitor\":{\"Used Heap Size\":{\"value\":\"161.92\",\"type\":\"internal/v8/heap/used\",\"unit\":\"MiB\",\"historic\":true},\"Heap Usage\":{\"value\":73.21,\"type\":\"internal/v8/heap/usage\",\"unit\":\"%\",\"historic\":true},\"Heap Size\":{\"value\":\"221.19\",\"type\":\"internal/v8/heap/total\",\"unit\":\"MiB\",\"historic\":true},\"Event Loop Latency p95\":{\"value\":\"12.36\",\"type\":\"internal/libuv/latency/p95\",\"unit\":\"ms\",\"historic\":true},\"Event Loop Latency\":{\"value\":\"0.58\",\"type\":\"internal/libuv/latency/p50\",\"unit\":\"ms\",\"historic\":true},\"Active handles\":{\"value\":15,\"type\":\"internal/libuv/handles\",\"historic\":true},\"Active requests\":{\"value\":0,\"type\":\"internal/libuv/requests\",\"historic\":true}},\"axm_actions\":[{\"action_name\":\"km:heapdump\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:stop\",\"action_type\":\"internal\",\"arity\":1},{\"action_name\":\"km:heap:sampling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:heap:sampling:stop\",\"action_type\":\"internal\",\"arity\":1}],\"pm_uptime\":1772611212493,\"status\":\"online\",\"unique_id\":\"ff84792b-3023-4f57-8441-1b9b66ad39b4\",\"PM2_HOME\":\"/Users/tatsheen/.pm2\",\"PM2_USAGE\":\"CLI\",\"__CF_USER_TEXT_ENCODING\":\"0x1F5:0x0:0x0\",\"_\":\"/opt/homebrew/bin/pm2\",\"POLICY_USE_OPA\":\"false\",\"REDIS_PORT\":\"16379\",\"REDIS_HOST\":\"192.168.1.164\",\"LANG\":\"C.UTF-8\",\"PAGER\":\"cat\",\"OLDPWD\":\"/Users/tatsheen/claw-architect\",\"PWD\":\"/Users/tatsheen/claw-architect\",\"SHLVL\":\"2\",\"PATH\":\"/Users/tatsheen/.codex/tmp/arg0/codex-arg05ZSnwG:/opt/homebrew/opt/libpq/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/tatsheen/.rokit/bin:/Users/tatsheen/.local/bin:/Users/tatsheen/.local/bin:/Applications/Codex.app/Contents/Resources\",\"USER\":\"tatsheen\",\"LOGNAME\":\"tatsheen\",\"HOME\":\"/Users/tatsheen\",\"SHELL\":\"/bin/zsh\",\"TERM_SESSION_ID\":\"2FD01486-AAC0-4478-A6CF-B1A09006A830\",\"TERM_PROGRAM_VERSION\":\"466\",\"OSLogRateLimit\":\"64\",\"COLORTERM\":\"\",\"TERM_PROGRAM\":\"Apple_Terminal\",\"XPC_SERVICE_NAME\":\"0\",\"SSH_AUTH_SOCK\":\"/private/tmp/com.apple.launchd.WTEIZ2PIsr/Listeners\",\"TERM\":\"dumb\",\"XPC_FLAGS\":\"0x0\",\"TMPDIR\":\"/var/folders/_k/62rzls556pn233ctkrv284pm0000gn/T/\",\"__CFBundleIdentifier\":\"com.openai.codex\",\"NODE_APP_INSTANCE\":0,\"vizion_running\":false,\"km_link\":false,\"pm_pid_path\":\"/Users/tatsheen/.pm2/pids/claw-dispatcher-1.pid\",\"pm_err_log_path\":\"/Users/tatsheen/.pm2\n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    },
+    "taskmaster_freshness": {
+      "exists": true,
+      "mtime": "2026-03-04T07:41:52.503Z",
+      "age_minutes": 34.78,
+      "stale": false
+    },
+    "post_pm2_jlist": {
+      "command": "pm2 jlist",
+      "started_at": "2026-03-04T08:17:01.856Z",
+      "finished_at": "2026-03-04T08:17:02.169Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[{\"pid\":58702,\"name\":\"claw-dispatcher\",\"pm2_env\":{\"OLLAMA_REMOTE_FIRST\":\"false\",\"OLLAMA_HOSTS\":\"http://127.0.0.1:11434\",\"kill_timeout\":8000,\"DISPATCH_BATCH_LIMIT\":\"30\",\"NODE_ENV\":\"production\",\"kill_retry_time\":100,\"windowsHide\":true,\"username\":\"tatsheen\",\"treekill\":true,\"automation\":true,\"pmx\":true,\"instance_var\":\"NODE_APP_INSTANCE\",\"watch\":false,\"autorestart\":true,\"autostart\":true,\"vizion\":true,\"merge_logs\":true,\"env\":{\"ANTHROPIC_ALLOWED\":\"false\",\"MODEL_ROUTING_ANTHROPIC_LAST\":\"true\",\"MODEL_ROUTING_EXTRA_PROVIDERS\":\"deepseek,gemini\",\"CLASSIFY_PROVIDER\":\"openai\",\"POLICY_USE_OPA\":\"false\",\"DISPATCH_BATCH_LIMIT\":\"30\",\"OLLAMA_REMOTE_FIRST\":\"false\",\"OLLAMA_HOSTS\":\"http://127.0.0.1:11434\",\"REDIS_PORT\":\"16379\",\"REDIS_HOST\":\"192.168.1.164\",\"NODE_ENV\":\"production\"},\"cwd\":\"/Users/tatsheen/claw-architect\",\"namespace\":\"default\",\"filter_env\":[],\"name\":\"claw-dispatcher\",\"node_args\":[],\"pm_exec_path\":\"/Users/tatsheen/claw-architect/cli/run-dispatcher.js\",\"pm_cwd\":\"/Users/tatsheen/claw-architect\",\"exec_interpreter\":\"node\",\"exec_mode\":\"fork_mode\",\"pm_out_log_path\":\"/Users/tatsheen/.pm2/logs/claw-dispatcher-out.log\",\"pm_err_log_path\":\"/Users/tatsheen/.pm2/logs/claw-dispatcher-error.log\",\"pm_pid_path\":\"/Users/tatsheen/.pm2/pids/claw-dispatcher-1.pid\",\"km_link\":false,\"vizion_running\":false,\"NODE_APP_INSTANCE\":0,\"__CFBundleIdentifier\":\"com.openai.codex\",\"TMPDIR\":\"/var/folders/_k/62rzls556pn233ctkrv284pm0000gn/T/\",\"XPC_FLAGS\":\"0x0\",\"TERM\":\"dumb\",\"SSH_AUTH_SOCK\":\"/private/tmp/com.apple.launchd.WTEIZ2PIsr/Listeners\",\"XPC_SERVICE_NAME\":\"0\",\"TERM_PROGRAM\":\"Apple_Terminal\",\"COLORTERM\":\"\",\"OSLogRateLimit\":\"64\",\"TERM_PROGRAM_VERSION\":\"466\",\"TERM_SESSION_ID\":\"2FD01486-AAC0-4478-A6CF-B1A09006A830\",\"SHELL\":\"/bin/zsh\",\"HOME\":\"/Users/tatsheen\",\"LOGNAME\":\"tatsheen\",\"USER\":\"tatsheen\",\"PATH\":\"/Users/tatsheen/.codex/tmp/arg0/codex-arg05ZSnwG:/opt/homebrew/opt/libpq/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/tatsheen/.rokit/bin:/Users/tatsheen/.local/bin:/Users/tatsheen/.local/bin:/Applications/Codex.app/Contents/Resources\",\"SHLVL\":\"2\",\"PWD\":\"/Users/tatsheen/claw-architect\",\"OLDPWD\":\"/Users/tatsheen/claw-architect\",\"PAGER\":\"cat\",\"LANG\":\"C.UTF-8\",\"REDIS_HOST\":\"192.168.1.164\",\"REDIS_PORT\":\"16379\",\"POLICY_USE_OPA\":\"false\",\"_\":\"/opt/homebrew/bin/pm2\",\"__CF_USER_TEXT_ENCODING\":\"0x1F5:0x0:0x0\",\"PM2_USAGE\":\"CLI\",\"PM2_HOME\":\"/Users/tatsheen/.pm2\",\"unique_id\":\"ff84792b-3023-4f57-8441-1b9b66ad39b4\",\"status\":\"online\",\"pm_uptime\":1772612209207,\"axm_actions\":[{\"action_name\":\"km:heapdump\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:stop\",\"action_type\":\"internal\",\"arity\":1},{\"action_name\":\"km:heap:sampling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:heap:sampling:stop\",\"action_type\":\"internal\",\"arity\":1}],\"axm_monitor\":{\"Used Heap Size\":{\"value\":\"117.08\",\"type\":\"internal/v8/heap/used\",\"unit\":\"MiB\",\"historic\":true},\"Heap Usage\":{\"value\":52.64,\"type\":\"internal/v8/heap/usage\",\"unit\":\"%\",\"historic\":true},\"Heap Size\":{\"value\":\"222.41\",\"type\":\"internal/v8/heap/total\",\"unit\":\"MiB\",\"historic\":true},\"Event Loop Latency p95\":{\"value\":\"1566.24\",\"type\":\"internal/libuv/latency/p95\",\"unit\":\"ms\",\"historic\":true},\"Event Loop Latency\":{\"value\":\"0.70\",\"type\":\"internal/libuv/latency/p50\",\"unit\":\"ms\",\"historic\":true},\"Active handles\":{\"value\":15,\"type\":\"internal/libuv/handles\",\"historic\":true},\"Active requests\":{\"value\":0,\"type\":\"internal/libuv/requests\",\"historic\":true}},\"axm_options\":{\"error\":true,\"heapdump\":true,\"feature.profiler.heapsnapshot\":false,\"feature.profiler.heapsampling\":true,\"feature.profiler.cpu_js\":true,\"latency\":true,\"catchExceptions\":true,\n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    },
+    "post_service_status": [
+      {
+        "service": "clawpay-task-master",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      },
+      {
+        "service": "claw-prompt-oracle",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      },
+      {
+        "service": "claw-bot-commerce-api",
+        "online": 0,
+        "total": 1,
+        "statuses": [
+          "stopped"
+        ]
+      },
+      {
+        "service": "claw-discord-gateway",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      }
+    ],
+    "final_pm2_jlist": {
+      "command": "pm2 jlist",
+      "started_at": "2026-03-04T08:17:02.759Z",
+      "finished_at": "2026-03-04T08:17:03.125Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[{\"pid\":58702,\"name\":\"claw-dispatcher\",\"pm2_env\":{\"OLLAMA_REMOTE_FIRST\":\"false\",\"OLLAMA_HOSTS\":\"http://127.0.0.1:11434\",\"kill_timeout\":8000,\"DISPATCH_BATCH_LIMIT\":\"30\",\"NODE_ENV\":\"production\",\"kill_retry_time\":100,\"windowsHide\":true,\"username\":\"tatsheen\",\"treekill\":true,\"automation\":true,\"pmx\":true,\"instance_var\":\"NODE_APP_INSTANCE\",\"watch\":false,\"autorestart\":true,\"autostart\":true,\"vizion\":true,\"merge_logs\":true,\"env\":{\"ANTHROPIC_ALLOWED\":\"false\",\"MODEL_ROUTING_ANTHROPIC_LAST\":\"true\",\"MODEL_ROUTING_EXTRA_PROVIDERS\":\"deepseek,gemini\",\"CLASSIFY_PROVIDER\":\"openai\",\"POLICY_USE_OPA\":\"false\",\"DISPATCH_BATCH_LIMIT\":\"30\",\"OLLAMA_REMOTE_FIRST\":\"false\",\"OLLAMA_HOSTS\":\"http://127.0.0.1:11434\",\"REDIS_PORT\":\"16379\",\"REDIS_HOST\":\"192.168.1.164\",\"NODE_ENV\":\"production\"},\"cwd\":\"/Users/tatsheen/claw-architect\",\"namespace\":\"default\",\"filter_env\":[],\"name\":\"claw-dispatcher\",\"node_args\":[],\"pm_exec_path\":\"/Users/tatsheen/claw-architect/cli/run-dispatcher.js\",\"pm_cwd\":\"/Users/tatsheen/claw-architect\",\"exec_interpreter\":\"node\",\"exec_mode\":\"fork_mode\",\"pm_out_log_path\":\"/Users/tatsheen/.pm2/logs/claw-dispatcher-out.log\",\"pm_err_log_path\":\"/Users/tatsheen/.pm2/logs/claw-dispatcher-error.log\",\"pm_pid_path\":\"/Users/tatsheen/.pm2/pids/claw-dispatcher-1.pid\",\"km_link\":false,\"vizion_running\":false,\"NODE_APP_INSTANCE\":0,\"__CFBundleIdentifier\":\"com.openai.codex\",\"TMPDIR\":\"/var/folders/_k/62rzls556pn233ctkrv284pm0000gn/T/\",\"XPC_FLAGS\":\"0x0\",\"TERM\":\"dumb\",\"SSH_AUTH_SOCK\":\"/private/tmp/com.apple.launchd.WTEIZ2PIsr/Listeners\",\"XPC_SERVICE_NAME\":\"0\",\"TERM_PROGRAM\":\"Apple_Terminal\",\"COLORTERM\":\"\",\"OSLogRateLimit\":\"64\",\"TERM_PROGRAM_VERSION\":\"466\",\"TERM_SESSION_ID\":\"2FD01486-AAC0-4478-A6CF-B1A09006A830\",\"SHELL\":\"/bin/zsh\",\"HOME\":\"/Users/tatsheen\",\"LOGNAME\":\"tatsheen\",\"USER\":\"tatsheen\",\"PATH\":\"/Users/tatsheen/.codex/tmp/arg0/codex-arg05ZSnwG:/opt/homebrew/opt/libpq/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/tatsheen/.rokit/bin:/Users/tatsheen/.local/bin:/Users/tatsheen/.local/bin:/Applications/Codex.app/Contents/Resources\",\"SHLVL\":\"2\",\"PWD\":\"/Users/tatsheen/claw-architect\",\"OLDPWD\":\"/Users/tatsheen/claw-architect\",\"PAGER\":\"cat\",\"LANG\":\"C.UTF-8\",\"REDIS_HOST\":\"192.168.1.164\",\"REDIS_PORT\":\"16379\",\"POLICY_USE_OPA\":\"false\",\"_\":\"/opt/homebrew/bin/pm2\",\"__CF_USER_TEXT_ENCODING\":\"0x1F5:0x0:0x0\",\"PM2_USAGE\":\"CLI\",\"PM2_HOME\":\"/Users/tatsheen/.pm2\",\"unique_id\":\"ff84792b-3023-4f57-8441-1b9b66ad39b4\",\"status\":\"online\",\"pm_uptime\":1772612209207,\"axm_actions\":[{\"action_name\":\"km:heapdump\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:cpu:profiling:stop\",\"action_type\":\"internal\",\"arity\":1},{\"action_name\":\"km:heap:sampling:start\",\"action_type\":\"internal\",\"arity\":2},{\"action_name\":\"km:heap:sampling:stop\",\"action_type\":\"internal\",\"arity\":1}],\"axm_monitor\":{\"Used Heap Size\":{\"value\":\"117.09\",\"type\":\"internal/v8/heap/used\",\"unit\":\"MiB\",\"historic\":true},\"Heap Usage\":{\"value\":52.65,\"type\":\"internal/v8/heap/usage\",\"unit\":\"%\",\"historic\":true},\"Heap Size\":{\"value\":\"222.41\",\"type\":\"internal/v8/heap/total\",\"unit\":\"MiB\",\"historic\":true},\"Event Loop Latency p95\":{\"value\":\"1566.24\",\"type\":\"internal/libuv/latency/p95\",\"unit\":\"ms\",\"historic\":true},\"Event Loop Latency\":{\"value\":\"0.72\",\"type\":\"internal/libuv/latency/p50\",\"unit\":\"ms\",\"historic\":true},\"Active handles\":{\"value\":15,\"type\":\"internal/libuv/handles\",\"historic\":true},\"Active requests\":{\"value\":0,\"type\":\"internal/libuv/requests\",\"historic\":true}},\"axm_options\":{\"error\":true,\"heapdump\":true,\"feature.profiler.heapsnapshot\":false,\"feature.profiler.heapsampling\":true,\"feature.profiler.cpu_js\":true,\"latency\":true,\"catchExceptions\":true,\n...[truncated]",
+      "stderr_tail": "",
+      "error": null
+    },
+    "final_service_status": [
+      {
+        "service": "clawpay-task-master",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      },
+      {
+        "service": "claw-prompt-oracle",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      },
+      {
+        "service": "claw-bot-commerce-api",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      },
+      {
+        "service": "claw-discord-gateway",
+        "online": 1,
+        "total": 1,
+        "statuses": [
+          "online"
+        ]
+      }
+    ],
+    "post_taskmaster_freshness": {
+      "exists": true,
+      "mtime": "2026-03-04T08:17:00.953Z",
+      "age_minutes": 0.04,
+      "stale": false
+    }
+  },
+  "actions": {
+    "ensure_required_services": [
+      {
+        "service": "clawpay-task-master",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      },
+      {
+        "service": "claw-prompt-oracle",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      },
+      {
+        "service": "claw-bot-commerce-api",
+        "ok": true,
+        "action": "restart",
+        "reason": "not_online",
+        "result": {
+          "command": "pm2 restart claw-bot-commerce-api",
+          "started_at": "2026-03-04T08:16:39.012Z",
+          "finished_at": "2026-03-04T08:16:39.477Z",
+          "ok": true,
+          "code": 0,
+          "stdout_tail": "Use --update-env to update environment variables\n[PM2] Applying action restartProcessId on app [claw-bot-commerce-api](ids: [ 109 ])\n[PM2] [claw-bot-commerce-api](109) ✓\n┌─────┬─────────────────────────────────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐\n│ id  │ name                                                │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │\n├─────┼─────────────────────────────────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤\n│ 69  │ claw-agency-growth-os                               │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 168 │ claw-agent-fleet-manager                            │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 13   │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 42  │ claw-agent-memory-maintenance                       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 137 │ claw-agent-streamline-pulse                         │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 86  │ claw-ai-satellite-backup-to-nas                     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 84  │ claw-ai-satellite-ollama-maint                      │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 85  │ claw-ai-satellite-system-cleanup                    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 83  │ claw-ai-satellite-worker-ai                         │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 15  │ claw-ai-work-pulse                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 2    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 178 │ claw-architect-api                                  │ default     │ 1.0.0   │ fork    │ 8853     │ 16m    │ 263  │ online    │ 0%       │ 59.8mb   │ tatsheen │ disabled │\n│ 103 │ claw-auto-heal-3h                                   │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 7    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 108 │ claw-auto-recovery                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 10   │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 44  │ claw-autonomy-pr-cycle                              │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 25  │ claw-backlog-orchestrator                           │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 258  │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 37  │ claw-backup-to-nas                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 38  │ claw-backup-verify-nas                              │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 109 │ claw-bot-commerce-api                               │ default     │ 1.0.0   │ fork    │ 57784    │ 0s     │ 43   │ online    │ 0%       │ 1.5mb    │ tatsheen │ disabled │\n│ 110 │ claw-bot-discovery                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 111 │ claw-bot-outreach                                   │ default  \n...[truncated]",
+          "stderr_tail": "",
+          "error": null
+        }
+      },
+      {
+        "service": "claw-discord-gateway",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      }
+    ],
+    "restart_stale_taskmaster": {
+      "command": "pm2 restart clawpay-task-master",
+      "ok": true,
+      "code": 0,
+      "skipped": true,
+      "reason": "fresh"
+    },
+    "auto_recovery": {
+      "command": "node scripts/auto-recovery-pulse.js",
+      "started_at": "2026-03-04T08:16:39.477Z",
+      "finished_at": "2026-03-04T08:16:46.497Z",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }\n[auto-recovery] Health check at 2026-03-04T08:16:39.657Z\n[auto-recovery] Status: 21 online, 150 stopped, 0 errored\n[auto-recovery] ⚠️  Important service claw-coordinator-watchdog is stopped\n[auto-recovery] ✅ Started claw-coordinator-watchdog\n[auto-recovery] ✅ Recovered 1 service(s)\n",
+      "stderr_tail": "",
+      "error": null
+    },
+    "uptime_watchdog": {
+      "command": "node scripts/uptime-watchdog-hourly.js --no-diagnosis",
+      "started_at": "2026-03-04T08:16:46.497Z",
+      "finished_at": "2026-03-04T08:17:01.856Z",
+      "ok": false,
+      "code": 1,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n[uptime-watchdog] Starting at 2026-03-04T08:16:46.638Z (dryRun=false)\n[uptime-watchdog] Found 43 issue(s):\n  - claw-dispatcher has 43 restarts (possible crash loop)\n  - claw-architect-api has 263 restarts (possible crash loop)\n  - claw-offgrid-meshtastic-bridge should be online but is stopped\n  - claw-agent-fleet-manager should be online but is stopped\n  - claw-prompt-oracle has 46 restarts (possible crash loop)\n  - claw-bot-commerce-api has 44 restarts (possible crash loop)\n  - clawpay-task-master has 43 restarts (possible crash loop)\n  - claw-events-consumer should be online but is stopped\n  - claw-events-spawner should be online but is stopped\n  - claw-openclaw-coordinator (cron) has 670 restarts while online (rapid crash loop)\n[uptime-watchdog] Executing 43 recovery action(s)...\n[uptime-watchdog] ✅ Restarted: claw-dispatcher, claw-architect-api, claw-offgrid-meshtastic-bridge, claw-agent-fleet-manager, claw-prompt-oracle, claw-bot-commerce-api, clawpay-task-master, claw-events-consumer, claw-events-spawner, claw-openclaw-coordinator\n[uptime-watchdog] Report saved to reports/uptime-watchdog-latest.json\n",
+      "stderr_tail": "[uptime-watchdog] ⚠️ Recovery errors: 3\n  - masterpiece_builder_agent: Command failed: npm run mission:control:run -- --agent masterpiece_builder_agent --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n  - saas_development: Command failed: npm run mission:control:run -- --agent saas_development --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n  - content_writing: Command failed: npm run mission:control:run -- --agent content_writing --skip-coordination\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n\n",
+      "error": null
+    },
+    "reensure_required_services": [
+      {
+        "service": "clawpay-task-master",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      },
+      {
+        "service": "claw-prompt-oracle",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      },
+      {
+        "service": "claw-bot-commerce-api",
+        "ok": true,
+        "action": "restart",
+        "reason": "not_online",
+        "result": {
+          "command": "pm2 restart claw-bot-commerce-api",
+          "started_at": "2026-03-04T08:17:02.178Z",
+          "finished_at": "2026-03-04T08:17:02.759Z",
+          "ok": true,
+          "code": 0,
+          "stdout_tail": "Use --update-env to update environment variables\n[PM2] Applying action restartProcessId on app [claw-bot-commerce-api](ids: [ 109 ])\n[PM2] [claw-bot-commerce-api](109) ✓\n┌─────┬─────────────────────────────────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐\n│ id  │ name                                                │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │\n├─────┼─────────────────────────────────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤\n│ 69  │ claw-agency-growth-os                               │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 168 │ claw-agent-fleet-manager                            │ default     │ 1.0.0   │ fork    │ 58852    │ 11s    │ 13   │ online    │ 0%       │ 90.2mb   │ tatsheen │ disabled │\n│ 42  │ claw-agent-memory-maintenance                       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 137 │ claw-agent-streamline-pulse                         │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 86  │ claw-ai-satellite-backup-to-nas                     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 84  │ claw-ai-satellite-ollama-maint                      │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 85  │ claw-ai-satellite-system-cleanup                    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 83  │ claw-ai-satellite-worker-ai                         │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 15  │ claw-ai-work-pulse                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 2    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 178 │ claw-architect-api                                  │ default     │ 1.0.0   │ fork    │ 58788    │ 12s    │ 264  │ online    │ 0%       │ 163.2mb  │ tatsheen │ disabled │\n│ 103 │ claw-auto-heal-3h                                   │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 7    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 108 │ claw-auto-recovery                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 10   │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 44  │ claw-autonomy-pr-cycle                              │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 25  │ claw-backlog-orchestrator                           │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 258  │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 37  │ claw-backup-to-nas                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 38  │ claw-backup-verify-nas                              │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 109 │ claw-bot-commerce-api                               │ default     │ 1.0.0   │ fork    │ 60133    │ 0s     │ 46   │ online    │ 0%       │ 1.5mb    │ tatsheen │ disabled │\n│ 110 │ claw-bot-discovery                                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 111 │ claw-bot-outreach                                   │ default  \n...[truncated]",
+          "stderr_tail": "",
+          "error": null
+        }
+      },
+      {
+        "service": "claw-discord-gateway",
+        "ok": true,
+        "action": "none",
+        "reason": "already_online"
+      }
+    ]
+  },
+  "ok": true,
+  "budget": {
+    "limits": {
+      "max_calls": 25,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 90000
+    },
+    "usage": {
+      "calls": 7,
+      "total_tokens": 50,
+      "by_tool": {
+        "pm2_list": 9,
+        "pm2_restart": 18,
+        "recovery": 9,
+        "watchdog": 14
+      }
+    },
+    "violations": [],
+    "ok": true
+  },
+  "warnings": [
+    "uptime watchdog returned non-zero; see report.actions.uptime_watchdog for details"
+  ]
+}

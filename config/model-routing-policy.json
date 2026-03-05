@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "default": {
+    "primary_provider": "openai",
+    "fallback_chain": [
+      "deepseek",
+      "gemini",
+      "anthropic"
+    ],
+    "max_latency_ms": 60000,
+    "min_confidence": 0.72,
+    "json_required": false,
+    "max_retries_per_provider": 1,
+    "budget_class": "openai",
+    "cache_ttl_sec": 900,
+    "cacheable": true,
+    "critical": false
+  },
+  "task_policies": {
+    "classify": {
+      "task_type": "classify",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 45000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "local",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "site_audit": {
+      "task_type": "site_audit",
+      "primary_provider": "deepseek",
+      "fallback_chain": [
+        "gemini",
+        "openai",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.72,
+      "json_required": false,
+      "max_retries_per_provider": 1,
+      "budget_class": "local",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "site_compare": {
+      "task_type": "site_compare",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.72,
+      "json_required": false,
+      "max_retries_per_provider": 1,
+      "budget_class": "local",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "site_extract_patterns": {
+      "task_type": "site_extract_patterns",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.72,
+      "json_required": false,
+      "max_retries_per_provider": 1,
+      "budget_class": "local",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "site_fix_plan": {
+      "task_type": "site_fix_plan",
+      "primary_provider": "deepseek",
+      "fallback_chain": [
+        "gemini",
+        "openai",
+        "anthropic"
+      ],
+      "max_latency_ms": 90000,
+      "min_confidence": 0.8,
+      "json_required": false,
+      "max_retries_per_provider": 1,
+      "budget_class": "codex",
+      "cache_ttl_sec": 0,
+      "cacheable": false,
+      "critical": true
+    },
+    "analyze_content": {
+      "task_type": "analyze_content",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "generate_copy": {
+      "task_type": "generate_copy",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "aicreator": {
+      "task_type": "aicreator",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "copy_research_pack": {
+      "task_type": "copy_research_pack",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 90000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "copy_critique": {
+      "task_type": "copy_critique",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.75,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 900,
+      "cacheable": true,
+      "critical": false
+    },
+    "copy_improve": {
+      "task_type": "copy_improve",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.75,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 300,
+      "cacheable": false,
+      "critical": false
+    },
+    "copy_lab_run": {
+      "task_type": "copy_lab_run",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.75,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 300,
+      "cacheable": false,
+      "critical": false
+    },
+    "website_content_generator": {
+      "task_type": "website_content_generator",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.78,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 300,
+      "cacheable": false,
+      "critical": false
+    },
+    "social_media_copywriter": {
+      "task_type": "social_media_copywriter",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 90000,
+      "min_confidence": 0.76,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 300,
+      "cacheable": false,
+      "critical": false
+    },
+    "triage": {
+      "task_type": "triage",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 45000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 600,
+      "cacheable": true,
+      "critical": false
+    },
+    "plan": {
+      "task_type": "plan",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.8,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "codex",
+      "cache_ttl_sec": 0,
+      "cacheable": false,
+      "critical": true
+    },
+    "patch": {
+      "task_type": "patch",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 90000,
+      "min_confidence": 0.8,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "codex",
+      "cache_ttl_sec": 0,
+      "cacheable": false,
+      "critical": true
+    },
+    "orchestrate": {
+      "task_type": "orchestrate",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 120000,
+      "min_confidence": 0.8,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "codex",
+      "cache_ttl_sec": 0,
+      "cacheable": false,
+      "critical": true
+    },
+    "judge": {
+      "task_type": "judge",
+      "primary_provider": "openai",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "anthropic"
+      ],
+      "max_latency_ms": 60000,
+      "min_confidence": 0.72,
+      "json_required": true,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 600,
+      "cacheable": true,
+      "critical": false
+    },
+    "security_council": {
+      "task_type": "security_council",
+      "primary_provider": "ollama",
+      "fallback_chain": [
+        "deepseek",
+        "gemini",
+        "openai",
+        "anthropic"
+      ],
+      "max_latency_ms": 300000,
+      "min_confidence": 0.0,
+      "json_required": false,
+      "max_retries_per_provider": 1,
+      "budget_class": "openai",
+      "cache_ttl_sec": 0,
+      "cacheable": false,
+      "critical": true
+    }
+  }
+}

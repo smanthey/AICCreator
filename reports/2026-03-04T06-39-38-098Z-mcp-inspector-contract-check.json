@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T06:39:38.098Z",
+  "failures": [],
+  "warnings": [],
+  "checks": {
+    "policy_tool": {
+      "ok": true
+    },
+    "policy_oauth": {
+      "ok": true
+    },
+    "servers_config": {
+      "ok": true
+    },
+    "mcp_health": {
+      "command": "node ./scripts/mcp-health-check.js",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "t_tail\": \"[mcp-filesystem] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-github] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"context7\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-context7] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github_server_boot\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"GitHub MCP Server running on stdio\\n\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    "mcp_inspector": {
+      "command": "npx -y @modelcontextprotocol/inspector --help",
+      "ok": true,
+      "code": 0,
+      "stdout_tail": "Usage: inspector-bin [options]\n\nOptions:\n  -e <env>               environment variables in KEY=VALUE format (default: {})\n  --config <path>        config file path\n  --server <n>           server name from config file\n  --cli                  enable CLI mode\n  --transport <type>     transport type (stdio, sse, http)\n  --server-url <url>     server URL for SSE/HTTP transport\n  --header <headers...>  HTTP headers as \"HeaderName: Value\" pairs (for HTTP/SSE\n                         transports) (default: {})\n  -h, --help             display help for command\n",
+      "stderr_tail": ""
+    }
+  }
+}

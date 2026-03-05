@@ -1,0 +1,198 @@
+---
+description: Templates and patterns for building business intelligence system components
+---
+
+# Business Build Patterns
+
+Templates and patterns for building business intelligence system components.
+
+## Sync Script Template
+
+```javascript
+#!/usr/bin/env node
+"use strict";
+
+/**
+ * business-{platform}-sync.js — {Platform} Data Collector
+ * 
+ * Syncs {data types} from {Platform} API to unified business schema.
+ */
+
+require("dotenv").config({ override: true });
+
+const pg = require("../infra/postgres");
+
+const PLATFORM = "{platform}";
+
+// ─── Authentication ────────────────────────────────────────────────────────
+
+async function authenticate() {
+  // Implement authentication based on platform
+  // OAuth, API key, etc.
+}
+
+// ─── Sync Functions ────────────────────────────────────────────────────────
+
+async function syncOrders(lastSyncAt = null) {
+  // Fetch orders from platform API
+  // Transform to unified schema
+  // Store in business_orders table
+  // Log to business_sync_logs
+}
+
+async function syncProducts() {
+  // Fetch products from platform API
+  // Transform to unified schema
+  // Store in business_products table
+}
+
+async function syncCustomers() {
+  // Fetch customers from platform API
+  // Match across platforms
+  // Store in business_customers table
+}
+
+// ─── Main Sync Function ─────────────────────────────────────────────────────
+
+async function main() {
+  const syncLogId = await startSyncLog(PLATFORM, "incremental");
+  
+  try {
+    await authenticate();
+    await syncOrders();
+    await syncProducts();
+    await syncCustomers();
+    
+    await completeSyncLog(syncLogId, "completed", recordsSynced);
+  } catch (err) {
+    await failSyncLog(syncLogId, err);
+    throw err;
+  }
+}
+
+if (require.main === module) {
+  main().catch(console.error);
+}
+
+module.exports = { main, syncOrders, syncProducts, syncCustomers };
+```
+
+## Migration Template
+
+```sql
+-- Migration XXX: {Platform} Integration Tables
+-- Adds tables/columns needed for {platform} integration
+
+-- Add platform-specific columns if needed
+ALTER TABLE business_orders 
+ADD COLUMN IF NOT EXISTS {platform}_order_data JSONB;
+
+-- Create indexes for platform-specific queries
+CREATE INDEX IF NOT EXISTS idx_business_orders_{platform}_data 
+ON business_orders USING GIN({platform}_order_data);
+
+-- Add platform to data sources
+INSERT INTO business_data_sources (platform, platform_display_name, status)
+VALUES ('{platform}', '{Platform Display Name}', 'disconnected')
+ON CONFLICT (platform) DO NOTHING;
+```
+
+## API Endpoint Template
+
+```javascript
+// Add to scripts/business-api.js
+
+async function handleBusinessOverview(req, res) {
+  const { rows: revenue } = await pg.query(
+    `SELECT 
+       source_platform,
+       SUM(amount_usd)::numeric(10,2) AS total_revenue,
+       COUNT(*)::int AS transaction_count
+     FROM business_revenue
+     WHERE transaction_date >= $1
+     GROUP BY source_platform`,
+    [req.query.start_date || 'NOW() - INTERVAL \'30 days\'']
+  );
+  
+  return jsonResponse(res, 200, { revenue });
+}
+```
+
+## Dashboard Component Template
+
+```html
+<!-- Add to dashboard/business.html -->
+
+<div class="dashboard-section" id="revenue-section">
+  <h2>Revenue Overview</h2>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">Total Revenue</div>
+      <div class="metric-value" id="total-revenue">$0</div>
+    </div>
+    <!-- More metrics -->
+  </div>
+  <canvas id="revenue-chart"></canvas>
+</div>
+
+<script>
+async function loadRevenueData() {
+  const response = await fetch('/api/business/revenue');
+  const data = await response.json();
+  // Update UI with data
+}
+</script>
+```
+
+## Error Handling Template
+
+```javascript
+// Standard error handling pattern
+async function syncWithErrorHandling(platform, syncFn) {
+  try {
+    return await syncFn();
+  } catch (err) {
+    // Log error
+    await pg.query(
+      `UPDATE business_data_sources 
+       SET status = 'error', last_sync_error = $1
+       WHERE platform = $2`,
+      [err.message, platform]
+    );
+    
+    // Re-throw for caller to handle
+    throw err;
+  }
+}
+```
+
+## Authentication Template
+
+```javascript
+// OAuth template
+async function setupOAuth(platform) {
+  const credentials = await getEncryptedCredentials(platform);
+  
+  // Check if token needs refresh
+  if (tokenExpired(credentials.access_token, credentials.expires_at)) {
+    const newTokens = await refreshToken(credentials.refresh_token);
+    await updateCredentials(platform, newTokens);
+    return newTokens.access_token;
+  }
+  
+  return credentials.access_token;
+}
+```
+
+## Best Practices
+
+1. **Follow naming conventions**: `business-{platform}-sync.js`
+2. **Use unified schema**: Always transform to business_* tables
+3. **Log everything**: Use business_sync_logs for all operations
+4. **Handle errors gracefully**: Never crash, always log
+5. **Support incremental sync**: Use last_sync_at for efficiency
+6. **Respect rate limits**: Implement rate limiting
+7. **Test authentication**: Verify credentials before syncing
+8. **Match customers**: Use email/phone for cross-platform matching
+9. **Convert currencies**: Always store in USD
+10. **Use transactions**: For multi-table operations

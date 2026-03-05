@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T06:39:46.687Z",
+  "benchmark_set": [
+    "filesystem",
+    "github",
+    "postgres",
+    "context7",
+    "memory"
+  ],
+  "summary": {
+    "total": 5,
+    "failed": 0,
+    "success_rate": 1,
+    "latency_ms": {
+      "p50": 45,
+      "p95": 1417,
+      "max": 10324
+    }
+  },
+  "servers": {
+    "filesystem": {
+      "ok": true,
+      "code": 0,
+      "duration_ms": 30,
+      "error": null
+    },
+    "github": {
+      "ok": true,
+      "code": 0,
+      "duration_ms": 45,
+      "error": null
+    },
+    "postgres": {
+      "ok": true,
+      "code": 0,
+      "duration_ms": 37,
+      "error": null
+    },
+    "context7": {
+      "ok": true,
+      "code": 0,
+      "duration_ms": 1417,
+      "error": null
+    },
+    "memory": {
+      "ok": true,
+      "code": 0,
+      "duration_ms": 10324,
+      "error": null
+    }
+  },
+  "probes": [
+    {
+      "label": "filesystem",
+      "command": "bash -lc './scripts/mcp-filesystem.sh --healthcheck'",
+      "ok": true,
+      "code": 0,
+      "duration_ms": 30,
+      "stdout_tail": "[mcp-filesystem] ok\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "github",
+      "command": "bash -lc './scripts/mcp-github.sh --healthcheck'",
+      "ok": true,
+      "code": 0,
+      "duration_ms": 45,
+      "stdout_tail": "[mcp-github] ok\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "postgres",
+      "command": "bash -lc './scripts/mcp-postgres.sh --healthcheck'",
+      "ok": true,
+      "code": 0,
+      "duration_ms": 37,
+      "stdout_tail": "[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "context7",
+      "command": "bash -lc './scripts/mcp-context7.sh --healthcheck'",
+      "ok": true,
+      "code": 0,
+      "duration_ms": 1417,
+      "stdout_tail": "[mcp-context7] ok\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "memory",
+      "command": "node ./scripts/mcp-memory-accelerator.js retrieve \"mcp benchmark probe\" architect 5",
+      "ok": true,
+      "code": 0,
+      "duration_ms": 10324,
+      "stdout_tail": "_tokens_total\": 80000\n    },\n    \"usage\": {\n      \"calls\": 2,\n      \"total_tokens\": 2,\n      \"by_tool\": {\n        \"episodic_wide_recall\": 1,\n        \"long_term_vector_recall\": 1\n      }\n    },\n    \"violations\": [],\n    \"ok\": true\n  },\n  \"generated_at\": \"2026-03-04T06:39:36.678Z\",\n  \"report\": {\n    \"report\": \"/Users/tatsheen/claw-architect/reports/2026-03-04T06-39-36-679Z-mcp-memory-accelerator.json\",\n    \"latest\": \"/Users/tatsheen/claw-architect/reports/mcp-memory-accelerator-latest.json\"\n  }\n}\n",
+      "stderr_tail": "[agent-memory-sql] Embedding generation failed: Ollama embedding failed: 404\n"
+    }
+  ]
+}

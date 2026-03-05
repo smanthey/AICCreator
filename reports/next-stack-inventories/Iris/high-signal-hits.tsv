@@ -1,0 +1,16 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/tests/State.spec.lua:43:        it("SHOULD chain together two states", function()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:118:        Never chain states together so that each state changes the value of another state in a cyclic nature. This will cause a continous callback.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:256:        -- update counters
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:300:            -- has to be larger than 1 because of the check that it isnt below 1 in Iris.End
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/Internal.lua:671:        @param thisWidget Widget -- widget the state belongs to.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/demoWindow.lua:738:                helpMarker("every widget and state has an ID which Iris tracks to remember which widget is which. below lists all widgets and states, with their respective IDs")
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:152:        be placed horizontally below the window title. If the menu Menu is created within another menu, then
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:155:        The opened menu will be a vertically listed box below or next to the button.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1663:            selectionArray: { any } -- the array to generate a combo from.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/API.lua:1712:            enumType: Enum -- the enum to generate a combo from.
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/init.lua:209:    Iris.Text({"Below and outside the tree"})
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:4:    local function relocateTooltips()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:19:        relocateTooltips()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Window.lua:65:            relocateTooltips()
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/Combo.lua:481:            -- If we are discarding the current combo active, we need to hide it
+/Users/tatsheen/claw-repos/oss-index/roblox/Iris/lib/widgets/init.lua:148:    -- below uses Iris

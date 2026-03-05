@@ -1,0 +1,377 @@
+{
+  "ok": false,
+  "generated_at": "2026-03-03T23:10:41.061Z",
+  "dry_run": false,
+  "system": {
+    "node_version": "v25.6.1",
+    "platform": "darwin",
+    "hostname": "MacBook-Pro-2.local"
+  },
+  "failed_checks_initial": [],
+  "healed": [
+    "chmod_wrappers",
+    "mcp_sync",
+    "restart_mcp_api",
+    "start_core_pm2_apps"
+  ],
+  "steps": [
+    {
+      "name": "topology_precheck",
+      "command": "npm run -s verify:topology",
+      "started_at": "2026-03-03T23:10:03.516Z",
+      "finished_at": "2026-03-03T23:10:06.021Z",
+      "ok": true,
+      "code": 0,
+      "parsed": null,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n\n=== Runtime Topology Verification ===\n\nstale threshold: 45s\n✅ Postgres connected\nactive workers: 5\n\nWorkers:\n- MacBook-Pro-2.local-71851 role=worker tags=[io_light,io_heavy,infra,deterministic] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71891 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71884 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71870 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71890 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n\nPASS: topology checks passed.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mcp_sync_initial",
+      "command": "npm run -s mcp:sync",
+      "started_at": "2026-03-03T23:10:06.021Z",
+      "finished_at": "2026-03-03T23:10:06.952Z",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "synced": {
+          "shared": "/Users/tatsheen/claw-architect/config/mcp-servers.shared.json",
+          "cursor": "/Users/tatsheen/claw-architect/.cursor/mcp.json",
+          "vscode": "/Users/tatsheen/claw-architect/.vscode/settings.json",
+          "openclaw": "/Users/tatsheen/claw-architect/agent-state/shared-context/MCP-SERVERS-LATEST.json"
+        },
+        "auto_discover": true,
+        "discovered_servers": [],
+        "servers": [
+          "trigger",
+          "jcodemunch",
+          "postgres",
+          "filesystem",
+          "github",
+          "context7"
+        ]
+      },
+      "stdout_tail": "{\n  \"ok\": true,\n  \"synced\": {\n    \"shared\": \"/Users/tatsheen/claw-architect/config/mcp-servers.shared.json\",\n    \"cursor\": \"/Users/tatsheen/claw-architect/.cursor/mcp.json\",\n    \"vscode\": \"/Users/tatsheen/claw-architect/.vscode/settings.json\",\n    \"openclaw\": \"/Users/tatsheen/claw-architect/agent-state/shared-context/MCP-SERVERS-LATEST.json\"\n  },\n  \"auto_discover\": true,\n  \"discovered_servers\": [],\n  \"servers\": [\n    \"trigger\",\n    \"jcodemunch\",\n    \"postgres\",\n    \"filesystem\",\n    \"github\",\n    \"context7\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mcp_health_initial",
+      "command": "npm run -s mcp:health",
+      "started_at": "2026-03-03T23:10:06.952Z",
+      "finished_at": "2026-03-03T23:10:16.607Z",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "checks": [
+          {
+            "label": "jcodemunch",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "usage: jcodemunch-mcp [-h]\n\nRun the jCodeMunch MCP stdio server.\n\noptions:\n  -h, --help  show this help message and exit\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "jcodemunch_get_symbol",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "",
+            "stderr_tail": ""
+          },
+          {
+            "label": "postgres",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "filesystem",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-filesystem] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-github] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "context7",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-context7] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github_server_boot",
+            "ok": true,
+            "code": 124,
+            "timed_out": true,
+            "stdout_tail": "",
+            "stderr_tail": ""
+          }
+        ]
+      },
+      "stdout_tail": "{\n  \"ok\": true,\n  \"checks\": [\n    {\n      \"label\": \"jcodemunch\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"usage: jcodemunch-mcp [-h]\\n\\nRun the jCodeMunch MCP stdio server.\\n\\noptions:\\n  -h, --help  show this help message and exit\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"jcodemunch_get_symbol\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"postgres\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"filesystem\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-filesystem] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-github] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"context7\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-context7] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github_server_boot\",\n      \"ok\": true,\n      \"code\": 124,\n      \"timed_out\": true,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "chmod_wrappers",
+      "command": "chmod +x scripts/jcodemunch-mcp.sh && chmod +x scripts/mcp-postgres.sh && chmod +x scripts/mcp-filesystem.sh && chmod +x scripts/mcp-github.sh && chmod +x scripts/mcp-context7.sh",
+      "started_at": "2026-03-03T23:10:18.159Z",
+      "finished_at": "2026-03-03T23:10:18.277Z",
+      "ok": true,
+      "code": 0,
+      "parsed": null,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mcp_sync",
+      "command": "npm run -s mcp:sync",
+      "started_at": "2026-03-03T23:10:18.277Z",
+      "finished_at": "2026-03-03T23:10:19.492Z",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "synced": {
+          "shared": "/Users/tatsheen/claw-architect/config/mcp-servers.shared.json",
+          "cursor": "/Users/tatsheen/claw-architect/.cursor/mcp.json",
+          "vscode": "/Users/tatsheen/claw-architect/.vscode/settings.json",
+          "openclaw": "/Users/tatsheen/claw-architect/agent-state/shared-context/MCP-SERVERS-LATEST.json"
+        },
+        "auto_discover": true,
+        "discovered_servers": [],
+        "servers": [
+          "trigger",
+          "jcodemunch",
+          "postgres",
+          "filesystem",
+          "github",
+          "context7"
+        ]
+      },
+      "stdout_tail": "{\n  \"ok\": true,\n  \"synced\": {\n    \"shared\": \"/Users/tatsheen/claw-architect/config/mcp-servers.shared.json\",\n    \"cursor\": \"/Users/tatsheen/claw-architect/.cursor/mcp.json\",\n    \"vscode\": \"/Users/tatsheen/claw-architect/.vscode/settings.json\",\n    \"openclaw\": \"/Users/tatsheen/claw-architect/agent-state/shared-context/MCP-SERVERS-LATEST.json\"\n  },\n  \"auto_discover\": true,\n  \"discovered_servers\": [],\n  \"servers\": [\n    \"trigger\",\n    \"jcodemunch\",\n    \"postgres\",\n    \"filesystem\",\n    \"github\",\n    \"context7\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "restart_mcp_api",
+      "command": "pm2 restart jcodemunch-api claw-architect-api",
+      "started_at": "2026-03-03T23:10:19.492Z",
+      "finished_at": "2026-03-03T23:10:23.210Z",
+      "ok": true,
+      "code": 0,
+      "parsed": null,
+      "stdout_tail": "     │ 167.6mb  │ tatsheen │ disabled │\n│ 90  │ i7-desktop-backup-to-nas                   │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 89  │ i7-desktop-system-cleanup                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 88  │ i7-desktop-worker-io                       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 87  │ i7-desktop-worker-nas                      │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 126 │ jcodemunch-api                             │ default     │ 1.0.0   │ fork    │ 2066     │ 1s     │ 5    │ online    │ 30%      │ 62.0mb   │ tatsheen │ disabled │\n│ 31  │ m1-laptop-ollama-maint                     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 30  │ m1-laptop-worker-ai                        │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n└─────┴────────────────────────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "start_core_pm2_apps",
+      "command": "pm2 start ecosystem.background.config.js --only jcodemunch-api,claw-architect-api",
+      "started_at": "2026-03-03T23:10:23.210Z",
+      "finished_at": "2026-03-03T23:10:27.998Z",
+      "ok": true,
+      "code": 0,
+      "parsed": null,
+      "stdout_tail": "     │ 77.1mb   │ tatsheen │ disabled │\n│ 90  │ i7-desktop-backup-to-nas                   │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 89  │ i7-desktop-system-cleanup                  │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 88  │ i7-desktop-worker-io                       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 87  │ i7-desktop-worker-nas                      │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 126 │ jcodemunch-api                             │ default     │ 1.0.0   │ fork    │ 2066     │ 6s     │ 5    │ online    │ 0%       │ 57.7mb   │ tatsheen │ disabled │\n│ 31  │ m1-laptop-ollama-maint                     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n│ 30  │ m1-laptop-worker-ai                        │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ tatsheen │ disabled │\n└─────┴────────────────────────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "mcp_health_final",
+      "command": "npm run -s mcp:health",
+      "started_at": "2026-03-03T23:10:27.998Z",
+      "finished_at": "2026-03-03T23:10:38.521Z",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "checks": [
+          {
+            "label": "jcodemunch",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "usage: jcodemunch-mcp [-h]\n\nRun the jCodeMunch MCP stdio server.\n\noptions:\n  -h, --help  show this help message and exit\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "jcodemunch_get_symbol",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "",
+            "stderr_tail": ""
+          },
+          {
+            "label": "postgres",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "filesystem",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-filesystem] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-github] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "context7",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-context7] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github_server_boot",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "",
+            "stderr_tail": "GitHub MCP Server running on stdio\n"
+          }
+        ]
+      },
+      "stdout_tail": "\": true,\n  \"checks\": [\n    {\n      \"label\": \"jcodemunch\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"usage: jcodemunch-mcp [-h]\\n\\nRun the jCodeMunch MCP stdio server.\\n\\noptions:\\n  -h, --help  show this help message and exit\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"jcodemunch_get_symbol\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"postgres\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"filesystem\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-filesystem] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-github] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"context7\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-context7] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github_server_boot\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"GitHub MCP Server running on stdio\\n\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "priority_symbol_preflight",
+      "command": "npm run -s index:preflight:priority",
+      "started_at": "2026-03-03T23:10:38.521Z",
+      "finished_at": "2026-03-03T23:10:39.737Z",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "generated_at": "2026-03-03T23:10:39.650Z",
+        "max_age_hours": 24,
+        "repos": [
+          {
+            "repo": "cookiespass",
+            "index_file": "/Users/tatsheen/.code-index/local-CookiesPass.json",
+            "index_age_hours": 0.03,
+            "index_fresh": true,
+            "symbols_total": 551,
+            "sample_symbol_id": "tests/api.test.ts::assert#function",
+            "repomap_path": "/Users/tatsheen/claw-architect/scripts/reports/repomaps/cookiespass-repomap.md",
+            "repomap_exists": true,
+            "repomap_age_hours": 0.26,
+            "repomap_fresh": true,
+            "get_symbol": {
+              "ok": true,
+              "code": 200,
+              "symbol_id": "tests/api.test.ts::assert#function",
+              "file": "tests/api.test.ts"
+            }
+          },
+          {
+            "repo": "payclaw",
+            "index_file": "/Users/tatsheen/.code-index/local-payclaw.json",
+            "index_age_hours": 0.03,
+            "index_fresh": true,
+            "symbols_total": 29,
+            "sample_symbol_id": "PayClaw-Lite/server/src/webhooks.ts::startWebhookServer#function",
+            "repomap_path": "/Users/tatsheen/claw-architect/scripts/reports/repomaps/payclaw-repomap.md",
+            "repomap_exists": true,
+            "repomap_age_hours": 0.99,
+            "repomap_fresh": true,
+            "get_symbol": {
+              "ok": true,
+              "code": 200,
+              "symbol_id": "PayClaw-Lite/server/src/webhooks.ts::startWebhookServer#function",
+              "file": "PayClaw-Lite/server/src/webhooks.ts"
+            }
+          },
+          {
+            "repo": "gocrawdaddy",
+            "index_file": "/Users/tatsheen/.code-index/local-GoCrawdaddy.json",
+            "index_age_hours": 0.03,
+            "index_fresh": true,
+            "symbols_total": 74,
+            "sample_symbol_id": "src/marketing-engine.js::nowIso#function",
+            "repomap_path": "/Users/tatsheen/claw-architect/scripts/reports/repomaps/gocrawdaddy-repomap.md",
+            "repomap_exists": true,
+            "repomap_age_hours": 0.26,
+            "repomap_fresh": true,
+            "get_symbol": {
+              "ok": true,
+              "code": 200,
+              "symbol_id": "src/marketing-engine.js::nowIso#function",
+              "file": "src/marketing-engine.js"
+            }
+          }
+        ],
+        "report": {
+          "jsonPath": "/Users/tatsheen/claw-architect/reports/2026-03-03T23-10-39-653Z-symbol-index-preflight.json",
+          "latestPath": "/Users/tatsheen/claw-architect/reports/symbol-index-preflight-latest.json"
+        }
+      },
+      "stdout_tail": "ymbols_total\": 29,\n      \"sample_symbol_id\": \"PayClaw-Lite/server/src/webhooks.ts::startWebhookServer#function\",\n      \"repomap_path\": \"/Users/tatsheen/claw-architect/scripts/reports/repomaps/payclaw-repomap.md\",\n      \"repomap_exists\": true,\n      \"repomap_age_hours\": 0.99,\n      \"repomap_fresh\": true,\n      \"get_symbol\": {\n        \"ok\": true,\n        \"code\": 200,\n        \"symbol_id\": \"PayClaw-Lite/server/src/webhooks.ts::startWebhookServer#function\",\n        \"file\": \"PayClaw-Lite/server/src/webhooks.ts\"\n      }\n    },\n    {\n      \"repo\": \"gocrawdaddy\",\n      \"index_file\": \"/Users/tatsheen/.code-index/local-GoCrawdaddy.json\",\n      \"index_age_hours\": 0.03,\n      \"index_fresh\": true,\n      \"symbols_total\": 74,\n      \"sample_symbol_id\": \"src/marketing-engine.js::nowIso#function\",\n      \"repomap_path\": \"/Users/tatsheen/claw-architect/scripts/reports/repomaps/gocrawdaddy-repomap.md\",\n      \"repomap_exists\": true,\n      \"repomap_age_hours\": 0.26,\n      \"repomap_fresh\": true,\n      \"get_symbol\": {\n        \"ok\": true,\n        \"code\": 200,\n        \"symbol_id\": \"src/marketing-engine.js::nowIso#function\",\n        \"file\": \"src/marketing-engine.js\"\n      }\n    }\n  ],\n  \"report\": {\n    \"jsonPath\": \"/Users/tatsheen/claw-architect/reports/2026-03-03T23-10-39-653Z-symbol-index-preflight.json\",\n    \"latestPath\": \"/Users/tatsheen/claw-architect/reports/symbol-index-preflight-latest.json\"\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "topology_postcheck",
+      "command": "npm run -s verify:topology",
+      "started_at": "2026-03-03T23:10:39.737Z",
+      "finished_at": "2026-03-03T23:10:40.595Z",
+      "ok": true,
+      "code": 0,
+      "parsed": null,
+      "stdout_tail": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n\n=== Runtime Topology Verification ===\n\nstale threshold: 45s\n✅ Postgres connected\nactive workers: 5\n\nWorkers:\n- MacBook-Pro-2.local-71890 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71891 role=nas_worker tags=[infra,deterministic,io_heavy,cpu_heavy] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71851 role=worker tags=[io_light,io_heavy,infra,deterministic] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71884 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n- MacBook-Pro-2.local-71870 role=ai_worker tags=[ai,qa] pg=192.168.1.164 redis=192.168.1.164\n\nPASS: topology checks passed.\n",
+      "stderr_tail": ""
+    }
+  ],
+  "pm2": {
+    "pre": {
+      "ok": false,
+      "missing_or_down": [
+        {
+          "name": "jcodemunch-api",
+          "status": "stopped"
+        }
+      ]
+    },
+    "post": {
+      "ok": false,
+      "missing_or_down": [
+        {
+          "name": "jcodemunch-api",
+          "status": "stopped"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "mcp_health_ok": true,
+    "priority_index_preflight_ok": true,
+    "topology_ok": true,
+    "core_pm2_ok": false,
+    "checks_total": 7,
+    "checks_failed": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-03T08:09:21.188Z",
+  "profile": "balanced",
+  "pull_missing_local": false,
+  "pull_missing_remote": false,
+  "hosts": [
+    "http://localhost:11434"
+  ],
+  "required_models": [
+    "qwen2.5:14b",
+    "llama3.1:8b",
+    "deepseek-r1:8b",
+    "llama3.1:8b"
+  ],
+  "results": [
+    {
+      "host": "http://localhost:11434",
+      "reachable": true,
+      "missing": [],
+      "present": [
+        "qwen2.5:14b",
+        "llama3.1:8b",
+        "deepseek-r1:8b",
+        "llama3.1:8b"
+      ],
+      "pulled": [],
+      "remote_pull": null
+    }
+  ],
+  "summary": {
+    "hosts_total": 1,
+    "hosts_reachable": 1,
+    "hosts_unreachable": 0,
+    "missing_total": 0
+  }
+}

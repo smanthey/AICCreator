@@ -1,0 +1,14 @@
+{
+	email {$DASHBOARD_EMAIL}
+}
+
+{$DASHBOARD_DOMAIN} {
+	encode zstd gzip
+
+	# Prompt for credentials before exposing dashboards and API over the internet.
+	basic_auth {
+		{$DASHBOARD_BASICAUTH_USER} {$DASHBOARD_BASICAUTH_HASH}
+	}
+
+	reverse_proxy architect-api:4051
+}

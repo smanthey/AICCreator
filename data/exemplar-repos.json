@@ -1,0 +1,529 @@
+{
+  "generated_at": "2026-03-04T10:31:45.328Z",
+  "dashboard_chat": [
+    {
+      "full_name": "infiniflow/ragflow",
+      "html_url": "https://github.com/infiniflow/ragflow",
+      "stars": 74142,
+      "score": 301.67,
+      "source": "scout"
+    },
+    {
+      "full_name": "simstudioai/sim",
+      "html_url": "https://github.com/simstudioai/sim",
+      "stars": 26827,
+      "score": 297.69,
+      "source": "scout"
+    },
+    {
+      "full_name": "f/prompts.chat",
+      "html_url": "https://github.com/f/prompts.chat",
+      "stars": 149975,
+      "score": 289.52,
+      "source": "scout"
+    },
+    {
+      "full_name": "danny-avila/LibreChat",
+      "html_url": "https://github.com/danny-avila/LibreChat",
+      "stars": 34315,
+      "score": 107.02,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "open-webui/open-webui",
+      "html_url": "https://github.com/open-webui/open-webui",
+      "stars": 125678,
+      "score": 104.4,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "casibase/casibase",
+      "html_url": "https://github.com/casibase/casibase",
+      "stars": 4453,
+      "score": 102.33,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "lobehub/lobehub",
+      "html_url": "https://github.com/lobehub/lobehub",
+      "stars": 73025,
+      "score": 97.09,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "langflow-ai/langflow",
+      "html_url": "https://github.com/langflow-ai/langflow",
+      "stars": 145239,
+      "score": 82,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "FlowiseAI/Flowise",
+      "html_url": "https://github.com/FlowiseAI/Flowise",
+      "stars": 49751,
+      "score": 78.63,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "Mintplex-Labs/anything-llm",
+      "html_url": "https://github.com/Mintplex-Labs/anything-llm",
+      "stars": 55364,
+      "score": 73.94,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "OpenHands/OpenHands",
+      "html_url": "https://github.com/OpenHands/OpenHands",
+      "stars": 68517,
+      "score": 53.03,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "huggingface/chat-ui",
+      "html_url": "https://github.com/huggingface/chat-ui",
+      "stars": 10542,
+      "score": 42.44,
+      "source": "benchmark"
+    },
+    {
+      "full_name": "langgenius/dify",
+      "html_url": "https://github.com/langgenius/dify",
+      "stars": 131149,
+      "score": 37.7,
+      "source": "benchmark"
+    }
+  ],
+  "by_feature_tags": {
+    "stripe": [
+      {
+        "name": "autopay_ui",
+        "repo": "local/autopay_ui",
+        "url": "https://github.com/smanthey/autopay_ui"
+      },
+      {
+        "name": "CaptureInbound",
+        "repo": "local/CaptureInbound",
+        "url": "https://github.com/smanthey/CaptureInbound"
+      }
+    ],
+    "telnyx": [
+      {
+        "name": "autopay_ui",
+        "repo": "local/autopay_ui",
+        "url": "https://github.com/smanthey/autopay_ui"
+      }
+    ],
+    "webhook": [
+      {
+        "name": "autopay_ui",
+        "repo": "local/autopay_ui",
+        "url": "https://github.com/smanthey/autopay_ui"
+      },
+      {
+        "name": "veritap_2026",
+        "repo": "local/veritap_2026",
+        "url": "https://github.com/smanthey/veritap"
+      },
+      {
+        "name": "cal.com",
+        "repo": "calcom/cal.com",
+        "url": "https://github.com/calcom/cal.com"
+      }
+    ],
+    "sms": [
+      {
+        "name": "autopay_ui",
+        "repo": "local/autopay_ui",
+        "url": "https://github.com/smanthey/autopay_ui"
+      }
+    ],
+    "checkout": [
+      {
+        "name": "autopay_ui",
+        "repo": "local/autopay_ui",
+        "url": "https://github.com/smanthey/autopay_ui"
+      },
+      {
+        "name": "medusajs",
+        "repo": "medusajs/medusa",
+        "url": "https://github.com/medusajs/medusa"
+      }
+    ],
+    "email": [
+      {
+        "name": "CaptureInbound",
+        "repo": "local/CaptureInbound",
+        "url": "https://github.com/smanthey/CaptureInbound"
+      },
+      {
+        "name": "cal.com",
+        "repo": "calcom/cal.com",
+        "url": "https://github.com/calcom/cal.com"
+      }
+    ],
+    "queue": [
+      {
+        "name": "CaptureInbound",
+        "repo": "local/CaptureInbound",
+        "url": "https://github.com/smanthey/CaptureInbound"
+      },
+      {
+        "name": "openclaw",
+        "repo": "local/claw-architect",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "name": "trigger.dev",
+        "repo": "triggerdotdev/trigger.dev",
+        "url": "https://github.com/triggerdotdev/trigger.dev"
+      }
+    ],
+    "api": [
+      {
+        "name": "CaptureInbound",
+        "repo": "local/CaptureInbound",
+        "url": "https://github.com/smanthey/CaptureInbound"
+      },
+      {
+        "name": "veritap_2026",
+        "repo": "local/veritap_2026",
+        "url": "https://github.com/smanthey/veritap"
+      },
+      {
+        "name": "medusajs",
+        "repo": "medusajs/medusa",
+        "url": "https://github.com/medusajs/medusa"
+      },
+      {
+        "name": "supabase",
+        "repo": "supabase/supabase",
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "name": "cal.com",
+        "repo": "calcom/cal.com",
+        "url": "https://github.com/calcom/cal.com"
+      },
+      {
+        "name": "directus",
+        "repo": "directus/directus",
+        "url": "https://github.com/directus/directus"
+      },
+      {
+        "name": "appsmith",
+        "repo": "appsmithorg/appsmith",
+        "url": "https://github.com/appsmithorg/appsmith"
+      }
+    ],
+    "auth": [
+      {
+        "name": "veritap_2026",
+        "repo": "local/veritap_2026",
+        "url": "https://github.com/smanthey/veritap"
+      },
+      {
+        "name": "medusajs",
+        "repo": "medusajs/medusa",
+        "url": "https://github.com/medusajs/medusa"
+      },
+      {
+        "name": "supabase",
+        "repo": "supabase/supabase",
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "name": "directus",
+        "repo": "directus/directus",
+        "url": "https://github.com/directus/directus"
+      },
+      {
+        "name": "appsmith",
+        "repo": "appsmithorg/appsmith",
+        "url": "https://github.com/appsmithorg/appsmith"
+      }
+    ],
+    "logging": [
+      {
+        "name": "veritap_2026",
+        "repo": "local/veritap_2026",
+        "url": "https://github.com/smanthey/veritap"
+      }
+    ],
+    "pm2": [
+      {
+        "name": "openclaw",
+        "repo": "local/claw-architect",
+        "url": "https://github.com/openclaw/openclaw"
+      }
+    ],
+    "dispatcher": [
+      {
+        "name": "openclaw",
+        "repo": "local/claw-architect",
+        "url": "https://github.com/openclaw/openclaw"
+      }
+    ],
+    "observability": [
+      {
+        "name": "openclaw",
+        "repo": "local/claw-architect",
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "name": "directus",
+        "repo": "directus/directus",
+        "url": "https://github.com/directus/directus"
+      },
+      {
+        "name": "appsmith",
+        "repo": "appsmithorg/appsmith",
+        "url": "https://github.com/appsmithorg/appsmith"
+      }
+    ],
+    "workflow": [
+      {
+        "name": "trigger.dev",
+        "repo": "triggerdotdev/trigger.dev",
+        "url": "https://github.com/triggerdotdev/trigger.dev"
+      }
+    ],
+    "retry": [
+      {
+        "name": "trigger.dev",
+        "repo": "triggerdotdev/trigger.dev",
+        "url": "https://github.com/triggerdotdev/trigger.dev"
+      },
+      {
+        "name": "cypress",
+        "repo": "cypress-io/cypress",
+        "url": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "name": "webdriverio",
+        "repo": "webdriverio/webdriverio",
+        "url": "https://github.com/webdriverio/webdriverio"
+      }
+    ],
+    "durable": [
+      {
+        "name": "trigger.dev",
+        "repo": "triggerdotdev/trigger.dev",
+        "url": "https://github.com/triggerdotdev/trigger.dev"
+      }
+    ],
+    "payment": [
+      {
+        "name": "medusajs",
+        "repo": "medusajs/medusa",
+        "url": "https://github.com/medusajs/medusa"
+      }
+    ],
+    "database": [
+      {
+        "name": "supabase",
+        "repo": "supabase/supabase",
+        "url": "https://github.com/supabase/supabase"
+      }
+    ],
+    "scheduling": [
+      {
+        "name": "cal.com",
+        "repo": "calcom/cal.com",
+        "url": "https://github.com/calcom/cal.com"
+      }
+    ],
+    "schema": [
+      {
+        "name": "directus",
+        "repo": "directus/directus",
+        "url": "https://github.com/directus/directus"
+      }
+    ],
+    "qa": [
+      {
+        "name": "cypress",
+        "repo": "cypress-io/cypress",
+        "url": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "name": "webdriverio",
+        "repo": "webdriverio/webdriverio",
+        "url": "https://github.com/webdriverio/webdriverio"
+      },
+      {
+        "name": "selenium",
+        "repo": "seleniumhq/selenium",
+        "url": "https://github.com/SeleniumHQ/selenium"
+      },
+      {
+        "name": "puppeteer",
+        "repo": "puppeteer/puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer"
+      },
+      {
+        "name": "testcafe",
+        "repo": "DevExpress/testcafe",
+        "url": "https://github.com/DevExpress/testcafe"
+      },
+      {
+        "name": "backstopjs",
+        "repo": "garris/BackstopJS",
+        "url": "https://github.com/garris/BackstopJS"
+      },
+      {
+        "name": "k6-browser",
+        "repo": "grafana/k6",
+        "url": "https://github.com/grafana/k6"
+      }
+    ],
+    "assertion": [
+      {
+        "name": "cypress",
+        "repo": "cypress-io/cypress",
+        "url": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "name": "testcafe",
+        "repo": "DevExpress/testcafe",
+        "url": "https://github.com/DevExpress/testcafe"
+      }
+    ],
+    "browser": [
+      {
+        "name": "cypress",
+        "repo": "cypress-io/cypress",
+        "url": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "name": "webdriverio",
+        "repo": "webdriverio/webdriverio",
+        "url": "https://github.com/webdriverio/webdriverio"
+      },
+      {
+        "name": "selenium",
+        "repo": "seleniumhq/selenium",
+        "url": "https://github.com/SeleniumHQ/selenium"
+      },
+      {
+        "name": "puppeteer",
+        "repo": "puppeteer/puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer"
+      },
+      {
+        "name": "testcafe",
+        "repo": "DevExpress/testcafe",
+        "url": "https://github.com/DevExpress/testcafe"
+      },
+      {
+        "name": "k6-browser",
+        "repo": "grafana/k6",
+        "url": "https://github.com/grafana/k6"
+      }
+    ],
+    "mobile": [
+      {
+        "name": "webdriverio",
+        "repo": "webdriverio/webdriverio",
+        "url": "https://github.com/webdriverio/webdriverio"
+      }
+    ],
+    "webdriver": [
+      {
+        "name": "selenium",
+        "repo": "seleniumhq/selenium",
+        "url": "https://github.com/SeleniumHQ/selenium"
+      }
+    ],
+    "cdp": [
+      {
+        "name": "puppeteer",
+        "repo": "puppeteer/puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer"
+      },
+      {
+        "name": "k6-browser",
+        "repo": "grafana/k6",
+        "url": "https://github.com/grafana/k6"
+      }
+    ],
+    "visual": [
+      {
+        "name": "backstopjs",
+        "repo": "garris/BackstopJS",
+        "url": "https://github.com/garris/BackstopJS"
+      }
+    ],
+    "regression": [
+      {
+        "name": "backstopjs",
+        "repo": "garris/BackstopJS",
+        "url": "https://github.com/garris/BackstopJS"
+      }
+    ],
+    "snapshot": [
+      {
+        "name": "backstopjs",
+        "repo": "garris/BackstopJS",
+        "url": "https://github.com/garris/BackstopJS"
+      }
+    ],
+    "performance": [
+      {
+        "name": "k6-browser",
+        "repo": "grafana/k6",
+        "url": "https://github.com/grafana/k6"
+      }
+    ]
+  },
+  "reddit_context": [
+    {
+      "title": "I spent 18 months building a design system that makes UI's feel \"oddly satisfying.\" Now it's open source!",
+      "subreddit": "webdev",
+      "rank_score": 220.76,
+      "permalink": "https://www.reddit.com/r/webdev/comments/1m41arx/i_spent_18_months_building_a_design_system_that/"
+    },
+    {
+      "title": "Meta's crawler made 11 MILLION requests to my site in 30 days. Vercel charged me for every single one.",
+      "subreddit": "webdev",
+      "rank_score": 219.33,
+      "permalink": "https://www.reddit.com/r/webdev/comments/1qpqapj/metas_crawler_made_11_million_requests_to_my_site/"
+    },
+    {
+      "title": "Claude Code is a Beast – Tips from 6 Months of Hardcore Use",
+      "subreddit": "ClaudeAI",
+      "rank_score": 216.03,
+      "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1oivjvm/claude_code_is_a_beast_tips_from_6_months_of/"
+    },
+    {
+      "title": "Two weeks later with OpenClaw and this is what I’ve learned",
+      "subreddit": "openclaw",
+      "rank_score": 211.26,
+      "permalink": "https://www.reddit.com/r/openclaw/comments/1rf0vz6/two_weeks_later_with_openclaw_and_this_is_what/"
+    },
+    {
+      "title": "Hugging Face Is Teasing Something Anthropic Related",
+      "subreddit": "LocalLLaMA",
+      "rank_score": 210.36,
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1r0zn8o/hugging_face_is_teasing_something_anthropic/"
+    }
+  ],
+  "context_repos": [
+    "local/autopay_ui",
+    "local/CaptureInbound",
+    "local/veritap_2026",
+    "local/claw-architect",
+    "triggerdotdev/trigger.dev",
+    "medusajs/medusa",
+    "supabase/supabase",
+    "calcom/cal.com",
+    "directus/directus",
+    "appsmithorg/appsmith",
+    "cypress-io/cypress",
+    "webdriverio/webdriverio",
+    "seleniumhq/selenium",
+    "puppeteer/puppeteer",
+    "DevExpress/testcafe",
+    "garris/BackstopJS",
+    "grafana/k6"
+  ]
+}

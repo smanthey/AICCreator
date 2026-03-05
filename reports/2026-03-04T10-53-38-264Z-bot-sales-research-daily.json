@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-03-04T10:53:38.099Z",
+  "window_hours": 24,
+  "summary": {
+    "attempts": 161,
+    "sent": 119,
+    "rejected": 42,
+    "responded": 0,
+    "converted": 0,
+    "delivery_rate_pct": 73.91,
+    "response_rate_pct": 0,
+    "conversion_rate_pct": 0
+  },
+  "by_platform": [
+    {
+      "platform": "email",
+      "attempts": 161,
+      "sent": 119,
+      "rejected": 42,
+      "responded": 0,
+      "converted": 0
+    }
+  ],
+  "by_variant": [
+    {
+      "message_variant": "A",
+      "attempts": 83,
+      "sent": 44,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "C",
+      "attempts": 38,
+      "sent": 38,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "B",
+      "attempts": 37,
+      "sent": 37,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    },
+    {
+      "message_variant": "INVALID",
+      "attempts": 3,
+      "sent": 0,
+      "responded": 0,
+      "converted": 0,
+      "with_payment_link": 0
+    }
+  ],
+  "top_errors": [
+    {
+      "error": "Email send failed: HTTP 0",
+      "count": 39
+    },
+    {
+      "error": "invalid_email_artifact",
+      "count": 3
+    }
+  ],
+  "suspicious_targets": [
+    {
+      "platform": "email",
+      "bot_id": "become_a_patron_button@2x.png",
+      "contact_info": "become_a_patron_button@2x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:38:20.765Z"
+    },
+    {
+      "platform": "email",
+      "bot_id": "icon@3x.png",
+      "contact_info": "icon@3x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:36:55.910Z"
+    },
+    {
+      "platform": "email",
+      "bot_id": "forum_widget_thumbnail@2x.png",
+      "contact_info": "forum_widget_thumbnail@2x.png",
+      "status": "rejected",
+      "sent_at": "2026-03-04T03:24:15.848Z"
+    }
+  ],
+  "interesting_conversations_or_creations": [],
+  "conversions": []
+}

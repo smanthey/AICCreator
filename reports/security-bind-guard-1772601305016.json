@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-04T05:15:05.016Z",
+  "started_at": "2026-03-04T05:15:04.987Z",
+  "scanned_files": 318,
+  "violations_count": 1,
+  "violations": [
+    {
+      "type": "wildcard_bind_literal",
+      "file": "scripts/email-hub-server.js",
+      "line": 719,
+      "detail": "Found 0.0.0.0 in bind-related code. Use 127.0.0.1 default and explicit allowlist if required.",
+      "snippet": "server.listen(PORT, \"0.0.0.0\", () => {"
+    }
+  ],
+  "ok": false
+}

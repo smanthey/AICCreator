@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-04T00:22:01.310Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }\n✅ Postgres connected\n"
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-04T00:22:18.397Z"
+}

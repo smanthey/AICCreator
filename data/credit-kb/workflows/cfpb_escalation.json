@@ -1,0 +1,17 @@
+{
+  "workflow": "cfpb_escalation",
+  "description": "Escalation when procedural compliance fails.",
+  "requires_evidence": true,
+  "steps": [
+    "Compile timeline and tracking evidence",
+    "Attach prior correspondence",
+    "Submit CFPB complaint packet",
+    "Track regulator response"
+  ],
+  "allowed_issue_types": [
+    "bureau_nonresponse",
+    "collector_nonresponse",
+    "furnisher_nonresponse",
+    "verification_without_substance"
+  ]
+}

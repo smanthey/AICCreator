@@ -1,0 +1,112 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:8:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:28:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:45:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:52:			return thunkValue
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:71:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:99:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.spec.lua:124:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.spec.lua:13:			return 11, "hello"
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.spec.lua:61:			return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.spec.lua:66:					return self.message .. "\n" .. self.stack
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/loggerMiddleware.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/loggerMiddleware.spec.lua:10:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/thunkMiddleware.lua:10:return makeThunkMiddleware(nil) -- no extra argument
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/types/thunks.lua:18:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.lua:9:return function<State>(initialState, handlers): Reducer<State>
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.lua:11:	return function(state: any, action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.lua:19:			return handler(state, action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.lua:22:		return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/types/reducers.lua:13:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:11:	return game:DefineFastFlag("RoduxRemoveConnectTraceback", false)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:13:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:28:	return new
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:40:	return new
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:66:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:117:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Signal.lua:130:return Signal
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/init.lua:26:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:10:	return debug.traceback(message)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:15:		return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:18:					return action(store, extraArgument)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:27:					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:30:				return result
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:33:			return nextDispatch(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:37:	return thunkMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeThunkMiddleware.lua:40:return makeThunkMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/types/store.lua:29:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/loggerMiddleware.lua:13:	return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/loggerMiddleware.lua:20:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/loggerMiddleware.lua:24:return loggerMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:6:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:14:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:22:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:30:			return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:40:			return function() end
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:49:				return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.spec.lua:55:				return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.lua:17:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.lua:27:			return result
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/makeActionCreator.lua:32:return makeActionCreator
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:18:	return debug.traceback(tostring(message))
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:107:			return unboundDispatch(self, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:116:			return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:120:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:137:	return self._state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.lua:228:return Store
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/types/actions.lua:15:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.lua:19:	return function(state, action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.lua:32:		return newState
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.lua:36:return combineReducers
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:10:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:16:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:58:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:87:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/createReducer.spec.lua:93:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.lua:28:	return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.lua:34:	return resultHandler(co, coroutine.resume(co, ...))
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/NoYield.lua:37:return NoYield
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/prettyPrint.lua:32:	return table.concat(output, "")
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/prettyPrint.lua:35:return prettyPrint
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:7:				return "hello, world"
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:18:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:29:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:44:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:56:					return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:73:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:92:					return "test state"
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:95:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:103:				return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:137:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:142:				return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:144:					return nextDispatch(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:150:				return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:152:					return nextDispatch(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:181:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:246:					return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:250:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:283:				return "foo"
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:315:					return "bar"
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:318:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:340:					return state + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:343:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:373:					return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:377:					return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:382:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:426:				return state + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:464:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:476:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:502:					return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/Store.spec.lua:506:				return state
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.spec.lua:26:				return (state or 0) + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.spec.lua:29:				return (state or 0) + 3
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.spec.lua:41:				return (state or 0) + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/src/combineReducers.spec.lua:44:				return (state or 0) + 3
+/Users/tatsheen/claw-repos/oss-index/roblox/rodux/test/runner.server.lua:20:	return results.failureCount == 0 and 0 or 1

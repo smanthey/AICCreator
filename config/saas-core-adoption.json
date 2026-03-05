@@ -1,0 +1,41 @@
+{
+  "targets": [
+    {
+      "repo": "local/PayClaw",
+      "domains": ["stripe", "email", "queue"],
+      "status": "pending",
+      "notes": "Refactor to use core/stripe, core/email, and core/queue for all billing and notifications."
+    },
+    {
+      "repo": "local/CaptureInbound",
+      "domains": ["stripe", "email", "queue"],
+      "status": "pending",
+      "notes": "Adopt core modules for wallet pass billing and lifecycle emails."
+    },
+    {
+      "repo": "local/veritap",
+      "domains": ["stripe", "email", "queue", "auth"],
+      "status": "pending",
+      "notes": "Align verification SaaS flows with core billing, email, and auth helpers."
+    },
+    {
+      "repo": "local/v0-morningops",
+      "domains": ["stripe", "email", "queue"],
+      "status": "pending",
+      "notes": "Subscription billing and notifications should be wired into core/stripe and core/email."
+    },
+    {
+      "repo": "local/CookiesPass",
+      "domains": ["stripe", "email"],
+      "status": "pending",
+      "notes": "Transition from pricing-only to full checkout using core/stripe patterns."
+    },
+    {
+      "repo": "local/cookies-tempe",
+      "domains": ["stripe", "email"],
+      "status": "pending",
+      "notes": "Mirror CookiesPass core integration for Vercel/Replit variant."
+    }
+  ]
+}
+

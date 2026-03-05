@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-03T23:40:36.847Z",
+  "sources": {
+    "reddit_top": {
+      "state": "open",
+      "blocked_until": 1772588395869,
+      "opened_at": 1772581195869,
+      "cooldown_ms": 7200000,
+      "attempts_total": 20,
+      "successes_total": 6,
+      "failures_total": 14,
+      "failure_streak": 4,
+      "no_progress_streak": 2,
+      "last_result_hash": "0a993e54584a03f9",
+      "last_error": "blocked_by_circuit_breaker",
+      "last_status_code": 0,
+      "last_latency_ms": 0,
+      "last_success_at": "2026-03-03T23:39:52.039Z",
+      "last_failure_at": "2026-03-03T23:40:35.953Z"
+    },
+    "old_reddit_top": {
+      "state": "open",
+      "blocked_until": 1772588395869,
+      "opened_at": 1772581195869,
+      "cooldown_ms": 7200000,
+      "attempts_total": 14,
+      "successes_total": 0,
+      "failures_total": 14,
+      "failure_streak": 4,
+      "no_progress_streak": 2,
+      "last_result_hash": "0a993e54584a03f9",
+      "last_error": "blocked_by_circuit_breaker",
+      "last_status_code": 0,
+      "last_latency_ms": 0,
+      "last_success_at": null,
+      "last_failure_at": "2026-03-03T23:40:35.953Z"
+    },
+    "hot": {
+      "state": "closed",
+      "blocked_until": 0,
+      "opened_at": 0,
+      "cooldown_ms": 900000,
+      "attempts_total": 14,
+      "successes_total": 14,
+      "failures_total": 0,
+      "failure_streak": 0,
+      "no_progress_streak": 0,
+      "last_result_hash": "c744dcb92d50c165",
+      "last_error": null,
+      "last_status_code": 200,
+      "last_latency_ms": 889,
+      "last_success_at": "2026-03-03T23:40:36.843Z",
+      "last_failure_at": null
+    },
+    "new": {
+      "state": "closed",
+      "blocked_until": 0,
+      "opened_at": 0,
+      "cooldown_ms": 900000,
+      "attempts_total": 0,
+      "successes_total": 0,
+      "failures_total": 0,
+      "failure_streak": 0,
+      "no_progress_streak": 0,
+      "last_result_hash": "",
+      "last_error": null,
+      "last_status_code": 0,
+      "last_latency_ms": 0,
+      "last_success_at": null,
+      "last_failure_at": null
+    },
+    "rss": {
+      "state": "closed",
+      "blocked_until": 0,
+      "opened_at": 0,
+      "cooldown_ms": 900000,
+      "attempts_total": 0,
+      "successes_total": 0,
+      "failures_total": 0,
+      "failure_streak": 0,
+      "no_progress_streak": 0,
+      "last_result_hash": "",
+      "last_error": null,
+      "last_status_code": 0,
+      "last_latency_ms": 0,
+      "last_success_at": null,
+      "last_failure_at": null
+    }
+  },
+  "auth_profiles": {
+    "profile_1": {
+      "attempts": 24,
+      "successes": 24,
+      "failures": 0,
+      "last_error": null
+    }
+  }
+}

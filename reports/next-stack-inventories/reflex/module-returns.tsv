@@ -1,0 +1,243 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.lua:11:	return initialState
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.lua:41:			return nextState
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.lua:45:	return combinedActions
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.lua:60:	return createProducer(combineInitialState(producers), combineActions(producers))
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.lua:63:return combineProducers
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:14:	return a new state object.
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:62:		return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:73:		return if selector then selector(state) else state
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:87:		return dispatchers
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:91:		return actions
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:95:		return createProducer(state, actions)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:136:		return subscribe(function(nextState)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:172:		return unsubscribe
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:176:		return Promise.new(function(resolve, _, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:224:		return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:269:		return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:293:		return enhancer(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:297:		return self:enhance(applyMiddleware(...))
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:304:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:315:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:325:		return self:wait(function(state)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:326:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:334:			return state
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:346:	return producer
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createProducer.lua:349:return createProducer
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/setState.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/setState.spec.lua:9:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:38:		return sharedState
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:98:		return function(dispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:100:				return dispatch
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:103:			return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:119:				return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:124:	return broadcaster
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.lua:127:return createBroadcaster
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/hydrate.lua:6:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/hydrate.lua:13:	return action.name == HYDRATE
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/hydrate.lua:16:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.spec.lua:13:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.spec.lua:18:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.spec.lua:147:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcaster.spec.lua:174:				return if action.name == "incrementFoo" then action else nil
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/init.lua:20:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.lua:51:		return function(dispatch)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.lua:52:			return dispatch
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.lua:56:	return receiver
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.lua:59:return createBroadcastReceiver
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.spec.lua:15:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/createBroadcastReceiver.spec.lua:20:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/subscribe.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/subscribe.spec.lua:7:		return state.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/subscribe.spec.lua:13:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/subscribe.spec.lua:16:				return { count = state.count - amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/subscribe.spec.lua:205:			return current > previous
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getState.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getState.spec.lua:9:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getState.spec.lua:30:			return state.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:7:		return string.format("%q", value)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:15:		return result .. "}"
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:17:		return tostring(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:32:	return function(dispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:33:		return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:42:			return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/middleware/loggerMiddleware.lua:47:return loggerMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.lua:26:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.lua:34:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.lua:37:return testSelector
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:18:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:22:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:42:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:44:			return value and value > 0
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:48:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:71:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:75:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:90:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:92:			return value == 1
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:96:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:108:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:110:			return value == nil
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:123:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:126:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:164:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:166:			return value == 1
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:169:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:202:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observeWhile.spec.lua:205:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:15:		return function(dispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:16:			return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:18:				return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:32:	return function(producer)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:49:		return producer
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.lua:53:return applyMiddleware
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:5:		return state
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:9:		return item.id
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:13:		return { id = id }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:19:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:23:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:82:			return index
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.spec.lua:108:			return index
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getDispatchers.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getDispatchers.spec.lua:9:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/getDispatchers.spec.lua:12:				return { count = state.count - amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:93:	return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:116:			return result
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:122:		return lastResult
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:156:	return memoize(function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:161:		return memoizedCombiner(table.unpack(inputs, 1, dependencyCount))
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.lua:182:return createSelector
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:10:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:14:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:19:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:25:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:29:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.lua:32:return shallowEqual
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/setInterval.lua:5:		return function() end
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/setInterval.lua:20:	return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/setInterval.lua:25:return setInterval
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.spec.lua:7:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/testSelector.spec.lua:15:			return state.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.lua:35:	return createSelector(selector, function(items: { [K]: V })
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.lua:62:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/createSelectArrayDiffs.lua:69:return createSelectArrayDiffs
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/utils/shallowEqual.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/once.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/once.spec.lua:7:		return state.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/once.spec.lua:13:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/once.spec.lua:16:				return { count = state.count - amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/once.spec.lua:80:			return current > previous
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.spec.lua:11:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.spec.lua:14:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.spec.lua:19:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/combineProducers.spec.lua:22:					return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/resetState.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/resetState.spec.lua:10:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:8:		return state.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:14:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:17:				return { count = state.count - amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:31:			return state.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/wait.spec.lua:56:			return current > previous
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/types.lua:197:			return function(dispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/types.lua:198:				return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/types.lua:200:					return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/types.lua:349:return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:7:		return state
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:11:		return item.id
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:15:		return { id = id }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:21:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:25:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:72:			return key
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:95:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:135:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:156:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:188:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:218:			return index
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/observe.spec.lua:224:			return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/init.spec.lua:10:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/init.spec.lua:13:				return { count = state.count - amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Producer.spec/init.spec.lua:53:			return current.count > previous.count
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:26:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:32:						return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:37:						return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:44:					return { a = { count = state.a.count + amount }, b = state.b }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:47:					return { b = { count = state.b.count + amount }, a = state.a }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:54:						return { count = state.count + action.amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:59:						return { count = state.count + action.amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:66:					return { a = { count = state.a.count + action.amount }, b = state.b }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:69:					return { b = { count = state.b.count + action.amount }, a = state.a }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/combined-dispatch.bench.lua:79:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/Promise.lua:9:	return require(packages.Promise)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:25:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:30:					return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:33:					return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:39:					return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:42:					return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch.bench.lua:52:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:10:				return { count = state.count + amount }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:23:			return function(dispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:27:				return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:33:					return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:46:			return function(producer)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:47:				return function(dispatch)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:48:					return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:50:						return dispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:64:			return function(dispatch)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:65:				return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/applyMiddleware.spec.lua:67:					return 1
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/broadcast/init.lua:4:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:26:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:29:			return function(nextDispatch, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:30:				return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:31:					return nextDispatch(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:37:			return function(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:38:				return nextDispatch(action)
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:45:					return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:48:					return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:51:					return { countA = state.countA + 1, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:57:					return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:60:					return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:63:					return { countA = state.countA + 1, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:70:						return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:73:						return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:76:						return { countA = state.countA + 1, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:85:					return { countA = state.countA + 1, countB = state.countB }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:88:					return { countA = state.countA, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:91:					return { countA = state.countA + 1, countB = state.countB + 1 }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/dispatch-with-middleware.bench.lua:102:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:5:		return state.foo
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:9:		return state.bar
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:19:			return foo .. bar
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:26:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:35:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:46:			return state.foo
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:50:			return foo
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:85:			return (foo or "nil") .. (bar or "nil")
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:100:			return (a or "nil") .. (b or "nil") .. (c or "nil")
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:105:			return value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:142:			return { value = foo.value }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:145:				return a.value == b.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:168:			return { value = foo.value }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:171:				return a.value == b.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:194:			return { value = foo.value }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:196:			return a.value == b.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:218:			return { value = foo + bar }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:244:			return { value = foo.value }
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/src/createSelector.spec.lua:247:				return a.value == b.value
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:35:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:45:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:56:					return state.names
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:59:					return state.ids
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:66:				return namesByIds
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:70:					return state.names
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:73:					return state.ids
+/Users/tatsheen/claw-repos/oss-index/roblox/reflex/test/src/server/benchmarks/create-selector.bench.lua:80:				return namesByIds

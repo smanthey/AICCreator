@@ -1,0 +1,407 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Change.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/clock/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/clock/init.lua:9:		return Roact.createElement("ScreenGui", nil, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/clock/init.lua:48:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Ref.lua:5:return Ref
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/changed-signal/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/changed-signal/init.lua:14:		return Roact.createElement("TextBox", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/changed-signal/init.lua:29:		return Roact.createElement("TextLabel", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/changed-signal/init.lua:51:		return Roact.createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/changed-signal/init.lua:84:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/event/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/event/init.lua:27:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/init.client.lua:69:	return screenGui
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/init.client.lua:130:	return screenGui
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSignal.lua:44:		return disconnect
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSignal.lua:62:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSignal.lua:68:return createSignal
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/binding/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/binding/init.lua:13:		return Roact.createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/binding/init.lua:16:				return UDim2.new(0.5 + value / 200, 0, 0.5, 0)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/binding/init.lua:50:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.lua:25:			return true, nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.lua:29:			return true, propValue
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.lua:38:		return created[propertyName]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.lua:51:	return ok, defaultValue
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.lua:54:return getDefaultInstanceProperty
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Type.lua:34:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Type.lua:37:	return value[Type]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Type.lua:43:	return "RoactType"
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Type.lua:48:return Type
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/GlobalConfig.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Type.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:35:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:80:				return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:102:				return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:145:				return createFragment(self.props[Children])
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:149:				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:153:				return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:193:				return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:274:				return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:324:			return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:335:			return createElement(context.Consumer, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:337:					return createElement("TextLabel")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:352:				return createElement(FirstComponent)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:355:			return createElement(LowestComponent, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.spec.lua:382:			return createElement("Frame", {}, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/stress-test/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/stress-test/init.lua:20:		return Roact.createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/stress-test/init.lua:54:		return Roact.createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/stress-test/init.lua:83:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Children.lua:5:return Children
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Symbol.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/hello-roact/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/hello-roact/init.lua:21:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.lua:27:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.lua:30:	return value[ElementKind]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.lua:41:		return ElementKind.Portal
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.lua:43:		return componentTypesToKinds[typeof(component)]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.lua:51:return ElementKind
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/invalidSetStateMessages.lua:38:return invalidSetStateMessages
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Change.lua:20:		return ("RoactHostChangeEvent(%s)"):format(self.name)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Change.lua:34:		return changeListener
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Change.lua:38:return Change
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:4:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:30:			return createElement("Frame", nil, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:49:			return createElement(FunctionComponent, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:73:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:86:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:108:			return createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:117:			return createElement(
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:173:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:177:			return createElement(Child, assign({}, props, { [Ref] = props.forwardedRef }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:181:			return createElement(Wrapper, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:193:			return createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:199:			return createElement(Child, assign({}, props, { [Ref] = props.forwardedRef }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:203:			return createElement(Wrapper, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:217:			return createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:223:			return createElement(Child, assign({}, props, { [Ref] = props.forwardedRef }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:227:			return createElement(Wrapper, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:246:			return createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:252:			return createElement(Child, assign({}, props, { [Ref] = props.forwardedRef }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:256:			return createElement(Wrapper, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:290:			return createElement("Frame", { [Ref] = self.props.forwardedRef })
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:295:			return createElement(Inner, props)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:300:			return createElement(Middle, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:305:			return createElement(Forward)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:326:			return createElement("Frame", { [Ref] = props.forwardedRef })
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.spec.lua:330:			return createElement(CaptureProps, assign({}, props, { forwardedRef = ref }))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.lua:33:	return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.lua:175:	return typeof(target) == "Instance"
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.lua:279:	return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.lua:282:return RobloxRenderer
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.lua:22:			return inner(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.lua:24:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.lua:66:		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.lua:75:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.lua:78:return createSpy
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ComponentLifecyclePhase.lua:19:return ComponentLifecyclePhase
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Event.lua:22:		return ("RoactHostEvent(%s)"):format(self.name)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Event.lua:37:		return event
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Event.lua:41:return Event
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/oneChild.lua:10:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/oneChild.lua:16:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/oneChild.lua:25:	return child
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/oneChild.lua:28:return oneChild
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.lua:20:	return function(props)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.lua:24:		return render(propsWithoutRef, ref)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/forwardRef.lua:28:return forwardRef
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/SingleEventManager.lua:48:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/SingleEventManager.lua:57:		return self._instance:GetPropertyChangedSignal(key)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/SingleEventManager.lua:145:return SingleEventManager
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.spec.lua:27:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.spec.lua:47:			return createElement(PureChild, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PropMarkers/Event.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/internalAssert.lua:7:return internalAssert
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/GlobalConfig.lua:7:return Config.new()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/oneChild.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/ref/init.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/ref/init.lua:17:		return Roact.createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/examples/ref/init.lua:54:	return stop
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createFragment.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:554:				return createElement("IntValue", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:726:				return createElement("IntValue", {}, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:850:				return createElement("Folder", nil, self.props[Children])
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:863:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:920:				return createElement("Folder", nil, self.props[Children])
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:931:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:976:					return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:979:				return createElement("TextLabel")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1005:				return createElement("Frame", {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1037:				return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1056:					return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1059:				return createElement(LowestComponent, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1092:				return createElement("Frame", {}, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1140:				return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1157:				return createElement("TextLabel")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1178:					return createElement(FirstComponent)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1181:				return createElement(LowestComponent, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1218:				return createElement("Frame", {}, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1256:				return createElement("Frame")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1276:				return createElement(LowestComponent, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/RobloxRenderer.spec.lua:1310:				return createElement("Frame", {}, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/strict.lua:7:	return setmetatable(t, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/strict.lua:22:return strict
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:27:	return indentString .. source:gsub("\n", "\n" .. indentString)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:41:	return table.concat(outputBuffer, "\n")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:81:	return table.concat(outputBuffer, "\n")
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:93:	return logInfo
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:119:	return collector
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Logging.lua:159:return Logging
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assign.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createFragment.lua:5:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createFragment.lua:12:return createFragment
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:13:		return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:28:				return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:41:					return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:46:		return true, nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:50:		return true, nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:54:	return false, message
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assertDeepEqual.lua:69:return assertDeepEqual
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/NoopRenderer.lua:11:	return target == nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/NoopRenderer.lua:19:	return node
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/NoopRenderer.lua:22:return NoopRenderer
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementKind.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/getDefaultInstanceProperty.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/SingleEventManager.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:63:		return newNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:200:		return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:212:			return replaceVirtualNode(virtualNode, newElement)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:219:		return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:225:		return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:253:			return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:258:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:262:			return replaceVirtualNode(virtualNode, newElement)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:286:			return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:291:		return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:317:		return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:396:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:417:		return virtualNode
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:446:		return tree
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:482:		return tree
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:498:	return reconciler
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.lua:501:return createReconciler
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createElement.lua:71:	return element
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createElement.lua:74:return createElement
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:19:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:23:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:28:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:34:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:38:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/PureComponent.lua:41:return PureComponent
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:14:	return BindingInternalApi.getValue(self)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:18:	return BindingInternalApi.map(self, predicate)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:24:		return string.format("RoactBinding(%s)", tostring(self:getValue()))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:29:	return binding[BindingImpl].update(newValue)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:33:	return binding[BindingImpl].subscribe(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:37:	return binding[BindingImpl].getValue()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:47:		return impl.changeSignal:subscribe(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:56:		return impl.value
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:59:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:74:		return BindingInternalApi.subscribe(upstreamBinding, function(newValue)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:84:		return predicate(upstreamBinding:getValue())
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:87:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:116:		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:128:		return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:146:		return getValue()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:149:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.lua:155:return BindingInternalApi
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/willUpdate.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/willUpdate.spec.lua:21:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/willUpdate.spec.lua:68:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:33:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:67:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:92:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:116:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:143:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:152:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:179:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:183:					return self.props
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:192:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:204:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:231:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:239:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:254:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:265:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:270:				return createElement(Child, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:294:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:305:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:310:				return createElement(Child, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:344:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:356:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:361:				return createElement(Child, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:387:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:397:				return createElement(Child, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:401:							return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:426:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:431:					return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:436:					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:444:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:449:				return createElement(Child, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:485:					return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:490:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:511:				return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:524:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/setState.spec.lua:573:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/strict.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/strict.spec.lua:11:			return t.c
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/benchmarks/hello.bench.lua:4:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:53:		return Config.set(self, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:57:		return Config.get(self, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:61:		return Config.scoped(self, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:66:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:97:	return self._currentConfig
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Config.lua:115:return Config
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/defaultProps.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSignal.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:45:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:74:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:109:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:172:				return createElement(ConsumerB)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/legacyContext.spec.lua:174:				return createElement(ConsumerA)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.lua:29:		return reconciler.mountVirtualTree(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.lua:35:		return reconciler.unmountVirtualTree(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.lua:41:		return reconciler.updateVirtualTree(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.lua:44:	return compat
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconcilerCompat.lua:47:return createReconcilerCompat
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/init.lua:49:return Roact
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/render.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/render.spec.lua:110:				return self:setState(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/init.spec.lua:21:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.lua:18:				return binding:getValue()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.lua:20:				return binding[key]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.lua:31:			return ("RoactRef(%s)"):format(tostring(binding:getValue()))
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.lua:35:	return ref
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createRef.lua:38:return createRef
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:21:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:27:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:48:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:54:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:86:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:98:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:129:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:150:				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:154:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:175:				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:179:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:205:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:211:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:248:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/validateProps.spec.lua:254:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:22:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:28:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:74:				return self:setState(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:88:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:94:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:130:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/shouldUpdate.spec.lua:155:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:55:				return "Hello"
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:58:				return 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:61:				return function() end
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:64:				return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:175:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:201:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:205:				return createElement(childComponentSpy.value, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:239:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:243:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:247:				return createFragment({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createReconciler.spec.lua:312:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/didUpdate.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/didUpdate.spec.lua:20:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/didUpdate.spec.lua:63:				return self:setState(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:30:	return self.__componentName
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:68:	return class
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:87:			return derivedState
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:91:	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:179:	return self[InternalData].virtualNode.currentElement.source
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:210:	return context[key]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:441:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:451:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:484:			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:509:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.lua:512:return Component
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:20:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:46:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:88:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:127:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:165:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:205:			return {}
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:210:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:226:			return createFragment({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:251:			return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:265:				return self.state
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getDerivedStateFromProps.spec.lua:270:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Portal.lua:5:return Portal
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createElement.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getElementTraceback.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getElementTraceback.spec.lua:20:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/getElementTraceback.spec.lua:54:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/extend.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.spec.lua:15:				return spy.test
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createSpy.spec.lua:40:				return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assign.lua:24:	return target
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/assign.lua:27:return assign
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/benchmarks/update.bench.lua:6:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/didMount.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/didMount.spec.lua:20:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Symbol.lua:25:		return wrappedName
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Symbol.lua:28:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Symbol.lua:31:return Symbol
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.spec.lua:62:				return value % 2 == 0
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.spec.lua:91:				return value % 2 == 0
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Binding.spec.lua:126:				return v
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:11:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:52:		return createFragment(self.props[Children])
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:55:	return Provider
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:63:			return false, "Consumer expects a `render` function"
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:65:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:87:		return self.props.render(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:126:	return Consumer
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:133:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:140:	return "RoactContext"
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:146:	return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/createContext.lua:152:return createContext
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/benchmarks/init.server.lua:19:		return emptyTimes[iterations]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/benchmarks/init.server.lua:33:	return result
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/benchmarks/init.server.lua:41:	return a.Name < b.Name
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/None.lua:7:return None
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:49:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:81:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:108:			return createElement(function() end)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:144:			return createElement(ChildProvider)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:188:			return createElement(Consumer)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:222:			return {
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:259:				return createElement(ConsumerB)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/context.spec.lua:261:				return createElement(ConsumerA)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/willUnmount.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/Component.spec/willUnmount.spec.lua:20:			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:6:	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:50:		return function(_, _)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:52:				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:55:				return ElementUtils.UseParentKey, elementOrElements
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:63:		return (noop :: any) :: Iterator<K, Element>
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:67:		return pairs(elementOrElements)
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:84:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:89:			return elements
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:92:		return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:96:		return elements[hostKey]
+/Users/tatsheen/claw-repos/oss-index/roblox/roact/src/ElementUtils.lua:102:return ElementUtils

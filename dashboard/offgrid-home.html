@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Off-Grid Home Mission Panel</title>
+  <style>
+    :root {
+      --bg0: #08101d;
+      --bg1: #0f1a2d;
+      --bg2: #162844;
+      --ink: #eaf0fb;
+      --muted: #9fb1cd;
+      --ok: #45d493;
+      --warn: #f6cc6d;
+      --bad: #ff7474;
+      --line: #294267;
+      --accent: #71b2ff;
+      --accent2: #84ffd0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1000px 500px at 100% -20%, #21426e44, transparent),
+        radial-gradient(900px 500px at -5% 0%, #2c4f4f44, transparent),
+        linear-gradient(180deg, var(--bg0), var(--bg1) 45%, var(--bg2));
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1220px; margin: 0 auto; padding: 18px; }
+    .topbar { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+    h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: .2px; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .badge { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; }
+    .badge.ok { color: var(--ok); border-color: #2f5e47; background: #17362866; }
+    .badge.warn { color: var(--warn); border-color: #624f26; background: #382f1766; }
+    .badge.bad { color: var(--bad); border-color: #663236; background: #3a1b1f66; }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; margin-top: 16px; }
+    .card {
+      background: #0d1728cc;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      backdrop-filter: blur(5px);
+    }
+    .kpi { grid-column: span 3; }
+    .panel { grid-column: span 6; }
+    .wide { grid-column: span 12; }
+    .title { font-weight: 700; margin-bottom: 10px; }
+    .big { font-size: 30px; font-weight: 800; line-height: 1.1; }
+
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0; }
+    .row.wrap { flex-wrap: wrap; }
+
+    button {
+      appearance: none;
+      border: 1px solid #355384;
+      background: linear-gradient(180deg, #1e3355, #152744);
+      color: var(--ink);
+      border-radius: 12px;
+      padding: 9px 12px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button:hover { filter: brightness(1.08); }
+    button.secondary { border-color: #3f5f52; background: linear-gradient(180deg, #214138, #18352d); }
+    button.ghost { border-color: #456281; background: #0a1526; }
+    button.danger { border-color: #6b3f4a; background: linear-gradient(180deg, #4a2330, #331823); }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #0b1422;
+      color: var(--ink);
+      border-radius: 10px;
+      padding: 9px;
+    }
+    textarea { min-height: 88px; resize: vertical; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid #24344f; padding: 8px; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    .line { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #bed2f6; }
+
+    .progress-shell {
+      width: 100%;
+      background: #091426;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      height: 12px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      width: 0%;
+      transition: width 250ms ease;
+    }
+
+    .checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .check-item {
+      border: 1px solid #27405f;
+      background: #0a1628;
+      border-radius: 10px;
+      padding: 9px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+    .check-item .left { display: grid; gap: 3px; }
+    .check-item .label { font-size: 13px; font-weight: 700; }
+    .check-item .hint { font-size: 12px; color: var(--muted); }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      border: 1px solid var(--line);
+      background: #0a1525;
+      border-radius: 12px;
+      padding: 10px 12px;
+      max-width: 340px;
+      font-size: 13px;
+    }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 980px) {
+      .kpi, .panel, .wide { grid-column: span 12; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>Off-Grid Home Mission Panel</h1>
+        <div class="muted">Meshtastic + Home Assistant + local AI with guided onboarding</div>
+      </div>
+      <div class="row wrap" style="margin:0;">
+        <a href="/" style="text-decoration:none;"><button class="ghost" type="button">Back to Mission Control</button></a>
+        <button type="button" onclick="refreshAll(true)">Refresh All</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card wide">
+        <div class="row">
+          <div>
+            <div class="title">Onboarding Walkthrough</div>
+            <div class="muted" id="onboardSummary">Checking setup…</div>
+          </div>
+          <div class="badge" id="onboardBadge">incomplete</div>
+        </div>
+        <div class="progress-shell"><div class="progress-fill" id="onboardProgress"></div></div>
+        <div class="row wrap" style="margin-top:10px;">
+          <button class="secondary" type="button" onclick="runWalkthroughAction('saveApi')">Save API Key</button>
+          <button class="secondary" type="button" onclick="runWalkthroughAction('testMesh')">Send Test Mesh Ping</button>
+          <button class="secondary" type="button" onclick="runWalkthroughAction('refresh')">Re-check Setup</button>
+          <button class="ghost" type="button" onclick="toggleWalkthrough()" id="walkthroughToggleBtn">Show Walkthrough Steps</button>
+        </div>
+        <div id="walkthroughSteps" class="hidden" style="margin-top:10px;">
+          <ol style="margin:0; padding-left: 20px; display:grid; gap:8px; line-height:1.6;">
+            <li><strong>Get your Architect API key:</strong> This is the <code>ARCHITECT_API_KEY</code> from your <code>.env</code> file. It's used to authenticate API calls from this dashboard. If you don't have one, check your <code>.env</code> file or set <code>ARCHITECT_API_KEY=your-secret-key-here</code> and restart the architect-api service.</li>
+            <li><strong>Save the API key:</strong> Paste it in the "API Key" field above and click "Save Key". This stores it in your browser's local storage so the dashboard can make authenticated requests.</li>
+            <li><strong>Confirm bridge heartbeat:</strong> The Meshtastic bridge service should be running and show "online" status. Check that <code>claw-offgrid-meshtastic-bridge</code> is running in PM2.</li>
+            <li><strong>Verify Home Assistant:</strong> Set <code>HOME_ASSISTANT_URL</code> (e.g., <code>http://homeassistant.local:8123</code>) and <code>HOME_ASSISTANT_TOKEN</code> (long-lived access token from HA) in your <code>.env</code> file.</li>
+            <li><strong>Configure entities:</strong> Set <code>OFFGRID_LIGHT_ENTITIES</code>, <code>OFFGRID_SENSOR_ENTITIES</code>, and <code>OFFGRID_PRESENCE_ENTITIES</code> as comma-separated lists (e.g., <code>light.living_room,light.kitchen</code>).</li>
+            <li><strong>Test mesh communication:</strong> Send a test mesh message (click "Send Test Mesh Ping" button) and verify it appears in the "Recent Mesh Commands" and "Recent Mesh Events" tables.</li>
+          </ol>
+          <div style="margin-top:12px; padding:10px; background:#0a1526; border:1px solid #294267; border-radius:8px;">
+            <div style="font-weight:700; margin-bottom:6px;">💡 Quick Start:</div>
+            <div style="font-size:12px; color:var(--muted);">
+              <div>1. Find your <code>ARCHITECT_API_KEY</code> in <code>.env</code> (or create one if missing)</div>
+              <div>2. Paste it in the "API Key" field and click "Save Key"</div>
+              <div>3. Click "Re-check Setup" to see your progress</div>
+            </div>
+          </div>
+        </div>
+        <ul class="checklist" id="onboardChecklist" style="margin-top:12px;"></ul>
+      </div>
+
+      <div class="card kpi">
+        <div class="title">Bridge</div>
+        <div id="kBridge" class="big">unknown</div>
+        <div id="kBridgeMeta" class="muted">-</div>
+      </div>
+      <div class="card kpi">
+        <div class="title">Pending Mesh Commands</div>
+        <div id="kPending" class="big">0</div>
+      </div>
+      <div class="card kpi">
+        <div class="title">Inbound Events (100)</div>
+        <div id="kEvents" class="big">0</div>
+      </div>
+      <div class="card kpi">
+        <div class="title">HA Reachability</div>
+        <div id="kHa" class="big">unknown</div>
+      </div>
+
+      <div class="card panel">
+        <div class="row">
+          <div class="title">API Key + Mesh Command Console</div>
+          <div class="row wrap" style="margin:0; gap:8px;">
+            <button class="ghost" onclick="saveApiKey()">Save Key</button>
+            <button class="ghost" onclick="showApiKeyHelp()" style="font-size:11px;">❓ Where do I find this?</button>
+          </div>
+        </div>
+        <div class="row">
+          <input id="apiKey" type="password" placeholder="Paste ARCHITECT_API_KEY from your .env file here" autocomplete="off" />
+        </div>
+        <div class="muted" style="font-size:12px; margin-top:4px;">
+          This is the <code>ARCHITECT_API_KEY</code> value from your <code>.env</code> file. It authenticates API calls from this dashboard. 
+          If you don't have one, add <code>ARCHITECT_API_KEY=your-secret-key-here</code> to your <code>.env</code> and restart the architect-api service.
+        </div>
+        <div id="apiKeyHelp" class="hidden" style="margin-top:10px; padding:10px; background:#0a1526; border:1px solid #294267; border-radius:8px; font-size:12px;">
+          <div style="font-weight:700; margin-bottom:6px;">📋 How to get your ARCHITECT_API_KEY:</div>
+          <ol style="margin:4px 0; padding-left:20px; line-height:1.6;">
+            <li>Open your <code>.env</code> file in the project root directory</li>
+            <li>Look for a line that says <code>ARCHITECT_API_KEY=...</code></li>
+            <li>If it exists, copy the value after the <code>=</code> sign</li>
+            <li>If it doesn't exist, add this line: <code>ARCHITECT_API_KEY=your-secret-key-here</code> (replace with a strong random string)</li>
+            <li>Restart the architect-api service: <code>pm2 restart claw-architect-api</code></li>
+            <li>Paste the key value in the field above and click "Save Key"</li>
+          </ol>
+        </div>
+        <div class="row">
+          <input id="cmdText" placeholder="lights on living room | who home | /ask summarize status" />
+        </div>
+        <div class="row">
+          <input id="cmdTo" placeholder="broadcast or destination node id" value="broadcast" />
+          <button class="secondary" onclick="sendMesh()">Send to Mesh</button>
+        </div>
+        <div class="row wrap">
+          <button class="ghost" type="button" onclick="insertTemplate('status')">Template: Status Check</button>
+          <button class="ghost" type="button" onclick="insertTemplate('lights')">Template: Lights</button>
+          <button class="ghost" type="button" onclick="insertTemplate('presence')">Template: Presence</button>
+        </div>
+        <div class="muted">Commands are queued locally and transmitted over Meshtastic.</div>
+      </div>
+
+      <div class="card panel">
+        <div class="title">QR Import + Setup Notes</div>
+        <div class="muted">Upload QR screenshots (Meshtastic/HA docs) to auto-extract text and generate onboarding hints.</div>
+        <div class="row wrap">
+          <input id="qrFile" type="file" accept="image/*" multiple />
+          <button type="button" class="secondary" onclick="decodeSelectedQrs()">Decode QR Upload</button>
+        </div>
+        <div class="row">
+          <textarea id="qrPaste" placeholder="Or paste QR content / setup text here"></textarea>
+        </div>
+        <div class="row wrap">
+          <button class="ghost" type="button" onclick="ingestPastedQr()">Process Pasted Content</button>
+          <button class="ghost" type="button" onclick="clearQrResults()">Clear Results</button>
+        </div>
+        <div id="qrResult" class="muted" style="margin-top:8px;">No QR content processed yet.</div>
+      </div>
+
+      <div class="card panel">
+        <div class="title">Quick Light Controls</div>
+        <div class="row">
+          <select id="lightSelect"></select>
+          <input id="lightBrightness" type="number" min="1" max="100" value="100" />
+        </div>
+        <div class="row">
+          <button class="secondary" onclick="lightOn()">Turn On</button>
+          <button class="danger" onclick="lightOff()">Turn Off</button>
+        </div>
+        <div class="row wrap" style="margin-top:8px;">
+          <button class="ghost" onclick="discoverLights()" style="font-size:11px;">🔍 Discover All Lights</button>
+          <button class="ghost" onclick="flickerAllLights()" style="font-size:11px;">💡 Flicker Test (Identify)</button>
+        </div>
+        <div id="discoveryResult" class="muted" style="font-size:11px; margin-top:6px;"></div>
+      </div>
+
+      <div class="card wide">
+        <div class="title">Offgrid Hue Pattern Pack</div>
+        <div class="row wrap">
+          <button class="ghost" type="button" onclick="refreshPatternPack()">Refresh Pattern Pack</button>
+          <button class="secondary" type="button" onclick="queuePatternPackTasks()">Queue Fix Tasks</button>
+        </div>
+        <div id="patternPackMeta" class="muted" style="margin:8px 0;">Loading pattern pack...</div>
+        <table id="patternPackTable">
+          <thead><tr><th>Track</th><th>Best Sources</th><th>Implementation Focus</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="card panel">
+        <div class="title">Recent Mesh Commands</div>
+        <table id="commandsTable">
+          <thead><tr><th>Time</th><th>To</th><th>Text</th><th>Status</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="card wide">
+        <div class="title">Home Snapshot</div>
+        <table id="snapshotTable">
+          <thead><tr><th>Entity</th><th>State</th><th>Details</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="card wide">
+        <div class="title">Recent Mesh Events</div>
+        <table id="eventsTable">
+          <thead><tr><th>Time</th><th>Dir</th><th>From</th><th>Text</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script>
+    const KEY_STORAGE = 'ARCHITECT_API_KEY';
+    const MESH_TEST_KEY = 'OFFGRID_MESH_TEST_OK_AT';
+    const QR_NOTES_KEY = 'OFFGRID_QR_NOTES';
+
+    let latestSnapshot = null;
+    let latestStatus = null;
+    let refreshTimer = null;
+    let latestPatternPack = null;
+
+    function el(id) { return document.getElementById(id); }
+
+    function toast(msg, kind = 'ok') {
+      const t = el('toast');
+      t.textContent = msg;
+      t.className = `toast ${kind === 'bad' ? 'badge bad' : kind === 'warn' ? 'badge warn' : 'badge ok'}`;
+      t.classList.remove('hidden');
+      setTimeout(() => t.classList.add('hidden'), 3000);
+    }
+
+    function loadApiKey() {
+      const key = localStorage.getItem(KEY_STORAGE) || '';
+      el('apiKey').value = key;
+      return key;
+    }
+
+    function saveApiKey() {
+      const key = el('apiKey').value.trim();
+      if (!key) {
+        toast('Enter an API key first.', 'warn');
+        return;
+      }
+      localStorage.setItem(KEY_STORAGE, key);
+      toast('API key saved locally.', 'ok');
+      refreshAll(true);
+    }
+
+    function showApiKeyHelp() {
+      const help = el('apiKeyHelp');
+      const isHidden = help.classList.contains('hidden');
+      if (isHidden) {
+        help.classList.remove('hidden');
+      } else {
+        help.classList.add('hidden');
+      }
+    }
+
+    function apiHeaders() {
+      const key = (el('apiKey').value || localStorage.getItem(KEY_STORAGE) || '').trim();
+      return key ? { Authorization: `Bearer ${key}` } : {};
+    }
+
+    async function getJson(url) {
+      // Add timestamp to prevent caching
+      const urlWithTs = url + (url.includes("?") ? "&" : "?") + "_t=" + Date.now();
+      const r = await fetch(urlWithTs, { 
+        cache: "no-store",
+        headers: { ...apiHeaders() } 
+      });
+      if (!r.ok) throw new Error(`${r.status}`);
+      return r.json();
+    }
+
+    async function postJson(url, body) {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...apiHeaders() },
+        body: JSON.stringify(body || {}),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || `HTTP ${r.status}`);
+      return data;
+    }
+
+    function insertTemplate(kind) {
+      const map = {
+        status: '/ask summarize off-grid status and pending commands',
+        lights: 'turn lights on in living room to 50%',
+        presence: 'who is currently home and what sensors changed recently?'
+      };
+      el('cmdText').value = map[kind] || '';
+      el('cmdText').focus();
+    }
+
+    function renderSnapshot(data) {
+      latestSnapshot = data;
+      const tbody = el('snapshotTable').querySelector('tbody');
+      tbody.innerHTML = '';
+      const rows = [...(data.lights || []), ...(data.sensors || []), ...(data.presence || [])];
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td colspan="3" class="muted">No entities configured. Set OFFGRID_LIGHT_ENTITIES / OFFGRID_SENSOR_ENTITIES / OFFGRID_PRESENCE_ENTITIES.</td></tr>';
+      }
+      for (const r of rows) {
+        const tr = document.createElement('tr');
+        const details = r.attributes ? JSON.stringify(r.attributes).slice(0, 200) : (r.error || '');
+        tr.innerHTML = `<td class="line">${r.entity_id}</td><td>${r.state || r.error || '-'}</td><td class="muted">${details}</td>`;
+        tbody.appendChild(tr);
+      }
+
+      const lightSelect = el('lightSelect');
+      const lights = data.lights || [];
+      lightSelect.innerHTML = lights.map((l) => `<option value="${l.entity_id}">${l.entity_id}</option>`).join('') || '<option value="">(no lights configured)</option>';
+      el('kHa').textContent = data.home_assistant_url ? 'ready' : 'not set';
+    }
+
+    function renderEvents(status) {
+      latestStatus = status;
+      el('kPending').textContent = String(status.counters?.pending_commands || 0);
+      el('kEvents').textContent = String(status.counters?.events_100 || 0);
+      const hb = status.heartbeat || {};
+      el('kBridge').textContent = hb.connected ? 'online' : 'offline';
+      el('kBridgeMeta').textContent = `${hb.mode || 'unknown'} • ${hb.ts || '-'}`;
+
+      const evBody = el('eventsTable').querySelector('tbody');
+      evBody.innerHTML = '';
+      for (const r of (status.recent_events || []).slice().reverse()) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td class="line">${(r.ts || '').replace('T',' ').slice(0,19)}</td><td>${r.direction || '-'}</td><td>${r.from || '-'}</td><td>${(r.text || '').slice(0,240)}</td>`;
+        evBody.appendChild(tr);
+      }
+
+      const cmdBody = el('commandsTable').querySelector('tbody');
+      cmdBody.innerHTML = '';
+      for (const r of (status.recent_commands || []).slice().reverse()) {
+        const state = r.error ? 'error' : (r.sent_at ? 'sent' : 'queued');
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td class="line">${(r.queued_at || '').replace('T',' ').slice(0,19)}</td><td class="line">${r.to || '-'}</td><td>${(r.text || '').slice(0,120)}</td><td>${state}</td>`;
+        cmdBody.appendChild(tr);
+      }
+    }
+
+    function onboardingState() {
+      const snapshot = latestSnapshot || { configured: {} };
+      const status = latestStatus || {};
+      const hb = status.heartbeat || {};
+      const apiKeyPresent = !!(el('apiKey').value || localStorage.getItem(KEY_STORAGE));
+      const bridgeOnline = !!hb.connected;
+      const haConfigured = !!snapshot.home_assistant_url;
+      const cfg = snapshot.configured || {};
+      const entitiesConfigured = Number(cfg.lights || 0) + Number(cfg.sensors || 0) + Number(cfg.presence || 0) > 0;
+      const testAt = Number(localStorage.getItem(MESH_TEST_KEY) || 0);
+      const meshTested = !!testAt && (Date.now() - testAt) < (1000 * 60 * 60 * 24 * 7);
+      return {
+        apiKeyPresent,
+        bridgeOnline,
+        haConfigured,
+        entitiesConfigured,
+        meshTested,
+      };
+    }
+
+    function renderOnboarding() {
+      const s = onboardingState();
+      const checks = [
+        { 
+          key: 'apiKeyPresent', 
+          label: 'Architect API key saved', 
+          hint: 'Paste ARCHITECT_API_KEY from .env file in the field above and click "Save Key". This is required for protected /api routes.' 
+        },
+        { 
+          key: 'bridgeOnline', 
+          label: 'Meshtastic bridge online', 
+          hint: 'The claw-offgrid-meshtastic-bridge service should be running in PM2 and show connected=true in heartbeat.' 
+        },
+        { 
+          key: 'haConfigured', 
+          label: 'Home Assistant configured', 
+          hint: 'Set HOME_ASSISTANT_URL (e.g., http://homeassistant.local:8123) and HOME_ASSISTANT_TOKEN (long-lived token from HA) in .env file.' 
+        },
+        { 
+          key: 'entitiesConfigured', 
+          label: 'Home Assistant entities configured', 
+          hint: 'Set OFFGRID_LIGHT_ENTITIES, OFFGRID_SENSOR_ENTITIES, and/or OFFGRID_PRESENCE_ENTITIES as comma-separated lists in .env (e.g., light.living_room,sensor.temperature).' 
+        },
+        { 
+          key: 'meshTested', 
+          label: 'Mesh communication tested', 
+          hint: 'Send one test mesh command (click "Send Test Mesh Ping" button) and verify it appears in recent commands/events tables.' 
+        },
+      ];
+      const done = checks.filter((c) => s[c.key]).length;
+      const pct = Math.round((done / checks.length) * 100);
+      el('onboardProgress').style.width = `${pct}%`;
+      el('onboardSummary').textContent = `${done}/${checks.length} completed. ${pct === 100 ? 'System ready for daily use.' : 'Finish remaining setup steps.'}`;
+      const badge = el('onboardBadge');
+      badge.textContent = pct === 100 ? 'ready' : 'incomplete';
+      badge.className = `badge ${pct === 100 ? 'ok' : pct >= 60 ? 'warn' : 'bad'}`;
+
+      const list = el('onboardChecklist');
+      list.innerHTML = checks.map((c) => {
+        const ok = s[c.key];
+        return `<li class="check-item"><div class="left"><div class="label">${c.label}</div><div class="hint">${c.hint}</div></div><span class="badge ${ok ? 'ok' : 'bad'}">${ok ? 'done' : 'missing'}</span></li>`;
+      }).join('');
+    }
+
+    function renderPatternPack(pack) {
+      latestPatternPack = pack;
+      const meta = el('patternPackMeta');
+      const tbody = el('patternPackTable').querySelector('tbody');
+      const indexed = Number(pack?.coverage?.indexed_count || 0);
+      const total = Number(pack?.coverage?.total_count || 0);
+      meta.textContent = `Indexed source repos: ${indexed}/${total} · generated: ${pack.generated_at || 'n/a'}`;
+
+      const tracks = Array.isArray(pack?.tracks) ? pack.tracks : [];
+      if (!tracks.length) {
+        tbody.innerHTML = '<tr><td colspan="3" class="muted">No pattern tracks available yet.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = tracks.map((t) => {
+        const repos = Array.isArray(t.best_repos) ? t.best_repos.join(', ') : '-';
+        const focus = Array.isArray(t.implementation_focus) ? t.implementation_focus.join(' | ') : '-';
+        return `<tr><td class="line">${t.title || t.id}</td><td class="muted">${repos}</td><td class="muted">${focus}</td></tr>`;
+      }).join('');
+    }
+
+    function toggleWalkthrough() {
+      const box = el('walkthroughSteps');
+      const btn = el('walkthroughToggleBtn');
+      const hidden = box.classList.contains('hidden');
+      if (hidden) {
+        box.classList.remove('hidden');
+        btn.textContent = 'Hide Walkthrough Steps';
+      } else {
+        box.classList.add('hidden');
+        btn.textContent = 'Show Walkthrough Steps';
+      }
+    }
+
+    async function runWalkthroughAction(action) {
+      if (action === 'saveApi') {
+        saveApiKey();
+        return;
+      }
+      if (action === 'refresh') {
+        await refreshAll(true);
+        return;
+      }
+      if (action === 'testMesh') {
+        el('cmdText').value = '/ask off-grid test ping: confirm receive and status';
+        await sendMesh();
+      }
+    }
+
+    async function refreshAll(showToast = false) {
+      try {
+        const [snapshot, status, patternPack] = await Promise.all([
+          getJson('/api/offgrid/snapshot'),
+          getJson('/api/offgrid/status'),
+          getJson('/api/offgrid/pattern-pack'),
+        ]);
+        renderSnapshot(snapshot);
+        renderEvents(status);
+        renderPatternPack(patternPack);
+        renderOnboarding();
+        if (showToast) toast('Off-grid panel refreshed.', 'ok');
+      } catch (e) {
+        console.error(e);
+        renderOnboarding();
+        toast('API request failed. Verify API key, bridge service, and auth.', 'bad');
+      }
+    }
+
+    async function refreshPatternPack() {
+      try {
+        const pack = await getJson('/api/offgrid/pattern-pack');
+        renderPatternPack(pack);
+        toast('Pattern pack refreshed.', 'ok');
+      } catch (e) {
+        toast(`Pattern pack failed: ${e.message}`, 'bad');
+      }
+    }
+
+    async function queuePatternPackTasks() {
+      try {
+        const actor = localStorage.getItem(KEY_STORAGE) ? 'offgrid_dashboard_auth' : 'offgrid_dashboard';
+        const res = await postJson('/api/offgrid/pattern-pack/apply', { actor });
+        const created = Number(res.created_count || 0);
+        const skipped = Number(res.skipped_count || 0);
+        toast(`Pattern tasks queued: ${created} created, ${skipped} skipped.`, created > 0 ? 'ok' : 'warn');
+      } catch (e) {
+        toast(`Queue failed: ${e.message}`, 'bad');
+      }
+    }
+
+    async function sendMesh() {
+      const text = el('cmdText').value.trim();
+      const to = el('cmdTo').value.trim() || 'broadcast';
+      if (!text) return toast('Enter a command first.', 'warn');
+      await postJson('/api/offgrid/mesh/send', { text, to });
+      localStorage.setItem(MESH_TEST_KEY, String(Date.now()));
+      el('cmdText').value = '';
+      toast('Command queued to mesh.', 'ok');
+      await refreshAll();
+    }
+
+    async function lightOn() {
+      const entity_id = el('lightSelect').value;
+      const brightness_pct = Number(el('lightBrightness').value || 100);
+      if (!entity_id) return toast('No light selected.', 'warn');
+      await postJson('/api/offgrid/light', { entity_id, on: true, brightness_pct });
+      toast('Light on command sent.', 'ok');
+      await refreshAll();
+    }
+
+    async function lightOff() {
+      const entity_id = el('lightSelect').value;
+      if (!entity_id) return toast('No light selected.', 'warn');
+      await postJson('/api/offgrid/light', { entity_id, on: false });
+      toast('Light off command sent.', 'ok');
+      await refreshAll();
+    }
+
+    async function discoverLights() {
+      try {
+        el('discoveryResult').textContent = 'Discovering lights...';
+        const data = await getJson('/api/offgrid/lights/discover');
+        if (data.ok && data.lights && data.lights.length > 0) {
+          const lightList = data.lights.map(l => `${l.name} (${l.entity_id})`).join(', ');
+          el('discoveryResult').textContent = `Found ${data.lights.length} lights: ${lightList}`;
+          toast(`Discovered ${data.lights.length} lights`, 'ok');
+          
+          // Update light select dropdown
+          const lightSelect = el('lightSelect');
+          const currentValue = lightSelect.value;
+          lightSelect.innerHTML = data.lights.map((l) => 
+            `<option value="${l.entity_id}">${l.name} (${l.entity_id})</option>`
+          ).join('');
+          if (currentValue) lightSelect.value = currentValue;
+        } else {
+          el('discoveryResult').textContent = 'No lights found. Check Home Assistant configuration.';
+          toast('No lights discovered', 'warn');
+        }
+      } catch (e) {
+        el('discoveryResult').textContent = `Discovery failed: ${e.message}`;
+        toast('Discovery failed', 'bad');
+      }
+    }
+
+    async function flickerAllLights() {
+      try {
+        // First discover lights if we don't have them
+        const discoverData = await getJson('/api/offgrid/lights/discover');
+        if (!discoverData.ok || !discoverData.lights || discoverData.lights.length === 0) {
+          return toast('No lights found. Run discovery first.', 'warn');
+        }
+        
+        const entityIds = discoverData.lights.map(l => l.entity_id);
+        toast(`Starting flicker test for ${entityIds.length} lights...`, 'ok');
+        el('discoveryResult').textContent = `Flickering ${entityIds.length} lights to identify them...`;
+        
+        const result = await postJson('/api/offgrid/lights/flicker-test', {
+          entity_ids: entityIds,
+          duration_ms: 500,
+          cycles: 3
+        });
+        
+        if (result.ok) {
+          const successCount = result.results.filter(r => r.flickered).length;
+          el('discoveryResult').textContent = `Flicker test complete: ${successCount}/${entityIds.length} lights flickered successfully. Watch the bulbs to identify them!`;
+          toast(`Flicker test complete: ${successCount} lights identified`, 'ok');
+        } else {
+          el('discoveryResult').textContent = `Flicker test failed: ${result.error}`;
+          toast('Flicker test failed', 'bad');
+        }
+      } catch (e) {
+        el('discoveryResult').textContent = `Flicker test error: ${e.message}`;
+        toast('Flicker test error', 'bad');
+      }
+    }
+
+    async function decodeQrFromFile(file) {
+      if (!window.BarcodeDetector) {
+        throw new Error('QR decode not supported in this browser. Use paste mode.');
+      }
+      const detector = new BarcodeDetector({ formats: ['qr_code'] });
+      const bitmap = await createImageBitmap(file);
+      try {
+        const codes = await detector.detect(bitmap);
+        if (!codes.length) throw new Error(`No QR code found in ${file.name}`);
+        return String(codes[0].rawValue || '').trim();
+      } finally {
+        if (bitmap && bitmap.close) bitmap.close();
+      }
+    }
+
+    function parseQrText(raw) {
+      const txt = String(raw || '').trim();
+      const out = { raw: txt, type: 'unknown', notes: [] };
+      if (!txt) return out;
+
+      if (/^WIFI:/i.test(txt)) {
+        out.type = 'wifi';
+        out.notes.push('WiFi QR detected. Use this on the mobile Meshtastic app device if needed.');
+      }
+      if (/meshtastic/i.test(txt) || /channel/i.test(txt) || /node/i.test(txt)) {
+        out.type = out.type === 'unknown' ? 'meshtastic' : out.type;
+        out.notes.push('Meshtastic-related QR/text detected.');
+      }
+      if (/home.?assistant|ha\.|entity_id|light\./i.test(txt)) {
+        out.type = out.type === 'unknown' ? 'home_assistant' : out.type;
+        out.notes.push('Home Assistant entities/settings detected.');
+      }
+
+      const entities = txt.match(/\b(?:light|switch|sensor|binary_sensor|person|device_tracker)\.[a-z0-9_]+\b/gi) || [];
+      if (entities.length) out.notes.push(`Detected entities: ${entities.slice(0, 8).join(', ')}`);
+      return out;
+    }
+
+    function addQrNote(noteObj) {
+      const current = JSON.parse(localStorage.getItem(QR_NOTES_KEY) || '[]');
+      current.unshift({ ts: new Date().toISOString(), ...noteObj });
+      localStorage.setItem(QR_NOTES_KEY, JSON.stringify(current.slice(0, 25)));
+    }
+
+    function showQrResult(lines) {
+      el('qrResult').innerHTML = lines.map((x) => `<div>${x}</div>`).join('');
+    }
+
+    async function decodeSelectedQrs() {
+      const files = Array.from(el('qrFile').files || []);
+      if (!files.length) return toast('Select at least one image file.', 'warn');
+      const lines = [];
+      for (const file of files) {
+        try {
+          const raw = await decodeQrFromFile(file);
+          const parsed = parseQrText(raw);
+          addQrNote({ source: `file:${file.name}`, parsed });
+          lines.push(`<strong>${file.name}</strong>: ${parsed.type} → ${parsed.notes.join(' | ') || parsed.raw.slice(0, 140)}`);
+          if (parsed.raw) el('cmdText').value = parsed.raw.slice(0, 220);
+        } catch (e) {
+          lines.push(`<strong>${file.name}</strong>: decode failed (${e.message})`);
+        }
+      }
+      showQrResult(lines);
+      toast('QR processing complete.', 'ok');
+    }
+
+    function ingestPastedQr() {
+      const txt = el('qrPaste').value.trim();
+      if (!txt) return toast('Paste QR/content text first.', 'warn');
+      const parsed = parseQrText(txt);
+      addQrNote({ source: 'paste', parsed });
+      showQrResult([
+        `<strong>Pasted content</strong>: ${parsed.type}`,
+        parsed.notes.join(' | ') || parsed.raw.slice(0, 220),
+      ]);
+      if (parsed.raw) el('cmdText').value = parsed.raw.slice(0, 220);
+      toast('Pasted setup content processed.', 'ok');
+    }
+
+    function clearQrResults() {
+      el('qrResult').textContent = 'No QR content processed yet.';
+      el('qrPaste').value = '';
+      el('qrFile').value = '';
+      toast('QR result pane cleared.', 'ok');
+    }
+
+    loadApiKey();
+    refreshAll();
+    refreshTimer = setInterval(() => refreshAll(), 15000);
+  </script>
+</body>
+</html>

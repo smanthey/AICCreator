@@ -1,0 +1,57 @@
+{
+  "trust_mode": "A_PLUS_B",
+  "auto_apply_changes": false,
+  "product_mode": "internal_only",
+  "domains": [
+    {
+      "key": "stripe",
+      "sources": [
+        {
+          "name": "Stripe GitHub Releases",
+          "type": "github_releases",
+          "url": "https://api.github.com/repos/stripe/stripe-node/releases"
+        }
+      ]
+    },
+    {
+      "key": "telnyx",
+      "sources": [
+        {
+          "name": "Telnyx Node Releases",
+          "type": "github_releases",
+          "url": "https://api.github.com/repos/team-telnyx/telnyx-node/releases"
+        }
+      ]
+    },
+    {
+      "key": "nextjs",
+      "sources": [
+        {
+          "name": "Next.js Releases",
+          "type": "github_releases",
+          "url": "https://api.github.com/repos/vercel/next.js/releases"
+        }
+      ]
+    },
+    {
+      "key": "betterauth",
+      "sources": [
+        {
+          "name": "Better Auth Releases",
+          "type": "github_releases",
+          "url": "https://api.github.com/repos/better-auth/better-auth/releases"
+        }
+      ]
+    },
+    {
+      "key": "neon",
+      "sources": [
+        {
+          "name": "Neon Releases",
+          "type": "github_releases",
+          "url": "https://api.github.com/repos/neondatabase/neon/releases"
+        }
+      ]
+    }
+  ]
+}

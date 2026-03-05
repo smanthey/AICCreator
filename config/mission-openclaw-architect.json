@@ -1,0 +1,193 @@
+{
+  "mission": {
+    "name": "openclaw-architect-convergence",
+    "objective": "Continuously converge all target SaaS repos on canonical core patterns derived from MCP-indexed exemplars and prevent drift.",
+    "owner": "architect",
+    "priority_domains": ["stripe", "email", "queue"],
+    "secondary_domains": ["auth", "pm2", "trading"]
+  },
+  "stop_conditions": {
+    "core_modules_exist": true,
+    "core_adopted_in_all_targets": true,
+    "no_landmines_detected": true,
+    "no_pattern_drift_detected": true
+  },
+  "non_stop_rules": {
+    "allow_empty_queues": false,
+    "require_refactor_tasks_if_drift": true,
+    "require_core_extension_before_saas_custom_logic": true,
+    "autonomous_create_update_without_permission": true,
+    "deletes_require_quarantine_or_approval": true,
+    "default_to_closed_self_correction_loop": true
+  },
+  "focus_campaigns": [
+    {
+      "id": "cookiespass_v1_demo",
+      "name": "CookiesPass v1 core-backed demo",
+      "target_repos": [
+        "local/CookiesPass",
+        "local/cookies-tempe",
+        "local/TempeCookiesPass",
+        "local/nirvaan"
+      ],
+      "deadline_days": 3,
+      "status": "active",
+      "hosts": {
+        "vercel": {
+          "repo": "local/TempeCookiesPass",
+          "role": "CookiesPass Tempe (Vercel)",
+          "branding_rules": [
+            "No user-facing 'NirvanaPass' strings; product name must be 'CookiesPass' or 'CookiesPass Tempe'.",
+            "Location can remain 'Cookies Tempe' or similar where it refers to the store, not the pass product."
+          ]
+        },
+        "replit": {
+          "repo": "local/nirvaan/CookiesPass",
+          "role": "CookiesPass Phoenix (Replit)",
+          "branding_rules": [
+            "No user-facing 'NirvanaPass' strings; product name must be 'CookiesPass' or 'CookiesPass Phoenix'.",
+            "Location 'Nirvana West Phoenix' is allowed only where it describes the dispensary, not the pass product."
+          ]
+        }
+      },
+      "phases": [
+        {
+          "name": "day1_mcp_scan_and_spec",
+          "description": "Use MCP over CookiesPass/cookies-tempe + TempeCookiesPass/nirvaan and Stripe exemplar repos (BlackWallStreetopoly, v0-skyn-patch) to map pricing/routes/auth/email and lock the CookiesPass v1 spec in docs/COOKIESPASS-V1-SPEC.md. No new UI or core implementation yet.",
+          "done_when": [
+            "Spec file docs/COOKIESPASS-V1-SPEC.md exists and covers createCheckoutSession, handleStripeWebhook, sendEmail contracts.",
+            "MCP sweeps confirm no raw stripe.* calls in local/CookiesPass, local/cookies-tempe, local/TempeCookiesPass, or nirvaan/CookiesPass.",
+            "MCP sweeps confirm no user-visible 'NirvanaPass' branding remains in local/TempeCookiesPass or nirvaan/CookiesPass."
+          ]
+        },
+        {
+          "name": "day2_implement_core_flows",
+          "description": "Implement core-backed CookiesPass flows: fill in core/stripe and core/email using exemplar patterns, and add thin /api/checkout + /api/stripe/webhook routes in both TempeCookiesPass (Vercel) and nirvaan/CookiesPass (Replit) that call the cores only.",
+          "done_when": [
+            "core/stripe.createCheckoutSession and core/stripe.handleStripeWebhook are implemented and covered by basic tests.",
+            "TempeCookiesPass exposes /api/checkout and /api/stripe/webhook routes that never touch the Stripe SDK directly and use metadata.source='cookiespass'.",
+            "nirvaan/CookiesPass exposes /api/checkout and /api/stripe/webhook routes that never touch the Stripe SDK directly and use metadata.source='cookiespass'."
+          ]
+        },
+        {
+          "name": "day3_polish_and_demo_hardening",
+          "description": "Polish UX, run focused MCP landmine/drift sweeps for all CookiesPass variants, and harden logging so the CookiesPass demo can show events flowing end-to-end on both Vercel and Replit.",
+          "done_when": [
+            "MCP sweeps on local/CookiesPass, local/cookies-tempe, local/TempeCookiesPass, and nirvaan/CookiesPass show no new landmines (raw stripe., execSync in request paths, JSON state anti-patterns).",
+            "Happy-path CookiesPass checkout works end-to-end on both Vercel and Replit, with receipt and welcome emails sent via core/email and logs visible for demo on each host."
+          ]
+        }
+      ]
+    }
+  ],
+  "target_saas_repos": [
+    "local/quantfusion",
+    "local/PayClaw",
+    "local/CaptureInbound",
+    "local/veritap",
+    "local/v0-morningops",
+    "local/CookiesPass",
+    "local/cookies-tempe"
+  ],
+  "core_modules": [
+    "core/stripe",
+    "core/email",
+    "core/queue",
+    "core/auth",
+    "core/pm2",
+    "core/trading"
+  ],
+  "mcp_sweeps": {
+    "landmine_search_text_patterns": [
+      "execSync",
+      ".json",
+      "client.defineJob",
+      "stripe.",
+      "MailerSend",
+      "Maileroo",
+      "new Redis",
+      "BullMQ"
+    ],
+    "drift_symbol_checks": {
+      "stripe": ["handleStripeWebhook", "createCheckoutSession"],
+      "email": ["sendEmail"],
+      "queue": ["enqueue", "retry"],
+      "trading": ["trading_orders", "trading_signals"],
+      "auth": ["createSession", "verifyToken"],
+      "pm2": ["spawn", "watchdog", "restart"]
+    },
+    "frequency": "daily"
+  },
+  "swarm_must_complete_indexing": [
+    "symbol-aware-task-briefs",
+    "cross-repo-drift-detection",
+    "best-source-reuse-hints",
+    "failure-to-symbol-triage",
+    "change-impact-scoring",
+    "queue-routing-by-symbol-domain",
+    "duplicate-implementation-suppression",
+    "auto-test-target-generation",
+    "prompt-token-compression",
+    "knowledge-freshness-loop"
+  ],
+  "pattern_requirements": {
+    "idempotent": true,
+    "structured_logging": true,
+    "retry_backoff": true,
+    "typed_inputs_outputs": true,
+    "no_sync_blocking": true,
+    "audit_fields_required": true
+  },
+  "core_versioning": {
+    "require_version_constant": true,
+    "enforce_version_reporting_in_saas": true
+  },
+  "external_skills": [
+    {
+      "id": "anthropics_skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Office/PDF workflows (DOCX redlining, PDF conversion) and MCP-builder helpers.",
+      "recommended_use": [
+        "Use as canonical patterns for doc/PDF processing skills.",
+        "Borrow validation and redlining helpers for report and contract automation.",
+        "Reference when designing MCP-backed tools that operate on Office/PDF documents."
+      ]
+    },
+    {
+      "id": "obra_superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "SWE lifecycle debugging and reasoning skills, including graph/diagram rendering.",
+      "recommended_use": [
+        "Use for systematic debugging flows when modernizing Trigger.dev tasks, PM2 scripts, or Stripe/email/queue code.",
+        "Use graph/diagram helpers to visualize complex flows for docs and reports."
+      ]
+    },
+    {
+      "id": "planning_with_files",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "description": "Session catch-up and persistent planning context across large codebases.",
+      "recommended_use": [
+        "Default planning skill for multi-day refactors (PayClaw, ClawPay, CookiesPass).",
+        "Run before large missions to generate a structured summary of current state and next steps."
+      ]
+    },
+    {
+      "id": "skill_prompt_generator",
+      "url": "https://github.com/huangserva/skill-prompt-generator",
+      "description": "Meta-skill for generating and auditing skill prompts and SKILL definitions.",
+      "recommended_use": [
+        "Use as an internal \"skill factory\" when designing new OpenClaw/ClawPay/PayClaw skills.",
+        "Apply prompt-extractor/xray helpers to audit existing skills and agent prompt files."
+      ]
+    },
+    {
+      "id": "awesome_claude_code_subagents",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "description": "Catalog of 140+ specialized subagent roles and workflows.",
+      "recommended_use": [
+        "Use as a role catalog when expanding config/agent-team.json or designing new mission agents.",
+        "Do not vendor code; treat as an idea/reference source for agent responsibilities."
+      ]
+    }
+  ]
+}

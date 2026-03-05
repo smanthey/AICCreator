@@ -1,0 +1,29 @@
+{
+  "started_at": "2026-03-03T23:06:44.492Z",
+  "finished_at": "2026-03-03T23:06:49.445Z",
+  "mode": "steady",
+  "min_online": 8,
+  "max_online": 13,
+  "online_count": 13,
+  "metrics": {
+    "healthOk": true,
+    "postgresOk": true,
+    "redisOk": true,
+    "queue": null,
+    "errors": [
+      "queue:Command failed: curl -m 4 -sS http://127.0.0.1:4051/api/dashboard/queue\ncurl: (28) Operation timed out after 4004 milliseconds with 0 bytes received\n"
+    ]
+  },
+  "actions": [],
+  "protected": [
+    "claw-dispatcher",
+    "claw-task-governor",
+    "claw-webhook-server",
+    "claw-architect-api",
+    "claw-openclaw-coordinator",
+    "claw-ollama",
+    "claw-worker",
+    "claw-worker-ai",
+    "claw-worker-nas"
+  ]
+}

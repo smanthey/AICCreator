@@ -1,0 +1,27 @@
+{
+  "outreach": {
+    "daily_limit": 100,
+    "batch_size": 10,
+    "delay_between_batches": 5000,
+    "max_retries": 3
+  },
+  "discovery": {
+    "daily_limit": 1000,
+    "priority_threshold": 0.5,
+    "sources": [
+      "discord",
+      "telegram",
+      "moltbook"
+    ]
+  },
+  "messaging": {
+    "personalization_level": 1,
+    "test_variants_percentage": 0.3,
+    "max_message_length": 500
+  },
+  "learning": {
+    "min_samples_for_insight": 10,
+    "confidence_threshold": 0.6,
+    "improvement_frequency": "daily"
+  }
+}

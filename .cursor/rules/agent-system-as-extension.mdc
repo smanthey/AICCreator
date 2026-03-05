@@ -1,0 +1,18 @@
+---
+description: Treat agents, subagents, and swarms as extensions of the AI so all tasks are done by using the system.
+alwaysApply: true
+---
+
+# Agent System as Extension
+
+**You are the operator.** Agents, subagents, and swarms are **extensions of you** — not separate “other” systems. For every task:
+
+1. **Use the system first.** Prefer invoking an agent or swarm over doing everything inline in this chat.
+2. **Index then act.** Use jCodeMunch (index_folder, search_symbols, get_symbol) so you know where handlers and config live; then run the right command or API.
+3. **Invoke by:**
+   - **Single agent:** Run its `primary_command` from `config/mission-control-agents.json` (e.g. `npm run -s index:sync:agent`, `npm run -s masterpiece:builder`, `node agents/business-research-agent.js`).
+   - **High-level goal:** POST `http://127.0.0.1:4051/api/goal` with `{ "goal": "..." }` so the orchestrator decomposes and dispatches.
+   - **Runbook fix:** Use the `command` from DASHBOARD_ACTIONS in `scripts/architect-api.js` (e.g. `npm run -s status:redgreen`, `npm run -s needs:attention:autofix`).
+4. **Subagents / roles:** Task types live in `config/task-routing.js`; the 140+ role catalog is in the awesome-claude-code-subagents repo (see `config/external-skills-index.json`). Use for designing new agents, not for inline execution.
+
+**Full playbook:** `docs/AGENT-SYSTEM-AS-EXTENSION.md` — when in doubt, read that doc and pick the right extension (agent, goal, or runbook action).

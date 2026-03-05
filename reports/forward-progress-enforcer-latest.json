@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-05T04:15:13.809Z",
+  "metrics": {
+    "completed_1h": 268,
+    "queue_active": 2352,
+    "dead_letter_open": 0,
+    "created_1h": 325,
+    "plans_2h": 8,
+    "kpi_score": 46
+  },
+  "objectives": [],
+  "queued": []
+}

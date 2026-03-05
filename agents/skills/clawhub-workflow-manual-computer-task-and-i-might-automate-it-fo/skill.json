@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-workflow-manual-computer-task-and-i-might-automate-it-fo",
+  "name": "Manual Computer Task And I Might Automate It For Free Skill",
+  "version": "1.0.0",
+  "description": "manual computer task and I might automate it for free",
+  "tasks": [
+    "CLAWHUB_WORKFLOW_MANUAL_COMPUTER_TASK_AND_I_MIGHT_AUTOMATE_IT_FO_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 19,
+    "model": "one_time"
+  }
+}

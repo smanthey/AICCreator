@@ -1,0 +1,37 @@
+{
+  "description": "jCodeMunch repo ids and best-of entry points for external skill repos. Use search_symbols(repo, query) / get_symbol(repo, ...) with these repo ids. Paths from OPENCLAW_WORKSPACE_SKILLS or ~/.openclaw/workspace/skills.",
+  "indexed_repos": [
+    {
+      "repo_id": "local/skills-anthropics",
+      "path_tail": "skills-anthropics",
+      "use_for": ["docx_redlining", "pdf_convert", "pdf_forms", "office_validate", "MCP_builder_patterns"],
+      "best_symbols": ["validators/redlining", "convert_pdf_to_images", "extract_form_field_info", "fill_fillable_fields"]
+    },
+    {
+      "repo_id": "local/superpowers",
+      "path_tail": "superpowers",
+      "use_for": ["systematic_debugging", "render_graphs", "SWE_lifecycle"],
+      "best_symbols": ["render-graphs", "condition-based-waiting", "skills-core"]
+    },
+    {
+      "repo_id": "local/planning-with-files",
+      "path_tail": "planning-with-files",
+      "use_for": ["session_catchup", "persistent_planning", "multi_day_refactors"],
+      "best_symbols": ["session-catchup", "session_catchup"]
+    },
+    {
+      "repo_id": "local/skill-prompt-generator",
+      "path_tail": "skill-prompt-generator",
+      "use_for": ["skill_design", "prompt_audit", "prompt_extractor", "prompt_xray"],
+      "best_symbols": ["intelligent_generator", "design_bridge", "prompt-extractor", "prompt-xray"]
+    }
+  ],
+  "catalog_only": {
+    "repo_id": "awesome-claude-code-subagents",
+    "path_tail": "awesome-claude-code-subagents",
+    "use_for": ["agent_team_design", "subagent_role_catalog", "config/agent-team.json expansion"],
+    "note": "Mostly markdown; use search_text / get_file_tree. Index may show no code; browse README and categories."
+  },
+  "install_script": "scripts/skills-external-install.sh",
+  "docs": "docs/EXTERNAL-SKILLS-OPENCLAW.md"
+}

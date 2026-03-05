@@ -1,0 +1,445 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T18:30:24.264Z",
+  "run_date": "2026-03-04",
+  "dry_run": false,
+  "all_git": false,
+  "source": "priority_repo_major_update_daily",
+  "bootstrap_managed_repos": [
+    {
+      "target": "quantfusion",
+      "managed_repo": {
+        "action": "updated",
+        "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+        "client_name": "quantfusion"
+      }
+    },
+    {
+      "target": "payclaw",
+      "managed_repo": {
+        "action": "updated",
+        "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+        "client_name": "PayClaw"
+      }
+    },
+    {
+      "target": "cookiespass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+        "client_name": "CookiesPass"
+      }
+    },
+    {
+      "target": "cookiespass_copy",
+      "managed_repo": {
+        "action": "updated",
+        "id": "ada9101d-1ac7-4e5f-9863-af4001ceee97",
+        "client_name": "TempeCookiesPass"
+      }
+    },
+    {
+      "target": "clawpay",
+      "managed_repo": {
+        "action": "updated",
+        "id": "9a2633af-e30c-4e43-aaa9-52d69a8c39d8",
+        "client_name": "ClawPay"
+      }
+    },
+    {
+      "target": "captureinbound",
+      "managed_repo": {
+        "action": "updated",
+        "id": "9960ba65-2a0e-430c-b41d-c75e1045198c",
+        "client_name": "CaptureInbound"
+      }
+    },
+    {
+      "target": "capture",
+      "managed_repo": {
+        "action": "updated",
+        "id": "6973ded0-5747-4e6d-bec6-358c29d2f2e6",
+        "client_name": "capture"
+      }
+    },
+    {
+      "target": "infinitedata",
+      "managed_repo": {
+        "action": "updated",
+        "id": "4afa8e20-1cf7-408a-bf43-55c0220e3993",
+        "client_name": "infinitedata"
+      }
+    },
+    {
+      "target": "inbound_cookies",
+      "managed_repo": {
+        "action": "updated",
+        "id": "dccff8e1-921c-49fc-9fe4-c8c7d2fb50b0",
+        "client_name": "Inbound-cookies"
+      }
+    },
+    {
+      "target": "autopay_ui",
+      "managed_repo": {
+        "action": "updated",
+        "id": "7bfc5eb5-c070-4d55-87c1-82ce075e7488",
+        "client_name": "autopay_ui"
+      }
+    }
+  ],
+  "discovered_git_repos": 0,
+  "targets": [
+    {
+      "key": "payclaw",
+      "repo": "local/payclaw",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "quantfusion",
+      "repo": "local/quantfusion",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "cookiespass",
+      "repo": "local/CookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "infinitedata",
+      "repo": "local/infinitedata",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "inbound_cookies",
+      "repo": "local/Inbound-cookies",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "capture",
+      "repo": "local/capture",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "captureinbound",
+      "repo": "local/CaptureInbound",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "autopay_ui",
+      "repo": "local/autopay_ui",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "tempecookiespass",
+      "repo": "local/TempeCookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "clawpay",
+      "repo": "local/clawpay",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "robloxgitsync",
+      "repo": "local/RobloxGitSync",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "claw_architect",
+      "repo": "local/claw-architect",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "gbusupdate",
+      "repo": "local/gbusupdate",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "patentpal",
+      "repo": "local/patentpal",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "mytutor",
+      "repo": "local/mytutor",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "nfcverify",
+      "repo": "local/nfcverify",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "glitch_app",
+      "repo": "local/glitch-app",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "leadgengit",
+      "repo": "local/leadgengit",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "crave",
+      "repo": "local/crave",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "blackwallstreetopoly",
+      "repo": "local/BlackWallStreetopoly",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "pingmyself",
+      "repo": "local/pingmyself",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "patentpal",
+      "repo": "local/PatentPal",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "pdfezfill",
+      "repo": "local/PdfEzFill",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "3dgameartacademy",
+      "repo": "local/3DGameArtAcademy",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "booked",
+      "repo": "local/booked",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "leadgenai",
+      "repo": "local/LeadGenAi",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "manychatdupe",
+      "repo": "local/manychatdupe",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "gocrawdaddy",
+      "repo": "local/GoCrawdaddy",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "coinstbl",
+      "repo": "local/CoinStbl",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "madirectory",
+      "repo": "local/Madirectory",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "howtowatchstream_smartkb",
+      "repo": "local/HowtoWatchStream-SmartKB",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "leadgen3",
+      "repo": "local/LeadGen3",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "coinstbl",
+      "repo": "local/Coinstbl",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "cookies_tempe",
+      "repo": "local/cookies-tempe",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "foodtruckpass",
+      "repo": "local/FoodTruckPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "baktokingcom",
+      "repo": "local/BakTokingcom",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "leadgen",
+      "repo": "local/Leadgen",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "cookies_pass",
+      "repo": "local/Cookies_Pass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "3dgamestake2",
+      "repo": "local/3dgamestake2",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "mediatranscribepro",
+      "repo": "local/MediaTranscribePro",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "pingmyself",
+      "repo": "local/PingMyself",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "3ddesignafterschool",
+      "repo": "local/3ddesignafterschool",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "veritap",
+      "repo": "local/veritap",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "tapmenu",
+      "repo": "local/tapmenu",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "syrup_client_line_sheet",
+      "repo": "local/syrup-client-line-sheet",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "v0_skyn_patch",
+      "repo": "local/v0-skyn-patch",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "uspto_trademark_analyzer",
+      "repo": "local/uspto-trademark-analyzer",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "tap2",
+      "repo": "local/tap2",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "veritap_2026",
+      "repo": "local/veritap_2026",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "v0_morningops",
+      "repo": "local/v0-morningops",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "usipeorg",
+      "repo": "local/usipeorg",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "wmactealth_lc",
+      "repo": "local/wmactealth-lc",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "syrup_internal_line_sheet",
+      "repo": "local/syrup-internal-line-sheet",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "v0_untitled_project",
+      "repo": "local/v0-untitled-project",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "wmactealth",
+      "repo": "local/wmactealth",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "dify",
+      "repo": "local/dify",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "sim",
+      "repo": "local/sim",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "wmac",
+      "repo": "local/wmac",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "socialaipilot",
+      "repo": "local/SocialAiPilot",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "smartkb",
+      "repo": "local/SmartKB",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "veritap_chat",
+      "repo": "local/Veritap_chat",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "veritapco_archive",
+      "repo": "local/VeriTapco_archive",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "reframed",
+      "repo": "local/reframed",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "somaveachaser",
+      "repo": "local/SomaveaChaser",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "qarunner",
+      "repo": "local/QARunner",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "usipeorg",
+      "repo": "local/USIPEorg",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "trademarkhelper",
+      "repo": "local/TrademarkHelper",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "flowise",
+      "repo": "local/Flowise",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "inayanbuilderbot",
+      "repo": "local/InayanBuilderBot",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "maxkb",
+      "repo": "local/MaxKB",
+      "skipped": "already_queued_today"
+    }
+  ],
+  "created_count": 0,
+  "skipped_duplicates": 70
+}

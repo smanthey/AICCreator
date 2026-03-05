@@ -1,0 +1,122 @@
+{
+  "started_at": "2026-03-04T01:07:46.353Z",
+  "finished_at": "2026-03-04T01:07:59.099Z",
+  "mode": "degraded",
+  "lane_backlog": {
+    "ai": 0,
+    "infra": 0,
+    "ioHeavy": 0,
+    "cpuHeavy": 0
+  },
+  "aging_pending_60m": 0,
+  "lane_overrides": [],
+  "worker_targets": {
+    "claw-worker": 1,
+    "claw-worker-ai": 1,
+    "claw-worker-nas": 1
+  },
+  "min_online": 8,
+  "max_online": 13,
+  "online_count": 13,
+  "metrics": {
+    "healthOk": false,
+    "postgresOk": false,
+    "redisOk": false,
+    "queue": {
+      "tab": "queue",
+      "generated_at": "2026-03-04T01:07:53.030Z",
+      "status_summary": {
+        "green": 0,
+        "yellow": 0,
+        "red": 0,
+        "total": 0,
+        "overall": "green"
+      },
+      "cards": [
+        {
+          "label": "Created",
+          "value": 0
+        },
+        {
+          "label": "Pending",
+          "value": 0
+        },
+        {
+          "label": "Running",
+          "value": 0
+        },
+        {
+          "label": "Dead Letter",
+          "value": 0
+        }
+      ],
+      "actions": [],
+      "findings": [],
+      "active_issues": {
+        "openIncidents": 0,
+        "failingChecks": 0,
+        "regressionDetected": false,
+        "shouldShowFix": false,
+        "open_incidents": 0,
+        "failing_checks": 0,
+        "regression_detected": false,
+        "should_show_fix": false
+      },
+      "data": {
+        "queue": {
+          "created": 0,
+          "pending": 0,
+          "running": 0,
+          "dead_letter": 0
+        },
+        "task_status_7d": [],
+        "plan_status_7d": [],
+        "queue_aging": [],
+        "queue_by_tag": [],
+        "active_issues": {
+          "openIncidents": 0,
+          "failingChecks": 0,
+          "regressionDetected": false,
+          "shouldShowFix": false,
+          "open_incidents": 0,
+          "failing_checks": 0,
+          "regression_detected": false,
+          "should_show_fix": false
+        }
+      }
+    },
+    "errors": [
+      "health:Command failed: curl -m 4 -sS http://127.0.0.1:4051/health\ncurl: (28) Operation timed out after 4005 milliseconds with 0 bytes received\n"
+    ]
+  },
+  "actions": [
+    {
+      "type": "start",
+      "name": "claw-openclaw-coordinator",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-closed-loop-daily",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-knowledge-troll-harvest",
+      "reason": "overflow",
+      "ok": true
+    }
+  ],
+  "protected": [
+    "claw-dispatcher",
+    "claw-task-governor",
+    "claw-webhook-server",
+    "claw-architect-api",
+    "claw-openclaw-coordinator",
+    "claw-ollama",
+    "claw-worker",
+    "claw-worker-ai",
+    "claw-worker-nas"
+  ]
+}

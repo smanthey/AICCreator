@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-03-03T18:41:59.151Z",
+  "symbolic_qa": {
+    "generated_at": "2026-03-03T18:38:30.653Z",
+    "repos_total": 13,
+    "repos_indexed": 6,
+    "features_total": 6,
+    "top_features": [
+      {
+        "key": "symbol_failure_mapping",
+        "title": "Failure to symbol mapping",
+        "top_symbols": [
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/pm2-failure-symbol-triage.js::enqueueTask#function",
+            "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+            "score": 4
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/pm2-failure-symbol-triage.js::errorLines#function",
+            "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+            "score": 4
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/pm2-failure-symbol-triage.js::main#function",
+            "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/pm2-failure-symbol-triage.js::taskExists#function",
+            "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/pm2-failure-symbol-triage.js::fingerprint#function",
+            "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "key": "cdp_network_contracts",
+        "title": "CDP network and API contracts",
+        "top_symbols": [
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+            "symbol_file": "tests/e2e/fixtures.ts",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "control/replay-hash.js::replayMiddleware#function",
+            "symbol_file": "control/replay-hash.js",
+            "score": 3
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+            "symbol_file": "shared/schema.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/auth.ts::requireTenantAccess#function",
+            "symbol_file": "server/auth.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/auth.ts::requireOwner#function",
+            "symbol_file": "server/auth.ts",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "key": "auto_wait_stability",
+        "title": "Auto wait and flake resistance",
+        "top_symbols": [
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "tests/e2e/fixtures.ts::waitForPageLoad#function",
+            "symbol_file": "tests/e2e/fixtures.ts",
+            "score": 3
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "tests/e2e/fixtures.ts::waitForJsonResponse#function",
+            "symbol_file": "tests/e2e/fixtures.ts",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/bot-self-healing.js::retryWithBackoff#function",
+            "symbol_file": "scripts/bot-self-healing.js",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "infra/redis.js::waitForRedisReady#function",
+            "symbol_file": "infra/redis.js",
+            "score": 3
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "core/queue.js::withRetry#function",
+            "symbol_file": "core/queue.js",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "key": "selector_resilience",
+        "title": "Selector resilience and accessibility probes",
+        "top_symbols": [
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/cron.ts::retryQuery#function",
+            "symbol_file": "server/cron.ts",
+            "score": 3
+          },
+          {
+            "repo_key": "local/quantfusion",
+            "symbol_id": "server/services/ab-testing.ts::ABTestingService.recordTestResult#method",
+            "symbol_file": "server/services/ab-testing.ts",
+            "score": 3
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "tests/e2e/fixtures.ts::expectTextContent#function",
+            "symbol_file": "tests/e2e/fixtures.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/overnight-advisory-board.js::rolePrompt#function",
+            "symbol_file": "scripts/overnight-advisory-board.js",
+            "score": 2
+          },
+          {
+            "repo_key": "local/claw-architect",
+            "symbol_id": "scripts/google-maps-scraper.js::scrapeWithRetry#function",
+            "symbol_file": "scripts/google-maps-scraper.js",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "key": "visual_regression_baselines",
+        "title": "Visual regression baseline fastlane",
+        "top_symbols": [
+          {
+            "repo_key": "cypress-io/cypress",
+            "symbol_id": "scripts/ensure-icons.js::waitUntilIconsBuilt#function",
+            "symbol_file": "scripts/ensure-icons.js",
+            "score": 1
+          },
+          {
+            "repo_key": "cypress-io/cypress",
+            "symbol_id": "scripts/ensure-icons.js::waitUntilExists#function",
+            "symbol_file": "scripts/ensure-icons.js",
+            "score": 1
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/email.ts::sendUsageThresholdEmail#function",
+            "symbol_file": "server/email.ts",
+            "score": 1
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/email.ts::EmailType#type",
+            "symbol_file": "server/email.ts",
+            "score": 1
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/storage.ts::DatabaseStorage.ensureTestUser#method",
+            "symbol_file": "server/storage.ts",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "key": "trace_replay_debug",
+        "title": "Trace replay and debug artifacts",
+        "top_symbols": [
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+            "symbol_file": "tests/e2e/fixtures.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "shared/schema.ts::UsageRecord#type",
+            "symbol_file": "shared/schema.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+            "symbol_file": "shared/schema.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/transcription.ts::updateCallDebugMetadata#function",
+            "symbol_file": "server/transcription.ts",
+            "score": 2
+          },
+          {
+            "repo_key": "local/CaptureInbound",
+            "symbol_id": "server/cron.ts::updateCallDebugMetadata#function",
+            "symbol_file": "server/cron.ts",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "repomap": {
+    "generated_at": null,
+    "ok": false,
+    "repos_total": 0,
+    "repos": []
+  },
+  "readiness": {
+    "generated_at": null,
+    "repos_total": 0,
+    "min_score": 0,
+    "below_threshold": 0,
+    "remediations_queued": 0,
+    "weakest_repos": []
+  }
+}

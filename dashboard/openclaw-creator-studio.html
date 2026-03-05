@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenClaw Creator Studio</title>
+  <style>
+    :root {
+      --bg: #0b1017;
+      --card: #111b2a;
+      --line: #24364f;
+      --ink: #e9f0fa;
+      --muted: #90a6c6;
+      --good: #53d49a;
+      --accent: #6aa7ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(1100px 520px at 100% -15%, #254a8244, transparent),
+        radial-gradient(900px 460px at 0 -10%, #2c5d5d3b, transparent),
+        linear-gradient(180deg, #090d14, var(--bg));
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    h1 { margin: 0; font-size: 34px; }
+    .sub { color: var(--muted); margin-top: 6px; }
+    .top { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; margin-top: 16px; }
+    .card {
+      background: #0e1726cc;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      backdrop-filter: blur(4px);
+    }
+    .title { font-weight: 700; margin-bottom: 10px; }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .kpi { border: 1px solid #2d4470; border-radius: 12px; padding: 10px; background: #111d30; }
+    .label { font-size: 12px; color: var(--muted); }
+    .value { font-size: 24px; font-weight: 800; }
+    .ok { color: var(--good); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid #2a3a57;
+      background: #0b1423;
+      color: var(--ink);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    textarea { min-height: 94px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+    button {
+      border: 1px solid #3a5f96;
+      background: linear-gradient(180deg, #2b4b79, #1b3358);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.alt { border-color: #50617e; background: linear-gradient(180deg, #2a3548, #1d2637); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #22324d; padding: 8px; text-align: left; font-size: 13px; }
+    th { color: var(--muted); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .pill { padding: 3px 8px; border-radius: 999px; border: 1px solid #385f4c; background: #17332666; color: var(--good); font-size: 12px; }
+    @media (max-width: 980px) {
+      .top, .grid, .row, .kpis { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>OpenClaw Creator Studio</h1>
+    <div class="sub">Done-for-you macOS setup package builder for content creators.</div>
+
+    <section class="top">
+      <article class="card">
+        <div class="title">Offer Snapshot</div>
+        <div class="kpis">
+          <div class="kpi"><div class="label">Simple</div><div class="value">$500</div></div>
+          <div class="kpi"><div class="label">Standard</div><div class="value">$900</div></div>
+          <div class="kpi"><div class="label">Premium</div><div class="value">$1500</div></div>
+        </div>
+        <div style="margin-top:10px" class="sub">Selling angle: time savings, reduced setup frustration, faster publishing results.</div>
+      </article>
+
+      <article class="card">
+        <div class="title">Top Easy OpenClaw Topics</div>
+        <table id="topicsTable">
+          <thead><tr><th>Topic</th><th>Outcome</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="title">Generate Package</div>
+        <div class="row">
+          <input id="packageName" value="OpenClaw Creator Pack" placeholder="Package name" />
+          <input id="clientName" value="Content Creator" placeholder="Client name" />
+        </div>
+        <div class="row">
+          <select id="complexity">
+            <option value="simple">simple</option>
+            <option value="standard" selected>standard</option>
+            <option value="premium">premium</option>
+          </select>
+          <input id="outputDir" placeholder="Output dir (optional)" />
+        </div>
+        <textarea id="outcome">Set up OpenClaw on macOS, connect Telegram, and run creator workflows in one session.</textarea>
+        <div class="btns" style="margin-top:10px">
+          <button onclick="generateDirect()">Generate Now</button>
+          <button class="alt" onclick="generateQueued()">Queue Job</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="title">Included Assets</div>
+        <ul>
+          <li>YouTube Research Agent</li>
+          <li>TikTok Idea Generator</li>
+          <li>Comment Analyzer</li>
+          <li>Content Repurposing Workflow</li>
+          <li>Installation checklist</li>
+          <li>Config templates</li>
+          <li>Onboarding video script</li>
+          <li>Handoff documentation</li>
+          <li>macOS installer script + SwiftUI starter app file</li>
+        </ul>
+      </article>
+
+      <article class="card" style="grid-column: span 2;">
+        <div class="title">Result</div>
+        <pre id="result" class="mono">No run yet.</pre>
+      </article>
+    </section>
+  </div>
+
+  <script>
+    function headers() {
+      const key = localStorage.getItem("ARCHITECT_API_KEY") || "";
+      return key ? { Authorization: `Bearer ${key}` } : {};
+    }
+
+    function payload(queue) {
+      const v = {
+        package_name: document.getElementById("packageName").value.trim(),
+        client_name: document.getElementById("clientName").value.trim(),
+        complexity: document.getElementById("complexity").value,
+        output_dir: document.getElementById("outputDir").value.trim() || undefined,
+        outcome: document.getElementById("outcome").value.trim(),
+        queue,
+      };
+      if (!v.output_dir) delete v.output_dir;
+      return v;
+    }
+
+    async function loadTopics() {
+      const res = await fetch("/api/openclaw/creator-pack/topics", { headers: headers() });
+      const data = await res.json();
+      const rows = (data.top_topics || []).map(t => `<tr><td>${t.name}</td><td>${t.outcome}</td></tr>`).join("");
+      document.querySelector("#topicsTable tbody").innerHTML = rows || `<tr><td colspan="2">No topics</td></tr>`;
+    }
+
+    async function postGenerate(queue) {
+      const res = await fetch("/api/openclaw/creator-pack/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...headers() },
+        body: JSON.stringify(payload(queue)),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      document.getElementById("result").textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function generateDirect() {
+      try { await postGenerate(false); } catch (e) { alert(e.message); }
+    }
+    async function generateQueued() {
+      try { await postGenerate(true); } catch (e) { alert(e.message); }
+    }
+
+    loadTopics().catch(err => {
+      document.getElementById("result").textContent = `Topic load failed: ${err.message}`;
+    });
+  </script>
+</body>
+</html>

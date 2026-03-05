@@ -1,0 +1,28 @@
+[Your Name]
+[Your Address]
+[City, State ZIP]
+[Date]
+
+{{bureau_name}}
+[Address]
+
+Re: Dispute of Inaccurate Information in Credit Report
+
+To Whom It May Concern:
+
+I am writing to dispute inaccurate information in my credit file.
+
+Account: {{account_number}}
+Creditor/Furnisher: {{furnisher}}
+Issue Type: {{issue_type}}
+Reported error: {{field_name}}
+
+Under the Fair Credit Reporting Act (15 U.S.C. § 1681i), please investigate this matter and correct or remove inaccurate information.
+
+Evidence attached:
+{{evidence_list}}
+
+Please provide written notice of the results of your investigation.
+
+Sincerely,
+[Your Signature]

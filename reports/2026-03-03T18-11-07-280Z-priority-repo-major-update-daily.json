@@ -1,0 +1,1077 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-03T18:09:09.304Z",
+  "run_date": "2026-03-03",
+  "dry_run": false,
+  "source": "priority_repo_major_update_daily",
+  "bootstrap_managed_repos": [
+    {
+      "target": "quantfusion",
+      "managed_repo": {
+        "action": "updated",
+        "id": "29c2e09a-dc84-4ff0-bc51-3f3dc1886e17",
+        "client_name": "quantfusion"
+      }
+    },
+    {
+      "target": "payclaw",
+      "managed_repo": {
+        "action": "updated",
+        "id": "d763be9a-6990-4fd3-92d9-b32290210653",
+        "client_name": "PayClaw"
+      }
+    },
+    {
+      "target": "cookiespass",
+      "managed_repo": {
+        "action": "updated",
+        "id": "aa15123c-93d3-4123-8c9b-7f0622ec0508",
+        "client_name": "CookiesPass"
+      }
+    },
+    {
+      "target": "cookiespass_copy",
+      "managed_repo": {
+        "action": "updated",
+        "id": "ada9101d-1ac7-4e5f-9863-af4001ceee97",
+        "client_name": "TempeCookiesPass"
+      }
+    },
+    {
+      "target": "clawpay",
+      "managed_repo": {
+        "action": "updated",
+        "id": "9a2633af-e30c-4e43-aaa9-52d69a8c39d8",
+        "client_name": "ClawPay"
+      }
+    }
+  ],
+  "targets": [
+    {
+      "key": "payclaw",
+      "repo": "local/payclaw",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "quantfusion",
+      "repo": "local/quantfusion",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "cookiespass",
+      "repo": "local/CookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "tempecookiespass",
+      "repo": "local/TempeCookiesPass",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "clawpay",
+      "repo": "local/clawpay",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "robloxgitsync",
+      "repo": "local/RobloxGitSync",
+      "skipped": "already_queued_today"
+    },
+    {
+      "key": "claw_architect",
+      "repo": "local/claw-architect",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 1039
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:b02d446acf179344461311a861f1ee6d64414466da1dd2b53baca454bdf58fae"
+      }
+    },
+    {
+      "key": "inbound_cookies",
+      "repo": "local/Inbound-cookies",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 130
+      },
+      "task": {
+        "created": true,
+        "id": "3e6903cf-603a-40d8-a8e9-054d0cf41f36",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:0f4028864f48c1514c2ab9953651bd2c3da03503e639f47fb79155ff7a5c41c5"
+      }
+    },
+    {
+      "key": "manychatdupe",
+      "repo": "local/manychatdupe",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 130
+      },
+      "task": {
+        "created": true,
+        "id": "aeeaefbc-0d9c-4cc0-905b-096f5c1ebd2c",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:73f37e4d32d28f539f65e62a69a73995435e8ddaa0721a7bbc5bbd07599b6b05"
+      }
+    },
+    {
+      "key": "pdfezfill",
+      "repo": "local/PdfEzFill",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 130
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:2a8ead6891623eb63f4379464b9d2b87fd7e985074b989655e06453886c48afd"
+      }
+    },
+    {
+      "key": "blackwallstreetopoly",
+      "repo": "local/BlackWallStreetopoly",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 129
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:1f81a24a80c98927c19afffe646702a447526b64af3f35283d104ce96535c937"
+      }
+    },
+    {
+      "key": "3dgamestake2",
+      "repo": "local/3dgamestake2",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 128
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:0b5606ec423f84f78c3be0980353f999fcf662e056f7a7e3b86597ea6930f3de"
+      }
+    },
+    {
+      "key": "gbusupdate",
+      "repo": "local/gbusupdate",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 128
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:7edbd818cb628062ffebd4657e8b382c11c8b1197243b8d56f8a370d462b469c"
+      }
+    },
+    {
+      "key": "gocrawdaddy",
+      "repo": "local/GoCrawdaddy",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 128
+      },
+      "task": {
+        "created": true,
+        "id": "c106fe6d-607a-4225-93c7-6b4f7796df05",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:9c765cf020d4835b1bb9471881a352cf487f546440c510eaa5d98978cadce360"
+      }
+    },
+    {
+      "key": "leadgengit",
+      "repo": "local/leadgengit",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 128
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:ecfc7382f087cb6243447a1fff195f114a7c4e2e0a415d084c4b90cbd4dd466e"
+      }
+    },
+    {
+      "key": "booked",
+      "repo": "local/booked",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 127
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:fc5279be2b92ea3e2f8901ce060451123f0b0b55fc49a3fe9f488ef5d24792e7"
+      }
+    },
+    {
+      "key": "captureinbound",
+      "repo": "local/CaptureInbound",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 127
+      },
+      "task": {
+        "created": true,
+        "id": "d06012ea-3ad7-48c2-b834-8e390837a939",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:b884b1d38a028d6b694c7f226bd61ee2f1bd99cf5a2e4b2c79d4a9bd092fc67c"
+      }
+    },
+    {
+      "key": "glitch_app",
+      "repo": "local/glitch-app",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 127
+      },
+      "task": {
+        "created": true,
+        "id": "597b98af-ae1e-4c43-8469-3c1dbe0c7ae8",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:62e2cb83892980ec23d241d1d9203c3c5e1697a96fbe0321b4d7b23fba6ebca8"
+      }
+    },
+    {
+      "key": "patentpal",
+      "repo": "local/PatentPal",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 127
+      },
+      "task": {
+        "created": true,
+        "id": "8328855e-3972-4295-8e1a-9fe41ad0d291",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:5829bfa7361a0a6aa8f206eb4052d8a4caee62fc69c1d33f342c1dc72ac61743"
+      }
+    },
+    {
+      "key": "nfcverify",
+      "repo": "local/nfcverify",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 126
+      },
+      "task": {
+        "created": true,
+        "id": "9da2f5eb-b5f3-41bb-a87b-d88871eff2fd",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:c2443933e5a7c396c7fc2be72acfb49e04c7dcde11c39f1508a2b5eebd474c56"
+      }
+    },
+    {
+      "key": "pingmyself",
+      "repo": "local/pingmyself",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 126
+      },
+      "task": {
+        "created": true,
+        "id": "107d5594-53e8-43fb-8125-3f0aa7826258",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:9b11da398044a518e2dc7a4a74b55d5c3b34ea2256ff2553a7511575d106cd81"
+      }
+    },
+    {
+      "key": "capture",
+      "repo": "local/capture",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 125
+      },
+      "task": {
+        "created": true,
+        "id": "7ab901d1-542c-4f66-846a-cf43595290fc",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:e3aebab627bbff3906ef9dfee877361f9dcec4ebb6d5830ad6bfec6d30ea6bcc"
+      }
+    },
+    {
+      "key": "3dgameartacademy",
+      "repo": "local/3DGameArtAcademy",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": true,
+        "id": "cfd062a0-a162-43d9-bc49-db56392b4000",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:5fcd17a526b863bea133e648aad2ae797531653ba00b51dcf6bff4e6e1097fc1"
+      }
+    },
+    {
+      "key": "baktokingcom",
+      "repo": "local/BakTokingcom",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": true,
+        "id": "ae029f22-aeb6-43f9-a5ea-9b20557ce9b9",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:15ea922f52dbef5f85c373d83faab7a5e50479b7b3d259cf69749c845ae0e5ff"
+      }
+    },
+    {
+      "key": "coinstbl",
+      "repo": "local/Coinstbl",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:d26a9b62f35b913c716dad0e5f891cb5119d3aab54ea53b4dcd12e0f15e9cc8c"
+      }
+    },
+    {
+      "key": "leadgen",
+      "repo": "local/Leadgen",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": true,
+        "id": "7dd88fd2-9560-4165-b7be-36bf0381fa84",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:3bd8143a99694fc68fccaad982b1cfad54c2a31ee27b63710799f8e985815649"
+      }
+    },
+    {
+      "key": "madirectory",
+      "repo": "local/Madirectory",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": true,
+        "id": "bce40e1e-86be-448f-9e6c-1a0cd25b8fe6",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:92ed7064961416dbe57a004e39361a8acd79dd4c8adc5c61a6c0acfc53063fdf"
+      }
+    },
+    {
+      "key": "mediatranscribepro",
+      "repo": "local/MediaTranscribePro",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 124
+      },
+      "task": {
+        "created": true,
+        "id": "b94ca417-11d3-44b2-8c73-ed85fb3d8b4f",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:3554a960e4bffd8ff03fbed477debe4b42f90596a795cd11c917f55858bb87be"
+      }
+    },
+    {
+      "key": "autopay_ui",
+      "repo": "local/autopay_ui",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 123
+      },
+      "task": {
+        "created": true,
+        "id": "d9e90fad-a598-4e2c-8970-f884d929aab1",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:12d32ab398544929079c9fcf90c90759bfdaf4a9720e86f16114063c065a7ab5"
+      }
+    },
+    {
+      "key": "cookies_pass",
+      "repo": "local/Cookies_Pass",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 123
+      },
+      "task": {
+        "created": true,
+        "id": "4b3b0bb7-018f-4cc2-9b9f-2c9f4e55f88a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:349b8748f9f2e7e637d3750acacfcc702e019a741ba783552f30dd3c0e9a708b"
+      }
+    },
+    {
+      "key": "leadgen3",
+      "repo": "local/LeadGen3",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 123
+      },
+      "task": {
+        "created": true,
+        "id": "f7fe5669-0932-4ddb-8f36-6e341598579b",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:12a5b257844f885af56dfaf6dcf69fb15ed652d47d7366f85e83a23f22a6bb61"
+      }
+    },
+    {
+      "key": "foodtruckpass",
+      "repo": "local/FoodTruckPass",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 122
+      },
+      "task": {
+        "created": true,
+        "id": "c212757d-ba4a-41db-b627-6213e0888f46",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:ff26d7273abeaa0be7d57158647a5d381a7a4c6c4e1edd37f773b5b433f70afa"
+      }
+    },
+    {
+      "key": "infinitedata",
+      "repo": "local/infinitedata",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 122
+      },
+      "task": {
+        "created": true,
+        "id": "c26c1158-e25d-432d-984d-c9f67f2625b5",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:299532fcc181289d194916b9653ea4c0975b1d028458fefdefaf7fab1460083d"
+      }
+    },
+    {
+      "key": "howtowatchstream_smartkb",
+      "repo": "local/HowtoWatchStream-SmartKB",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 121
+      },
+      "task": {
+        "created": true,
+        "id": "c9180468-5136-40c5-aad7-63a46a3e1c70",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:488a04de290530f3aa64fc2745b6b5b47137dc39175af5d30679a9af3651de79"
+      }
+    },
+    {
+      "key": "coinstbl",
+      "repo": "local/CoinStbl",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 120
+      },
+      "task": {
+        "created": true,
+        "id": "ebab57a4-b04c-4c38-aa27-871cc0d65f8b",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:3313ad489c7897d2f9020f42c8a4000f5a72e68f2b90bbeefdac03527218b0b7"
+      }
+    },
+    {
+      "key": "cookies_tempe",
+      "repo": "local/cookies-tempe",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 120
+      },
+      "task": {
+        "created": true,
+        "id": "62543ca1-6906-408d-bac2-496277149fbc",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:a8103257cc033f8c918c2e6aeb1a4da7ef88509954f6295fae509f0ba4c91310"
+      }
+    },
+    {
+      "key": "crave",
+      "repo": "local/crave",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 120
+      },
+      "task": {
+        "created": true,
+        "id": "9612e273-967f-4477-861e-bb577d8c7109",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:be4801112b1d2b0852aa2571a1503452d9d43d328eb5eedf91addaf4e2069012"
+      }
+    },
+    {
+      "key": "mytutor",
+      "repo": "local/mytutor",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 120
+      },
+      "task": {
+        "created": true,
+        "id": "9c87b0cb-4170-439a-bc79-edd7195d3527",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:f11a80e8904ec94b8dd7439830b6486f1da6f0dff8ac996549b4592eaf38610d"
+      }
+    },
+    {
+      "key": "patentpal",
+      "repo": "local/patentpal",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 120
+      },
+      "task": {
+        "created": true,
+        "id": "0963b3a5-734e-42b7-93a2-cc943e577994",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:5180c25e12eca1a16f42000a923adc27361c19584a29d9578c762506dec12e36"
+      }
+    },
+    {
+      "key": "leadgenai",
+      "repo": "local/LeadGenAi",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 118
+      },
+      "task": {
+        "created": true,
+        "id": "472ccfac-8f6d-4475-899b-33403865a14a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:3761a916f569c37c042ce51b4cbef94c40a4bb77c130ee21bf3d0d8f2c8008dd"
+      }
+    },
+    {
+      "key": "3ddesignafterschool",
+      "repo": "local/3ddesignafterschool",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 113
+      },
+      "task": {
+        "created": true,
+        "id": "b192d3fa-7344-4800-8d08-14eed025b0be",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:b97aaab1c4b89d1195ffc870d96e2bf2fac6d86d94d1b2b15bbd299816d9759e"
+      }
+    },
+    {
+      "key": "pingmyself",
+      "repo": "local/PingMyself",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 107
+      },
+      "task": {
+        "created": true,
+        "id": "3c640f56-2442-43d6-9ea5-e94d7972d422",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:982d86c8186d7a276417dcde7030a1bae1b9f15f6cc5ced72d719499bd1cc545"
+      }
+    },
+    {
+      "key": "v0_morningops",
+      "repo": "local/v0-morningops",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 12
+      },
+      "task": {
+        "created": true,
+        "id": "44292c43-16b7-4131-b051-6f1b8eaa3d2c",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:8f7c343f6cf2178cd54d9e7c1c465bf7e21c27a34a2695ef92dddeddf8d5da8d"
+      }
+    },
+    {
+      "key": "veritap",
+      "repo": "local/veritap",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 12
+      },
+      "task": {
+        "created": true,
+        "id": "c667bf11-6846-4e58-9ce0-75ceff1c20c8",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:5508bdd00cb50ac7af46fa5ea9cccc9a3b5e0c6a408e6b4ec0df1d6c88711e90"
+      }
+    },
+    {
+      "key": "qarunner",
+      "repo": "local/QARunner",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "673c80fe-861a-4d1e-a965-db178f21d293",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:12ae8c00e1a323eacb3a89b6ce40bd4baf4ba0b3d35d8a36e0459a6502bda5e8"
+      }
+    },
+    {
+      "key": "reframed",
+      "repo": "local/reframed",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "e53c0c48-200e-4710-9529-7c60a0fbb769",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:0b68b4393686609a91103248661c9c6a7f9221559fadd37293673f8bf9669888"
+      }
+    },
+    {
+      "key": "smartkb",
+      "repo": "local/SmartKB",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": false,
+        "reason": "duplicate_active",
+        "type": "opencode_controller",
+        "idempotencyKey": "opencode_controller:0218e492dc9fcda28f77d78f36c17b5a5081d5a9b92f718636acedf1bf7c0d05"
+      }
+    },
+    {
+      "key": "socialaipilot",
+      "repo": "local/SocialAiPilot",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "a33e86d0-2419-402b-b4b7-948761bfadc5",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:a6e79e9249ea7c9139afc52fb8c3e4e8f31ba88b5c336fe25df32e3578ea0c53"
+      }
+    },
+    {
+      "key": "somaveachaser",
+      "repo": "local/SomaveaChaser",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "21e6fb7b-195e-4fff-b57a-4e300423289b",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:c123ea488878b9d06842314b1a9d2f28c9d840be48d52e9930e3b20ea19dc6a3"
+      }
+    },
+    {
+      "key": "syrup_client_line_sheet",
+      "repo": "local/syrup-client-line-sheet",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "ab5357f5-ecba-455e-bd24-948862897d93",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:9cde873a37cc2c8fe7d7d4c21ac3f73d414529e0e691a3ae0b1d7283a019d4bd"
+      }
+    },
+    {
+      "key": "syrup_internal_line_sheet",
+      "repo": "local/syrup-internal-line-sheet",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "5a9515c2-72f9-4d6c-8773-ebb14f077cc7",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:d312840f9deeb1ac5cfb2edabd350e65aea0127530b9a32cb68dc8960a3b7bc6"
+      }
+    },
+    {
+      "key": "tap2",
+      "repo": "local/tap2",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "3ccff6ce-ec84-4d1c-82f8-b49b54a9143a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:107fb851e66ad216b14f30c2470f45697412e397ccbd8f461675d3a0fad771af"
+      }
+    },
+    {
+      "key": "tapmenu",
+      "repo": "local/tapmenu",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "2919ce0b-caaa-4697-8906-e144f0321d2a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:55e038860879031aa3125064248c0dad0dd7cae8f79dc5faae9676ee8a6b8d97"
+      }
+    },
+    {
+      "key": "trademarkhelper",
+      "repo": "local/TrademarkHelper",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "7d48d20a-8176-495d-a81c-bc5026898ba8",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:2df56772e52f3e42960ee3b65537385ae4d50ebdc2961ad6a630aa7014310abc"
+      }
+    },
+    {
+      "key": "usipeorg",
+      "repo": "local/usipeorg",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "02b7471b-afa3-448a-a09f-e8dc2925e640",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:16b9d1d53edc021bc50f1bfb7d664a1ac69a07e304eb125d3a6ad6d43de9b1ad"
+      }
+    },
+    {
+      "key": "usipeorg",
+      "repo": "local/USIPEorg",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "a36648fb-e614-4909-b945-4d4f0aa57f89",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:5c4dcac65f36ba8392ed99fd8abd2eacc65c1ed970fc2b0f157aa82fe13b5a77"
+      }
+    },
+    {
+      "key": "uspto_trademark_analyzer",
+      "repo": "local/uspto-trademark-analyzer",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "d5e3a9b4-49e8-4bb5-80ee-3e0d970aa922",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:2295660bc238ddb1e04677800ca2bc2dade50bf979c047a2f6434f3546b9e336"
+      }
+    },
+    {
+      "key": "v0_skyn_patch",
+      "repo": "local/v0-skyn-patch",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "25017cb2-52de-456c-a362-3cd6fffe28fc",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:3993fccb751e696a9114b56c8c1d2112d67f3bf7bcc8c91c37eeb74d593b317b"
+      }
+    },
+    {
+      "key": "v0_untitled_project",
+      "repo": "local/v0-untitled-project",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "918b175f-5811-4eb0-945b-112b3dff038a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:44d145947ce7bf15203e86d69443c41d0ee916a7dc8acb272648169f5c79a9e8"
+      }
+    },
+    {
+      "key": "veritap_2026",
+      "repo": "local/veritap_2026",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "768502b8-fef9-444b-8c41-8e73b75a2ecf",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:8791f38cfc171a4db9a21f05fca37fb0922f24d2a39c3d765c3906fbfa1f9bb2"
+      }
+    },
+    {
+      "key": "veritap_chat",
+      "repo": "local/Veritap_chat",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "107be4d0-c98e-440c-8478-396131d747d3",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:4e7d964ea059c3386c45b64f17461c4513ff85d697d2247741fddca173501b41"
+      }
+    },
+    {
+      "key": "veritapco_archive",
+      "repo": "local/VeriTapco_archive",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "7d15e4aa-23f9-4253-bd20-e69f1b862778",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:6244b2e5b419e71288b2ea1797e152d4d115ebd2d16c7d0532c8a59a89bf95f6"
+      }
+    },
+    {
+      "key": "wmac",
+      "repo": "local/wmac",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "d3193d53-9064-4c25-8368-a56f0966cd7b",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:171b2cee5ced5a20697c4c62eb6f667c92d29cf4df0074cd4dc0fd13f2566aab"
+      }
+    },
+    {
+      "key": "wmactealth",
+      "repo": "local/wmactealth",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "ee4f3404-ad9a-4426-b4cd-ca52294262ab",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:8d204026d98258f1c1d6f5d4f2a436e167fd5fe2efaa08dffcb77ee87635313e"
+      }
+    },
+    {
+      "key": "wmactealth_lc",
+      "repo": "local/wmactealth-lc",
+      "priority": 6,
+      "high_priority_lane": false,
+      "repo_metrics_72h": {
+        "failure_count": 0,
+        "completed_count": 0
+      },
+      "task": {
+        "created": true,
+        "id": "8ede0f21-1042-4da4-995e-a87e9f7fa55a",
+        "type": "opencode_controller",
+        "priority": 6,
+        "idempotencyKey": "opencode_controller:eee7f8397dd44b538f09de62fbaea60247892446d5d84db1c7f1ec22884412e9"
+      }
+    }
+  ],
+  "created_count": 50,
+  "skipped_duplicates": 15
+}

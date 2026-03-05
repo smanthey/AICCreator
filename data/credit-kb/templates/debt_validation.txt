@@ -1,0 +1,24 @@
+[Your Name]
+[Your Address]
+[City, State ZIP]
+[Date]
+
+{{collector_name}}
+[Address]
+
+Re: Request for Debt Validation
+Account: {{account_number}}
+Original Creditor: {{original_creditor}}
+
+To Whom It May Concern:
+
+This is a request for validation under 15 U.S.C. § 1692g.
+Please provide:
+- Proof of debt ownership/assignment
+- Original creditor documentation
+- Itemized balance and payment history
+
+Until validation is provided, please cease collection communication except to provide requested validation.
+
+Sincerely,
+[Your Signature]

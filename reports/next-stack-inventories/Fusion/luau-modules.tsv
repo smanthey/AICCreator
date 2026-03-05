@@ -1,0 +1,436 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/init.luau	83	module_export	return Fusion	return Fusion
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/merge.luau	20	module_export			return into			return into
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/merge.luau	31	module_export			return into			return into
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/merge.luau	35	module_export	return merge	return merge
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/never.luau	14	module_export	return never	return never
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau	20	module_export	local Debugger = {}	local Debugger = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau	37	module_export		return oldProvider		return oldProvider
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau	70	module_export	return Debugger	return Debugger
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau	15	module_export	local RobloxExternal = {}	local RobloxExternal = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau	98	module_export	return RobloxExternal	return RobloxExternal
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Safe.luau	20	module_export		return value		return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Safe.luau	23	module_export	return Safe	return Safe
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	22	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	42	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	67	module_export		local methods = {}		local methods = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	84	module_export			return value			return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	87	module_export		return methods		return methods
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau	91	module_export	return Contextual	return Contextual
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/isSimilar.luau	29	module_export	return isSimilar	return isSimilar
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	17	module_export	local External = {}	local External = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	23	module_export	local updateStepCallbacks = {}	local updateStepCallbacks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	42	module_export		return oldProvider		return oldProvider
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	128	module_export		local uniqueIdentifier = {}		local uniqueIdentifier = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	153	module_export		return lastUpdateStep		return lastUpdateStep
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau	156	module_export	return External	return External
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForPairs.luau	52	module_export		local self = {}		local self = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Child.luau	18	module_export		return x		return x
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Child.luau	21	module_export	return Child	return Child
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/xtypeof.luau	24	module_export		return typeString		return typeString
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/xtypeof.luau	27	module_export	return xtypeof	return xtypeof
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForValues.luau	51	module_export		local self = {}		local self = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForValues.luau	61	module_export				return outputValue				return outputValue
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForValues.luau	68	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau	44	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau	115	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau	125	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau	132	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau	15	module_export	local Oklab = {}	local Oklab = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau	70	module_export	return Oklab	return Oklab
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/nameOf.luau	20	module_export			return nickname			return nickname
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/nameOf.luau	32	module_export		return defaultName		return defaultName
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/nameOf.luau	35	module_export	return nameOf	return nameOf
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau	14	module_export	local sRGB = {}	local sRGB = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau	47	module_export	return sRGB	return sRGB
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau	37	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau	78	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau	122	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau	128	module_export	return Stopwatch	return Stopwatch
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau	27	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau	71	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau	78	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau	97	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau	101	module_export	return For	return For
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeOut.luau	60	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeOut.luau	63	module_export	return AttributeOut	return AttributeOut
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/packType.luau	96	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/packType.luau	100	module_export	return packType	return packType
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Logging/parseError.luau	25	module_export	return parseError	return parseError
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/ForTypes.luau	30	module_export	return nil	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Logging/formatError.luau	49	module_export	return formatError	return formatError
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenDuration.luau	24	module_export		return tweenDuration		return tweenDuration
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenDuration.luau	27	module_export	return getTweenDuration	return getTweenDuration
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/init.luau	40	module_export	return TestEZ	return TestEZ
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Hydrate.luau	25	module_export			return target			return target
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Hydrate.luau	29	module_export	return Hydrate	return Hydrate
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau	22	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau	58	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau	69	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau	84	module_export	return ExternalTime	return ExternalTime
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	38	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	85	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	145	module_export		local pendingPairs = {} :: {[KI]: VI}		local pendingPairs = {} :: {[KI]: VI}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	150	module_export		local newSubObjects = {} :: typeof(self._subObjects)		local newSubObjects = {} :: typeof(self._subObjects)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	203	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau	207	module_export	return Disassembly	return Disassembly
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	18	module_export	local Expectation = {}	local Expectation = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	66	module_export			return trueMessage			return trueMessage
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	68	module_export			return falseMessage			return falseMessage
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	93	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	98	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	101	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	114	module_export				return self				return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	118	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	124	module_export			return self			return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	132	module_export			return newExpectation			return newExpectation
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	182	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	206	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	231	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	263	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	308	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau	311	module_export	return Expectation	return Expectation
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenRatio.luau	44	module_export		return ratio		return ratio
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenRatio.luau	47	module_export	return getTweenRatio	return getTweenRatio
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/New.luau	44	module_export			return instance			return instance
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/New.luau	48	module_export	return New	return New
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau	5	module_export		local result = {}		local result = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau	11	module_export		return result		return result
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau	14	module_export	local ExpectationContext = {}	local ExpectationContext = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau	38	module_export	return ExpectationContext	return ExpectationContext
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Out.luau	66	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Out.luau	69	module_export	return Out	return Out
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/peek.luau	31	module_export	return peek	return peek
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeChange.luau	44	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeChange.luau	47	module_export	return AttributeChange	return AttributeChange
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	12	module_export		local env = {}		local env = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	31	module_export			return node			return node
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	118	module_export		return env		return env
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	121	module_export	local TestNode = {}	local TestNode = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	154	module_export		return modifier		return modifier
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	171	module_export		return child		return child
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	211	module_export	local TestPlan = {}	local TestPlan = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	234	module_export		return child		return child
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	283	module_export		local buffer = {}		local buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	295	module_export		local results = {}		local results = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	301	module_export		return results		return results
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau	304	module_export	return TestPlan	return TestPlan
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForKeys.luau	51	module_export		local self = {}		local self = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForKeys.luau	61	module_export				return outputKey				return outputKey
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForKeys.luau	68	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Attribute.luau	55	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Attribute.luau	58	module_export	return Attribute	return Attribute
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnEvent.luau	51	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnEvent.luau	54	module_export	return OnEvent	return OnEvent
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlanner.luau	8	module_export	local TestPlanner = {}	local TestPlanner = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlanner.luau	37	module_export		return plan		return plan
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlanner.luau	40	module_export	return TestPlanner	return TestPlanner
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau	37	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau	76	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau	83	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau	117	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau	149	module_export	return applyInstanceProps	return applyInstanceProps
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnChange.luau	47	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnChange.luau	50	module_export	return OnChange	return OnChange
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/castToState.luau	20	module_export			return target			return target
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/castToState.luau	22	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/castToState.luau	26	module_export	return castToState	return castToState
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	5	module_export	local TeamCityReporter = {}	local TeamCityReporter = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	11	module_export		return str		return str
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	39	module_export			return buffer			return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	47	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	54	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	59	module_export		local buffer = {}		local buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	65	module_export		return buffer		return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau	104	module_export	return TeamCityReporter	return TeamCityReporter
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Tag.luau	58	module_export		return key		return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Tag.luau	61	module_export	return Tag	return Tag
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	20	module_export	local TextReporterQuiet = {}	local TextReporterQuiet = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	27	module_export			return buffer			return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	48	module_export		return buffer		return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	52	module_export		local buffer = {}		local buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	58	module_export		return buffer		return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau	97	module_export	return TextReporterQuiet	return TextReporterQuiet
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	3	module_export	local LifecycleHooks = {}	local LifecycleHooks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	18	module_export		local hooks = {}		local hooks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	26	module_export		return hooks		return hooks
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	34	module_export		local hooks = {}		local hooks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	42	module_export		return hooks		return hooks
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	78	module_export		local hooks = {}		local hooks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	86	module_export		return hooks		return hooks
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau	89	module_export	return LifecycleHooks	return LifecycleHooks
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	18	module_export	local TextReporter = {}	local TextReporter = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	29	module_export			return buffer			return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	56	module_export		return buffer		return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	60	module_export		local buffer = {}		local buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	67	module_export		return buffer		return buffer
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau	106	module_export	return TextReporter	return TextReporter
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau	18	module_export	local TestResults = {}	local TestResults = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau	37	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau	51	module_export		return node		return node
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau	74	module_export		local buffer = {}		local buffer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau	112	module_export	return TestResults	return TestResults
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestEnum.luau	5	module_export	local TestEnum = {}	local TestEnum = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestEnum.luau	28	module_export	return TestEnum	return TestEnum
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	100	module_export				return expectedOutput				return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	106	module_export				return expectedOutput				return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	133	module_export					return expectedOutput					return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	141	module_export					return expectedOutput					return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	168	module_export				return expectedOutput				return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	180	module_export					return expectedOutput					return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	209	module_export					return expectedOutput					return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau	215	module_export					return expectedOutput					return expectedOutput
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau	5	module_export	local Context = {}	local Context = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau	8	module_export		local meta = {}		local meta = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau	9	module_export		local index = {}		local index = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau	26	module_export	return Context	return Context
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	15	module_export	local TestSession = {}	local TestSession = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	35	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	150	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	155	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	159	module_export			return true			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	165	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	170	module_export		return false		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau	243	module_export	return TestSession	return TestSession
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau	188	module_export	return TestRunner	return TestRunner
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau	42	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau	46	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau	62	module_export				return nil				return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau	78	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau	87	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	9	module_export	local TestBootstrap = {}	local TestBootstrap = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	21	module_export		local path = {}		local path = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	35	module_export		return path		return path
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	49	module_export		return stringPath		return stringPath
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	73	module_export		local modules = {}		local modules = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	81	module_export		return modules		return modules
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	113	module_export		local modules = {}		local modules = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	144	module_export		return results		return results
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau	147	module_export	return TestBootstrap	return TestBootstrap
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	20	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	34	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	45	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	63	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	67	module_export			local firesPerThread = {} :: {[thread]: number}			local firesPerThread = {} :: {[thread]: number}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	87	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	104	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	123	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	145	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	159	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	175	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/Observer.spec.luau	197	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/innerScope.luau	31	module_export		return new		return new
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/scoped.luau	21	module_export		return scope		return scope
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/deriveScope.luau	21	module_export		return scope		return scope
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/insert.luau	22	module_export	return insert	return insert
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/needsDestruction.luau	17	module_export	return needsDestruction	return needsDestruction
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau	17	module_export	local checkLifetime = {}	local checkLifetime = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau	134	module_export	return checkLifetime	return checkLifetime
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/doCleanup.luau	91	module_export	return doCleanup	return doCleanup
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeChange.spec.luau	23	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeChange.spec.luau	43	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeChange.spec.luau	62	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/change.luau	81	module_export	return change	return change
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Tag.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Tag.spec.luau	30	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Tag.spec.luau	41	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/castToGraph.luau	23	module_export			return target			return target
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/castToGraph.luau	25	module_export			return nil			return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/castToGraph.luau	29	module_export	return castToGraph	return castToGraph
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	48	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	189	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	191	module_export					return err					return err
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	222	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	224	module_export					return err					return err
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	257	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	302	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/change.spec.luau	327	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/evaluate.luau	50	module_export			return targetMeaningfullyChanged			return targetMeaningfullyChanged
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/evaluate.luau	52	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/evaluate.luau	56	module_export	return evaluate	return evaluate
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnChange.spec.luau	22	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnChange.spec.luau	43	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnChange.spec.luau	61	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnChange.spec.luau	78	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/New.spec.luau	18	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/New.spec.luau	28	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/New.spec.luau	38	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/New.spec.luau	50	module_export			local scope1 = {}			local scope1 = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/New.spec.luau	51	module_export			local scope2 = {}			local scope2 = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	85	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	105	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	150	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	169	module_export				return diagnosis				return diagnosis
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	187	module_export							return false							return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	214	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	234	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	252	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	272	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	292	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	320	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	336	module_export							return false							return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	354	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	371	module_export							return false							return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	393	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	409	module_export							return false							return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	414	module_export						local searchNext = {}						local searchNext = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	415	module_export						local seen = {}						local seen = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	451	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	472	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	485	module_export							return false							return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	508	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	528	module_export							return true							return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	548	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	550	module_export					return err					return err
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	580	module_export					return false					return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Graph/evaluate.spec.luau	582	module_export					return err					return err
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/doCleanup.spec.luau	141	module_export			local runs = {}			local runs = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/doCleanup.spec.luau	143	module_export			local tasks = {}			local tasks = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Types.luau	318	module_export	return nil	return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/unpackType.luau	103	module_export	return unpackType	return unpackType
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau	29	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau	76	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau	107	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau	53	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau	142	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau	204	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau	211	module_export			return false			return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau	8	module_export	local SpecExternal = {}	local SpecExternal = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau	14	module_export	local queue = {} :: {thread}	local queue = {} :: {thread}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau	97	module_export	return SpecExternal	return SpecExternal
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	25	module_export			local reverseIndex = {}			local reverseIndex = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	45	module_export	local Graphs = {}	local Graphs = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	340	module_export		local selection = {}		local selection = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	343	module_export			local searchNext = {}			local searchNext = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	371	module_export		return selection		return selection
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	378	module_export		local selection = {}		local selection = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	389	module_export		return selection		return selection
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	404	module_export				return false				return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	419	module_export		return false		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	472	module_export					return name					return name
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	482	module_export					return name					return name
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	526	module_export		local objects = {}		local objects = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	527	module_export		local allObjects = {}		local allObjects = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	539	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	609	module_export							local preStateFormatted = {}							local preStateFormatted = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	626	module_export										return realValidity										return realValidity
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau	671	module_export	return Graphs	return Graphs
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/springCoefficients.luau	80	module_export	return springCoefficients	return springCoefficients
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Out.spec.luau	24	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Out.spec.luau	43	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Out.spec.luau	64	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/FiniteTime.luau	3	module_export	local FiniteTime = {}	local FiniteTime = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/FiniteTime.luau	19	module_export		return check		return check
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/FiniteTime.luau	22	module_export	return FiniteTime	return FiniteTime
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Attribute.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Attribute.spec.luau	30	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Attribute.spec.luau	41	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	35	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	47	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	61	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	80	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	93	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	112	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	115	module_export			local destroyed = {}			local destroyed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	124	module_export				return generated				return generated
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	158	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	167	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	170	module_export				return key				return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	189	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	190	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	196	module_export				return key				return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	210	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	211	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	217	module_export				return key				return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	233	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	234	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	240	module_export				return key				return key
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForKeys.spec.luau	253	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Hydrate.spec.luau	17	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Hydrate.spec.luau	26	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/applyInstanceProps.spec.luau	18	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/applyInstanceProps.spec.luau	33	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/applyInstanceProps.spec.luau	52	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/applyInstanceProps.spec.luau	69	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/applyInstanceProps.spec.luau	196	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	35	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	47	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	61	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	80	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	93	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	110	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	113	module_export			local destroyed = {}			local destroyed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	122	module_export				return generated				return generated
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	156	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	165	module_export						return nil						return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	168	module_export				return value				return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	187	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	188	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	194	module_export				return value				return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	210	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	211	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	217	module_export				return value				return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	233	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	234	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	240	module_export				return value				return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	253	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	280	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	301	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	306	module_export					return nil					return nil
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForValues.spec.luau	308	module_export					return value					return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeOut.spec.luau	25	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeOut.spec.luau	43	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/AttributeOut.spec.luau	62	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	35	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	47	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	58	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	72	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	89	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	105	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	106	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	131	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	132	module_export			local numDestructions = {}			local numDestructions = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	140	module_export				return value				return value
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Computed.spec.luau	162	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	35	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	47	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	61	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	80	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	93	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	112	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	115	module_export			local destroyed = {}			local destroyed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	159	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	190	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	191	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	213	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	214	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	236	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/ForPairs.spec.luau	237	module_export			local destructed = {}			local destructed = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau	22	module_export	local class = {}	local class = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau	52	module_export		return self		return self
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau	64	module_export		return newValue		return newValue
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau	72	module_export		return true		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/lerpType.luau	158	module_export			return from			return from
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/lerpType.luau	160	module_export			return to			return to
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/lerpType.luau	164	module_export	return lerpType	return lerpType
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	19	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	35	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	61	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	91	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	121	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	145	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/Children.spec.luau	176	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/depend.luau	33	module_export	return depend	return depend
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnEvent.spec.luau	23	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnEvent.spec.luau	44	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnEvent.spec.luau	58	module_export				local scope = {}				local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Instances/OnEvent.spec.luau	74	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	18	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	41	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	50	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	66	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	87	module_export			local scope = {}			local scope = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/State/Value.spec.luau	106	module_export			local scope = {}			local scope = {}

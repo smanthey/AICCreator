@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-04T03:36:15.707Z",
+  "entries": {
+    "mission_control:shared:local/research:research_analysis": {
+      "retries": 5,
+      "duplicate_streak": 1,
+      "last_fingerprint": "09e1afff5122b4316d5fc1634338157edc7d64f06bbdea915c5a5718226fa7b3",
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-04T03:36:15.701Z"
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, repomap_missing, captured_symbol_ids_in_output | RESEARCH_CONTRACT_INCOMPLETE: ranked_implementation_candidates, exact_symbol_targets(repo,file,symbol), apply_change_acceptance_criteria | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-04T03:36:15.701Z",
+      "last_status": "BLOCKED"
+    },
+    "status_review:shared:local/claw-architect:schema_integrity_agent": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "08d41f0253bb0ecddca5238f78cff16fe4c0249735c00e41b591380f0c5e5bac",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | DRY_RUN_NO_EVIDENCE: dry-run outputs cannot be marked completed.",
+      "last_seen_at": "2026-03-03T18:13:36.210Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:cookiespass:local/cookiespass:payclaw_saas_builder": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "08d41f0253bb0ecddca5238f78cff16fe4c0249735c00e41b591380f0c5e5bac",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, captured_symbol_ids_in_output | DRY_RUN_NO_EVIDENCE: dry-run outputs cannot be marked completed.",
+      "last_seen_at": "2026-03-03T18:21:20.580Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:payclaw:local/payclaw:payclaw_saas_builder": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "08d41f0253bb0ecddca5238f78cff16fe4c0249735c00e41b591380f0c5e5bac",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | DRY_RUN_NO_EVIDENCE: dry-run outputs cannot be marked completed.",
+      "last_seen_at": "2026-03-03T18:26:01.630Z",
+      "last_status": "FAILED"
+    },
+    "status_review:shared:local/claw-architect:uptime_monitoring_agent": {
+      "retries": 2,
+      "duplicate_streak": 2,
+      "last_fingerprint": "784e4340d02fdc47c96fef1d2c11817cbc26dd89a342e977e04c0fd84f391e36",
+      "quarantined": {
+        "active": true,
+        "reason": "BLOCKED_LOOP",
+        "required_action": "Human review required: change objective/inputs before re-enabling this lane.",
+        "at": "2026-03-03T23:15:01.880Z"
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block | BLOCKED_LOOP: near-identical output repeated for same task type + repo.",
+      "last_seen_at": "2026-03-03T23:15:01.880Z",
+      "last_status": "BLOCKED_LOOP"
+    },
+    "status_review:shared:local/claw-architect:status_review_coordinator": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "56819ab11454cf541d46f56b1a334793e00f005612d65293deac26fec14440f6",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:02:45.026Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:shared:local/claw-architect:business_coordinator_agent": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "7781a0006641bbbc06a7b2f4685fcbdb267dfc00f3375a0f902e878e54637f6e",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | RESEARCH_CONTRACT_INCOMPLETE: ranked_implementation_candidates, exact_symbol_targets(repo,file,symbol), apply_change_acceptance_criteria | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:02:48.108Z",
+      "last_status": "FAILED"
+    },
+    "status_review:shared:local/claw-architect:security_remediation_agent": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "416d1ed6d7324315a273a314a5a84dc88ddd84fc867dd4755aaa73115796fa87",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:02:54.783Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:shared:local/claw-architect:saas_development": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "973c1203bcea8530d9ce00e1cb4215a1f0e1b05ac021cad806548ef572dff931",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:05:03.569Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:shared:local/claw-architect:scheduling_calendar": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "771069a0840ca5e81b859006de88f16fa0bc1da8d9d8818194ef3a9c925c2b1b",
+      "quarantined": {
+        "active": false
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:05:07.445Z",
+      "last_status": "FAILED"
+    },
+    "mission_control:shared:local/claw-architect:roblox_game_growth": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "e6622eeff720072b29f94eb958623974650a068640976cd320c784b663a5b337",
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-03T23:05:08.490Z"
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:05:08.490Z",
+      "last_status": "BLOCKED"
+    },
+    "mission_control:shared:local/claw-architect:bot_collection_autonomous": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "354e3e3b5c55cf5f48c5408b5e33820506bfda1d515ccf16fcaa2cda06f59918",
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-03T23:05:15.000Z"
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | RESEARCH_CONTRACT_INCOMPLETE: ranked_implementation_candidates, exact_symbol_targets(repo,file,symbol), apply_change_acceptance_criteria | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:05:15.000Z",
+      "last_status": "BLOCKED"
+    },
+    "mission_control:shared:local/claw-architect:fix_lane_guardian": {
+      "retries": 1,
+      "duplicate_streak": 1,
+      "last_fingerprint": "e75a75f99896814cf4e4d2df40d8a0469b57cc97d5433d80b567f034ee54728e",
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-03T23:05:18.231Z"
+      },
+      "last_summary": "EVIDENCE_GATE_MISSING: require commit SHA, diff stats/changed files, passing test output, or artifact path. | SYMBOL_PREFLIGHT_FAILED: minimum_symbol_query_count, minimum_distinct_symbol_operations, index_operation_evidence, repo_mapper_evidence, captured_symbol_ids_in_output | OUTPUT_CONTRACT_MISSING: final_output_contract_json_block",
+      "last_seen_at": "2026-03-03T23:05:18.231Z",
+      "last_status": "BLOCKED"
+    }
+  },
+  "quarantine_queue": [
+    {
+      "at": "2026-03-03T18:21:21.752Z",
+      "lane": "cookiespass",
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Attach evidence and manually release lane quarantine.",
+      "source": "progress_integrity_audit"
+    },
+    {
+      "at": "2026-03-03T18:21:21.752Z",
+      "lane": "gocrawdaddy",
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Attach evidence and manually release lane quarantine.",
+      "source": "progress_integrity_audit"
+    },
+    {
+      "at": "2026-03-03T18:21:21.752Z",
+      "lane": "payclaw",
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Attach evidence and manually release lane quarantine.",
+      "source": "progress_integrity_audit"
+    },
+    {
+      "at": "2026-03-03T18:26:01.479Z",
+      "lane": "payclaw",
+      "action": "UNQUARANTINE",
+      "reason": "evidence attached and verified in latest run",
+      "actor": "codex",
+      "global_released": true,
+      "lane_entries_released": 0,
+      "entries_released": 0
+    },
+    {
+      "at": "2026-03-03T18:30:11.581Z",
+      "lane": "payclaw",
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Attach evidence and manually release lane quarantine.",
+      "source": "progress_integrity_audit"
+    },
+    {
+      "at": "2026-03-03T18:37:01.636Z",
+      "action": "QUARANTINE",
+      "lane": "payclaw",
+      "reason": "manual quarantine lifecycle validation",
+      "required_action": "Attach required evidence, resolve blocker, then run integrity:unquarantine with audited reason.",
+      "actor": "codex",
+      "already_active": true
+    },
+    {
+      "at": "2026-03-03T19:00:25.546Z",
+      "lane": "payclaw",
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Attach evidence and manually release lane quarantine.",
+      "source": "progress_integrity_audit"
+    },
+    {
+      "at": "2026-03-03T23:05:08.490Z",
+      "key": "mission_control:shared:local/claw-architect:roblox_game_growth",
+      "lane": "shared",
+      "repo": "local/claw-architect",
+      "agent_id": "roblox_game_growth",
+      "reason": "RETRY_BUDGET_EXHAUSTED",
+      "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+      "retries": 1,
+      "lane_retries": 4
+    },
+    {
+      "at": "2026-03-03T23:05:15.000Z",
+      "key": "mission_control:shared:local/claw-architect:bot_collection_autonomous",
+      "lane": "shared",
+      "repo": "local/claw-architect",
+      "agent_id": "bot_collection_autonomous",
+      "reason": "RETRY_BUDGET_EXHAUSTED",
+      "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+      "retries": 1,
+      "lane_retries": 5
+    },
+    {
+      "at": "2026-03-03T23:05:18.231Z",
+      "key": "mission_control:shared:local/claw-architect:fix_lane_guardian",
+      "lane": "shared",
+      "repo": "local/claw-architect",
+      "agent_id": "fix_lane_guardian",
+      "reason": "RETRY_BUDGET_EXHAUSTED",
+      "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+      "retries": 1,
+      "lane_retries": 6
+    },
+    {
+      "at": "2026-03-03T23:15:01.880Z",
+      "key": "status_review:shared:local/claw-architect:uptime_monitoring_agent",
+      "lane": "shared",
+      "repo": "local/claw-architect",
+      "agent_id": "uptime_monitoring_agent",
+      "reason": "BLOCKED_LOOP",
+      "required_action": "Human review required: change objective/inputs before re-enabling this lane.",
+      "retries": 2,
+      "lane_retries": 4
+    },
+    {
+      "at": "2026-03-04T03:36:15.701Z",
+      "key": "mission_control:shared:local/research:research_analysis",
+      "lane": "shared",
+      "repo": "local/research",
+      "agent_id": "research_analysis",
+      "reason": "RETRY_BUDGET_EXHAUSTED",
+      "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+      "retries": 5,
+      "lane_retries": 4
+    }
+  ],
+  "lane_entries": {
+    "mission_control:cookiespass:local/cookiespass": {
+      "retries": 1,
+      "quarantined": {
+        "active": false
+      }
+    },
+    "mission_control:payclaw:local/payclaw": {
+      "retries": 1,
+      "quarantined": {
+        "active": false
+      }
+    },
+    "status_review:shared:local/claw-architect": {
+      "retries": 4,
+      "quarantined": {
+        "active": true,
+        "reason": "BLOCKED_LOOP",
+        "required_action": "Human review required: change objective/inputs before re-enabling this lane.",
+        "at": "2026-03-03T23:15:01.880Z"
+      }
+    },
+    "mission_control:shared:local/claw-architect": {
+      "retries": 6,
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-03T23:05:18.231Z"
+      }
+    },
+    "mission_control:shared:local/research": {
+      "retries": 4,
+      "quarantined": {
+        "active": true,
+        "reason": "RETRY_BUDGET_EXHAUSTED",
+        "required_action": "Human unblock required: resolve blocker, provide new acceptance criteria, then release quarantine.",
+        "at": "2026-03-04T03:36:15.701Z"
+      }
+    }
+  },
+  "global_lane_quarantine": {
+    "cookiespass": {
+      "active": true,
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Lane is auto-quarantined. Attach evidence (commit SHA, diff stats, passing test output, or artifact path), then manually release quarantine.",
+      "source": "progress_integrity_audit",
+      "at": "2026-03-03T19:00:25.546Z"
+    },
+    "gocrawdaddy": {
+      "active": true,
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Lane is auto-quarantined. Attach evidence (commit SHA, diff stats, passing test output, or artifact path), then manually release quarantine.",
+      "source": "progress_integrity_audit",
+      "at": "2026-03-03T19:00:25.546Z"
+    },
+    "payclaw": {
+      "active": true,
+      "reason": "COMPLETED_WITHOUT_EVIDENCE",
+      "required_action": "Lane is auto-quarantined. Attach evidence (commit SHA, diff stats, passing test output, or artifact path), then manually release quarantine.",
+      "source": "progress_integrity_audit",
+      "at": "2026-03-03T19:00:25.546Z"
+    }
+  }
+}

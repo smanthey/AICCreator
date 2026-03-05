@@ -1,0 +1,603 @@
+{
+  "ok": true,
+  "generated_at": "2026-03-04T10:31:13.606Z",
+  "agent_id": "learning_journal_agent",
+  "window_hours": 24,
+  "task_metrics": {
+    "totals": {
+      "created": 24883,
+      "completed": 20921,
+      "failed": 0,
+      "dead_letter": 0,
+      "active_open": 1436
+    },
+    "by_type": [
+      {
+        "type": "opencode_controller",
+        "total": 5231,
+        "completed": 4640,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_audit",
+        "total": 4622,
+        "completed": 4346,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_fix_plan",
+        "total": 4373,
+        "completed": 4223,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "repo_autofix",
+        "total": 3398,
+        "completed": 1695,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "site_compare",
+        "total": 2050,
+        "completed": 2033,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "repo_index_autopatch",
+        "total": 1620,
+        "completed": 1255,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "github_observability_scan",
+        "total": 969,
+        "completed": 950,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "github_repo_audit",
+        "total": 543,
+        "completed": 160,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "loyalty_send_outreach",
+        "total": 423,
+        "completed": 398,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "echo",
+        "total": 303,
+        "completed": 303,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "report",
+        "total": 186,
+        "completed": 46,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "loyalty_process_webhooks",
+        "total": 170,
+        "completed": 153,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "generate_copy",
+        "total": 160,
+        "completed": 0,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "quant_trading_execute_orders",
+        "total": 157,
+        "completed": 6,
+        "failed": 0,
+        "dead_letter": 0
+      },
+      {
+        "type": "quant_trading_signal_scan",
+        "total": 157,
+        "completed": 7,
+        "failed": 0,
+        "dead_letter": 0
+      }
+    ],
+    "recent_completed": [
+      {
+        "id": "e5de8286-7849-4668-b2c0-32ac8ae3cb23",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:31:24.449Z"
+      },
+      {
+        "id": "90d8626d-bb4d-47d2-8322-bf5fc40ea86b",
+        "type": "security_council",
+        "title": "Security Council — 2026-03-04",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:44.386Z"
+      },
+      {
+        "id": "525582e0-8567-4a9a-a612-06cc08f158c4",
+        "type": "resourceful_file_resolve",
+        "title": "resourceful file resolver",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:44.384Z"
+      },
+      {
+        "id": "1b08c6c1-c652-46b8-a7c4-af27c33bc737",
+        "type": "loyalty_send_outreach",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:36.390Z"
+      },
+      {
+        "id": "86144e55-e40f-4145-87bc-5432b9ec2ec1",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:33.769Z"
+      },
+      {
+        "id": "8a1bfa91-5524-41c9-9986-71f833fca452",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:33.064Z"
+      },
+      {
+        "id": "fc7817d1-1d3a-4ba9-b11e-c05b130b983c",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:32.720Z"
+      },
+      {
+        "id": "fcc06aa1-2b57-4e25-a779-6ee64b048708",
+        "type": "github_observability_scan",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:32.419Z"
+      },
+      {
+        "id": "c0af2cc9-2126-4721-a530-aea2044989e8",
+        "type": "loyalty_send_outreach",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:31.480Z"
+      },
+      {
+        "id": "895ead2d-18a2-4aef-a2e2-108efef5dbb3",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:30.776Z"
+      },
+      {
+        "id": "bf5d9385-eedb-4277-a16b-68df2f1415c4",
+        "type": "site_fix_plan",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:30.635Z"
+      },
+      {
+        "id": "fe19a5c6-4314-40ce-ac81-ad2f00ae60d5",
+        "type": "github_repo_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:30.425Z"
+      },
+      {
+        "id": "95abf94e-0ab4-497a-8dc6-7b1996b5bd1e",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:29.366Z"
+      },
+      {
+        "id": "e050b68e-8d38-4f77-bfff-502ec896b66d",
+        "type": "site_fix_plan",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:27.816Z"
+      },
+      {
+        "id": "5a63162f-4762-4668-8a8b-a925a86df98e",
+        "type": "github_sync",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:26.235Z"
+      },
+      {
+        "id": "13339fd0-7aa0-44ea-9597-5e19b7ad0a3f",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:25.591Z"
+      },
+      {
+        "id": "4020879e-6f69-4afb-ba7b-e4a3794df5aa",
+        "type": "site_fix_plan",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:23.086Z"
+      },
+      {
+        "id": "39ff1756-a611-457f-9f6a-540041adcd2d",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:30:17.527Z"
+      },
+      {
+        "id": "947ce7d2-228b-474f-9afe-c068c69f5d0a",
+        "type": "repo_autofix",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:55.001Z"
+      },
+      {
+        "id": "027afa19-17ad-456b-b9b7-1e3aefb23331",
+        "type": "loyalty_send_outreach",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:38.803Z"
+      },
+      {
+        "id": "61600abc-341e-4749-b2e0-c8190d66618f",
+        "type": "loyalty_send_outreach",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:38.342Z"
+      },
+      {
+        "id": "ae386e79-74c0-4e85-a141-f34741140478",
+        "type": "loyalty_process_webhooks",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:38.089Z"
+      },
+      {
+        "id": "9d9fa39a-8d24-4995-b6a9-4eef21df88d4",
+        "type": "loyalty_send_outreach",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:38.089Z"
+      },
+      {
+        "id": "ec765489-8510-4950-994a-adbab0baab77",
+        "type": "site_audit",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:37.982Z"
+      },
+      {
+        "id": "d02c2665-7111-4a9e-abc4-61336aeaa81e",
+        "type": "github_observability_scan",
+        "title": "",
+        "plan_id": null,
+        "completed_at": "2026-03-04T17:20:37.557Z"
+      }
+    ],
+    "issue_patterns": [],
+    "plan_summary": {
+      "plans_created": 124,
+      "plans_completed": 58,
+      "plans_active": 66,
+      "avg_tasks_per_plan": "3.47"
+    }
+  },
+  "research_metrics": {
+    "signals": [
+      {
+        "domain_key": "nextjs",
+        "signal_type": "feature",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "feature (low) from nextjs: v16.2.0-canary.75",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.75",
+        "published_at": "2026-03-03T23:33:03.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v6.2.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.2.0",
+        "published_at": "2026-03-03T22:59:11.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v6.1.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.1.0",
+        "published_at": "2026-03-03T22:36:42.000Z"
+      },
+      {
+        "domain_key": "nextjs",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from nextjs: v16.2.0-canary.74",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.74",
+        "published_at": "2026-03-03T19:28:44.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "breaking_change",
+        "urgency": "high",
+        "requires_action": true,
+        "summary": "breaking_change (high) from telnyx: v6.0.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v6.0.0",
+        "published_at": "2026-03-03T12:02:49.000Z"
+      },
+      {
+        "domain_key": "telnyx",
+        "signal_type": "docs",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "docs (low) from telnyx: v5.55.0",
+        "url": "https://github.com/team-telnyx/telnyx-node/releases/tag/v5.55.0",
+        "published_at": "2026-03-03T11:15:20.000Z"
+      },
+      {
+        "domain_key": "nextjs",
+        "signal_type": "performance",
+        "urgency": "low",
+        "requires_action": false,
+        "summary": "performance (low) from nextjs: v16.2.0-canary.73",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.2.0-canary.73",
+        "published_at": "2026-03-03T10:40:00.000Z"
+      }
+    ],
+    "signal_counts": [
+      {
+        "signal_type": "docs",
+        "urgency": "low",
+        "count": 4
+      },
+      {
+        "signal_type": "breaking_change",
+        "urgency": "high",
+        "count": 1
+      },
+      {
+        "signal_type": "feature",
+        "urgency": "low",
+        "count": 1
+      },
+      {
+        "signal_type": "performance",
+        "urgency": "low",
+        "count": 1
+      }
+    ],
+    "knowledge_sources": [
+      {
+        "source_type": "paper",
+        "total": 75,
+        "indexed_total": 0,
+        "added_in_window": 35
+      },
+      {
+        "source_type": "repo",
+        "total": 38,
+        "indexed_total": 3,
+        "added_in_window": 0
+      }
+    ],
+    "library_snapshot": {
+      "playbooks_total": 6,
+      "symbol_exemplars_total": 411,
+      "symbol_exemplars_new": 65,
+      "pattern_insights_new": 222,
+      "pattern_insights_total": 312
+    },
+    "report_files": {
+      "knowledge_troll_harvest": {
+        "repos_discovered": 29,
+        "papers_discovered": 88,
+        "queued_index_subagent_tasks": 18
+      },
+      "pattern_robust_builder": {
+        "playbooks_updated": 6
+      },
+      "symbolic_qa_hub": {
+        "features": 6,
+        "repos_missing_index": 7
+      },
+      "daily_feature_rotation": {
+        "repos_considered": 40,
+        "queued": 80
+      },
+      "production_kpi_flywheel": {
+        "score": 45,
+        "score_delta": 0
+      }
+    }
+  },
+  "agent_memory": [
+    {
+      "agent": "roblox_game_growth",
+      "entries": 138,
+      "learned_entries": 85,
+      "blocker_entries": 29,
+      "strategy_entries": 24,
+      "last_entry_at": "2026-03-04T10:30:59.491Z"
+    },
+    {
+      "agent": "content_writing",
+      "entries": 134,
+      "learned_entries": 53,
+      "blocker_entries": 31,
+      "strategy_entries": 50,
+      "last_entry_at": "2026-03-04T10:30:54.046Z"
+    },
+    {
+      "agent": "saas_development",
+      "entries": 133,
+      "learned_entries": 61,
+      "blocker_entries": 36,
+      "strategy_entries": 36,
+      "last_entry_at": "2026-03-04T10:30:53.164Z"
+    },
+    {
+      "agent": "research_analysis",
+      "entries": 117,
+      "learned_entries": 53,
+      "blocker_entries": 18,
+      "strategy_entries": 46,
+      "last_entry_at": "2026-03-04T10:30:53.689Z"
+    },
+    {
+      "agent": "trading_paper",
+      "entries": 114,
+      "learned_entries": 42,
+      "blocker_entries": 37,
+      "strategy_entries": 35,
+      "last_entry_at": "2026-03-04T10:31:04.523Z"
+    },
+    {
+      "agent": "uptime_monitoring_agent",
+      "entries": 96,
+      "learned_entries": 44,
+      "blocker_entries": 28,
+      "strategy_entries": 24,
+      "last_entry_at": "2026-03-04T10:31:10.806Z"
+    },
+    {
+      "agent": "status_review_coordinator",
+      "entries": 76,
+      "learned_entries": 38,
+      "blocker_entries": 21,
+      "strategy_entries": 17,
+      "last_entry_at": "2026-03-04T10:00:25.841Z"
+    },
+    {
+      "agent": "scheduling_calendar",
+      "entries": 67,
+      "learned_entries": 35,
+      "blocker_entries": 16,
+      "strategy_entries": 16,
+      "last_entry_at": "2026-03-04T10:15:02.497Z"
+    },
+    {
+      "agent": "cookiespass_finisher",
+      "entries": 60,
+      "learned_entries": 37,
+      "blocker_entries": 12,
+      "strategy_entries": 11,
+      "last_entry_at": "2026-03-04T10:31:17.295Z"
+    },
+    {
+      "agent": "opportunities_scout",
+      "entries": 58,
+      "learned_entries": 29,
+      "blocker_entries": 0,
+      "strategy_entries": 29,
+      "last_entry_at": "2026-03-04T10:15:31.452Z"
+    },
+    {
+      "agent": "learning_journal_agent",
+      "entries": 58,
+      "learned_entries": 30,
+      "blocker_entries": 6,
+      "strategy_entries": 22,
+      "last_entry_at": "2026-03-04T10:31:15.823Z"
+    },
+    {
+      "agent": "masterpiece_builder_agent",
+      "entries": 56,
+      "learned_entries": 20,
+      "blocker_entries": 18,
+      "strategy_entries": 18,
+      "last_entry_at": "2026-03-04T10:31:26.791Z"
+    },
+    {
+      "agent": "builder",
+      "entries": 52,
+      "learned_entries": 26,
+      "blocker_entries": 0,
+      "strategy_entries": 26,
+      "last_entry_at": "2026-03-04T10:25:01.184Z"
+    },
+    {
+      "agent": "media_os_lane",
+      "entries": 50,
+      "learned_entries": 28,
+      "blocker_entries": 11,
+      "strategy_entries": 11,
+      "last_entry_at": "2026-03-04T10:31:15.286Z"
+    },
+    {
+      "agent": "x_growth",
+      "entries": 49,
+      "learned_entries": 27,
+      "blocker_entries": 0,
+      "strategy_entries": 22,
+      "last_entry_at": "2026-03-04T10:10:04.140Z"
+    },
+    {
+      "agent": "system_administration",
+      "entries": 47,
+      "learned_entries": 17,
+      "blocker_entries": 14,
+      "strategy_entries": 16,
+      "last_entry_at": "2026-03-04T10:30:55.840Z"
+    },
+    {
+      "agent": "security_monitor",
+      "entries": 40,
+      "learned_entries": 21,
+      "blocker_entries": 0,
+      "strategy_entries": 19,
+      "last_entry_at": "2026-03-04T10:31:04.713Z"
+    },
+    {
+      "agent": "fix_lane_guardian",
+      "entries": 39,
+      "learned_entries": 14,
+      "blocker_entries": 12,
+      "strategy_entries": 13,
+      "last_entry_at": "2026-03-04T09:30:15.019Z"
+    },
+    {
+      "agent": "data_processing",
+      "entries": 32,
+      "learned_entries": 13,
+      "blocker_entries": 7,
+      "strategy_entries": 12,
+      "last_entry_at": "2026-03-04T10:30:53.690Z"
+    },
+    {
+      "agent": "worker_stability_agent",
+      "entries": 30,
+      "learned_entries": 17,
+      "blocker_entries": 7,
+      "strategy_entries": 6,
+      "last_entry_at": "2026-03-04T09:00:30.434Z"
+    }
+  ],
+  "swarm_actions": [],
+  "email": null,
+  "dry_run": false
+}

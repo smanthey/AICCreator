@@ -1,0 +1,66 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedFirst/Aero/AeroLoad.client.lua:64:-- EXAMPLE: game:GetService("ContentProvider"):PreloadAsync({foo, bar, etc})
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:11:		data = Data.ForServer([ordered])                      [Creates or gets existing Data object for the server]
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:20:		Data:OnClose(onCloseFunc)      [Guaranteed to be executed before all data is saved when server is closing]
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:53:			data object. It will return a custom DataStorePage object described below:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:64:			period, when the player leaves, or when the server shuts down.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:99:			the documentation on the Roblox Developer site:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:100:			https://developer.roblox.com/api-reference/function/DataStoreService/GetRequestBudgetForRequestType
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:155:		https://devforum.roblox.com/t/details-on-datastoreservice-for-advanced-developers/175804
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:468:		-- https://developer.roblox.com/api-reference/function/DataStoreService/GetRequestBudgetForRequestType
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:469:		-- https://developer.roblox.com/api-reference/enum/DataStoreRequestType
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:470:		-- https://developer.roblox.com/articles/Datastore-Errors
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:687:				-- Error codes: https://developer.roblox.com/articles/Datastore-Errors
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:727:				--local budget = dataStoreService:GetRequestBudgetForRequestType(Enum.DataStoreRequestType.SetIncrementAsync)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/Data/init.lua:749:		-- Auto-save all data before server closes:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/ProfileService.lua:252:	ServiceLocked = false, -- Set to true once the server is shutting down
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/ProfileService.lua:716:	-- Compare "SessionLoadCount" when writing to profile to prevent a rare case of repeat last save when the profile is loaded on the same server again
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/ProfileService.lua:1233:	local aggressive_steal = not_released_handler == "Steal" -- Developer invoked steal
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/ProfileService.lua:1238:		-- game breaking errors where a player rejoins the server super fast.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerStorage/Aero/Modules/ProfileService.lua:1699:-- Release all loaded profiles when the server is shutting down:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Base64.lua:4:-- @see Developed for the Aero Game Framework <https://github.com/Sleitnick/AeroGameFramework>
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/StringUtil.lua:146:			sign $ would become %$. See the example below.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Thread.lua:84:		potential to be throttled unknowingly. This can cause
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Thread.lua:85:		all sorts of problems. Developers need to be certain
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Thread.lua:114:		the link below, as well as the MIT license:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:191:	invoking the promise chain.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:194:	promise chain. External code shouldn't need to worry about this.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:215:		-- Tracks if this Promise has no error observers..
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:226:		-- The "parent" of this promise in a promise chain. Required for
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:230:		-- Consumers are Promises that have chained onto this one.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:347:	Begins a Promise chain, turning synchronous errors into rejections.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:679:		-- No metatable, but we should still chain onto tables with andThen methods
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:842:	-- Create a new promise to follow this part of the chain
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1007:	cancelled. Returns a new promise chained from this promise.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1014:	-- Return a promise chained off of this promise
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1201:	-- If the resolved value was a Promise, we chain onto it!
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1213:		local chainedPromise = ...
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1215:		local promise = chainedPromise:andThen(
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1220:				local maybeRuntimeError = chainedPromise._values[1]
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1223:				if chainedPromise._error then
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1225:						error = chainedPromise._error,
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1233:						error = "This Promise was chained to a Promise that errored.",
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1236:							"The Promise at:\n\n%s\n...Rejected because it was chained to the following Promise, which encountered an error:\n",
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1286:		-- observers, then we should put a message in the console.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Promise.lua:1325:		-- resolved values, or rejected errors. If the developer needs the values,
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Date.lua:7:	Represents a date at a specific time. On the server, this will
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ReplicatedStorage/Aero/Shared/Date.lua:9:	Note that the server-side in Play-Solo testing will also return
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerScriptService/Aero/Internal/AeroServer.server.lua:377:	-- Lazy-load server and shared modules:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/ServerScriptService/Aero/Internal/AeroServer.server.lua:388:	-- Expose server framework to client and global scope:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Internal/AeroClient.client.lua:280:	-- Load server-side services:
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:15:	Mobile.TouchPinch(touchPositions, scale, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:17:	Mobile.TouchPan(touchPositions, totalTranslation, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:18:	Mobile.TouchRotate(touchPositions, rotation, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:102:	userInput.TouchPinch:Connect(function(touchPositions, scale, velocity, state, processed)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:104:		self.TouchPinch:Fire(touchPositions, scale, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:112:	userInput.TouchPan:Connect(function(touchPositions, totalTranslation, velocity, state, processed)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:114:		self.TouchPan:Fire(touchPositions, totalTranslation, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:117:	userInput.TouchRotate:Connect(function(touchPositions, rotation, velocity, state, processed)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/UserInput/Mobile.lua:119:		self.TouchRotate:Fire(touchPositions, rotation, velocity, state)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Controllers/TaskScheduler.lua:32:	param targetFps  Task scheduler won't run a task if it'd make the FPS drop below this amount
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/CameraShaker/init.lua:53:		permission by the developer, Road Turtle Games, to port this to Roblox.
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:52:		_velocity = Vector3.new();
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:57:	local currentVelocity = self._velocity
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:73:	local vector3 = ((currentVelocity + num * vector) * deltaTime)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:74:	currentVelocity = ((currentVelocity - num * vector3) * d)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:79:		currentVelocity = ((vector4 - vector2) / deltaTime)
+/Users/tatsheen/claw-repos/oss-index/roblox/AeroGameFramework/src/StarterPlayer/StarterPlayerScripts/Aero/Modules/Smooth/SmoothDamp.lua:82:	self._velocity = currentVelocity

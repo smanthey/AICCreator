@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenClaw VPS Workshop</title>
+  <style>
+    :root {
+      --bg: #0c111b;
+      --card: #121a2a;
+      --line: #26344d;
+      --text: #edf2fa;
+      --muted: #9fb0cb;
+      --accent: #61a0ff;
+      --ok: #4fd69a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 460px at 100% -10%, #2f4f8942, transparent),
+        radial-gradient(900px 420px at 0 -10%, #28565e35, transparent),
+        linear-gradient(180deg, #0a0f17, var(--bg));
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #10192acc;
+      padding: 22px;
+    }
+    .eyebrow { color: var(--muted); text-transform: uppercase; font-size: 12px; letter-spacing: .08em; }
+    h1 { margin: 8px 0 8px; font-size: 36px; line-height: 1.1; }
+    .sub { color: var(--muted); font-size: 17px; max-width: 820px; }
+    .cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .btn {
+      border: 1px solid #3f5f93;
+      background: linear-gradient(180deg, #2b4b79, #1b3357);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .btn.alt {
+      border-color: #4f5d78;
+      background: linear-gradient(180deg, #273245, #1a2437);
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      padding: 14px;
+    }
+    h2 { font-size: 18px; margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 18px; color: #cfe0f8; }
+    li { margin: 6px 0; }
+    .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+    .pill {
+      border: 1px solid #35507e;
+      border-radius: 12px;
+      padding: 10px;
+      background: #101a2c;
+    }
+    .label { color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+    .value { font-size: 18px; font-weight: 700; }
+    .ok { color: var(--ok); }
+    .footer { color: var(--muted); font-size: 13px; margin-top: 14px; }
+    @media (max-width: 900px) {
+      .grid, .meta { grid-template-columns: 1fr; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Live Workshop</div>
+      <h1>Deploy Your First OpenClaw Agent on a VPS</h1>
+      <div class="sub">
+        In 90 minutes, you will set up OpenClaw on a VPS, connect Telegram, and run a local Ollama fallback.
+        You leave with a working 24/7 agent stack.
+      </div>
+
+      <div class="meta">
+        <div class="pill"><div class="label">Date</div><div class="value">Mar 7, 2026</div></div>
+        <div class="pill"><div class="label">Time</div><div class="value">5:00 PM MST</div></div>
+        <div class="pill"><div class="label">Duration</div><div class="value">90 min</div></div>
+        <div class="pill"><div class="label">Price</div><div class="value">$79</div></div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="https://buy.stripe.com/" target="_blank" rel="noopener noreferrer">Reserve Seat (Stripe)</a>
+        <a class="btn alt" href="https://gumroad.com/" target="_blank" rel="noopener noreferrer">Reserve Seat (Gumroad)</a>
+      </div>
+      <div class="footer">Replace checkout links with your real Stripe Payment Link or Gumroad product URL.</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What You’ll Build</h2>
+        <ul>
+          <li>OpenClaw running on your VPS</li>
+          <li>Telegram command/control from your phone</li>
+          <li>Ollama fallback for local model responses</li>
+          <li class="ok">Checklist + commands you can reuse after class</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Hands-On Curriculum</h2>
+        <ul>
+          <li>10 min: setup + architecture</li>
+          <li>20 min: install + first agent</li>
+          <li>20 min: VPS deploy + verification</li>
+          <li>15 min: Telegram integration</li>
+          <li>15 min: Ollama fallback</li>
+          <li>10 min: troubleshooting + Q&A</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Who This Is For</h2>
+        <ul>
+          <li>Solo founders and operators</li>
+          <li>Developers who want a practical OpenClaw baseline</li>
+          <li>Teams that need reliable, self-hosted agent workflows</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>After Workshop</h2>
+        <ul>
+          <li>Recorded replay will be sold separately</li>
+          <li>Upsell path: “Production hardening + multi-agent routing”</li>
+          <li>Template scripts + runbook included</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

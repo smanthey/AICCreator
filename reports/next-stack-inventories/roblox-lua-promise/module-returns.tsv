@@ -1,0 +1,161 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1:return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:8:		return task.wait(if t then t * timeDilationFactor else nil)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:13:		return oldDelay(if t then t * timeDilationFactor else nil)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:19:		return len, { ... }
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:335:				return 5
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:354:				return 5
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:358:				return "foo"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:638:				return pending
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:709:					return 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:723:					return 42
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:740:				return Promise.new(function(r)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:757:				return Promise.new(function(_, r)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:839:				return internal
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1047:				return sum + element
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1060:					return Promise.delay(1):andThenReturn(sum + element)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1062:					return sum + element
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1076:					return Promise.reject(errorMessage)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1078:					return sum + element
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1091:					return sum + element
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1094:					return secondPromise
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1176:				return n + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1210:					return v + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1214:					return v + 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1229:					return Promise.new(function(resolve)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1544:				return { ... }
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1569:				return Promise.new(function(resolve)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1611:				return Promise.reject("foobar")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1627:				return value * 2
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1642:				return "never"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1674:				return Promise.new(function() end)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1697:				return innerPromise
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1726:					return Promise.resolve("ok")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1729:				return Promise.reject("fail")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1738:				return Promise.reject("fail")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1756:					return Promise.resolve("ok")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1759:				return Promise.reject("fail")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1795:				return param == "foo"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.spec.lua:1821:					return 1
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:12:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:18:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:22:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:35:	return setmetatable(enum, {
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:66:		return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:82:				return rawget(anything, "error") ~= nil and type(rawget(metatable, "extend")) == "function"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:86:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:92:		return Error.is(anything) and anything.kind == kind
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:100:		return Error.new(options, self)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:110:		return runtimeErrors
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:128:		return table.concat(errorStrings, "\n")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:138:	return select("#", ...), { ... }
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:145:	return success, select("#", ...), { ... }
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:151:	return function(err)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:156:			return err
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:159:		return Error.new({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:172:	return packResult(xpcall(callback, makeErrorHandler(traceback), ...))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:180:	return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:192:	return next(t) == nil
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:295:		return self._status == Promise.Status.Cancelled
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:308:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:320:		return Promise.new(function(resolve, reject, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:350:	return Promise._new(debug.traceback(nil, 2), executor)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:354:	return string.format("Promise(%s)", self._status)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:364:	  return Promise.defer(function(resolve, reject)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:388:	return promise
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:401:			return Promise.resolve(cache[name])
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:403:			return Promise.new(function(resolve, reject)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:418:	return Promise._new(debug.traceback(nil, 2), function(resolve)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:435:	return Promise._new(debug.traceback(nil, 2), function(_, reject)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:447:	return Promise._new(traceback, function(resolve)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:461:		return math.random(1, 2) == 1 and "ok" or error("Oh an error!")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:476:	return Promise._try(debug.traceback(nil, 2), callback, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:499:		return Promise.resolve({})
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:502:	return Promise._new(traceback, function(resolve, reject, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:583:	return Promise.all(promises)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:590:	return Promise._all(debug.traceback(nil, 2), promises)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:603:			return cost -- blueberries are free!
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:606:			return fetchPrice(fruit):andThen(function(fruitCost)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:607:				return cost + fruitCost
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:623:	return Promise.each(list, function(resolvedElement, i)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:625:			return reducer(previousValueResolved, resolvedElement, i)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:628:		return accumulator
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:644:	return Promise.some(promises, 2) -- Only resolves with first 2 promises to resolve
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:654:	return Promise._all(debug.traceback(nil, 2), promises, count)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:669:	return Promise.any(promises) -- Resolves with first value to resolve (only rejects if all 3 rejected)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:676:	return Promise._all(debug.traceback(nil, 2), promises, 1):andThen(function(values)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:677:		return values[1]
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:691:	return Promise.allSettled(promises)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:712:		return Promise.resolve({})
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:715:	return Promise._new(debug.traceback(nil, 2), function(resolve, _, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:769:	return Promise.race(promises) -- Only returns 1st value to resolve or reject
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:782:	return Promise._new(debug.traceback(nil, 2), function(resolve, reject, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:793:			return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:796:				return callback(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:835:		return Promise.delay(1):andThen(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:874:	return Promise._new(debug.traceback(nil, 2), function(resolve, reject, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:904:					return reject(Error.new({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:915:					return reject(select(2, value:await()))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:920:					return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:937:					return reject(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:953:				return reject(result)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:971:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:978:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:981:		return isCallable(object.andThen)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:988:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:991:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1011:		return player:IsInGroup(groupId)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1019:	return function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1020:		return Promise._try(debug.traceback(nil, 2), callback, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1045:	return Promise._new(debug.traceback(nil, 2), function(resolve)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1076:			return Promise.reject(
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1093:	return Promise.race({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1095:			return Promise.reject(rejectionValue == nil and Error.new({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1115:	return self._status
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1131:		return promise
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1135:	return Promise._new(traceback, function(resolve, reject, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1197:	return self:_andThen(debug.traceback(nil, 2), successHandler, failureHandler)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1222:	return self:_andThen(debug.traceback(nil, 2), nil, failureHandler)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1243:	return self:_andThen(debug.traceback(nil, 2), function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1248:			return callbackReturn:andThen(function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1249:				return unpack(values, 1, length)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1253:		return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1268:		return someFunction("some", "arguments")
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1279:	return self:_andThen(debug.traceback(nil, 2), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1280:		return callback(unpack(values, 1, length))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1295:			return "some", "values"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1308:	return self:_andThen(debug.traceback(nil, 2), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1309:		return unpack(values, 1, length)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1391:					return reject(result)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1421:	return promise
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1475:	return self:_finally(debug.traceback(nil, 2), finallyHandler)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1490:	return self:_finally(debug.traceback(nil, 2), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1491:		return callback(unpack(values, 1, length))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1506:			return "some", "values"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1515:	return self:_finally(debug.traceback(nil, 2), function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1516:		return unpack(values, 1, length)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1547:		return self._status, unpack(self._values, 1, self._valuesLength)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1549:		return self._status, unpack(self._values, 1, self._valuesLength)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1552:	return self._status
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1556:	return status == Promise.Status.Resolved, ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1581:	return awaitHelper(self:awaitStatus())
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1589:	return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1618:	return expectHelper(self:awaitStatus())
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1638:	return success, unpack(self._values, 1, self._valuesLength)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1677:				return self:_reject(maybeRuntimeError:extend({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1806:		return self:_andThen(traceback, function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1807:			return ...
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1810:		return Promise.reject(rejectionValue == nil and Error.new({
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1825:		return Promise.new(function(resolve, reject)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1854:	return Promise.resolve(callback(...)):catch(function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1856:			return Promise.retry(callback, times - 1, unpack(args, 1, length))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1858:			return Promise.reject(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1883:	return Promise.resolve(callback(...)):catch(function(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1887:			return Promise.retryWithDelay(callback, times - 1, seconds, unpack(args, 1, length))
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1889:			return Promise.reject(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1908:	return Promise.fromEvent(somePart.Touched, function(part)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1909:		return part.Name == "Something specific"
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1920:		return true
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1923:	return Promise._new(debug.traceback(nil, 2), function(resolve, _, onCancel)
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1953:			return disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1973:	return function()
+/Users/tatsheen/claw-repos/oss-index/roblox/roblox-lua-promise/lib/init.lua:1982:return Promise

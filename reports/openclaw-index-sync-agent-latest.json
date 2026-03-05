@@ -1,0 +1,820 @@
+{
+  "ok": false,
+  "generated_at": "2026-03-03T18:41:59.155Z",
+  "dry_run": true,
+  "strict": true,
+  "min_score": 80,
+  "steps": [
+    {
+      "name": "mcp_health",
+      "command": "npm run -s mcp:health",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "checks": [
+          {
+            "label": "jcodemunch",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "usage: jcodemunch-mcp [-h]\n\nRun the jCodeMunch MCP stdio server.\n\noptions:\n  -h, --help  show this help message and exit\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "postgres",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "filesystem",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-filesystem] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-github] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "context7",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "[mcp-context7] ok\n",
+            "stderr_tail": ""
+          },
+          {
+            "label": "github_server_boot",
+            "ok": true,
+            "code": 0,
+            "timed_out": false,
+            "stdout_tail": "",
+            "stderr_tail": "GitHub MCP Server running on stdio\n"
+          }
+        ]
+      },
+      "stdout_tail": "abel\": \"jcodemunch\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"usage: jcodemunch-mcp [-h]\\n\\nRun the jCodeMunch MCP stdio server.\\n\\noptions:\\n  -h, --help  show this help message and exit\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"postgres\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-postgres] ok host=192.168.1.164 port=15432 db=claw_architect user=claw\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"filesystem\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-filesystem] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-github] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"context7\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"[mcp-context7] ok\\n\",\n      \"stderr_tail\": \"\"\n    },\n    {\n      \"label\": \"github_server_boot\",\n      \"ok\": true,\n      \"code\": 0,\n      \"timed_out\": false,\n      \"stdout_tail\": \"\",\n      \"stderr_tail\": \"GitHub MCP Server running on stdio\\n\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "repomap_background",
+      "command": "npm run -s repo:map:background",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "generated_at": "2026-03-03T18:38:21.313Z",
+        "repos": [
+          {
+            "repo": "/Users/tatsheen/claw-architect",
+            "ok": true,
+            "code": 0,
+            "output": "/Users/tatsheen/claw-architect/reports/repomaps/claw-architect-repomap.md",
+            "stderr": ""
+          },
+          {
+            "repo": "/Users/tatsheen/claw-repos/payclaw",
+            "ok": true,
+            "code": 0,
+            "output": "/Users/tatsheen/claw-architect/reports/repomaps/payclaw-repomap.md",
+            "stderr": ""
+          },
+          {
+            "repo": "/Users/tatsheen/claw-repos/claw-architect",
+            "ok": true,
+            "code": 0,
+            "output": "/Users/tatsheen/claw-architect/reports/repomaps/claw-architect-repomap.md",
+            "stderr": ""
+          }
+        ]
+      },
+      "stdout_tail": "{\n  \"ok\": true,\n  \"generated_at\": \"2026-03-03T18:38:21.313Z\",\n  \"repos\": [\n    {\n      \"repo\": \"/Users/tatsheen/claw-architect\",\n      \"ok\": true,\n      \"code\": 0,\n      \"output\": \"/Users/tatsheen/claw-architect/reports/repomaps/claw-architect-repomap.md\",\n      \"stderr\": \"\"\n    },\n    {\n      \"repo\": \"/Users/tatsheen/claw-repos/payclaw\",\n      \"ok\": true,\n      \"code\": 0,\n      \"output\": \"/Users/tatsheen/claw-architect/reports/repomaps/payclaw-repomap.md\",\n      \"stderr\": \"\"\n    },\n    {\n      \"repo\": \"/Users/tatsheen/claw-repos/claw-architect\",\n      \"ok\": true,\n      \"code\": 0,\n      \"output\": \"/Users/tatsheen/claw-architect/reports/repomaps/claw-architect-repomap.md\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "symbolic_qa_hub",
+      "command": "npm run -s qa:symbolic:hub",
+      "ok": true,
+      "code": 0,
+      "parsed": {
+        "ok": true,
+        "generated_at": "2026-03-03T18:38:30.653Z",
+        "top_n_per_feature": 12,
+        "repos_total": 13,
+        "repos_indexed": 6,
+        "repos_missing_index": [
+          "microsoft/playwright",
+          "webdriverio/webdriverio",
+          "seleniumhq/selenium",
+          "puppeteer/puppeteer",
+          "DevExpress/testcafe",
+          "garris/BackstopJS",
+          "grafana/k6"
+        ],
+        "features": [
+          {
+            "feature_key": "symbol_failure_mapping",
+            "title": "Failure to symbol mapping",
+            "top_symbols": [
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::enqueueTask#function",
+                "symbol_name": "enqueueTask",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 4
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::errorLines#function",
+                "symbol_name": "errorLines",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 4
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::main#function",
+                "symbol_name": "main",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::taskExists#function",
+                "symbol_name": "taskExists",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::fingerprint#function",
+                "symbol_name": "fingerprint",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::detectRepo#function",
+                "symbol_name": "detectRepo",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::runPm2Logs#function",
+                "symbol_name": "runPm2Logs",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/pm2-failure-symbol-triage.js::ensureRoutingColumns#function",
+                "symbol_name": "ensureRoutingColumns",
+                "symbol_file": "scripts/pm2-failure-symbol-triage.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+                "symbol_name": "assertNoConsoleErrors",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/logger.ts::generateTraceId#function",
+                "symbol_name": "generateTraceId",
+                "symbol_file": "server/logger.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::incrementWebhookRetry#function",
+                "symbol_name": "incrementWebhookRetry",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::storeFailedWebhook#function",
+                "symbol_name": "storeFailedWebhook",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 2
+              }
+            ]
+          },
+          {
+            "feature_key": "cdp_network_contracts",
+            "title": "CDP network and API contracts",
+            "top_symbols": [
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+                "symbol_name": "assertNoConsoleErrors",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "control/replay-hash.js::replayMiddleware#function",
+                "symbol_name": "replayMiddleware",
+                "symbol_file": "control/replay-hash.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+                "symbol_name": "WebhookDeadLetterQueue",
+                "symbol_file": "shared/schema.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::requireTenantAccess#function",
+                "symbol_name": "requireTenantAccess",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::requireOwner#function",
+                "symbol_name": "requireOwner",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::requirePlatformAdmin#function",
+                "symbol_name": "requirePlatformAdmin",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::requireAdmin#function",
+                "symbol_name": "requireAdmin",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::optionalAuth#function",
+                "symbol_name": "optionalAuth",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/auth.ts::requireAuth#function",
+                "symbol_name": "requireAuth",
+                "symbol_file": "server/auth.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/csrf.ts::attachCsrfToken#function",
+                "symbol_name": "attachCsrfToken",
+                "symbol_file": "server/csrf.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/csrf.ts::csrfProtection#function",
+                "symbol_name": "csrfProtection",
+                "symbol_file": "server/csrf.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/recordingStore.ts::streamAudioForCall#function",
+                "symbol_name": "streamAudioForCall",
+                "symbol_file": "server/recordingStore.ts",
+                "score": 2
+              }
+            ]
+          },
+          {
+            "feature_key": "auto_wait_stability",
+            "title": "Auto wait and flake resistance",
+            "top_symbols": [
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::waitForPageLoad#function",
+                "symbol_name": "waitForPageLoad",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::waitForJsonResponse#function",
+                "symbol_name": "waitForJsonResponse",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/bot-self-healing.js::retryWithBackoff#function",
+                "symbol_name": "retryWithBackoff",
+                "symbol_file": "scripts/bot-self-healing.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "infra/redis.js::waitForRedisReady#function",
+                "symbol_name": "waitForRedisReady",
+                "symbol_file": "infra/redis.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "core/queue.js::withRetry#function",
+                "symbol_name": "withRetry",
+                "symbol_file": "core/queue.js",
+                "score": 3
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/exponential-backoff.ts::isRetryableError#function",
+                "symbol_name": "isRetryableError",
+                "symbol_file": "server/services/exponential-backoff.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/exponential-backoff.ts::RetryConfig#type",
+                "symbol_name": "RetryConfig",
+                "symbol_file": "server/services/exponential-backoff.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "cypress-io/cypress",
+                "symbol_id": "scripts/ensure-icons.js::waitUntilIconsBuilt#function",
+                "symbol_name": "waitUntilIconsBuilt",
+                "symbol_file": "scripts/ensure-icons.js",
+                "score": 2
+              },
+              {
+                "repo_key": "cypress-io/cypress",
+                "symbol_id": "scripts/ensure-icons.js::waitUntilExists#function",
+                "symbol_name": "waitUntilExists",
+                "symbol_file": "scripts/ensure-icons.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/cron.ts::retryQuery#function",
+                "symbol_name": "retryQuery",
+                "symbol_file": "server/cron.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::setWebhookHandler#function",
+                "symbol_name": "setWebhookHandler",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::processRetryQueue#function",
+                "symbol_name": "processRetryQueue",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 2
+              }
+            ]
+          },
+          {
+            "feature_key": "selector_resilience",
+            "title": "Selector resilience and accessibility probes",
+            "top_symbols": [
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/cron.ts::retryQuery#function",
+                "symbol_name": "retryQuery",
+                "symbol_file": "server/cron.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/ab-testing.ts::ABTestingService.recordTestResult#method",
+                "symbol_name": "recordTestResult",
+                "symbol_file": "server/services/ab-testing.ts",
+                "score": 3
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::expectTextContent#function",
+                "symbol_name": "expectTextContent",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/overnight-advisory-board.js::rolePrompt#function",
+                "symbol_name": "rolePrompt",
+                "symbol_file": "scripts/overnight-advisory-board.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/google-maps-scraper.js::scrapeWithRetry#function",
+                "symbol_name": "scrapeWithRetry",
+                "symbol_file": "scripts/google-maps-scraper.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/bot-message-optimizer.js::suggestNewVariantsToTest#function",
+                "symbol_name": "suggestNewVariantsToTest",
+                "symbol_file": "scripts/bot-message-optimizer.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "infra/config.js::validateWorkerRoleTagPolicy#function",
+                "symbol_name": "validateWorkerRoleTagPolicy",
+                "symbol_file": "infra/config.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "agents/google-workspace-agent.js::gmailList#function",
+                "symbol_name": "gmailList",
+                "symbol_file": "agents/google-workspace-agent.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "client/src/pages/ab-testing.tsx::ABTestVariant#type",
+                "symbol_name": "ABTestVariant",
+                "symbol_file": "client/src/pages/ab-testing.tsx",
+                "score": 2
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/ab-testing.ts::ABTestingService.resumeTest#method",
+                "symbol_name": "resumeTest",
+                "symbol_file": "server/services/ab-testing.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/ab-testing.ts::ABTestingService.pauseTest#method",
+                "symbol_name": "pauseTest",
+                "symbol_file": "server/services/ab-testing.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/quantfusion",
+                "symbol_id": "server/services/ab-testing.ts::ABTestingService.getTestResults#method",
+                "symbol_name": "getTestResults",
+                "symbol_file": "server/services/ab-testing.ts",
+                "score": 2
+              }
+            ]
+          },
+          {
+            "feature_key": "visual_regression_baselines",
+            "title": "Visual regression baseline fastlane",
+            "top_symbols": [
+              {
+                "repo_key": "cypress-io/cypress",
+                "symbol_id": "scripts/ensure-icons.js::waitUntilIconsBuilt#function",
+                "symbol_name": "waitUntilIconsBuilt",
+                "symbol_file": "scripts/ensure-icons.js",
+                "score": 1
+              },
+              {
+                "repo_key": "cypress-io/cypress",
+                "symbol_id": "scripts/ensure-icons.js::waitUntilExists#function",
+                "symbol_name": "waitUntilExists",
+                "symbol_file": "scripts/ensure-icons.js",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/email.ts::sendUsageThresholdEmail#function",
+                "symbol_name": "sendUsageThresholdEmail",
+                "symbol_file": "server/email.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/email.ts::EmailType#type",
+                "symbol_name": "EmailType",
+                "symbol_file": "server/email.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/storage.ts::DatabaseStorage.ensureTestUser#method",
+                "symbol_name": "ensureTestUser",
+                "symbol_file": "server/storage.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/callProcessing.ts::meetsPriorityThreshold#function",
+                "symbol_name": "meetsPriorityThreshold",
+                "symbol_file": "server/callProcessing.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/stripeWebhooks.ts::handleStripeWebhook#function",
+                "symbol_name": "handleStripeWebhook",
+                "symbol_file": "server/stripeWebhooks.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::setWebhookHandler#function",
+                "symbol_name": "setWebhookHandler",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::processRetryQueue#function",
+                "symbol_name": "processRetryQueue",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::incrementWebhookRetry#function",
+                "symbol_name": "incrementWebhookRetry",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::markWebhookSuccess#function",
+                "symbol_name": "markWebhookSuccess",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 1
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/webhookRetry.ts::getWebhooksReadyForRetry#function",
+                "symbol_name": "getWebhooksReadyForRetry",
+                "symbol_file": "server/webhookRetry.ts",
+                "score": 1
+              }
+            ]
+          },
+          {
+            "feature_key": "trace_replay_debug",
+            "title": "Trace replay and debug artifacts",
+            "top_symbols": [
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "tests/e2e/fixtures.ts::assertNoConsoleErrors#function",
+                "symbol_name": "assertNoConsoleErrors",
+                "symbol_file": "tests/e2e/fixtures.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "shared/schema.ts::UsageRecord#type",
+                "symbol_name": "UsageRecord",
+                "symbol_file": "shared/schema.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "shared/schema.ts::WebhookDeadLetterQueue#type",
+                "symbol_name": "WebhookDeadLetterQueue",
+                "symbol_file": "shared/schema.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/transcription.ts::updateCallDebugMetadata#function",
+                "symbol_name": "updateCallDebugMetadata",
+                "symbol_file": "server/transcription.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/cron.ts::updateCallDebugMetadata#function",
+                "symbol_name": "updateCallDebugMetadata",
+                "symbol_file": "server/cron.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/logger.ts::generateTraceId#function",
+                "symbol_name": "generateTraceId",
+                "symbol_file": "server/logger.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/recordingStore.ts::updateCallDebugMetadata#function",
+                "symbol_name": "updateCallDebugMetadata",
+                "symbol_file": "server/recordingStore.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/callProcessing.ts::updateCallDebugMetadata#function",
+                "symbol_name": "updateCallDebugMetadata",
+                "symbol_file": "server/callProcessing.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/routes.ts::updateCallDebugByControlId#function",
+                "symbol_name": "updateCallDebugByControlId",
+                "symbol_file": "server/routes.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/CaptureInbound",
+                "symbol_id": "server/routes.ts::updateCallDebugMetadata#function",
+                "symbol_name": "updateCallDebugMetadata",
+                "symbol_file": "server/routes.ts",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/payment-router.js::createStripeCheckout#function",
+                "symbol_name": "createStripeCheckout",
+                "symbol_file": "scripts/payment-router.js",
+                "score": 2
+              },
+              {
+                "repo_key": "local/claw-architect",
+                "symbol_id": "scripts/knowledge-troll-harvest.js::enqueueTask#function",
+                "symbol_name": "enqueueTask",
+                "symbol_file": "scripts/knowledge-troll-harvest.js",
+                "score": 2
+              }
+            ]
+          }
+        ],
+        "queued_tasks": [
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "microsoft/playwright",
+            "created": true,
+            "id": "0ccdf508-b3c9-40bd-9cac-59ad2fdd6006",
+            "idempotencyKey": "opencode_controller:00760c47eab9429fd9e8bde8be4ae6572a53a4c2d2751fdfb167f34dcb105d84"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "webdriverio/webdriverio",
+            "created": true,
+            "id": "ca8d2065-2556-4c8c-9bcf-8101b9eb6d64",
+            "idempotencyKey": "opencode_controller:5e67df374498536bbdab62d876283cb0a5b6505d765d3818dc7cb32fa626600c"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "seleniumhq/selenium",
+            "created": true,
+            "id": "c32267ac-78f6-4743-9c65-6f096c4445b7",
+            "idempotencyKey": "opencode_controller:b5a255df840cac8b142606dcdfc41d701b32b1fbf1339365f5f37552d9b08708"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "puppeteer/puppeteer",
+            "created": true,
+            "id": "1f92efc5-6025-4893-890b-cc8bce20c0fe",
+            "idempotencyKey": "opencode_controller:0a8662f09edfb00ede3238cabb572cbd52762c223f8f7f4669531f7fc69aaf4b"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "DevExpress/testcafe",
+            "created": true,
+            "id": "6b323e15-6c6b-4204-afbd-02e78c05051f",
+            "idempotencyKey": "opencode_controller:3c2ea6c69cc5581408b9f5d2f29785baae7f1e28d4792a408ec9a4f11f262345"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "garris/BackstopJS",
+            "created": true,
+            "id": "d25e93dc-dee3-4ccf-ba37-4272b66c18da",
+            "idempotencyKey": "opencode_controller:b556d5df0fd40491f47b06458e47790fd6eba156430f85a18e36485beab61c61"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "index_backfill",
+            "target_repo": "grafana/k6",
+            "created": true,
+            "id": "4b6a79d3-6c81-4aa4-99f4-f1c5c61a2521",
+            "idempotencyKey": "opencode_controller:99b98b78fdfd5cdd853614dfc9bb0f23a7091df91cccfc50f90b413282e10df8"
+          },
+          {
+            "repo": "local/quantfusion",
+            "feature_key": "cdp_network_contracts",
+            "created": true,
+            "id": "64d84436-6437-48e4-863b-099fd2d4fdd6",
+            "idempotencyKey": "opencode_controller:5d8ef7882c374a9dab35f372ec5d999c5b29da82c414f6a2cfdd1802568e3026"
+          },
+          {
+            "repo": "local/quantfusion",
+            "feature_key": "symbol_failure_mapping",
+            "created": true,
+            "id": "ffd548b4-b43f-4365-9759-a2955b3aaa7b",
+            "idempotencyKey": "opencode_controller:b1bf23b72ec127d6703edbc185063a8daa339bf8ccabdfa0d38ae476f3d89934"
+          },
+          {
+            "repo": "local/claw-architect",
+            "feature_key": "symbol_failure_mapping",
+            "created": true,
+            "id": "e3398d95-b2e0-4183-a5ba-39ec2403a57d",
+            "idempotencyKey": "opencode_controller:09314b79303aebbdd755b44f3280733489674e583594d4fefc8521f3d00974d7"
+          },
+          {
+            "repo": "local/payclaw",
+            "feature_key": "auto_wait_stability",
+            "created": true,
+            "id": "4f628f8d-5dca-493d-a7bd-8d2db13aa929",
+            "idempotencyKey": "opencode_controller:3f4336eaf91765a83526eed41e52085b6271e763bbc9e438c70369aef6944b9b"
+          },
+          {
+            "repo": "local/quantfusion",
+            "feature_key": "cdp_network_contracts",
+            "created": false,
+            "reason": "duplicate_active_workflow",
+            "workflow_run_id": "closedloop-local-quantfusion-cdp_network_contracts-2026-03-03",
+            "task_ids": []
+          },
+          {
+            "repo": "local/quantfusion",
+            "feature_key": "symbol_failure_mapping",
+            "created": true,
+            "workflow_run_id": "closedloop-local-quantfusion-symbol_failure_mapping-2026-03-03",
+            "task_ids": [
+              "1b918a30-4215-4227-950c-8735553049fc",
+              "3c56f570-ba3c-427e-be7a-396c8f5b7fff",
+              "79219361-a0c3-4177-b047-0d32c9275a16",
+              "ce1aa08b-9fae-40a4-a8a5-8d558380e2a5",
+              "45a6b2d9-424f-4109-bef3-4c280ddceac6",
+              "4651be79-92c6-42ee-859f-730467f01844",
+              "cb8ecc69-46bd-4abf-8489-7a8fdc613c2a",
+              "b3ad8f9f-c0c6-4ba2-a691-5d083e7ce806"
+            ],
+            "root_task_id": "1b918a30-4215-4227-950c-8735553049fc"
+          },
+          {
+            "repo": "local/payclaw",
+            "feature_key": "auto_wait_stability",
+            "created": true,
+            "workflow_run_id": "closedloop-local-payclaw-auto_wait_stability-2026-03-03",
+            "task_ids": [
+              "a5c7fea4-33e1-4703-a433-67ae6b34867f",
+              "edd135b5-a111-475f-8efe-17e8f5dcb835",
+              "7ec0b41c-e099-47dc-889f-4161eb92e321",
+              "3569fc24-e8c7-4ae7-a35f-fdf2b03fead9",
+              "c466d27b-797b-41d3-a6a9-d5ed8d2afe93",
+              "08f70531-a1f5-451c-a165-fe0c69b2fc33",
+              "36755260-1f06-420f-9545-808c8be8c670",
+              "9789bc16-043b-4e4d-baa3-77a9ea4c894a"
+            ],
+            "root_task_id": "a5c7fea4-33e1-4703-a433-67ae6b34867f"
+          }
+        ]
+      },
+      "stdout_tail": "uantfusion-symbol_failure_mapping-2026-03-03\",\n      \"task_ids\": [\n        \"1b918a30-4215-4227-950c-8735553049fc\",\n        \"3c56f570-ba3c-427e-be7a-396c8f5b7fff\",\n        \"79219361-a0c3-4177-b047-0d32c9275a16\",\n        \"ce1aa08b-9fae-40a4-a8a5-8d558380e2a5\",\n        \"45a6b2d9-424f-4109-bef3-4c280ddceac6\",\n        \"4651be79-92c6-42ee-859f-730467f01844\",\n        \"cb8ecc69-46bd-4abf-8489-7a8fdc613c2a\",\n        \"b3ad8f9f-c0c6-4ba2-a691-5d083e7ce806\"\n      ],\n      \"root_task_id\": \"1b918a30-4215-4227-950c-8735553049fc\"\n    },\n    {\n      \"repo\": \"local/payclaw\",\n      \"feature_key\": \"auto_wait_stability\",\n      \"created\": true,\n      \"workflow_run_id\": \"closedloop-local-payclaw-auto_wait_stability-2026-03-03\",\n      \"task_ids\": [\n        \"a5c7fea4-33e1-4703-a433-67ae6b34867f\",\n        \"edd135b5-a111-475f-8efe-17e8f5dcb835\",\n        \"7ec0b41c-e099-47dc-889f-4161eb92e321\",\n        \"3569fc24-e8c7-4ae7-a35f-fdf2b03fead9\",\n        \"c466d27b-797b-41d3-a6a9-d5ed8d2afe93\",\n        \"08f70531-a1f5-451c-a165-fe0c69b2fc33\",\n        \"36755260-1f06-420f-9545-808c8be8c670\",\n        \"9789bc16-043b-4e4d-baa3-77a9ea4c894a\"\n      ],\n      \"root_task_id\": \"a5c7fea4-33e1-4703-a433-67ae6b34867f\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "repo_readiness",
+      "command": "node ./scripts/repo-readiness-pulse.js --min-score 80 --dry-run",
+      "ok": false,
+      "code": 1,
+      "parsed": null,
+      "stdout_tail": "",
+      "stderr_tail": "node:internal/modules/cjs/loader:1458\n  throw err;\n  ^\n\nError: Cannot find module '/Users/tatsheen/claw-architect/scripts/repo-readiness-pulse.js'\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1455:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1065:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1070:22)\n    at Module._load (node:internal/modules/cjs/loader:1241:25)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: []\n}\n\nNode.js v25.6.1\n"
+    }
+  ],
+  "failures": [
+    {
+      "name": "repo_readiness",
+      "code": 1
+    }
+  ],
+  "knowledge": {
+    "file": "/Users/tatsheen/claw-architect/reports/index-knowledge-latest.json",
+    "shared_markdown": "/Users/tatsheen/claw-architect/agent-state/shared-context/INDEX-KNOWLEDGE-LATEST.md",
+    "symbolic_repos_indexed": 6,
+    "readiness_below_threshold": 0
+  }
+}

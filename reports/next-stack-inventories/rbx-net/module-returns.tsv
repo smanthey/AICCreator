@@ -1,0 +1,36 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua:28:	return topic.Event:Connect(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/messaging/MessagingService.lua:39:return service
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/luau/dist/init.lua:167:		return NetDefinitions.Create(declarations, configuration)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/luau/dist/init.lua:174:return Net
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/ci.luau:19:	return process.spawn("node", {
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/ci.luau:34:	return process.spawn("node", {
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau:9:		return process.spawn("npm.cmd", params)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau:11:		return process.spawn("npm", params)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/node.luau:15:return node
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua:8:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua:17:	return mixed
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/internal/tables.lua:20:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau:9:	return path.ospath(table.concat({ ... }, SEP))
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau:16:	return string.match(path, ".(%.[A-z0-9_-]+)$")
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau:25:	return table.concat(parts, SEP)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau:62:	return newPath
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/lune/modules/path.luau:67:return path
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:12:	return setmetatable(self, RequestCounter)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:18:	return playerQueue or 0
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:33:	return "RequestCounter"
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:43:		return existing
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:47:		return newCounter
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/RateLimitMiddleware/throttle.lua:57:return Throttle
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:26:        return function(player, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:31:                    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:36:            return next(player, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:41:        return "TypeCheckMiddleware"
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:46:        return self
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:50:        return self:next(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:53:    return setmetatable({}, MiddlewareInstance)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:58:    return typeCheckMiddleware(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/TypeCheckMiddleware/init.lua:65:return setmetatable({}, MiddlewareGlobal)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua:15:return function(options)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua:19:    return function (next, event)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua:21:        return function(player, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/rbx-net/src/middleware/LoggerMiddleware/init.lua:23:            return next(player, ...)

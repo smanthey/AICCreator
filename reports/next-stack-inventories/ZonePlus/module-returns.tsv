@@ -1,0 +1,98 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZonePlusReference.lua:12:        return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZonePlusReference.lua:22:    return objectValue
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZonePlusReference.lua:28:        return objectValue
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZonePlusReference.lua:30:    return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZonePlusReference.lua:33:return ZonePlusReference
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/OldSignal.lua:24:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/OldSignal.lua:73:	return connection
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/OldSignal.lua:85:	return unpack(args)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/OldSignal.lua:110:return Signal
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:40:	return combinedVolume
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:54:	return charSize, charCFrame
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:142:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:172:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:174:	return true
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/Tracker.lua:240:return Tracker
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:10:		return worldModel
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:16:	return worldModel
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:30:	return results
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:34:	return self:_getCombinedResults("GetPartBoundsInBox", cframe, size, overlapParams)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:38:	return self:_getCombinedResults("GetPartBoundsInRadius", position, radius, overlapParams)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:42:	return self:_getCombinedResults("GetPartsInPart", part, overlapParams)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/CollectiveWorldModel.lua:47:return CollectiveWorldModel
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:45:	return count
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:60:		return ZoneController._getZonesAndItems("player", activeZones, activeZonesTotalVolume, true, recommendedDetection)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:66:			return zonesAndOccupants
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:74:		return zonesAndOccupants
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:77:		return ZoneController._getZonesAndItems("item", activeZones, activeZonesTotalVolume, true, recommendedDetection)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:348:	return zonesAndOccupants
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:359:	return registeredZonesArray
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:370:	return zonesArray
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:487:	return touchingZonesArray, touchingPartsDictionary
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:512:	return group
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:516:	return settingsGroups[settingsGroupName]
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:529:	return container
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/ZoneController/init.lua:534:return ZoneController
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:12:	return "IndicesReference"
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:17:	return "LinkToInstanceIndex"
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:41:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:53:	return type(Object) == "table" and getmetatable(Object) == Janitor
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:87:			return NewPromise, Id
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:89:			return Object
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:99:	return Object, Index
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:121:		return NewPromise, Id
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:123:		return PromiseObject
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:138:			return NewPromise, Id
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:140:			return Object
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:143:		return self:Add(Object, false, Id), Id
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:145:	return self:Add(Object, false, Id), Id
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:181:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:192:		return This[Index]
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:268:	return "Disconnect<" .. tostring(self.Connected) .. ">"
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:317:	return self:Add(ManualDisconnect, "Disconnect", IndexToUse)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:331:	return ManualCleanup
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Janitor.lua:339:return Janitor
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Signal.lua:57:	return setmetatable({
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Signal.lua:114:    return self
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Signal.lua:130:	return connection
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Signal.lua:174:	return coroutine.yield()
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Signal.lua:178:return Signal
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/Detection.lua:4:return {
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:21:	return require(referenceObject.Value)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:144:	return self
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:173:	return zone
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:185:				return (v <= currentValue)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:187:				return (v >= currentValue)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:226:		return rounded
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:242:	return region, boundMin, boundMax
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:420:	return signalsToFire
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:465:	return math.round(number * 10^decimalPlaces) * 10^-decimalPlaces
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:525:		return "GetPartBoundsInRadius", {part.Position, part.Size.X}
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:528:		return "GetPartBoundsInBox", {part.CFrame, part.Size}
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:531:		return "GetPartsInPart", {part}
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:549:	return methodName, args
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:559:	return self:findPlayer(localPlayer)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:568:			return true
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:571:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:578:		return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:580:	return self:_find("player", player.Character)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:584:	return self:_find("item", item)
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:592:		return true, touchingZoneParts
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:594:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:615:	return checkerPart
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:630:		return true, touchingZoneParts
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:632:	return false
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:645:	return itemsArray
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:649:	return self:_getAll("player")
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:653:	return self:_getAll("item")
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:666:		return partsArray
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:674:	return partsArray
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:693:	return randomVector, touchingZoneParts
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/init.lua:876:return Zone
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:37:				return details[index][1]
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:47:				return details[index][2]
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:57:				return details[index][3]
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:87:	return enum
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:91:	return enums
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/init.lua:115:return Enum
+/Users/tatsheen/claw-repos/oss-index/roblox/ZonePlus/src/Zone/Enum/Accuracy.lua:3:return {

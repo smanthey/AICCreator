@@ -1,0 +1,132 @@
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2_image.cmake:28:# module, but with modifications to recognize OS X frameworks and
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2_ttf.cmake:28:# module, but with modifications to recognize OS X frameworks and
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:37:    bool chain = false;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:67:      ADD_EXPL_TICKS = 9; //the total explosion time for a combo is 61 + 9 * n, where n is the  number of blocks
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:107:  std::list<GarbageBlock> _garbageBlocks;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:108:  std::list<GarbageSpawn> _garbageQueue;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:114:  int _garbageSpawnPositions[3];
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:124:  int _chainCounter;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:125:  bool _tickChain; //true if a chain has occurred during the tick
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:126:  bool _tickChainEnd; //true if chain ended on this tick
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:127:  int _lastChain; //size of last chain
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:160:  bool garbageBlockCanFall(GarbageBlock &);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:164:  void chainScoring();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.h:165:  void comboScoring();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:16:# OS X framework based version. (Other versions link to -lSDL2main which
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:18:# module will automatically add the -framework Cocoa on your behalf.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:23:# (SDL2.dll, libsdl2.so, SDL2.framework, etc).
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:38:# Added new modifications to recognize OS X frameworks and
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:104:    IF (NOT ${SDL2_INCLUDE_DIR} MATCHES ".framework")
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:105:        # Non-OS X framework versions expect you to also dynamically link to
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:116:    ENDIF (NOT ${SDL2_INCLUDE_DIR} MATCHES ".framework")
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:121:# frameworks may already provide it.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:142:    # CMake doesn't display the -framework Cocoa string in the UI even
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2.cmake:148:        SET(SDL2_LIBRARY_TEMP ${SDL2_LIBRARY_TEMP} "-framework Cocoa")
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/InputManager.h:48:  SDL_Event _inputDownEvent; // stores the last input event on this frame that is relevant for input config
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:15:    _garbageSpawnPositions{0},
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:25:    _chainCounter(1),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:91:    //TODO: maybe locking for ongoing chains
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:93:    _garbageQueue.push_back(g); //is there another way to do this properly?
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:110:    for (auto it = _garbageQueue.begin(); it != _garbageQueue.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:127:                    x = _garbageSpawnPositions[0]++ % 2 * 3;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:129:                    x = _garbageSpawnPositions[it->size - 3]++
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:137:                it = _garbageQueue.erase(it);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:160:    _garbageBlocks.push_back(GarbageBlock(x, y, w, h, type));
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:165:            _tiles[row][col].g = &_garbageBlocks.back();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:222:bool Board::garbageBlockCanFall(GarbageBlock &gb) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:271:    //detect chain end
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:273:        if (_chainCounter > 1) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:275:            _lastChain = _chainCounter;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:276:            _eventHandler->chainEnd(_chainCounter);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:278:        _chainCounter = 1;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:393:                tile.chain = false;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:399:        ++_chainCounter;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:400:        chainScoring();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:404:// check if exploded tile is in a chain by looking for chain flag below it.
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:408:        if (t.chain) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:419:            continue; // gb as well because it's not going to cause any chains...
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:444:    for (auto it = _garbageBlocks.begin(); it != _garbageBlocks.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:467:                                                tile.b._explOrder, _chainCounter);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:473:                    tile.chain = true;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:488:    for (auto it = _garbageBlocks.begin(); it != _garbageBlocks.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:505:                                                it->_explOrder + block, _chainCounter);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:523:                    it = _garbageBlocks.erase(it);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:537:        bool srChain = swapRight.chain; // should've maybe put chain flags in their own matrix...
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:538:        bool slChain = swapLeft.chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:542:        swapRight.chain = srChain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:543:        swapLeft.chain = slChain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:573:                    bool chain1 = _tiles[row - 1][col].chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:574:                    bool chain = _tiles[row][col].chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:576:                    _tiles[row - 1][col].chain = chain1; // prevent chain flag from clearing...
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:578:                    _tiles[row][col].chain = chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:589:    for (auto it = _garbageBlocks.begin(); it != _garbageBlocks.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:590:        if (garbageBlockCanFall(*it)) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:692:            for (auto it = _garbageBlocks.begin(); it != _garbageBlocks.end();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:735:    for (auto it = _garbageBlocks.begin(); it != _garbageBlocks.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:755:        matchBlocks(); // chain -> true
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:756:        handleMatchedBlocks(); // check chain
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:781:    return _chainCounter;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:837:    return _garbageBlocks;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:841:    return _garbageQueue;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:884:        _eventHandler->chain(_chainCounter, _tickMatchCol, _tickMatchRow,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:888:        _eventHandler->combo(_tickMatched, _tickMatchCol, _tickMatchRow,
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:890:        chainScoring();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:891:        comboScoring();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:899:void Board::chainScoring() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:900:    switch (_chainCounter) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:910:        default:_score += (_chainCounter + 2) * 200;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:915:void Board::comboScoring() {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Board.cpp:921:        _score += (_chainCounter - 4) * 20;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:20:  void blockExplode(int x, int y, int stackOffset, int order, int chain);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:25:  void combo(int value, int col, int row, int stackOffset);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:26:  void chain(int value, int col, int row, int stackOffset);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:27:  void chainEnd(int chain);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:37:  bool _combo;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.h:38:  bool _chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.cpp:35:    _frameTime(16),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.cpp:37:    _framesRun(0),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.cpp:55:        tick = (SDL_GetTicks() - _lastTick >= _frameTime);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.cpp:88:            ++_framesRun;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.cpp:133:    _avgFps = _framesRun / ((SDL_GetTicks() - _startTime) / 1000.f);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/SDLContext.cpp:213:    _sfxChain = Mix_LoadWAV("assets/sfx/chain.wav");
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/SDLContext.cpp:214:    _sfxCombo = Mix_LoadWAV("assets/sfx/combo.wav");
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/Block.h:35:  bool _gbFallChain; //falling block from transformed garbage, to trigger chains
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/CMake/FindSDL2_mixer.cmake:28:# module, but with modifications to recognize OS X frameworks and
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:117:    int combo = b1.getTickMatched();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:118:    int chain = b1.getLastChain() - 1;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:119:    if (chain > 12) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:120:        chain = 12;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:124:        b2.queueGarbage(true, chain, GarbageBlockType::NORMAL);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:127:    if (combo >= 4 && combo <= 7) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:128:        b2.queueGarbage(false, combo - 1, GarbageBlockType::NORMAL);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:129:    } else if (combo == 8) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:132:    } else if (combo >= 9 && combo <= 10) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:133:        b2.queueGarbage(false, combo - 5, GarbageBlockType::NORMAL);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:134:        b2.queueGarbage(false, combo - 5, GarbageBlockType::NORMAL);
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:135:    } else if (combo == 11) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:138:    } else if (combo >= 12) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/VsGame.cpp:139:        for (int i = 0; i < 5 - combo; ++i)
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:24:    _combo(false),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:25:    _chain(false),
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:44:    //chain sound overrides combo...
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:45:    if (_chain) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:47:    } else if (_combo) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:50:    _chain = false;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:51:    _combo = false;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:62:                                     int chain) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:86:    int soundChain = chain;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:121:void BoardEventHandler::combo(int value, int col, int row, int stackOffset) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:122:    _combo = true;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:130:void BoardEventHandler::chain(int value, int col, int row, int stackOffset) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:131:    _chain = true;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:139:void BoardEventHandler::chainEnd(int chain) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:140:    if (chain == 4) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:142:    } else if (chain == 5) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Game/BoardEventHandler.cpp:144:    } else if (chain >= 6) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Rendering/BoardRenderer.cpp:203:            if (_board.getTile(i, j).chain) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Rendering/BoardRenderer.cpp:321:    auto garbageBlocks = _board.getGarbageBlocks();
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/Rendering/BoardRenderer.cpp:322:    for (auto it = garbageBlocks.begin(); it != garbageBlocks.end(); ++it) {
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.h:43:  uint32_t _frameTime;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/States/StateManager.h:45:  uint32_t _framesRun;
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/README.md:15:* Two-player VS game with garbage blocks
+/Users/tatsheen/claw-repos/oss-index/puzzle-bench/panel-pop/README.md:22:* `Z` - cancel/raise stack

@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-03T13:00:01.036Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }\n✅ Postgres connected\n\n☠  Dead Letters (50)\n──────────────────────────────────────────────────────────────────────\n\nID:      c336891a-76cc-4daa-9fc7-1414a9995b42\nType:    quant_trading_execute_orders\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-03T12:53:15.859Z\n──────────────────────────────────────────────────────────────────────\n\nID:      a6243494-4165-48bc-9a3e-d1bb7a126a1f\nType:    quant_trading_signal_scan\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-03T12:53:15.514Z\n──────────────────────────────────────────────────────────────────────\n\nID:      b2567aa9-67ba-4ade-ba4a-169df5ab3720\nType:    generate_copy\nTitle:   (none)\nPlan:    null — \nRetries: 0\nError:   INVALID_SCHEMA: / must have required property 'brand_slug'; / must have required property 'format'\nWhen:    2026-03-03T12:50:17.282Z\n──────────────────────────────────────────────────────────────────────\n\nID:      cb7d2c11-c421-4941-80a1-df22ac272ebb\nType:    classify\nTitle:   media chain: classify\nPlan:    0259d2bc-825b-40ad-9c82-35951f84efef — media_chain deterministic pipeline\nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-03T12:46:30.369Z\n──────────────────────────────────────────────────────────────────────\n\nID:      2b3a133b-1f46-4202-8c0a-c49d02b57476\nType:    quant_trading_execute_orders\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-03T12:45:00.427Z\n──────────────────────────────────────────────────────────────────────\n\nID:      ebcd55d8-110c-40ca-8129-ddf7dadb8770\nType:    quant_trading_signal_scan\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:"
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-03T13:00:04.071Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "clawhub-manuals-user-guides-etc-and-all-in-different-formats",
+  "name": "Manuals, User Guides, Etc And All In Different Formats Skill",
+  "version": "1.0.0",
+  "description": "manuals, user guides, etc and all in different formats",
+  "tasks": [
+    "CLAWHUB_MANUALS_USER_GUIDES_ETC_AND_ALL_IN_DIFFERENT_FORMATS_RUN"
+  ],
+  "tags": [
+    "clawhub",
+    "marketplace",
+    "automation"
+  ],
+  "author": "claw-architect",
+  "pricing": {
+    "usd": 19,
+    "model": "one_time"
+  }
+}

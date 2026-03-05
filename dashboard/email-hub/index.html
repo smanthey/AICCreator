@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Hub Dashboard</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a33;
+      --muted: #9fb0dd;
+      --text: #eef3ff;
+      --accent: #5dd3a6;
+      --warn: #f4b942;
+      --err: #ff6b6b;
+      --line: #2a3768;
+    }
+    body { margin: 0; font-family: ui-sans-serif, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at top right, #22305a 0%, var(--bg) 40%); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    .grid { display: grid; gap: 16px; }
+    .cards { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .card { background: color-mix(in srgb, var(--card) 92%, black); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+    h1, h2 { margin: 0 0 12px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 18px; color: var(--muted); }
+    .k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .v { font-size: 26px; font-weight: 700; margin-top: 4px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; }
+    input, textarea, button, select { border-radius: 10px; border: 1px solid var(--line); background: #0d1530; color: var(--text); padding: 10px; font-size: 13px; }
+    button { background: linear-gradient(90deg, #2359ff, #38c8aa); border: none; cursor: pointer; font-weight: 600; }
+    button.secondary { background: #1c274d; border: 1px solid var(--line); }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+    .ok { color: var(--accent); }
+    .warn { color: var(--warn); }
+    .err { color: var(--err); }
+    .split { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 920px) { .split { grid-template-columns: 1fr; } }
+    pre { white-space: pre-wrap; word-break: break-word; background: #0d1530; border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="wrap grid" style="gap:20px;">
+    <div class="row" style="justify-content:space-between;align-items:center;">
+      <div>
+        <h1>Email Hub</h1>
+        <div class="k">Multi-site send, webhook ingest, flow execution, analytics</div>
+      </div>
+      <div class="row">
+        <input id="apiKey" placeholder="Optional API key (for protected endpoints)" style="width: 320px;" />
+        <button class="secondary" id="refreshBtn">Refresh</button>
+      </div>
+    </div>
+
+    <div class="grid cards" id="cards"></div>
+
+    <div class="split">
+      <div class="card">
+        <h2>Quick Send</h2>
+        <div class="grid" style="grid-template-columns:1fr 1fr;">
+          <input id="sendSite" placeholder="site slug (e.g. payclaw)" />
+          <input id="sendProvider" placeholder="provider (resend/maileroo optional)" />
+          <input id="sendTo" placeholder="to (email)" />
+          <input id="sendFrom" placeholder="fromEmail" />
+          <input id="sendFromName" placeholder="fromName" />
+          <input id="sendSubject" placeholder="subject" />
+        </div>
+        <textarea id="sendHtml" rows="5" placeholder="html body"></textarea>
+        <div class="row">
+          <button id="sendBtn">Send Email</button>
+          <span id="sendStatus" class="k"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Flow Editor</h2>
+        <div class="grid" style="grid-template-columns:1fr 1fr;">
+          <input id="flowId" placeholder="flow id" />
+          <input id="flowName" placeholder="flow name" />
+          <input id="flowTrigger" placeholder="trigger (e.g. maileroo.delivered)" />
+          <input id="flowSite" placeholder="site filter optional" />
+        </div>
+        <textarea id="flowActions" rows="8" placeholder='actions JSON array, e.g. [{"type":"webhook","url":"https://..."}]'></textarea>
+        <div class="row">
+          <button id="saveFlowBtn">Save Flow</button>
+          <span id="flowStatus" class="k"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Recent Events</h2>
+      <div class="row" style="margin-bottom:8px;">
+        <input id="eventFilterSite" placeholder="filter site" />
+        <input id="eventFilterType" placeholder="filter type" />
+        <button class="secondary" id="filterBtn">Apply Filter</button>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Time</th><th>Type</th><th>Site</th><th>Provider</th><th>Recipient</th><th>Subject</th><th>Info</th></tr>
+        </thead>
+        <tbody id="eventRows"></tbody>
+      </table>
+    </div>
+
+    <div class="split">
+      <div class="card">
+        <h2>Flows</h2>
+        <pre id="flowsRaw">Loading...</pre>
+      </div>
+      <div class="card">
+        <h2>Analytics Summary</h2>
+        <pre id="summaryRaw">Loading...</pre>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="card">
+        <h2>Health Payload</h2>
+        <pre id="healthRaw">Loading...</pre>
+      </div>
+      <div class="card">
+        <h2>Top Sites</h2>
+        <table>
+          <thead><tr><th>Site</th><th>Events</th></tr></thead>
+          <tbody id="topSitesRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Per-Site Email KPIs</h2>
+      <table>
+        <thead><tr><th>Site</th><th>Delivered</th><th>Opened</th><th>Clicked</th><th>Failed</th></tr></thead>
+        <tbody id="kpiRows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const state = { site: "", type: "" };
+    const authHeaders = () => {
+      const key = document.getElementById("apiKey").value.trim();
+      if (!key) return { "Content-Type": "application/json" };
+      return { "Content-Type": "application/json", "Authorization": `Bearer ${key}` };
+    };
+
+    function esc(v) {
+      return String(v ?? "").replace(/[&<>]/g, s => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[s]));
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(path, opts);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      return data;
+    }
+
+    function renderCards(health) {
+      const m = health.metrics || {};
+      const cards = [
+        ["Send Attempts", m.sendAttempts ?? 0],
+        ["Send Success", m.sendSuccess ?? 0],
+        ["Send Failed", m.sendFailed ?? 0],
+        ["Webhook Events", m.webhookEvents ?? 0],
+        ["Forwarded", m.forwardedEvents ?? 0],
+        ["Flows", health.flowsConfigured ?? 0],
+      ];
+      document.getElementById("cards").innerHTML = cards.map(([k, v]) =>
+        `<div class="card"><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div></div>`
+      ).join("");
+    }
+
+    function renderEvents(items) {
+      const rows = items.map(evt => {
+        const info = evt.error ? `<span class="err">${esc(evt.error)}</span>` : esc(evt.messageId || evt.status || "");
+        return `<tr>
+          <td>${esc(evt.ts)}</td>
+          <td>${esc(evt.type)}</td>
+          <td>${esc(evt.site || "")}</td>
+          <td>${esc(evt.provider || "")}</td>
+          <td>${esc(evt.recipient || evt.to || "")}</td>
+          <td>${esc(evt.subject || "")}</td>
+          <td>${info}</td>
+        </tr>`;
+      }).join("");
+      document.getElementById("eventRows").innerHTML = rows || `<tr><td colspan="7" class="k">No events</td></tr>`;
+    }
+
+    async function refreshAll() {
+      const [health, events, flows, summaryResp] = await Promise.all([
+        api('/api/email-hub/health'),
+        api(`/api/email-hub/v1/events?limit=120${state.site ? `&site=${encodeURIComponent(state.site)}` : ""}${state.type ? `&type=${encodeURIComponent(state.type)}` : ""}`, { headers: authHeaders() }),
+        api('/api/email-hub/v1/flows', { headers: authHeaders() }),
+        api(`/api/email-hub/v1/analytics/summary?limit=2000${state.site ? `&site=${encodeURIComponent(state.site)}` : ""}`, { headers: authHeaders() }),
+      ]);
+
+      renderCards(health);
+      renderEvents(events.events || []);
+      document.getElementById('healthRaw').textContent = JSON.stringify(health, null, 2);
+      document.getElementById('flowsRaw').textContent = JSON.stringify(flows, null, 2);
+      document.getElementById('summaryRaw').textContent = JSON.stringify(summaryResp, null, 2);
+      const topSites = (summaryResp.summary && summaryResp.summary.bySite) || [];
+      document.getElementById('topSitesRows').innerHTML = topSites.length
+        ? topSites.map((s) => `<tr><td>${esc(s.key)}</td><td>${esc(s.count)}</td></tr>`).join("")
+        : `<tr><td colspan="2" class="k">No data</td></tr>`;
+
+      const kpiBySite = (summaryResp.summary && summaryResp.summary.kpiBySite) || {};
+      const kpiEntries = Object.entries(kpiBySite);
+      document.getElementById('kpiRows').innerHTML = kpiEntries.length
+        ? kpiEntries.map(([site, kpi]) => `<tr>
+            <td>${esc(site)}</td>
+            <td>${esc(kpi.delivered || 0)}</td>
+            <td>${esc(kpi.opened || 0)}</td>
+            <td>${esc(kpi.clicked || 0)}</td>
+            <td>${esc(kpi.failed || 0)}</td>
+          </tr>`).join("")
+        : `<tr><td colspan="5" class="k">No KPI data yet</td></tr>`;
+    }
+
+    async function quickSend() {
+      const body = {
+        site: document.getElementById('sendSite').value.trim() || undefined,
+        provider: document.getElementById('sendProvider').value.trim() || undefined,
+        to: document.getElementById('sendTo').value.trim(),
+        fromEmail: document.getElementById('sendFrom').value.trim(),
+        fromName: document.getElementById('sendFromName').value.trim() || undefined,
+        subject: document.getElementById('sendSubject').value.trim(),
+        html: document.getElementById('sendHtml').value,
+      };
+      const status = document.getElementById('sendStatus');
+      status.textContent = 'Sending...';
+      try {
+        await api('/api/email-hub/v1/send', {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify(body),
+        });
+        status.textContent = 'Sent';
+        status.className = 'ok';
+        await refreshAll();
+      } catch (e) {
+        status.textContent = e.message;
+        status.className = 'err';
+      }
+    }
+
+    async function saveFlow() {
+      let actions;
+      try {
+        actions = JSON.parse(document.getElementById('flowActions').value || '[]');
+      } catch (e) {
+        document.getElementById('flowStatus').textContent = 'Invalid actions JSON';
+        document.getElementById('flowStatus').className = 'err';
+        return;
+      }
+      const body = {
+        id: document.getElementById('flowId').value.trim(),
+        name: document.getElementById('flowName').value.trim(),
+        trigger: document.getElementById('flowTrigger').value.trim(),
+        site: document.getElementById('flowSite').value.trim() || undefined,
+        actions,
+        enabled: true,
+      };
+      const status = document.getElementById('flowStatus');
+      status.textContent = 'Validating...';
+      try {
+        await api('/api/email-hub/v1/flows/validate', {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify(body),
+        });
+        status.textContent = 'Saving...';
+        await api('/api/email-hub/v1/flows', {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify(body),
+        });
+        status.textContent = 'Saved';
+        status.className = 'ok';
+        await refreshAll();
+      } catch (e) {
+        status.textContent = e.message;
+        status.className = 'err';
+      }
+    }
+
+    document.getElementById('refreshBtn').addEventListener('click', refreshAll);
+    document.getElementById('sendBtn').addEventListener('click', quickSend);
+    document.getElementById('saveFlowBtn').addEventListener('click', saveFlow);
+    document.getElementById('filterBtn').addEventListener('click', async () => {
+      state.site = document.getElementById('eventFilterSite').value.trim();
+      state.type = document.getElementById('eventFilterType').value.trim();
+      await refreshAll();
+    });
+
+    refreshAll().catch((e) => {
+      document.getElementById('healthRaw').textContent = String(e.message || e);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,747 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:396:local function ecs_assert(condition, msg: string?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:406:local function ECS_COMPONENT()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:414:local function ECS_TAG()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:419:local function ECS_META(id: i53, ty: i53, value: any?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:428:local function ECS_META_RESET()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:434:local function ECS_COMBINE(id: number, generation: number): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:438:local function ECS_IS_PAIR(e: number): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:442:local function ECS_GENERATION_INC(e: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:457:local function ECS_ENTITY_T_LO(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:461:local function ECS_ID(e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:465:local function ECS_GENERATION(e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:469:local function ECS_ENTITY_T_HI(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:473:local function ECS_PAIR(pred: i53, obj: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:480:local function ECS_PAIR_FIRST(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:484:local function ECS_PAIR_SECOND(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:488:local function entity_index_try_get_any(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:501:local function entity_index_try_get(entity_index: entityindex, entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:515:local function entity_index_try_get_fast(entity_index: entityindex, entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:529:local function entity_index_is_alive(entity_index: entityindex, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:533:local function entity_index_get_alive(entity_index: entityindex, entity: i53): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:545:local function ecs_get_alive(world: world, entity: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:570:local function ENTITY_INDEX_NEW_ID(entity_index: entityindex): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:596:local function ecs_pair_first(world: world, e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:601:local function ecs_pair_second(world: world, e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:606:local function query_match(query: query, archetype: archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:628:local function find_observers(world: world, event: i53, component: i53): { observer }?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:636:local function archetype_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:706:local function archetype_append(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:716:local function new_entity(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:727:local function entity_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:741:local function hash(arr: { i53 }): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:745:local function fetch(id: i53, columns_map: { [i53]: Column }, row: number): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:755:local function WORLD_GET(world: world, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:785:local function WORLD_HAS(world: world, entity: i53, id: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:799:local function WORLD_TARGET(world: world, entity: i53, relation: i53, index: number?): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:840:local function ECS_ID_IS_WILDCARD(e: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:846:local function id_record_get(world: World, id: Entity): ComponentRecord?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:857:local function id_record_create(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:929:local function id_record_ensure(world: world, id: i53): componentrecord
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:940:local function archetype_append_to_records(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:961:local function archetype_create(world: world, id_types: { i53 }, ty, prev: i53?): archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1031:local function world_range(world: world, range_begin: number, range_end: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1054:local function archetype_ensure(world: world, id_types: { i53 }): archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1068:local function find_insert(id_types: { i53 }, toAdd: i53): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1080:local function find_archetype_without(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1095:local function create_edge_for_remove(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1109:local function archetype_traverse_remove(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1127:local function find_archetype_with(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1142:local function archetype_traverse_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1164:local function archetype_fast_delete_last(columns: { Column }, column_count: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1172:local function archetype_fast_delete(columns: { Column }, column_count: number, row: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1181:local function archetype_delete(world: world, archetype: archetype, row: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1209:local function archetype_destroy(world: world, archetype: archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1247:local function NOOP() end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1249:local function query_archetypes(query: query, override: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1311:local function query_with(query: query, ...: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1319:local function query_without(query: query, ...: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1325:local function query_iter_init(query: QueryInner): () -> (number, ...any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1344:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1417:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1450:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1486:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1525:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1567:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1612:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1660:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1711:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1767:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1832:local function query_iter(query): () -> (number, ...any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1840:local function query_cached(query: QueryInner)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1901:	local function on_create_callback(archetype: Archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1907:	local function on_delete_callback(archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1926:	local function cached_query_iter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:1987:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2012:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2045:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2081:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2120:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2162:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2207:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2255:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2306:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2362:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2425:	local function cached_query_has(_, entity): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2439:	local function cached_query_fini()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2467:local function query_has(query: QueryInner, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2507:local function world_query(world: World, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2518:local function world_each(world: world, id: i53): () -> i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2552:local function world_children(world: world, parent: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2556:local function ecs_bulk_insert(world: world, entity: i53, ids: { i53 }, values: { any })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2652:local function ecs_bulk_remove(world: world, entity: i53, ids: { i53 })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2701:local function world_new(DEBUG: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2751:	local function entity_index_new_id(entity_index: entityindex): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2778:	local function entity_index_try_get_any(entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2783:	local function inner_archetype_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2839:	local function inner_entity_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2866:	local function entity_index_try_get_unsafe(entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2882:	local function exclusive_traverse_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:2898:	local function world_set(world: world, entity: i53, id: i53, data): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3001:	local function world_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3099:	local function world_get(world: world, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3139:			local function on_add(entity, id, value, oldarchetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3182:			local function on_change(entity, id, value, oldarchetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3223:			local function on_remove(entity, id, delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3262:	local function world_has(world: World, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3284:	local function world_target(world: world, entity: i53, relation: i53, index: number?): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3324:	local function world_parent(world: world, entity: i53): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3328:	local function world_entity(world: world, entity: i53?): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3387:	local function world_remove(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3412:	local function world_delete(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3701:	local function world_clear(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3720:	local function world_exists(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3728:	local function world_contains(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3732:	local function world_cleanup(world: world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3754:	local function world_component(world: world): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3793:		local function DEBUG_IS_DELETING_ENTITY(entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3804:		local function DEBUG_IS_INVALID_ENTITY(entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3817:		local function DEBUG_ID_IS_INVALID(id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3841:		local function world_delete_checked(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3849:		local function world_remove_checked(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3856:		local function world_add_checked(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3863:		local function world_set_checked(world: world, entity: i53, id: i53, value: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3928:local function ecs_is_tag(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3939:local function ecs_entity_record(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3943:local function entity_index_ensure(entity_index: entityindex, e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:3998:local function new(world: world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:4003:local function new_low_id(world: world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/src/jecs.luau:4024:local function new_w_id(world: world, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/build_studio_docs.luau:22:local function traverse(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau:17:	function Vector3.new(x, y, z)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau:24:	function Vector3.__add(left, right)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau:28:	function Vector3.__mul(left, right)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau:39:local function path(entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/hierarchy.luau:53:local function iterate(entity, parent)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/entities/basics.luau:8:local function name(e: jecs.Entity): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau:19:local function build_fs_tree(path: string, parent: FsDirNode?): FsDirNode
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau:39:local function path_to_node(root: FsDirNode, path: string, traverse_modules: boolean?): FsNode?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau:91:local function get_closest_common_ancestor(from: FsNode, to: FsNode): FsNode?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau:131:local function get_relative_module_path(from: FsFileNode, to: FsFileNode): string?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/scripts/alias_resolver.luau:193:local function build_resolver(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/changetracking.luau:8:local function name(e: jecs.Entity): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:26:local function dot(v0: Vector3, v1: Vector3)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:30:local function angleDiff(c0: CFrame, c1: CFrame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:39:local function fromAxisAngle(axis: Vector3, angle: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:55:local function rotateAxis(r0: Vector3, c1: CFrame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:65:local function axisAngleDiff(c0: CFrame, c1: CFrame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:74:local function rotation_step(spring: Spring_Rotation, dt: number): CFrame
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:130:local function areRotationsClose(c0: CFrame, c1: CFrame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:138:local function rotation_can_sleep(spring: Spring_Rotation): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:146:local function create(d: number, f: number, origo: CFrame, goal: CFrame): Spring
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:171:local function step(spring: Spring, dt: number): CFrame
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/cframe.luau:179:local function can_sleep(spring: Spring)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/how_to/111_signals.luau:6:	function so you can clean up when you no longer need to listen.
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/wildcards.luau:6:local function named(ctr, name)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/wildcards.luau:11:local function name(e)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/generic.luau:14:local function exhaustive(x: never)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/generic.luau:19:local function step(spring: Spring, dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/generic.luau:36:local function can_sleep(spring: Spring)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:162:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:187:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/ob.luau:785:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:13:	function Vector3.new(x, y, z)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:20:	function Vector3.__add(left, right)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/basics.luau:24:	function Vector3.__mul(left, right)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau:16:local function create(d: number, f: number, origo: Vector3, goal: Vector3): Spring
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau:27:local function step(spring: Spring, dt: number): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector3.luau:117:local function can_sleep(spring: Spring): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/collect.luau:1:local function collect(signal)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/stress.client.luau:47:local function values(t)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau:11:function print_centered_entity(entity, width: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau:25:local function name(world, e)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau:29:local function pad()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/lifetime_tracker.luau:40:local function lifetime_tracker_add(world: jecs.World, opt): PatchedWorld
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau:7:local function SEQUENCE(nodes: { (...any) -> boolean})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau:19:local function FALLBACK(nodes: { (...any) -> boolean })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/BT/module.luau:31:local function NOT(f)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/visual/query.bench.luau:52:local function flip()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:1:local function dbg_info(n: number): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:4:local function throw(msg: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:17:local function ASSERT<T>(v: T, msg: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:24:local function runtime_lints_add(world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:25:	local function get_name(id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:29:	local function bname(id): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/runtime_lints.luau:45:	local function ID_IS_TAG(world: World, id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:15:local function create(d: number, f: number, origo: Color3, goal: Color3): Spring
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:26:local function inverseGammaCorrectD65(c)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:30:local function gammaCorrectD65(c)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:34:local function rgbToLuv(value: Vector3): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:62:local function luvToRgb(value: Vector3): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/color3.luau:100:local function step(spring: Spring, dt: number): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau:16:local function create(d: number, f: number, origo: number, goal: number): Spring
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau:27:local function step(spring: Spring, dt: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/number.luau:120:local function can_sleep(spring: Spring): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/archetypes/targets.luau:13:local function name(e, name: string): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/general.luau:6:local function TITLE(s: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/general.luau:180:	local function view_bench(n: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau:12:		local function view_bench(world: jecs.World, A: i53, B: i53, C: i53, D: i53, E: i53, F: i53, G: i53, H: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau:28:		local function flip()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau:90:		local function view_bench(world: jecs.World, A: i53, B: i53, C: i53, D: i53, E: i53, F: i53, G: i53, H: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/cached.luau:106:		local function flip()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector2.luau:18:local function create(d: number, f: number, origo: Vector2, goal: Vector2): Spring
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Spring/vector2.luau:29:local function step(spring: Spring, dt: number): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:44:local function ECS_ENTITY_T_LO(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:48:local function ECS_GENERATION(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:54:local function ECS_COMBINE(source: number, target: number): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:58:local function ECS_GENERATION_INC(e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:74:local function bl()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:78:local function pe(e)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:83:local function dprint(tbl: {  [number]: number })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:97:local function alloc()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:114:local function remove(entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:129:local function alive(e)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/lol.luau:135:local function pa(e)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/deserialize.luau:3:local function ecs_ensure_entity(world: jecs.World, id: jecs.Entity<any>, ctx: {[jecs.Entity<any>]: jecs.Entity<any>})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/deserialize.luau:37:local function ecs_deser_pairs(world: jecs.World, rel, tgt, ctx)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau:6:local function TITLE(title: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau:20:		local function view_bench(world: jecs.World,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau:46:		local function flip()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau:109:		local function view_bench(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/benches/query.luau:135:		local function flip()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_send.luau:12:local function networking_send(world: jecs.World)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:35:local function distance(a: vector, b: vector)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:39:local function is_in_fov(a: vector, b: vector, forward_dir: vector, fov_angle: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:60:local function add_to_voxel(source: jecs.Entity, position: vector, prev_voxel_id: jecs.Entity?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:75:local function reconcile_client_owned_assembly_to_voxel(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:90:local function update_camera_direction(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/queries/spatial_grids.luau:96:local function perceive_enemies(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/examples/example.luau:5:local function cameraSystem()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/examples/example.luau:11:local function characterMovement()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/spawn_app.luau:8:local function unmount_all()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/spawn_app.luau:14:local function spawn_app<T>(app: types.Application<T>, props: T): () -> ()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:344:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:362:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:1584:		local function counter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3034:		local function cdr(id)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3181:	local function getTargets(relation)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3205:	local function setAttacksAndEats(entity1, entity2)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/test/tests.luau:3367:		local function updateCooldowns(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:52:local function convert_units(unit: string, value: number): (number, string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:136:local function output_test_result(test: Test)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:174:local function CASE(name: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:188:local function CHECK_EXPECT_ERR(fn, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:206:local function CHECK<T>(value: T, stack: number?): T?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:231:local function TEST(name: string, fn: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:250:local function FOCUS()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:255:local function FINISH(): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:321:local function SKIP()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:337:function START(iter: number?): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:349:local function BENCH(name: string, fn: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:379:		local function round(x: number): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:403:local function print2(v: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:408:	local function tos(value: any, stack: number, str: Buffer, cyclic: Cyclic)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:487:local function shallow_eq(a: {}, b: {}): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/testkit.luau:507:local function deep_eq(a: {}, b: {}): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/init.luau:25:function overview_query.mount(props: props, destroy: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/init.luau:88:	local function open_entity_widget(_, state: Enum.UserInputState)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:68:local function virtualVector2(up: boolean, down: boolean, left: boolean, right: boolean): Vector2
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:87:local function scaledDeadZone(value: number, lowerThreshold: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:94:local function radialDeadZone(value: Vector2, threshold: number): Vector2
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:104:local function deriveActionState(deltaTime: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:151:local function copyDeep<T>(value: T): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:171:function Input.justPressed(action: keyof<typeof(ACTIONS_BOOLEAN)>): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:175:function Input.justReleased(action: keyof<typeof(ACTIONS_BOOLEAN)>): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:179:function Input.pressed(action: keyof<typeof(ACTIONS_BOOLEAN)>): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:183:function Input.released(action: keyof<typeof(ACTIONS_BOOLEAN)>): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:187:function Input.value2d(action: keyof<typeof(ACTIONS_2D)>): Vector2
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:191:function Input.unit2d(action: keyof<typeof(ACTIONS_2D)>): Vector2
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:200:function Input.clamped2d(action: keyof<typeof(ACTIONS_2D)>): Vector2
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:209:function Input.runPhase(name: string, callback: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Input/module.luau:232:function Input.update(deltaTime: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/remotes.luau:12:local function stream_ensure(name)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/remotes.luau:22:local function datagram_ensure(name)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/examples/example.luau:35:local function example_system(_world: jecs.World, dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau:11:local function orphan<T>(template: T): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau:21:local function find_or_create_state<T>(rect: GuiObject): (T, boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau:46:local function button(rect: GuiObject): (boolean, Button_State, boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau:74:local function move_toward(a: number, b: number, amount_increasing: number, amount_decreasing: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/GetRect/module.luau:93:local function animate(f: number, condition: boolean, dt: number, up_rate: number, down_rate: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/init.luau:35:local function step(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:27:local function ycall<T, U>(fn: (T) -> U, arg: T): (boolean, string|U)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:29:    local function efn(err: string) return debug.traceback(err, 3) end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:41:local function get_scope(): Node<unknown>?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:45:local function assert_stable_scope(): Node<unknown>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:58:local function push_child<T>(parent: SourceNode<any>, child: Node<any>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:63:local function push_scope<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:69:local function pop_scope()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:75:local function push_cleanup<T>(node: Node<T>, cleanup: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:83:local function flush_cleanups<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:94:local function find_and_swap_pop<T>(t: { T }, v: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:101:local function unparent<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:110:local function destroy<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:125:local function destroy_owned<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:134:local function evaluate_node<T>(node: Node<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:179:local function queue_children_for_update<T>(node: SourceNode<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:189:local function get_update_queue_length()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:193:local function flush_update_queue(from: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:210:local function update_descendants<T>(root: SourceNode<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:233:local function push_child_to_scope<T>(node: SourceNode<T>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:240:local function create_node<T>(owner: false | Node<any>, effect: false | (T) -> T, value: T): Node<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:265:local function create_source_node<T>(value: T): SourceNode<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:269:local function get_children<T>(node: Node<T>): { Node<unknown> }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/graph.luau:273:local function set_context<T>(node: Node<T>, key: number, value: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau:32:local function color(n: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau:72:	local function system(id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/widget.luau:75:		local function frame_time()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/overview_scheduler/init.luau:22:function overview_scheduler.mount(props: props, destroy: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_recv.luau:11:local function ecs_ensure_entity(world: jecs.World, id: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/examples/networking/networking_recv.luau:56:local function ecs_deser_pairs(world, rel: jecs.Entity, tgt: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau:20:local function check_primitives(t: {})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau:29:local function indexes<K, VI, VO>(input: () -> Map<K, VI>, transform: (() -> VI, K) -> VO): () -> { VO }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau:39:    local function update_children(data)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau:120:local function values<K, VI, VO>(input: () -> Map<K, VI>, transform: (VI, () -> K) -> VO): () -> { VO }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/maps.luau:130:    local function update_children(data: Map<K, VI>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/context.luau:17:local function context<T>(...: T): Context<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/context.luau:61:            local function efn(err: string) return debug.traceback(err, 3) end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/init.luau:8:local function broadcast()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/convert_units.luau:1:local function convert_units(unit: string, value: number): (string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/init.luau:22:local function generate_random_query_id()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/init.luau:26:function overview_entity.mount(props: props, destroy: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:39:local function pe(e: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:44:local function name(world: jecs.World, id: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:48:local function components(world: jecs.World, entity: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:75:local function stringify(world: jecs.World)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:76:	local function record(e: jecs.Entity): jecs.Record
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:79:	local function tbl(e: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:82:	local function archetype(e: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:85:	local function records(e: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:88:	local function columns(e: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:91:	local function row(e: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/entity_visualiser.luau:96:	local function tuple(e, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/average.luau:3:local function average(n: {number})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/effect.luau:8:local function effect<T>(callback: (T) -> T, initial_value: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/examples/example.luau:11:local function main(world: jecs.World)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/examples/example.luau:12:	local function pivots_added(entity: jecs.Entity)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:8:local function duplicate(query: jecs.Query<...any>): jecs.Cached_Query<...any>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:28:local function observers_new(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:42:	local function emplaced<a>(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:65:			local function emplaced_w_pair(entity, id, value, oldarchetype: jecs.Archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:132: 	local function disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:145:local function monitors_new(query: jecs.Query<...any>): Monitor
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:161:	local function emplaced<a>(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:187:	local function removed(entity: jecs.Entity, component: jecs.Component, delete:boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:367: 	local function disconnect()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:373:    local function monitor_added(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/OB/module.luau:377:    local function monitor_removed(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau:43:local function borrow_caches(): typeof(assert(free_caches))
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau:62:local function return_caches(caches: typeof(free_caches) )
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/apply.luau:81:local function apply<T>(instance: T & Instance, properties: { [unknown]: unknown }): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/portal.luau:28:local function portal(props: portal)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/portal.luau:44:		local function update()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/reverse_connector.luau:4:local function reverse(connector: types.IncomingConnector): types.OutgoingConnector
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/throw.luau:3:local function VIDE_ASSERT(msg): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/registry/systems/obtain_query_data.luau:27:local function generate_random_query_id()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/loop.luau:20:local function loop_create(name: string, data: any, ...: ModuleScript | () -> () | GroupInfo)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/loop.luau:27:    local function process_systems(array: Array<any>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/untrack.luau:7:local function untrack<T>(source: () -> T): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/tablesheet.luau:45:	local function get_size(index: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/row.luau:24:local function layout(props: layout)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/container.luau:11:local function container(props: vide.vFrame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:26:local function tincoming_connector(t: any): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:57:local function get_remote_event(name: string, unreliable: boolean?): RemoteEvent & { actor: BindableEvent, peer: RemoteEvent }
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/net.luau:84:local function create_event<T...>(name: string, unreliable: boolean?, do_not_block_traffic: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:35:local function clear_columns(columns: {{any}})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:45:local function reverse_columns(columns: {{any}}, size: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:65:	local function check_if_query_valid(world: types.World, query: string): (boolean, string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:141:	local function check_if_still_valid(world: any, entities: {any})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:154:	local function get_terms(query: string, world: jecs.World)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:166:		local function get_entity(ctype: query_parser.PureComponent)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_registry.luau:367:			local function get_name(entity: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:25:function signal.connect<T...>(self: Signal<T...>, callback: (T...) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:35:function signal.fire<T...>(self: Signal<T...>, ...: T...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:41:function signal.once<T...>(self: Signal<T...>, callback: (T...) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:51:function signal.wait<T...>(self: Signal<T...>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:60:local function new_signal<T...>(): (Signal<T...>, (T...) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/signal.luau:66:	local function fire(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:11:local function cbrt(x: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:17:function Oklab.linear_srgb_to_oklab(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:35:function Oklab.oklab_to_linear_srgb(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:56:function Oklab.compute_max_saturation(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:118:function Oklab.find_cusp(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:137:function Oklab.find_gamut_intersection(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:224:function Oklab.gamut_clip_preserve_chroma(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:247:function Oklab.gamut_clip_project_to_0_5(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:271:function Oklab.gamut_clip_project_to_L_cusp(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:299:function Oklab.gamut_clip_adaptive_L0_0_5(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:327:function Oklab.gamut_clip_adaptive_L0_L_cusp(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:366:local function component_to_gamma(x: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:374:local function component_to_linear(x: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:382:function Oklab.color3_to_linear_srgb(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:392:function Oklab.linear_srgb_to_color3(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:418:function Oklab.oklch_to_oklab(oklch: Vector3): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/oklab.luau:426:function Oklab.oklab_to_oklch(oklab: Vector3): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/read.luau:3:local function read<T>(value: T | () -> T): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:52:	local function components()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:63:	local function tags()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:74:	local function is_removed(value: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:78:	local function edit_component(component: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/entity/widget.luau:310:						local function did_change()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:2:local function stream(input: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:8:	local function peek(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:12:	local function next(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:22:	local function eof(): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:26:	local function position()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:34:	local function croak(msg)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:81:local function lex(source: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:85:	local function is_whitespace(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:89:	local function is_digit(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:93:	local function is_identifier(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:97:	local function is_start_identifier(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:101:	local function is_op_char(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:105:	local function is_punc(char: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:109:	local function read_while(predicate: (char: string) -> boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:117:	local function skip_comment()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:121:	local function skip_whitespace()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:125:	local function read_string(): String
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:152:	local function read_number(): Number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:169:	local function read_identifier(): Identifier | Keyword
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:179:	local function read_next(): Token
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:202:	local function next()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:209:	local function peek(n: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:299:local function parse(source: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:305:	local function set_node(t: Node)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:309:	local function pop_node(): Node
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:319:	local function is_symbol(s: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:324:	local function is_op(s: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:329:	local function is_keyword(s: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:334:	local function skip_symbol(ch)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:343:	local function skip_operator(ch)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:352:	local function delimited(start, stop, separator: string | () -> (), parser: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:380:	function parse_table()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:431:	function parse_functioncall(is_method: boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:444:	function parse_index()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:492:	function parse_identifier(as: "string" | "variable")
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:506:	function parse_expression()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:593:local function compile(node: Node): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:650:	local function prealloc(bytes: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:665:	local function write_str(str: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:684:	local function write_low_prec_float(n: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:690:	local function char(c: string): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:694:	local function write_char(char: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:715:	local function display_string(value: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:721:	local function write_line()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:733:	local function to_path(new: boolean, ...: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:790:	function display(value: Displayable, ...: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:1012:		local function find(input: { unknown })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/lon.luau:1023:		local function recurse(value: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/mount.luau:6:local function mount<T>(component: () -> T, target: Instance?): () -> ()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/root.luau:13:local function root<T...>(fn: (destroy: () -> ()) -> T...): (() -> (), T...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/root.luau:26:    local function efn(err: string) return debug.traceback(err, 3) end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau:25:	function Queue.new<T...>(): Queue<T...>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau:41:	function Queue.add(self: _Queue, ...: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau:54:	function Queue.clear(self: _Queue)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau:61:	local function iter(self: _Queue)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/queue.luau:90:	function Queue.__len(self: _Queue)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/init.luau:14:function home.mount(_: nil, destroy: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/show.luau:5:local function show<T>(source: () -> any, component: () -> T, fallback: (() -> T)?): () -> T?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/show.luau:6:    local function truthy()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau:14:local function cascade<T>(default_value: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau:19:	local function get_cascaded_value(from: Instance?): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau:31:	function self.send(value: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau:41:	function self.receive(output_to: (T) -> any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/cascade.luau:43:			local function recalculate()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/rounded_frame.luau:33:local function rounded_frame(props: rounded_frame)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/rounded_frame.luau:39:	local function corner(name: string, position: UDim2, anchor_point: Vector2, udim: can<UDim>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:38:	local function create_watch_for_id(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:47:	local function send_watch_data_to(host: types.OutgoingConnector, watch_id: number, frame: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:83:	local function remove_watch_id(watch_id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:90:	local function start_record_watch(watch_id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:95:	local function stop_record_watch(watch_id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:100:	local function connect_watch(host: types.OutgoingConnector, watch_id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/replicate_system_watch.luau:110:	local function disconnect_watch(host: types.OutgoingConnector, watch_id: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:19:traffic_check.can_use_jabby = function(player: Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:27:local function communication_is_allowed(from: "server" | Player, to: "server" | Player, dont_whitelist: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:44:local function check(from: "server" | Player, to: "server" | Player, dont_whitelist: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:53:local function check_no_wl(from: "server" | Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/traffic_check.luau:64:local function _whitelist(from: "server" | Player, to: "server" | Player)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/gap.luau:16:	local function direction()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:40:local function Vec3(x: number?, y: number?, z: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:151:local function spring<T>(source: () -> T, period: number?, damping_ratio: number?): () -> T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:186:    local function updater_effect()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:228:local function step_springs(dt: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/spring.luau:268:local function update_spring_sources()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/init.luau:26:function system.mount(props: props, destroy: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:66:	local function objects()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/home/widget.luau:70:	local function is_empty()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau:33:	local function sheet_changes()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau:44:	local function max()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau:48:	local function total_changes()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/client/apps/system/watch_tracker.luau:66:					local function value()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau:23:function Store.new<T, U>(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/store.luau:81:function Store.new_deep<T, U>(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/flags.luau:1:local function inline_test(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:396:local function ecs_assert(condition, msg: string?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:406:local function ECS_COMPONENT()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:414:local function ECS_TAG()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:419:local function ECS_META(id: i53, ty: i53, value: any?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:428:local function ECS_META_RESET()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:434:local function ECS_COMBINE(id: number, generation: number): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:438:local function ECS_IS_PAIR(e: number): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:442:local function ECS_GENERATION_INC(e: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:457:local function ECS_ENTITY_T_LO(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:461:local function ECS_ID(e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:465:local function ECS_GENERATION(e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:469:local function ECS_ENTITY_T_HI(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:473:local function ECS_PAIR(pred: i53, obj: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:480:local function ECS_PAIR_FIRST(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:484:local function ECS_PAIR_SECOND(e: i53): i24
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:488:local function entity_index_try_get_any(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:501:local function entity_index_try_get(entity_index: entityindex, entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:515:local function entity_index_try_get_fast(entity_index: entityindex, entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:529:local function entity_index_is_alive(entity_index: entityindex, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:533:local function entity_index_get_alive(entity_index: entityindex, entity: i53): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:541:local function ecs_get_alive(world: world, entity: i53): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:566:local function ENTITY_INDEX_NEW_ID(entity_index: entityindex): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:592:local function ecs_pair_first(world: world, e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:597:local function ecs_pair_second(world: world, e: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:602:local function query_match(query: query, archetype: archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:624:local function find_observers(world: world, event: i53, component: i53): { observer }?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:632:local function archetype_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:702:local function archetype_append(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:712:local function new_entity(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:723:local function entity_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:737:local function hash(arr: { i53 }): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:741:local function fetch(id: i53, columns_map: { [i53]: Column }, row: number): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:751:local function WORLD_GET(world: world, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:781:local function WORLD_HAS(world: world, entity: i53, id: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:795:local function WORLD_TARGET(world: world, entity: i53, relation: i53, index: number?): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:836:local function ECS_ID_IS_WILDCARD(e: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:842:local function id_record_get(world: World, id: Entity): ComponentRecord?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:853:local function id_record_create(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:925:local function id_record_ensure(world: world, id: i53): componentrecord
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:936:local function archetype_append_to_records(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:957:local function archetype_create(world: world, id_types: { i53 }, ty, prev: i53?): archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1027:local function world_range(world: world, range_begin: number, range_end: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1050:local function archetype_ensure(world: world, id_types: { i53 }): archetype
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1064:local function find_insert(id_types: { i53 }, toAdd: i53): number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1076:local function find_archetype_without(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1091:local function create_edge_for_remove(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1105:local function archetype_traverse_remove(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1123:local function find_archetype_with(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1138:local function archetype_traverse_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1160:local function archetype_fast_delete_last(columns: { Column }, column_count: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1168:local function archetype_fast_delete(columns: { Column }, column_count: number, row: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1177:local function archetype_delete(world: world, archetype: archetype, row: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1205:local function archetype_destroy(world: world, archetype: archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1243:local function NOOP() end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1245:local function query_archetypes(query: query, override: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1307:local function query_with(query: query, ...: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1315:local function query_without(query: query, ...: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1321:local function query_iter_init(query: QueryInner): () -> (number, ...any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1340:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1413:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1446:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1482:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1521:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1563:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1608:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1656:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1707:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1763:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1828:local function query_iter(query): () -> (number, ...any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1836:local function query_cached(query: QueryInner)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1897:	local function on_create_callback(archetype: Archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1903:	local function on_delete_callback(archetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1922:	local function cached_query_iter()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:1983:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2008:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2041:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2077:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2116:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2158:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2203:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2251:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2302:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2358:		function world_query_iter_next(): any
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2421:	local function cached_query_has(_, entity): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2435:	local function cached_query_fini()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2463:local function query_has(query: QueryInner, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2503:local function world_query(world: World, ...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2514:local function world_each(world: world, id: i53): () -> i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2548:local function world_children(world: world, parent: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2552:local function ecs_bulk_insert(world: world, entity: i53, ids: { i53 }, values: { any })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2648:local function ecs_bulk_remove(world: world, entity: i53, ids: { i53 })
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2697:local function world_new(DEBUG: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2747:	local function entity_index_new_id(entity_index: entityindex): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2774:	local function entity_index_try_get_any(entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2779:	local function inner_archetype_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2835:	local function inner_entity_move(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2862:	local function entity_index_try_get_unsafe(entity: i53): record?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2878:	local function exclusive_traverse_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2894:	local function world_set(world: world, entity: i53, id: i53, data): ()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:2997:	local function world_add(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3095:	local function world_get(world: world, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3135:			local function on_add(entity, id, value, oldarchetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3178:			local function on_change(entity, id, value, oldarchetype)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3219:			local function on_remove(entity, id, delete)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3258:	local function world_has(world: World, entity: i53,
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3280:	local function world_target(world: world, entity: i53, relation: i53, index: number?): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3320:	local function world_parent(world: world, entity: i53): i53?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3324:	local function world_entity(world: world, entity: i53?): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3383:	local function world_remove(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3408:	local function world_delete(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3680:	local function world_clear(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3699:	local function world_exists(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3703:	local function world_contains(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3707:	local function world_cleanup(world: world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3729:	local function world_component(world: world): i53
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3768:		local function DEBUG_IS_DELETING_ENTITY(entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3779:		local function DEBUG_IS_INVALID_ENTITY(entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3792:		local function DEBUG_ID_IS_INVALID(id: number) 
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3816:		local function world_delete_checked(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3824:		local function world_remove_checked(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3831:		local function world_add_checked(world: world, entity: i53, id: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3838:		local function world_set_checked(world: world, entity: i53, id: i53, value: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3903:local function ecs_is_tag(world: world, entity: i53): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3914:local function ecs_entity_record(world: world, entity: i53)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3918:local function entity_index_ensure(entity_index: entityindex, e: i53) 
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3973:local function new(world: world)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3978:local function new_low_id(world: world) 
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/jecs.luau:3999:local function new_w_id(world: world, id: i53) 
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:16:local function convert_component(world, debug, entity): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:26:local function get_type(t: { [any]: any }): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:32:local function get_string_keys(t: { [any]: any }): ({ string }, boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:44:local function is_tag(world: jecs.World, id: jecs.Entity<any>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:48:local function get_all_components(world, entity): {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/mouse_pointer.luau:70:local function obtain_string(entity: jecs.Entity<any>, world: jecs.World)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/derive.luau:9:local function derive<T>(source: () -> T): () -> T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/padding.luau:22:local function padding(props: padding)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/util/list.luau:24:local function layout(props: layout)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/snapping.luau:33:local function in_bounds(mpos: Vector2, pos: Vector2, size: Vector2)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/snapping.luau:42:	local function snap_area(props: snap_area)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/snapping.luau:72:	local function snappable(props: snappable)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/context.luau:23:local function provide<T, U>(context: Context<T>, callback: () -> U)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/context.luau:42:local function consume<T>(context: Context<T>): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/context.luau:47:local function create_context<T>(default_value: T?): Context<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/modules/videx.luau:22:function Store.new<T, U>(
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/batch.luau:7:local function batch(setter: () -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:27:local function isNaN(n)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:31:local function reverseAPCA(contrast, knownY, knownType, returnAs)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:95:local function sRGBtoY(sRGBcolor: Color3)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:100:	local function simpleExp(chan)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:107:local function displayP3toY(rgb: Color3)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:111:	local function simpleExp(chan)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:118:local function adobeRGBtoY(rgb: Color3)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:125:	local function simpleExp(chan)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:133:local function APCAcontrast(txtY, bgY, places)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:177:local function alphaBlend(rgbFG: Color3, aFG: number, rgbBG: Color3, round: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:194:local function calcAPCA(textcolor: Color3, bgColor: Color3, textalpha: number?, places: number?, round: boolean?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/libraries/apcaw3.luau:203:local function fontLookupAPCA(contrast, places: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/resizeable_bar.luau:68:	local function get_size(index: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/resizeable_bar.luau:76:	local function get_min_size(i: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/action.luau:8:local function is_action(v: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/action.luau:12:local function action(callback: (Instance) -> (), priority: number?): Action
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/widget/init.luau:182:	local function radius()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/changed.luau:6:local function changed<T>(property: string, callback: (T) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau:23:        local function ctor(properties: Props): Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau:32:local function create_instance(class: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau:36:local function clone_instance(instance: Instance)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/create.luau:44:local function create(class_or_instance: string|Instance): (Props) -> Instance
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/select.luau:31:local function dropdown(props: dropdown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/switch.luau:17:local function switch<T, U>(source: () -> T): (map: Map<T, ((() -> U)?)>) -> () -> U?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/switch.luau:24:        local function update(cached): U?
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/widget/borders.luau:29:local function xpos(s: () -> number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/widget/borders.luau:35:local function ypos(s: () -> number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau:9:function create_implicit_effect<T>(updater: (T) -> T, binding: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau:19:local function update_property_effect(p: PropertyBinding)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau:29:local function update_parent_effect(p: ParentBinding)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau:42:local function update_children_effect(p: ChildrenBinding)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/bind.luau:52:    local function process_child(child: ArrayOrV<Instance>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/cleanup.luau:9:local function helper(obj: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/cleanup.luau:20:local function cleanup(value: unknown)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau:18:local function get_all_components(world, entity): {}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau:32:local function convert_component(world, debug, entity): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau:47:local function get_component(ctype_name: string, map_components: {[string]: number})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau:49:	local function get_entity(ctype: query_parser.PureComponent)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/systems/entity.luau:245:			local function is_tag(id: jecs.Entity<any>)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/button.luau:47:    local function bg()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/button.luau:65:    local function stroke()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau:19:local function create_changes()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau:29:local function step_watch(watch: SystemWatch)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau:34:local function track_watch(watch: SystemWatch)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau:101:	local function stop_hook()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/watch.luau:110:local function create_watch()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/graph/bargraph.luau:30:	local function total()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/vide/source.luau:11:local function source<T>(initial_value: T): Source<T>
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/typography.luau:38:	local function font()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/display/typography.luau:42:	local function fg()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/oklch.luau:17:local function oklch(lightness: number, chroma: number, hue: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau:4:local function i_hook_onto(key: string, hooks: {(...any) -> ()})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau:16:		local function run_hook(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau:37:local function find_swap_pop<T>(list: {T}, value: T)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau:44:local function hook_onto(key: string, hook: (...any) -> ())
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/world_hook.luau:59:	local function unhook()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:19:local function unit() end
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:21:local function create_scheduler()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:48:	local function ENABLE_WATCHES(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:65:	local function ASSERT_SYSTEM_VALID(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:69:	function scheduler:register_system(settings: types.SystemSettingData?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:88:	function scheduler:set_system_data(id: SystemId, settings: types.SystemSettingData)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:97:	function scheduler:get_system_data(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:102:	function scheduler:remove_system(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:111:	function scheduler:_mark_system_frame_start(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:119:	function scheduler:_mark_system_frame_end(id: SystemId, s: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:142:	function scheduler:append_extra_frame_data(id: SystemId, label: {})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:147:	function scheduler:run<T...>(id: SystemId, system: (T...) -> (), ...: T...)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:167:	function scheduler:create_watch_for_system(id: SystemId)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/scheduler.luau:174:		local function untrack()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:46:local function stream(input: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:52:	local function peek(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:56:	local function next(): string
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:66:	local function eof(): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:70:	local function position()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:78:	local function croak(msg)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:92:local function lex(source: string): Stream
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:96:	local function is_whitespace(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:100:	local function is_digit(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:104:	local function is_start_identifier(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:108:	local function is_identifier(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:112:	local function is_op_char(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:116:	local function is_punc(char: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:120:	local function read_while(predicate: (char: string) -> boolean)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:128:	local function skip_whitespace()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:132:	local function read_string(): String
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:162:	local function read_number(): Number
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:181:	local function read_identifier(): Identifier
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:193:	local function read_next(): Token
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:211:	local function next()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:216:	local function peek(n: number?)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:224:	local function eof()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/server/query_parser.luau:269:local function parse(input: string): {PureComponent | Relationship}
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau:8:local function min_contrast(options: {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau:80:local function unwrap<T>(source: recursive<T>): T
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/contrast.luau:93:local function get_appropriate_color(options: {
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:13:local function oklch(t: {number})
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:39:local function should_flip(lightness: number)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:57:local function compute_bg(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:58:    local function get()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:88:local function compute_acc(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:89:    local function get()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:118:local function compute_fg_on_bg_high(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:137:local function compute_fg_on_bg_low(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:156:local function compute_fg_on_acc_low(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:175:local function compute_fg_on_acc_high(depth: Depth)
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/util/theme.luau:211:local function compute_theme()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/textfield.luau:52:    local function bg()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/textfield.luau:60:    local function fg()
+/Users/tatsheen/claw-repos/oss-index/roblox/jecs/modules/Jabby/ui/components/interactable/textfield.luau:67:    local function stroke()

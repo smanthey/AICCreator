@@ -1,0 +1,36 @@
+{
+  "version": "2026-03-04",
+  "remote_mcp": {
+    "enabled": true,
+    "transport": [
+      "http",
+      "sse"
+    ],
+    "oauth": {
+      "required": true,
+      "default_scope_strategy": "least_privilege",
+      "token_ttl_minutes": 60,
+      "refresh_required": true
+    },
+    "writes": {
+      "no_broad_write_by_default": true,
+      "explicit_confirmation_required": true,
+      "allowlisted_tools_only": true
+    },
+    "connector_rollout": {
+      "chatgpt_codex_remote_only": true,
+      "streaming_enabled": true
+    }
+  },
+  "scope_profiles": {
+    "read_only": [
+      "resources:read",
+      "tools:read"
+    ],
+    "minimal_write": [
+      "resources:read",
+      "tools:read",
+      "tools:write:scoped"
+    ]
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "started_at": "2026-03-04T01:25:38.453Z",
+  "finished_at": "2026-03-04T01:27:46.547Z",
+  "mode": "degraded",
+  "lane_backlog": {
+    "ai": 0,
+    "infra": 0,
+    "ioHeavy": 0,
+    "cpuHeavy": 0
+  },
+  "aging_pending_60m": 0,
+  "lane_overrides": [],
+  "worker_targets": {
+    "claw-worker": 1,
+    "claw-worker-ai": 1,
+    "claw-worker-nas": 1
+  },
+  "min_online": 8,
+  "max_online": 13,
+  "online_count": 13,
+  "metrics": {
+    "healthOk": false,
+    "postgresOk": false,
+    "redisOk": false,
+    "queue": null,
+    "errors": [
+      "health:Command failed: curl -m 4 -sS http://127.0.0.1:4051/health\ncurl: (7) Failed to connect to 127.0.0.1 port 4051 after 0 ms: Couldn't connect to server\n",
+      "queue:Command failed: curl -m 4 -sS http://127.0.0.1:4051/api/dashboard/queue\ncurl: (7) Failed to connect to 127.0.0.1 port 4051 after 0 ms: Couldn't connect to server\n",
+      "queue_db_fallback:column \"tags\" does not exist"
+    ]
+  },
+  "actions": [
+    {
+      "type": "scale",
+      "name": "claw-worker-ai",
+      "from": 2,
+      "to": 1,
+      "ok": true
+    },
+    {
+      "type": "scale",
+      "name": "claw-worker-nas",
+      "from": 2,
+      "to": 1,
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-priority-repo-major-update-daily",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-repo-readiness-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-system-4h-checkfix",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-platform-daily",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-flow-regression-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-brand-control-plane",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-launch-e2e-matrix",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-needs-attention-autofix",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-qa-human-blocking",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-autonomy-pr-cycle",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-offgrid-meshtastic-bridge",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-events-consumer",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-events-spawner",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-prompt-oracle",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-auto-heal-3h",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-device-utilization-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-openclaw-coordinator",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-bot-commerce-api",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-bot-outreach",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-sre-hourly-triage",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-sre-daily-maintenance",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-uptime-watchdog-hourly",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-repomap",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-payclaw-drift-pulse",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-pm2-failure-symbol-triage",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-daily-feature-rotation",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-symbolic-qa-hub",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-closed-loop-daily",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-knowledge-troll-harvest",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-production-kpi-flywheel",
+      "reason": "overflow",
+      "ok": true
+    },
+    {
+      "type": "stop",
+      "name": "claw-forward-progress-enforcer",
+      "reason": "overflow",
+      "ok": true
+    }
+  ],
+  "protected": [
+    "claw-dispatcher",
+    "claw-webhook-server",
+    "claw-architect-api",
+    "claw-ollama",
+    "claw-lead-autopilot-skynpatch",
+    "claw-lead-autopilot-bws",
+    "claw-worker",
+    "claw-worker-ai",
+    "claw-worker-nas"
+  ]
+}

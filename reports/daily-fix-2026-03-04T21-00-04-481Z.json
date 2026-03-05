@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-04T21:00:04.481Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2\n✅ Postgres connected\n\n☠  Dead Letters (2)\n──────────────────────────────────────────────────────────────────────\n\nID:      0b877a71-b84d-4063-9a1b-fc886bec4f3f\nType:    quant_trading_signal_scan\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T20:50:40.377Z\n──────────────────────────────────────────────────────────────────────\n\nID:      d05cec9c-ecc6-4688-bd49-04f9ab3ee208\nType:    quant_trading_execute_orders\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-04T20:50:37.500Z\n──────────────────────────────────────────────────────────────────────\n"
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-04T21:00:13.939Z"
+}

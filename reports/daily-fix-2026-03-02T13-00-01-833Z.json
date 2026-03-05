@@ -1,0 +1,27 @@
+{
+  "started": "2026-03-02T13:00:01.833Z",
+  "dry": false,
+  "analyze": true,
+  "health": {
+    "ok": false,
+    "exitCode": null
+  },
+  "gaps": {
+    "ok": false,
+    "exitCode": null,
+    "summary": ""
+  },
+  "dead_letters": {
+    "ok": true,
+    "stdout": "[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }\n✅ Postgres connected\n\n☠  Dead Letters (14)\n──────────────────────────────────────────────────────────────────────\n\nID:      877c8298-8924-4634-8ccb-4e8a5f1ad65e\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T12:05:50.454Z\n──────────────────────────────────────────────────────────────────────\n\nID:      67e3b837-3a99-45c3-8319-03b4ad4eeaf7\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T12:05:35.776Z\n──────────────────────────────────────────────────────────────────────\n\nID:      5d92b720-4039-4266-8f90-b6e27633caf6\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T12:05:35.425Z\n──────────────────────────────────────────────────────────────────────\n\nID:      fbad2fa3-4dbd-4c24-9796-409b44549b62\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T11:35:35.469Z\n──────────────────────────────────────────────────────────────────────\n\nID:      83c88177-d75d-4913-a923-97d528e07727\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T11:35:20.648Z\n──────────────────────────────────────────────────────────────────────\n\nID:      83abaa96-c723-4f30-8745-180bf85c3b54\nType:    repo_autofix\nTitle:   (none)\nPlan:    null — \nRetries: 1\nError:   stale dispatched requeue loop cleanup\nWhen:    2026-03-02T11:35:20.431Z\n──────────────────────────────────────────────────────────────────────\n\nID:      034ac97e-786d-4d98-8fb6-73bdfd087a82\nType:    site_fix_plan\nTitle: "
+  },
+  "security_sweep_run": true,
+  "security_sweep_recorded": false,
+  "dead_letter_requeued": false,
+  "llm_suggestions": "Budget exhausted; will retry after reset. Core fixes (reconcile, security) still applied.",
+  "errors": [
+    "tasks:health failed"
+  ],
+  "llm_skipped_reason": "budget_blocked",
+  "completed_at": "2026-03-02T13:00:06.607Z"
+}

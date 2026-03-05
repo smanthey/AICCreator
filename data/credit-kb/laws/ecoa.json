@@ -1,0 +1,13 @@
+{
+  "code": "ECOA",
+  "title": "Equal Credit Opportunity Act",
+  "authority_url": "https://www.consumerfinance.gov/fair-lending/",
+  "key_sections": [
+    {"section": "Adverse Action", "topic": "Notice requirements"},
+    {"section": "Anti-discrimination", "topic": "Protected classes"}
+  ],
+  "agent_use": [
+    "adverse_action_review",
+    "compliance_escalation_context"
+  ]
+}

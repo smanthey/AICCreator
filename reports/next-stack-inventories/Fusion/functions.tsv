@@ -1,0 +1,254 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/merge.luau:13:local function merge(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/never.luau:10:local function never(): never
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Safe.luau:13:local function Safe<Success, Fail>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/isSimilar.luau:13:local function isSimilar(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/xtypeof.luau:12:local function xtypeof(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/nameOf.luau:14:local function nameOf(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau:28:local function Contextual<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau:48:function class.now<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau:63:function class.is<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Utility/Contextual.luau:69:	function methods.during<T, A...>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau:26:function Debugger.setDebugger(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau:46:function Debugger.trackScope(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/ExternalDebug.luau:61:function Debugger.untrackScope(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:31:function External.setExternalProvider(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:48:function External.doTaskImmediate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:61:function External.doTaskDeferred(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:74:function External.logError(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:85:function External.logErrorNonFatal(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:101:function External.logWarn(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:123:function External.bindToUpdateStep(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:140:function External.performUpdateStep(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/External.luau:152:function External.lastUpdateStep()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Logging/parseError.luau:14:local function parseError(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/innerScope.luau:15:local function innerScope<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Logging/formatError.luau:16:local function formatError(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:24:function RobloxExternal.doTaskImmediate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:33:function RobloxExternal.doTaskDeferred(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:42:function RobloxExternal.logErrorNonFatal(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:56:local function performUpdateStep()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:64:function RobloxExternal.startScheduler()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/RobloxExternal.luau:91:function RobloxExternal.stopScheduler()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/scoped.luau:15:local function scoped(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/deriveScopeImpl.luau:19:local function deriveScopeImpl<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau:18:function Oklab.fromLinear(rgb: Color3): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau:36:function Oklab.fromSRGB(srgb: Color3): Vector3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau:42:function Oklab.toLinear(lab: Vector3, unclamped: boolean?): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/Oklab.luau:66:function Oklab.toSRGB(lab: Vector3, unclamped: boolean?): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau:34:local function setProperty_unsafe(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau:42:local function testPropertyAssignable(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau:49:local function setProperty(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau:74:local function bindProperty(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/applyInstanceProps.luau:97:local function applyInstanceProps(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/deriveScope.luau:18:local function deriveScope(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:21:function checkLifetime.formatters.useFunction(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:30:function checkLifetime.formatters.boundProperty(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:40:function checkLifetime.formatters.boundAttribute(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:50:function checkLifetime.formatters.boundTag(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:60:function checkLifetime.formatters.propertyOutputsTo(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:70:function checkLifetime.formatters.attributeOutputsTo(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:80:function checkLifetime.formatters.refOutputsTo(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:89:function checkLifetime.formatters.animationGoal(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:98:function checkLifetime.formatters.parameter(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:112:function checkLifetime.formatters.observer(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/checkLifetime.luau:121:function checkLifetime.bOutlivesA<A, B, Args...>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForPairs.luau:46:local function SubObject<KI, KO, VI, VO, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForPairs.luau:77:local function ForPairs<KI, KO, VI, VO, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:19:function SpecExternal.doTaskImmediate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:30:function SpecExternal.doTaskDeferred(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:36:function SpecExternal.deferSelfForTesting()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:44:function SpecExternal.logErrorNonFatal(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:53:function SpecExternal.logWarn(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:64:function SpecExternal.startScheduler()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:71:function SpecExternal.stopScheduler()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/SpecExternal.luau:78:function SpecExternal.step(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau:18:local function transform(channel: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau:28:local function inverse(channel: number): number
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau:37:function sRGB.fromLinear(rgb: Color3): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Colour/sRGB.luau:43:function sRGB.toLinear(srgb: Color3): Color3
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/needsDestruction.luau:11:local function needsDestruction(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau:44:local function Computed<T, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau:79:function class._evaluate<T, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Computed.luau:87:	local function use<T>(target: Types.UsedAs<T>): T
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/init.luau:13:local function run(testRoot, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/castToState.luau:13:local function castToState<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Child.luau:15:local function Child(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau:25:function TestResults.new(plan)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau:43:function TestResults.createNode(planNode)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau:57:function TestResults:visitAllNodes(callback, root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestResults.luau:70:function TestResults:visualize(root, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/insert.luau:12:local function insert<Tasks...>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/peek.luau:19:local function peek<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau:19:local function wrapExpectContextWithPublicApi(expectationContext)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau:35:function TestRunner.runPlan(plan)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau:54:function TestRunner.runPlanNode(session, planNode, lifecycleHooks)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau:55:	local function runCallback(callback, messagePrefix)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestRunner.luau:105:	local function runNode(childPlanNode)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau:30:local function Value<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau:55:function class.set<T, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/Value.luau:67:function class._evaluate<T, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau:51:local function Tween<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Tween.luau:118:function class._evaluate<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:42:local function assertLevel(condition, message, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:54:local function bindSelf(self, method)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:64:local function formatMessage(result, trueMessage, falseMessage)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:75:function Expectation.new(value)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:96:function Expectation.checkMatcherNameCollisions(name)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:104:function Expectation:extend(matchers)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:121:function Expectation.__index(self, key)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:154:function Expectation:_resetModifiers()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:163:function Expectation:a(typeName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:191:function Expectation:ok()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:212:function Expectation:equal(otherValue)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:238:function Expectation:near(otherValue, limit)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Expectation.luau:271:function Expectation:throw(messageSubstring)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeOut.luau:21:local function AttributeOut(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForKeys.luau:45:local function SubObject<KI, KO, V, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForKeys.luau:74:local function ForKeys<KI, KO, V, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:24:function TestSession.new(plan)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:42:function TestSession:calculateTotals()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:69:function TestSession:gatherErrors()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:86:function TestSession:finalize()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:100:function TestSession:pushNode(planNode)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:118:function TestSession:popNode()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:128:function TestSession:getContext()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:134:function TestSession:getExpectationContext()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:142:function TestSession:shouldSkip()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:176:function TestSession:setSuccess()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:184:function TestSession:setSkipped()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:193:function TestSession:setError(message)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:205:function TestSession:addDummyError(phrase, message)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestSession.luau:217:function TestSession:setStatusFromChildren()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau:4:local function copy(t)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau:17:function ExpectationContext.new(parent)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau:25:function ExpectationContext:startExpectationChain(...)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/ExpectationContext.luau:29:function ExpectationContext:extend(config)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForValues.luau:45:local function SubObject<K, VI, VO, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/ForValues.luau:74:local function ForValues<K, VI, VO, S>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau:34:local function For<S, KI, KO, VI, VO>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/init.luau:74:function class._evaluate<S, KI, KO, VI, VO>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Memory/doCleanup.luau:23:local function doCleanup(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau:44:local function Stopwatch(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau:81:function class.zero(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau:92:function class.pause(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau:101:function class.unpause(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Stopwatch.luau:111:function class._evaluate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnChange.luau:17:local function OnChange(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/FiniteTime.luau:7:function FiniteTime.start(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/FiniteTime.luau:12:	local function check()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau:45:local function Disassembly<S, KI, KO, VI, VO>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau:88:function class.populate<S, KI, KO, VI, VO>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/State/For/Disassembly.luau:128:function class._evaluate<S, KI, KO, VI, VO>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/isSimilar.spec.luau:167:		local function eq()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/packType.luau:15:local function packType(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau:60:local function Spring<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau:145:function class.addVelocity<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau:165:function class.setPosition<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau:181:function class.setVelocity<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/Spring.luau:197:function class._evaluate<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Hydrate.luau:15:local function Hydrate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnEvent.luau:17:local function getProperty_unsafe(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/OnEvent.luau:24:local function OnEvent(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:11:local function newEnvironment(currentNode, extraEnvironment)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:25:	local function addChild(phrase, callback, nodeType, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:34:	function env.describeFOCUS(phrase, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:38:	function env.describeSKIP(phrase, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:42:	function env.describe(phrase, callback, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:46:	function env.itFOCUS(phrase, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:50:	function env.itSKIP(phrase, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:54:	function env.itFIXME(phrase, callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:59:	function env.it(phrase, callback, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:80:	function env.FIXME(optionalMessage)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:86:	function env.FOCUS()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:90:	function env.SKIP()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:98:	function env.HACK_NO_XPCALL()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:129:function TestNode.new(plan, phrase, nodeType, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:146:local function getModifier(name, pattern, modifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:157:function TestNode:addChild(phrase, nodeType, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:177:function TestNode:getFullName()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:191:function TestNode:expand()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:217:function TestPlan.new(testNamePattern, extraEnvironment)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:230:function TestPlan:addChild(phrase, nodeType, nodeModifier)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:241:function TestPlan:addRoot(path, method)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:267:function TestPlan:visitAllNodes(callback, root, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:282:function TestPlan:visualize()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlan.luau:294:function TestPlan:findNodes(callback)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Out.luau:21:local function Out(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Tag.luau:24:local function Tag(tagName: string): Types.SpecialKey
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:23:local function GraphShape(x: GraphShape)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:316:function Graphs.filters.wellFormed(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:322:function Graphs.filters.malformed(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:330:function Graphs.selectors.distance(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:374:function Graphs.selectors.noConnections(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:394:function Graphs.tests.validity(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:409:function Graphs.check(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:422:function Graphs.nameOf(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:428:function Graphs.format(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:523:function Graphs.make(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:563:function Graphs.propertyTest(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:623:							function metatable:__index(key)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Util/Graphs.luau:631:							function metatable:__newindex(key, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:11:local function stripSpecSuffix(name)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:14:local function isSpecScript(aScript)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:18:local function getPath(module, root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:38:local function toStringPath(tablePath)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:52:function TestBootstrap:getModulesImpl(root, modules, current)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:72:function TestBootstrap:getModules(root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestBootstrap.luau:99:function TestBootstrap:run(roots, reporter, otherOptions)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenDuration.luau:13:local function getTweenDuration(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Utility/Contextual.spec.luau:57:		local function test(a, b, c, d)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:6:function LifecycleHooks.new()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:16:function LifecycleHooks:getBeforeEachHooks()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:32:function LifecycleHooks:getAfterEachHooks()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:48:function LifecycleHooks:popHooks()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:52:function LifecycleHooks:pushHooksFrom(planNode)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:66:function LifecycleHooks:getBeforeAllHooks()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:73:function LifecycleHooks:getAfterAllHooks()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/LifecycleHooks.luau:77:function LifecycleHooks:_getHooksOfType(nodes, key)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Children.luau:44:		local function updateChildren()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Children.luau:48:			local function processChild(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau:7:function Context.new(parent)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Context.luau:18:	function meta.__newindex(_obj, key, value)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau:33:local function ExternalTime(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/ExternalTime.luau:61:function class._evaluate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/unpackType.luau:14:local function unpackType(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:7:local function teamCityEscape(str)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:14:local function teamCityEnterSuite(suiteName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:18:local function teamCityLeaveSuite(suiteName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:22:local function teamCityEnterCase(caseName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:26:local function teamCityLeaveCase(caseName)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:30:local function teamCityFailCase(caseName, errorMessage)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:35:local function reportNode(node, buffer, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:58:local function reportRoot(node)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:68:local function report(root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TeamCityReporter.luau:74:function TeamCityReporter.report(results)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/getTweenRatio.luau:13:local function getTweenRatio(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau:20:local function compareNodes(a, b)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau:24:local function reportNode(node, buffer, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau:59:local function reportRoot(node)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau:70:local function report(root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporter.luau:76:function TextReporter.report(results)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau:22:local function reportNode(node, buffer, level)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau:51:local function reportRoot(node)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau:61:local function report(root)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/Reporters/TextReporterQuiet.luau:67:function TextReporterQuiet.report(results)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/lerpType.luau:15:local function lerpType(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Animation/springCoefficients.luau:22:local function springCoefficients(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/Attribute.luau:23:local function Attribute(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/AttributeChange.luau:17:local function AttributeChange(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/change.luau:23:local function change(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/castToGraph.luau:13:local function castToGraph(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/evaluate.luau:17:local function evaluate(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlanner.luau:24:							function during execution
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/TestEZ/TestPlanner.luau:26:function TestPlanner.createPlan(modulesList, testNamePattern, extraEnvironment)
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/doCleanup.spec.luau:110:		local function doRun()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/doCleanup.spec.luau:129:		local function doRun()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/doCleanup.spec.luau:167:		local function cleanupFunc()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/insert.spec.luau:65:		local function onDestroy()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/test/Spec/Memory/insert.spec.luau:68:		local function onDestroy2()
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Instances/New.luau:19:local function New(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/depend.luau:16:local function depend<T>(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau:36:local function Observer(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau:79:function class.onBind(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau:87:function class.onChange(
+/Users/tatsheen/claw-repos/oss-index/roblox/Fusion/src/Graph/Observer.luau:98:function class._evaluate(

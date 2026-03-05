@@ -1,0 +1,3267 @@
+{
+  "generatedAt": "2026-02-28T08:10:42.735Z",
+  "root": "/Users/tatsheen/claw-repos",
+  "repos": [
+    {
+      "repo": "3ddesignafterschool",
+      "path": "/Users/tatsheen/claw-repos/3ddesignafterschool",
+      "scannedFiles": 0,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": false,
+          "score": 10,
+          "requiredCoverage": 0,
+          "securityCoverage": 0,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": false,
+          "score": 10,
+          "requiredCoverage": 0,
+          "securityCoverage": 0,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": false,
+          "score": 20,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 0,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        }
+      ],
+      "forbiddenHits": [],
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "score": 14
+    },
+    {
+      "repo": "3dgamestake2",
+      "path": "/Users/tatsheen/claw-repos/3dgamestake2",
+      "scannedFiles": 0,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": false,
+          "score": 10,
+          "requiredCoverage": 0,
+          "securityCoverage": 0,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": false,
+          "score": 10,
+          "requiredCoverage": 0,
+          "securityCoverage": 0,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": false,
+          "score": 20,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 0,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        }
+      ],
+      "forbiddenHits": [],
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        }
+      ],
+      "score": 14
+    },
+    {
+      "repo": "BlackWallStreetopoly",
+      "path": "/Users/tatsheen/claw-repos/BlackWallStreetopoly",
+      "scannedFiles": 356,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 44,
+          "sampleFiles": [
+            {
+              "file": "middleware.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "next.config.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-payment-form.mjs",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/analytics-reports.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/stripe-data-service.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/checkout.ts",
+              "reqHits": [
+                "stripe",
+                "checkout.sessions.create"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/webhook.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/lib/metrics.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/lib/resilient-stripe.ts",
+              "reqHits": [
+                "stripe",
+                "checkout.sessions.create"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/lib/stripe.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 52,
+          "sampleFiles": [
+            {
+              "file": "middleware.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "next.config.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-payment-form.mjs",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "upload-missing-assets.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/admin-routes.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/analytics-reports.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/email-templates.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/email-webhooks.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "constructEvent(",
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/stripe-data-service.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/checkout.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 26,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "upload-missing-assets.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/admin-routes.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/analytics-reports.ts",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/email-templates.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/email-webhooks.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/webhook.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/integrations/shippo.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "migrations/0000_smart_weapon_omega.sql",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "migrations/meta/0000_snapshot.json",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "lib/agent-session.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "lib/server-env.ts",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 61,
+          "sampleFiles": [
+            {
+              "file": "middleware.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "next.config.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/launch-config.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/admin-routes.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/email-sequences.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/email-templates.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "lib/server-env.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shop/components/product-features.tsx",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shared/lib/ab-testing.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shared/lib/jwt-auth.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shared/lib/queryClient.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shared/components/consent-banner.tsx",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": false,
+          "score": 25,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 0.5,
+          "filesMatched": 1,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 21,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "upload-missing-assets.ts",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/admin-routes.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/analytics-reports.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/email-templates.ts",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/email-webhooks.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/webhook.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "migrations/0000_smart_weapon_omega.sql",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "migrations/meta/0000_snapshot.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "lib/server-env.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/shared/lib/analytics.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "domains/admin/lib/shippo.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        }
+      ],
+      "forbiddenHits": [
+        {
+          "pattern": "TODO:",
+          "files": [
+            "server/admin-routes.ts",
+            "domains/shared/lib/logger.ts",
+            "app/admin/shipping/page.tsx"
+          ]
+        },
+        {
+          "pattern": "fake",
+          "files": [
+            "server/email-validator.ts",
+            "domains/shared/components/ui/input-otp.tsx",
+            "app/api/admin/clean-emails/route.ts",
+            "app/admin/shipping/page.tsx"
+          ]
+        },
+        {
+          "pattern": "example.com",
+          "files": [
+            "test-payment-form.mjs",
+            "domains/shared/components/email-capture.tsx",
+            "app/api/openai-commerce/checkout/[id]/complete/route.ts",
+            "app/api/admin/clean-emails/route.ts",
+            "app/admin/subscribers/page.tsx",
+            "app/admin/products/new/page.tsx"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 3 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 4 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 6 file(s)"
+        }
+      ],
+      "score": 51
+    },
+    {
+      "repo": "3DGameArtAcademy",
+      "path": "/Users/tatsheen/claw-repos/3DGameArtAcademy",
+      "scannedFiles": 178,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 29,
+          "sampleFiles": [
+            {
+              "file": "comprehensive-qa-test.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/admin-dashboard.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/full-site-e2e.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/production-readiness.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/api/perfect-api-tests.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/claude-chatbot.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/index.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/product-descriptions.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe",
+                "checkout.sessions.create"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/security.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/stripe-service.ts",
+              "reqHits": [
+                "stripe",
+                "checkout.sessions.create"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/test-sms-campaign.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 32,
+          "sampleFiles": [
+            {
+              "file": "comprehensive-qa-test.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/admin-dashboard.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/full-site-e2e.spec.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/production-readiness.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/api/perfect-api-tests.spec.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/certificate-generator.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/claude-chatbot.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/comprehensive-test.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/index.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/product-descriptions.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/security.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 29,
+          "sampleFiles": [
+            {
+              "file": "comprehensive-qa-test.js",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/comprehensive-qa-suite.spec.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/full-site-e2e.spec.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/certificate-generator.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/claude-chatbot.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/comprehensive-test.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/index.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/messaging-bus-converted.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/security.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/stripe-service.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/telnyx-sms.ts",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/translate-converted.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/translate.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 47,
+          "sampleFiles": [
+            {
+              "file": "comprehensive-qa-test.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-individual-features.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-real-world-functionality.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/admin-dashboard.spec.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/full-site-e2e.spec.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/perfect-functional-tests.spec.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/production-readiness.spec.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/api/perfect-api-tests.spec.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/api-diagnostics.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/auth-middleware.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/comprehensive-test.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/enhanced-security.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/external-word-service.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": false,
+          "score": 25,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 0.5,
+          "filesMatched": 1,
+          "sampleFiles": [
+            {
+              "file": "server/message-templates.ts",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 8,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/e2e/full-site-e2e.spec.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/certificate-generator.ts",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/comprehensive-test.ts",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/index.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/stripe-service.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/telnyx-sms.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        }
+      ],
+      "forbiddenHits": [
+        {
+          "pattern": "TODO:",
+          "files": [
+            "server/url-shortener.ts",
+            "client/src/components/ProfessionalAdminDashboard.tsx"
+          ]
+        },
+        {
+          "pattern": "fake",
+          "files": [
+            "comprehensive-qa-test.js",
+            "run-comprehensive-qa.js",
+            "server/routes.ts",
+            "quarantine/input-otp.tsx",
+            "client/src/components/AnalyticsDashboard.tsx"
+          ]
+        },
+        {
+          "pattern": "example.com",
+          "files": [
+            "test-individual-features.js",
+            "tests/e2e/fix-and-retest-cycle.spec.ts",
+            "tests/e2e/homepage-interactions.spec.ts",
+            "tests/e2e/perfect-functional-tests.spec.ts",
+            "tests/e2e/production-readiness.spec.ts",
+            "tests/api/perfect-api-tests.spec.ts",
+            "server/automated-testing.ts",
+            "server/comprehensive-test.ts",
+            "server/email-flow-test.ts",
+            "client/src/pages/FreeLessonPage.tsx"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "TODO: in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 5 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 10 file(s)"
+        }
+      ],
+      "score": 54
+    },
+    {
+      "repo": "BakTokingcom",
+      "path": "/Users/tatsheen/claw-repos/BakTokingcom",
+      "scannedFiles": 201,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 3,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/components/KnowledgeBaseWidget.tsx",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": true,
+          "score": 90,
+          "requiredCoverage": 1,
+          "securityCoverage": 0.5,
+          "optionalCoverage": 1,
+          "filesMatched": 18,
+          "sampleFiles": [
+            {
+              "file": "aggressive-2way-test.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "check-network-status.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "discover-site-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "extract-real-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "get-authentic-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-all-json-auth-endpoints.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-deployed-network.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-live-smartkb-network.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/core/protocols/types.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/pages/Blog.tsx",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/pages/HelpCenter.tsx",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/lib/types.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 49,
+          "sampleFiles": [
+            {
+              "file": "aggressive-2way-test.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "check-network-status.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "discover-site-values.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "extract-real-values.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "final-network-test.js",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "get-authentic-values.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "test-all-json-auth-endpoints.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "test-deployed-network.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "test-inbound-communication.js",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-live-smartkb-network.js",
+              "reqHits": [],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/localBroker.js",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 1,
+          "sampleFiles": [
+            {
+              "file": "package.json",
+              "reqHits": [
+                "better-auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 95,
+          "sampleFiles": [
+            {
+              "file": "aggressive-2way-test.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "check-network-status.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "ci-validation-test.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "debug-middleware-order.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "debug-my-endpoint.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "discover-site-values.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "extract-real-values.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "final-auth-test.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "final-network-test.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "get-authentic-values.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "local-site-simulators.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "supabase",
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "supabase",
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-2way-communication.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-all-json-auth-endpoints.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": false,
+          "score": 20,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 0,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 16,
+          "sampleFiles": [
+            {
+              "file": "aggressive-2way-test.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "check-network-status.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "discover-site-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "extract-real-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "get-authentic-values.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-all-json-auth-endpoints.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-deployed-network.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "test-live-smartkb-network.js",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/core/protocols/types.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/pages/Blog.tsx",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/pages/HelpCenter.tsx",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/lib/types.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/src/data/pricingData.ts",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        }
+      ],
+      "forbiddenHits": [
+        {
+          "pattern": "mockTranslate(",
+          "files": [
+            "server/localBroker.js",
+            "server/routes.ts"
+          ]
+        },
+        {
+          "pattern": "fake",
+          "files": [
+            "verify-real-auth-data.js",
+            "client/src/components/ui/input-otp.tsx"
+          ]
+        },
+        {
+          "pattern": "example.com",
+          "files": [
+            "client/src/pages/FullyFunctionalDashboard.tsx"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "high",
+          "code": "MULTITENANT_BASELINE_MISSING",
+          "detail": "no tenant/org/workspace signals detected"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "mockTranslate( in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 2 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "score": 57
+    },
+    {
+      "repo": "autopay_ui",
+      "path": "/Users/tatsheen/claw-repos/autopay_ui",
+      "scannedFiles": 37,
+      "capabilityFindings": [
+        {
+          "id": "billing.stripe.checkout",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 16,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-app.js",
+              "reqHits": [
+                "stripe",
+                "checkout.sessions.create"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-endpoints.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-pricing.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/comprehensive-app-test.spec.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/coupon-system.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/onboarding-email-service.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/saas_integration.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/health.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "public/buycrypto.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/buycrypto.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "billing.stripe.webhooks",
+          "domain": "billing",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 20,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-app.js",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "constructEvent(",
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-endpoints.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-pricing.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "tests/comprehensive-app-test.spec.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "shared/schema.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/coupon-system.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/onboarding-email-service.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "stripe",
+                "webhook"
+              ],
+              "secHits": [
+                "constructEvent(",
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/saas_integration.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/storage.ts",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes/health.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "public/buycrypto.js",
+              "reqHits": [
+                "stripe"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/deployment_status.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "comms.telnyx.sms",
+          "domain": "comms",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 14,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [
+                "signature"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-app.js",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-endpoints.js",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-sms-service.js",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/advanced-email-automations.js",
+              "reqHits": [
+                "telnyx",
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [],
+              "secHits": [
+                "signature",
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "server/ticket-system.js",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/deployment_status.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "json/deployment_summary.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "json/system_analysis_complete.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "json/webhook_config.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [
+                "webhook"
+              ],
+              "optHits": []
+            },
+            {
+              "file": "client/sales-chatbot-rag.json",
+              "reqHits": [
+                "telnyx"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "client/js/sales-chatbot.js",
+              "reqHits": [
+                "messages"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "auth.better_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.legacy_nextauth",
+          "domain": "auth",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "auth.supabase_auth",
+          "domain": "auth",
+          "present": false,
+          "score": 65,
+          "requiredCoverage": 0.5,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 8,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "package.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-app.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-endpoints.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-sms-service.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/ticket-system.js",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/package.json",
+              "reqHits": [
+                "auth"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "tenancy.multitenant",
+          "domain": "tenancy",
+          "present": true,
+          "score": 95,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 0.5,
+          "filesMatched": 5,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            },
+            {
+              "file": "package.json",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            },
+            {
+              "file": "json/package-lock.json",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            },
+            {
+              "file": "json/package.json",
+              "reqHits": [],
+              "secHits": [],
+              "optHits": [
+                "workspace"
+              ]
+            },
+            {
+              "file": "client/sales-chatbot-rag.json",
+              "reqHits": [
+                "tenant"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        },
+        {
+          "id": "email.maileroo",
+          "domain": "email",
+          "present": false,
+          "score": 30,
+          "requiredCoverage": 0,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 0,
+          "sampleFiles": []
+        },
+        {
+          "id": "webhooks.signature_verify",
+          "domain": "webhooks",
+          "present": true,
+          "score": 100,
+          "requiredCoverage": 1,
+          "securityCoverage": 1,
+          "optionalCoverage": 1,
+          "filesMatched": 7,
+          "sampleFiles": [
+            {
+              "file": "package-lock.json",
+              "reqHits": [
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "text-to-pay-app.js",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "server/routes.ts",
+              "reqHits": [
+                "webhook",
+                "signature"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/deployment_status.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/deployment_summary.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/system_analysis_complete.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            },
+            {
+              "file": "json/webhook_config.json",
+              "reqHits": [
+                "webhook"
+              ],
+              "secHits": [],
+              "optHits": []
+            }
+          ]
+        }
+      ],
+      "forbiddenHits": [
+        {
+          "pattern": "fake",
+          "files": [
+            "package-lock.json"
+          ]
+        },
+        {
+          "pattern": "example.com",
+          "files": [
+            "tests/comprehensive-app-test.spec.js"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "fake in 1 file(s)"
+        },
+        {
+          "severity": "medium",
+          "code": "FORBIDDEN_PATTERN",
+          "detail": "example.com in 1 file(s)"
+        }
+      ],
+      "score": 72
+    }
+  ],
+  "canonicalCandidates": [
+    {
+      "capability": "billing.stripe.checkout",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 16,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "billing.stripe.webhooks",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 20,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "comms.telnyx.sms",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 14,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "webhooks.signature_verify",
+      "repo": "autopay_ui",
+      "score": 100,
+      "filesMatched": 7,
+      "issuePenalty": 0,
+      "rankScore": 100
+    },
+    {
+      "capability": "tenancy.multitenant",
+      "repo": "autopay_ui",
+      "score": 95,
+      "filesMatched": 5,
+      "issuePenalty": 0,
+      "rankScore": 95
+    },
+    {
+      "capability": "auth.better_auth",
+      "repo": "BakTokingcom",
+      "score": 100,
+      "filesMatched": 1,
+      "issuePenalty": 8,
+      "rankScore": 92
+    },
+    {
+      "capability": "auth.supabase_auth",
+      "repo": "BakTokingcom",
+      "score": 100,
+      "filesMatched": 95,
+      "issuePenalty": 8,
+      "rankScore": 92
+    }
+  ],
+  "rolloutPlan": [
+    {
+      "repo": "3ddesignafterschool",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "3dgamestake2",
+      "priority": "P1",
+      "score": 14,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails"
+      ]
+    },
+    {
+      "repo": "BlackWallStreetopoly",
+      "priority": "P1",
+      "score": 51,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "3DGameArtAcademy",
+      "priority": "P1",
+      "score": 54,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    },
+    {
+      "repo": "BakTokingcom",
+      "priority": "P1",
+      "score": 57,
+      "critical": [],
+      "high": [
+        "MULTITENANT_BASELINE_MISSING"
+      ],
+      "nextActions": [
+        "add tenant resolver and organization_id guardrails",
+        "remove placeholder/fake patterns and replace with deterministic real data paths"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-03-02T04:20:00.000Z",
+  "runner": "cowork-hourly-fix-deep-scan",
+  "scan_type": "pattern_audit",
+  "summary": "Deep pattern audit triggered after two bugs in first pass revealed same patterns codebase-wide. 3 distinct bug classes found across 12 files.",
+
+  "bug_classes": [
+    {
+      "class": "missing_await_on_async_coordinator",
+      "severity": "HIGH",
+      "instances": 1,
+      "files": ["scripts/status-review-agent-runner.js:173"],
+      "effect": "shouldAgentRun() returned Promise instead of decision struct. Coordination always bypassed — agents ran unconditionally.",
+      "pattern": "coordinator.shouldAgentRun(...) without await",
+      "fix": "Added await",
+      "recurring": true,
+      "previous_occurrence": "mission-control-agent-runner.js fixed same day (first pass)"
+    },
+    {
+      "class": "execSync_pm2_event_loop_block",
+      "severity": "HIGH",
+      "instances": 1,
+      "files": ["scripts/global-redgreen-status.js:54"],
+      "effect": "execSync('pm2 jlist') blocked Node event loop ~200-400ms per call. CLAUDE.md landmine #2.",
+      "pattern": "execSync for PM2 queries",
+      "fix": "Replaced with promisify(exec) + await execAsync. Made pm2List() async.",
+      "recurring": false
+    },
+    {
+      "class": "toFixed_on_unguarded_object_property",
+      "severity": "MEDIUM-HIGH",
+      "instances": 30,
+      "files": [
+        "control/cost-coordinator.js (8 instances — HOT PATH)",
+        "control/notifier.js (2 instances)",
+        "control/system-health-coordinator.js (3 instances)",
+        "control/entropy-monitor.js (3 instances)",
+        "scripts/system-dashboard.js (8 instances)",
+        "scripts/architect-api.js (1 instance)",
+        "scripts/bot-daily-improvement.js (2 instances + divide-by-zero)",
+        "scripts/bot-auto-improvement.js (3 instances)",
+        "scripts/openclaw-coordinator-pulse.js (3 — fixed in first pass)",
+        "scripts/mission-control-agent-runner.js (2 — fixed in first pass, different manifestation)"
+      ],
+      "effect": "TypeError: Cannot read properties of undefined (reading 'toFixed') — process crash on every invocation when DB returns null or state object is partial",
+      "pattern": "object.field.toFixed(N) where field may be undefined",
+      "fix": "Number(x || 0).toFixed(N) — or Number(obj?.field || 0).toFixed(N) for chained access",
+      "most_critical": "cost-coordinator.js — fires on every LLM approval request when budget is tight"
+    }
+  ],
+
+  "patterns_checked_not_found": [
+    "Duplicate module-level constants (FRESHNESS_SLA style) — none found",
+    "fs.openSync leaks — architect-api.js has openSync but has corresponding closeSync",
+    "const-inside-try-outside-catch — widespread but mostly false positives from scanner; real uses are within same try scope"
+  ],
+
+  "files_modified": [
+    "scripts/mission-control-agent-runner.js",
+    "scripts/status-review-agent-runner.js",
+    "scripts/global-redgreen-status.js",
+    "scripts/openclaw-coordinator-pulse.js",
+    "scripts/system-dashboard.js",
+    "scripts/architect-api.js",
+    "scripts/bot-daily-improvement.js",
+    "scripts/bot-auto-improvement.js",
+    "control/cost-coordinator.js",
+    "control/notifier.js",
+    "control/system-health-coordinator.js",
+    "control/entropy-monitor.js"
+  ],
+
+  "processes_restarted": [
+    "claw-mission-scheduling_calendar",
+    "claw-openclaw-coordinator",
+    "claw-status-review-coordinator",
+    "claw-status-review-worker",
+    "claw-status-review-uptime",
+    "claw-global-status-pulse"
+  ],
+
+  "post_fix_verification": {
+    "scheduling_calendar": "online, stable at 121 restarts, uptime 408s",
+    "openclaw_coordinator": "online, stable at 13 restarts (iterations during fix), uptime 24s",
+    "status_review_coordinator": "online, 0 restarts, uptime 25s",
+    "global_status_pulse": "one-shot cron — ran successfully GREEN (18 checks), exited normally"
+  },
+
+  "remaining_known_issues": [
+    "claw_tasks_ai: 100 failed tasks — EXCLUSIVE_LOCK_BUSY on classify (contention, not new)",
+    "claw_tasks_infra: 100 failed — security_sweep partial fails (3 open criticals in sprint)",
+    "claw_tasks_io_heavy: 100 failed — repo_autofix quarantine loop (known, reaper correct)",
+    "openclaw-coordinator restart count elevated (13) due to fix iteration restarts — will decay"
+  ]
+}

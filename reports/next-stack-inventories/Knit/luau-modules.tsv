@@ -1,0 +1,29 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	94	module_export	local KnitClient = {}	local KnitClient = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	138	module_export		return servicesFolder		return servicesFolder
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	156	module_export		return service		return service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	190	module_export		return controller		return controller
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	203	module_export		local addedControllers = {}		local addedControllers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	212	module_export		return addedControllers		return addedControllers
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	221	module_export		local addedControllers = {}		local addedControllers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	230	module_export		return addedControllers		return addedControllers
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	288	module_export			return service			return service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	304	module_export			return controller			return controller
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	318	module_export		return controllers		return controllers
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	364	module_export			local promisesStartControllers = {}			local promisesStartControllers = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau	420	module_export	return KnitClient	return KnitClient
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	109	module_export	local KnitServer = {}	local KnitServer = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	204	module_export		return service		return service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	217	module_export		local addedServices = {}		local addedServices = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	226	module_export		return addedServices		return addedServices
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	235	module_export		local addedServices = {}		local addedServices = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	244	module_export		return addedServices		return addedServices
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	263	module_export		return services		return services
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	291	module_export		return SIGNAL_MARKER		return SIGNAL_MARKER
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	314	module_export		return UNRELIABLE_SIGNAL_MARKER		return UNRELIABLE_SIGNAL_MARKER
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	375	module_export						return true						return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	430	module_export			local promisesInitServices = {}			local promisesInitServices = {}
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau	488	module_export	return KnitServer	return KnitServer
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau	13	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau	19	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau	42	module_export					return true					return true
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau	48	module_export					return true					return true

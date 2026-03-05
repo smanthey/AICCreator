@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "version": 1,
+    "name": "IP Deterministic Rules v1",
+    "updated_at": "2026-02-26",
+    "notes": "Deterministic-first rule set for ingestion, issue detection, and deadlines."
+  },
+  "document_classification": {
+    "threshold": 4,
+    "types": {
+      "office_action": {
+        "weights": {
+          "office action": 5,
+          "examining attorney": 3,
+          "response required": 2,
+          "trademark act section": 2
+        }
+      },
+      "filing_receipt": {
+        "weights": {
+          "filing receipt": 5,
+          "serial number": 3,
+          "received date": 2,
+          "successfully submitted": 2
+        }
+      },
+      "notice_of_allowance": {
+        "weights": {
+          "notice of allowance": 5,
+          "statement of use": 2,
+          "extension request": 2
+        }
+      },
+      "registration_certificate": {
+        "weights": {
+          "certificate of registration": 5,
+          "registered on": 2
+        }
+      },
+      "teas_filing": {
+        "weights": {
+          "teas": 4,
+          "teasi": 4,
+          "trademark electronic application system": 3
+        }
+      }
+    }
+  },
+  "issue_detection": {
+    "disclaimer_requirement": {
+      "threshold": 4,
+      "weights": {
+        "disclaimer required": 5,
+        "must disclaim": 5,
+        "no claim is made to the exclusive right": 3
+      },
+      "severity": "warn"
+    },
+    "id_goods_services": {
+      "threshold": 4,
+      "weights": {
+        "identification of goods": 5,
+        "indefinite": 3,
+        "overly broad": 3,
+        "amend the identification": 3
+      },
+      "severity": "warn"
+    },
+    "specimen_refusal": {
+      "threshold": 4,
+      "weights": {
+        "specimen refused": 6,
+        "substitute specimen": 4,
+        "not acceptable specimen": 5
+      },
+      "severity": "blocker"
+    },
+    "likelihood_of_confusion_2d": {
+      "threshold": 4,
+      "weights": {
+        "section 2(d)": 6,
+        "likelihood of confusion": 6
+      },
+      "severity": "blocker"
+    },
+    "descriptiveness_2e1": {
+      "threshold": 4,
+      "weights": {
+        "section 2(e)(1)": 6,
+        "merely descriptive": 5,
+        "descriptive": 2
+      },
+      "severity": "warn"
+    }
+  },
+  "deadline_rules": {
+    "office_action_nonfinal": {
+      "months": 3,
+      "deadline_type": "oa_response"
+    },
+    "office_action_final": {
+      "months": 3,
+      "deadline_type": "oa_response_final"
+    },
+    "notice_of_allowance": {
+      "months": 6,
+      "deadline_type": "sou"
+    },
+    "registration_maintenance": {
+      "section_8_15_min_years": 5,
+      "section_8_15_max_years": 6,
+      "section_9_min_years": 9,
+      "section_9_max_years": 10
+    }
+  }
+}

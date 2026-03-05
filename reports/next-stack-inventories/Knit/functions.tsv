@@ -1,0 +1,34 @@
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:127:local function DoesControllerExist(controllerName: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:133:local function GetServicesFolder()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:141:local function GetMiddlewareForService(serviceName: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:148:local function BuildService(serviceName: string)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:171:	function MyController:KnitStart()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:175:	function MyController:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:180:function KnitClient.CreateController(controllerDef: ControllerDef): Controller
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:200:function KnitClient.AddControllers(parent: Instance): { Controller }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:218:function KnitClient.AddControllersDeep(parent: Instance): { Controller }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:252:	function MyService:AddOne(player, number)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:285:function KnitClient.GetService(serviceName: string): Service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:301:function KnitClient.GetController(controllerName: string): Controller
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:315:function KnitClient.GetControllers(): { [string]: Controller }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:338:function KnitClient.Start(options: KnitOptions?)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitClient.luau:412:function KnitClient.OnStart()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:149:local function DoesServiceExist(serviceName: string): boolean
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:169:	function MyService.Client:ToAllCaps(player, msg)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:174:	function MyService:KnitStart()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:179:	function MyService:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:184:function KnitServer.CreateService(serviceDef: ServiceDef): Service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:214:function KnitServer.AddServices(parent: Instance): { Service }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:232:function KnitServer.AddServicesDeep(parent: Instance): { Service }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:250:function KnitServer.GetService(serviceName: string): Service
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:260:function KnitServer.GetServices(): { [string]: Service }
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:284:	function MyService:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:290:function KnitServer.CreateSignal()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:313:function KnitServer.CreateUnreliableSignal()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:340:	function MyService:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:346:function KnitServer.CreateProperty(initialValue: any)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:384:function KnitServer.Start(options: KnitOptions?)
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/src/KnitServer.luau:480:function KnitServer.OnStart()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/client/KnitClientTest.client.luau:7:function MyController:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau:25:function MyService:KnitInit()
+/Users/tatsheen/claw-repos/oss-index/roblox/Knit/test/server/KnitServerTest.server.luau:32:function MyService.Client:TestMethod(player, msg)

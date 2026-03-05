@@ -1,0 +1,166 @@
+{
+  "repo": "InayanBuilderBot",
+  "started_at": "2026-03-04T10:41:07.953Z",
+  "completed_at": "2026-03-04T10:41:12.035Z",
+  "capability_score": 29,
+  "capability_factory_exit_code": 0,
+  "sections": {
+    "email_setup": {
+      "status": "incomplete",
+      "detail": "email.maileroo"
+    },
+    "admin_setup": {
+      "status": "incomplete",
+      "detail": "tenant signals=false"
+    },
+    "auth": {
+      "status": "incomplete",
+      "detail": "better-auth"
+    },
+    "stripe_checkout": {
+      "status": "gap",
+      "detail": "score=30"
+    },
+    "stripe_webhooks": {
+      "status": "gap",
+      "detail": "score=20 securityCoverage=0.5"
+    },
+    "telnyx_sms": {
+      "status": "incomplete",
+      "detail": "score=55"
+    },
+    "webhooks_signature_verify": {
+      "status": "incomplete",
+      "detail": "score=65"
+    },
+    "queue_retry": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "observability": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "e2e": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "security_sweep": {
+      "status": "incomplete",
+      "detail": ""
+    },
+    "capability_factory_health": {
+      "status": "gap",
+      "detail": "critical=0 high=1"
+    },
+    "feature_benchmark_vs_exemplar": {
+      "status": "complete",
+      "detail": "run completed"
+    }
+  },
+  "issues": [
+    {
+      "code": "MULTITENANT_BASELINE_MISSING",
+      "severity": "high",
+      "detail": "no tenant/org/workspace signals detected"
+    }
+  ],
+  "next_actions": [
+    "Add tenant resolver and organization_id guardrails"
+  ],
+  "best_case_ref": {
+    "stripe_webhooks": "local/autopay_ui, local/CaptureInbound, local/payclaw (feature-benchmark exemplars)",
+    "email_delivery": "local/CaptureInbound, docs/EMAIL_RESEND_MIGRATION.md",
+    "auth": "local/veritap_2026, config/capabilities.yaml auth.better_auth",
+    "admin_ui": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+    "feature_benchmark": "scripts/feature-benchmark-score.js EXEMPLAR_LIBRARY, data/exemplar-repos.json",
+    "capability_factory": "config/capabilities.yaml, scripts/capability-factory.js pickCanonicalCandidates"
+  },
+  "benchmark_lookup": {
+    "email_setup": {
+      "status": "incomplete",
+      "detail": "email.maileroo",
+      "best_case_ref": "local/CaptureInbound, docs/EMAIL_RESEND_MIGRATION.md",
+      "github_search_query": "resend email verification webhook OR maileroo",
+      "github_search_url": "https://github.com/search?type=repositories&q=resend%20email%20verification%20webhook%20OR%20maileroo"
+    },
+    "admin_setup": {
+      "status": "incomplete",
+      "detail": "tenant signals=false",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "multitenant organization_id nextjs OR tenant resolver",
+      "github_search_url": "https://github.com/search?type=repositories&q=multitenant%20organization_id%20nextjs%20OR%20tenant%20resolver"
+    },
+    "auth": {
+      "status": "incomplete",
+      "detail": "better-auth",
+      "best_case_ref": "local/veritap_2026, config/capabilities.yaml auth.better_auth",
+      "github_search_query": "better-auth",
+      "github_search_url": "https://github.com/search?type=repositories&q=better-auth"
+    },
+    "stripe_checkout": {
+      "status": "gap",
+      "detail": "score=30",
+      "best_case_ref": "local/autopay_ui, local/CaptureInbound, local/payclaw (feature-benchmark exemplars)",
+      "github_search_query": "stripe checkout session",
+      "github_search_url": "https://github.com/search?type=repositories&q=stripe%20checkout%20session"
+    },
+    "stripe_webhooks": {
+      "status": "gap",
+      "detail": "score=20 securityCoverage=0.5",
+      "best_case_ref": "local/autopay_ui, local/CaptureInbound, local/payclaw (feature-benchmark exemplars)",
+      "github_search_query": "stripe webhook signature verification idempotency",
+      "github_search_url": "https://github.com/search?type=repositories&q=stripe%20webhook%20signature%20verification%20idempotency"
+    },
+    "telnyx_sms": {
+      "status": "incomplete",
+      "detail": "score=55",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "telnyx sms webhook",
+      "github_search_url": "https://github.com/search?type=repositories&q=telnyx%20sms%20webhook"
+    },
+    "webhooks_signature_verify": {
+      "status": "incomplete",
+      "detail": "score=65",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "webhook signature verification",
+      "github_search_url": "https://github.com/search?type=repositories&q=webhook%20signature%20verification"
+    },
+    "queue_retry": {
+      "status": "incomplete",
+      "detail": "",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "bullmq retry queue worker",
+      "github_search_url": "https://github.com/search?type=repositories&q=bullmq%20retry%20queue%20worker"
+    },
+    "observability": {
+      "status": "incomplete",
+      "detail": "",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "observability logging metrics audit",
+      "github_search_url": "https://github.com/search?type=repositories&q=observability%20logging%20metrics%20audit"
+    },
+    "e2e": {
+      "status": "incomplete",
+      "detail": "",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "playwright e2e test OR cypress",
+      "github_search_url": "https://github.com/search?type=repositories&q=playwright%20e2e%20test%20OR%20cypress"
+    },
+    "security_sweep": {
+      "status": "incomplete",
+      "detail": "",
+      "best_case_ref": "oss-dashboard-benchmark top repos, dashboard-chatbot-repo-scout ui_signals",
+      "github_search_query": "security audit dependency",
+      "github_search_url": "https://github.com/search?type=repositories&q=security%20audit%20dependency"
+    },
+    "capability_factory_health": {
+      "status": "gap",
+      "detail": "critical=0 high=1",
+      "best_case_ref": "config/capabilities.yaml, scripts/capability-factory.js pickCanonicalCandidates",
+      "github_search_query": "stripe webhook auth capability",
+      "github_search_url": "https://github.com/search?type=repositories&q=stripe%20webhook%20auth%20capability"
+    }
+  },
+  "feature_benchmark_run": true
+}

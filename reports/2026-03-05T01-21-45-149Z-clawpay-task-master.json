@@ -1,0 +1,198 @@
+{
+  "ok": true,
+  "cycle_started_at": "2026-03-05T01:00:38.170Z",
+  "cycle_finished_at": "2026-03-05T01:21:45.141Z",
+  "cycle_number": 73,
+  "config": {
+    "loop_seconds": 600,
+    "discovery_every_minutes": 120,
+    "outreach_every_minutes": 60,
+    "research_every_minutes": 1440,
+    "kaizen_every_minutes": 60
+  },
+  "services": {
+    "claw-prompt-oracle": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-commerce-api": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-discord-gateway": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-discovery": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    },
+    "claw-bot-outreach": {
+      "count": 1,
+      "online": 1,
+      "statuses": [
+        "online"
+      ]
+    },
+    "claw-bot-sales-research-daily": {
+      "count": 1,
+      "online": 0,
+      "statuses": [
+        "stopped"
+      ]
+    }
+  },
+  "always_on_recovery": [
+    {
+      "name": "claw-prompt-oracle",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-bot-commerce-api",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    },
+    {
+      "name": "claw-discord-gateway",
+      "action": "none",
+      "ok": true,
+      "status": "online"
+    }
+  ],
+  "channel_readiness": {
+    "discord": {
+      "configured": true,
+      "missing": []
+    },
+    "telegram": {
+      "configured": true,
+      "missing": []
+    },
+    "whatsapp": {
+      "configured": true,
+      "missing": []
+    },
+    "reddit": {
+      "configured": false,
+      "missing": [
+        "REDDIT_CLIENT_ID",
+        "REDDIT_CLIENT_SECRET"
+      ]
+    },
+    "email": {
+      "configured": true,
+      "missing": []
+    },
+    "github_discovery": {
+      "configured": true,
+      "missing": []
+    },
+    "stripe_checkout": {
+      "configured": true,
+      "missing": []
+    }
+  },
+  "cadence_runs": [
+    {
+      "type": "discovery_repo_seed",
+      "result": {
+        "command": "npm run -s discover:bots -- git",
+        "ok": true,
+        "code": 0,
+        "started_at": "2026-03-05T01:00:39.578Z",
+        "finished_at": "2026-03-05T01:00:56.276Z",
+        "stdout_tail": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[discovery] Using database for lead storage\n============================================================\nBot Lead Discovery\n============================================================\nPlatform: git\n\n🔍 Discovering Git/Repo seed bots...\n✅ Git/Repo seeds: Discovered 92 lead(s)\n\n============================================================\nDiscovery Summary:\n  Total discovered this run: 92\n  Storage: Database\n\n  Lead Stats:\n    telegram: 1 total, 1 uncontacted, 1 opted out\n    email: 264 total, 6 uncontacted, 3 opted out\n    github: 995 total, 995 uncontacted, 0 opted out\n============================================================\n",
+        "stderr_tail": "",
+        "stdout": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2\n[discovery] Using database for lead storage\n============================================================\nBot Lead Discovery\n============================================================\nPlatform: git\n\n🔍 Discovering Git/Repo seed bots...\n✅ Git/Repo seeds: Discovered 92 lead(s)\n\n============================================================\nDiscovery Summary:\n  Total discovered this run: 92\n  Storage: Database\n\n  Lead Stats:\n    telegram: 1 total, 1 uncontacted, 1 opted out\n    email: 264 total, 6 uncontacted, 3 opted out\n    github: 995 total, 995 uncontacted, 0 opted out\n============================================================\n",
+        "stderr": "",
+        "error": null
+      }
+    },
+    {
+      "type": "discovery_github",
+      "result": {
+        "command": "npm run -s discover:bots:github",
+        "ok": true,
+        "code": 0,
+        "started_at": "2026-03-05T01:00:56.276Z",
+        "finished_at": "2026-03-05T01:01:44.236Z",
+        "stdout_tail": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  override existing env vars with { override: true }\n[discovery] Using database for lead storage\n============================================================\nAdvanced Bot Discovery\n============================================================\nMethod: github\n\n🔍 Discovering GitHub bots...\n[discovery] GitHub: Found luoboask/openclaw-tutorial\n[discovery] GitHub: Found best/openclaw-skills\n[discovery] GitHub: Found papachong/openclawcm\n[discovery] GitHub: Found hamnhugs/bot-manifest\n[discovery] GitHub: Found xigpz/openclaw-console\n[discovery] GitHub: Found jonhncatt/offciatool-openclaw-agent\n[discovery] GitHub: Found sky770825/openclaw-console-hub\n[discovery] GitHub: Found alexliv1234/alexbot\n[discovery] GitHub: Found Kevocado/OpenClaw-Applicant-Bot\n[discovery] GitHub: Found tonanonaichi-glitch/openclaw-deploy\n[discovery] GitHub: Found SxLiuYu/openclaw-clients\n[discovery] GitHub: Found daveonkels/clawdex\n[discovery] GitHub: Found kesslerio/coding-agent-openclaw-skill\n[discovery] GitHub: Found openclaw-rocks/status\n[discovery] GitHub: Found Rostov12/safe-openclaw-installer\n[discovery] GitHub: Found janglimTARS/openclaw-second-brain\n[discovery] GitHub: Found erbolamm/ClawMobil\n[discovery] GitHub: Found faahim/openclaw-skills\n[discovery] GitHub: Found ArthuronAI/xhs-openclaw-skill\n[discovery] GitHub: Found MSomnia/openclawbillboard\n[discovery] GitHub: Found grayking-creator/openclaw-podcast\n[discovery] GitHub: Found openclawalpha2026-bit/alpha-command-center\n[discovery] GitHub: Found wede375/OpenClaw-workspace\n[discovery] GitHub: Found zazer0/better-openclaw-slack\n[discovery] GitHub: Found RyanBezman/stabilify-openclaw\n[discovery] GitHub: Found intellieffect/intelli-claw\n[discovery] GitHub: Found atEverychance/openclaw-top\n[discovery] GitHub: Found backbay-labs/clawdstrike\n[discovery] GitHub: Found\n...[truncated]",
+        "stderr_tail": "",
+        "stdout": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  override existing env vars with { override: true }\n[discovery] Using database for lead storage\n============================================================\nAdvanced Bot Discovery\n============================================================\nMethod: github\n\n🔍 Discovering GitHub bots...\n[discovery] GitHub: Found luoboask/openclaw-tutorial\n[discovery] GitHub: Found best/openclaw-skills\n[discovery] GitHub: Found papachong/openclawcm\n[discovery] GitHub: Found hamnhugs/bot-manifest\n[discovery] GitHub: Found xigpz/openclaw-console\n[discovery] GitHub: Found jonhncatt/offciatool-openclaw-agent\n[discovery] GitHub: Found sky770825/openclaw-console-hub\n[discovery] GitHub: Found alexliv1234/alexbot\n[discovery] GitHub: Found Kevocado/OpenClaw-Applicant-Bot\n[discovery] GitHub: Found tonanonaichi-glitch/openclaw-deploy\n[discovery] GitHub: Found SxLiuYu/openclaw-clients\n[discovery] GitHub: Found daveonkels/clawdex\n[discovery] GitHub: Found kesslerio/coding-agent-openclaw-skill\n[discovery] GitHub: Found openclaw-rocks/status\n[discovery] GitHub: Found Rostov12/safe-openclaw-installer\n[discovery] GitHub: Found janglimTARS/openclaw-second-brain\n[discovery] GitHub: Found erbolamm/ClawMobil\n[discovery] GitHub: Found faahim/openclaw-skills\n[discovery] GitHub: Found ArthuronAI/xhs-openclaw-skill\n[discovery] GitHub: Found MSomnia/openclawbillboard\n[discovery] GitHub: Found grayking-creator/openclaw-podcast\n[discovery] GitHub: Found openclawalpha2026-bit/alpha-command-center\n[discovery] GitHub: Found wede375/OpenClaw-workspace\n[discovery] GitHub: Found zazer0/better-openclaw-slack\n[discovery] GitHub: Found RyanBezman/stabilify-openclaw\n[discovery] GitHub: Found intellieffect/intelli-claw\n[discovery] GitHub: Found atEverychance/openclaw-top\n[discovery] GitHub: Found backbay-labs/clawdstrike\n[discovery] GitHub: Found JARVIS-coding-Agent/openclaw-user-guide\n[discovery] GitHub: Found 0xDuraku/iseclaw\n[discovery] GitHub: Found openclaw/openclaw\n[discovery] GitHub: Found JonathanJing/openclaw-dashboard\n[discovery] GitHub: Found adybag14-cyber/openclaw-zig-port\n[discovery] GitHub: Found mangdangroboticsclub (from issue)\n[discovery] GitHub: Found CaptainClawsome2099 (from issue)\n[discovery] GitHub: Found renovate[bot] (from issue)\n[discovery] GitHub: Found renovate[bot] (from issue)\n[discovery] GitHub: Found hipcheck/clawdbot-dashboard\n[discovery] GitHub: Found DistribucionesArobe/clawdbot-server\n[discovery] GitHub: Found swarmclawai/swarmclaw\n[discovery] GitHub: Found Ronpiii/clawdbot-health-dashboard\n[discovery] GitHub: Found sskarz/nanoclawbster\n[discovery] GitHub: Found troykelly/openclaw-projects\n[discovery] GitHub: Found centminmod/explain-openclaw\n[discovery] GitHub: Found joshlevylabs/clawdbot-hub\n[discovery] GitHub: Found SamurAIGPT/awesome-openclaw\n[discovery] GitHub: Found huaguihai/clawdbot-blog\n[discovery] GitHub: Found Calichetopped-malpighianlayer617/swarmclaw\n[discovery] GitHub: Found 1186258278/OpenClawChineseTranslation\n[discovery] GitHub: Found rye-com/clawdbot-buy-anything\n[discovery] GitHub: Found puremachinery/carapace\n[discovery] GitHub: Found uclukDX/openclaw-dashboard\n[discovery] GitHub: Found bigcola2020/openclaw-jarvis-memory\n[discovery] GitHub: Found nao1234g/vps-automation-openclaw\n[discovery] GitHub: Found FawwazAzka/openclaw-docs\n[discovery] GitHub: Found godistre/openclawx\n[discovery] GitHub: Found nikolapolic/openclaw-assistant-mvp\n[discovery] GitHub: Found easdasd8/DisierTECH-OpenClaw-Stack\n[discovery] GitHub: Found Harshil-fx/claw-market\n[discovery] GitHub: Found lemurhacep/awesome-openclaw\n[discovery] GitHub: Found Mickebhscoder/openclaw-business\n[discovery] GitHub: Found qboosttt/awesome-openclaw\n[discovery] GitHub: Found kel2s/tinyclaw\n[discovery] GitHub: Found velrixsemiwl-max/awesome-openclaw-usecases\n[discovery] GitHub: Found RuiONE360/openclaw-viewer\n[discovery] GitHub: Found joevr711/clawdbot-channel-linq\n[discovery] GitHub: Found Fatahhnaz/iphoneclaw\n[discovery] GitHub: Found kauf3r/pops-claw\n[discovery] GitHub: Found KOAKAR765/miniclawd\n[discovery] GitHub: Found fkern4612-design/openclaw-telemetry\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found renovate[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found bountydotnew-dev[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found smanthey/claw-architect\n[discovery] GitHub: Found shakilbd009/clawd-architecture\n[discovery] GitHub: Found bhakthan/OpenAgentSchool-TinyClaw-Architecture-Academy\n[discovery] GitHub: Found Orbiter197/ClawEngineArchitect\n[discovery] GitHub: Found unoclaw (from issue)\n[discovery] GitHub: Found jeanclaw2026[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found taine-bot (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found indmdev/indmshopbot\n[discovery] GitHub: Found indmdev/advancedbotbuilder\n[discovery] GitHub: Found DataZahard/ai-engine\n[discovery] GitHub: Found biswajitgiri56789-creator/wb-xi-smart-study-bot\n[discovery] GitHub: Found Tushar7012/E-Commerce-ChatBot\n[discovery] GitHub: Found MaiSoklyna/Mini_E-commerce_bot_V1\n[discovery] GitHub: Found Theshagmann/Vendora-bot-landingpage\n[discovery] GitHub: Found adilraees786/Boty-eCommerce\n[discovery] GitHub: Found gotogrub/ScriptedLLM\n[discovery] GitHub: Found kavia-common/vintage-metal-bottle-cap-e-commerce-platform-327818-327739\n[discovery] GitHub: Found Benbrika8/telegram-ai-store-assistant\n[discovery] GitHub: Found sachink1712/E-Commerce-ChatBot\n[discovery] GitHub: Found Chaitya44/AI-WebScraper\n[discovery] GitHub: Found payclaw/badge-server\n[discovery] GitHub: Found navnathlahane1/Smart-Deal-Finder-Bot-Agentic-AI-\n[discovery] GitHub: Found Nodirjon77/telegram_shop_bot\n[discovery] GitHub: Found OussamaZaid16/BOTOLA-S-Sportswear-E-commerce-Platform-Symfony-\n[discovery] GitHub: Found mourchid-med/BOTOLA-S-Plateforme-e-commerce-de-vente-de-tenues-sportives-Symfony-\n[discovery] GitHub: Found TheRJHub/rChessMistry\n[discovery] GitHub: Found icodeindark/denimai\n[discovery] GitHub: Found vinaysawalgi10-netizen/e_commerce_ai_voice_bot\n[discovery] GitHub: Found zatech2023-rgb/n8n-automation-portfolio\n[discovery] GitHub: Found bibekjoshi01/ecommerce-chat-support\n[discovery] GitHub: Found Marcus-torchline/v0-boty-e-commerce-template\n[discovery] GitHub: Found yogirajbshinde21/E-commerce-ShopBot\n[discovery] GitHub: Found Code-Wizard-IT/Bottega-Matta-e-commerce\n[discovery] GitHub: Found deviprasad-123/E-Commerce-Assistant-ChatBot\n[discovery] GitHub: Found SyntaxAbuse/listing-ingestion-pipeline\n[discovery] GitHub: Found kai-l3/agent-mall\n[discovery] GitHub: Found ducquy2200/ai-commerce-fe\n[discovery] GitHub: Found ducquy2200/AI-Commerce\n[discovery] GitHub: Found Othman-Jabiri/ShopBot-Assistant-IA-de-Support-E-commerce\n[discovery] GitHub: Found gaetancorin/pokem_buyer_bot\n[discovery] GitHub: Found nematdeveloper/coffee-ecommerce-mern\n[discovery] GitHub: Found Glour/viably-template-shop-bot\n[discovery] GitHub: Found habibcreatives/reCaptcha-for-WooCommerce-Bot-Protection\n[discovery] GitHub: Found nematdeveloper/coffee-ecommerce-backend\n[discovery] GitHub: Found fedorvorobyov/telegram-shop-bot\n[discovery] GitHub: Found gsjulian81-bot/telegram-shop-bot\n[discovery] GitHub: Found LeonardoCides/shop-bot-integrator\n[discovery] GitHub: Found sky-brazil/Pricer_Tracker_Bot\n[discovery] GitHub: Found krishsangal/E-Commerce_Website\n[discovery] GitHub: Found alsk1992/Flip-God\n[discovery] GitHub: Found thearnavmishra/Telegram-Bot\n[discovery] GitHub: Found Mohammad-Hussien3/market\n[discovery] GitHub: Found Vignesh-16604/RPA_Project\n[discovery] GitHub: Found sedat-yazici/sales-approval-bot\n[discovery] GitHub: Found Malaya-Kumar-Pradhan/E-commerce-Bot\n[discovery] GitHub: Found mhdfahad1/E-commerce-chat-bot\n[discovery] GitHub: Found kishangaur324/Voice-Commerce-Bot\n[discovery] GitHub: Found renovate[bot] (from issue)\n[discovery] GitHub: Found renovate[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found forking-renovate[bot] (from issue)\n[discovery] GitHub: Found forking-renovate[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found centminmod/explain-openclaw\n[discovery] GitHub: Found Soulreaper1188/openclaw-detect\n[discovery] GitHub: Found yasuothezed/clawdchat-analysis\n[discovery] GitHub: Found evinjohnn/natively-cluely-ai-assistant\n[discovery] GitHub: Found Shahip2016/OpenClaw\n[discovery] GitHub: Found TommyYeung660/openclaw-moltbook-agent\n[discovery] GitHub: Found danpatdav/openclaw-secure\n[discovery] GitHub: Found mvpbester/moltbook-bot\n[discovery] GitHub: Found Mojo-Selecta/mipanagillito-moltbook\n[discovery] GitHub: Found Scottcjn/grazer-skill\n[discovery] GitHub: Found brianleixia/openclaw-moltbook-research\n[discovery] GitHub: Found Scottcjn/beacon-skill\n[discovery] GitHub: Found GusBot69/openclaw-scripts\n[discovery] GitHub: Found github-actions[bot] (from issue)\n[discovery] GitHub: Found github-actions[bot] (from issue)\n✅ GitHub: Discovered 157 bot(s)\n\n============================================================\nTotal discovered: 157\n============================================================\n",
+        "stderr": "",
+        "error": null
+      }
+    },
+    {
+      "type": "discovery_reddit",
+      "result": {
+        "command": "npm run -s discover:bots:reddit",
+        "ok": true,
+        "code": 0,
+        "started_at": "2026-03-05T01:01:44.237Z",
+        "finished_at": "2026-03-05T01:01:44.888Z",
+        "stdout_tail": "[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n[discovery] Using database for lead storage\n============================================================\nBot Lead Discovery\n============================================================\nPlatform: reddit\n\n============================================================\nDiscovery Summary:\n  Total discovered this run: 0\n  Storage: Database\n\n  Lead Stats:\n    telegram: 1 total, 1 uncontacted, 1 opted out\n    email: 264 total, 6 uncontacted, 3 opted out\n    github: 1008 total, 1008 uncontacted, 0 opted out\n============================================================\n",
+        "stderr_tail": "",
+        "stdout": "[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n[discovery] Using database for lead storage\n============================================================\nBot Lead Discovery\n============================================================\nPlatform: reddit\n\n============================================================\nDiscovery Summary:\n  Total discovered this run: 0\n  Storage: Database\n\n  Lead Stats:\n    telegram: 1 total, 1 uncontacted, 1 opted out\n    email: 264 total, 6 uncontacted, 3 opted out\n    github: 1008 total, 1008 uncontacted, 0 opted out\n============================================================\n",
+        "stderr": "",
+        "error": null
+      }
+    },
+    {
+      "type": "kaizen",
+      "result": {
+        "command": "npm run -s clawpay:kaizen",
+        "ok": false,
+        "code": 1,
+        "started_at": "2026-03-05T01:01:44.888Z",
+        "finished_at": "2026-03-05T01:21:45.139Z",
+        "stdout_tail": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n",
+        "stderr_tail": "",
+        "stdout": "[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🛡️ auth for agents: https://vestauth.com\n[dotenv@17.3.1] injecting env (125) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild\n",
+        "stderr": "",
+        "error": "Command failed: npm run -s clawpay:kaizen\n"
+      }
+    }
+  ],
+  "budget": {
+    "limits": {
+      "max_calls": 25,
+      "max_tokens_per_tool": 12000,
+      "max_tokens_total": 120000
+    },
+    "usage": {
+      "calls": 8,
+      "total_tokens": 43,
+      "by_tool": {
+        "pm2_list": 12,
+        "discovery": 24,
+        "kaizen": 7
+      }
+    },
+    "violations": [],
+    "ok": true
+  },
+  "state": {
+    "cycles": 73,
+    "last_discovery_at": "2026-03-05T01:01:44.888Z",
+    "last_outreach_at": "2026-03-05T00:55:38.576Z",
+    "last_research_at": "2026-03-04T05:26:32.776Z",
+    "last_kaizen_at": "2026-03-05T01:21:45.141Z",
+    "last_bootstrap_at": "2026-03-04T23:35:48.023Z"
+  }
+}
